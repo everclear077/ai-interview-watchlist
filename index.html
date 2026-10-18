@@ -231,6 +231,15 @@
     // Lean deploy: data loaded via fetch("./data.json"); no embedded blob.
     const EMBEDDED_DATA = null;
 
+    const state = {
+      data: null,
+      watched: {},
+      category: "全部",
+      priority: "all",
+      onlyUnwatched: false,
+      query: ""
+    };
+
     function todayISO() {
       try {
         return new Intl.DateTimeFormat("en-CA", {
