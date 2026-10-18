@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "title": "AI / 科技访谈 · 观看列表",
+  "lastUpdated": "2026-10-18",
+  "maintainer": "R",
+  "categories": [
+    "实验室·安全·研究",
+    "创始人·CEO·产品",
+    "VC·基建·市场"
+  ],
+  "priorities": [
+    "P0",
+    "P1",
+    "P2"
+  ],
+  "items": [
+    {
+      "id": "dwarkesh-noam-brown-2026-09-17",
+      "title": "Agent swarms, alignment & RSI",
+      "guest": "Noam Brown",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-17",
+      "duration": "~1h20m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "OpenAI 研究员 Noam Brown 与 Dwarkesh 深入讨论多智能体（agent swarms）如何改变能力边界。话题覆盖对齐（alignment）的现实挑战，以及递归自我改进（RSI）是否已近在眼前。对理解「智能体集群」叙事与安全研究交接面非常关键。适合作为近期实验室主题的主轴入口。",
+      "advice": "近期主题主轴，优先看；可与 RSI 辩论那期对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=6AgOfiZOWiY"
+        },
+        {
+          "label": "文稿",
+          "href": "https://www.dwarkesh.com/p/noam-brown"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "dwarkesh-rsi-debate-2026-09-11",
+      "title": "AI researchers debate RSI",
+      "guest": "John Schulman / Beren Millidge / Daniel O’Neill",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-11",
+      "duration": "~1h37m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "三位研究者就自动化 AI 研究与递归自我改进（RSI）的时间线展开辩论。分歧集中在：自动化科研已经多近、瓶颈在算法还是算力与评测。对照 Noam Brown 那期，能更清晰看到「乐观派」与「谨慎派」的论据结构。信息密度高，适合听完做笔记。",
+      "advice": "与 Noam Brown 那期对照看，抓时间线分歧。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=PrSf7IOYu-I"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "dwarkesh-ajeya-cotra-metr-2026-09-01",
+      "title": "Ajeya Cotra on METR, agents & alignment",
+      "guest": "Ajeya Cotra",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-01",
+      "duration": "~2h20m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "METR 视角下的 agent 能力评测、协作攻击场景与对齐警示。Cotra 从独立调查角度拆解「模型已经能做什么、还差什么」。长访谈但结构清晰，适合了解安全社区如何量化风险。建议分两段听，避免一次 overload。",
+      "advice": "长但信息密度高，可分两段听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=X50zezLFWWI"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "a16z-greg-brockman-agi-era-2026-09-14",
+      "title": "Entering the AGI Era",
+      "guest": "Greg Brockman",
+      "show": "a16z Podcast",
+      "date": "2026-09-14",
+      "duration": "时长未知",
+      "category": "创始人·CEO·产品",
+      "priority": "P0",
+      "summary": "OpenAI 总裁 Greg Brockman 阐述「进入 AGI 时代」的公司叙事：computer use、可长时间运行的 agent，以及万级 agent 协作想象。偏产品与能力路线图，而非纯安全辩论。是理解 OpenAI 对外口径的高效入口。听完可再补 No Priors 那期短补充。",
+      "advice": "OpenAI 官方叙事入口；P0 必看。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/greg-brockman-on-why-openai-says-were-entering-the-agi-era/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "allin-satya-nadella-2026-09-15",
+      "title": "Satya Nadella on AI, security & capital",
+      "guest": "Satya Nadella",
+      "show": "All-In Podcast",
+      "date": "2026-09-15",
+      "duration": "~37m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "微软 CEO 谈安全叙事、AI 资本开支与中美竞争格局。篇幅短、节奏快，适合把握大厂对外口径。可与同日 Elon / Gwynne 那期连看，对比两家对风险与基建的不同表述。",
+      "advice": "短、适合通勤；可与同日 All-In 连看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=hdcsTeCFE0I"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "allin-elon-gwynne-2026-09-15",
+      "title": "Elon Musk & Gwynne Shotwell",
+      "guest": "Elon Musk & Gwynne Shotwell",
+      "show": "All-In Podcast",
+      "date": "2026-09-15",
+      "duration": "~1h04m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "马斯克与 SpaceX 总裁谈 AI 风险、星链数据中心与 Terafab 等算力/基建想象。兼具产品野心与地缘/能源约束讨论。与同日 Nadella 访谈对照，能看到不同公司对「安全」与「扩张」的权重差异。",
+      "advice": "与 Nadella 同日 All-In，建议连看对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=iwBOQeFPAwg"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "lex-dhh-501-2026-08-26",
+      "title": "DHH on AI coding & agentic engineering (#501)",
+      "guest": "DHH (David Heinemeier Hansson)",
+      "show": "Lex Fridman Podcast",
+      "date": "2026-08-26",
+      "duration": "~5h22m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "超长对谈覆盖 AI 编程、agentic engineering、开源文化与产品哲学。DHH 对工具与工作流有鲜明立场，适合工程师听众挑章节听。不必一次听完，按目录跳到编程/agent 相关段落即可。",
+      "advice": "超长，按章节挑听 AI 编程与 agent 部分。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=OhIKTeftjdM"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "nopriors-misha-laskin-beam-2026-10-09",
+      "title": "Misha Laskin on Beam & open-source reasoning",
+      "guest": "Misha Laskin",
+      "show": "No Priors",
+      "date": "2026-10-09",
+      "duration": "~1h10m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Beam 视角下的开源推理模型、规模与开闭源竞争，以及中美生态差异。偏应用与模型产品一侧，补充实验室访谈之外的「开源阵营」声音。适合关心推理模型与开源战略的听众。",
+      "advice": "开源阵营视角，补齐闭源叙事之外的版图。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=up4sG9RM20M"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "a16z-beyond-god-model-2026-10-03",
+      "title": "Beyond the God Model",
+      "guest": "Alex Atallah & Amjad Masad",
+      "show": "a16z Podcast",
+      "date": "2026-10-03",
+      "duration": "时长未知",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "OpenRouter 与 Replit 创始人讨论「上帝模型」之后的世界：专用模型、路由层与企业自有 AI。偏应用层与开发者生态，帮助理解模型商品化后的价值落点。对做产品或基建路由的人很有参考。",
+      "advice": "应用层 / 路由生态必听，理解模型之后的产品面。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/beyond-the-god-model-alex-atallah-amjad-masad/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "dwarkesh-dylan-patel-2026-08-25",
+      "title": "Dylan Patel on compute through 2028",
+      "guest": "Dylan Patel",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-08-25",
+      "duration": "~1h17m",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "SemiAnalysis 视角拆解 Anthropic / OpenAI 等厂商到 2028 的算力需求与供应链约束。偏硬核基建与经济学，是理解「模型能力叙事」背后 capex 底盘的好材料。适合在听完实验室 P0 后再补。",
+      "advice": "基建与经济学底盘；有空再挖。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=aV26V1UvkJw"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "allin-ben-horowitz-293-2026-10-17",
+      "title": "Ben Horowitz on CoreWeave, AI trade & IPO narratives (#293)",
+      "guest": "Ben Horowitz",
+      "show": "All-In Podcast #293",
+      "date": "2026-10-17",
+      "duration": "~1h34m",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "最新一期市场侧对谈，涉及 CoreWeave、AI 贸易与 Anthropic IPO 等叙事。偏 VC / 资本市场温度，便于跟踪近期资金与情绪。不是技术深潜，但适合周末扫一眼行业风向。",
+      "advice": "最新一期市场侧，周末扫一眼即可。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=_b3LfMflIGs"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "dwarkesh-ryan-greenblatt-redwood-2026-08-11",
+      "title": "Ryan Greenblatt on RSI, alignment failure & automated R&D",
+      "guest": "Ryan Greenblatt",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-08-11",
+      "duration": "~2h12m",
+      "category": "实验室·安全·研究",
+      "priority": "P2",
+      "summary": "Redwood Research 视角讨论 RSI、对齐失败模式与自动化 R&D 时间线。偏安全研究深水区，论证细致，适合已经听过 Cotra / RSI 辩论后再深入。信息密度高，建议边听边记关键词。",
+      "advice": "偏安全研究深水区；听完 P0 后再挖。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=-RXD4bTuFTo"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "nopriors-greg-brockman-cyber-drug-2026-10-15",
+      "title": "The Changing Physics of Cybersecurity and Drug Development",
+      "guest": "Greg Brockman",
+      "show": "No Priors",
+      "date": "2026-10-15",
+      "duration": "~39m",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "Brockman 谈数学突破、药物发现、Dots 主动式 agent，以及网络安全「防御者窗口」。篇幅短，是 a16z「AGI Era」长叙事的补充切片。适合通勤补听，不必排在 P0 之前。",
+      "advice": "短补充；AGI Era 那集优先后再听。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/the-changing-physics-of-cybersecurity-and/id1668002688?i=1000796472163"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    },
+    {
+      "id": "a16z-david-george-jack-altman-2026-10-04",
+      "title": "AI autonomy and the next $25 trillion",
+      "guest": "David George & Jack Altman",
+      "show": "a16z Podcast",
+      "date": "2026-10-04",
+      "duration": "时长未知",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "a16z 视角讨论 AI 自主性与下一程增长空间。偏 VC 宏观框架，帮助把产品与实验室叙事放到资金与市场结构里。适合作为周末背景音，不必精读。",
+      "advice": "VC 宏观；有空当背景音即可。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/david-george-jack-altman-on-ai-autonomy-and-the-next-25-trillion/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "watched": false
+    }
+  ]
+}

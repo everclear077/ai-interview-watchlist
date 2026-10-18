@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI / 科技访谈观看列表" />
+  <title>AI / 科技访谈 · 观看列表</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <h1 id="site-title">AI / 科技访谈 · 观看列表</h1>
+      <p class="meta" id="site-meta"></p>
+    </div>
+    <p class="stats" id="stats"></p>
+  </header>
+
+  <section class="filters" aria-label="筛选">
+    <div class="filter-group">
+      <span class="filter-label">分类</span>
+      <div class="chips" id="category-filters"></div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">优先级</span>
+      <div class="chips" id="priority-filters"></div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">状态</span>
+      <div class="chips" id="watched-filters">
+        <button type="button" class="chip active" data-watched="all">全部</button>
+        <button type="button" class="chip" data-watched="unwatched">待看</button>
+        <button type="button" class="chip" data-watched="watched">已看</button>
+      </div>
+    </div>
+    <div class="filter-actions">
+      <button type="button" class="btn-clear" id="clear-filters">清除筛选</button>
+    </div>
+  </section>
+
+  <div id="error" class="error" hidden></div>
+  <div id="loading" class="loading">加载中…</div>
+  <main id="list" class="list" hidden></main>
+
+  <footer class="site-footer">
+    <p>数据来自 <code>data.json</code> · 「已看」状态仅保存在本机浏览器</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
