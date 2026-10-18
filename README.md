@@ -1,6 +1,6 @@
 # AI / 科技访谈 · 观看列表
 
-纯静态站点：浏览 / 筛选 AI 与科技访谈清单。在线地址：
+纯静态站点（**skin = midnight**：graphite + muted gold）。在线地址（GitHub Pages）：
 
 **https://everclear077.github.io/ai-interview-watchlist/**
 
@@ -16,34 +16,25 @@ python3 -m http.server 8080
 
 ## 功能
 
-- 按分类、优先级筛选；清除筛选
+- 按分类、优先级筛选；清除筛选；搜索
 - 默认排序：优先级（P0→P2）再按日期（新→旧）
-- 「已看」勾选：仅写入浏览器 `localStorage`（键 `watchlist-watched-v1`），不写回 `data.json`
+- 「已看」勾选：仅写入浏览器 `localStorage`（键 **`ai-interviews-watched-v1`**），不写回 `data.json`
 - 状态筛选：全部 / 待看 / 已看
+- 封面：优先 `coverDataUri`，否则相对路径 `cover`（如 `thumbs/...`）
 
 ## 刷新数据
 
 权威数据源（只读）：
 
 ```
-/cursor/stores/store-e433f652-c028-4750-8952-bc438657b43c/watchlists/data.json
+/cursor/stores/store-e433f652-c028-4750-8952-bc438657b43c/watchlists/
 ```
 
-同步到本仓库并上线：
+同步 `data.json` + `thumbs/` 到本仓库并上线：
 
 ```bash
-cp /cursor/stores/store-e433f652-c028-4750-8952-bc438657b43c/watchlists/data.json \
-   /path/to/ai-interview-watchlist/data.json
-cd /path/to/ai-interview-watchlist
-git add data.json
-git commit -m "chore: refresh watchlist data"
-git push origin main
-```
-
-或使用仓库内脚本（在能访问该 store 路径的环境中）：
-
-```bash
-./scripts/sync-data.sh
+./scripts/sync-data.sh          # copy only
+./scripts/sync-data.sh --push   # copy, commit, push (when remote exists)
 ```
 
 推送后 GitHub Pages 通常 1–2 分钟内更新。
@@ -52,7 +43,7 @@ git push origin main
 
 | 文件 | 说明 |
 |------|------|
-| `index.html` | 页面结构 |
-| `styles.css` | 样式 |
-| `app.js` | 筛选 / 排序 / 已看状态 |
-| `data.json` | 列表数据（运行时 `fetch`） |
+| `index.html` | 自包含 midnight UI（CSS + JS）；运行时 `fetch("./data.json")` |
+| `data.json` | 列表数据（含 cover / coverDataUri） |
+| `thumbs/` | 封面缩略图（`cover` 相对路径回退） |
+| `scripts/sync-data.sh` | 从 store 同步 data.json + thumbs/ |
