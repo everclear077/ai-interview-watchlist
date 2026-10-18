@@ -1,0 +1,119 @@
+{
+  "updatedAt": "2026-10-18",
+  "minDurationMinutes": 30,
+  "scanWindowDays": 30,
+  "creators": [
+    {
+      "id": "zhangxiaojun",
+      "name": "张小珺商业访谈录",
+      "bilibiliMid": 280780745,
+      "spaceUrl": "https://space.bilibili.com/280780745",
+      "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
+      "enabled": true
+    },
+    {
+      "id": "sv101",
+      "name": "硅谷101",
+      "bilibiliMid": 508452265,
+      "spaceUrl": "https://space.bilibili.com/508452265",
+      "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
+      "enabled": true
+    },
+    {
+      "id": "sv101-podcast",
+      "name": "硅谷101播客",
+      "bilibiliMid": 3546860354538082,
+      "spaceUrl": "https://space.bilibili.com/3546860354538082",
+      "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
+      "enabled": true
+    },
+    {
+      "id": "jiqizhixin",
+      "name": "机器之心官方",
+      "bilibiliMid": 73414544,
+      "spaceUrl": "https://space.bilibili.com/73414544",
+      "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
+      "enabled": true
+    },
+    {
+      "id": "geekpark",
+      "name": "极客公园",
+      "bilibiliMid": 13260662,
+      "spaceUrl": "https://space.bilibili.com/13260662",
+      "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
+      "enabled": true
+    },
+    {
+      "id": "latepost",
+      "name": "晚点LatePost",
+      "bilibiliMid": 478559884,
+      "spaceUrl": "https://space.bilibili.com/478559884",
+      "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
+      "enabled": true
+    },
+    {
+      "id": "late-talk",
+      "name": "晚点聊LateTalk",
+      "bilibiliMid": 3546915742419882,
+      "spaceUrl": "https://space.bilibili.com/3546915742419882",
+      "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
+      "enabled": true
+    },
+    {
+      "id": "liziran",
+      "name": "李自然说",
+      "bilibiliMid": 39089748,
+      "spaceUrl": "https://space.bilibili.com/39089748",
+      "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
+      "enabled": true
+    }
+  ],
+  "candidates": [],
+  "firstPassScan": {
+    "scannedAt": "2026-10-18",
+    "windowApprox": "2026-09-18 .. 2026-10-18",
+    "method": "Bilibili search UI + view/card API（space arc/search 被 -799/412 限流）",
+    "addedToWatchlist": [
+      "zhangxiaojun-lindon-gao-dyna-2026-10-14",
+      "sv101-zhangkuo-accio-2026-10-08",
+      "late-liangchenqi-2026-09-30",
+      "late-ai-q3-henry-2026-10-08"
+    ],
+    "skipped": [
+      {
+        "title": "美光崛起背后…【硅谷101】",
+        "bvid": "BV1LLJQ6XEA8",
+        "reason": "叙事专题非嘉宾对谈"
+      },
+      {
+        "title": "特斯拉FSD十三年…【硅谷101】",
+        "bvid": "BV1ECaq6nEJn",
+        "reason": "专题报道非嘉宾对谈"
+      },
+      {
+        "title": "具身智能的金钱游戏【晚点聊】",
+        "bvid": "BV17MtZ6wEiL",
+        "reason": "主创讨论自家稿件，非嘉宾访谈"
+      },
+      {
+        "title": "和曾鸣聊产业史观",
+        "bvid": "BV1XNtJ6UEmm",
+        "reason": "已在 data.json"
+      },
+      {
+        "title": "对话盛颖…SGLang",
+        "bvid": "BV1GaM968E6T",
+        "reason": "已在 data.json；且略早于窗口"
+      },
+      {
+        "title": "李自然说 TEDx AI",
+        "bvid": "BV1Eop96VEg9",
+        "reason": "单口演讲非访谈"
+      },
+      {
+        "title": "机器之心/极客公园近窗条目",
+        "reason": "近窗几乎全是 <30min 短讯/切片"
+      }
+    ]
+  }
+}
