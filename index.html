@@ -55,14 +55,40 @@
   .search .icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--faint); }
   .search input { width:100%; background:var(--surface); border:1px solid var(--line); border-radius:8px; color:var(--ink); padding:8px 12px 8px 34px; font-size:0.86rem; font-family:inherit; outline:none; }
   .search input:focus { border-color:var(--accent-line); box-shadow:0 0 0 3px var(--accent-soft); }
-  .suggest { margin-top:32px; }
   .section-label { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:0 0 14px; }
   .section-label h2 { margin:0; font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--faint); }
   .section-label .hint,.list-head .count { font-size:0.75rem; color:var(--faint); }
-  .suggest-empty { color:var(--muted); font-size:0.9rem; padding:20px 18px; border:1px dashed var(--line-strong); border-radius:var(--radius); }
-  .suggest-list { display:grid; gap:10px; }
-  .suggest-list .card { border:1px solid var(--accent-line); border-radius:var(--radius); background:linear-gradient(180deg,#1e1c18 0%,var(--surface) 100%); box-shadow:var(--shadow); }
-  .list-head { margin:40px 0 14px; }
+  .today-rail {
+    margin: 14px 0 0;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;
+    padding: 8px 12px;
+    border: 1px solid var(--accent-line);
+    background: var(--accent-soft);
+    border-radius: 10px;
+  }
+  .today-rail[hidden] { display: none !important; }
+  .today-badge {
+    flex: 0 0 auto;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1a1612; background: var(--accent);
+    padding: 3px 8px; border-radius: 999px;
+  }
+  .today-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 auto; min-width: 0; }
+  .today-chip {
+    appearance: none; cursor: pointer; font-family: inherit;
+    display: inline-flex; align-items: baseline; gap: 6px; max-width: 100%;
+    padding: 5px 10px; border-radius: 999px;
+    border: 1px solid var(--accent-line); background: var(--surface);
+    color: var(--ink-soft); font-size: 0.78rem; text-align: left;
+  }
+  .today-chip:hover { border-color: var(--accent); color: var(--ink); }
+  .today-chip .pri { font-family: var(--mono); font-size: 0.65rem; font-weight: 600; color: var(--accent); }
+  .today-chip .t { font-weight: 550; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 28ch; }
+  .today-chip .g { color: var(--faint); font-size: 0.72rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 14ch; }
+  .today-rail .hint { font-size: 0.72rem; color: var(--faint); margin-left: auto; }
+  .card.today-target { outline: 1px solid var(--accent-line); background: #1e1c18; }
+  .list-head { margin: 28px 0 14px; }
   .cards { display:grid; gap:0; border:1px solid var(--line); border-radius:12px; background:var(--surface); overflow:hidden; }
   .card { border-bottom:1px solid var(--line); }
   .cards > .card:last-child { border-bottom:none; }
@@ -96,21 +122,6 @@
   footer .actions { margin-top:12px; display:flex; flex-wrap:wrap; gap:8px; }
   footer button { appearance:none; border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:7px; padding:6px 11px; font-size:0.75rem; font-weight:500; cursor:pointer; font-family:inherit; }
   footer button:hover { color:var(--ink); border-color:var(--line-strong); }
-  .style-switch a.active { background:var(--accent) !important; color:#1a1612 !important; border-color:var(--accent) !important; }
-
-  .style-switch {
-    display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 0;
-  }
-  .style-switch a {
-    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em;
-    padding: 5px 10px; border-radius: 999px;
-    border: 1px solid var(--line); color: var(--muted);
-    text-decoration: none !important; background: var(--surface);
-  }
-  .style-switch a:hover { color: var(--ink); border-color: var(--line-strong); }
-  .style-switch a.active {
-    background: var(--ink); color: var(--paper); border-color: var(--ink);
-  }
 
   .card {
     display: grid;
@@ -172,13 +183,6 @@
   </header>
 
   <main class="shell">
-    <nav class="style-switch" aria-label="界面风格">
-      <a href="index-warm.html">Warm Paper</a>
-      <a href="index-ink.html">Ink Editorial</a>
-      <a href="index-midnight.html" class="active">Midnight</a>
-      <a href="index-studio.html">Studio</a>
-    </nav>
-
     <section class="toolbar" aria-label="筛选">
       <div class="seg" id="cat-tabs" role="tablist"></div>
       <div class="row2">
@@ -199,12 +203,10 @@
       </div>
     </section>
 
-    <section class="suggest" id="suggest-section">
-      <div class="section-label">
-        <h2>建议今天看</h2>
-        <span class="hint">未看完的 P0 · 最多 2 条</span>
-      </div>
-      <div id="suggest" class="suggest-list"></div>
+    <section class="today-rail" id="suggest-section" aria-label="今日建议">
+      <span class="today-badge">今日</span>
+      <div id="suggest" class="today-chips"></div>
+      <span class="hint">未看 P0 · 点选跳转</span>
     </section>
 
     <div class="list-head section-label">
@@ -228,7 +230,7 @@
   (function () {
     const LS_KEY = "ai-interviews-watched-v1";
 
-    // Lean deploy: data loaded via fetch("./data.json"); no embedded blob.
+    
     const EMBEDDED_DATA = null;
 
     const state = {
@@ -239,6 +241,7 @@
       onlyUnwatched: false,
       query: ""
     };
+
 
     function todayISO() {
       try {
@@ -370,16 +373,40 @@
       );
     }
 
-    function renderSuggest() {
-      const el = document.getElementById("suggest");
-      const picks = sortItems(state.data.items)
+    function todayPicks() {
+      return sortItems(state.data.items)
         .filter(function (it) { return it.priority === "P0" && !isWatched(it.id); })
         .slice(0, 2);
+    }
+
+    function renderSuggest() {
+      const section = document.getElementById("suggest-section");
+      const el = document.getElementById("suggest");
+      if (!section || !el) return;
+      const picks = todayPicks();
       if (!picks.length) {
-        el.innerHTML = '<div class="suggest-empty">P0 已全部看完 — 真棒。可以去刷 P1，或等日更。</div>';
+        section.hidden = true;
+        el.innerHTML = "";
         return;
       }
-      el.innerHTML = picks.map(function (it) { return cardHtml(it, { suggest: true }); }).join("");
+      section.hidden = false;
+      el.innerHTML = picks.map(function (it) {
+        return '<button type="button" class="today-chip" data-jump="' + escapeHtml(it.id) + '" title="' +
+          escapeHtml(it.title) + ' · ' + escapeHtml(it.guest) + '">' +
+          '<span class="pri">P0</span>' +
+          '<span class="t">' + escapeHtml(it.title) + '</span>' +
+          '<span class="g">' + escapeHtml(it.guest) + '</span>' +
+          '</button>';
+      }).join("");
+    }
+
+    function jumpToCard(id) {
+      const card = document.querySelector('.card[data-id="' + id.replace(/"/g, '\"') + '"]');
+      if (!card) return;
+      document.querySelectorAll(".card.today-target").forEach(function (c) { c.classList.remove("today-target"); });
+      card.classList.add("today-target");
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+      setTimeout(function () { card.classList.remove("today-target"); }, 2200);
     }
 
     function renderCards() {
@@ -390,7 +417,11 @@
         box.innerHTML = '<div class="empty">没有匹配的访谈。试试清除筛选或搜索词。</div>';
         return;
       }
-      box.innerHTML = filtered.map(function (it) { return cardHtml(it); }).join("");
+      const suggestIds = {};
+      todayPicks().forEach(function (it) { suggestIds[it.id] = true; });
+      box.innerHTML = filtered.map(function (it) {
+        return cardHtml(it, { suggest: !!suggestIds[it.id] });
+      }).join("");
     }
 
     function renderAll() {
@@ -443,6 +474,12 @@
         if (t && t.matches("input[data-check]")) {
           setWatched(t.getAttribute("data-check"), t.checked);
         }
+      });
+
+      document.body.addEventListener("click", function (e) {
+        const btn = e.target.closest("[data-jump]");
+        if (!btn) return;
+        jumpToCard(btn.getAttribute("data-jump"));
       });
 
       document.getElementById("btn-export").addEventListener("click", function () {
