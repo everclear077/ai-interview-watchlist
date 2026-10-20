@@ -5,6 +5,8 @@
   var LS_AUDIO = "ai-interviews-audio-pos-v1";
   var SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
   var DEFAULT_DISCLAIMER = "中文精读由 AI 基于原始访谈改写，非官方翻译，可能存在偏差或错误；表述以原音视频为准。";
+  var DEFAULT_ANALYSIS_DISCLAIMER = "AI 详细解读，非官方；请以原音视频为准";
+  var DEFAULT_TRANSCRIPT_DISCLAIMER = "完整文稿可能含 ASR/整理误差；说话人标注以可辨认发言为准";
 
   var W = window.WL;
   if (!W) {
@@ -288,85 +290,119 @@
     }
   }
 
-  function defaultTab(it) {
-    if (W.hasEssay(it)) return "essay";
-    if (W.hasTranscript(it)) return "brief";
-    return "brief";
-  }
-
-  function tocHtml(headings, cls) {
+  function tocHtml(headings, cls, epId) {
     if (!headings || !headings.length) return "";
     var itemsHtml = headings.map(function (h) {
-      return '<li data-level="' + h.level + '"><a href="#' + W.escapeHtml(h.id) + '">' +
-        W.escapeHtml(h.text) + "</a></li>";
+      return '<li data-level="' + h.level + '"><a href="' + W.escapeHtml(W.tocHref(epId, h.id)) +
+        '" data-toc-target="' + W.escapeHtml(h.id) + '">' + W.escapeHtml(h.text) + "</a></li>";
     }).join("");
     return '<nav class="toc ' + (cls || "") + '" aria-label="目录"><h2>目录</h2><ol>' + itemsHtml + "</ol></nav>";
   }
 
+  function scrollToHeading(id) {
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function paneTabBtn(id, label) {
+    return '<button type="button" class="pane-tab' + (state.tab === id ? " active" : "") +
+      '" data-tab="' + id + '">' + label + "</button>";
+  }
+
   function normalizeTab(it) {
-    var essayOn = W.hasEssay(it);
-    var transOn = W.hasTranscript(it);
-    if (state.tab !== "essay" && state.tab !== "transcript" && state.tab !== "brief") {
-      state.tab = defaultTab(it);
+    var avail = W.availableTabs(it);
+    if (avail.indexOf(state.tab) === -1) state.tab = W.defaultTab(it);
+  }
+
+  function paneWordLabel(it) {
+    if (state.tab === "essay" && it.essay && it.essay.wordCount) {
+      return "精读约 " + it.essay.wordCount + " 字";
     }
-    if (state.tab === "essay" && !essayOn) state.tab = defaultTab(it);
-    if (state.tab === "transcript" && !transOn) state.tab = defaultTab(it);
-    if (state.tab === "brief" && essayOn) state.tab = "essay";
+    if (state.tab === "analysis" && it.analysis && it.analysis.wordCount) {
+      return "解读约 " + it.analysis.wordCount + " 字";
+    }
+    if (W.hasEssay(it) && it.essay.wordCount) return "精读约 " + it.essay.wordCount + " 字";
+    if (W.hasAnalysis(it) && it.analysis.wordCount) return "解读约 " + it.analysis.wordCount + " 字";
+    return "";
+  }
+
+  function currentTabMarkdown(it) {
+    if (state.tab === "essay" && W.hasEssay(it)) return it.essay.zh;
+    if (state.tab === "analysis" && W.hasAnalysis(it)) return it.analysis.zh;
+    if (state.tab === "transcript" && W.hasTranscript(it)) return W.transcriptMarkdown(it);
+    return "";
   }
 
   function episodePanes(it) {
     var essayOn = W.hasEssay(it);
+    var analysisOn = W.hasAnalysis(it);
     var transOn = W.hasTranscript(it);
     var media = W.detectMedia(it);
     var hasMedia = !!(media.primary || W.hasAudio(it));
-    var rendered = essayOn ? W.renderEssay(it.essay.zh) : { html: "", headings: [] };
-    var transHtml = transOn ? W.renderTranscript(it.transcript.en) : "";
-    var disc = essayOn ? (W.textOf(it.essay.disclaimer) || DEFAULT_DISCLAIMER) : "";
-    var showTabs = essayOn || transOn;
+    var essayRendered = essayOn ? W.renderEssay(it.essay.zh) : { html: "", headings: [] };
+    var analysisRendered = analysisOn ? W.renderEssay(it.analysis.zh) : { html: "", headings: [] };
+    var transHtml = transOn ? W.renderTranscript(it) : "";
+    var essayHtml = essayOn
+      ? W.weaveEvidence(essayRendered.html, essayRendered.headings, it.evidence)
+      : "";
+    var analysisHtml = analysisOn
+      ? W.weaveEvidence(analysisRendered.html, analysisRendered.headings, it.evidence)
+      : "";
+    var activeHeadings = [];
+    if (state.tab === "essay") activeHeadings = essayRendered.headings;
+    else if (state.tab === "analysis") activeHeadings = analysisRendered.headings;
+    var showToc = (state.tab === "essay" || state.tab === "analysis") && activeHeadings.length > 0;
+    var canCopy = !!(currentTabMarkdown(it));
+    var showTabs = essayOn || analysisOn || transOn;
     var tabs = "";
     if (showTabs) {
       tabs =
         '<div class="tab-row' + (hasMedia ? "" : " no-media") + '" id="tab-row">' +
-          (essayOn
-            ? '<button type="button" class="pane-tab' + (state.tab === "essay" ? " active" : "") + '" data-tab="essay">中文精读</button>'
-            : '<button type="button" class="pane-tab' + (state.tab === "brief" ? " active" : "") + '" data-tab="brief">简介</button>') +
-          (transOn
-            ? '<button type="button" class="pane-tab' + (state.tab === "transcript" ? " active" : "") + '" data-tab="transcript">英文文稿</button>'
-            : "") +
+          (essayOn ? paneTabBtn("essay", "中文精读") : "") +
+          (analysisOn ? paneTabBtn("analysis", "详细解读") : "") +
+          (transOn ? paneTabBtn("transcript", "完整文稿") : "") +
           '<div class="tools">' +
-            (essayOn && rendered.headings.length && state.tab === "essay"
-              ? '<button type="button" class="toc-toggle" data-toc-toggle>目录</button>'
-              : "") +
-            (essayOn && state.tab === "essay"
-              ? '<button type="button" data-copy-md>复制 Markdown</button>'
-              : "") +
+            (showToc ? '<button type="button" class="toc-toggle" data-toc-toggle>目录</button>' : "") +
+            (canCopy ? '<button type="button" data-copy-md>复制 Markdown</button>' : "") +
           "</div></div>";
     }
     var body = "";
     if (state.tab === "essay" && essayOn) {
+      var disc = W.textOf(it.essay.disclaimer) || DEFAULT_DISCLAIMER;
       body =
         (disc ? '<div class="disclaimer">' + W.escapeHtml(disc) + "</div>" : "") +
         (it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "") +
-        rendered.html;
+        essayHtml;
+    } else if (state.tab === "analysis" && analysisOn) {
+      var adisc = W.textOf(it.analysis.disclaimer) || DEFAULT_ANALYSIS_DISCLAIMER;
+      body =
+        (adisc ? '<div class="disclaimer">' + W.escapeHtml(adisc) + "</div>" : "") +
+        analysisHtml;
     } else if (state.tab === "transcript" && transOn) {
-      var srcLabel = it.transcript.source && it.transcript.source !== "none"
-        ? '<div class="disclaimer">文稿来源：' + W.escapeHtml(it.transcript.source) + "</div>"
+      var tdisc = W.textOf(it.transcript.disclaimer) || DEFAULT_TRANSCRIPT_DISCLAIMER;
+      var src = it.transcript.source && it.transcript.source !== "none"
+        ? "文稿来源：" + it.transcript.source
         : "";
-      body = srcLabel + '<div class="transcript">' + transHtml + "</div>";
+      body =
+        '<div class="disclaimer">' + W.escapeHtml(tdisc) +
+          (src ? "<br />" + W.escapeHtml(src) : "") +
+        "</div>" +
+        '<div class="transcript">' + transHtml + "</div>";
     } else {
       body = it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "";
     }
-    var showToc = essayOn && state.tab === "essay" && rendered.headings.length;
+    var serif = state.tab === "essay" || state.tab === "analysis";
     var layout =
       '<div class="ep-layout" id="ep-layout">' +
-        '<div class="reading' + (state.tab === "essay" ? " serif" : "") + '" id="reading">' +
+        '<div class="reading' + (serif ? " serif" : "") + '" id="reading">' +
           (showToc ? '<div class="toc-panel' + (state.tocOpen ? " open" : "") + '" id="toc-panel">' +
-            tocHtml(rendered.headings) + "</div>" : "") +
+            tocHtml(activeHeadings, "", it.id) + "</div>" : "") +
           body +
         "</div>" +
-        (showToc ? tocHtml(rendered.headings, "desktop") : "") +
+        (showToc ? tocHtml(activeHeadings, "desktop", it.id) : "") +
       "</div>";
-    return { tabs: tabs, layout: layout, word: essayOn && it.essay.wordCount ? "精读约 " + it.essay.wordCount + " 字" : "" };
+    return { tabs: tabs, layout: layout, word: paneWordLabel(it) };
   }
 
   function updateEpisodeBody() {
@@ -392,6 +428,7 @@
 
     var media = W.detectMedia(it);
     var essayOn = W.hasEssay(it);
+    var analysisOn = W.hasAnalysis(it);
     var transOn = W.hasTranscript(it);
     var audioOn = W.hasAudio(it);
     var cover = coverSrc(it);
@@ -507,7 +544,8 @@
     ];
     if (word) facts.push(W.escapeHtml(word));
     if (essayOn) facts.push("中文精读");
-    if (transOn) facts.push("英文文稿");
+    if (analysisOn) facts.push("详细解读");
+    if (transOn) facts.push("完整文稿");
 
     view.innerHTML =
       '<article class="ep">' +
@@ -662,6 +700,9 @@
     }
     if (state.route.name === "ep") {
       renderEpisode(findItem(state.route.id));
+      if (state.route.heading) {
+        requestAnimationFrame(function () { scrollToHeading(state.route.heading); });
+      }
     } else {
       document.title = state.data.title || "AI / 科技访谈 · 观看列表";
       renderList();
@@ -676,13 +717,20 @@
       state.videoOpen = false;
       state.tocOpen = false;
       var it = next.name === "ep" ? findItem(next.id) : null;
-      state.tab = it ? defaultTab(it) : "essay";
+      state.tab = it ? W.defaultTab(it) : "essay";
       window.scrollTo(0, 0);
     }
     render();
   }
 
   function bindGlobal() {
+    document.body.addEventListener("error", function (e) {
+      var img = e.target;
+      if (img && img.tagName === "IMG" && img.closest && img.closest("figure.evidence")) {
+        img.closest("figure.evidence").classList.add("broken");
+      }
+    }, true);
+
     document.body.addEventListener("change", function (e) {
       var t = e.target;
       if (t && t.matches("input[data-check]")) {
@@ -719,6 +767,13 @@
         updateEpisodeBody();
         return;
       }
+      var tocLink = e.target.closest("[data-toc-target]");
+      if (tocLink) {
+        e.preventDefault();
+        e.stopPropagation();
+        scrollToHeading(tocLink.getAttribute("data-toc-target"));
+        return;
+      }
       if (e.target.closest("[data-toc-toggle]")) {
         state.tocOpen = !state.tocOpen;
         var panel = document.getElementById("toc-panel");
@@ -727,8 +782,9 @@
       }
       if (e.target.closest("[data-copy-md]")) {
         var it = findItem(state.route.id);
-        if (!it || !W.hasEssay(it)) return;
-        var md = W.looksLikeHtml(it.essay.zh) ? it.essay.zh : it.essay.zh;
+        if (!it) return;
+        var md = currentTabMarkdown(it);
+        if (!md) return;
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(md).then(function () {
             e.target.closest("[data-copy-md]").textContent = "已复制";
