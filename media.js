@@ -1,4 +1,5 @@
-/* Shared helpers: routing, embeds, markdown, Phase 2/3 field detection.
+/* Shared helpers: routing, embeds, markdown, Phase 2/3 field detection
+   (essay.zh / analysis.zh / transcript.md|turns|en).
    Works in the browser (window.WL) and in Node (module.exports). */
 (function (root, factory) {
   var api = factory();
@@ -23,12 +24,76 @@
     return !!(it && it.essay && textOf(it.essay.zh));
   }
 
+  function hasAnalysis(it) {
+    return !!(it && it.analysis && textOf(it.analysis.zh));
+  }
+
+  function turnText(seg) {
+    if (seg == null) return "";
+    if (typeof seg === "string") return textOf(seg);
+    return textOf(seg.text || seg.body || "");
+  }
+
+  function turnsHaveText(turns) {
+    if (!Array.isArray(turns)) return false;
+    for (var i = 0; i < turns.length; i++) {
+      if (turnText(turns[i])) return true;
+    }
+    return false;
+  }
+
   function hasTranscript(it) {
     if (!it || !it.transcript) return false;
-    var en = it.transcript.en;
+    var t = it.transcript;
+    if (textOf(t.md)) return true;
+    if (turnsHaveText(t.turns)) return true;
+    var en = t.en;
     if (typeof en === "string") return !!textOf(en);
     if (Array.isArray(en)) return en.length > 0;
     return false;
+  }
+
+  function availableTabs(it) {
+    var tabs = [];
+    if (hasEssay(it)) tabs.push("essay");
+    if (hasAnalysis(it)) tabs.push("analysis");
+    if (hasTranscript(it)) tabs.push("transcript");
+    return tabs;
+  }
+
+  function defaultTab(it) {
+    var tabs = availableTabs(it);
+    if (tabs.indexOf("essay") !== -1) return "essay";
+    return tabs[0] || "essay";
+  }
+
+  function turnsToMarkdown(turns) {
+    if (!Array.isArray(turns)) return "";
+    var parts = [];
+    for (var i = 0; i < turns.length; i++) {
+      var seg = turns[i];
+      if (seg == null) continue;
+      if (typeof seg === "string") {
+        if (textOf(seg)) parts.push(seg);
+        continue;
+      }
+      var who = textOf(seg.speaker || seg.name);
+      var body = turnText(seg);
+      if (!who && !body) continue;
+      parts.push(who ? ("**" + who + "：** " + body) : body);
+    }
+    return parts.join("\n\n");
+  }
+
+  function transcriptMarkdown(it) {
+    var t = it && it.transcript ? it.transcript : it;
+    if (!t || typeof t !== "object" || Array.isArray(t)) return "";
+    if (textOf(t.md)) return t.md;
+    var fromTurns = turnsToMarkdown(t.turns);
+    if (fromTurns) return fromTurns;
+    if (typeof t.en === "string") return t.en;
+    if (Array.isArray(t.en)) return turnsToMarkdown(t.en);
+    return "";
   }
 
   function audioUrlOf(it) {
@@ -40,24 +105,47 @@
     return !!audioUrlOf(it);
   }
 
+  function parseHashQuery(h) {
+    var qIndex = h.indexOf("?");
+    if (qIndex === -1) return { path: h, heading: "" };
+    var query = h.slice(qIndex + 1);
+    var heading = "";
+    query.split("&").forEach(function (pair) {
+      var eq = pair.indexOf("=");
+      var key = eq === -1 ? pair : pair.slice(0, eq);
+      var val = eq === -1 ? "" : pair.slice(eq + 1);
+      if (key === "h" && val) {
+        try { heading = decodeURIComponent(val); }
+        catch (e) { heading = val; }
+      }
+    });
+    return { path: h.slice(0, qIndex), heading: heading };
+  }
+
   function parseRoute(hash) {
     var h = String(hash == null ? "" : hash).replace(/^#/, "").replace(/^\//, "");
-    var parts = h.split("/").filter(Boolean);
+    var parsed = parseHashQuery(h);
+    var parts = parsed.path.split("/").filter(Boolean);
     if (parts[0] === "ep" && parts[1]) {
-      try {
-        return { name: "ep", id: decodeURIComponent(parts[1]) };
-      } catch (e) {
-        return { name: "ep", id: parts[1] };
-      }
+      var id;
+      try { id = decodeURIComponent(parts[1]); }
+      catch (e) { id = parts[1]; }
+      return { name: "ep", id: id, heading: parsed.heading || "" };
     }
-    return { name: "list" };
+    return { name: "list", heading: "" };
   }
 
   function hashFor(route) {
     if (route && route.name === "ep" && route.id) {
-      return "#/ep/" + encodeURIComponent(route.id);
+      var base = "#/ep/" + encodeURIComponent(route.id);
+      if (route.heading) return base + "?h=" + encodeURIComponent(route.heading);
+      return base;
     }
     return "#/";
+  }
+
+  function tocHref(epId, headingId) {
+    return hashFor({ name: "ep", id: epId, heading: headingId || "" });
   }
 
   function parseYouTubeId(href) {
@@ -315,37 +403,111 @@
     return renderMarkdown(zh);
   }
 
-  function renderTranscript(en) {
-    if (typeof en === "string") {
-      if (!textOf(en)) return "";
-      if (looksLikeHtml(en)) return renderHtmlEssay(en).html;
-      return renderMarkdown(en).html;
-    }
-    if (Array.isArray(en)) {
-      return en.map(function (seg) {
-        if (!seg) return "";
-        if (typeof seg === "string") return "<p>" + inlineMd(seg) + "</p>";
-        var who = textOf(seg.speaker || seg.name);
-        var body = textOf(seg.text || seg.body || "");
-        var t = textOf(seg.t || seg.time || "");
-        var head = who
-          ? "<span class='who'>" + escapeHtml(who) + (t ? " <span class='t'>" + escapeHtml(t) + "</span>" : "") + "</span>"
-          : "";
-        return "<p class='cue'>" + head + inlineMd(body) + "</p>";
-      }).join("\n");
-    }
-    return "";
+  function evidenceList(it) {
+    if (!it || !Array.isArray(it.evidence)) return [];
+    return it.evidence.filter(function (ev) { return ev && textOf(ev.src); });
+  }
+
+  function hasEvidence(it) {
+    return evidenceList(it).length > 0;
+  }
+
+  function evidenceFigure(ev) {
+    if (!ev || !textOf(ev.src)) return "";
+    var cap = textOf(ev.caption);
+    var t = textOf(ev.t);
+    var alt = cap || t || "出处截图";
+    return '<figure class="evidence">' +
+      '<img src="' + escapeHtml(textOf(ev.src)) + '" alt="' + escapeHtml(alt) + '" loading="lazy" />' +
+      ((t || cap)
+        ? '<figcaption>' +
+            (t ? "<time>" + escapeHtml(t) + "</time>" : "") +
+            (cap ? '<span class="cap">' + escapeHtml(cap) + "</span>" : "") +
+          "</figcaption>"
+        : "") +
+    "</figure>";
+  }
+
+  function evidenceBlock(items) {
+    if (!items || !items.length) return "";
+    return '<aside class="evidence-block" aria-label="出处">' +
+      '<h2 class="evidence-heading">出处</h2>' +
+      items.map(evidenceFigure).join("") +
+    "</aside>";
+  }
+
+  function insertAfterHeading(html, headingId, snippet) {
+    var needle = 'id="' + headingId + '"';
+    var idAt = html.indexOf(needle);
+    if (idAt === -1) return null;
+    var close = html.indexOf("</h", idAt);
+    if (close === -1) return null;
+    var end = html.indexOf(">", close);
+    if (end === -1) return null;
+    return html.slice(0, end + 1) + "\n" + snippet + html.slice(end + 1);
+  }
+
+  function weaveEvidence(html, headings, evidence) {
+    var list = (evidence || []).filter(function (ev) { return ev && textOf(ev.src); });
+    if (!list.length) return html || "";
+    var heads = headings || [];
+    var used = {};
+    var out = html || "";
+    list.forEach(function (ev, idx) {
+      var section = textOf(ev.section);
+      if (!section) return;
+      var hit = null;
+      for (var i = 0; i < heads.length; i++) {
+        if (heads[i].text === section || heads[i].id === section) {
+          hit = heads[i];
+          break;
+        }
+      }
+      if (!hit) return;
+      var next = insertAfterHeading(out, hit.id, evidenceFigure(ev));
+      if (next != null) {
+        out = next;
+        used[idx] = true;
+      }
+    });
+    var rest = list.filter(function (_, idx) { return !used[idx]; });
+    if (rest.length) out += evidenceBlock(rest);
+    return out;
+  }
+
+  function renderTranscriptBody(md) {
+    if (!textOf(md)) return "";
+    if (looksLikeHtml(md)) return renderHtmlEssay(md).html;
+    return renderMarkdown(md).html;
+  }
+
+  /* Accepts an item, a transcript object, a markdown/HTML string, or turns[]. */
+  function renderTranscript(input) {
+    if (typeof input === "string") return renderTranscriptBody(input);
+    if (Array.isArray(input)) return renderTranscriptBody(turnsToMarkdown(input));
+    var md = transcriptMarkdown(input);
+    return renderTranscriptBody(md);
   }
 
   return {
     escapeHtml: escapeHtml,
     textOf: textOf,
     hasEssay: hasEssay,
+    hasAnalysis: hasAnalysis,
     hasTranscript: hasTranscript,
     hasAudio: hasAudio,
+    hasEvidence: hasEvidence,
     audioUrlOf: audioUrlOf,
+    availableTabs: availableTabs,
+    defaultTab: defaultTab,
+    turnsToMarkdown: turnsToMarkdown,
+    transcriptMarkdown: transcriptMarkdown,
+    evidenceList: evidenceList,
+    evidenceFigure: evidenceFigure,
+    weaveEvidence: weaveEvidence,
     parseRoute: parseRoute,
     hashFor: hashFor,
+    tocHref: tocHref,
     parseYouTubeId: parseYouTubeId,
     parseBilibili: parseBilibili,
     classifyUrl: classifyUrl,

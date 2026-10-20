@@ -36,7 +36,9 @@ python3 -m http.server 8080
 - 条目含 `essay.zh` 时显示徽章 **有精读**
 - 单集：顶栏返回列表；标题 / 嘉宾 / 节目 / 日期 / 时长 / 优先级；媒体条（「看视频」封面点击后才嵌入 YouTube / Bilibili，否则外链按钮）
 - 有 `media.audioUrl` 才显示音频条（播放/暂停、±15s、倍速、按 id 断点续听）；无则整段隐藏
-- 有 `essay.zh` 时默认「中文精读」页签 + 标题 TOC；有 `transcript.en` 时显示「英文文稿」页签；皆空则只显示摘要 + 建议
+- 单集正文三个页签（空字段隐藏）：**中文精读** `essay.zh`、**详细解读** `analysis.zh`、**完整文稿** `transcript.md`（否则 `transcript.turns[]`，兼容旧字段 `transcript.en`）
+- 默认选中「中文精读」（有 `essay.zh` 时）；否则选三个里第一个有内容的。精读 / 详细解读有标题时显示 TOC（`data-toc-target` + `#/ep/<id>?h=`，不用裸 `#slug`）
+- 有 `evidence[]`（`src` / `caption` / `t` / `section`）时在精读与详细解读中展示出处截图；空则隐藏
 - 「已看」写入浏览器 `localStorage`（键 **`ai-interviews-watched-v1`**），列表与单集同步，不写回 `data.json`
 - 音频进度键：`ai-interviews-audio-pos-v1`（与已看键分开）
 - 封面：优先 `coverDataUri`，否则相对路径 `cover`（如 `thumbs/...`）
@@ -57,15 +59,36 @@ R 可往 `data.json` 条目追加，W 不编造正文：
 ```json
 {
   "essay": {
-    "zh": "markdown 或 HTML 长文",
-    "title": "精读标题",
+    "zh": "markdown 精读（压缩改写，可带小标题）",
+    "title": "精读标题（可同 title）",
     "wordCount": 8033,
     "disclaimer": "AI 改写精读，非官方翻译；请以原音视频为准"
   },
-  "transcript": {
-    "en": "英文文稿全文或分段",
-    "source": "official|asr|none"
+  "analysis": {
+    "zh": "markdown 详细解读（比精读更长：论证展开、背景、分歧、可核对要点）",
+    "title": "详细解读标题",
+    "wordCount": 12000,
+    "disclaimer": "AI 详细解读，非官方；请以原音视频为准"
   },
+  "transcript": {
+    "md": "**主持人名：** 说过的话…\\n\\n**嘉宾名：** 说过的话…",
+    "turns": [
+      { "speaker": "主持人名", "text": "说过的话…" },
+      { "speaker": "嘉宾名", "text": "说过的话…" }
+    ],
+    "language": "zh|en|mixed",
+    "source": "official|asr|none",
+    "disclaimer": "完整文稿可能含 ASR/整理误差；说话人标注以可辨认发言为准",
+    "en": "（兼容旧字段）全文稿正文"
+  },
+  "evidence": [
+    {
+      "src": "thumbs/frames/<id>-01.jpg",
+      "caption": "一句话说明画面在论证什么",
+      "t": "12:34",
+      "section": "可选：对应小标题"
+    }
+  ],
   "media": {
     "videoUrl": "https://...",
     "audioUrl": "https://....mp3",
@@ -74,7 +97,7 @@ R 可往 `data.json` 条目追加，W 不编造正文：
 }
 ```
 
-当前库存条目没有这些字段时，单集页只显示简介 / 建议 / 视频或外链，不会出现空播放器或空页签。
+W 优先渲染 `transcript.md`；无 md 有 `turns` 时按 `**{speaker}：** {text}` 拼接。列表徽章「有精读」仍只看 `essay.zh`。当前库存没有 analysis / transcript 时，对应页签不出现。
 
 ## 刷新数据
 
@@ -108,6 +131,6 @@ node scripts/selftest.js
 | `media.js` | 路由、嵌入识别、markdown、字段探测 |
 | `app.js` | 列表 / 单集 UI、已看、音频 |
 | `404.html` | Pages 路径 `/ep/<id>/` → hash |
-| `data.json` | 列表数据（含 cover / coverDataUri）；可追加 essay / transcript / media |
-| `thumbs/` | 封面缩略图 |
+| `data.json` | 列表数据（含 cover / coverDataUri）；可追加 essay / analysis / transcript / evidence / media |
+| `thumbs/` | 封面缩略图；出处帧可放 `thumbs/frames/` |
 | `scripts/sync-data.sh` | 从 store 同步 data.json + thumbs/ |
