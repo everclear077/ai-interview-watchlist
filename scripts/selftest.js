@@ -54,21 +54,28 @@ assert("empty analysis hidden", !WL.hasAnalysis({ analysis: { zh: "  " } }));
 assert("audio present", WL.hasAudio({ media: { audioUrl: "https://x.mp3" } }));
 assert("empty audio hidden", !WL.hasAudio({ media: { audioUrl: "" } }));
 
-assert("transcript md", WL.hasTranscript({ transcript: { md: "**A：** hi" } }));
-assert("transcript turns", WL.hasTranscript({ transcript: { turns: [{ speaker: "A", text: "hi" }] } }));
-assert("transcript legacy en", WL.hasTranscript({ transcript: { en: "hello" } }));
-assert("empty md hidden", !WL.hasTranscript({ transcript: { md: "   " } }));
-assert("empty turns hidden", !WL.hasTranscript({ transcript: { turns: [{ speaker: "", text: "  " }] } }));
-assert("empty en hidden", !WL.hasTranscript({ transcript: { en: "  " } }));
+assert("transcript md official", WL.hasTranscript({ transcript: { source: "official", md: "**A：** hi" } }));
+assert("transcript turns asr", WL.hasTranscript({ transcript: { source: "asr", turns: [{ speaker: "A", text: "hi" }] } }));
+assert("transcript legacy en official", WL.hasTranscript({ transcript: { source: "official", en: "hello" } }));
+assert("empty md hidden", !WL.hasTranscript({ transcript: { source: "official", md: "   " } }));
+assert("empty turns hidden", !WL.hasTranscript({ transcript: { source: "asr", turns: [{ speaker: "", text: "  " }] } }));
+assert("empty en hidden", !WL.hasTranscript({ transcript: { source: "official", en: "  " } }));
+assert("source missing hidden", !WL.hasTranscript({ transcript: { md: "**A：** hi" } }));
+assert("source none hidden", !WL.hasTranscript({ transcript: { source: "none", md: "**A：** hi" } }));
+assert("source other hidden", !WL.hasTranscript({ transcript: { source: "draft", turns: [{ speaker: "A", text: "hi" }] } }));
+assert("source case-sensitive", !WL.hasTranscript({ transcript: { source: "Official", md: "hi" } }));
 
 assert("default tab essay first", WL.defaultTab({
-  essay: { zh: "a" }, analysis: { zh: "b" }, transcript: { md: "c" }
+  essay: { zh: "a" }, analysis: { zh: "b" }, transcript: { source: "official", md: "c" }
 }) === "essay");
 assert("default tab analysis if no essay", WL.defaultTab({ analysis: { zh: "b" } }) === "analysis");
-assert("default tab transcript last", WL.defaultTab({ transcript: { md: "x" } }) === "transcript");
+assert("default tab transcript last", WL.defaultTab({ transcript: { source: "asr", md: "x" } }) === "transcript");
 assert("available hide empty", WL.availableTabs({ essay: { zh: "x" } }).join(",") === "essay");
+assert("available hide source none", WL.availableTabs({
+  essay: { zh: "x" }, transcript: { source: "none", md: "stub" }
+}).join(",") === "essay");
 assert("available all three", WL.availableTabs({
-  essay: { zh: "a" }, analysis: { zh: "b" }, transcript: { md: "c" }
+  essay: { zh: "a" }, analysis: { zh: "b" }, transcript: { source: "official", md: "c" }
 }).join(",") === "essay,analysis,transcript");
 assert("available none", WL.availableTabs(empty).length === 0);
 
