@@ -1,5 +1,5 @@
 /* Shared helpers: routing, embeds, markdown, Phase 2/3 field detection
-   (essay.zh / analysis.zh / transcript.md|turns|en).
+   (essay.zh / analysis.zh / transcript.source + md|turns|en).
    Works in the browser (window.WL) and in Node (module.exports). */
 (function (root, factory) {
   var api = factory();
@@ -45,6 +45,7 @@
   function hasTranscript(it) {
     if (!it || !it.transcript) return false;
     var t = it.transcript;
+    if (t.source !== "official" && t.source !== "asr") return false;
     if (textOf(t.md)) return true;
     if (turnsHaveText(t.turns)) return true;
     var en = t.en;
