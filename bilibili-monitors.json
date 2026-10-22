@@ -115,5 +115,20 @@
         "reason": "近窗几乎全是 <30min 短讯/切片"
       }
     ]
+  },
+  "lastScan": {
+    "scannedAt": "2026-10-22",
+    "window": "2026-10-08 .. 2026-10-22",
+    "method": "space wbi/arc/search 返回 -352 风控 / HTML 拦截；改用 x/web-interface/search/type（按 pubdate、按 mid 过滤）+ 小宇宙节目页核对",
+    "result": {
+      "zhangxiaojun": "无新增（最新 10-20 科沃斯钱程，已收录）",
+      "sv101": "无新增长访谈（10-20 智能体手机 20min<30；10-18 Dyna 已收录；10-15 美光为专题报道已跳过）",
+      "sv101-podcast": "无新增（10-19 Astra 已收录）",
+      "jiqizhixin": "无≥30min 新视频",
+      "geekpark": "窗口内无匹配结果",
+      "latepost": "仅<11min 短片",
+      "late-talk": "无新增（10-15 陈哲具身季报已收录）",
+      "liziran": "无新增（10-12 TEDx 单口已跳过）"
+    }
   }
 }
