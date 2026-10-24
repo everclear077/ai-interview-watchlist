@@ -46,8 +46,8 @@
         "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E294_Ch.mp3?dest-id=1928300",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -77,8 +77,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/15cd7eea-99bc-4db9-b027-1fdb2500162c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=15cd7eea-99bc-4db9-b027-1fdb2500162c&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -108,8 +108,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/60df6c4d-a29a-4c66-994e-bbd659a2e577/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=60df6c4d-a29a-4c66-994e-bbd659a2e577&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -139,8 +139,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/ded4b58e-4303-418c-807e-fffaeb59a92c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=ded4b58e-4303-418c-807e-fffaeb59a92c&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -170,8 +170,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/082b16db-6860-47bf-83ca-c3bfaeb02f49/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=082b16db-6860-47bf-83ca-c3bfaeb02f49&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -201,8 +201,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/24f18a48-5a9a-44ed-905a-34359aaf1190/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=24f18a48-5a9a-44ed-905a-34359aaf1190&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -228,8 +228,8 @@
         "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/lkbrkbdXtWZ38IpZNo4rs4q8fYeF.m4a",
         "audioSource": "xiaoyuzhou"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -255,8 +255,8 @@
         "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/loFRKDr9p_Al4E5z-D9WpiLGkyTP.m4a",
         "audioSource": "xiaoyuzhou"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -282,8 +282,8 @@
         "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/llsDXJ2lIqWe8A_PUsyBKz7O7A10.m4a",
         "audioSource": "xiaoyuzhou"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -308,8 +308,8 @@
       "media": {
         "videoUrl": "https://www.youtube.com/watch?v=ARocqV7DtC8"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -339,8 +339,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/46e9084f-65b6-47f8-8aa3-1c8505c30008/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=46e9084f-65b6-47f8-8aa3-1c8505c30008&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -370,8 +370,8 @@
         "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/e1185d26-c41a-40d4-9210-eca5adab915a/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=e1185d26-c41a-40d4-9210-eca5adab915a&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -400,8 +400,8 @@
       "media": {
         "videoUrl": "https://www.youtube.com/watch?v=MM-C3JqCXBk"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -430,8 +430,8 @@
       "media": {
         "videoUrl": "https://www.youtube.com/watch?v=3I6QYkccd3o"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -460,9 +460,9 @@
       "media": {
         "videoUrl": "https://www.youtube.com/watch?v=3Y8aq_ofEVs"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
     },
     {
       "id": "cogrev-eric-bigelow-goodfire-2026-10-10",
@@ -490,9 +490,9 @@
       "media": {
         "videoUrl": "https://www.youtube.com/watch?v=LgX0QF2D9y0"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
     },
     {
       "id": "cogrev-alan-chan-govai-2026-10-14",
@@ -551,8 +551,8 @@
         "audioUrl": "https://traffic.megaphone.fm/PDP2314551616.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -582,8 +582,8 @@
         "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a16579-8537-79c0-86b7-c9fb7a723041/01a16579-85f9-7405-b65b-7eeb25ff90b0.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -712,8 +712,8 @@
         "audioUrl": "https://anchor.fm/s/f06c2370/podcast/play/127499364/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F434203331-44100-2-dec3db8a7fb56.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -744,8 +744,8 @@
         "audioUrl": "https://traffic.megaphone.fm/PDP8573582914.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -776,8 +776,8 @@
         "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/88_AUDIO_NikeshArvink.mp3?dest-id=1928300",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -803,8 +803,8 @@
         "audioUrl": "https://traffic.megaphone.fm/CLS1049065818.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
+      "hasEssay": true,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -835,9 +835,9 @@
         "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP4571154234.mp3",
         "audioSource": "podcast-rss"
       },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
     },
     {
       "id": "sv101-dyna-robotics-revisit-2026-10-18",
@@ -2284,7 +2284,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "late-chenzhe-embodied-q3-2026-10-15",
