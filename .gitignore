@@ -1,3 +1,7 @@
 .playwright-mcp/
-*.png
 .DS_Store
+
+# Playwright / agent screenshots (repo root or anywhere except cover art)
+*.png
+!thumbs/
+!thumbs/**

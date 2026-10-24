@@ -18,6 +18,8 @@ python3 -m http.server 8080
 
 相对路径资源，可直接部署到 GitHub Pages（仓库根目录，base `/ai-interview-watchlist/`）。
 
+部署后若样式看起来还是旧版，对页面做一次硬刷新（Windows/Linux：`Ctrl+Shift+R`，macOS：`Cmd+Shift+R`）。`index.html` 给 `styles.css` / `app.js` / `media.js` 加了短版本查询（`?v=…`），一般会绕过旧缓存。Google Fonts 可能在部分网络打不开；CSS 字体栈已回退到 PingFang / Songti / 系统字体。
+
 ## 路由
 
 **Hash SPA**（GitHub Pages project site 不依赖生成多页 HTML）
