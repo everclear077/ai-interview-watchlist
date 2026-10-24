@@ -21,11 +21,15 @@
   }
 
   function hasEssay(it) {
-    return !!(it && it.essay && textOf(it.essay.zh));
+    if (!it) return false;
+    if (it.essay) return !!textOf(it.essay.zh);
+    return it.hasEssay === true;
   }
 
   function hasAnalysis(it) {
-    return !!(it && it.analysis && textOf(it.analysis.zh));
+    if (!it) return false;
+    if (it.analysis) return !!textOf(it.analysis.zh);
+    return it.hasAnalysis === true;
   }
 
   function turnText(seg) {
@@ -43,15 +47,18 @@
   }
 
   function hasTranscript(it) {
-    if (!it || !it.transcript) return false;
-    var t = it.transcript;
-    if (t.source !== "official" && t.source !== "asr") return false;
-    if (textOf(t.md)) return true;
-    if (turnsHaveText(t.turns)) return true;
-    var en = t.en;
-    if (typeof en === "string") return !!textOf(en);
-    if (Array.isArray(en)) return en.length > 0;
-    return false;
+    if (!it) return false;
+    if (it.transcript) {
+      var t = it.transcript;
+      if (t.source !== "official" && t.source !== "asr") return false;
+      if (textOf(t.md)) return true;
+      if (turnsHaveText(t.turns)) return true;
+      var en = t.en;
+      if (typeof en === "string") return !!textOf(en);
+      if (Array.isArray(en)) return en.length > 0;
+      return false;
+    }
+    return it.hasTranscript === true;
   }
 
   function availableTabs(it) {

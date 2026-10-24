@@ -25,8 +25,11 @@
     route: { name: "list" },
     tab: "essay",
     videoOpen: false,
-    tocOpen: false
+    tocOpen: false,
+    detailStatus: {},
+    detailInflight: {}
   };
+  var routeGen = 0;
 
   var audioUi = { root: null, hintTimer: 0 };
 
@@ -84,9 +87,23 @@
   }
 
   function coverSrc(it) {
-    if (it.coverDataUri) return it.coverDataUri;
-    if (it.cover) return it.cover;
+    if (it && it.cover) return it.cover;
     return "";
+  }
+
+  function episodeDataUrl(id) {
+    return "./data/episodes/" + encodeURIComponent(id) + ".json";
+  }
+
+  function applyWatched(it) {
+    if (!it || !it.id) return;
+    if (state.watched[it.id]) it.watched = true;
+    else if (it.watched) state.watched[it.id] = true;
+    else it.watched = false;
+  }
+
+  function isDetailReady(it) {
+    return !!(it && it._detailLoaded);
   }
 
   function items() {
@@ -192,7 +209,7 @@
     el.innerHTML =
       "<div>多源观看列表（a16z / Latent Space / All-In / 硅谷101 / B站访谈等），不是单一栏目档案。</div>" +
       "<div>打勾仅保存在本浏览器（<code>" + LS_KEY + "</code>）。中文精读如存在，为 AI 改写，请以原音视频为准。</div>" +
-      "<div>数据源优先读取同目录 <code>data.json</code>；封面在 <code>thumbs/</code>。路由为 hash：<code>#/</code> 列表，<code>#/ep/&lt;id&gt;</code> 单集。</div>" +
+      "<div>列表读 <code>data/index.json</code>，单集读 <code>data/episodes/&lt;id&gt;.json</code>；封面在 <code>thumbs/</code>。路由为 hash：<code>#/</code> 列表，<code>#/ep/&lt;id&gt;</code> 单集。</div>" +
       '<div class="actions">' +
         '<button type="button" id="btn-export">导出进度 JSON</button>' +
         '<button type="button" id="btn-reset">清除本机打勾</button>' +
@@ -695,14 +712,25 @@
     renderTopbar();
     renderFooter();
     if (!state.data) {
-      document.getElementById("view").innerHTML = '<div class="empty">正在读取 data.json…</div>';
+      document.getElementById("view").innerHTML = '<div class="empty">正在读取列表…</div>';
       return;
     }
     if (state.route.name === "ep") {
-      renderEpisode(findItem(state.route.id));
-      if (state.route.heading) {
-        requestAnimationFrame(function () { scrollToHeading(state.route.heading); });
+      var it = findItem(state.route.id);
+      var status = state.detailStatus[state.route.id];
+      if (isDetailReady(it)) {
+        renderEpisode(it);
+        if (state.route.heading) {
+          requestAnimationFrame(function () { scrollToHeading(state.route.heading); });
+        }
+        return;
       }
+      if (status === "error") {
+        renderEpisode(null);
+        return;
+      }
+      document.getElementById("view").innerHTML = '<div class="empty">正在读取这一集…</div>';
+      document.title = (it && it.title ? it.title + " · " : "") + "AI / 科技访谈";
     } else {
       document.title = state.data.title || "AI / 科技访谈 · 观看列表";
       renderList();
@@ -712,13 +740,37 @@
   function syncRoute() {
     var next = W.parseRoute(location.hash);
     var changed = next.name !== state.route.name || next.id !== state.route.id;
+    var gen = ++routeGen;
     state.route = next;
     if (changed) {
       state.videoOpen = false;
       state.tocOpen = false;
-      var it = next.name === "ep" ? findItem(next.id) : null;
-      state.tab = it ? W.defaultTab(it) : "essay";
+      state.tab = "essay";
       window.scrollTo(0, 0);
+    }
+    if (next.name === "ep" && next.id) {
+      var cached = findItem(next.id);
+      if (isDetailReady(cached)) {
+        state.detailStatus[next.id] = "ready";
+        if (changed) state.tab = W.defaultTab(cached);
+        render();
+        return;
+      }
+      state.detailStatus[next.id] = "loading";
+      render();
+      ensureEpisode(next.id).then(function (it) {
+        if (gen !== routeGen) return;
+        state.detailStatus[next.id] = "ready";
+        if (changed || !it || W.availableTabs(it).indexOf(state.tab) === -1) {
+          state.tab = W.defaultTab(it);
+        }
+        render();
+      }).catch(function () {
+        if (gen !== routeGen) return;
+        state.detailStatus[next.id] = "error";
+        render();
+      });
+      return;
     }
     render();
   }
@@ -844,24 +896,58 @@
     });
   }
 
+  async function fetchJson(url) {
+    var res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status + " " + url);
+    return res.json();
+  }
+
+  function replaceItem(next) {
+    if (!state.data) state.data = { items: [] };
+    if (!Array.isArray(state.data.items)) state.data.items = [];
+    var i;
+    for (i = 0; i < state.data.items.length; i++) {
+      if (state.data.items[i].id === next.id) {
+        state.data.items[i] = next;
+        return next;
+      }
+    }
+    state.data.items.push(next);
+    return next;
+  }
+
+  async function ensureEpisode(id) {
+    var existing = findItem(id);
+    if (isDetailReady(existing)) return existing;
+    if (state.detailInflight[id]) return state.detailInflight[id];
+    state.detailInflight[id] = fetchJson(episodeDataUrl(id)).then(function (detail) {
+      if (!detail || typeof detail !== "object") throw new Error("bad episode");
+      delete detail.coverDataUri;
+      var merged = existing ? Object.assign({}, existing, detail) : detail;
+      merged._detailLoaded = true;
+      applyWatched(merged);
+      return replaceItem(merged);
+    });
+    try {
+      return await state.detailInflight[id];
+    } finally {
+      delete state.detailInflight[id];
+    }
+  }
+
   async function loadData() {
     var data = null;
     try {
-      var res = await fetch("./data.json", { cache: "no-store" });
-      if (res.ok) data = await res.json();
-    } catch (e) { /* file:// or offline */ }
+      data = await fetchJson("./data/index.json");
+    } catch (e) { /* file:// or missing split tree */ }
     if (!data || !Array.isArray(data.items) || data.items.length === 0) {
       state.data = { version: 1, title: "", lastUpdated: "", items: [], categories: [] };
       document.getElementById("view").innerHTML =
-        '<div class="empty">数据未加载：请用同目录的 data.json，并用本地静态服务器打开。</div>';
+        '<div class="empty">数据未加载：请用 <code>data/index.json</code> 与 <code>data/episodes/</code>，并用本地静态服务器打开。</div>';
       return;
     }
     state.data = data;
-    data.items.forEach(function (it) {
-      if (state.watched[it.id]) it.watched = true;
-      else if (it.watched) state.watched[it.id] = true;
-      else it.watched = false;
-    });
+    data.items.forEach(applyWatched);
     saveWatched();
   }
 

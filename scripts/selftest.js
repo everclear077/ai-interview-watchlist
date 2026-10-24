@@ -49,8 +49,12 @@ assert("no transcript", !WL.hasTranscript(empty));
 assert("no audio", !WL.hasAudio(empty));
 assert("essay present", WL.hasEssay({ essay: { zh: "# hi" } }));
 assert("empty essay hidden", !WL.hasEssay({ essay: { zh: "   " } }));
+assert("slim hasEssay flag", WL.hasEssay({ hasEssay: true }));
+assert("slim hasEssay false", !WL.hasEssay({ hasEssay: false }));
+assert("body wins over stale flag", !WL.hasEssay({ hasEssay: true, essay: { zh: "  " } }));
 assert("analysis present", WL.hasAnalysis({ analysis: { zh: "# 解" } }));
 assert("empty analysis hidden", !WL.hasAnalysis({ analysis: { zh: "  " } }));
+assert("slim hasAnalysis flag", WL.hasAnalysis({ hasAnalysis: true }));
 assert("audio present", WL.hasAudio({ media: { audioUrl: "https://x.mp3" } }));
 assert("empty audio hidden", !WL.hasAudio({ media: { audioUrl: "" } }));
 
@@ -64,6 +68,8 @@ assert("source missing hidden", !WL.hasTranscript({ transcript: { md: "**A：** 
 assert("source none hidden", !WL.hasTranscript({ transcript: { source: "none", md: "**A：** hi" } }));
 assert("source other hidden", !WL.hasTranscript({ transcript: { source: "draft", turns: [{ speaker: "A", text: "hi" }] } }));
 assert("source case-sensitive", !WL.hasTranscript({ transcript: { source: "Official", md: "hi" } }));
+assert("slim hasTranscript flag", WL.hasTranscript({ hasTranscript: true }));
+assert("source none wins over flag", !WL.hasTranscript({ hasTranscript: true, transcript: { source: "none", md: "x" } }));
 
 assert("default tab essay first", WL.defaultTab({
   essay: { zh: "a" }, analysis: { zh: "b" }, transcript: { source: "official", md: "c" }
@@ -127,6 +133,34 @@ assert("sectioned evidence skips 出处", woven.indexOf("出处") === -1);
 var leftover = WL.weaveEvidence("<p>body</p>", [], [{ src: "thumbs/frames/x-01.jpg", caption: "尾注" }]);
 assert("unsectioned evidence at 出处", leftover.indexOf("出处") !== -1 && leftover.indexOf("尾注") !== -1);
 assert("empty weave hidden", WL.weaveEvidence("<p>x</p>", [], []) === "<p>x</p>");
+
+var fs = require("fs");
+var indexPath = path.join(__dirname, "..", "data", "index.json");
+if (fs.existsSync(indexPath)) {
+  var index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+  assert("index has items", Array.isArray(index.items) && index.items.length > 0);
+  assert("index under 200KB", fs.statSync(indexPath).size < 200 * 1024);
+  assert("index layout marker", index.dataLayout === "index+episodes");
+  var first = index.items[0];
+  assert("slim item has id", !!(first && first.id));
+  assert("slim item has cover path", !!(first && first.cover) && String(first.cover).indexOf("thumbs/") === 0);
+  assert("slim items strip coverDataUri", index.items.every(function (it) { return !it.coverDataUri; }));
+  assert("slim items omit essay body", index.items.every(function (it) { return !it.essay; }));
+  assert("slim items omit analysis body", index.items.every(function (it) { return !it.analysis; }));
+  assert("slim items omit transcript body", index.items.every(function (it) { return !it.transcript; }));
+  var flagged = index.items.filter(function (it) { return it.hasEssay; })[0];
+  if (flagged) {
+    var epPath = path.join(__dirname, "..", "data", "episodes", flagged.id + ".json");
+    assert("episode file exists for hasEssay", fs.existsSync(epPath));
+    var ep = JSON.parse(fs.readFileSync(epPath, "utf8"));
+    assert("episode has essay.zh", WL.hasEssay(ep));
+    assert("episode strips coverDataUri", !ep.coverDataUri);
+  }
+  var stub = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data.json"), "utf8"));
+  assert("root data.json is stub", stub.deprecated === true && Array.isArray(stub.items) && stub.items.length === 0);
+} else {
+  console.log("skip  data/index.json layout checks (not split yet)");
+}
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);
