@@ -26,6 +26,13 @@ assert("parseRoute list query", WL.parseRoute("#/?q=jensen&form=essay").q === "j
 assert("parseRoute show keeps topic", WL.parseRoute("#/show/sv101?topic=china&form=essay,transcript").topic === "china");
 assert("hashFor show", WL.hashFor({ name: "show", slug: "a16z" }) === "#/show/a16z");
 assert("hashFor list filters", WL.hashFor({ name: "list", q: "x", form: ["essay"] }) === "#/?q=x&form=essay");
+assert("parseRoute period", WL.parseRoute("#/?period=week").period === "week");
+assert("parseRoute bad period", WL.parseRoute("#/?period=nope").period === "");
+assert("hashFor period", WL.hashFor({ name: "list", period: "month" }) === "#/?period=month");
+assert("parseRoute show period", WL.parseRoute("#/show/a16z?period=earlier").period === "earlier");
+assert("hashFor show period", WL.hashFor({ name: "show", slug: "sv101", period: "week" }) === "#/show/sv101?period=week");
+assert("periodOf week", WL.periodOf("week") === "week");
+assert("periodOf junk", WL.periodOf("nope") === "");
 assert("hashFor topic with show", WL.hashFor({ name: "topic", slug: "china", show: "sv101" }) === "#/topic/china?show=sv101");
 assert("showSlug all-in", WL.showSlug("All-In Podcast #293") === "all-in");
 assert("showSlug a16z alias", WL.showSlug("The a16z Show") === "a16z");
@@ -188,7 +195,9 @@ var appSrc = fs.readFileSync(path.join(__dirname, "..", "app.js"), "utf8");
 var htmlSrc = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
 assert("app.js drops watched storage key", appSrc.indexOf("ai-interviews-watched-v1") === -1);
 assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.indexOf("待看") === -1);
+assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
 assert("index title is library", htmlSrc.indexOf("访谈文库") !== -1 && htmlSrc.indexOf("观看列表") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024c") !== -1);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);

@@ -201,6 +201,11 @@
     });
   }
 
+  function periodOf(raw) {
+    var p = String(raw || "");
+    return p === "week" || p === "month" || p === "earlier" ? p : "";
+  }
+
   function filtersFromParams(params) {
     params = params || {};
     return {
@@ -208,6 +213,7 @@
       show: params.show || "",
       topic: params.topic || "",
       form: formList(params.form),
+      period: periodOf(params.period),
       sort: params.sort === "oldest" ? "oldest" : "newest"
     };
   }
@@ -219,13 +225,14 @@
     if (filters.show) parts.push("show=" + encodeURIComponent(filters.show));
     if (filters.topic) parts.push("topic=" + encodeURIComponent(filters.topic));
     if (filters.form && filters.form.length) parts.push("form=" + encodeURIComponent(filters.form.join(",")));
+    if (filters.period) parts.push("period=" + encodeURIComponent(filters.period));
     if (filters.sort && filters.sort !== "newest") parts.push("sort=" + encodeURIComponent(filters.sort));
     if (filters.heading) parts.push("h=" + encodeURIComponent(filters.heading));
     return parts.length ? "?" + parts.join("&") : "";
   }
 
   function emptyFilters() {
-    return { q: "", show: "", topic: "", form: [], sort: "newest" };
+    return { q: "", show: "", topic: "", form: [], period: "", sort: "newest" };
   }
 
   function parseRoute(hash) {
@@ -244,6 +251,7 @@
         show: "",
         topic: "",
         form: [],
+        period: "",
         sort: "newest"
       };
     }
@@ -258,6 +266,7 @@
         show: show,
         topic: filters.topic,
         form: filters.form,
+        period: filters.period,
         sort: filters.sort
       };
     }
@@ -272,6 +281,7 @@
         show: filters.show,
         topic: topic,
         form: filters.form,
+        period: filters.period,
         sort: filters.sort
       };
     }
@@ -284,6 +294,7 @@
       show: filters.show,
       topic: filters.topic,
       form: filters.form,
+      period: filters.period,
       sort: filters.sort
     };
   }
@@ -298,6 +309,7 @@
         q: route.q,
         topic: route.topic,
         form: route.form,
+        period: route.period,
         sort: route.sort
       });
     }
@@ -306,6 +318,7 @@
         q: route.q,
         show: route.show,
         form: route.form,
+        period: route.period,
         sort: route.sort
       });
     }
@@ -314,6 +327,7 @@
       show: route.show,
       topic: route.topic,
       form: route.form,
+      period: route.period,
       sort: route.sort
     }).replace(/^\?/, "?");
   }
@@ -684,6 +698,7 @@
     queryString: queryString,
     filtersFromParams: filtersFromParams,
     emptyFilters: emptyFilters,
+    periodOf: periodOf,
     showSlug: showSlug,
     showDisplay: showDisplay,
     topicSlug: topicSlug,
