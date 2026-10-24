@@ -22,7 +22,12 @@ python3 -m http.server 8080
 
 ## 语言 / Language
 
-界面铬（顶栏、筛选、货架标题、空状态、页签、按钮、`aria-label`、页脚）可在中文与英文之间切换。访谈正文、精读 / 解读 / 文稿，以及栏目名、主题名保持数据里的原文，不做机翻。品牌在两种语言下都用 **长镜 · AI**（本身已带 AI）。
+界面铬（顶栏、筛选、货架标题、空状态、页签、按钮、`aria-label`、页脚）可在中文与英文之间切换。品牌随语言切换：中文 **长镜 · AI**，英文 **Long Lens AI**。栏目名、主题名保持数据里的原文。
+
+精读 / 解读 / 文稿按语言选已有字段，**不做机翻**：
+- 精读 / 解读：中文用 `essay.zh` / `analysis.zh`；英文只用 `essay.en` / `analysis.en`（或同级英文键）。没有英文正文时显示 “English close read/analysis not available yet”，不留下中文正文。
+- 文稿：英文优先 `transcript.en`，否则在 `transcript.language === "en"` 时用官方/ASR 的 `md` 或 `turns`；中文路径与原来一样（`md` → `turns` → `en`）。中文文稿在 EN 下同样显示英文不可用提示。
+- 标题：有 `title_en` 时英文用它，否则用条目原标题（西语节目标题多半已经是英文）。
 
 - 存储：`localStorage` 键 `wl-lang` = `zh` | `en`。一旦写下（含点选 中文 / EN），存储值优先于时区。
 - 默认（没有存储值时）：IANA 时区是中国相关（`Asia/Shanghai`、`Asia/Chongqing`、`Asia/Urumqi`、`Asia/Harbin`）则为 `zh`；否则 `en`。拿不到 IANA 名时，UTC+8（`getTimezoneOffset() === -480`，即 CST）也算中文默认。
@@ -50,8 +55,9 @@ python3 -m http.server 8080
 - 封面悬停：略放大、抬升、半透明遮罩与「打开」；有精读 / 解读 / 文稿时在遮罩上标出
 - 空结果会提示如何清除筛选
 - 单集：顶栏返回文库；媒体条（点「打开视频」后才嵌入 YouTube / Bilibili）；有 `media.audioUrl` 才显示音频条
-- 三个页签（空字段隐藏）：**中文精读** `essay.zh`、**详细解读** `analysis.zh`、**完整文稿** `transcript.md`（否则 `transcript.turns[]`）
-- 默认选中「中文精读」（有 `essay.zh` 时）。精读 / 详细解读有标题时显示 TOC（`#/ep/<id>?h=`）
+- 三个页签（空字段隐藏）：**中文精读** / **Close read**、**详细解读** / **Analysis**、**完整文稿** / **Transcript**
+- 中文正文：`essay.zh`、`analysis.zh`、`transcript.md`（否则 `transcript.turns[]`）。英文正文只用数据里的英文字段或 `language=en` 的文稿；没有则显示英文不可用提示
+- 默认选中「中文精读」（有精读时）。精读 / 详细解读有标题时显示 TOC（`#/ep/<id>?h=`）
 - 有 `evidence[]` 时在精读与详细解读中穿插出处截图
 - 音频进度键：`ai-interviews-audio-pos-v1`（本机续听，无账号）
 - 封面：只用相对路径 `cover`（如 `thumbs/...`）。`coverDataUri` 不发布

@@ -99,8 +99,10 @@ assert("empty essay hidden", !WL.hasEssay({ essay: { zh: "   " } }));
 assert("slim hasEssay flag", WL.hasEssay({ hasEssay: true }));
 assert("slim hasEssay false", !WL.hasEssay({ hasEssay: false }));
 assert("body wins over stale flag", !WL.hasEssay({ hasEssay: true, essay: { zh: "  " } }));
+assert("essay en-only still counts", WL.hasEssay({ essay: { en: "# hello" } }));
 assert("analysis present", WL.hasAnalysis({ analysis: { zh: "# 解" } }));
 assert("empty analysis hidden", !WL.hasAnalysis({ analysis: { zh: "  " } }));
+assert("analysis en-only still counts", WL.hasAnalysis({ analysis: { en: "# take" } }));
 assert("slim hasAnalysis flag", WL.hasAnalysis({ hasAnalysis: true }));
 assert("audio present", WL.hasAudio({ media: { audioUrl: "https://x.mp3" } }));
 assert("empty audio hidden", !WL.hasAudio({ media: { audioUrl: "" } }));
@@ -158,6 +160,32 @@ assert("md render strong speaker", /<strong>Host：<\/strong>/.test(htmlMd));
 var htmlEn = WL.renderTranscript({ transcript: { en: "legacy body" } });
 assert("legacy en body", htmlEn.indexOf("legacy body") !== -1);
 
+assert("longform zh uses zh", WL.longformText({ zh: "中文精读" }, "zh") === "中文精读");
+assert("longform en empty without en", WL.longformText({ zh: "中文精读" }, "en") === "");
+assert("longform en uses en", WL.longformText({ zh: "中文", en: "English close read" }, "en") === "English close read");
+assert("longform en nested md", WL.longformText({ en: { md: "Nested EN" } }, "en") === "Nested EN");
+assert("bodyForLang essay zh", WL.bodyForLang({ essay: { zh: "精读" } }, "essay", "zh") === "精读");
+assert("bodyForLang essay en missing", WL.bodyForLang({ essay: { zh: "精读" } }, "essay", "en") === "");
+assert("bodyForLang analysis en", WL.bodyForLang({ analysis: { zh: "解", en: "Take" } }, "analysis", "en") === "Take");
+
+var enAsr = { transcript: { source: "asr", language: "en", md: "**Host:** Hello from ASR." } };
+var zhOfficial = { transcript: { source: "official", language: "zh", md: "**主持：** 你好。" } };
+var legacyEn = { transcript: { source: "official", language: "zh", en: "Official English body" } };
+assert("transcript EN uses language=en md", WL.bodyForLang(enAsr, "transcript", "en").indexOf("Hello from ASR") !== -1);
+assert("transcript ZH keeps language=en md as today", WL.bodyForLang(enAsr, "transcript", "zh").indexOf("Hello from ASR") !== -1);
+assert("transcript EN hides zh-only body", WL.bodyForLang(zhOfficial, "transcript", "en") === "");
+assert("transcript ZH keeps zh official", WL.bodyForLang(zhOfficial, "transcript", "zh").indexOf("你好") !== -1);
+assert("transcript EN prefers en field", WL.bodyForLang(legacyEn, "transcript", "en") === "Official English body");
+assert("transcript ZH still prefers md over en", WL.bodyForLang({
+  transcript: { source: "official", language: "zh", md: "中文稿", en: "English leftover" }
+}, "transcript", "zh").indexOf("中文稿") !== -1);
+
+assert("episodeTitle authored fallback", WL.episodeTitle({ title: "Entering the AGI Era" }, "en") === "Entering the AGI Era");
+assert("episodeTitle title_en", WL.episodeTitle({ title: "中文标题", title_en: "English Title" }, "en") === "English Title");
+assert("episodeTitle zh keeps authored", WL.episodeTitle({ title: "中文标题", title_en: "English Title" }, "zh") === "中文标题");
+assert("disclaimer en ignores zh field", WL.localizedDisclaimer({ disclaimer: "中文声明" }, "disclaimerEssay", "en") === WL.t("disclaimerEssay", null, "en"));
+assert("disclaimer zh uses authored", WL.localizedDisclaimer({ disclaimer: "中文声明" }, "disclaimerEssay", "zh") === "中文声明");
+
 var md = WL.renderMarkdown("## 危机：诊断\n\n一段话。\n\n> 引用\n\n- a\n- b");
 assert("md heading id", md.headings.length === 1 && md.headings[0].id.indexOf("危机") !== -1);
 assert("md html h2", /<h2 id=/.test(md.html));
@@ -203,6 +231,26 @@ if (fs.existsSync(indexPath)) {
     assert("episode has essay.zh", WL.hasEssay(ep));
     assert("episode strips coverDataUri", !ep.coverDataUri);
   }
+  var epDir = path.join(__dirname, "..", "data", "episodes");
+  var epFiles = fs.readdirSync(epDir).filter(function (f) { return /\.json$/.test(f); });
+  var essayEnCount = 0;
+  var analysisEnCount = 0;
+  var titleEnCount = 0;
+  var transEnLang = 0;
+  var transZhLang = 0;
+  epFiles.forEach(function (f) {
+    var ep = JSON.parse(fs.readFileSync(path.join(epDir, f), "utf8"));
+    if (WL.longformText(ep.essay, "en")) essayEnCount += 1;
+    if (WL.longformText(ep.analysis, "en")) analysisEnCount += 1;
+    if (WL.episodeTitle(ep, "en") && ep.title_en) titleEnCount += 1;
+    if (ep.transcript && WL.transcriptLangOf(ep.transcript) === "en") transEnLang += 1;
+    if (ep.transcript && WL.transcriptLangOf(ep.transcript) === "zh") transZhLang += 1;
+  });
+  assert("shipped essay.en count is 0", essayEnCount === 0);
+  assert("shipped analysis.en count is 0", analysisEnCount === 0);
+  assert("shipped title_en count is 0", titleEnCount === 0);
+  assert("shipped english transcripts exist", transEnLang > 0);
+  assert("shipped chinese transcripts exist", transZhLang > 0);
   var stub = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data.json"), "utf8"));
   assert("root data.json is stub", stub.deprecated === true && Array.isArray(stub.items) && stub.items.length === 0);
   var slugDisplays = {};
@@ -245,9 +293,11 @@ assert("app.js drops watched storage key", appSrc.indexOf("ai-interviews-watched
 assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.indexOf("待看") === -1);
 assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
 assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
-assert("app.js brand is 长镜 · AI", appSrc.indexOf("长镜 · AI") !== -1 && appSrc.indexOf("访谈文库") === -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024g") !== -1);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index has Long Lens AI", htmlSrc.indexOf("Long Lens AI") !== -1);
+assert("app.js brand via t()", appSrc.indexOf('t("brand")') !== -1 && appSrc.indexOf("访谈文库") === -1 && appSrc.indexOf("SITE_TITLE") === -1);
+assert("app.js uses bodyForLang", appSrc.indexOf("bodyForLang") !== -1 && appSrc.indexOf("unavailableEssay") !== -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024h") !== -1);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024g") === -1 && htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
 assert("index FOUC theme script", htmlSrc.indexOf("wl-theme") !== -1 && htmlSrc.indexOf("data-theme") !== -1);
 assert("index FOUC lang script", htmlSrc.indexOf("wl-lang") !== -1 && htmlSrc.indexOf("data-lang") !== -1 && htmlSrc.indexOf("zh-CN") !== -1);
 assert("index FOUC before stylesheet", htmlSrc.indexOf("localStorage.getItem") < htmlSrc.indexOf("styles.css"));
@@ -304,7 +354,11 @@ assert("t theme en", /theme/i.test(WL.t("themeToggle", null, "en")));
 var zhKeys = WL.i18nKeys().slice().sort();
 var enKeys = Object.keys(WL.I18N.en).sort();
 assert("i18n key coverage", zhKeys.join(",") === enKeys.join(",") && zhKeys.length > 40);
-assert("brand stays 长镜 · AI", WL.t("brand", null, "zh") === "长镜 · AI" && WL.t("brand", null, "en") === "长镜 · AI");
+assert("brand zh is 长镜 · AI", WL.t("brand", null, "zh") === "长镜 · AI");
+assert("brand en is Long Lens AI", WL.t("brand", null, "en") === "Long Lens AI");
+assert("unavailable essay en", WL.t("unavailableEssay", null, "en") === "English close read not available yet");
+assert("unavailable analysis en", WL.t("unavailableAnalysis", null, "en") === "English analysis not available yet");
+assert("unavailable transcript en", WL.t("unavailableTranscript", null, "en") === "English transcript not available yet");
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);

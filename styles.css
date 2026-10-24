@@ -868,6 +868,14 @@ html {
   color: var(--text);
 }
 .reading.serif { font-family: var(--display); }
+.pane-unavailable {
+  margin: 8px 0 0;
+  max-width: 42ch;
+  font-family: var(--ui);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
 .disclaimer {
   font-family: var(--ui);
   font-size: 0.82rem;
