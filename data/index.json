@@ -2723,32 +2723,328 @@
       "hasEssay": true,
       "hasAnalysis": true,
       "hasTranscript": false
+    },
+    {
+      "id": "twiml-airbnb-company-brain-2026-10-21",
+      "title": "Airbnb Is Building a ‘Company Brain’ for AI Agents with Ahmad Al-Dahle (#781)",
+      "guest": "Ahmad Al-Dahle（Airbnb）",
+      "show": "TWIML AI Podcast",
+      "date": "2026-10-21",
+      "duration": "~52m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Airbnb 侧谈如何为 AI Agent 捕获「公司脑」：制度知识、政策与未写入文档的默契；治理与落地张力。",
+      "advice": "企业 Agent 知识层 P1；TWIML 元老档补库。",
+      "urls": [
+        {
+          "label": "TWIML",
+          "href": "https://twimlai.com/podcast/twimlai/airbnb-building-company-brain-ai-agents"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/twiml-airbnb-company-brain-2026-10-21.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN8883000255.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "gradient-drew-baglino-heron-2026-08-18",
+      "title": "Elon's Former Battery Chief: AI Data Centers Will Make Electricity Cheaper — Drew Baglino",
+      "guest": "Drew Baglino（Heron Power / 前 Tesla）",
+      "show": "Gradient Dissent",
+      "date": "2026-08-18",
+      "duration": "~94m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "前 Tesla 能源高管谈 AI 数据中心电力：电网能否承接、储能与「用电越多电越便宜」的论证边界。",
+      "advice": "电力/CapEx 约束长访；Gradient Dissent 补库。",
+      "urls": [
+        {
+          "label": "Gradient Dissent / W&B",
+          "href": "https://wandb.ai/site/resources/podcast"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/gradient-drew-baglino-heron-2026-08-18.jpg",
+      "media": {
+        "audioUrl": "https://episodes.captivate.fm/episode/e2bde9e1-622e-4a99-b16b-2b75fbcaa731.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "hours80k-tom-milton-verify-ai-2026-10-23",
+      "title": "Tom Milton on how we could verify a US–China deal on AI",
+      "guest": "Tom Milton",
+      "show": "80,000 Hours Podcast",
+      "date": "2026-10-23",
+      "duration": "~109m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "如何核验美中 AI 协议：验证技术、慢速/限制路径与地缘博弈下的可执行性。",
+      "advice": "治理/验证技术 P0；80k 长访元老档。",
+      "urls": [
+        {
+          "label": "80,000 Hours",
+          "href": "https://80000hours.org/podcast/episodes/tom-milton-verification-technology-ai-slowdown/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/hours80k-tom-milton-verify-ai-2026-10-23.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/1d895220/4b2f3b03.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "mlst-zhengyao-jiang-2026-09-26",
+      "title": "When AI Research Starts Moving Faster Than Human Research — Zhengyao Jiang",
+      "guest": "Zhengyao Jiang",
+      "show": "Machine Learning Street Talk",
+      "date": "2026-09-26",
+      "duration": "~44m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "当 AI 研究节奏开始快过人类研究者：自动化实验、评测与「人类还把关什么」的边界。",
+      "advice": "研究自动化长访；MLST 技术辩论档补库。",
+      "urls": [
+        {
+          "label": "MLST (Spotify)",
+          "href": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/When-AI-Research-Starts-Moving-Faster-Than-Human-Research---Zhengyao-Jiang-e38v0b2"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/mlst-zhengyao-jiang-2026-09-26.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/APO8416821427.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "interconnects-denain-rsi-2026-09-22",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "guest": "JS Denain（Epoch AI）",
+      "show": "Interconnects",
+      "date": "2026-09-22",
+      "duration": "~65m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Nathan Lambert 与 Epoch 的 Denain 辩论 RSI、美中差距与能力「锯齿状」：定义先于口号。",
+      "advice": "RSI/评测差分 P1；Interconnects 补库。",
+      "urls": [
+        {
+          "label": "Interconnects",
+          "href": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/interconnects-denain-rsi-2026-09-22.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/prfx.byspotify.com/e/claritaspod.com/measure/api.substack.com/feed/podcast/216367194/0da797daf831f7a41b6e39513ab26958.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "kara-demis-hassabis-2026-05-28",
+      "title": "Demis Hassabis, Google DeepMind and the Battle Over AI Safety",
+      "guest": "Demis Hassabis（Google DeepMind）",
+      "show": "On with Kara Swisher",
+      "date": "2026-05-28",
+      "duration": "~62m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Kara 访谈 Demis：DeepMind 路线、安全争论与实验室竞争格局中的责任叙事。",
+      "advice": "实验室掌门人长访选辑；Kara 科技向补库。",
+      "urls": [
+        {
+          "label": "On with Kara Swisher (Apple/Megaphone)",
+          "href": "https://podcasts.apple.com/us/podcast/on-with-kara-swisher/id1661622986"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/kara-demis-hassabis-2026-05-28.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP5890435549.mp3?updated=1779919844"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "ferriss-fei-fei-li-2025-12-09",
+      "title": "#839: Dr. Fei-Fei Li, The Godmother of AI — Asking Audacious Questions, Civilizational Technology, and Finding Your North Star",
+      "guest": "Fei-Fei Li",
+      "show": "The Tim Ferriss Show",
+      "date": "2025-12-09",
+      "duration": "~78m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "李飞飞谈大胆提问、文明级技术与个人北星；ImageNet 一代研究者的长期主义与人文坐标。",
+      "advice": "Ferriss 科技选辑锚点；官方转写页存在。",
+      "urls": [
+        {
+          "label": "Tim.blog",
+          "href": "https://tim.blog/2025/12/09/dr-fei-fei-li-the-godmother-of-ai/"
+        },
+        {
+          "label": "Transcript",
+          "href": "https://tim.blog/2025/12/10/dr-fei-fei-li-the-godmother-of-ai-transcript/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/ferriss-fei-fei-li-2025-12-09.jpg",
+      "media": {
+        "audioUrl": "https://rss.art19.com/episodes/1988c19d-6f49-4611-9f65-827c9d219624.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "lightstar-linfan-maimai-2026-09-07",
+      "title": "86.「明年科技公司就只招 AI 人才了！」和脉脉CEO林凡聊全球 AI 人才动向、组织变革与大模型季报",
+      "guest": "林凡（脉脉 CEO）",
+      "show": "卫诗婕｜漫谈Light the Star",
+      "date": "2026-09-07",
+      "duration": "~85m",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "卫诗婕对话脉脉林凡：全球 AI 人才流动、组织变革与大模型季报视角下的招聘结构变化。",
+      "advice": "中文超长科技访谈标杆栏目补库。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a9daa7ea0210c197dce7a8b"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/lightstar-linfan-maimai-2026-09-07.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6627fda4b56459544087d86a/luaCs2DaO_BRmuF9GRBxIX-7Izf-.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "founderpark-kaifu-lee-2024-10-30",
+      "title": "Vol.24 张鹏对谈李开复：AI创业进入洗牌阶段了吗？",
+      "guest": "李开复",
+      "show": "AI局内人 | AGI Insider",
+      "date": "2024-10-30",
+      "duration": "~127m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "Founder Park《AI局内人》张鹏对谈李开复：技术范式、产品思路与商业化指标变化下的创业洗牌。",
+      "advice": "Founder Park 锚点长访；资历极深嘉宾。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6722608acbe0e69c8be95fb4"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/founderpark-kaifu-lee-2024-10-30.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/lmIiFUdBJd5q4jMprlaCcNeFpnsc.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "bizlike-horizon-physical-ai-2026-10-13",
+      "title": "特番｜从会开车到会做事：AI如何进入真实世界",
+      "guest": "陈遥 / 刘文尧 / 王煜城（地平线）",
+      "show": "商业就是这样",
+      "date": "2026-10-13",
+      "duration": "~88m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "第一财经《商业就是这样》地平线开放日特番：智驾责任边界、产品边界与物理 AI/具身智能概念澄清。",
+      "advice": "机构商业播客 AI 特番；物理 AI 科普向。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ace6489e742e36efcc28859"
+        },
+        {
+          "label": "Fireside",
+          "href": "https://thatisbiz.fireside.fm/371"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/bizlike-horizon-physical-ai-2026-10-13.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6022a180ef5fdaddc30bb101/lv-rS-_QvGJ2BqgN-aOw4A5Uak0j.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "webworker-subo-codebuddy-2026-08-27",
+      "title": "No.102 从 Malagu 到 CodeBuddy，苏博聊 AI 时代的研发与管理",
+      "guest": "苏博",
+      "show": "Web Worker",
+      "date": "2026-08-27",
+      "duration": "~94m",
+      "category": "中国·科技媒体",
+      "priority": "P2",
+      "summary": "工程师播客 Web Worker：从开源到 AI Coding 工具，聊研发管理在 Agent 时代的变化。",
+      "advice": "工程师向长聊选辑；补中文开发者访谈面。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a905e04ef65145dfcc67ea0"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/webworker-subo-codebuddy-2026-08-27.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/613753ef23c82a9a1ccfdf35/luKIgIIbvkUQ3AFiSQf-MUUI0jAu.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "ailianjin-xiaohui-startup-ai-2026-10-18",
+      "title": "以后一定会更糟，所以现在先别慌｜和晓辉博士聊创业和 AI",
+      "guest": "晓辉博士",
+      "show": "AI炼金术",
+      "date": "2026-10-18",
+      "duration": "~135m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "AI炼金术深访：创业者在不确定性上升时如何排期、控情绪与做技术/商业取舍。",
+      "advice": "中文 AI 创业深访栏目补库。",
+      "urls": [
+        {
+          "label": "喜马拉雅",
+          "href": "https://www.ximalaya.com/sound/1025210406"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/ailianjin-xiaohui-startup-ai-2026-10-18.jpg",
+      "media": {
+        "audioUrl": "https://jt.ximalaya.com//GKwRIDoOqnrcA-jutQTq6iGf.m4a?channel=rss&album_id=74194808&track_id=1025210406&uid=28103699"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
     }
   ],
   "maintainer": "R",
-  "notes": {
-    "expand20261024": {
-      "added": [
-        "eyeonai-zip-superagents-2026-10-23",
-        "practicalai-e377-agentic-vuln-2026-10-22",
-        "hardfork-anthropic-morals-2026-10-09",
-        "etw-jiayangqing-ai-decade-2026-08-06",
-        "bushi-ep59-agent-coding-2026-06-15",
-        "teahour-vibe-coding-2026-04-15",
-        "uncapped-brad-lightcap-2026-04-01",
-        "deepmind-demis-hassabis-2025-12-16",
-        "acquired-google-ai-company-2025-10-06",
-        "deepmind-genie3-world-model-2025-08-22",
-        "zhizhe-zhangquanshi-cot-2025-03-27"
-      ],
-      "countBefore": 85,
-      "countAfter": 96,
-      "showUnifications": {
-        "晚点聊LateTalk": "晚点聊 LateTalk",
-        "Lex Fridman": "Lex Fridman Podcast"
-      },
-      "showUnifiedCount": 2,
-      "bilibiliMonitors": "no new creators（声东击西无稳定官方 mid；智者归机器之心已监控）"
-    }
-  }
+  "notes": "2026-10-24 senior-hosts wave1 added 12"
 }
