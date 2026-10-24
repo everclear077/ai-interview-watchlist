@@ -246,8 +246,34 @@ assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.inde
 assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
 assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
 assert("app.js brand is 长镜 · AI", appSrc.indexOf("长镜 · AI") !== -1 && appSrc.indexOf("访谈文库") === -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024e") !== -1);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024f") !== -1);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index FOUC theme script", htmlSrc.indexOf("wl-theme") !== -1 && htmlSrc.indexOf("data-theme") !== -1);
+assert("index FOUC before stylesheet", htmlSrc.indexOf("localStorage.getItem") < htmlSrc.indexOf("styles.css"));
+
+var cssSrc = fs.readFileSync(path.join(__dirname, "..", "styles.css"), "utf8");
+assert("css dark theme tokens", cssSrc.indexOf('[data-theme="dark"]') !== -1);
+assert("css light theme tokens", cssSrc.indexOf('[data-theme="light"]') !== -1);
+assert("css drops paper body mode", cssSrc.indexOf("body.paper") === -1);
+assert("css drops terracotta leftover", cssSrc.indexOf("#8A5A12") === -1);
+assert("css reduced-motion theme", cssSrc.indexOf("prefers-reduced-motion") !== -1);
+
+assert("theme key", WL.THEME_KEY === "wl-theme");
+assert("normalizeTheme light", WL.normalizeTheme("light") === "light");
+assert("normalizeTheme dark", WL.normalizeTheme("dark") === "dark");
+assert("normalizeTheme junk", WL.normalizeTheme("sepia") === "");
+assert("resolveTheme stored light wins", WL.resolveTheme("light", false) === "light");
+assert("resolveTheme stored dark wins", WL.resolveTheme("dark", true) === "dark");
+assert("resolveTheme system dark", WL.resolveTheme("", false) === "dark");
+assert("resolveTheme system light", WL.resolveTheme("", true) === "light");
+assert("nextTheme light", WL.nextTheme("light") === "dark");
+assert("nextTheme dark", WL.nextTheme("dark") === "light");
+assert("themeColor dark", WL.themeColor("dark") === "#090C11");
+assert("themeColor light", WL.themeColor("light") === "#F3F5F8");
+
+assert("app theme toggle", appSrc.indexOf("theme-toggle") !== -1 && appSrc.indexOf("data-theme-toggle") !== -1);
+assert("app aria theme label", appSrc.indexOf("切换浅色/深色") !== -1);
+assert("app drops paper body mode", appSrc.indexOf("setBodyMode") === -1 && appSrc.indexOf("classList.toggle(\"paper\"") === -1);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);
