@@ -143,6 +143,8 @@ html.theme-ready .media-row,
 html.theme-ready .tab-row,
 html.theme-ready .site-footer,
 html.theme-ready .theme-toggle,
+html.theme-ready .lang-toggle,
+html.theme-ready .lang-btn,
 html.theme-ready .btn,
 html.theme-ready .pane-tab,
 html.theme-ready .mark {
@@ -265,6 +267,40 @@ button, input { font-family: inherit; }
 .theme-toggle svg { display: block; }
 [data-theme="dark"] .theme-icon-moon { display: none; }
 [data-theme="light"] .theme-icon-sun { display: none; }
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 4px;
+  border: 1px solid var(--rule);
+  background: var(--bg-elev);
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+.lang-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 7px 6px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.lang-btn[aria-pressed="true"] {
+  color: var(--text-strong);
+}
+.lang-btn:hover { color: var(--accent); }
+.lang-sep {
+  color: var(--text-faint);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  user-select: none;
+  padding: 0 1px;
+}
 .back {
   color: var(--text-muted);
   font-size: 0.86rem;

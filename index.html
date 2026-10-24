@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <script>
 (function () {
-  var KEY = "wl-theme";
-  var t = "";
-  try { t = localStorage.getItem(KEY) || ""; } catch (e) {}
-  if (t !== "light" && t !== "dark") {
-    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  var THEME_KEY = "wl-theme";
+  var LANG_KEY = "wl-lang";
+  var theme = "";
+  try { theme = localStorage.getItem(THEME_KEY) || ""; } catch (e) {}
+  if (theme !== "light" && theme !== "dark") {
+    theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
   }
-  document.documentElement.setAttribute("data-theme", t);
-  document.documentElement.style.colorScheme = t;
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.style.colorScheme = theme;
+
+  var lang = "";
+  try { lang = localStorage.getItem(LANG_KEY) || ""; } catch (e) {}
+  if (lang !== "zh" && lang !== "en") {
+    var tz = "";
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e2) {}
+    var china = tz === "Asia/Shanghai" || tz === "Asia/Chongqing" || tz === "Asia/Urumqi" || tz === "Asia/Harbin" || tz === "PRC";
+    if (!tz) {
+      try { china = new Date().getTimezoneOffset() === -480; } catch (e3) { china = false; }
+    }
+    lang = china ? "zh" : "en";
+  }
+  document.documentElement.setAttribute("data-lang", lang);
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
 })();
 </script>
 <meta name="color-scheme" content="dark light" />
@@ -29,18 +44,21 @@
   Display: Fraunces + Noto Serif SC · UI: IBM Plex Sans + Noto Sans SC
   Hash: #/  #/show/<slug>  #/topic/<slug>  #/ep/<id>
   Theme: html[data-theme=dark|light], localStorage wl-theme
+  Lang: html[data-lang=zh|en] + lang=zh-CN|en, localStorage wl-lang
+  Default lang: China IANA TZ (Asia/Shanghai|Chongqing|Urumqi|Harbin) or UTC+8 if no IANA → zh; else en
+  Brand stays 长镜 · AI in both locales
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=20261024f" />
+<link rel="stylesheet" href="./styles.css?v=20261024g" />
 </head>
 <body>
-  <a class="skip" href="#view">跳到主要内容</a>
+  <a class="skip" id="skip" href="#view">Skip to main content</a>
   <header class="topbar" id="topbar"></header>
   <main id="view" class="view"></main>
   <footer class="site-footer" id="footer"></footer>
-  <script src="./media.js?v=20261024f"></script>
-  <script src="./app.js?v=20261024f"></script>
+  <script src="./media.js?v=20261024g"></script>
+  <script src="./app.js?v=20261024g"></script>
 </body>
 </html>
