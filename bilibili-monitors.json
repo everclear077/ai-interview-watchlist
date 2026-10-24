@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -117,18 +117,44 @@
     ]
   },
   "lastScan": {
-    "scannedAt": "2026-10-23",
-    "window": "2026-10-09 .. 2026-10-23",
-    "method": "延续 search API + 小宇宙/节目页核对；英文源以官网/RSS/YouTube 为主",
+    "scannedAt": "2026-10-24",
+    "window": "2026-10-01 .. 2026-10-24",
+    "method": "B站 space API 仍 -352/-403；改用小宇宙节目页 + WebSearch + 英文 RSS（a16z Simplecast / All-In Libsyn / Dwarkesh / Lex / Lenny）",
     "result": {
-      "zhangxiaojun": "无新增≥30min",
-      "sv101": "新增《AI助理争夺战 Muse/Grok Bot/Instinct》已写入（~33m）",
+      "zhangxiaojun": "最新仍为 155 钱程（已入库 10-20）；无更新",
+      "sv101": "无≥30min 新增长访谈（助理争夺战已在库）",
       "sv101-podcast": "同上",
       "jiqizhixin": "无≥30min 新增长访谈",
-      "geekpark": "LinkStart Vol.133/134/135 已写入",
-      "latepost": "无新增长访谈入库",
-      "late-talk": "无新增",
-      "liziran": "无新增"
-    }
+      "geekpark": "LinkStart 最新 Vol.135 已在库；无更新",
+      "latepost": "无新增长访谈",
+      "late-talk": "最新仍为 184 具身季报（已入库）；无更新",
+      "liziran": "未见≥30min 新嘉宾对谈（叙事/单口跳过）"
+    },
+    "enCatchupAdded": [
+      "allin-ai-cyber-panic-nikesh-2026-10-23",
+      "a16z-oliver-kharraz-zocdoc-2026-10-17",
+      "a16z-ai-cryptography-boneh-2026-10-13",
+      "a16z-race-to-rsi-makermaker-2026-10-12",
+      "a16z-kevin-mandia-armadin-2026-10-06",
+      "a16z-top100-consumer-ai-apps-2026-10-05"
+    ],
+    "skipped": [
+      {
+        "title": "EliseAI Mario Martone",
+        "reason": "24:25 <30min"
+      },
+      {
+        "title": "Lex #496 FFmpeg",
+        "reason": "官方发布 2026-05-06，非本周新；#496 早于已入库 #501"
+      },
+      {
+        "title": "a16z Vintage×Vintage Ben Horowitz",
+        "reason": "创业通识，非 AI 主线"
+      },
+      {
+        "title": "a16z Valon / Barrett Lyon",
+        "reason": "非 AI 主线或偏隐私基建"
+      }
+    ]
   }
 }
