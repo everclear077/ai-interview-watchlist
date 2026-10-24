@@ -16,6 +16,333 @@
   ],
   "items": [
     {
+      "id": "eyeonai-zip-superagents-2026-10-23",
+      "title": "How Zip's AI Superagents Automate Procurement End-to-End | Rujul Zaparde",
+      "guest": "Rujul Zaparde（Zip）",
+      "show": "Eye on AI",
+      "date": "2026-10-23",
+      "duration": "~51m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Zip 联合创始人谈采购全流程 Superagents：合同红线、RFP、写入 SAP/Oracle，以及 pilot→deploy 的治理缺口。",
+      "advice": "近窗企业 Agent 落地 P1。",
+      "urls": [
+        {
+          "label": "Eye on AI（Libsyn）",
+          "href": "https://aneyeonai.libsyn.com/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/eyeonai-zip-superagents-2026-10-23.jpg",
+      "media": {
+        "audioUrl": "https://traffic.libsyn.com/secure/aneyeonai/CS-392-LA_V1.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "practicalai-e377-agentic-vuln-2026-10-22",
+      "title": "Exploit Development, Agentic Vulnerability Discovery, and Fake PoCs (E377)",
+      "guest": "Spencer McIntyre（VulnCheck）",
+      "show": "Practical AI",
+      "date": "2026-10-22",
+      "duration": "~45m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Agent 加速漏洞发现与 exploit 研究、失效 PoC 与威胁情报优先级；官方 transcript 可入库。本条仅访谈元数据，不含攻击步骤。",
+      "advice": "近窗安全工程 P1；官方文稿齐。",
+      "urls": [
+        {
+          "label": "Practical AI",
+          "href": "https://practicalai.show/377"
+        },
+        {
+          "label": "Transcript",
+          "href": "https://practicalai.show/377/transcript"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/practicalai-e377-agentic-vuln-2026-10-22.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/9a42098b/0357dcc1.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "hardfork-anthropic-morals-2026-10-09",
+      "title": "Anthropic’s Quest to Give A.I. Morals",
+      "guest": "Anthropic（议题） / Hard Fork 主持 Kevin Roose & Casey Newton",
+      "show": "Hard Fork",
+      "date": "2026-10-09",
+      "duration": "~44m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "NYT Hard Fork 讨论 Anthropic 如何把 morals/对齐做成产品与研究议程；大众科技新闻框架下的安全入口。",
+      "advice": "近窗安全向 P1；作公共舆论入口，深技术请链 CogRev 等。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/anthropics-quest-to-give-a-i-morals/id1528594034?i=1000794036820"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/hardfork-anthropic-morals-2026-10-09.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/05ad1bfb-bd47-4120-a5fa-98c2f4787a3d/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=05ad1bfb-bd47-4120-a5fa-98c2f4787a3d&feed=6HKOhNgS"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "etw-jiayangqing-ai-decade-2026-08-06",
+      "title": "贾扬清：我所经历的「人工智能已死」到「AI 颠覆世界」的数年巨变丨十周年特别节目",
+      "guest": "贾扬清",
+      "show": "声东击西",
+      "date": "2026-08-06",
+      "duration": "~128m",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "声东击西十周年特别节目：贾扬清以亲历者视角串起 AI 冬天→深度学习框架→大厂平台化→大模型时代；约 128 分钟中文顶格长访。",
+      "advice": "中文 P0：框架/大厂/创业一条履历；三 Tab 精读解读齐，文稿无官方源。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a7474449fb990c321a828f2"
+        },
+        {
+          "label": "声东击西官网",
+          "href": "https://etw.fm/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/etw-jiayangqing-ai-decade-2026-08-06.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/5e2831ed418a84a046231c00/ls3BDHtgTV5umczCPyBtAaB3EFQS.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "bushi-ep59-agent-coding-2026-06-15",
+      "title": "Ep 59. 2026 Agent 编程新趋势",
+      "guest": "捕蛇者说嘉宾（Agent 编程专题）",
+      "show": "捕蛇者说",
+      "date": "2026-06-15",
+      "duration": "~32m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "中文工程师社区对谈：2026 Agent 编程趋势；约 32 分钟，卡在收录门槛上沿。",
+      "advice": "中文工程师向 P1；与 Teahour / Practical AI 对照。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a3070c63c6799244864e895"
+        },
+        {
+          "label": "捕蛇者说",
+          "href": "https://pythonhunter.org/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/bushi-ep59-agent-coding-2026-06-15.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/5e2864f7418a84a04628f2da/lu3LMSq17G1DeQiSHwu6Yfe1ykty.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "teahour-vibe-coding-2026-04-15",
+      "title": "Teahour 2.0 #7 Vibe Coding 好上瘾",
+      "guest": "Howard、Mike Chong（嘉宾）/ Terry Tai（主持）",
+      "show": "Teahour",
+      "date": "2026-04-15",
+      "duration": "~91m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "华语开发者长谈 Vibe Coding：AI 编程助手进入心流式协作的上瘾与失控；约 91 分钟。",
+      "advice": "华语开发者栏目锚点；音频 fireside 稳定。",
+      "urls": [
+        {
+          "label": "Teahour",
+          "href": "https://teahour.fm/102"
+        },
+        {
+          "label": "Shownotes",
+          "href": "https://teahour.dev/episodes/7"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/teahour-vibe-coding-2026-04-15.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/635ad9f1-6ce0-4f31-84cf-030e0c949169/88bb53c9-58e2-423a-9f04-ec182c740246.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "uncapped-brad-lightcap-2026-04-01",
+      "title": "Uncapped #46 | Brad Lightcap from OpenAI — From Chat to Agents, Codex & Operating OpenAI",
+      "guest": "Brad Lightcap（OpenAI COO）",
+      "show": "Uncapped",
+      "date": "2026-04-01",
+      "duration": "~50m",
+      "category": "创始人·CEO·产品",
+      "priority": "P0",
+      "summary": "Jack Altman 对话 OpenAI COO Brad Lightcap：早期研究文化、Post-ChatGPT、Agent 与软件、Codex、投资主题与 FDE；约 50 分钟。",
+      "advice": "P0：OpenAI 运营视角；有 YT+音频。文稿暂无可靠全文。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=HC0QkUNXNtg"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/uncapped-46-brad-lightcap-from-openai/id1801867202?i=1000758616319"
+        },
+        {
+          "label": "Uncapped",
+          "href": "https://www.uncappedpod.com/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/uncapped-brad-lightcap-2026-04-01.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=HC0QkUNXNtg",
+        "audioUrl": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2026-6-28/428790180-44100-2-1143c0293e1cc.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "deepmind-demis-hassabis-2025-12-16",
+      "title": "The Future of Intelligence with Demis Hassabis (Co-founder and CEO of DeepMind)",
+      "guest": "Demis Hassabis（DeepMind）",
+      "show": "Google DeepMind Podcast",
+      "date": "2025-12-16",
+      "duration": "~50m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "DeepMind 官方播客：Hassabis 谈智能的未来——栏目锚点条目，建立机构议题地图后再下钻专集。",
+      "advice": "强 P1：官方实验室播客代表作；与 Genie3 对照听。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/the-future-of-intelligence-with-demis-hassabis-co/id1476316441?i=1000741556387"
+        },
+        {
+          "label": "DeepMind Podcast",
+          "href": "https://deepmind.google/discover/the-podcast/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/deepmind-demis-hassabis-2025-12-16.jpg",
+      "media": {
+        "audioUrl": "https://afp-920373-injected.calisto.simplecastaudio.com/36cf10bf-f6dd-4a98-96a9-8eda9f59db4f/episodes/48bf5c0a-b247-4342-a638-73ba24ae4335/audio/128/default.mp3?aid=rss_feed&awCollectionId=36cf10bf-f6dd-4a98-96a9-8eda9f59db4f&awEpisodeId=48bf5c0a-b247-4342-a638-73ba24ae4335&feed=JT6pbPkg"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "acquired-google-ai-company-2025-10-06",
+      "title": "Google Part III: The AI Company",
+      "guest": "（史向叙事，Acquired 主持 Ben Gilbert & David Rosenthal）",
+      "show": "Acquired",
+      "date": "2025-10-06",
+      "duration": "~236m",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "Acquired 超长科技史：把 Google 写成 AI Company；作背景课而非新闻。",
+      "advice": "史向选辑 P2；非每周 AI 访谈。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/google-part-iii-the-ai-company/id1050462261?i=1000730326283"
+        },
+        {
+          "label": "Acquired",
+          "href": "https://www.acquired.fm/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/acquired-google-ai-company-2025-10-06.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/701dc613/9f822931.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "deepmind-genie3-world-model-2025-08-22",
+      "title": "Genie 3: An Infinite World Model with Shlomi Fruchter and Jack Parker-Holder",
+      "guest": "Shlomi Fruchter & Jack Parker-Holder（DeepMind）",
+      "show": "Google DeepMind Podcast",
+      "date": "2025-08-22",
+      "duration": "~57m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Genie 3 世界模型专集：可交互环境生成；补上 DeepMind 播客系统向条目。",
+      "advice": "P1：世界模型/模拟；可与具身条目对照。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/genie-3-an-infinite-world-model-with-shlomi-fruchter/id1476316441?i=1000723078446"
+        },
+        {
+          "label": "DeepMind Podcast",
+          "href": "https://deepmind.google/discover/the-podcast/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/deepmind-genie3-world-model-2025-08-22.jpg",
+      "media": {
+        "audioUrl": "https://afp-920373-injected.calisto.simplecastaudio.com/36cf10bf-f6dd-4a98-96a9-8eda9f59db4f/episodes/faac4260-63ef-4f0d-b388-a12731b32f24/audio/128/default.mp3?aid=rss_feed&awCollectionId=36cf10bf-f6dd-4a98-96a9-8eda9f59db4f&awEpisodeId=faac4260-63ef-4f0d-b388-a12731b32f24&feed=JT6pbPkg"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "zhizhe-zhangquanshi-cot-2025-03-27",
+      "title": "上海交大张拳石：思维链只是表象，DeepSeek凭什么更强｜智者访谈",
+      "guest": "张拳石（上海交大）",
+      "show": "智者访谈",
+      "date": "2025-03-27",
+      "duration": "~63m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "机器之心「智者访谈」：可解释性学者张拳石谈 CoT 展示≠内在机制，以及高风险域如何信任 AI 决策。",
+      "advice": "补监控号下漏收长访；主链小宇宙。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/67e4d32651d887b229301070"
+        },
+        {
+          "label": "智者访谈节目",
+          "href": "https://www.xiaoyuzhoufm.com/podcast/6650363fac69187b785025bc"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/zhizhe-zhangquanshi-cot-2025-03-27.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6650363fac69187b785025bc/liSZ5gIIBKxt9c7gS7jeI7IwGp56.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
       "id": "allin-ai-cyber-panic-nikesh-2026-10-23",
       "title": "AI Cyber Panic, Ken Griffin's Bubble Warning, The Fall of France?（含 Nikesh Arora）",
       "guest": "Nikesh Arora（Palo Alto Networks CEO）；Besties 面板",
@@ -1298,7 +1625,7 @@
       "id": "lex-jensen-huang-taiwan-2026-10-14",
       "title": "Visiting Taiwan w/ Jensen Huang",
       "guest": "Jensen Huang（NVIDIA CEO）",
-      "show": "Lex Fridman",
+      "show": "Lex Fridman Podcast",
       "date": "2026-10-14",
       "duration": "~1h30m",
       "category": "创始人·CEO·产品",
@@ -2290,7 +2617,7 @@
       "id": "late-chenzhe-embodied-q3-2026-10-15",
       "title": "与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？",
       "guest": "陈哲（Alphaist Partners 创始合伙人）",
-      "show": "晚点聊LateTalk",
+      "show": "晚点聊 LateTalk",
       "date": "2026-10-15",
       "duration": "1小时46分钟",
       "category": "中国·科技媒体",
@@ -2399,5 +2726,29 @@
     }
   ],
   "maintainer": "R",
-  "notes": "中国内容在范围内：含中文科技媒体长访谈（硅谷101、张小珺商业访谈录、十字路口Crossing 等）。2026-10-18 增补 4 条已核实条目；梁文锋本人近年公开长访谈仍稀缺（多为报道/单口，非对谈），未编造。 2026-10-18 B站首扫增补 4 条（张小珺 Lindon Gao、硅谷101 张阔、晚点聊 梁琛奇 / AI季报Q3）；已核实 mid，未编造访谈。 2026-10-19 日更增补 17 条：英文/硅谷 12；中文/B站相关 5（含 Crossing×Treg、晚点聊×陈哲具身季报、硅谷101×AI数据等）；已核实链接，未编造。 2026-10-20 日更增补 7 条：英文/硅谷 6（All-In×Dylan Field；a16z×Karan Singhal/Town Greze/Grepr；Latent Space×Ian Quigley；Lex×Jensen Huang）；中文/B站 1（硅谷101播客×许华哲/朱哲清/王晟 Astra）；已核实链接与时长，未编造。 2026-10-21 日更增补 12 条：英文/硅谷 10（Latent Space×Alex Zhang RLM［P0，补漏］/Evan Conrad SF Compute/Tenex；Training Data×Mecka Josh Gao；a16z×Bostrom/Gelsinger/Matt Garman/Reducto/Rampell&Angelos；YC×Jeetu Patel）；中文/B站 2（硅谷101×Dyna Robotics 再访［P0，官方文字版］；张小珺×科沃斯钱程）；已核实链接与时长，未编造。 2026-10-22 日更增补 7 条：英文/硅谷 7（Decoder×Bill Gates［P0，官方文字稿待刊，transcript=none］；Lenny×Emmanuel Ameisen Anthropic 可解释性［P0，Substack 平台带说话人转写］；BG2×Jensen Huang；No Priors×George Kurtz；All-In×Arvind Krishna & Nikesh Arora；Invest Like the Best×Christina Cacioppo；Cognitive Revolution×Alex Rives）；中文/B站监控 8 号无新增长访谈（space 接口 -352 风控，改用搜索接口+小宇宙核对）；已核实链接与时长，未编造。"
+  "notes": {
+    "expand20261024": {
+      "added": [
+        "eyeonai-zip-superagents-2026-10-23",
+        "practicalai-e377-agentic-vuln-2026-10-22",
+        "hardfork-anthropic-morals-2026-10-09",
+        "etw-jiayangqing-ai-decade-2026-08-06",
+        "bushi-ep59-agent-coding-2026-06-15",
+        "teahour-vibe-coding-2026-04-15",
+        "uncapped-brad-lightcap-2026-04-01",
+        "deepmind-demis-hassabis-2025-12-16",
+        "acquired-google-ai-company-2025-10-06",
+        "deepmind-genie3-world-model-2025-08-22",
+        "zhizhe-zhangquanshi-cot-2025-03-27"
+      ],
+      "countBefore": 85,
+      "countAfter": 96,
+      "showUnifications": {
+        "晚点聊LateTalk": "晚点聊 LateTalk",
+        "Lex Fridman": "Lex Fridman Podcast"
+      },
+      "showUnifiedCount": 2,
+      "bilibiliMonitors": "no new creators（声东击西无稳定官方 mid；智者归机器之心已监控）"
+    }
+  }
 }
