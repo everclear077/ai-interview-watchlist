@@ -196,8 +196,9 @@ var htmlSrc = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
 assert("app.js drops watched storage key", appSrc.indexOf("ai-interviews-watched-v1") === -1);
 assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.indexOf("待看") === -1);
 assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
-assert("index title is library", htmlSrc.indexOf("访谈文库") !== -1 && htmlSrc.indexOf("观看列表") === -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024c") !== -1);
+assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
+assert("app.js brand is 长镜 · AI", appSrc.indexOf("长镜 · AI") !== -1 && appSrc.indexOf("访谈文库") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024d") !== -1);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);

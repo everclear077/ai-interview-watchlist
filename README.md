@@ -1,10 +1,10 @@
-# AI / 科技访谈文库
+# 长镜 · AI
 
-纯静态公开文库（夜馆目录：ink chrome + paper 阅读页）。在线地址（GitHub Pages）：
+纯静态站点（夜馆目录：ink chrome + paper 阅读页）。在线地址（GitHub Pages）：
 
 **https://everclear077.github.io/ai-interview-watchlist/**
 
-收录多档 AI / 科技访谈的中文精读、详细解读与文稿。按栏目、主题、内容形态查找后阅读，不是私人观看列表，也没有已看 / 待看。
+精选 AI / 科技长视频访谈，带精读、解读与文稿。按栏目、主题、内容形态查找后阅读，不是私人观看列表，也没有已看 / 待看。
 
 ## 本地预览
 
@@ -105,7 +105,7 @@ node scripts/selftest.js
 
 **https://everclear077.github.io/ai-interview-watchlist/**
 
-介绍时称「访谈文库」，不要再叫观看列表。需要带人进某一面时，直接分享 hash：
+介绍时称「长镜 · AI」，不要再叫访谈文库或观看列表。需要带人进某一面时，直接分享 hash：
 
 - 全部精读：`https://everclear077.github.io/ai-interview-watchlist/#/?form=essay`
 - 硅谷101：`https://everclear077.github.io/ai-interview-watchlist/#/show/sv101`
