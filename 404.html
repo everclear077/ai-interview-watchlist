@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Redirect</title>
 <script>
-/* GitHub Pages project-site fallback: /ep/<id>/ → /#/ep/<id> */
+/* GitHub Pages project-site fallback:
+   /ep/<id>/ → /#/ep/<id>
+   /show/<slug>/ → /#/show/<slug>
+   /topic/<slug>/ → /#/topic/<slug>
+*/
 (function () {
   var path = location.pathname || "/";
-  var m = path.match(/\/ep\/([^/]+)\/?$/);
-  var dest = m ? "#/ep/" + decodeURIComponent(m[1]) : "#/";
-  var base = path.replace(/\/ep\/[^/]*\/?$/, "/");
+  var m = path.match(/\/(ep|show|topic)\/([^/]+)\/?$/);
+  var dest = m
+    ? "#/" + m[1] + "/" + decodeURIComponent(m[2]) + (location.search || "")
+    : "#/";
+  var base = path.replace(/\/(ep|show|topic)\/[^/]*\/?$/, "/");
   if (!/\/$/.test(base)) base += "/";
   location.replace(base + dest);
 })();

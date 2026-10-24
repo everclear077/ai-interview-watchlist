@@ -20,6 +20,19 @@ assert("parseRoute ep", WL.parseRoute("#/ep/lex-dhh-501-2026-08-26").id === "lex
 assert("parseRoute ep keeps id with h query", WL.parseRoute("#/ep/lex-dhh-501-2026-08-26?h=%E5%BC%80%E7%AF%87").id === "lex-dhh-501-2026-08-26");
 assert("parseRoute heading from query", WL.parseRoute("#/ep/foo?h=背景与分歧").heading === "背景与分歧");
 assert("hashFor ep", WL.hashFor({ name: "ep", id: "a b" }) === "#/ep/a%20b");
+assert("parseRoute show", WL.parseRoute("#/show/a16z").name === "show" && WL.parseRoute("#/show/a16z").slug === "a16z");
+assert("parseRoute topic", WL.parseRoute("#/topic/china").name === "topic" && WL.parseRoute("#/topic/china").slug === "china");
+assert("parseRoute list query", WL.parseRoute("#/?q=jensen&form=essay").q === "jensen" && WL.parseRoute("#/?q=jensen&form=essay").form.join(",") === "essay");
+assert("parseRoute show keeps topic", WL.parseRoute("#/show/sv101?topic=china&form=essay,transcript").topic === "china");
+assert("hashFor show", WL.hashFor({ name: "show", slug: "a16z" }) === "#/show/a16z");
+assert("hashFor list filters", WL.hashFor({ name: "list", q: "x", form: ["essay"] }) === "#/?q=x&form=essay");
+assert("hashFor topic with show", WL.hashFor({ name: "topic", slug: "china", show: "sv101" }) === "#/topic/china?show=sv101");
+assert("showSlug all-in", WL.showSlug("All-In Podcast #293") === "all-in");
+assert("showSlug a16z alias", WL.showSlug("The a16z Show") === "a16z");
+assert("showSlug sv101", WL.showSlug("硅谷101播客") === "sv101");
+assert("showDisplay all-in", WL.showDisplay("All-In Podcast #293") === "All-In Podcast");
+assert("topicSlug known", WL.topicSlug("中国·科技媒体") === "china");
+assert("topicDisplay slug", WL.topicDisplay("lab") === "实验室·安全·研究");
 var tocLink = WL.tocHref("sv101-astra-agent-robot-pharma-2026-10-19", "开篇");
 assert("toc href stays on episode", tocLink.indexOf("#/ep/sv101-astra-agent-robot-pharma-2026-10-19") === 0);
 assert("toc href not bare slug", tocLink.indexOf("#开篇") === -1 && !/^#[^/]/.test(tocLink));
@@ -158,9 +171,24 @@ if (fs.existsSync(indexPath)) {
   }
   var stub = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data.json"), "utf8"));
   assert("root data.json is stub", stub.deprecated === true && Array.isArray(stub.items) && stub.items.length === 0);
+  var slugDisplays = {};
+  var slugOk = true;
+  index.items.forEach(function (it) {
+    var slug = WL.showSlug(it.show);
+    var display = WL.showDisplay(it.show);
+    if (!slugDisplays[slug]) slugDisplays[slug] = display;
+    if (slugDisplays[slug] !== display) slugOk = false;
+  });
+  assert("show slugs map to one display", slugOk && Object.keys(slugDisplays).length > 0);
 } else {
   console.log("skip  data/index.json layout checks (not split yet)");
 }
+
+var appSrc = fs.readFileSync(path.join(__dirname, "..", "app.js"), "utf8");
+var htmlSrc = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+assert("app.js drops watched storage key", appSrc.indexOf("ai-interviews-watched-v1") === -1);
+assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.indexOf("待看") === -1);
+assert("index title is library", htmlSrc.indexOf("访谈文库") !== -1 && htmlSrc.indexOf("观看列表") === -1);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);
