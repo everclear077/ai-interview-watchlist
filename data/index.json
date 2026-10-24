@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-10-24",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,196 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "allin-ai-cyber-panic-nikesh-2026-10-23",
+      "title": "AI Cyber Panic, Ken Griffin's Bubble Warning, The Fall of France?（含 Nikesh Arora）",
+      "guest": "Nikesh Arora（Palo Alto Networks CEO）；Besties 面板",
+      "show": "All-In Podcast",
+      "date": "2026-10-23",
+      "duration": "01:43:23",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "E294：Ken Griffin AI 泡沫警告（0:11）后，Nikesh Arora 加入谈 AI 网络恐慌、PHP 类漏洞与未来一年动荡（8:19–44:17，约 36 分钟嘉宾段）；后半法国政经与 Trump 下半程策略。可与 10/21 Krishna+Arora 嘉宾集互补（本集偏实时攻防与市场情绪）。",
+      "advice": "优先听 Nikesh 段（约 8–44 分）；可与 Mandia Armadin、10/21 双 CEO 集连听。",
+      "urls": [
+        {
+          "label": "Libsyn",
+          "href": "https://allinchamathjason.libsyn.com/ai-cyber-panic-ken-griffins-bubble-warning-the-fall-of-france"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E294_Ch.mp3?dest-id=1928300"
+        },
+        {
+          "label": "X 公告",
+          "href": "https://x.com/theallinpod/status/2113781128687386889"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/allin-ai-cyber-panic-nikesh-2026-10-23.png",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E294_Ch.mp3?dest-id=1928300",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-top100-consumer-ai-apps-2026-10-05",
+      "title": "The Top 100 Consumer AI Apps: Who’s Actually Paying?",
+      "guest": "Olivia Moore、Josh Elman（a16z）；主持 Elena Burger",
+      "show": "a16z Podcast",
+      "date": "2026-10-05",
+      "duration": "00:51:04",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "a16z 第七版 Top 100 消费 AI 应用：首次加入「谁在付钱」。仅少数用户付费，但头部重度用户支出极高；开发者/创作者主导当前付费结构，订阅未必是普及消费 AI 的最终商业模式，广告与 underserved 品类（购物、约会、社交、娱乐）仍有空档。",
+      "advice": "消费 AI 市场地图；做产品/投资看付费结构时优先。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-top-100-consumer-ai-apps-whos-actually-paying-PdmgSeRQ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/15cd7eea-99bc-4db9-b027-1fdb2500162c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=15cd7eea-99bc-4db9-b027-1fdb2500162c&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/a16z-top100-consumer-ai-apps-2026-10-05.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/15cd7eea-99bc-4db9-b027-1fdb2500162c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=15cd7eea-99bc-4db9-b027-1fdb2500162c&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-oliver-kharraz-zocdoc-2026-10-17",
+      "title": "Why AI Could Finally Fix Healthcare Access | Zocdoc CEO Oliver Kharraz",
+      "guest": "Oliver Kharraz（Zocdoc CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-17",
+      "duration": "00:34:56",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "Zocdoc CEO 谈预约难的根因不是「找不到医生」，而是准确可约性与入口打通；近 20 年调度基建如何向 AI agent、保险公司与其他平台开放，以及与 Gemini 等合作的产品化路径。",
+      "advice": "医疗 AI 落地/分发；可与 a16z×Karan Singhal 健康篇对照。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/why-ai-could-finally-fix-healthcare-access-zocdoc-ceo-oliver-kharraz-9n_zG60B"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/60df6c4d-a29a-4c66-994e-bbd659a2e577/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=60df6c4d-a29a-4c66-994e-bbd659a2e577&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/a16z-oliver-kharraz-zocdoc-2026-10-17.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/60df6c4d-a29a-4c66-994e-bbd659a2e577/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=60df6c4d-a29a-4c66-994e-bbd659a2e577&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-ai-cryptography-boneh-2026-10-13",
+      "title": "Can AI Break Cryptography? What the Experts Actually Think",
+      "guest": "Dan Boneh（Stanford）、Eddy Lazzarin、Justin Thaler（a16z crypto）",
+      "show": "a16z Podcast",
+      "date": "2026-10-13",
+      "duration": "00:42:11",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "AI 数学研究升温后，加密是否会被「破」？Stanford 密码学家 Boneh 与 a16z crypto 拆证据与炒作：现代密码依赖的数学假设、OpenAI 近期结果实际意味着什么、钱包/银行/私信栈的真实风险边界，以及量子与 AI 威胁的差异。",
+      "advice": "安全与加密必听；可与 All-In×Krishna 量子威胁段、Mandia 攻防篇连听。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/can-ai-break-cryptography-what-the-experts-actually-think-LCUGnMEC"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/ded4b58e-4303-418c-807e-fffaeb59a92c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=ded4b58e-4303-418c-807e-fffaeb59a92c&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/a16z-ai-cryptography-boneh-2026-10-13.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/ded4b58e-4303-418c-807e-fffaeb59a92c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=ded4b58e-4303-418c-807e-fffaeb59a92c&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-race-to-rsi-makermaker-2026-10-12",
+      "title": "The Race to Recursive Self-Improving AI",
+      "guest": "Dhaval Adjodah、Owen He（MakerMaker.AI 联合创始人）",
+      "show": "a16z Podcast",
+      "date": "2026-10-12",
+      "duration": "00:33:27",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Martin Casado 与 MakerMaker 联创拆「真 RSI」vs 用 AI 自动化研发片段：目标是被改进对象也在做改进的闭环（模型、harness 乃至更多栈）。澄清闭环≠保证失控 takeoff，并谈当前卡点与竞赛态势。",
+      "advice": "RSI 概念澄清短集；可与 Dwarkesh RSI 辩论、晚点田渊栋篇对读。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-race-to-recursive-self-improving-ai-OPuX1TcP"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/082b16db-6860-47bf-83ca-c3bfaeb02f49/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=082b16db-6860-47bf-83ca-c3bfaeb02f49&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/a16z-race-to-rsi-makermaker-2026-10-12.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/082b16db-6860-47bf-83ca-c3bfaeb02f49/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=082b16db-6860-47bf-83ca-c3bfaeb02f49&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-kevin-mandia-armadin-2026-10-06",
+      "title": "Building Defense for the Agentic Era: Kevin Mandia",
+      "guest": "Kevin Mandia（Armadin 创始人兼 CEO；Mandiant 创始人）",
+      "show": "a16z Podcast",
+      "date": "2026-10-06",
+      "duration": "00:49:09",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Mandiant 创始人 Kevin Mandia 创办 Armadin：攻击方可在机器速度下并行探测数千路径，改变攻防经济学；防御也必须走向自主。讨论 AI 连续红队、年内发现 90+ 个生产环境零日，以及人为何不能再留在 detect-and-respond 回路里。",
+      "advice": "安全/Agent 必听；可与 All-In×Nikesh、No Priors 安全向对读。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/building-defense-for-the-agentic-era-kevin-mandia-4ylPD1X6"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/24f18a48-5a9a-44ed-905a-34359aaf1190/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=24f18a48-5a9a-44ed-905a-34359aaf1190&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/a16z-kevin-mandia-armadin-2026-10-06.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/24f18a48-5a9a-44ed-905a-34359aaf1190/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=24f18a48-5a9a-44ed-905a-34359aaf1190&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "geekpark-linkstart-udl-2026-10-21",
       "title": "Vol.135｜对话 UDL：AI 眼镜、折叠屏，以及技术背后的设计取舍",
