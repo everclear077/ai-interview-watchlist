@@ -3,7 +3,6 @@
 
   var LS_AUDIO = "ai-interviews-audio-pos-v1";
   var SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
-  var SITE_TITLE = "长镜 · AI";
   var FORM_KEYS = [
     { id: "essay", labelKey: "formEssay" },
     { id: "analysis", labelKey: "formAnalysis" },
@@ -22,6 +21,7 @@
   var LS_THEME = W.THEME_KEY || "wl-theme";
   var LS_LANG = W.LANG_KEY || "wl-lang";
   var t = function (key, vars) { return W.t(key, vars); };
+  function siteBrand() { return t("brand"); }
 
   var state = {
     data: null,
@@ -378,10 +378,13 @@
     document.documentElement.lang = W.htmlLang(lang);
     var skip = document.getElementById("skip");
     if (skip) skip.textContent = t("skip");
+    var brand = siteBrand();
     var desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", t("lede"));
     var og = document.querySelector('meta[property="og:description"]');
     if (og) og.setAttribute("content", t("lede"));
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", brand);
     if (persist) {
       try { localStorage.setItem(LS_LANG, lang); } catch (e) {}
     }
@@ -433,14 +436,14 @@
       el.innerHTML =
         '<div class="topbar-inner">' +
           '<a class="back" href="#/">' + t("back") + "</a>" +
-          '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
+          '<a class="brand" href="#/">' + W.escapeHtml(siteBrand()) + "</a>" +
           tools +
         "</div>";
       return;
     }
     el.innerHTML =
       '<div class="topbar-inner">' +
-        '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
+        '<a class="brand" href="#/">' + W.escapeHtml(siteBrand()) + "</a>" +
         '<nav class="nav" aria-label="' + W.escapeHtml(t("nav")) + '">' +
           '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">" + t("all") + "</a>" +
           '<a href="#q" data-focus-search>' + t("find") + "</a>" +
@@ -483,7 +486,7 @@
               (forms ? '<div class="tile-forms">' + forms + "</div>" : "") +
             "</div>" +
           "</div>" +
-          '<h3 class="tile-title">' + W.escapeHtml(it.title) + "</h3>" +
+          '<h3 class="tile-title">' + W.escapeHtml(W.episodeTitle(it)) + "</h3>" +
           (it.guest ? '<p class="tile-guest">' + W.escapeHtml(it.guest) + "</p>" : "") +
           '<p class="tile-meta">' +
             '<span>' + W.escapeHtml(showName) + "</span>" +
@@ -606,7 +609,7 @@
     var formBtns = FORM_KEYS.map(function (f) {
       return facetBtn("form", f.id, t(f.labelKey), null, !!forms[f.id]);
     }).join("");
-    var heading = opts.heading || SITE_TITLE;
+    var heading = opts.heading || siteBrand();
     var blurb = opts.blurb || t("lede");
     var lockNote = "";
     if (opts.lock === "show") {
@@ -728,9 +731,9 @@
       opts.lock = "topic";
       if (!topicMeta) missing = "missing-topic";
     }
-    var pageTitle = SITE_TITLE;
-    if (state.route.name === "show") pageTitle = (opts.heading || t("pageShow")) + " · " + SITE_TITLE;
-    if (state.route.name === "topic") pageTitle = (opts.heading || t("pageTopic")) + " · " + SITE_TITLE;
+    var pageTitle = siteBrand();
+    if (state.route.name === "show") pageTitle = (opts.heading || t("pageShow")) + " · " + siteBrand();
+    if (state.route.name === "topic") pageTitle = (opts.heading || t("pageTopic")) + " · " + siteBrand();
     document.title = pageTitle;
 
     view.innerHTML = deskHtml(opts) + browseHtml(missing ? [] : list, missing);
@@ -764,37 +767,51 @@
   }
 
   function paneWordLabel(it) {
-    if (state.tab === "essay" && it.essay && it.essay.wordCount) {
+    var lang = W.getLang();
+    if (lang !== "zh") return "";
+    if (state.tab === "essay" && it.essay && it.essay.wordCount && W.bodyForLang(it, "essay", lang)) {
       return t("wordsEssay", { n: it.essay.wordCount });
     }
-    if (state.tab === "analysis" && it.analysis && it.analysis.wordCount) {
+    if (state.tab === "analysis" && it.analysis && it.analysis.wordCount && W.bodyForLang(it, "analysis", lang)) {
       return t("wordsAnalysis", { n: it.analysis.wordCount });
     }
-    if (W.hasEssay(it) && it.essay.wordCount) return t("wordsEssay", { n: it.essay.wordCount });
-    if (W.hasAnalysis(it) && it.analysis.wordCount) return t("wordsAnalysis", { n: it.analysis.wordCount });
+    if (W.hasEssay(it) && it.essay && it.essay.wordCount && W.bodyForLang(it, "essay", lang)) {
+      return t("wordsEssay", { n: it.essay.wordCount });
+    }
+    if (W.hasAnalysis(it) && it.analysis && it.analysis.wordCount && W.bodyForLang(it, "analysis", lang)) {
+      return t("wordsAnalysis", { n: it.analysis.wordCount });
+    }
     return "";
   }
 
   function currentTabMarkdown(it) {
-    if (state.tab === "essay" && W.hasEssay(it)) return it.essay.zh;
-    if (state.tab === "analysis" && W.hasAnalysis(it)) return it.analysis.zh;
-    if (state.tab === "transcript" && W.hasTranscript(it)) return W.transcriptMarkdown(it);
-    return "";
+    return W.bodyForLang(it, state.tab, W.getLang());
+  }
+
+  function unavailableHtml(kind) {
+    var key = kind === "analysis" ? "unavailableAnalysis"
+      : kind === "transcript" ? "unavailableTranscript"
+      : "unavailableEssay";
+    return '<p class="pane-unavailable" role="status">' + W.escapeHtml(t(key)) + "</p>";
   }
 
   function episodePanes(it) {
+    var lang = W.getLang();
     var essayOn = W.hasEssay(it);
     var analysisOn = W.hasAnalysis(it);
     var transOn = W.hasTranscript(it);
     var media = W.detectMedia(it);
     var hasMedia = !!(media.primary || W.hasAudio(it));
-    var essayRendered = essayOn ? W.renderEssay(it.essay.zh) : { html: "", headings: [] };
-    var analysisRendered = analysisOn ? W.renderEssay(it.analysis.zh) : { html: "", headings: [] };
-    var transHtml = transOn ? W.renderTranscript(it) : "";
-    var essayHtml = essayOn
+    var essayText = essayOn ? W.bodyForLang(it, "essay", lang) : "";
+    var analysisText = analysisOn ? W.bodyForLang(it, "analysis", lang) : "";
+    var transText = transOn ? W.bodyForLang(it, "transcript", lang) : "";
+    var essayRendered = essayText ? W.renderEssay(essayText) : { html: "", headings: [] };
+    var analysisRendered = analysisText ? W.renderEssay(analysisText) : { html: "", headings: [] };
+    var transHtml = transText ? W.renderTranscript(transText) : "";
+    var essayHtml = essayText
       ? W.weaveEvidence(essayRendered.html, essayRendered.headings, it.evidence)
       : "";
-    var analysisHtml = analysisOn
+    var analysisHtml = analysisText
       ? W.weaveEvidence(analysisRendered.html, analysisRendered.headings, it.evidence)
       : "";
     var activeHeadings = [];
@@ -817,28 +834,40 @@
     }
     var body = "";
     if (state.tab === "essay" && essayOn) {
-      var disc = W.textOf(it.essay.disclaimer) || t("disclaimerEssay");
-      body =
-        (disc ? '<div class="disclaimer">' + W.escapeHtml(disc) + "</div>" : "") +
-        (it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "") +
-        essayHtml;
+      if (!essayText) {
+        body = unavailableHtml("essay");
+      } else {
+        var disc = W.localizedDisclaimer(it.essay, "disclaimerEssay", lang);
+        body =
+          (disc ? '<div class="disclaimer">' + W.escapeHtml(disc) + "</div>" : "") +
+          (lang === "zh" && it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "") +
+          essayHtml;
+      }
     } else if (state.tab === "analysis" && analysisOn) {
-      var adisc = W.textOf(it.analysis.disclaimer) || t("disclaimerAnalysis");
-      body =
-        (adisc ? '<div class="disclaimer">' + W.escapeHtml(adisc) + "</div>" : "") +
-        analysisHtml;
+      if (!analysisText) {
+        body = unavailableHtml("analysis");
+      } else {
+        var adisc = W.localizedDisclaimer(it.analysis, "disclaimerAnalysis", lang);
+        body =
+          (adisc ? '<div class="disclaimer">' + W.escapeHtml(adisc) + "</div>" : "") +
+          analysisHtml;
+      }
     } else if (state.tab === "transcript" && transOn) {
-      var tdisc = W.textOf(it.transcript.disclaimer) || t("disclaimerTranscript");
-      var src = it.transcript.source && it.transcript.source !== "none"
-        ? t("transcriptSource", { source: it.transcript.source })
-        : "";
-      body =
-        '<div class="disclaimer">' + W.escapeHtml(tdisc) +
-          (src ? "<br />" + W.escapeHtml(src) : "") +
-        "</div>" +
-        '<div class="transcript">' + transHtml + "</div>";
+      if (!transText) {
+        body = unavailableHtml("transcript");
+      } else {
+        var tdisc = W.localizedDisclaimer(it.transcript, "disclaimerTranscript", lang);
+        var src = it.transcript.source && it.transcript.source !== "none"
+          ? t("transcriptSource", { source: it.transcript.source })
+          : "";
+        body =
+          '<div class="disclaimer">' + W.escapeHtml(tdisc) +
+            (src ? "<br />" + W.escapeHtml(src) : "") +
+          "</div>" +
+          '<div class="transcript">' + transHtml + "</div>";
+      }
     } else {
-      body = it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "";
+      body = (lang === "zh" && it.advice) ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "";
     }
     var serif = state.tab === "essay" || state.tab === "analysis";
     var layout =
@@ -869,7 +898,7 @@
     view.className = "view episode" + ((it && (W.detectMedia(it).primary || W.hasAudio(it))) ? "" : " no-media");
     if (!it) {
       view.innerHTML = '<div class="empty">' + t("missingEp") + "</div>";
-      document.title = SITE_TITLE;
+      document.title = siteBrand();
       return;
     }
 
@@ -950,7 +979,7 @@
     var video = "";
     if (hasEmbed && state.videoOpen) {
       video = '<div class="video-frame" id="video-frame"><iframe src="' + W.escapeHtml(media.primary.embed) +
-        '" title="' + W.escapeHtml(it.title) +
+        '" title="' + W.escapeHtml(W.episodeTitle(it)) +
         '" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>';
     }
 
@@ -992,7 +1021,7 @@
       '<article class="ep">' +
         '<header class="ep-head">' +
           '<p class="ep-kicker">' + crumbs.join("") + "</p>" +
-          "<h1>" + W.escapeHtml(it.title) + "</h1>" +
+          "<h1>" + W.escapeHtml(W.episodeTitle(it)) + "</h1>" +
           '<p class="ep-guest">' + W.escapeHtml(it.guest) + "</p>" +
           (it.summary ? '<p class="ep-summary">' + W.escapeHtml(it.summary) + "</p>" : "") +
         "</header>" +
@@ -1005,7 +1034,7 @@
         navHtml +
       "</article>";
 
-    document.title = it.title + " · " + SITE_TITLE;
+    document.title = W.episodeTitle(it) + " · " + siteBrand();
     bindAudio(it);
   }
 
@@ -1030,7 +1059,7 @@
     frame.className = "video-frame";
     frame.id = "video-frame";
     frame.innerHTML = '<iframe src="' + W.escapeHtml(media.primary.embed) +
-      '" title="' + W.escapeHtml(it.title) +
+      '" title="' + W.escapeHtml(W.episodeTitle(it)) +
       '" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>';
     var row = document.getElementById("media-row");
     if (row && row.parentNode) row.insertAdjacentElement("afterend", frame);
@@ -1154,7 +1183,7 @@
         return;
       }
       document.getElementById("view").innerHTML = '<div class="empty">' + t("loadingEp") + "</div>";
-      document.title = (it && it.title ? it.title + " · " : "") + SITE_TITLE;
+      document.title = (it ? W.episodeTitle(it) + " · " : "") + siteBrand();
       return;
     }
     renderCatalog();

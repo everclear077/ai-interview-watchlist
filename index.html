@@ -37,6 +37,14 @@
 <meta property="og:title" content="长镜 · AI" />
 <meta property="og:description" content="精选 AI / 科技长视频访谈，带精读、解读与文稿。" />
 <meta property="og:type" content="website" />
+<script>
+(function () {
+  if (document.documentElement.getAttribute("data-lang") !== "en") return;
+  document.title = "Long Lens AI";
+  var og = document.querySelector('meta[property="og:title"]');
+  if (og) og.setAttribute("content", "Long Lens AI");
+})();
+</script>
 <!--
   Night studio catalog + daylight cutting-room.
   Dark: void #090C11 / well #121820 / lamp #E39B3D / haze #8E97A8
@@ -46,19 +54,19 @@
   Theme: html[data-theme=dark|light], localStorage wl-theme
   Lang: html[data-lang=zh|en] + lang=zh-CN|en, localStorage wl-lang
   Default lang: China IANA TZ (Asia/Shanghai|Chongqing|Urumqi|Harbin) or UTC+8 if no IANA → zh; else en
-  Brand stays 长镜 · AI in both locales
+  Brand: zh 长镜 · AI / en Long Lens AI
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=20261024g" />
+<link rel="stylesheet" href="./styles.css?v=20261024h" />
 </head>
 <body>
   <a class="skip" id="skip" href="#view">Skip to main content</a>
   <header class="topbar" id="topbar"></header>
   <main id="view" class="view"></main>
   <footer class="site-footer" id="footer"></footer>
-  <script src="./media.js?v=20261024g"></script>
-  <script src="./app.js?v=20261024g"></script>
+  <script src="./media.js?v=20261024h"></script>
+  <script src="./app.js?v=20261024h"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* Shared helpers: routing, embeds, markdown, Phase 2/3 field detection
-   (essay.zh / analysis.zh / transcript.source + md|turns|en).
+   (essay.zh|en / analysis.zh|en / transcript.source + language + md|turns|en).
    Works in the browser (window.WL) and in Node (module.exports). */
 (function (root, factory) {
   var api = factory();
@@ -20,15 +20,42 @@
     return String(s == null ? "" : s).trim();
   }
 
+  function firstText(obj, keys) {
+    if (!obj || typeof obj !== "object") return "";
+    for (var i = 0; i < keys.length; i++) {
+      var v = obj[keys[i]];
+      if (typeof v === "string" && textOf(v)) return v;
+    }
+    return "";
+  }
+
+  function longformText(block, lang) {
+    if (!block || typeof block !== "object") return "";
+    if (lang === "en") {
+      var en = block.en;
+      if (typeof en === "string" && textOf(en)) return en;
+      if (en && typeof en === "object" && !Array.isArray(en)) {
+        var nested = firstText(en, ["md", "body", "text"]);
+        if (nested) return nested;
+      }
+      return firstText(block, ["en_md", "md_en", "english", "body_en"]);
+    }
+    if (typeof block.zh === "string") return textOf(block.zh) ? block.zh : "";
+    if (block.zh && typeof block.zh === "object") {
+      return firstText(block.zh, ["md", "body", "text"]);
+    }
+    return "";
+  }
+
   function hasEssay(it) {
     if (!it) return false;
-    if (it.essay) return !!textOf(it.essay.zh);
+    if (it.essay) return !!(textOf(it.essay.zh) || longformText(it.essay, "en"));
     return it.hasEssay === true;
   }
 
   function hasAnalysis(it) {
     if (!it) return false;
-    if (it.analysis) return !!textOf(it.analysis.zh);
+    if (it.analysis) return !!(textOf(it.analysis.zh) || longformText(it.analysis, "en"));
     return it.hasAnalysis === true;
   }
 
@@ -693,6 +720,9 @@
     zh: {
       brand: "长镜 · AI",
       lede: "精选 AI / 科技长视频访谈，带精读、解读与文稿。",
+      unavailableEssay: "暂无中文精读",
+      unavailableAnalysis: "暂无中文解读",
+      unavailableTranscript: "暂无中文文稿",
       skip: "跳到主要内容",
       nav: "主导航",
       all: "全部",
@@ -782,8 +812,11 @@
       linkFallback: "链接"
     },
     en: {
-      brand: "长镜 · AI",
+      brand: "Long Lens AI",
       lede: "Selected long-form AI and tech interviews, with close reads, analysis, and transcripts.",
+      unavailableEssay: "English close read not available yet",
+      unavailableAnalysis: "English analysis not available yet",
+      unavailableTranscript: "English transcript not available yet",
       skip: "Skip to main content",
       nav: "Main",
       all: "All",
@@ -863,7 +896,7 @@
       loadingEp: "Loading this episode…",
       mediaFail: "Failed to load media.js",
       dataFail: "Data did not load. Serve <code>data/index.json</code> and <code>data/episodes/</code> from a local static server.",
-      footer1: "长镜 · AI — selected long-form AI and tech interviews, with close reads, analysis, and transcripts. Not a private watchlist.",
+      footer1: "Long Lens AI — selected long-form AI and tech interviews, with close reads, analysis, and transcripts. Not a private watchlist.",
       footer2: "Close reads and analysis, when present, are AI rewrites; treat the original audio/video as authoritative. Catalog from <code>data/index.json</code>, episodes from <code>data/episodes/&lt;id&gt;.json</code>.",
       footer3: "Share filters: <code>#/?form=essay</code>, <code>#/show/sv101</code>, <code>#/topic/china</code>.",
       dateMd: "{m}月{d}日",
@@ -909,6 +942,72 @@
     return currentLang;
   }
 
+  function resolvedLang(lang) {
+    return normalizeLang(lang) || currentLang || "en";
+  }
+
+  function episodeTitle(it, lang) {
+    if (!it) return "";
+    lang = resolvedLang(lang);
+    if (lang === "en") {
+      return firstText(it, ["title_en", "titleEn", "enTitle"]) || textOf(it.title);
+    }
+    return firstText(it, ["title_zh", "titleZh"]) || textOf(it.title);
+  }
+
+  function transcriptLangOf(block) {
+    var raw = textOf(block && block.language).toLowerCase();
+    if (raw === "en" || raw === "eng" || raw === "english") return "en";
+    if (raw === "zh" || raw === "zh-cn" || raw === "zh-hans" || raw === "zh-hant" || raw === "chinese" || raw === "cmn") return "zh";
+    return raw;
+  }
+
+  function englishFromEnField(block) {
+    if (!block) return "";
+    var en = block.en;
+    if (typeof en === "string" && textOf(en)) return en;
+    if (Array.isArray(en)) return turnsToMarkdown(en);
+    if (en && typeof en === "object") {
+      if (textOf(en.md)) return en.md;
+      var fromTurns = turnsToMarkdown(en.turns);
+      if (fromTurns) return fromTurns;
+      return firstText(en, ["body", "text"]);
+    }
+    return "";
+  }
+
+  function transcriptBodyForLang(it, lang) {
+    var block = it && it.transcript ? it.transcript : it;
+    if (!block || typeof block !== "object" || Array.isArray(block)) return "";
+    lang = resolvedLang(lang);
+    if (lang === "en") {
+      var fromEn = englishFromEnField(block);
+      if (fromEn) return fromEn;
+      if (transcriptLangOf(block) === "en") {
+        if (textOf(block.md)) return block.md;
+        return turnsToMarkdown(block.turns);
+      }
+      return "";
+    }
+    return transcriptMarkdown(it);
+  }
+
+  function bodyForLang(it, kind, lang) {
+    lang = resolvedLang(lang);
+    if (kind === "essay") return longformText(it && it.essay, lang);
+    if (kind === "analysis") return longformText(it && it.analysis, lang);
+    if (kind === "transcript") return transcriptBodyForLang(it, lang);
+    return "";
+  }
+
+  function localizedDisclaimer(block, fallbackKey, lang) {
+    lang = resolvedLang(lang);
+    if (lang === "en") {
+      return firstText(block, ["disclaimer_en", "disclaimerEn"]) || t(fallbackKey, null, lang);
+    }
+    return textOf(block && block.disclaimer) || t(fallbackKey, null, lang);
+  }
+
   function t(key, vars, lang) {
     lang = normalizeLang(lang) || currentLang || "en";
     var dict = I18N[lang] || I18N.en;
@@ -950,6 +1049,12 @@
     hasEssay: hasEssay,
     hasAnalysis: hasAnalysis,
     hasTranscript: hasTranscript,
+    longformText: longformText,
+    episodeTitle: episodeTitle,
+    transcriptLangOf: transcriptLangOf,
+    transcriptBodyForLang: transcriptBodyForLang,
+    bodyForLang: bodyForLang,
+    localizedDisclaimer: localizedDisclaimer,
     hasAudio: hasAudio,
     hasEvidence: hasEvidence,
     audioUrlOf: audioUrlOf,
