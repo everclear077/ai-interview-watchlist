@@ -1,0 +1,2213 @@
+{
+  "version": 1,
+  "dataLayout": "index+episodes",
+  "title": "AI / 科技访谈 · 观看列表",
+  "lastUpdated": "2026-10-23",
+  "categories": [
+    "实验室·安全·研究",
+    "创始人·CEO·产品",
+    "VC·基建·市场",
+    "中国·科技媒体"
+  ],
+  "priorities": [
+    "P0",
+    "P1",
+    "P2"
+  ],
+  "items": [
+    {
+      "id": "geekpark-linkstart-udl-2026-10-21",
+      "title": "Vol.135｜对话 UDL：AI 眼镜、折叠屏，以及技术背后的设计取舍",
+      "guest": "极客公园 LinkStart 嘉宾",
+      "show": "开始连接 LinkStart（极客公园）",
+      "date": "2026-10-21",
+      "duration": "~65m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "UDL 胡可人、极客公园张山山与 Alan 聊 AI Native 硬件潮里的工业设计：产品定义、用户认知、AI 眼镜与折叠屏背后的取舍——酷不等于说得清为什么买。",
+      "advice": "AI 硬件/工业设计兴趣优先；关注「产品定义先于外观」一段。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad6fb05a09b94f787eb2cae"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/geekpark-linkstart-udl-2026-10-21.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/lkbrkbdXtWZ38IpZNo4rs4q8fYeF.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "geekpark-linkstart-gpt6-robot-2026-10-14",
+      "title": "Vol.134｜GPT-6 之后，机器人创业还剩下什么？",
+      "guest": "极客公园 LinkStart 嘉宾",
+      "show": "开始连接 LinkStart（极客公园）",
+      "date": "2026-10-14",
+      "duration": "~73m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "GPT-6 Astra 等通用模型强化 3D 理解、规划与控制后，机器人创业还应自留哪些能力？上层推理可外挂时，实时控制、数据与误差处理如何重新划界。",
+      "advice": "具身/机器人创业中文必听；可与 CogRev Keerthana 组对照。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ace096ee742e36efcc25e5a"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/geekpark-linkstart-gpt6-robot-2026-10-14.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/loFRKDr9p_Al4E5z-D9WpiLGkyTP.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "geekpark-linkstart-agent-game-2026-10-08",
+      "title": "Vol.133｜和开发者、投资人聊 Agent 游戏：AI 改变了游戏生产，能颠覆游戏本身吗？",
+      "guest": "极客公园 LinkStart 嘉宾",
+      "show": "开始连接 LinkStart（极客公园）",
+      "date": "2026-10-08",
+      "duration": "~109m",
+      "category": "中国·科技媒体",
+      "priority": "P2",
+      "summary": "少云、简律纯、筱宁等从开发/投资/观察者视角拆 Agent 游戏：《积案拂尘》《历史模拟器：崇祯》等案例；AI 改变了生产，但颠覆「游戏本身」仍被从业者谨慎看待。",
+      "advice": "游戏+Agent 交叉兴趣可选；时长较长，可先听案例与投资判断段。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6abb7be1e742e36efcbca77f"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/geekpark-linkstart-agent-game-2026-10-08.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/63ff0da51b1faf8a0b70b337/llsDXJ2lIqWe8A_PUsyBKz7O7A10.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-muse-grok-instinct-2026-10-22",
+      "title": "AI助理争夺战：解析Muse、Grok Bot与Instinct背后的产品布局、入口生意与盈利难题",
+      "guest": "Howie Xu / 彭征 等",
+      "show": "硅谷101",
+      "date": "2026-10-22",
+      "duration": "~33m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "以 Meta Muse、Grok Bot、Instinct 为样本拆个人 AI 助手入口战：架构成熟+模型降本为何让 agent 可用；三条完全不同的入口与资源禀赋；消费级烧钱呈指数、办公场景更好变现；授权越权与平台封杀是两类风险；专业化 agent 可能是下一形态。",
+      "advice": "中文产品向今日优先：做助手/agent 入口与商业化必听；可与 Lenny×Tibo、No Priors Knecht 对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=ARocqV7DtC8"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/sv101-muse-grok-instinct-2026-10-22.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=ARocqV7DtC8"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-frontier-ideas-2026-10-22",
+      "title": "The Frontier Ideas a16z Wants to Fund | Marc Andreessen, Ben Horowitz & Chris Dixon",
+      "guest": "Marc Andreessen / Ben Horowitz / Chris Dixon",
+      "show": "a16z Podcast",
+      "date": "2026-10-22",
+      "duration": "01:01:00",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "a16z 将 crypto 扩展为 Frontier 更广 Mandate：鼓励创始人问「是否够野心」；讨论 AI 如何拉动硬件、机器人、娱乐、科学与新媒体，以及 agent 互联网、开源与跨品类公司形态。",
+      "advice": "可选：关心 a16z Frontier 主题与融资叙事时补听；非今日必看。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/tbc-gRs50MgP"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/46e9084f-65b6-47f8-8aa3-1c8505c30008/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=46e9084f-65b6-47f8-8aa3-1c8505c30008&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/a16z-frontier-ideas-2026-10-22.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/46e9084f-65b6-47f8-8aa3-1c8505c30008/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=46e9084f-65b6-47f8-8aa3-1c8505c30008&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-andy-jassy-amazon-ai-2026-10-23",
+      "title": "Amazon CEO Andy Jassy on Why Amazon Is Investing $220 Billion in AI",
+      "guest": "Andy Jassy（Amazon CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-23",
+      "duration": "01:01:21",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Andy Jassy 与 Ben Horowitz、Erik Torenberg 谈亚马逊约 2200 亿美元量级 CapEx 仍难满足 AI 需求、AWS 长期规模想象、推理成本下降如何打开企业采用，以及 AI 如何重塑亚马逊内部团队、Alexa 与网络安全/判断力议题。",
+      "advice": "云与企业 AI 采购/战略必听；可与 Dwarkesh 制造约束篇对读「需求无限 vs 供给地质时间」。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/amazon-ceo-220-billion-still-cant-meet-ai-demand-3QzhqLQK"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/e1185d26-c41a-40d4-9210-eca5adab915a/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=e1185d26-c41a-40d4-9210-eca5adab915a&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/a16z-andy-jassy-amazon-ai-2026-10-23.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/e1185d26-c41a-40d4-9210-eca5adab915a/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=e1185d26-c41a-40d4-9210-eca5adab915a&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "lenny-tibo-sottiaux-chatgpt-2026-10-04",
+      "title": "OpenAI’s Head of ChatGPT: We’re entering a new era of AI (again) | Tibo Sottiaux",
+      "guest": "Tibo Sottiaux（OpenAI Head of ChatGPT）",
+      "show": "Lenny's Podcast",
+      "date": "2026-10-04",
+      "duration": "~37m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "ChatGPT 负责人 Tibo 谈为何 Dots 是 OpenAI 最大赌注之一、agent 将主导互联网动作、更简单的 UX（弱化模型选择器）、插件生态分成，以及 builder 仍常搞错的点。",
+      "advice": "短而密的产品向必听；做消费级 agent/助手入口的优先补。",
+      "urls": [
+        {
+          "label": "Lenny's Newsletter",
+          "href": "https://www.lennysnewsletter.com/p/openais-head-of-chatgpt-were-entering"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=MM-C3JqCXBk"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/lenny-tibo-sottiaux-chatgpt-2026-10-04.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=MM-C3JqCXBk"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "lenny-josh-woodward-google-labs-2026-10-11",
+      "title": "Why every company now needs to think and operate like a lab team | Josh Woodward (Google Labs, Gemini, AI Studio)",
+      "guest": "Josh Woodward（Google Labs）",
+      "show": "Lenny's Podcast",
+      "date": "2026-10-11",
+      "duration": "~62m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Google Labs 的 Josh Woodward 谈创意来源、何时杀死项目，以及在「每周可能边界都在变」的世界里如何像实验室一样做产品：Gemini / AI Studio 一线的组织节奏与判断力。",
+      "advice": "产品负责人补听；关注「实验室式运营」与杀项目标准两段。",
+      "urls": [
+        {
+          "label": "Lenny's Newsletter",
+          "href": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=3I6QYkccd3o"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/lenny-josh-woodward-google-labs-2026-10-11.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=3I6QYkccd3o"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-keerthana-gemini-robotics-2026-10-03",
+      "title": "One Brain, Any Body: Google DeepMind's Keerthana on Gemini Robotics 2, Cross-Embodiment & Humanoids",
+      "guest": "Keerthana Gopalakrishnan（Google DeepMind）",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-03",
+      "duration": "~66m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "DeepMind Gemini Robotics 研究负责人谈 Robotics 2 三模型栈（推理规划 / VLA 执行 / 端侧）、跨本体、全身人形控制与安全；认为机器人仍大致处在「GPT-2」阶段。",
+      "advice": "具身智能/机器人创业对照听；可与极客公园 LinkStart Vol.134 GPT-6×机器人篇组中英对照。",
+      "urls": [
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/one-brain-any-body-google-deepmind-s-keerthana-on-gemini-robotics-2-cross-embodiment-humanoids/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=3Y8aq_ofEVs"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/cogrev-keerthana-gemini-robotics-2026-10-03.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=3Y8aq_ofEVs"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-eric-bigelow-goodfire-2026-10-10",
+      "title": "How Agents Decide: Goodfire's Eric Bigelow on Critical Tokens, Phase Shifts, & In-Context Learning",
+      "guest": "Eric Bigelow（Goodfire）",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-10",
+      "duration": "~88m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Goodfire 研究员 Eric Bigelow 从机制可解释性角度谈模型如何「做决定」：critical tokens、相变、上下文学习，以及 CoT 可靠性、RL 与 reward hacking 对 agent 行为的含义。",
+      "advice": "做可解释性/agent 可靠性的补听；与 Lenny×Ameisen、Alan Chan 治理篇可组阅读。",
+      "urls": [
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/how-agents-decide-goodfire-s-eric-bigelow-on-critical-tokens-phase-shifts-in-context-learning/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=LgX0QF2D9y0"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/cogrev-eric-bigelow-goodfire-2026-10-10.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=LgX0QF2D9y0"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-alan-chan-govai-2026-10-14",
+      "title": "Governing AI Agents: Alan Chan of GovAI on Monitoring, Agent IDs, Rogue Agents & Preparing for RSI",
+      "guest": "Alan Chan（GovAI）",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-14",
+      "duration": "~123m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "GovAI 的 Alan Chan 谈 agent 治理全栈：上下文监控与算力承诺、防篡改日志 vs 零留存、agent 身份边界、站点访问政策、AI Act 第 50 条、rogue agent，以及如何测量 AI 研发自动化并为 RSI 打桩。许多方案已有、卡点常在意愿。",
+      "advice": "今日安全向首推：做 agent 运行时/企业权限/治理政策必听。三 Tab 已齐。",
+      "urls": [
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/governing-ai-agents-alan-chan-of-govai-on-monitoring-agent-ids-rogue-agents-preparing-for-rsi/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=SBlVJyoT3IM"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/cogrev-alan-chan-govai-2026-10-14.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=SBlVJyoT3IM"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "nopriors-dane-knecht-cloudflare-2026-10-23",
+      "title": "Democratizing Security for the Agentic Web with CloudFlare CTO Dane Knecht",
+      "guest": "Dane Knecht（Cloudflare CTO）",
+      "show": "No Priors",
+      "date": "2026-10-23",
+      "duration": "~41m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Cloudflare CTO 谈 agentic web 的安全民主化：当 agent 大规模访问与操作网络时，边缘防护、身份与滥用治理如何产品化，以及基础设施公司如何同时服务站点与自动化客户端。",
+      "advice": "做 agent 联网/反滥用/边缘安全的必听短集；可与 CogRev Alan Chan 的身份/访问治理对照。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688"
+        },
+        {
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/PDP2314551616.mp3"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/nopriors-dane-knecht-cloudflare-2026-10-23.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/PDP2314551616.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-erik-bernhardsson-modal-2026-10-22",
+      "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "guest": "Erik Bernhardsson（Modal CEO）",
+      "show": "Latent Space",
+      "date": "2026-10-22",
+      "duration": "~86m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Modal CEO 谈弹性 GPU、sandbox 增长与「agent cloud」经济：为什么算力供给常呈矩形约束、如何把短时爆发工作负载做成产品，以及 agent 时代基础设施的计量与利润结构。",
+      "advice": "做 AI infra / agent 运行时的补听；与 Dwarkesh Intel 厂访形成「制造层 vs 云弹性层」对照。",
+      "urls": [
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/modal"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a16579-8537-79c0-86b7-c9fb7a723041/01a16579-85f9-7405-b65b-7eeb25ff90b0.mp3"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/latent-space-erik-bernhardsson-modal-2026-10-22.jpg",
+      "media": {
+        "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a16579-8537-79c0-86b7-c9fb7a723041/01a16579-85f9-7405-b65b-7eeb25ff90b0.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "dwarkesh-intel-fab-2026-10-22",
+      "title": "What will computer chips look like in 2045?",
+      "guest": "Chris Auth / Kevin Fischer / Tyler Osborn / Pushkar Ranade（Intel）等",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-10-22",
+      "duration": "~69m（YouTube）",
+      "category": "VC·基建·市场",
+      "priority": "P0",
+      "summary": "Dwarkesh 参观 Intel 先进晶圆厂并访谈工艺、封装与 CTO：AI 需求冲击、14A 良率闭环、High-NA 经济性、IDM→Foundry 的 PDK 陡坡、Foveros/hybrid bonding 节距演进、EUV 工具瓶颈与 CapEx–客户结构悖论。理解「GPU 荒」背后的制造约束地图。",
+      "advice": "今日首推基建向：做算力供应链/投资/主权算力必听；可与云厂商 CapEx 访谈对冲阅读。三 Tab 已齐（精读/解读/官方转写）。",
+      "urls": [
+        {
+          "label": "Dwarkesh",
+          "href": "https://www.dwarkesh.com/p/intel-tour"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=frYSOKvNiiE"
+        }
+      ],
+      "addedAt": "2026-10-23",
+      "cover": "thumbs/dwarkesh-intel-fab-2026-10-22.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=frYSOKvNiiE"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "decoder-bill-gates-ai-turbulence-2026-10-22",
+      "title": "Bill Gates says to prepare for 20 years of 'tumultuous' AI disruption",
+      "guest": "Bill Gates（微软联合创始人、盖茨基金会主席）",
+      "show": "Decoder with Nilay Patel（The Verge）",
+      "date": "2026-10-22",
+      "duration": "~1h17m（音频）/ ~71m（YouTube）",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "盖茨 8 月长文《动荡的 AI 时代已经到来》后的深度追问版：他称能力门槛已越过、这是「最危险的技术」，但否认自己是 doomer；认为多家竞争使 OpenAI 式自律结构失效，责任必须转到政府；控制问题三条路（替代 RL / 可解释性 / 符号化安全层）中最看好「不可违反的直接规则」安全层；提出超过能力门槛的模型只能跑在经认证、不允许移除护栏的平台上（在分发层而非芯片层执行）；预判约 20 年的动荡过渡期，提出「人类保留职业」，并回应 Ben Horowitz、Mustafa、数据中心抗议与年轻人虚无感。",
+      "advice": "今日首推：AI 治理与 agent 安全设计的高密度对谈；做 agent 产品的可重点听「符号化安全层」与平台认证两段。完整文稿 Tab 已按 Verge 文字稿补齐（说话人启发式切分）。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=A0kTUP7fWtk"
+        },
+        {
+          "label": "Pod.link",
+          "href": "https://pod.link/decoder/episode/ZjEwNmJjMTgtY2ZjNi0xMWYwLTgzYzUtNzdjM2MyNDU1M2Y3"
+        },
+        {
+          "label": "The Verge Decoder",
+          "href": "https://www.theverge.com/decoder-podcast-with-nilay-patel"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/decoder-bill-gates-ai-turbulence-2026-10-22.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=A0kTUP7fWtk",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7276454247.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "lenny-emmanuel-ameisen-interpretability-2026-10-18",
+      "title": "Inside the black box of AI: How AI models actually think",
+      "guest": "Emmanuel Ameisen（Anthropic 可解释性研究员）",
+      "show": "Lenny's Podcast",
+      "date": "2026-10-18",
+      "duration": "~1h12m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "Anthropic 可解释性研究员面向大众讲清「模型是长出来的」：下一个词预测为何被低估（达拉斯→得州→奥斯汀）、跨模态共享概念、押韵诗里提前规划且不说出口、Golden Gate Claude 式干预验证；平滑扩展曲线 + 任务可靠性门槛 = 外界看到的能力跳变（Opus 4.5 前后的编码体验）；可解释性在对齐中的角色（检查模型是否「只因被观察才表现良好」），「算出 12 却坚持 36、自称被恶魔附身」的训练数据错标案例；以及为何拟人化反而是有用的心智模型。",
+      "advice": "理解 AI 安全讨论的最佳入门之一，概念清楚、不需要技术背景；可与 Dwarkesh/Hugging Face 事件相关条目对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=JHo-aiePjoM"
+        },
+        {
+          "label": "Lenny's Newsletter",
+          "href": "https://www.lennysnewsletter.com/p/a-mind-expanding-conversation-on"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/lenny-emmanuel-ameisen-interpretability-2026-10-18.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=JHo-aiePjoM",
+        "audioUrl": "https://pscrb.fm/rss/p/api.substack.com/feed/podcast/219139599/90039a78d32af2fbdc8b895d58abe6b4.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "bg2-jensen-huang-capex-2026-10-15",
+      "title": "Jensen Huang | Does AI Revenue Justify Capex, '27 AI Bottlenecks, Singularity, Open vs Closed & more",
+      "guest": "Jensen Huang（NVIDIA CEO）；主持 Brad Gerstner、Clark Tang",
+      "show": "BG2 Pod",
+      "date": "2026-10-15",
+      "duration": "~1h40m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "黄仁勋第三次做客 BG2，录于习近平国宴、白宫超级智能协议与其获颁国家科学奖章之后数日：AI 收入能否撑起资本开支、2027 年的主要瓶颈（电力等）、通往奇点的路径、开源与闭源之争、SpaceX 能否把数据中心送上轨道，以及为何 NVIDIA 认为需求远不止两家 AI 实验室；他自称对未来十年「99.99% 乐观」。",
+      "advice": "算力/资本开支叙事的一手来源；与本站 Lex×黄仁勋、All-In E293（CoreWeave 下跌）对照看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=eS7qQ3WJSrw"
+        },
+        {
+          "label": "Spotify",
+          "href": "https://podcasters.spotify.com/pod/show/bg2pod/episodes/Jensen-Huang--Does-AI-Revenue-Justify-Capex--27-AI-Bottlenecks--Singularity--Open-vs-Closed--more-e3qhfl4"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/bg2-jensen-huang-capex-2026-10-15.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=eS7qQ3WJSrw",
+        "audioUrl": "https://anchor.fm/s/f06c2370/podcast/play/127499364/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-15%2F434203331-44100-2-dec3db8a7fb56.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "nopriors-george-kurtz-crowdstrike-2026-10-22",
+      "title": "The New Apex Predator: CrowdStrike CEO George Kurtz on Adversaries Armed With AI Agents",
+      "guest": "George Kurtz（CrowdStrike 总裁兼 CEO）",
+      "show": "No Priors",
+      "date": "2026-10-22",
+      "duration": "~45m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Sarah Guo、Elad Gil 对话 CrowdStrike CEO：攻击者已在运行 AI agent，最快的攻击以秒计；agent 正在「压扁攻击者金字塔」，让低技能者获得高级手法；CrowdStrike 与 NVIDIA 合建前沿式实验室训练安全模型；开放权重与闭源模型的安全比较、模型蒸馏现状、Hugging Face 事件的教训、「防御占优」的论证，以及他为何认为 AI 像以往平台迁移一样净创造机会。",
+      "advice": "与今天的盖茨访谈（网络攻击是近期最大风险）互为正反面，适合连听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=PST8yesYOSo"
+        },
+        {
+          "label": "No Priors",
+          "href": "https://www.youtube.com/@NoPriorsPodcast"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/nopriors-george-kurtz-crowdstrike-2026-10-22.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=PST8yesYOSo",
+        "audioUrl": "https://traffic.megaphone.fm/PDP8573582914.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "allin-arvind-krishna-nikesh-arora-2026-10-21",
+      "title": "Arvind Krishna & Nikesh Arora: Quantum Threat, Open vs Frontier AI, AI Cyber Warfare & SaaS Collapse",
+      "guest": "Arvind Krishna（IBM CEO）、Nikesh Arora（Palo Alto Networks CEO）",
+      "show": "All-In Podcast",
+      "date": "2026-10-21",
+      "duration": "~40m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "IBM 与 Palo Alto Networks 两位 CEO 同台：量子计算对加密的威胁（0:00）、开放权重 vs 前沿模型（9:07）、AI 与网络战（18:07）、AI 监管与全球军备竞赛（21:14）、垂直整合与软件整合／「SaaS 崩塌」（30:32）。企业 IT 与安全两大巨头视角，短而密。",
+      "advice": "排期看：企业安全与软件整合视角，可与 No Priors×Kurtz 一起听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=yzk44lz-RGI"
+        },
+        {
+          "label": "Libsyn",
+          "href": "https://allinchamathjason.libsyn.com/arvind-krishna-nikesh-arora-quantum-threat-open-vs-frontier-ai-ai-cyber-warfare-saas-collapse"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/allin-arvind-krishna-nikesh-arora-2026-10-21.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=yzk44lz-RGI",
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/88_AUDIO_NikeshArvink.mp3?dest-id=1928300",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "iltb-christina-cacioppo-vanta-2026-10-20",
+      "title": "Christina Cacioppo - Building an Enduring Software Company in the Age of AI",
+      "guest": "Christina Cacioppo（Vanta 创始人兼 CEO）",
+      "show": "Invest Like the Best（EP.496）",
+      "date": "2026-10-20",
+      "duration": "~57m",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "距首次访谈五年后再访：Vanta（服务 16,000+ 家公司的安全合规平台）如何成为品类领导者、在 AI 时代重塑成功软件业务需要什么、为何押注让 agent「直接干活」而非只做辅助；软件经济学的变化、顶尖人才争夺、AI 对网络安全的影响，以及在快速变化的硅谷打造长青公司。官方页面附文字稿。",
+      "advice": "B2B SaaS 创始人视角，可选看；关注「agent 替用户完成工作」的产品转型。",
+      "urls": [
+        {
+          "label": "Colossus（含文稿）",
+          "href": "https://colossus.com/episode/becoming-a-category-winner/"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/iltb-christina-cacioppo-vanta-2026-10-20.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/CLS1049065818.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-alex-rives-biohub-2026-10-20",
+      "title": "A World Model of Life: Biohub's Alex Rives on Virtual Cells, Measurement, & the $1.8B Data Push",
+      "guest": "Alex Rives（Biohub 科学负责人，前 ESM 蛋白语言模型负责人）",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-20",
+      "duration": "~65m",
+      "category": "实验室·安全·研究",
+      "priority": "P2",
+      "summary": "Biohub 要构建「生命的预测性世界模型」：在扩大至 18 亿美元的虚拟生物学计划（合作方含美国能源部、NIH、Google DeepMind、Meta）支持下绘制数千亿细胞的情境化图谱；为何当下 AI 架构还做不出真正的虚拟细胞、激光相位板等测量技术突破的重要性、跨尺度与跨模式生物学习，以及五年内实现「信息层面细胞模型」、让医学从传统药物走向可编程干预的路线。",
+      "advice": "AI for Science 方向可选看；可与 Latent Space×Pushmeet Kohli & Biohub 那期对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=l6DPAwgUr-8"
+        },
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/a-world-model-of-life-biohub-s-alex-rives-on-virtual-cells-measurement-the-1-8b-data-push/"
+        }
+      ],
+      "addedAt": "2026-10-22",
+      "cover": "thumbs/cogrev-alex-rives-biohub-2026-10-20.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=l6DPAwgUr-8",
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP4571154234.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-dyna-robotics-revisit-2026-10-18",
+      "title": "再访Dyna Robotics：被部署教训了300天后，找到机器人Scaling Law【101视频播客】",
+      "guest": "Jason Ma（Dyna Robotics 联合创始人、首席科学家）；联合主持 张君武",
+      "show": "硅谷101",
+      "date": "2026-10-18",
+      "duration": "120分钟",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "陈茜与特邀联合主持张君武再访 Dyna 联合创始人 Jason Ma：鼎泰丰叠餐巾部署账本（实验室成功率 99.4% vs 客户合格率 75%；35→95 条/小时、1590 条/天达标）、从 VLA 转向世界动作模型 WAM、100 万小时第一视角人类视频带来的跨本体 Scaling Law、半人形机器人 Taku 承包洗衣房全流程，以及对 π、Skild、Figure、特斯拉/OpenAI 的竞争判断与「分发渠道比模型更重要」。",
+      "advice": "本轮中文 P0：具身智能「从演示到部署」最具体的一手数据；可与 Latent Space×Jason Ma、张小珺×Lindon Gao 对照看。有官方文字版。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1vWnE6wEyj/"
+        },
+        {
+          "label": "文字版（钛媒体转载）",
+          "href": "https://www.tmtpost.com/8174365.html"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/sv101-dyna-robotics-revisit-2026-10-18.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-alex-zhang-rlm-2026-10-02",
+      "title": "Academia is for Ambition — Alex Zhang, MIT（Recursive Language Models）",
+      "guest": "Alex Zhang（MIT PhD，RLM 作者）",
+      "show": "Latent Space",
+      "date": "2026-10-02",
+      "duration": "101 min",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "swyx 与 Vibhu 对话 MIT 博士生、RLM（递归语言模型）作者 Alex Zhang：从 GPU Mode/KernelBench 与 AI 写 kernel 的验证缺口，到研究品味（学术界要押「看起来琐碎」的大注）、Jev 与「语言模型≠自回归解码器」、harness 作为组合泛化器（短任务训练泛化到 8–30 倍长度）、RLM 定义与 Prime Agent、OpenAI 万级智能体集群（约 1300 亿输出 token/~4000 万美元）与「未来的模型是看不见的集群」、能力悬置与推测式工具调用。",
+      "advice": "本轮 P0（补漏 2–3 周前）：想理解 Agent harness 设计与多智能体集群走向的必听；已写精读/详细解读/官方带说话人文稿。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=kog7mwsDqnk"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/rlm"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/latent-space-alex-zhang-rlm-2026-10-02.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/218414422/8282d299c840a81c150130424b8a1903.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "zhangxiaojun-qiancheng-ecovacs-2026-10-20",
+      "title": "155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻",
+      "guest": "钱程（David，科沃斯 CEO）",
+      "show": "张小珺Jùn｜商业访谈录",
+      "date": "2026-10-20",
+      "duration": "119分钟",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "张小珺对话 1990 年出生、曾为中国最年轻 A 股上市公司 CEO 的科沃斯 CEO 钱程：企二代/创二代的性格底色、德国市场 6 个月拿到 30% 份额、当上 CEO 时「成功之巅即愚昧之巅」、欲望与克制、「我们像农耕不像游牧」、「今天 AI 还没到抢肉的状态」、父与子的传承与接班。中国一代企业进入传承期的少见样本，兼谈扫地机器人到具身的产业判断。",
+      "advice": "想看中国硬件/机器人公司「传承」与经营哲学的长访谈；偏人物与组织，AI 技术含量中等。B 站与小宇宙同步。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1NtJB6TEkE/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad4dacd641ef406308d86e5"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/zhangxiaojun-qiancheng-ecovacs-2026-10-20.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a",
+        "audioSource": "official"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "training-data-josh-gao-mecka-2026-10-20",
+      "title": "Inside the Robot Data Factory: Mecka's Josh Gao on Sensorizing Humans to Train Robots",
+      "guest": "Josh Gao（Mecka AI 创始人兼 CEO）",
+      "show": "Training Data (Sequoia)",
+      "date": "2026-10-20",
+      "duration": "45 min",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "红杉 Sonya Huang 对话机器人数据工厂 Mecka 创始人 Josh Gao：消费者 App + B2B 招募的数据采集运营、自研带摄像头的棒球帽与触觉手套、100G 上行专线与数百 PB 数据、质量门与欺诈（有人把 YouTube「POV 打工」视频当贡献提交）；行业正在收敛的「数据汤」配方（约百万小时第一视角人类数据 + 数万小时 UMI + 少量场景内遥操作），以及「不会有单一 GPT-3 时刻，而是逐步解锁商业用例」。",
+      "advice": "与本轮 P0「硅谷101×Dyna」是数据链条上下游，对照看；附 ASR 英文文稿（说话人为人工判定）。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=0idrTKCDhuE"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/training-data-josh-gao-mecka-2026-10-20.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI3718185378.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-evan-conrad-sf-compute-2026-10-20",
+      "title": "The Programmable Data Center — Evan Conrad, SF Compute",
+      "guest": "Evan Conrad（SF Compute CEO）",
+      "show": "Latent Space",
+      "date": "2026-10-20",
+      "duration": "37 min",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "AIE NYC 算力交易分会场边录制：SF Compute 从转租集群到「运营整座酒店」，做 GPU 合约的实物交割（physical settlement）；多约束订单簿如何在算力未标准化时撮合流动性、现货与远期（最长 3–5 年）、可中断性/存储/WAN 等维度为何影响价格、硬件批次（cohort）差异，以及为何 NVIDIA 这类利益相关方难以做中立交易所、InfiniBand 按需切分等「可编程数据中心」能力。",
+      "advice": "关注算力金融化/GPU 交易市场的必听短集；官方附自动文稿（无说话人标注）。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=EAtLq9_vrE0"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/sfcompute2"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/latent-space-evan-conrad-sf-compute-2026-10-20.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/221372257/7ed7b84113dff624d58881643b466618.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-nick-bostrom-superintelligence-2026-10-11",
+      "title": "Nick Bostrom: How Should We Navigate Superintelligence?",
+      "guest": "Nick Bostrom",
+      "show": "a16z Podcast",
+      "date": "2026-10-11",
+      "duration": "54 min",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "（MTS 节目转载，Theo Jaffee、Sofia Puccini 主持）Bostrom 在「能力强大的 AI 已经存在」的当下重访超级智能与存在性风险：RL 是否把模型推向更目标导向、近期智能体实验对工具性趋同的启示、为何主张保留「能放慢前沿」的能力而非现在就承诺广泛/无限期暂停；兼谈 AI 的医学与寿命上行、当前模型是否可能有意识、开源取舍、机器能否做原创哲学、意识上传与模拟假说。",
+      "advice": "安全/哲学视角补课，适合与 Dwarkesh RSI 辩论对照。",
+      "urls": [
+        {
+          "label": "a16z（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/nick-bostrom-how-should-we-navigate-superintelligence-COJSBboX"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/a16z-nick-bostrom-superintelligence-2026-10-11.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/eca4cc70-0fd7-4623-bf6f-be7c72d6ed85/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=eca4cc70-0fd7-4623-bf6f-be7c72d6ed85&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-pat-gelsinger-chips-memory-power-2026-10-09",
+      "title": "Chips, Memory, and Power | Pat Gelsinger",
+      "guest": "Pat Gelsinger（Playground Global GP、前 Intel CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-09",
+      "duration": "54 min",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "a16z 的 Raghu Raghuram 与 Guido Appenzeller 对话前 Intel CEO Pat Gelsinger：AI 如何改变芯片设计（但更快的设计解决不了最大问题）、制造/内存带宽/先进封装/电力四大瓶颈、专用 AI 芯片爆发后可能收敛到少数架构、新型内存与铜转光互连、能源容量为何可能卡住 AI 增长，以及「为智能体而非人类构建的基础设施」下虚拟化会是什么样（回看 VMware 经验）。",
+      "advice": "基建/半导体视角的高密度一集；关注算力供给侧必看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=1Q_7yU7FZ1k"
+        },
+        {
+          "label": "a16z（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/chips-memory-and-power-pat-gelsinger-uwHe_vsU"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/a16z-pat-gelsinger-chips-memory-power-2026-10-09.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/2a98eb9e-80e8-4172-958c-8f92f8976e78/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=2a98eb9e-80e8-4172-958c-8f92f8976e78&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-matt-garman-aws-agentic-cloud-2026-10-08",
+      "title": "Building the Cloud for an Agentic World | AWS CEO Matt Garman",
+      "guest": "Matt Garman（AWS CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-08",
+      "duration": "56 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Raghu Raghuram 对话 AWS CEO Matt Garman：AI 原生创业公司的需求、为智能体设计的基础设施、智能体写代码和管理基础设施后 AWS 如何调整、为何为创业公司预留稀缺 GPU、Trainium/Graviton 在 AI 栈中的位置、亚马逊 2200 亿美元资本开支与建设瓶颈的迁移、企业信任自主智能体需要什么，以及 AWS 内部团队如何用智能体开发。",
+      "advice": "超大云厂商视角看 agentic 基建；与 Gelsinger、SF Compute 一起看构成「算力供给」三角。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=rn_afJaPldg"
+        },
+        {
+          "label": "a16z（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/building-the-cloud-for-an-agentic-world-aws-ceo-matt-garman-d18BWOHC"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/a16z-matt-garman-aws-agentic-cloud-2026-10-08.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/e1b4fcb1-9600-4c7b-a712-186a9c63f2fd/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=e1b4fcb1-9600-4c7b-a712-186a9c63f2fd&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-tenex-ai-native-sdlc-2026-10-21",
+      "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
+      "guest": "Alex Lieberman、CJ Hess（Tenex）",
+      "show": "Latent Space",
+      "date": "2026-10-21",
+      "duration": "44 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "swyx 在 AIE NYC 对话 Tenex 的 Alex Lieberman 与 CJ Hess：按结果付费的工程师模式、内部 MetaHarness、模型与长时任务、token 开销与 ROI、企业 AI 采用鸿沟与智能体部署难点、垂直 AI 与企业软件、「Kill My SaaS」（用智能体替换 4.3 万美元/年工具）、AI 与就业及纽约 AI 生态。",
+      "advice": "今天上线：偏企业落地/服务化交付的实操视角，时间紧可跳过。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=Vki6cklFqxo"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/tenex"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/latent-space-tenex-ai-native-sdlc-2026-10-21.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/221403684/5b26ff73916385d08efdaa6bd2514a4b.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-adit-abraham-reducto-2026-10-21",
+      "title": "The Missing Infrastructure for AI Agents: Documents | Reducto’s Adit Abraham",
+      "guest": "Adit Abraham（Reducto 联合创始人兼 CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-21",
+      "duration": "38 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "a16z GP Jennifer Li 对话 Reducto CEO Adit Abraham：大量真实工作被困在 PDF、表格、扫描件里，传统 OCR 在杂乱文档上失效；Reducto 用视觉语言模型 + 专用基础设施在准确率、成本和延迟间取舍，前沿模型在长抽取任务中会「静默丢信息」；每月处理数十亿页（录制当天达第 70 亿页）、R1 模型、能自我复核的抽取智能体，以及从「读文件」走向让智能体可靠地编辑文件。",
+      "advice": "做文档/企业 Agent 的产品人可听；泛听众优先级低。",
+      "urls": [
+        {
+          "label": "a16z（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/the-missing-infrastructure-for-ai-agents-documents-reductos-adit-abraham-Tf_0B_WM"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/a16z-adit-abraham-reducto-2026-10-21.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/9d496dca-083d-42c6-a9ba-c003aba257b9/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=9d496dca-083d-42c6-a9ba-c003aba257b9&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-rampell-angelos-agentic-payments-2026-10-15",
+      "title": "When AI Agents Start Spending Your Money | Alex Rampell & Terry Angelos",
+      "guest": "Alex Rampell（a16z GP）、Terry Angelos（VGS 执行董事会成员）",
+      "show": "a16z Podcast",
+      "date": "2026-10-15",
+      "duration": "51 min",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "当智能体从「推荐买什么」变成「直接下单」，支付会怎样？Terry Angelos 讲如何安全地把支付凭证交给智能体、PayPal/Shop Pay/Link 等钱包争当智能体默认支付层、新型 agentic token 如何保留拒付、身份校验与商户关系（VGS 每周发放数百万此类 token）；以及商户拒绝与智能体交易、委托授权下的责任划分、AI 可能一边增加消费一边消灭依赖「用户不注意」的订阅与费用（breakage）。",
+      "advice": "与已收录的 a16z×Jean-Denis（Town）同主题，二选一即可。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=q8cb1XL9sXA"
+        },
+        {
+          "label": "a16z（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/when-ai-agents-start-spending-your-money-alex-rampell-terry-angelos-YowGFPLh"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/a16z-rampell-angelos-agentic-payments-2026-10-15.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/6234b162-a09d-4e3e-8647-37199663e239/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=6234b162-a09d-4e3e-8647-37199663e239&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "yc-jeetu-patel-cisco-2026-10-08",
+      "title": "How Jeetu Patel Runs Cisco Like the World’s Largest Startup",
+      "guest": "Jeetu Patel（Cisco 总裁兼首席产品官）",
+      "show": "Y Combinator",
+      "date": "2026-10-08",
+      "duration": "43 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "YC 合伙人 Jared Friedman 对话 Cisco 总裁 Jeetu Patel：Cisco 超大规模云 AI 业务两年订单达 93 亿美元、让 3.2 万名工程师拥抱 AI 并以创业速度运转、AI 应解锁新想法而非只降本（他预计需要更多而非更少工程师）、智能体需要的基础设施与信任、AI 进入硬件与芯片、为何不认为数据中心过度建设，以及从印度到 Sizzler 打工的「学习优先于面子」职业经验。",
+      "advice": "大公司 AI 转型与基础设施视角；时间有限可跳过。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=ofxAtQhV-xA"
+        }
+      ],
+      "addedAt": "2026-10-21",
+      "cover": "thumbs/yc-jeetu-patel-cisco-2026-10-08.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "sv101-astra-agent-robot-pharma-2026-10-19",
+      "title": "Agent、机器人与制药，谁先被GPT-6 Astra改写？",
+      "guest": "许华哲（破壳）、朱哲清（Pokee.ai）、王晟（UW）",
+      "show": "硅谷101",
+      "date": "2026-10-19",
+      "duration": "~1h20m",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "泓君对话三位一线嘉宾：个人 Agent 商业化卡点（Computer Use、Muse/Instinct、身份与平台 access）、GPT-6 Astra 对机器人评测与 Sim-to-Real/本体硬件的冲击，以及 AI 制药里「设计快、湿实验验证慢」的真实瓶颈。录制于 9/29，紧贴 Astra/Agent 当周叙事，适合与晚点具身季报对照。",
+      "advice": "今日 P0：中文侧最新多嘉宾长谈，直接回答 Astra 改写了哪条赛道。",
+      "urls": [
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV1dxJZ6uE3N/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad6a22b336a696d21590ba6"
+        },
+        {
+          "label": "节目页",
+          "href": "https://sv101.fireside.fm/270"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/sv101-astra-agent-robot-pharma-2026-10-19.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-karan-singhal-health-2026-10-20",
+      "title": "What Happens When Everyone Has a Health Expert in Their Pocket?",
+      "guest": "Karan Singhal（OpenAI）",
+      "show": "a16z Podcast",
+      "date": "2026-10-20",
+      "duration": "~56m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "OpenAI 的 Karan Singhal 谈把医疗能力训进通用前沿模型、与数百名医学专家做安全/分歧评估，以及 Epic 集成、临床 copilots、个人 agent 预约与病历。主张 AI 是医生互补而非替代，并展望医疗智能成本下降如何加速发现与验证。",
+      "advice": "今天上线：OpenAI 医疗叙事入口，偏产品/安全落地。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/what-happens-when-everyone-has-a-health-expert-in/id842818711?i=1000797239971"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/a16z-karan-singhal-health-2026-10-20.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "allin-dylan-field-2026-10-19",
+      "title": "Is AI Replacing Designers?, Design is the New Code & Democratizing Creativity",
+      "guest": "Dylan Field（Figma CEO）",
+      "show": "All-In Podcast",
+      "date": "2026-10-19",
+      "duration": "~41m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Figma CEO 谈「设计即新代码」：编码模型降低生产门槛后，差异化回到 taste、品牌与观点。覆盖 Adobe 200 亿收购被拦、监管期如何稳住组织，以及 Claude Design 等模型公司做产品时「模型进步≠产品进步」的判断。短、密、适合产品人。",
+      "advice": "排期看：AI 时代应用层护城河 = 设计/品牌，不单是代码。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=2Zj6uMv3kTA"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/dylan-field-is-ai-replacing-designers-design-is-the/id1502871393?i=1000797157948"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/allin-dylan-field-2026-10-19.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-jean-denis-town-2026-10-19",
+      "title": "What Happens When AI Agents Can Spend Your Money?",
+      "guest": "Jean-Denis Greze（Town CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-19",
+      "duration": "~1h3m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Town CEO 解释为何日常工作被 AI 改造慢于 coding：瓶颈在「不会写自动化的人」如何用上 agent。从报税软件转到邮件/日历工作流助手，讨论消费级体验打进企业、模型中立与数据所有权，以及 agent 代为购物/花钱时的产品形态。",
+      "advice": "Agent 商业化/工作流向；可与硅谷101 Astra Agent 段对照。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/what-happens-when-al-agents-can-spend-your-money/id842818711?i=1000797053623"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/a16z-jean-denis-town-2026-10-19.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "lex-jensen-huang-taiwan-2026-10-14",
+      "title": "Visiting Taiwan w/ Jensen Huang",
+      "guest": "Jensen Huang（NVIDIA CEO）",
+      "show": "Lex Fridman",
+      "date": "2026-10-14",
+      "duration": "~1h30m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Lex 随黄仁勋走访台湾 Computex /台北：台积电与半导体供应链起源、NVIDIA–TSMC 长期伙伴关系、AI 算力经济，以及美国再工业化与出口管制 vs 创新飞轮。偏行走对话，但是 NVIDIA 视角的一手长谈。",
+      "advice": "漏网补录：黄仁勋最新长谈，理解算力与供应链叙事。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=FGCP2F_7rQk"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/lex-jensen-huang-taiwan-2026-10-14.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-ian-quigley-leash-2026-10-14",
+      "title": "Lab-in-the-Loop at Compute Speed",
+      "guest": "Ian Quigley（Leash Bio）",
+      "show": "Latent Space",
+      "date": "2026-10-14",
+      "duration": "~1h50m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Leash Bio 如何把 DNA Encoded Library（DEL）做成可规模建模的干净数据：条形码纠错、Kaggle 竞赛无人打败随机、ChEMBL「认出分子作者」捷径，以及用自有数据训练的 Hermes。后半谈 agent 科学沙盒 Minos——用预测量 DEL 做可回放的 lab-in-the-loop / 科学 RL。",
+      "advice": "AI×Bio / 可验证科学 agent 向；长但后半 Minos 值得听。",
+      "urls": [
+        {
+          "label": "文稿",
+          "href": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/lab-in-the-loop-at-compute-speed-ian-quigley-leash-bio/id1674008350?i=1000796379714"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/latent-space-ian-quigley-leash-2026-10-14.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-jad-naous-grepr-2026-10-16",
+      "title": "AI Can Write the Code. Can It Run the System?",
+      "guest": "Jad Naous（Grepr CEO）",
+      "show": "a16z Podcast",
+      "date": "2026-10-16",
+      "duration": "~1h",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "Grepr CEO Jad Naous 讨论：模型能写代码之后，生产系统的运行、可观测与运维是否成为下一瓶颈。偏应用层基建与「能写 ≠ 能跑」的产品判断，适合排在 coding-agent 长谈之后补听。",
+      "advice": "可稍后：coding 之后的系统运行层视角。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/ai-can-write-the-code-can-it-run-the-system-grepr-ceo-jad-naous/id842818711?i=1000796640893"
+        }
+      ],
+      "addedAt": "2026-10-20",
+      "cover": "thumbs/a16z-jad-naous-grepr-2026-10-16.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "dwarkesh-noam-brown-2026-09-17",
+      "title": "Agent swarms, alignment & RSI",
+      "guest": "Noam Brown",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-17",
+      "duration": "~1h20m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "OpenAI 研究员 Noam Brown 与 Dwarkesh 深入讨论多智能体（agent swarms）如何改变能力边界。话题覆盖对齐（alignment）的现实挑战，以及递归自我改进（RSI）是否已近在眼前。对理解「智能体集群」叙事与安全研究交接面非常关键。适合作为近期实验室主题的主轴入口。",
+      "advice": "近期主题主轴，优先看；可与 RSI 辩论那期对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=6AgOfiZOWiY"
+        },
+        {
+          "label": "文稿",
+          "href": "https://www.dwarkesh.com/p/noam-brown"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/dwarkesh-noam-brown-2026-09-17.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/216149332/7d69c76fc9ac6716e7931d0de12ec324.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "dwarkesh-rsi-debate-2026-09-11",
+      "title": "AI researchers debate RSI",
+      "guest": "John Schulman / Beren Millidge / Daniel O’Neill",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-11",
+      "duration": "~1h37m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "三位研究者就自动化 AI 研究与递归自我改进（RSI）的时间线展开辩论。分歧集中在：自动化科研已经多近、瓶颈在算法还是算力与评测。对照 Noam Brown 那期，能更清晰看到「乐观派」与「谨慎派」的论据结构。信息密度高，适合听完做笔记。",
+      "advice": "与 Noam Brown 那期对照看，抓时间线分歧。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=PrSf7IOYu-I"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/dwarkesh-rsi-debate-2026-09-11.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/215199144/a0f47ff12d3d6420b3180f18adb9bfa3.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "dwarkesh-ajeya-cotra-metr-2026-09-01",
+      "title": "Ajeya Cotra on METR, agents & alignment",
+      "guest": "Ajeya Cotra",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-09-01",
+      "duration": "~2h20m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "METR 视角下的 agent 能力评测、协作攻击场景与对齐警示。Cotra 从独立调查角度拆解「模型已经能做什么、还差什么」。长访谈但结构清晰，适合了解安全社区如何量化风险。建议分两段听，避免一次 overload。",
+      "advice": "长但信息密度高，可分两段听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=X50zezLFWWI"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/dwarkesh-ajeya-cotra-metr-2026-09-01.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/213682035/9231941671d781aaea5fd995c256ad24.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-greg-brockman-agi-era-2026-09-14",
+      "title": "Entering the AGI Era",
+      "guest": "Greg Brockman",
+      "show": "a16z Podcast",
+      "date": "2026-09-14",
+      "duration": "时长未知",
+      "category": "创始人·CEO·产品",
+      "priority": "P0",
+      "summary": "OpenAI 总裁 Greg Brockman 阐述「进入 AGI 时代」的公司叙事：computer use、可长时间运行的 agent，以及万级 agent 协作想象。偏产品与能力路线图，而非纯安全辩论。是理解 OpenAI 对外口径的高效入口。听完可再补 No Priors 那期短补充。",
+      "advice": "OpenAI 官方叙事入口；P0 必看。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/greg-brockman-on-why-openai-says-were-entering-the-agi-era/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/a16z-greg-brockman-agi-era-2026-09-14.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/fbe64487-d342-4489-8ce5-8c81dc6b9cf8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=fbe64487-d342-4489-8ce5-8c81dc6b9cf8&feed=JGE3yC0V"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "allin-satya-nadella-2026-09-15",
+      "title": "Satya Nadella on AI, security & capital",
+      "guest": "Satya Nadella",
+      "show": "All-In Podcast",
+      "date": "2026-09-15",
+      "duration": "~37m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "微软 CEO 谈安全叙事、AI 资本开支与中美竞争格局。篇幅短、节奏快，适合把握大厂对外口径。可与同日 Elon / Gwynne 那期连看，对比两家对风险与基建的不同表述。",
+      "advice": "短、适合通勤；可与同日 All-In 连看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=hdcsTeCFE0I"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/allin-satya-nadella-2026-09-15.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "allin-elon-gwynne-2026-09-15",
+      "title": "Elon Musk & Gwynne Shotwell",
+      "guest": "Elon Musk & Gwynne Shotwell",
+      "show": "All-In Podcast",
+      "date": "2026-09-15",
+      "duration": "~1h04m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "马斯克与 SpaceX 总裁谈 AI 风险、星链数据中心与 Terafab 等算力/基建想象。兼具产品野心与地缘/能源约束讨论。与同日 Nadella 访谈对照，能看到不同公司对「安全」与「扩张」的权重差异。",
+      "advice": "与 Nadella 同日 All-In，建议连看对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=iwBOQeFPAwg"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/allin-elon-gwynne-2026-09-15.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "lex-dhh-501-2026-08-26",
+      "title": "DHH on AI coding & agentic engineering (#501)",
+      "guest": "DHH (David Heinemeier Hansson)",
+      "show": "Lex Fridman Podcast",
+      "date": "2026-08-26",
+      "duration": "~5h22m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "超长对谈覆盖 AI 编程、agentic engineering、开源文化与产品哲学。DHH 对工具与工作流有鲜明立场，适合工程师听众挑章节听。不必一次听完，按目录跳到编程/agent 相关段落即可。",
+      "advice": "超长，按章节挑听 AI 编程与 agent 部分。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=OhIKTeftjdM"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/lex-dhh-501-2026-08-26.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "nopriors-misha-laskin-beam-2026-10-09",
+      "title": "Misha Laskin on Beam & open-source reasoning",
+      "guest": "Misha Laskin",
+      "show": "No Priors",
+      "date": "2026-10-09",
+      "duration": "~1h10m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Beam 视角下的开源推理模型、规模与开闭源竞争，以及中美生态差异。偏应用与模型产品一侧，补充实验室访谈之外的「开源阵营」声音。适合关心推理模型与开源战略的听众。",
+      "advice": "开源阵营视角，补齐闭源叙事之外的版图。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=up4sG9RM20M"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/nopriors-misha-laskin-beam-2026-10-09.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-beyond-god-model-2026-10-03",
+      "title": "Beyond the God Model",
+      "guest": "Alex Atallah & Amjad Masad",
+      "show": "a16z Podcast",
+      "date": "2026-10-03",
+      "duration": "时长未知",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "OpenRouter 与 Replit 创始人讨论「上帝模型」之后的世界：专用模型、路由层与企业自有 AI。偏应用层与开发者生态，帮助理解模型商品化后的价值落点。对做产品或基建路由的人很有参考。",
+      "advice": "应用层 / 路由生态必听，理解模型之后的产品面。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/beyond-the-god-model-alex-atallah-amjad-masad/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/a16z-beyond-god-model-2026-10-03.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "dwarkesh-dylan-patel-2026-08-25",
+      "title": "Dylan Patel on compute through 2028",
+      "guest": "Dylan Patel",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-08-25",
+      "duration": "~1h17m",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "SemiAnalysis 视角拆解 Anthropic / OpenAI 等厂商到 2028 的算力需求与供应链约束。偏硬核基建与经济学，是理解「模型能力叙事」背后 capex 底盘的好材料。适合在听完实验室 P0 后再补。",
+      "advice": "基建与经济学底盘；有空再挖。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=aV26V1UvkJw"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/dwarkesh-dylan-patel-2026-08-25.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "allin-ben-horowitz-293-2026-10-17",
+      "title": "Ben Horowitz on CoreWeave, AI trade & IPO narratives (#293)",
+      "guest": "Ben Horowitz",
+      "show": "All-In Podcast #293",
+      "date": "2026-10-17",
+      "duration": "~1h34m",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "最新一期市场侧对谈，涉及 CoreWeave、AI 贸易与 Anthropic IPO 等叙事。偏 VC / 资本市场温度，便于跟踪近期资金与情绪。不是技术深潜，但适合周末扫一眼行业风向。",
+      "advice": "最新一期市场侧，周末扫一眼即可。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=_b3LfMflIGs"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/allin-ben-horowitz-293-2026-10-17.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "dwarkesh-ryan-greenblatt-redwood-2026-08-11",
+      "title": "Ryan Greenblatt on RSI, alignment failure & automated R&D",
+      "guest": "Ryan Greenblatt",
+      "show": "Dwarkesh Podcast",
+      "date": "2026-08-11",
+      "duration": "~2h12m",
+      "category": "实验室·安全·研究",
+      "priority": "P2",
+      "summary": "Redwood Research 视角讨论 RSI、对齐失败模式与自动化 R&D 时间线。偏安全研究深水区，论证细致，适合已经听过 Cotra / RSI 辩论后再深入。信息密度高，建议边听边记关键词。",
+      "advice": "偏安全研究深水区；听完 P0 后再挖。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=-RXD4bTuFTo"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/dwarkesh-ryan-greenblatt-redwood-2026-08-11.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "nopriors-greg-brockman-cyber-drug-2026-10-15",
+      "title": "The Changing Physics of Cybersecurity and Drug Development",
+      "guest": "Greg Brockman",
+      "show": "No Priors",
+      "date": "2026-10-15",
+      "duration": "~39m",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "Brockman 谈数学突破、药物发现、Dots 主动式 agent，以及网络安全「防御者窗口」。篇幅短，是 a16z「AGI Era」长叙事的补充切片。适合通勤补听，不必排在 P0 之前。",
+      "advice": "短补充；AGI Era 那集优先后再听。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/the-changing-physics-of-cybersecurity-and/id1668002688?i=1000796472163"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/nopriors-greg-brockman-cyber-drug-2026-10-15.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-david-george-jack-altman-2026-10-04",
+      "title": "AI autonomy and the next $25 trillion",
+      "guest": "David George & Jack Altman",
+      "show": "a16z Podcast",
+      "date": "2026-10-04",
+      "duration": "时长未知",
+      "category": "VC·基建·市场",
+      "priority": "P2",
+      "summary": "a16z 视角讨论 AI 自主性与下一程增长空间。偏 VC 宏观框架，帮助把产品与实验室叙事放到资金与市场结构里。适合作为周末背景音，不必精读。",
+      "advice": "VC 宏观；有空当背景音即可。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/david-george-jack-altman-on-ai-autonomy-and-the-next-25-trillion/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/a16z-david-george-jack-altman-2026-10-04.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "zhangxiaojun-zengming-2026-09-03",
+      "title": "和曾鸣聊产业史观：AI 三阶段、模型公司与原生时代赢家",
+      "guest": "曾鸣",
+      "show": "张小珺Jùn｜商业访谈录",
+      "date": "2026-09-03",
+      "duration": "~2h34m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "战略学家曾鸣（前阿里总参谋长）用产业史观拆解 AI 产业化三阶段：基础设施 → 应用百花齐放 → 原生应用。非共识判断包括：模型公司更像未来的「AI 云」、OpenAI/Anthropic 大概率不是原生阶段赢家、新平台难从旧平台长出、科层制公司形态可能被淘汰。中文长访谈里信息密度与认知高度都很高，适合对照英文实验室叙事看中国视角的产业判断。",
+      "advice": "中文侧产业史观入口；可与 OpenAI / a16z 官方叙事对照。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=69iJSe2n3ls"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a97f287f03e74ee6b03ea5b"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/zhangxiaojun-zengming-2026-09-03.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "zhangxiaojun-liumingyu-cosmos-2026-08-12",
+      "title": "对英伟达研究副总裁刘洺堉的 4 小时访谈：Cosmos 3、世界模型与黄仁勋",
+      "guest": "刘洺堉",
+      "show": "张小珺Jùn｜商业访谈录",
+      "date": "2026-08-12",
+      "duration": "~3h36m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "英伟达研究副总裁、世界基座模型 Cosmos 负责人刘洺堉谈 Physical AI、Cosmos 1→3、组织与算力、以及黄仁勋「造市场而非存量竞争」的哲学。极长但对理解世界模型与英伟达基础设施叙事很有帮助；可分段听。中文深度人物访谈，兼顾技术路线与管理观。",
+      "advice": "超长；建议分 2–3 段。关心世界模型 / Physical AI 再优先。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=Cj_kb9nlAlE"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/zhangxiaojun-liumingyu-cosmos-2026-08-12.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-shengying-sglang-2026-08-04",
+      "title": "对话盛颖：xAI、SGLang、开源 Infra 与 RadixArk",
+      "guest": "盛颖",
+      "show": "硅谷101",
+      "date": "2026-08-04",
+      "duration": "~1h46m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "xAI 前推理团队负责人、开源推理引擎 SGLang 发起人、RadixArk 联合创始人盛颖，谈 AI Infra 的「浪漫」、从学术到生产、xAI 的 support/freedom，以及为何离开创立 RadixArk。中文科技播客里少有的 Infra 一线长访谈，对理解开源推理栈与创业取舍很有价值。",
+      "advice": "Infra / 开源推理栈必听；与 vLLM 叙事互补。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://sv101.fireside.fm/260"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/sv101-shengying-sglang-2026-08-04.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "crossing-yage-ai-2026-10-11",
+      "title": "「有了 AI，我感觉自己强得可怕！」｜对谈鸭哥",
+      "guest": "鸭哥",
+      "show": "十字路口Crossing",
+      "date": "2026-10-11",
+      "duration": "~1h13m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "十字路口公路访谈：鸭哥（Superlinear Academy）谈重度 AI 使用——代码、自媒体、「0 人公司」、Context Infrastructure，以及 AI 如何放大个人能力边界。偏一线实践与产品感，适合从英文实验室长谈之外换口气，看中文创作者如何把 Agent / 持久上下文落到日常。",
+      "advice": "近期中文实践向；偏应用与工作流，非实验室论文向。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6aca7f91e742e36efcc10957"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/crossing-yage-ai-2026-10-11.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "zhangxiaojun-lindon-gao-dyna-2026-10-14",
+      "title": "对 Dyna 创始人 Lindon Gao 的 3 小时访谈：机器人世界的迷雾、分歧与抉择",
+      "guest": "Lindon Gao",
+      "show": "张小珺Jùn｜商业访谈录",
+      "date": "2026-10-14",
+      "duration": "~2h51m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "Dyna Robotics 创始人兼 CEO Lindon Gao（连续创业者）谈具身智能创业的迷雾与抉择：与 Physical Intelligence 等路径的分歧、数据与修心、《沉思录》与王阳明式的自我管理。张小珺近期机器人主题长访谈，适合对照 PI / Cosmos 等世界模型叙事看创业侧取舍。",
+      "advice": "具身 / 机器人创业向；可与刘洺堉 Cosmos、PI 柯丽一鸣对照。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1wgpy69Ekz/"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/zhangxiaojun-lindon-gao-dyna-2026-10-14.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-zhangkuo-accio-2026-10-08",
+      "title": "模型越来越强，为什么用户没感觉？再访阿里国际站总裁张阔",
+      "guest": "张阔",
+      "show": "硅谷101",
+      "date": "2026-10-08",
+      "duration": "~46m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "再访阿里国际站总裁张阔：半年后回看 Accio Work 与 Agent 参与跨境采购/经营的真实落差——榜单分数升高，为何把工作交给 AI 仍需人反复解释、检查和兜底。偏应用落地与 Agent 产品感，适合从实验室长谈切到 toB/跨境场景。",
+      "advice": "Agent 落地 / 跨境电商向；短于多数访谈，信息密度高。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV186pW6kEzU/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ac821ae848a38b151b0d593"
+        },
+        {
+          "label": "节目页",
+          "href": "https://sv101.fireside.fm/269"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/sv101-zhangkuo-accio-2026-10-08.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "late-liangchenqi-2026-09-30",
+      "title": "对话梁琛奇：抖音→猫箱→创业，想用 AI 创造开心",
+      "guest": "梁琛奇",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-09-30",
+      "duration": "~3h22m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "前字节（抖音崛起亲历者、实时社交 Lead、Flow/猫箱）创业者梁琛奇谈 AI 娱乐与内容：工具产品是解题、娱乐产品是出题；在全行业卷 coding/生产力时，他押注「有意义感的开心」。超长人物访谈，偏产品与内容哲学，非实验室论文向。",
+      "advice": "AI 娱乐 / 内容产品向；超长，建议分段。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1Vbao6aEYM/"
+        },
+        {
+          "label": "节目页",
+          "href": "https://podcast.latepost.com/182"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/late-liangchenqi-2026-09-30.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "late-ai-q3-henry-2026-10-08",
+      "title": "AI 季报 26Q3：从 Meta 到 OpenAI，个人助理卷土重来",
+      "guest": "Henry Yin",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-10-08",
+      "duration": "~2h07m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "与 MoE Capital 创始合伙人 Henry Yin 复盘 26Q3：个人助理叙事回潮（Muse / Instinct / DevDay）、OpenAI vs Anthropic、Agent 失控风险、Flash 模型与实时语音。两次录制（DevDay 前后），适合作为中文侧季度地图，对照英文播客的事件流。",
+      "advice": "季度复盘入口；关心个人助理 / Agent 产品节奏可优先。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1wqHD6qEqU/"
+        },
+        {
+          "label": "节目页",
+          "href": "https://podcast.latepost.com/183"
+        }
+      ],
+      "addedAt": "2026-10-18",
+      "cover": "thumbs/late-ai-q3-henry-2026-10-08.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-nathan-lambert-open-models-2026-10-14",
+      "title": "Can Open Models Keep Up With the AI Frontier?",
+      "guest": "Nathan Lambert",
+      "show": "The a16z Show",
+      "date": "2026-10-14",
+      "duration": "59 min",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "a16z 合伙人 Lisha Li 对话 Trillium 创始人、开源模型研究者 Nathan Lambert，讨论开源权重模型与 OpenAI/Anthropic 前沿差距是否可持续。谈及算力与资本优势、蒸馏与中国开源实验室追赶、RL 环境与后训练，以及 Trillium 计划公开 RL 环境并记录「AI 自动化 AI 研究」以澄清递归自我改进叙事。",
+      "advice": "想跟进开源 vs 闭源前沿差距与 RSI 可观测性，优先看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=BKuK0M6oDTI"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/can-open-models-keep-up-with-the-ai-frontier-nathan-lambert/id842818711?i=1000796289780"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/a16z-nathan-lambert-open-models-2026-10-14.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/9faf0f04-b106-4419-94b2-7882faca15c2/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=9faf0f04-b106-4419-94b2-7882faca15c2&feed=JGE3yC0V"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "training-data-david-silver-lasse-espeholt-2026-10-13",
+      "title": "A Superlearner for the Age of Experience",
+      "guest": "David Silver, Lasse Espeholt",
+      "show": "Training Data (Sequoia)",
+      "date": "2026-10-13",
+      "duration": "1h 8m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "前 DeepMind 核心研究者 David Silver 与 Lasse Espeholt 谈新公司 Ineffable Intelligence：用可从经验中自主学习的「superlearner」替代过度依赖人类预训练数据的范式。覆盖强化学习遗产、经验时代学习目标，以及为何他们认为下一阶段突破在持续从环境学习而非更大语料。",
+      "advice": "关心 RL/经验学习与 DeepMind 系新实验室叙事，必看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=L4SWQebqhek"
+        },
+        {
+          "label": "Sequoia",
+          "href": "https://sequoiacap.com/podcast/david-silver-and-lasse-espeholt-of-ineffable-intelligence-a-superlearner-for-the-age-of-experience"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/training-data-david-silver-lasse-espeholt-2026-10-13.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI9233856839.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-periodic-labs-fedus-cubuk-2026-10-08",
+      "title": "Synthesis Superintelligence: from Semiconductors to Superconductors",
+      "guest": "Liam Fedus, Ekin Doğuş Cubuk",
+      "show": "Latent Space",
+      "date": "2026-10-08",
+      "duration": "1h 25m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "OpenAI 前核心成员 Liam Fedus 与材料/科学 AI 研究者 Ekin Cubuk 介绍 Periodic Labs：用自治实验室与「合成超级智能」打通半导体到超导体等材料发现。讨论科学闭环、实验自动化与为何他们认为 AI for science 需要自有实验栈而非只做文献模型。",
+      "advice": "跟进 AI for science / 自治实验室与 Fedus 新方向，优先。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=YHiqVRxGViM"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://ondacast.com/podcast/latent-space-the-ai-engineer-podcast/episode/synthesis-superintelligence-from-semiconductors-to-505a3ec3"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/latent-space-periodic-labs-fedus-cubuk-2026-10-08.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/219146438/4317811e52984f32f5f67455cb91c1e9.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-thariq-claude-code-2026-09-29",
+      "title": "Claude Code’s Next Era",
+      "guest": "Thariq Shihipar",
+      "show": "Latent Space",
+      "date": "2026-09-29",
+      "duration": "1h 32m",
+      "category": "创始人·CEO·产品",
+      "priority": "P0",
+      "summary": "Anthropic 的 Thariq Shihipar 详解 Claude Code 下一阶段：提示与 harness、Claude Mods、Projects/Tag、云脑本地手、可变软件，以及「Pacing the Frontier」下的智能体安全。大量谈及 agent 越狱基准、Hugging Face 评分器事件与工程师如何跟上 agent 编程速度。",
+      "advice": "做 coding agent / Claude Code 重度用户，本周最该补的长谈。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=IZAlq-V19U8"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/thariq"
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/episode/2EXtbSMviDx9rk0n0XnE1c"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/latent-space-thariq-claude-code-2026-09-29.jpg",
+      "media": {
+        "audioUrl": "https://api.substack.com/feed/podcast/217893105/df59f83c2e6844288112278c28b8e538.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "training-data-amin-vahdat-google-infra-2026-10-06",
+      "title": "The Physics & Economics of Frontier AI",
+      "guest": "Amin Vahdat",
+      "show": "Training Data (Sequoia)",
+      "date": "2026-10-06",
+      "duration": "1h 4m",
+      "category": "VC·基建·市场",
+      "priority": "P0",
+      "summary": "Google AI 基础设施负责人 Amin Vahdat 谈前沿训练/推理的物理与经济约束：goodput vs FLOPS、TPU 专化、与 DeepMind 共设计、光路交换、电力与集群形态，以及训练与 serving 集群分工。偏硬核基建视角，解释规模化瓶颈如何决定模型节奏。",
+      "advice": "关心算力/数据中心与 Google 栈，强烈推荐。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=bGph8GwB3Sk"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/googles-ai-infrastructure-chief-amin-vahdat-on-the/id1750736528?i=1000793415693"
+        },
+        {
+          "label": "Sequoia",
+          "href": "https://sequoiacap.com/series/training-data"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/training-data-amin-vahdat-google-infra-2026-10-06.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/CPUAI7791161404.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "newcomer-alex-kantrowitz-ai-boom-2026-10-13",
+      "title": "OpenAI, Nvidia & What Could Derail the AI Boom",
+      "guest": "Alex Kantrowitz",
+      "show": "Newcomer Pod",
+      "date": "2026-10-13",
+      "duration": "1h 6m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Big Technology 创始人 Alex Kantrowitz 与 Eric Newcomer 拆解 OpenAI/Anthropic 收入口径争议、市场对 AI 增长的敏感度，以及 Apple/Meta/Amazon/Google/Microsoft/Nvidia 在助手与广告层的布局。兼谈安全话语、媒体流量与「AI 扛经济」风险。",
+      "advice": "想快速校准本周 AI 商业与大厂战局，适合通勤听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=4JiQFsZ0pNM"
+        },
+        {
+          "label": "Newcomer",
+          "href": "https://podcast.newcomer.co/episode/alex-kantrowitz-on-openai-nvidia-what-could-derail-the-ai-boom"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/newcomer-alex-kantrowitz-ai-boom-2026-10-13.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-jason-ma-dyna-2026-10-13",
+      "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy",
+      "guest": "Jason Ma",
+      "show": "Latent Space",
+      "date": "2026-10-13",
+      "duration": "1h 21m",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Dyna Robotics 的 Jason Ma 介绍 Dyna-2：面向通用物理智能体、强调可预测未来与小时级自主。讨论 physical AI 数据与训练、长时程自主的工程挑战，以及机器人从演示到产品化路径。",
+      "advice": "跟进具身智能/物理 agent 产品进度时看。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=BHiYomkfoGQ"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/dyna"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/latent-space-jason-ma-dyna-2026-10-13.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-pushmeet-kohli-alphafold-2026-10-10",
+      "title": "Why AlphaFold Didn't Solve Protein Folding",
+      "guest": "Pushmeet Kohli, Sal Candido",
+      "show": "Latent Space",
+      "date": "2026-10-10",
+      "duration": "33 min",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Google DeepMind 的 Pushmeet Kohli 与 Biohub 的 Sal Candido 在主持下讨论：为何 AlphaFold 并未「解决」蛋白质折叠，生物学数据的 scaling law、虚拟细胞所需数据，以及药物发现要 10x 突破而非增量优化。偏科学 AI 圆桌，但嘉宾对谈密度高。",
+      "advice": "对 BioAI/AlphaFold 后续问题感兴趣可短听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=NufiHZfMwaw"
+        },
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/biohub-deepmind"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/latent-space-pushmeet-kohli-alphafold-2026-10-10.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "newcomer-reid-hoffman-chatgpt-2026-10-02",
+      "title": "ChatGPT, Data Centers & Why America Needs AI",
+      "guest": "Reid Hoffman",
+      "show": "Newcomer Pod",
+      "date": "2026-10-02",
+      "duration": "52 min",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "LinkedIn 联合创始人 Reid Hoffman 谈 ChatGPT 时代就业、数据中心投资，以及为何他认为美国需要继续建设 AI 同时谨慎释放强系统。偏政策与宏观叙事，兼及安全与经济周期。",
+      "advice": "要政策/宏观视角时可看；技术深度一般。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=zdk4rwoDQwo"
+        },
+        {
+          "label": "Newcomer",
+          "href": "https://podcast.newcomer.co/video/reid-hoffman-on-chatgpt-data-centers-why-america-needs-ai"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/newcomer-reid-hoffman-chatgpt-2026-10-02.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "nopriors-walter-goodwin-fractile-2026-10-02",
+      "title": "Frontier Chips for Frontier AI Labs",
+      "guest": "Walter Goodwin",
+      "show": "No Priors",
+      "date": "2026-10-02",
+      "duration": "36 min",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Fractile 创始人兼 CEO Walter Goodwin 谈推理芯片瓶颈：内存带宽与成本而非纯算力，从 SRAM 转向高容量 DRAM 架构，声称相对 HBM 方案显著带宽优势，以及稀疏 MoE 经济性与量产窗口。",
+      "advice": "补 AI 芯片/推理硬件选型时值得听。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=OpeCP4wCxkA"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/nopriors-walter-goodwin-fractile-2026-10-02.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-vladimir-keil-agents-incumbents-2026-10-02",
+      "title": "Why AI Agents Can Beat the Incumbents",
+      "guest": "Vladimir Keil",
+      "show": "The a16z Show",
+      "date": "2026-10-02",
+      "duration": "≈60 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Lio 联合创始人兼 CEO Vladimir Keil 与 a16z 的 Seema Amble、Elena Burger 讨论 AI 原生创业公司如何相对拥有系统记录的软件巨头取胜：用多 agent 吃掉 ERP 之外的端到端流程（采购、谈判、物流、发票），以及企业如何逐步把高后果决策交给 agent。",
+      "advice": "做企业 agent / 垂直工作流产品时参考。",
+      "urls": [
+        {
+          "label": "a16z",
+          "href": "https://a16z.com/podcast/why-ai-agents-can-beat-the-incumbents/"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/why-ai-agents-can-beat-the-incumbents/id842818711?i=1000792738119"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/a16z-vladimir-keil-agents-incumbents-2026-10-02.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "allin-daniel-ek-neko-2026-09-28",
+      "title": "Life After Spotify, Broken Healthcare Incentives, Catching Disease Early & AI's Potential",
+      "guest": "Daniel Ek",
+      "show": "All-In Podcast",
+      "date": "2026-09-28",
+      "duration": "51 min",
+      "category": "创始人·CEO·产品",
+      "priority": "P2",
+      "summary": "Spotify 创始人 Daniel Ek 做客 All-In，谈离开流媒体后创办 Neko、美国医疗激励扭曲、纵向健康数据与可穿戴，以及 AI 在预防医学中的角色。AI 篇幅有限，主轴是医疗与健康科技。",
+      "advice": "对健康科技/创始人转型有兴趣再看；纯 AI 清单可降权。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=JEUboZzZGM4"
+        },
+        {
+          "label": "All-In",
+          "href": "https://allin.com/episodes"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/allin-daniel-ek-neko-2026-09-28.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "crossing-treg-2026-10-18",
+      "title": "新的创业机会，正在 Claude Code 和 Codex 周围长出来｜对谈 Treg",
+      "guest": "Jason Zhou（Treg 创始人）、石天鑫（Treg Founding Engineer）",
+      "show": "十字路口Crossing",
+      "date": "2026-10-18",
+      "duration": "51分钟",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "Treg 团队九个月内三次转型：从设计 Agent SuperDesign，到全自动增长 Agent，再到为 Agent 提供数据与工具的 Treg。讨论垂直 Agent「绝境」、0 人公司假设为何失灵、Codex/Claude Code 生态里长出的 Ego/ChatCut 等产品，以及同时跑多 Session 后人类成为瓶颈。适合关心 Coding Agent 平台期创业机会的听众。",
+      "advice": "今天优先：短、新、紧贴 Claude Code/Codex 生态；可当「应用层还剩什么」速览。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1GFJ86WEPs/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad2412d0e4e410a05be01a7"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/crossing-treg-2026-10-18.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/60502e253c92d4f62c2a9577/lsJEudLUybIGsXWwu9v_u2KuRpSM.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "late-chenzhe-embodied-q3-2026-10-15",
+      "title": "与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？",
+      "guest": "陈哲（Alphaist Partners 创始合伙人）",
+      "show": "晚点聊LateTalk",
+      "date": "2026-10-15",
+      "duration": "1小时46分钟",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "程曼祺对谈陈哲：GPT-6 Astra 可输出末端位姿、部分任务上逼近甚至超过专用具身策略模型，动摇「数字 AI / 物理 AI」边界。另覆盖 AMD 拟收购 World Labs、宇树 IPO 估值锚变化、ICL/上下文学习压缩后训练成本、美 FCC 限制新型号中国机器人进口，以及 Physical RSI 与中国通用模型公司入场 robotics 的 Q4 展望。",
+      "advice": "P0 必听：具身投资叙事与技术边界正在重写；与已入库的 Henry AI 季报互补。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1HhJ16EEaD/"
+        },
+        {
+          "label": "晚点播客",
+          "href": "https://podcast.latepost.com/184"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad003a1015e30ba5bf9c64f"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/late-chenzhe-embodied-q3-2026-10-15.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "sv101-ai-data-he-sun-2026-09-28",
+      "title": "谁在给大模型出题、卖题、判卷？聊聊AI数据行业的野蛮生长",
+      "guest": "何允中（Scale AI 研究总监）、孙一铀（UC Berkeley 博士后 / Agents’ Last Exam）",
+      "show": "硅谷101播客",
+      "date": "2026-09-28",
+      "duration": "58分钟",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "从 AfterQuery、Bespoke Labs 等估值飙升切入，拆解 AI 数据/评测生意：专家评分标准、含工具与验证的 RL 环境、刷榜 vs 真实体验。嘉宾从产业（Scale）与研究两端谈 Mercor/Surge 等玩家路径，以及合成环境与垂直领域小团队机会。",
+      "advice": "关心后训练数据供应链、评测与「出题公司」的可看；窗口边缘漏网补录。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1imaq6mEof/"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/sv101-ai-data-he-sun-2026-09-28.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "crossing-kk-shanyin-2026-10-09",
+      "title": "AI 无限，人生有限｜对谈 KK、山音：一线 AI 创作者",
+      "guest": "KK、山音（AI 视频/电影创作者）",
+      "show": "十字路口Crossing",
+      "date": "2026-10-09",
+      "duration": "66分钟",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "两位一线 AI 导演谈用 AI 拍电影的当前上限、为何偏爱 CapCut Video Studio、Seedance/Minimax 混用、模型趋同后视频产品壁垒，以及「生成速度超过观看速度」时的创新与创作者困境。",
+      "advice": "做/投 AI 视频应用或内容工具时建议听；偏创作实践而非 Infra。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1yJHd6pEAY/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ac7ce36195d838e2aeeebd9"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/crossing-kk-shanyin-2026-10-09.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "crossing-yuhong-2026-09-28",
+      "title": "AI 时代，我们到底该学什么？｜对谈于红：三种不会过时的能力",
+      "guest": "于红（前美团龙珠合伙人，兔咚咚创始人）",
+      "show": "十字路口Crossing",
+      "date": "2026-09-28",
+      "duration": "112分钟",
+      "category": "中国·科技媒体",
+      "priority": "P2",
+      "summary": "于红离开 VC 创办儿童 SEL 教育后的长谈：AI 时代知识贬值后，社会情感学习、批判性思维与自我认识为何更重要；并穿插投资提问方法、名校与选择等。偏人文/教育，但仍紧扣 AI 时代能力结构。",
+      "advice": "时间紧可后置；想听「学什么」与育儿/职业选择时再打开。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1bChR6nEhw/"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ab7fb97e742e36efcbb881a"
+        }
+      ],
+      "addedAt": "2026-10-19",
+      "cover": "thumbs/crossing-yuhong-2026-09-28.jpg",
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    }
+  ],
+  "maintainer": "R",
+  "notes": "中国内容在范围内：含中文科技媒体长访谈（硅谷101、张小珺商业访谈录、十字路口Crossing 等）。2026-10-18 增补 4 条已核实条目；梁文锋本人近年公开长访谈仍稀缺（多为报道/单口，非对谈），未编造。 2026-10-18 B站首扫增补 4 条（张小珺 Lindon Gao、硅谷101 张阔、晚点聊 梁琛奇 / AI季报Q3）；已核实 mid，未编造访谈。 2026-10-19 日更增补 17 条：英文/硅谷 12；中文/B站相关 5（含 Crossing×Treg、晚点聊×陈哲具身季报、硅谷101×AI数据等）；已核实链接，未编造。 2026-10-20 日更增补 7 条：英文/硅谷 6（All-In×Dylan Field；a16z×Karan Singhal/Town Greze/Grepr；Latent Space×Ian Quigley；Lex×Jensen Huang）；中文/B站 1（硅谷101播客×许华哲/朱哲清/王晟 Astra）；已核实链接与时长，未编造。 2026-10-21 日更增补 12 条：英文/硅谷 10（Latent Space×Alex Zhang RLM［P0，补漏］/Evan Conrad SF Compute/Tenex；Training Data×Mecka Josh Gao；a16z×Bostrom/Gelsinger/Matt Garman/Reducto/Rampell&Angelos；YC×Jeetu Patel）；中文/B站 2（硅谷101×Dyna Robotics 再访［P0，官方文字版］；张小珺×科沃斯钱程）；已核实链接与时长，未编造。 2026-10-22 日更增补 7 条：英文/硅谷 7（Decoder×Bill Gates［P0，官方文字稿待刊，transcript=none］；Lenny×Emmanuel Ameisen Anthropic 可解释性［P0，Substack 平台带说话人转写］；BG2×Jensen Huang；No Priors×George Kurtz；All-In×Arvind Krishna & Nikesh Arora；Invest Like the Best×Christina Cacioppo；Cognitive Revolution×Alex Rives）；中文/B站监控 8 号无新增长访谈（space 接口 -352 风控，改用搜索接口+小宇宙核对）；已核实链接与时长，未编造。"
+}
