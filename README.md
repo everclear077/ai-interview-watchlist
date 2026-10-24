@@ -20,6 +20,14 @@ python3 -m http.server 8080
 
 部署后若样式看起来还是旧版，对页面做一次硬刷新（Windows/Linux：`Ctrl+Shift+R`，macOS：`Cmd+Shift+R`）。`index.html` 给 `styles.css` / `app.js` / `media.js` 加了短版本查询（`?v=…`），一般会绕过旧缓存。Google Fonts 可能在部分网络打不开；CSS 字体栈已回退到 PingFang / Songti / 系统字体。
 
+## 语言 / Language
+
+界面铬（顶栏、筛选、货架标题、空状态、页签、按钮、`aria-label`、页脚）可在中文与英文之间切换。访谈正文、精读 / 解读 / 文稿，以及栏目名、主题名保持数据里的原文，不做机翻。品牌在两种语言下都用 **长镜 · AI**（本身已带 AI）。
+
+- 存储：`localStorage` 键 `wl-lang` = `zh` | `en`。一旦写下（含点选 中文 / EN），存储值优先于时区。
+- 默认（没有存储值时）：IANA 时区是中国相关（`Asia/Shanghai`、`Asia/Chongqing`、`Asia/Urumqi`、`Asia/Harbin`）则为 `zh`；否则 `en`。拿不到 IANA 名时，UTC+8（`getTimezoneOffset() === -480`，即 CST）也算中文默认。
+- 顶栏在主题开关旁有紧凑的 **中文 | EN**。`<html>` 会设 `lang`（`zh-CN` / `en`）和 `data-lang`。`index.html` 的 FOUC 脚本会尽早写上这两项。
+
 ## 路由
 
 **Hash SPA**（GitHub Pages project site 不依赖生成多页 HTML）
@@ -117,7 +125,7 @@ node scripts/selftest.js
 |------|------|
 | `index.html` | 瘦页面壳（不要换成 R 的胖 HTML） |
 | `styles.css` | 夜馆目录 + 阅读页纸色 |
-| `media.js` | 路由、slug、嵌入、markdown、字段探测 |
+| `media.js` | 路由、slug、嵌入、markdown、字段探测、主题与 `t()` 文案表 |
 | `app.js` | 发现 / 栏目 / 主题 / 单集 UI 与音频 |
 | `404.html` | Pages 路径 → hash |
 | `data/index.json` | 列表用瘦目录 |

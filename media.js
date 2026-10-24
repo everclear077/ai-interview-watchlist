@@ -374,7 +374,7 @@
 
   function classifyUrl(u) {
     var href = u && u.href ? String(u.href) : "";
-    var label = u && u.label ? String(u.label) : "链接";
+    var label = u && u.label ? String(u.label) : t("linkFallback");
     var yt = parseYouTubeId(href);
     if (yt) {
       return {
@@ -605,12 +605,13 @@
     if (!ev || !textOf(ev.src)) return "";
     var cap = textOf(ev.caption);
     var t = textOf(ev.t);
-    var alt = cap || t || "出处截图";
+    var stamp = textOf(ev.t);
+    var alt = cap || stamp || t("evidenceAlt");
     return '<figure class="evidence">' +
       '<img src="' + escapeHtml(textOf(ev.src)) + '" alt="' + escapeHtml(alt) + '" loading="lazy" />' +
-      ((t || cap)
+      ((stamp || cap)
         ? '<figcaption>' +
-            (t ? "<time>" + escapeHtml(t) + "</time>" : "") +
+            (stamp ? "<time>" + escapeHtml(stamp) + "</time>" : "") +
             (cap ? '<span class="cap">' + escapeHtml(cap) + "</span>" : "") +
           "</figcaption>"
         : "") +
@@ -619,8 +620,9 @@
 
   function evidenceBlock(items) {
     if (!items || !items.length) return "";
-    return '<aside class="evidence-block" aria-label="出处">' +
-      '<h2 class="evidence-heading">出处</h2>' +
+    var heading = t("evidence");
+    return '<aside class="evidence-block" aria-label="' + escapeHtml(heading) + '">' +
+      '<h2 class="evidence-heading">' + escapeHtml(heading) + "</h2>" +
       items.map(evidenceFigure).join("") +
     "</aside>";
   }
@@ -679,6 +681,251 @@
   }
 
   var THEME_KEY = "wl-theme";
+  var LANG_KEY = "wl-lang";
+  var CHINA_TZ = {
+    "Asia/Shanghai": 1,
+    "Asia/Chongqing": 1,
+    "Asia/Urumqi": 1,
+    "Asia/Harbin": 1,
+    PRC: 1
+  };
+  var I18N = {
+    zh: {
+      brand: "长镜 · AI",
+      lede: "精选 AI / 科技长视频访谈，带精读、解读与文稿。",
+      skip: "跳到主要内容",
+      nav: "主导航",
+      all: "全部",
+      find: "找一集",
+      updated: "更新于 {date}",
+      back: "返回首页",
+      themeToggle: "切换浅色/深色",
+      langGroup: "界面语言",
+      searchLabel: "搜索标题、嘉宾、节目或摘要",
+      searchPlaceholder: "搜索标题、嘉宾、节目或摘要",
+      findAria: "查找",
+      facetShow: "栏目",
+      facetTopic: "主题",
+      facetForm: "形态",
+      facetPeriod: "时间",
+      facetSort: "排序",
+      formEssay: "有精读",
+      formAnalysis: "有解读",
+      formTranscript: "有文稿",
+      periodWeek: "本周",
+      periodMonth: "本月",
+      periodEarlier: "更早",
+      sortNewest: "最近优先",
+      sortOldest: "较早在前",
+      byTime: "按时间",
+      byShow: "按栏目",
+      more: "查看更多",
+      open: "打开",
+      markEssay: "精读",
+      markAnalysis: "解读",
+      markTranscript: "文稿",
+      emptyNone: "还没有条目。",
+      emptyMissingShow: "没有这个栏目。<a href=\"#/\">返回首页</a>，或清除筛选后再找。",
+      emptyMissingTopic: "没有这个主题。<a href=\"#/\">返回首页</a>，或清除筛选后再找。",
+      emptyFiltered: "没有找到匹配的访谈。可以<a href=\"{href}\">清除筛选</a>，回到当前范围的全部条目。",
+      clearFilters: "清除筛选",
+      resultsSearch: "搜索结果",
+      resultsFilter: "筛选结果",
+      resultsAll: "全部访谈",
+      showing: "显示 <strong>{n}</strong> / {total} 则",
+      lockShow: "正在看栏目页。点其他栏目会换页；<a href=\"{href}\">回到全部</a>可同时筛多个栏目。",
+      lockTopic: "正在看主题页。点其他主题会换页；<a href=\"{href}\">回到全部</a>可同时筛多个主题。",
+      showBlurb: "这一栏目下的访谈。可以再叠主题、形态或搜索。",
+      showMissing: "没有匹配到这个栏目名。",
+      topicBlurb: "这一主题下的访谈。可以再叠栏目、形态或搜索。",
+      topicMissing: "没有匹配到这个主题。",
+      pageShow: "栏目",
+      pageTopic: "主题",
+      toc: "目录",
+      tabEssay: "中文精读",
+      tabAnalysis: "详细解读",
+      tabTranscript: "完整文稿",
+      copyMd: "复制正文",
+      copied: "已复制",
+      wordsEssay: "精读约 {n} 字",
+      wordsAnalysis: "解读约 {n} 字",
+      disclaimerEssay: "中文精读由 AI 基于原始访谈改写，非官方翻译，可能存在偏差或错误；表述以原音视频为准。",
+      disclaimerAnalysis: "AI 详细解读，非官方；请以原音视频为准",
+      disclaimerTranscript: "完整文稿可能含 ASR/整理误差；说话人标注以可辨认发言为准",
+      transcriptSource: "文稿来源：{source}",
+      openVideo: "打开视频",
+      play: "播放",
+      pause: "暂停",
+      seek: "播放进度",
+      audio: "音频",
+      resumeHint: "已从上次位置继续",
+      openLink: "打开 {label}",
+      resources: "本集资源",
+      kindVideo: "视频",
+      kindBili: "B站",
+      kindExt: "外链",
+      neighbors: "相邻访谈",
+      prev: "上一则",
+      next: "下一则",
+      missingEp: "找不到这一集。<a href=\"#/\">返回首页</a>",
+      loadingList: "正在读取列表…",
+      loadingEp: "正在读取这一集…",
+      mediaFail: "未能加载 media.js",
+      dataFail: "数据未加载：请用 <code>data/index.json</code> 与 <code>data/episodes/</code>，并用本地静态服务器打开。",
+      footer1: "长镜 · AI，精选 AI / 科技长视频访谈，带精读、解读与文稿。不是私人观看列表。",
+      footer2: "精读与解读如存在，为 AI 改写，请以原音视频为准。列表读 <code>data/index.json</code>，单集读 <code>data/episodes/&lt;id&gt;.json</code>。",
+      footer3: "分享筛选：<code>#/?form=essay</code>、<code>#/show/sv101</code>、<code>#/topic/china</code>。",
+      dateMd: "{m}月{d}日",
+      dateYmd: "{y}年{m}月{d}日",
+      evidence: "出处",
+      evidenceAlt: "出处截图",
+      linkFallback: "链接"
+    },
+    en: {
+      brand: "长镜 · AI",
+      lede: "Selected long-form AI and tech interviews, with close reads, analysis, and transcripts.",
+      skip: "Skip to main content",
+      nav: "Main",
+      all: "All",
+      find: "Find",
+      updated: "Updated {date}",
+      back: "Home",
+      themeToggle: "Switch light/dark theme",
+      langGroup: "Interface language",
+      searchLabel: "Search titles, guests, shows, or summaries",
+      searchPlaceholder: "Search titles, guests, shows, or summaries",
+      findAria: "Search",
+      facetShow: "Show",
+      facetTopic: "Topic",
+      facetForm: "Form",
+      facetPeriod: "When",
+      facetSort: "Sort",
+      formEssay: "Has close read",
+      formAnalysis: "Has analysis",
+      formTranscript: "Has transcript",
+      periodWeek: "This week",
+      periodMonth: "This month",
+      periodEarlier: "Earlier",
+      sortNewest: "Newest first",
+      sortOldest: "Oldest first",
+      byTime: "By time",
+      byShow: "By show",
+      more: "See more",
+      open: "Open",
+      markEssay: "Read",
+      markAnalysis: "Analysis",
+      markTranscript: "Transcript",
+      emptyNone: "Nothing here yet.",
+      emptyMissingShow: "No such show. <a href=\"#/\">Back home</a>, or clear filters and try again.",
+      emptyMissingTopic: "No such topic. <a href=\"#/\">Back home</a>, or clear filters and try again.",
+      emptyFiltered: "No matching interviews. <a href=\"{href}\">Clear filters</a> to see everything in this scope.",
+      clearFilters: "Clear filters",
+      resultsSearch: "Search results",
+      resultsFilter: "Filtered results",
+      resultsAll: "All interviews",
+      showing: "Showing <strong>{n}</strong> / {total}",
+      lockShow: "You are on a show page. Picking another show changes pages. <a href=\"{href}\">Back to all</a> to filter several shows at once.",
+      lockTopic: "You are on a topic page. Picking another topic changes pages. <a href=\"{href}\">Back to all</a> to filter several topics at once.",
+      showBlurb: "Interviews in this show. Layer a topic, form, or search.",
+      showMissing: "No show matched that name.",
+      topicBlurb: "Interviews in this topic. Layer a show, form, or search.",
+      topicMissing: "No topic matched that name.",
+      pageShow: "Show",
+      pageTopic: "Topic",
+      toc: "Contents",
+      tabEssay: "Close read",
+      tabAnalysis: "Analysis",
+      tabTranscript: "Transcript",
+      copyMd: "Copy text",
+      copied: "Copied",
+      wordsEssay: "Close read · {n} chars",
+      wordsAnalysis: "Analysis · {n} chars",
+      disclaimerEssay: "The Chinese close read is an AI rewrite of the original interview, not an official translation, and may contain errors. Treat the original audio/video as authoritative.",
+      disclaimerAnalysis: "AI analysis, unofficial; treat the original audio/video as authoritative.",
+      disclaimerTranscript: "Full transcript may include ASR or editing errors; speaker labels follow identifiable speech.",
+      transcriptSource: "Transcript source: {source}",
+      openVideo: "Open video",
+      play: "Play",
+      pause: "Pause",
+      seek: "Playback position",
+      audio: "Audio",
+      resumeHint: "Resumed from last position",
+      openLink: "Open {label}",
+      resources: "This episode",
+      kindVideo: "Video",
+      kindBili: "Bilibili",
+      kindExt: "Link",
+      neighbors: "Adjacent interviews",
+      prev: "Previous",
+      next: "Next",
+      missingEp: "Episode not found. <a href=\"#/\">Back home</a>",
+      loadingList: "Loading the catalog…",
+      loadingEp: "Loading this episode…",
+      mediaFail: "Failed to load media.js",
+      dataFail: "Data did not load. Serve <code>data/index.json</code> and <code>data/episodes/</code> from a local static server.",
+      footer1: "长镜 · AI — selected long-form AI and tech interviews, with close reads, analysis, and transcripts. Not a private watchlist.",
+      footer2: "Close reads and analysis, when present, are AI rewrites; treat the original audio/video as authoritative. Catalog from <code>data/index.json</code>, episodes from <code>data/episodes/&lt;id&gt;.json</code>.",
+      footer3: "Share filters: <code>#/?form=essay</code>, <code>#/show/sv101</code>, <code>#/topic/china</code>.",
+      dateMd: "{m}月{d}日",
+      dateYmd: "{y}年{m}月{d}日",
+      evidence: "Sources",
+      evidenceAlt: "Source still",
+      linkFallback: "Link"
+    }
+  };
+  var currentLang = "en";
+
+  function normalizeLang(value) {
+    return value === "zh" || value === "en" ? value : "";
+  }
+
+  function isChinaTimezone(timeZone, offsetMinutes) {
+    var tz = String(timeZone || "");
+    if (CHINA_TZ[tz]) return true;
+    if (tz) return false;
+    return offsetMinutes === -480;
+  }
+
+  function resolveLang(stored, timeZone, offsetMinutes) {
+    var s = normalizeLang(stored);
+    if (s) return s;
+    return isChinaTimezone(timeZone, offsetMinutes) ? "zh" : "en";
+  }
+
+  function htmlLang(lang) {
+    return normalizeLang(lang) === "zh" ? "zh-CN" : "en";
+  }
+
+  function nextLang(current) {
+    return normalizeLang(current) === "zh" ? "en" : "zh";
+  }
+
+  function getLang() {
+    return currentLang;
+  }
+
+  function setLang(lang) {
+    currentLang = normalizeLang(lang) || "en";
+    return currentLang;
+  }
+
+  function t(key, vars, lang) {
+    lang = normalizeLang(lang) || currentLang || "en";
+    var dict = I18N[lang] || I18N.en;
+    var s = dict[key];
+    if (s == null && I18N.en) s = I18N.en[key];
+    if (s == null) s = key;
+    if (vars) {
+      s = String(s).replace(/\{(\w+)\}/g, function (_, name) {
+        return vars[name] != null ? String(vars[name]) : "";
+      });
+    }
+    return s;
+  }
+
+  function i18nKeys() {
+    return Object.keys(I18N.zh);
+  }
 
   function normalizeTheme(value) {
     return value === "light" || value === "dark" ? value : "";
@@ -735,9 +982,20 @@
     renderTranscript: renderTranscript,
     slugify: slugify,
     THEME_KEY: THEME_KEY,
+    LANG_KEY: LANG_KEY,
+    I18N: I18N,
     normalizeTheme: normalizeTheme,
     resolveTheme: resolveTheme,
     nextTheme: nextTheme,
-    themeColor: themeColor
+    themeColor: themeColor,
+    normalizeLang: normalizeLang,
+    isChinaTimezone: isChinaTimezone,
+    resolveLang: resolveLang,
+    htmlLang: htmlLang,
+    nextLang: nextLang,
+    getLang: getLang,
+    setLang: setLang,
+    t: t,
+    i18nKeys: i18nKeys
   };
 });

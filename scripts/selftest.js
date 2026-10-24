@@ -175,10 +175,10 @@ var woven = WL.weaveEvidence(
   [{ src: "thumbs/frames/x-01.jpg", caption: "画面说明", t: "12:34", section: "危机：诊断" }]
 );
 assert("evidence after heading", woven.indexOf("</h2>") < woven.indexOf("class=\"evidence\"") && woven.indexOf("12:34") !== -1);
-assert("sectioned evidence skips 出处", woven.indexOf("出处") === -1);
+assert("sectioned evidence skips chrome heading", woven.indexOf(WL.t("evidence")) === -1);
 
 var leftover = WL.weaveEvidence("<p>body</p>", [], [{ src: "thumbs/frames/x-01.jpg", caption: "尾注" }]);
-assert("unsectioned evidence at 出处", leftover.indexOf("出处") !== -1 && leftover.indexOf("尾注") !== -1);
+assert("unsectioned evidence at sources", leftover.indexOf(WL.t("evidence")) !== -1 && leftover.indexOf("尾注") !== -1);
 assert("empty weave hidden", WL.weaveEvidence("<p>x</p>", [], []) === "<p>x</p>");
 
 var fs = require("fs");
@@ -246,9 +246,10 @@ assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.inde
 assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
 assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
 assert("app.js brand is 长镜 · AI", appSrc.indexOf("长镜 · AI") !== -1 && appSrc.indexOf("访谈文库") === -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024f") !== -1);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024g") !== -1);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
 assert("index FOUC theme script", htmlSrc.indexOf("wl-theme") !== -1 && htmlSrc.indexOf("data-theme") !== -1);
+assert("index FOUC lang script", htmlSrc.indexOf("wl-lang") !== -1 && htmlSrc.indexOf("data-lang") !== -1 && htmlSrc.indexOf("zh-CN") !== -1);
 assert("index FOUC before stylesheet", htmlSrc.indexOf("localStorage.getItem") < htmlSrc.indexOf("styles.css"));
 
 var cssSrc = fs.readFileSync(path.join(__dirname, "..", "styles.css"), "utf8");
@@ -257,6 +258,7 @@ assert("css light theme tokens", cssSrc.indexOf('[data-theme="light"]') !== -1);
 assert("css drops paper body mode", cssSrc.indexOf("body.paper") === -1);
 assert("css drops terracotta leftover", cssSrc.indexOf("#8A5A12") === -1);
 assert("css reduced-motion theme", cssSrc.indexOf("prefers-reduced-motion") !== -1);
+assert("css lang toggle", cssSrc.indexOf(".lang-toggle") !== -1 && cssSrc.indexOf(".lang-btn") !== -1);
 
 assert("theme key", WL.THEME_KEY === "wl-theme");
 assert("normalizeTheme light", WL.normalizeTheme("light") === "light");
@@ -272,8 +274,37 @@ assert("themeColor dark", WL.themeColor("dark") === "#090C11");
 assert("themeColor light", WL.themeColor("light") === "#F3F5F8");
 
 assert("app theme toggle", appSrc.indexOf("theme-toggle") !== -1 && appSrc.indexOf("data-theme-toggle") !== -1);
-assert("app aria theme label", appSrc.indexOf("切换浅色/深色") !== -1);
+assert("app lang toggle", appSrc.indexOf("lang-toggle") !== -1 && appSrc.indexOf("data-lang-set") !== -1);
+assert("app chrome uses t()", appSrc.indexOf("W.t(") !== -1 && appSrc.indexOf("本周") === -1 && appSrc.indexOf("找一集") === -1);
 assert("app drops paper body mode", appSrc.indexOf("setBodyMode") === -1 && appSrc.indexOf("classList.toggle(\"paper\"") === -1);
+
+assert("lang key", WL.LANG_KEY === "wl-lang");
+assert("normalizeLang zh", WL.normalizeLang("zh") === "zh");
+assert("normalizeLang en", WL.normalizeLang("en") === "en");
+assert("normalizeLang junk", WL.normalizeLang("fr") === "");
+assert("resolveLang shanghai → zh", WL.resolveLang("", "Asia/Shanghai") === "zh");
+assert("resolveLang chongqing → zh", WL.resolveLang("", "Asia/Chongqing") === "zh");
+assert("resolveLang urumqi → zh", WL.resolveLang("", "Asia/Urumqi") === "zh");
+assert("resolveLang harbin → zh", WL.resolveLang("", "Asia/Harbin") === "zh");
+assert("resolveLang nyc → en", WL.resolveLang("", "America/New_York") === "en");
+assert("resolveLang singapore IANA → en", WL.resolveLang("", "Asia/Singapore") === "en");
+assert("resolveLang stored en wins shanghai", WL.resolveLang("en", "Asia/Shanghai") === "en");
+assert("resolveLang stored zh wins nyc", WL.resolveLang("zh", "America/New_York") === "zh");
+assert("resolveLang CST offset no IANA → zh", WL.resolveLang("", "", -480) === "zh");
+assert("resolveLang other offset no IANA → en", WL.resolveLang("", "", 300) === "en");
+assert("resolveLang IANA wins over offset", WL.resolveLang("", "Europe/London", -480) === "en");
+assert("htmlLang zh", WL.htmlLang("zh") === "zh-CN");
+assert("htmlLang en", WL.htmlLang("en") === "en");
+assert("nextLang zh", WL.nextLang("zh") === "en");
+assert("t zh shelf", WL.t("periodWeek", null, "zh") === "本周");
+assert("t en shelf", WL.t("periodWeek", null, "en") === "This week");
+assert("t interpolate", WL.t("updated", { date: "2026-10-24" }, "en") === "Updated 2026-10-24");
+assert("t theme zh", WL.t("themeToggle", null, "zh").indexOf("浅色") !== -1);
+assert("t theme en", /theme/i.test(WL.t("themeToggle", null, "en")));
+var zhKeys = WL.i18nKeys().slice().sort();
+var enKeys = Object.keys(WL.I18N.en).sort();
+assert("i18n key coverage", zhKeys.join(",") === enKeys.join(",") && zhKeys.length > 40);
+assert("brand stays 长镜 · AI", WL.t("brand", null, "zh") === "长镜 · AI" && WL.t("brand", null, "en") === "长镜 · AI");
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);

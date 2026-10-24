@@ -4,23 +4,24 @@
   var LS_AUDIO = "ai-interviews-audio-pos-v1";
   var SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
   var SITE_TITLE = "长镜 · AI";
-  var SITE_LEDE = "精选 AI / 科技长视频访谈，带精读、解读与文稿。";
-  var DEFAULT_DISCLAIMER = "中文精读由 AI 基于原始访谈改写，非官方翻译，可能存在偏差或错误；表述以原音视频为准。";
-  var DEFAULT_ANALYSIS_DISCLAIMER = "AI 详细解读，非官方；请以原音视频为准";
-  var DEFAULT_TRANSCRIPT_DISCLAIMER = "完整文稿可能含 ASR/整理误差；说话人标注以可辨认发言为准";
   var FORM_KEYS = [
-    { id: "essay", label: "有精读" },
-    { id: "analysis", label: "有解读" },
-    { id: "transcript", label: "有文稿" }
+    { id: "essay", labelKey: "formEssay" },
+    { id: "analysis", labelKey: "formAnalysis" },
+    { id: "transcript", labelKey: "formTranscript" }
   ];
+  var EN_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   var W = window.WL;
   if (!W) {
-    document.getElementById("view").innerHTML = '<div class="empty">未能加载 media.js</div>';
+    var bootLang = document.documentElement.getAttribute("data-lang") === "zh";
+    document.getElementById("view").innerHTML = '<div class="empty">' +
+      (bootLang ? "未能加载 media.js" : "Failed to load media.js") + "</div>";
     return;
   }
 
   var LS_THEME = W.THEME_KEY || "wl-theme";
+  var LS_LANG = W.LANG_KEY || "wl-lang";
+  var t = function (key, vars) { return W.t(key, vars); };
 
   var state = {
     data: null,
@@ -216,9 +217,9 @@
   }
 
   function periodLabel(period) {
-    if (period === "week") return "本周";
-    if (period === "month") return "本月";
-    if (period === "earlier") return "更早";
+    if (period === "week") return t("periodWeek");
+    if (period === "month") return t("periodMonth");
+    if (period === "earlier") return t("periodEarlier");
     return "";
   }
 
@@ -229,9 +230,9 @@
       counts[p] += 1;
     });
     return [
-      { id: "week", name: "本周", count: counts.week },
-      { id: "month", name: "本月", count: counts.month },
-      { id: "earlier", name: "更早", count: counts.earlier }
+      { id: "week", name: t("periodWeek"), count: counts.week },
+      { id: "month", name: t("periodMonth"), count: counts.month },
+      { id: "earlier", name: t("periodEarlier"), count: counts.earlier }
     ];
   }
 
@@ -239,8 +240,15 @@
     var p = String(iso || "").split("-");
     if (p.length !== 3) return iso || "—";
     var today = todayISO();
-    if (p[0] === today.slice(0, 4)) return Number(p[1]) + "月" + Number(p[2]) + "日";
-    return p[0] + "年" + Number(p[1]) + "月" + Number(p[2]) + "日";
+    var y = p[0];
+    var m = Number(p[1]);
+    var d = Number(p[2]);
+    if (W.getLang() === "en") {
+      var md = EN_MONTHS[m - 1] + " " + d;
+      return y === today.slice(0, 4) ? md : md + ", " + y;
+    }
+    if (y === today.slice(0, 4)) return t("dateMd", { m: m, d: d });
+    return t("dateYmd", { y: y, m: m, d: d });
   }
 
   function sortItems(list) {
@@ -268,7 +276,7 @@
       map[slug].count += 1;
     });
     return Object.keys(map).map(function (k) { return map[k]; }).sort(function (a, b) {
-      return b.count - a.count || a.name.localeCompare(b.name, "zh");
+      return b.count - a.count || a.name.localeCompare(b.name, W.getLang() === "zh" ? "zh" : "en");
     });
   }
 
@@ -351,11 +359,40 @@
     else if (themeMq.addListener) themeMq.addListener(onChange);
   }
 
+  function readStoredLang() {
+    try { return W.normalizeLang(localStorage.getItem(LS_LANG)); } catch (e) { return ""; }
+  }
+
+  function detectTimeZone() {
+    try { return Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) { return ""; }
+  }
+
+  function detectOffset() {
+    try { return new Date().getTimezoneOffset(); } catch (e) { return null; }
+  }
+
+  function applyLang(lang, persist) {
+    lang = W.normalizeLang(lang) || "en";
+    W.setLang(lang);
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.lang = W.htmlLang(lang);
+    var skip = document.getElementById("skip");
+    if (skip) skip.textContent = t("skip");
+    var desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.setAttribute("content", t("lede"));
+    var og = document.querySelector('meta[property="og:description"]');
+    if (og) og.setAttribute("content", t("lede"));
+    if (persist) {
+      try { localStorage.setItem(LS_LANG, lang); } catch (e) {}
+    }
+  }
+
   function themeToggleHtml() {
     var theme = currentTheme();
     return (
       '<button type="button" class="theme-toggle" id="theme-toggle" data-theme-toggle' +
-        ' aria-label="切换浅色/深色" title="切换浅色/深色" data-theme-now="' + theme + '">' +
+        ' aria-label="' + W.escapeHtml(t("themeToggle")) + '" title="' + W.escapeHtml(t("themeToggle")) +
+        '" data-theme-now="' + theme + '">' +
         '<span class="theme-icon theme-icon-sun" aria-hidden="true">' +
           '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">' +
             '<circle cx="12" cy="12" r="4"/>' +
@@ -371,17 +408,31 @@
     );
   }
 
+  function langToggleHtml() {
+    var lang = W.getLang();
+    return (
+      '<div class="lang-toggle" role="group" aria-label="' + W.escapeHtml(t("langGroup")) + '">' +
+        '<button type="button" class="lang-btn" data-lang-set="zh" aria-pressed="' +
+          (lang === "zh" ? "true" : "false") + '">中文</button>' +
+        '<span class="lang-sep" aria-hidden="true">|</span>' +
+        '<button type="button" class="lang-btn" data-lang-set="en" aria-pressed="' +
+          (lang === "en" ? "true" : "false") + '">EN</button>' +
+      "</div>"
+    );
+  }
+
   function renderTopbar() {
     var el = document.getElementById("topbar");
     var updated = (state.data && state.data.lastUpdated) || "—";
     var tools = '<div class="topbar-tools">' +
-      (state.route.name === "ep" ? "" : '<p class="updated">更新于 ' + W.escapeHtml(updated) + "</p>") +
+      (state.route.name === "ep" ? "" : '<p class="updated">' + t("updated", { date: W.escapeHtml(updated) }) + "</p>") +
+      langToggleHtml() +
       themeToggleHtml() +
       "</div>";
     if (state.route.name === "ep") {
       el.innerHTML =
         '<div class="topbar-inner">' +
-          '<a class="back" href="#/">返回首页</a>' +
+          '<a class="back" href="#/">' + t("back") + "</a>" +
           '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
           tools +
         "</div>";
@@ -390,9 +441,9 @@
     el.innerHTML =
       '<div class="topbar-inner">' +
         '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
-        '<nav class="nav" aria-label="主导航">' +
-          '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">全部</a>" +
-          '<a href="#q" data-focus-search>找一集</a>' +
+        '<nav class="nav" aria-label="' + W.escapeHtml(t("nav")) + '">' +
+          '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">" + t("all") + "</a>" +
+          '<a href="#q" data-focus-search>' + t("find") + "</a>" +
         "</nav>" +
         tools +
       "</div>";
@@ -401,16 +452,16 @@
   function renderFooter() {
     var el = document.getElementById("footer");
     el.innerHTML =
-      "<div>" + SITE_TITLE + "，" + SITE_LEDE + "不是私人观看列表。</div>" +
-      "<div>精读与解读如存在，为 AI 改写，请以原音视频为准。列表读 <code>data/index.json</code>，单集读 <code>data/episodes/&lt;id&gt;.json</code>。</div>" +
-      "<div>分享筛选：<code>#/?form=essay</code>、<code>#/show/sv101</code>、<code>#/topic/china</code>。</div>";
+      "<div>" + t("footer1") + "</div>" +
+      "<div>" + t("footer2") + "</div>" +
+      "<div>" + t("footer3") + "</div>";
   }
 
   function formMarks(it) {
     var marks = [];
-    if (W.hasEssay(it)) marks.push('<span class="mark essay">精读</span>');
-    if (W.hasAnalysis(it)) marks.push('<span class="mark analysis">解读</span>');
-    if (W.hasTranscript(it)) marks.push('<span class="mark transcript">文稿</span>');
+    if (W.hasEssay(it)) marks.push('<span class="mark essay">' + t("markEssay") + "</span>");
+    if (W.hasAnalysis(it)) marks.push('<span class="mark analysis">' + t("markAnalysis") + "</span>");
+    if (W.hasTranscript(it)) marks.push('<span class="mark transcript">' + t("markTranscript") + "</span>");
     return marks.join("");
   }
 
@@ -428,7 +479,7 @@
           '<div class="tile-cover">' +
             cover +
             '<div class="tile-overlay" aria-hidden="true">' +
-              '<span class="tile-cta"><span class="play">▶</span>打开</span>' +
+              '<span class="tile-cta"><span class="play">▶</span>' + t("open") + "</span>" +
               (forms ? '<div class="tile-forms">' + forms + "</div>" : "") +
             "</div>" +
           "</div>" +
@@ -449,7 +500,7 @@
     var limit = opts.limit || 8;
     var preview = list.slice(0, limit);
     var more = opts.moreHref && list.length > preview.length
-      ? '<a class="shelf-more" href="' + opts.moreHref + '">查看更多</a>'
+      ? '<a class="shelf-more" href="' + opts.moreHref + '">' + t("more") + "</a>"
       : "";
     return (
       '<section class="shelf">' +
@@ -472,9 +523,9 @@
       buckets[periodOfItem(it.date)].push(it);
     });
     var time = [
-      { id: "week", title: "本周", items: buckets.week },
-      { id: "month", title: "本月", items: buckets.month },
-      { id: "earlier", title: "更早", items: buckets.earlier }
+      { id: "week", title: t("periodWeek"), items: buckets.week },
+      { id: "month", title: t("periodMonth"), items: buckets.month },
+      { id: "earlier", title: t("periodEarlier"), items: buckets.earlier }
     ].map(function (b) {
       return shelfHtml({
         title: b.title,
@@ -493,11 +544,11 @@
     return (
       '<div class="browse" id="browse">' +
         '<div class="shelf-block">' +
-          '<p class="block-kicker">按时间</p>' +
+          '<p class="block-kicker">' + t("byTime") + "</p>" +
           time +
         "</div>" +
         '<div class="shelf-block">' +
-          '<p class="block-kicker">按栏目</p>' +
+          '<p class="block-kicker">' + t("byShow") + "</p>" +
           showRows +
         "</div>" +
       "</div>"
@@ -522,15 +573,15 @@
 
   function emptyHtml(kind) {
     if (kind === "missing-show") {
-      return '<div class="empty" role="status">没有这个栏目。<a href="#/">返回首页</a>，或清除筛选后再找。</div>';
+      return '<div class="empty" role="status">' + t("emptyMissingShow") + "</div>";
     }
     if (kind === "missing-topic") {
-      return '<div class="empty" role="status">没有这个主题。<a href="#/">返回首页</a>，或清除筛选后再找。</div>';
+      return '<div class="empty" role="status">' + t("emptyMissingTopic") + "</div>";
     }
     if (hasActiveFilters()) {
-      return '<div class="empty" role="status">没有找到匹配的访谈。可以<a href="' + clearHref() + '">清除筛选</a>，回到当前范围的全部条目。</div>';
+      return '<div class="empty" role="status">' + t("emptyFiltered", { href: W.escapeHtml(clearHref()) }) + "</div>";
     }
-    return '<div class="empty" role="status">还没有条目。</div>';
+    return '<div class="empty" role="status">' + t("emptyNone") + "</div>";
   }
 
   function facetBtn(kind, value, label, count, active) {
@@ -553,47 +604,47 @@
       return facetBtn("topic", t.slug, t.name, t.count, state.topic === t.slug);
     }).join("");
     var formBtns = FORM_KEYS.map(function (f) {
-      return facetBtn("form", f.id, f.label, null, !!forms[f.id]);
+      return facetBtn("form", f.id, t(f.labelKey), null, !!forms[f.id]);
     }).join("");
     var heading = opts.heading || SITE_TITLE;
-    var blurb = opts.blurb || SITE_LEDE;
+    var blurb = opts.blurb || t("lede");
     var lockNote = "";
     if (opts.lock === "show") {
-      lockNote = '<p class="lock-note">正在看栏目页。点其他栏目会换页；<a href="' +
-        W.hashFor({ name: "list", q: state.query, topic: state.topic, form: state.form, period: state.period, sort: state.sort }) +
-        '">回到全部</a>可同时筛多个栏目。</p>';
+      lockNote = '<p class="lock-note">' + t("lockShow", {
+        href: W.hashFor({ name: "list", q: state.query, topic: state.topic, form: state.form, period: state.period, sort: state.sort })
+      }) + "</p>";
     } else if (opts.lock === "topic") {
-      lockNote = '<p class="lock-note">正在看主题页。点其他主题会换页；<a href="' +
-        W.hashFor({ name: "list", q: state.query, show: state.show, form: state.form, period: state.period, sort: state.sort }) +
-        '">回到全部</a>可同时筛多个主题。</p>';
+      lockNote = '<p class="lock-note">' + t("lockTopic", {
+        href: W.hashFor({ name: "list", q: state.query, show: state.show, form: state.form, period: state.period, sort: state.sort })
+      }) + "</p>";
     }
     return (
-      '<section class="desk" aria-label="查找">' +
+      '<section class="desk" aria-label="' + W.escapeHtml(t("findAria")) + '">' +
         '<div class="desk-copy">' +
           '<h1>' + W.escapeHtml(heading) + "</h1>" +
           '<p class="lede">' + W.escapeHtml(blurb) + "</p>" +
           lockNote +
         "</div>" +
         '<div class="search">' +
-          '<label class="sr" for="q">搜索标题、嘉宾、节目或摘要</label>' +
-          '<input id="q" type="search" placeholder="搜索标题、嘉宾、节目或摘要" autocomplete="off" value="' +
+          '<label class="sr" for="q">' + t("searchLabel") + "</label>" +
+          '<input id="q" type="search" placeholder="' + W.escapeHtml(t("searchPlaceholder")) + '" autocomplete="off" value="' +
             W.escapeHtml(state.query) + '" />' +
         "</div>" +
         '<div class="facets">' +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-show">栏目</span>' +
+            '<span class="facet-label" id="lbl-show">' + t("facetShow") + "</span>" +
             '<div class="facet-set names" role="group" aria-labelledby="lbl-show">' + showBtns + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-topic">主题</span>' +
+            '<span class="facet-label" id="lbl-topic">' + t("facetTopic") + "</span>" +
             '<div class="facet-set" role="group" aria-labelledby="lbl-topic">' + topicBtns + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-form">形态</span>' +
+            '<span class="facet-label" id="lbl-form">' + t("facetForm") + "</span>" +
             '<div class="facet-set" role="group" aria-labelledby="lbl-form">' + formBtns + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-period">时间</span>' +
+            '<span class="facet-label" id="lbl-period">' + t("facetPeriod") + "</span>" +
             '<div class="facet-set" role="group" aria-labelledby="lbl-period">' +
               collectPeriods().map(function (p) {
                 return facetBtn("period", p.id, p.name, p.count, state.period === p.id);
@@ -601,10 +652,10 @@
             "</div>" +
           "</div>" +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-sort">排序</span>' +
+            '<span class="facet-label" id="lbl-sort">' + t("facetSort") + "</span>" +
             '<div class="facet-set" role="group" aria-labelledby="lbl-sort">' +
-              facetBtn("sort", "newest", "最近优先", null, state.sort !== "oldest") +
-              facetBtn("sort", "oldest", "较早在前", null, state.sort === "oldest") +
+              facetBtn("sort", "newest", t("sortNewest"), null, state.sort !== "oldest") +
+              facetBtn("sort", "oldest", t("sortOldest"), null, state.sort === "oldest") +
             "</div>" +
           "</div>" +
         "</div>" +
@@ -618,22 +669,22 @@
       var extraTopic = state.route.name === "topic" ? false : !!state.topic;
       if (!extraShow && !extraTopic) return periodLabel(state.period);
     }
-    if (state.query.trim()) return "搜索结果";
-    if (hasHeavyFilters()) return "筛选结果";
+    if (state.query.trim()) return t("resultsSearch");
+    if (hasHeavyFilters()) return t("resultsFilter");
     if (state.route.name === "show" || state.route.name === "topic") return "";
-    return "全部访谈";
+    return t("resultsAll");
   }
 
   function resultsHead(filtered, total) {
     var clear = hasActiveFilters()
-      ? '<a class="clear" href="' + clearHref() + '">清除筛选</a>'
+      ? '<a class="clear" href="' + clearHref() + '">' + t("clearFilters") + "</a>"
       : "";
     var title = resultsTitle();
     return (
       '<div class="results-head">' +
         '<div class="results-copy">' +
           (title ? '<h2 class="results-title">' + W.escapeHtml(title) + "</h2>" : "") +
-          '<p class="count">显示 <strong>' + filtered + "</strong> / " + total + " 则</p>" +
+          '<p class="count">' + t("showing", { n: filtered, total: total }) + "</p>" +
         "</div>" +
         clear +
       "</div>"
@@ -667,23 +718,19 @@
     if (state.route.name === "show") {
       var showMeta = shows.filter(function (s) { return s.slug === state.show; })[0];
       opts.heading = showMeta ? showMeta.name : state.show;
-      opts.blurb = showMeta
-        ? "这一栏目下的访谈。可以再叠主题、形态或搜索。"
-        : "没有匹配到这个栏目名。";
+      opts.blurb = showMeta ? t("showBlurb") : t("showMissing");
       opts.lock = "show";
       if (!showMeta) missing = "missing-show";
     } else if (state.route.name === "topic") {
       var topicMeta = topics.filter(function (t) { return t.slug === state.topic; })[0];
       opts.heading = topicMeta ? topicMeta.name : W.topicDisplay(state.topic);
-      opts.blurb = topicMeta
-        ? "这一主题下的访谈。可以再叠栏目、形态或搜索。"
-        : "没有匹配到这个主题。";
+      opts.blurb = topicMeta ? t("topicBlurb") : t("topicMissing");
       opts.lock = "topic";
       if (!topicMeta) missing = "missing-topic";
     }
     var pageTitle = SITE_TITLE;
-    if (state.route.name === "show") pageTitle = (opts.heading || "栏目") + " · " + SITE_TITLE;
-    if (state.route.name === "topic") pageTitle = (opts.heading || "主题") + " · " + SITE_TITLE;
+    if (state.route.name === "show") pageTitle = (opts.heading || t("pageShow")) + " · " + SITE_TITLE;
+    if (state.route.name === "topic") pageTitle = (opts.heading || t("pageTopic")) + " · " + SITE_TITLE;
     document.title = pageTitle;
 
     view.innerHTML = deskHtml(opts) + browseHtml(missing ? [] : list, missing);
@@ -697,7 +744,7 @@
       return '<li data-level="' + h.level + '"><a href="' + W.escapeHtml(W.tocHref(epId, h.id)) +
         '" data-toc-target="' + W.escapeHtml(h.id) + '">' + W.escapeHtml(h.text) + "</a></li>";
     }).join("");
-    return '<nav class="toc ' + (cls || "") + '" aria-label="目录"><h2>目录</h2><ol>' + itemsHtml + "</ol></nav>";
+    return '<nav class="toc ' + (cls || "") + '" aria-label="' + W.escapeHtml(t("toc")) + '"><h2>' + t("toc") + "</h2><ol>" + itemsHtml + "</ol></nav>";
   }
 
   function scrollToHeading(id) {
@@ -718,13 +765,13 @@
 
   function paneWordLabel(it) {
     if (state.tab === "essay" && it.essay && it.essay.wordCount) {
-      return "精读约 " + it.essay.wordCount + " 字";
+      return t("wordsEssay", { n: it.essay.wordCount });
     }
     if (state.tab === "analysis" && it.analysis && it.analysis.wordCount) {
-      return "解读约 " + it.analysis.wordCount + " 字";
+      return t("wordsAnalysis", { n: it.analysis.wordCount });
     }
-    if (W.hasEssay(it) && it.essay.wordCount) return "精读约 " + it.essay.wordCount + " 字";
-    if (W.hasAnalysis(it) && it.analysis.wordCount) return "解读约 " + it.analysis.wordCount + " 字";
+    if (W.hasEssay(it) && it.essay.wordCount) return t("wordsEssay", { n: it.essay.wordCount });
+    if (W.hasAnalysis(it) && it.analysis.wordCount) return t("wordsAnalysis", { n: it.analysis.wordCount });
     return "";
   }
 
@@ -760,30 +807,30 @@
     if (showTabs) {
       tabs =
         '<div class="tab-row' + (hasMedia ? "" : " no-media") + '" id="tab-row">' +
-          (essayOn ? paneTabBtn("essay", "中文精读") : "") +
-          (analysisOn ? paneTabBtn("analysis", "详细解读") : "") +
-          (transOn ? paneTabBtn("transcript", "完整文稿") : "") +
+          (essayOn ? paneTabBtn("essay", t("tabEssay")) : "") +
+          (analysisOn ? paneTabBtn("analysis", t("tabAnalysis")) : "") +
+          (transOn ? paneTabBtn("transcript", t("tabTranscript")) : "") +
           '<div class="tools">' +
-            (showToc ? '<button type="button" class="toc-toggle" data-toc-toggle>目录</button>' : "") +
-            (canCopy ? '<button type="button" data-copy-md>复制正文</button>' : "") +
+            (showToc ? '<button type="button" class="toc-toggle" data-toc-toggle>' + t("toc") + "</button>" : "") +
+            (canCopy ? '<button type="button" data-copy-md>' + t("copyMd") + "</button>" : "") +
           "</div></div>";
     }
     var body = "";
     if (state.tab === "essay" && essayOn) {
-      var disc = W.textOf(it.essay.disclaimer) || DEFAULT_DISCLAIMER;
+      var disc = W.textOf(it.essay.disclaimer) || t("disclaimerEssay");
       body =
         (disc ? '<div class="disclaimer">' + W.escapeHtml(disc) + "</div>" : "") +
         (it.advice ? '<p class="advice">' + W.escapeHtml(it.advice) + "</p>" : "") +
         essayHtml;
     } else if (state.tab === "analysis" && analysisOn) {
-      var adisc = W.textOf(it.analysis.disclaimer) || DEFAULT_ANALYSIS_DISCLAIMER;
+      var adisc = W.textOf(it.analysis.disclaimer) || t("disclaimerAnalysis");
       body =
         (adisc ? '<div class="disclaimer">' + W.escapeHtml(adisc) + "</div>" : "") +
         analysisHtml;
     } else if (state.tab === "transcript" && transOn) {
-      var tdisc = W.textOf(it.transcript.disclaimer) || DEFAULT_TRANSCRIPT_DISCLAIMER;
+      var tdisc = W.textOf(it.transcript.disclaimer) || t("disclaimerTranscript");
       var src = it.transcript.source && it.transcript.source !== "none"
-        ? "文稿来源：" + it.transcript.source
+        ? t("transcriptSource", { source: it.transcript.source })
         : "";
       body =
         '<div class="disclaimer">' + W.escapeHtml(tdisc) +
@@ -821,7 +868,7 @@
     var view = document.getElementById("view");
     view.className = "view episode" + ((it && (W.detectMedia(it).primary || W.hasAudio(it))) ? "" : " no-media");
     if (!it) {
-      view.innerHTML = '<div class="empty">找不到这一集。<a href="#/">返回首页</a></div>';
+      view.innerHTML = '<div class="empty">' + t("missingEp") + "</div>";
       document.title = SITE_TITLE;
       return;
     }
@@ -844,10 +891,10 @@
       poster =
         '<button type="button" class="watch-poster' + (state.videoOpen ? " open" : "") +
           '" id="btn-video" aria-expanded="' + (state.videoOpen ? "true" : "false") +
-          '" aria-label="打开视频">' +
+          '" aria-label="' + W.escapeHtml(t("openVideo")) + '">' +
           (cover ? '<img src="' + cover + '" alt="" />' : "") +
           '<span class="poster-ui"><span class="play" aria-hidden="true">▶</span>' +
-          '<span class="lbl">打开视频</span></span></button>';
+          '<span class="lbl">' + t("openVideo") + "</span></span></button>";
     }
 
     var audio = "";
@@ -857,16 +904,16 @@
       audio =
         '<div class="audio" id="audio-player" data-id="' + W.escapeHtml(it.id) + '">' +
           '<audio preload="metadata" src="' + W.escapeHtml(W.audioUrlOf(it)) + '"></audio>' +
-          '<button type="button" class="audio-play" data-audio="toggle" aria-label="播放">▶</button>' +
+          '<button type="button" class="audio-play" data-audio="toggle" aria-label="' + W.escapeHtml(t("play")) + '">▶</button>' +
           '<div class="audio-meta">' +
-            '<div class="audio-label">音频' +
+            '<div class="audio-label">' + t("audio") +
               (it.media && it.media.audioSource && it.media.audioSource !== "none"
                 ? " " + W.escapeHtml(it.media.audioSource)
                 : "") +
             "</div>" +
             '<div class="audio-times">' +
               '<span data-audio="cur">0:00</span>' +
-              '<input type="range" min="0" max="1000" value="0" data-audio="seek" aria-label="播放进度" />' +
+              '<input type="range" min="0" max="1000" value="0" data-audio="seek" aria-label="' + W.escapeHtml(t("seek")) + '" />' +
               '<span data-audio="dur">--:--</span>' +
             "</div>" +
           "</div>" +
@@ -875,7 +922,7 @@
             '<button type="button" data-audio="skip" data-delta="15">+15s</button>' +
             '<button type="button" data-audio="speed">' + rate + "×</button>" +
           "</div>" +
-          '<span class="audio-hint" data-audio="hint" hidden>已从上次位置继续</span>' +
+          '<span class="audio-hint" data-audio="hint" hidden>' + t("resumeHint") + "</span>" +
         "</div>";
     }
 
@@ -883,8 +930,8 @@
     if (!hasEmbed && media.classified.length) {
       ext = '<div class="ext-links">' + media.classified.map(function (u) {
         return '<a class="btn primary" href="' + W.escapeHtml(u.href) +
-          '" target="_blank" rel="noopener noreferrer">打开 ' +
-          W.escapeHtml(u.label) + "</a>";
+          '" target="_blank" rel="noopener noreferrer">' +
+          W.escapeHtml(t("openLink", { label: u.label })) + "</a>";
       }).join("") + "</div>";
     } else if (media.classified.length) {
       ext = '<div class="ext-links">' + media.classified.map(function (u) {
@@ -908,9 +955,9 @@
     }
 
     var more = media.classified.length
-      ? '<section class="resources"><h2>本集资源</h2><ul>' +
+      ? '<section class="resources"><h2>' + t("resources") + "</h2><ul>" +
         media.classified.map(function (u) {
-          return "<li><span class='k'>" + W.escapeHtml(u.kind === "youtube" ? "视频" : u.kind === "bilibili" ? "B站" : "外链") +
+          return "<li><span class='k'>" + W.escapeHtml(u.kind === "youtube" ? t("kindVideo") : u.kind === "bilibili" ? t("kindBili") : t("kindExt")) +
             "</span><a href='" + W.escapeHtml(u.href) + "' target='_blank' rel='noopener noreferrer'>" +
             W.escapeHtml(u.label) + "</a></li>";
         }).join("") +
@@ -919,13 +966,13 @@
 
     var nav = neighbors(it.id);
     var navHtml =
-      '<nav class="ep-nav" aria-label="相邻访谈">' +
+      '<nav class="ep-nav" aria-label="' + W.escapeHtml(t("neighbors")) + '">' +
         (nav.prev
-          ? '<a href="' + W.hashFor({ name: "ep", id: nav.prev.id }) + '"><span class="dir">上一则</span>' +
+          ? '<a href="' + W.hashFor({ name: "ep", id: nav.prev.id }) + '"><span class="dir">' + t("prev") + "</span>" +
             W.escapeHtml(nav.prev.title) + "</a>"
           : "<span></span>") +
         (nav.next
-          ? '<a class="next" href="' + W.hashFor({ name: "ep", id: nav.next.id }) + '"><span class="dir">下一则</span>' +
+          ? '<a class="next" href="' + W.hashFor({ name: "ep", id: nav.next.id }) + '"><span class="dir">' + t("next") + "</span>" +
             W.escapeHtml(nav.next.title) + "</a>"
           : "<span></span>") +
       "</nav>";
@@ -937,9 +984,9 @@
       "<span>" + W.escapeHtml(it.duration || "—") + "</span>"
     ];
     if (word) crumbs.push("<span>" + W.escapeHtml(word) + "</span>");
-    if (essayOn) crumbs.push("<span>精读</span>");
-    if (analysisOn) crumbs.push("<span>解读</span>");
-    if (transOn) crumbs.push("<span>文稿</span>");
+    if (essayOn) crumbs.push("<span>" + t("markEssay") + "</span>");
+    if (analysisOn) crumbs.push("<span>" + t("markAnalysis") + "</span>");
+    if (transOn) crumbs.push("<span>" + t("markTranscript") + "</span>");
 
     view.innerHTML =
       '<article class="ep">' +
@@ -1043,8 +1090,8 @@
       sync();
     });
     audio.addEventListener("timeupdate", function () { sync(); persist(false); });
-    audio.addEventListener("pause", function () { persist(true); playBtn.textContent = "▶"; playBtn.setAttribute("aria-label", "播放"); });
-    audio.addEventListener("play", function () { playBtn.textContent = "❚❚"; playBtn.setAttribute("aria-label", "暂停"); });
+    audio.addEventListener("pause", function () { persist(true); playBtn.textContent = "▶"; playBtn.setAttribute("aria-label", t("play")); });
+    audio.addEventListener("play", function () { playBtn.textContent = "❚❚"; playBtn.setAttribute("aria-label", t("pause")); });
     audio.addEventListener("ended", function () {
       state.audioPos[it.id] = { t: 0, rate: audio.playbackRate || 1 };
       saveAudioPos();
@@ -1089,7 +1136,7 @@
     renderTopbar();
     renderFooter();
     if (!state.data) {
-      document.getElementById("view").innerHTML = '<div class="empty">正在读取列表…</div>';
+      document.getElementById("view").innerHTML = '<div class="empty">' + t("loadingList") + "</div>";
       return;
     }
     if (state.route.name === "ep") {
@@ -1106,7 +1153,7 @@
         renderEpisode(null);
         return;
       }
-      document.getElementById("view").innerHTML = '<div class="empty">正在读取这一集…</div>';
+      document.getElementById("view").innerHTML = '<div class="empty">' + t("loadingEp") + "</div>";
       document.title = (it && it.title ? it.title + " · " : "") + SITE_TITLE;
       return;
     }
@@ -1225,6 +1272,15 @@
         toggleTheme();
         return;
       }
+      var langSet = e.target.closest("[data-lang-set]");
+      if (langSet) {
+        var nextLang = W.normalizeLang(langSet.getAttribute("data-lang-set"));
+        if (nextLang) {
+          applyLang(nextLang, true);
+          render();
+        }
+        return;
+      }
       var focusSearch = e.target.closest("[data-focus-search]");
       if (focusSearch) {
         e.preventDefault();
@@ -1269,7 +1325,7 @@
         var btn = e.target.closest("[data-copy-md]");
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(md).then(function () {
-            btn.textContent = "已复制";
+            btn.textContent = t("copied");
           }).catch(function () { /* ignore */ });
         }
       }
@@ -1343,13 +1399,14 @@
     if (!data || !Array.isArray(data.items) || data.items.length === 0) {
       state.data = { version: 1, title: "", lastUpdated: "", items: [], categories: [] };
       document.getElementById("view").innerHTML =
-        '<div class="empty">数据未加载：请用 <code>data/index.json</code> 与 <code>data/episodes/</code>，并用本地静态服务器打开。</div>';
+        '<div class="empty">' + t("dataFail") + "</div>";
       return;
     }
     state.data = data;
   }
 
   async function boot() {
+    applyLang(W.resolveLang(readStoredLang(), detectTimeZone(), detectOffset()), false);
     applyTheme(W.resolveTheme(readStoredTheme(), themeMq && themeMq.matches), false);
     requestAnimationFrame(function () {
       document.documentElement.classList.add("theme-ready");
@@ -1368,6 +1425,10 @@
       Object.keys(patch || {}).forEach(function (k) { it[k] = patch[k]; });
       render();
       return true;
+    },
+    setLang: function (lang) {
+      applyLang(lang, true);
+      render();
     }
   };
 
