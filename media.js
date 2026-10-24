@@ -113,43 +113,209 @@
     return !!audioUrlOf(it);
   }
 
+  var SHOW_CANON = [
+    { slug: "all-in", test: function (s) { return /all[\s-]*in/i.test(s); }, display: "All-In Podcast" },
+    { slug: "a16z", test: function (s) { return /a16z/i.test(s); }, display: "a16z Podcast" },
+    { slug: "sv101", test: function (s) { return /硅谷\s*101/.test(s); }, display: "硅谷101" },
+    { slug: "lex-fridman", test: function (s) { return /lex\s*fridman/i.test(s); }, display: "Lex Fridman Podcast" },
+    { slug: "late-talk", test: function (s) { return /晚点聊|latetalk/i.test(s); }, display: "晚点聊 LateTalk" },
+    { slug: "latent-space", test: function (s) { return /latent\s*space/i.test(s); }, display: "Latent Space" },
+    { slug: "dwarkesh", test: function (s) { return /dwarkesh/i.test(s); }, display: "Dwarkesh Podcast" },
+    { slug: "lenny", test: function (s) { return /lenny/i.test(s); }, display: "Lenny's Podcast" },
+    { slug: "no-priors", test: function (s) { return /no\s*priors/i.test(s); }, display: "No Priors" },
+    { slug: "cognitive-revolution", test: function (s) { return /cognitive\s*revolution/i.test(s); }, display: "The Cognitive Revolution" },
+    { slug: "training-data", test: function (s) { return /training\s*data/i.test(s); }, display: "Training Data" },
+    { slug: "zhangxiaojun", test: function (s) { return /张小珺/.test(s); }, display: "张小珺Jùn｜商业访谈录" },
+    { slug: "crossing", test: function (s) { return /十字路口|crossing/i.test(s); }, display: "十字路口Crossing" },
+    { slug: "linkstart", test: function (s) { return /linkstart|开始连接/i.test(s); }, display: "开始连接 LinkStart" },
+    { slug: "decoder", test: function (s) { return /decoder/i.test(s); }, display: "Decoder" },
+    { slug: "bg2", test: function (s) { return /bg2/i.test(s); }, display: "BG2 Pod" },
+    { slug: "yc", test: function (s) { return /y\s*combinator/i.test(s); }, display: "Y Combinator" },
+    { slug: "invest-like-the-best", test: function (s) { return /invest\s*like\s*the\s*best/i.test(s); }, display: "Invest Like the Best" },
+    { slug: "newcomer", test: function (s) { return /newcomer/i.test(s); }, display: "Newcomer Pod" }
+  ];
+
+  var TOPIC_CANON = [
+    { slug: "lab", name: "实验室·安全·研究" },
+    { slug: "founders", name: "创始人·CEO·产品" },
+    { slug: "vc", name: "VC·基建·市场" },
+    { slug: "china", name: "中国·科技媒体" }
+  ];
+
+  function showSlug(name) {
+    var s = String(name || "");
+    for (var i = 0; i < SHOW_CANON.length; i++) {
+      if (SHOW_CANON[i].test(s)) return SHOW_CANON[i].slug;
+    }
+    return slugify(s);
+  }
+
+  function showDisplay(name) {
+    var s = String(name || "");
+    for (var i = 0; i < SHOW_CANON.length; i++) {
+      if (SHOW_CANON[i].test(s)) return SHOW_CANON[i].display;
+    }
+    return s;
+  }
+
+  function topicSlug(name) {
+    var s = String(name || "");
+    for (var i = 0; i < TOPIC_CANON.length; i++) {
+      if (TOPIC_CANON[i].name === s || TOPIC_CANON[i].slug === s) return TOPIC_CANON[i].slug;
+    }
+    return slugify(s);
+  }
+
+  function topicDisplay(slugOrName) {
+    var s = String(slugOrName || "");
+    for (var i = 0; i < TOPIC_CANON.length; i++) {
+      if (TOPIC_CANON[i].slug === s || TOPIC_CANON[i].name === s) return TOPIC_CANON[i].name;
+    }
+    return s;
+  }
+
+  function decodeComp(s) {
+    try { return decodeURIComponent(String(s || "").replace(/\+/g, " ")); }
+    catch (e) { return String(s || ""); }
+  }
+
   function parseHashQuery(h) {
     var qIndex = h.indexOf("?");
-    if (qIndex === -1) return { path: h, heading: "" };
-    var query = h.slice(qIndex + 1);
-    var heading = "";
-    query.split("&").forEach(function (pair) {
-      var eq = pair.indexOf("=");
-      var key = eq === -1 ? pair : pair.slice(0, eq);
-      var val = eq === -1 ? "" : pair.slice(eq + 1);
-      if (key === "h" && val) {
-        try { heading = decodeURIComponent(val); }
-        catch (e) { heading = val; }
-      }
+    var path = qIndex === -1 ? h : h.slice(0, qIndex);
+    var params = {};
+    if (qIndex !== -1) {
+      h.slice(qIndex + 1).split("&").forEach(function (pair) {
+        if (!pair) return;
+        var eq = pair.indexOf("=");
+        var key = decodeComp(eq === -1 ? pair : pair.slice(0, eq));
+        var val = decodeComp(eq === -1 ? "" : pair.slice(eq + 1));
+        if (key) params[key] = val;
+      });
+    }
+    return { path: path, params: params, heading: params.h || "" };
+  }
+
+  function formList(raw) {
+    return String(raw || "").split(",").map(function (s) { return s.trim(); }).filter(function (s) {
+      return s === "essay" || s === "analysis" || s === "transcript";
     });
-    return { path: h.slice(0, qIndex), heading: heading };
+  }
+
+  function filtersFromParams(params) {
+    params = params || {};
+    return {
+      q: params.q || "",
+      show: params.show || "",
+      topic: params.topic || "",
+      form: formList(params.form),
+      sort: params.sort === "oldest" ? "oldest" : "newest"
+    };
+  }
+
+  function queryString(filters) {
+    var parts = [];
+    if (!filters) return "";
+    if (filters.q) parts.push("q=" + encodeURIComponent(filters.q));
+    if (filters.show) parts.push("show=" + encodeURIComponent(filters.show));
+    if (filters.topic) parts.push("topic=" + encodeURIComponent(filters.topic));
+    if (filters.form && filters.form.length) parts.push("form=" + encodeURIComponent(filters.form.join(",")));
+    if (filters.sort && filters.sort !== "newest") parts.push("sort=" + encodeURIComponent(filters.sort));
+    if (filters.heading) parts.push("h=" + encodeURIComponent(filters.heading));
+    return parts.length ? "?" + parts.join("&") : "";
+  }
+
+  function emptyFilters() {
+    return { q: "", show: "", topic: "", form: [], sort: "newest" };
   }
 
   function parseRoute(hash) {
     var h = String(hash == null ? "" : hash).replace(/^#/, "").replace(/^\//, "");
     var parsed = parseHashQuery(h);
     var parts = parsed.path.split("/").filter(Boolean);
+    var filters = filtersFromParams(parsed.params);
+    var heading = parsed.heading || "";
     if (parts[0] === "ep" && parts[1]) {
-      var id;
-      try { id = decodeURIComponent(parts[1]); }
-      catch (e) { id = parts[1]; }
-      return { name: "ep", id: id, heading: parsed.heading || "" };
+      return {
+        name: "ep",
+        id: decodeComp(parts[1]),
+        slug: "",
+        heading: heading,
+        q: "",
+        show: "",
+        topic: "",
+        form: [],
+        sort: "newest"
+      };
     }
-    return { name: "list", heading: "" };
+    if (parts[0] === "show" && parts[1]) {
+      var show = decodeComp(parts[1]);
+      return {
+        name: "show",
+        id: "",
+        slug: show,
+        heading: "",
+        q: filters.q,
+        show: show,
+        topic: filters.topic,
+        form: filters.form,
+        sort: filters.sort
+      };
+    }
+    if (parts[0] === "topic" && parts[1]) {
+      var topic = decodeComp(parts[1]);
+      return {
+        name: "topic",
+        id: "",
+        slug: topic,
+        heading: "",
+        q: filters.q,
+        show: filters.show,
+        topic: topic,
+        form: filters.form,
+        sort: filters.sort
+      };
+    }
+    return {
+      name: "list",
+      id: "",
+      slug: "",
+      heading: "",
+      q: filters.q,
+      show: filters.show,
+      topic: filters.topic,
+      form: filters.form,
+      sort: filters.sort
+    };
   }
 
   function hashFor(route) {
-    if (route && route.name === "ep" && route.id) {
-      var base = "#/ep/" + encodeURIComponent(route.id);
-      if (route.heading) return base + "?h=" + encodeURIComponent(route.heading);
-      return base;
+    if (!route) return "#/";
+    if (route.name === "ep" && route.id) {
+      return "#/ep/" + encodeURIComponent(route.id) + queryString({ heading: route.heading });
     }
-    return "#/";
+    if (route.name === "show" && route.slug) {
+      return "#/show/" + encodeURIComponent(route.slug) + queryString({
+        q: route.q,
+        topic: route.topic,
+        form: route.form,
+        sort: route.sort
+      });
+    }
+    if (route.name === "topic" && route.slug) {
+      return "#/topic/" + encodeURIComponent(route.slug) + queryString({
+        q: route.q,
+        show: route.show,
+        form: route.form,
+        sort: route.sort
+      });
+    }
+    return "#/" + queryString({
+      q: route.q,
+      show: route.show,
+      topic: route.topic,
+      form: route.form,
+      sort: route.sort
+    }).replace(/^\?/, "?");
   }
 
   function tocHref(epId, headingId) {
@@ -515,6 +681,14 @@
     weaveEvidence: weaveEvidence,
     parseRoute: parseRoute,
     hashFor: hashFor,
+    queryString: queryString,
+    filtersFromParams: filtersFromParams,
+    emptyFilters: emptyFilters,
+    showSlug: showSlug,
+    showDisplay: showDisplay,
+    topicSlug: topicSlug,
+    topicDisplay: topicDisplay,
+    topics: function () { return TOPIC_CANON.slice(); },
     tocHref: tocHref,
     parseYouTubeId: parseYouTubeId,
     parseBilibili: parseBilibili,
