@@ -3,7 +3,8 @@
 
   var LS_AUDIO = "ai-interviews-audio-pos-v1";
   var SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
-  var SITE_TITLE = "AI / 科技访谈文库";
+  var SITE_TITLE = "长镜 · AI";
+  var SITE_LEDE = "精选 AI / 科技长视频访谈，带精读、解读与文稿。";
   var DEFAULT_DISCLAIMER = "中文精读由 AI 基于原始访谈改写，非官方翻译，可能存在偏差或错误；表述以原音视频为准。";
   var DEFAULT_ANALYSIS_DISCLAIMER = "AI 详细解读，非官方；请以原音视频为准";
   var DEFAULT_TRANSCRIPT_DISCLAIMER = "完整文稿可能含 ASR/整理误差；说话人标注以可辨认发言为准";
@@ -319,15 +320,15 @@
     if (state.route.name === "ep") {
       el.innerHTML =
         '<div class="topbar-inner">' +
-          '<a class="back" href="#/">返回文库</a>' +
-          '<a class="brand" href="#/">访谈文库</a>' +
+          '<a class="back" href="#/">返回首页</a>' +
+          '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
         "</div>";
       return;
     }
     el.innerHTML =
       '<div class="topbar-inner">' +
-        '<a class="brand" href="#/">访谈文库</a>' +
-        '<nav class="nav" aria-label="文库">' +
+        '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
+        '<nav class="nav" aria-label="主导航">' +
           '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">全部</a>" +
           '<a href="#q" data-focus-search>找一集</a>' +
         "</nav>" +
@@ -338,7 +339,7 @@
   function renderFooter() {
     var el = document.getElementById("footer");
     el.innerHTML =
-      "<div>公开的 AI / 科技访谈文库，收录多档节目的中文精读、详细解读与文稿。不是私人观看列表。</div>" +
+      "<div>" + SITE_TITLE + "，" + SITE_LEDE + "不是私人观看列表。</div>" +
       "<div>精读与解读如存在，为 AI 改写，请以原音视频为准。列表读 <code>data/index.json</code>，单集读 <code>data/episodes/&lt;id&gt;.json</code>。</div>" +
       "<div>分享筛选：<code>#/?form=essay</code>、<code>#/show/sv101</code>、<code>#/topic/china</code>。</div>";
   }
@@ -459,15 +460,15 @@
 
   function emptyHtml(kind) {
     if (kind === "missing-show") {
-      return '<div class="empty" role="status">没有这个栏目。<a href="#/">返回文库</a>，或清除筛选后再找。</div>';
+      return '<div class="empty" role="status">没有这个栏目。<a href="#/">返回首页</a>，或清除筛选后再找。</div>';
     }
     if (kind === "missing-topic") {
-      return '<div class="empty" role="status">没有这个主题。<a href="#/">返回文库</a>，或清除筛选后再找。</div>';
+      return '<div class="empty" role="status">没有这个主题。<a href="#/">返回首页</a>，或清除筛选后再找。</div>';
     }
     if (hasActiveFilters()) {
       return '<div class="empty" role="status">没有找到匹配的访谈。可以<a href="' + clearHref() + '">清除筛选</a>，回到当前范围的全部条目。</div>';
     }
-    return '<div class="empty" role="status">文库里还没有条目。</div>';
+    return '<div class="empty" role="status">还没有条目。</div>';
   }
 
   function facetBtn(kind, value, label, count, active) {
@@ -492,8 +493,8 @@
     var formBtns = FORM_KEYS.map(function (f) {
       return facetBtn("form", f.id, f.label, null, !!forms[f.id]);
     }).join("");
-    var heading = opts.heading || "找一集";
-    var blurb = opts.blurb || "按标题、嘉宾、节目或摘要查找，再叠栏目、主题、时段与内容形态。";
+    var heading = opts.heading || SITE_TITLE;
+    var blurb = opts.blurb || SITE_LEDE;
     var lockNote = "";
     if (opts.lock === "show") {
       lockNote = '<p class="lock-note">正在看栏目页。点其他栏目会换页；<a href="' +
@@ -620,8 +621,8 @@
       if (!topicMeta) missing = "missing-topic";
     }
     var pageTitle = SITE_TITLE;
-    if (state.route.name === "show") pageTitle = (opts.heading || "栏目") + " · 访谈文库";
-    if (state.route.name === "topic") pageTitle = (opts.heading || "主题") + " · 访谈文库";
+    if (state.route.name === "show") pageTitle = (opts.heading || "栏目") + " · " + SITE_TITLE;
+    if (state.route.name === "topic") pageTitle = (opts.heading || "主题") + " · " + SITE_TITLE;
     document.title = pageTitle;
 
     view.innerHTML = deskHtml(opts) + browseHtml(missing ? [] : list, missing);
@@ -760,7 +761,7 @@
     view.className = "view episode" + ((it && (W.detectMedia(it).primary || W.hasAudio(it))) ? "" : " no-media");
     setBodyMode("paper");
     if (!it) {
-      view.innerHTML = '<div class="empty">找不到这一集。<a href="#/">返回文库</a></div>';
+      view.innerHTML = '<div class="empty">找不到这一集。<a href="#/">返回首页</a></div>';
       document.title = SITE_TITLE;
       return;
     }
@@ -897,7 +898,7 @@
         navHtml +
       "</article>";
 
-    document.title = it.title + " · 访谈文库";
+    document.title = it.title + " · " + SITE_TITLE;
     bindAudio(it);
   }
 
@@ -1048,7 +1049,7 @@
       }
       setBodyMode("paper");
       document.getElementById("view").innerHTML = '<div class="empty">正在读取这一集…</div>';
-      document.title = (it && it.title ? it.title + " · " : "") + "访谈文库";
+      document.title = (it && it.title ? it.title + " · " : "") + SITE_TITLE;
       return;
     }
     renderCatalog();
