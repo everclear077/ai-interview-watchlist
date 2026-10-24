@@ -678,6 +678,25 @@
     return renderTranscriptBody(md);
   }
 
+  var THEME_KEY = "wl-theme";
+
+  function normalizeTheme(value) {
+    return value === "light" || value === "dark" ? value : "";
+  }
+
+  function resolveTheme(stored, prefersLight) {
+    var t = normalizeTheme(stored);
+    return t || (prefersLight ? "light" : "dark");
+  }
+
+  function nextTheme(current) {
+    return normalizeTheme(current) === "light" ? "dark" : "light";
+  }
+
+  function themeColor(theme) {
+    return theme === "light" ? "#F3F5F8" : "#090C11";
+  }
+
   return {
     escapeHtml: escapeHtml,
     textOf: textOf,
@@ -714,6 +733,11 @@
     renderMarkdown: renderMarkdown,
     renderEssay: renderEssay,
     renderTranscript: renderTranscript,
-    slugify: slugify
+    slugify: slugify,
+    THEME_KEY: THEME_KEY,
+    normalizeTheme: normalizeTheme,
+    resolveTheme: resolveTheme,
+    nextTheme: nextTheme,
+    themeColor: themeColor
   };
 });

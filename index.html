@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+(function () {
+  var KEY = "wl-theme";
+  var t = "";
+  try { t = localStorage.getItem(KEY) || ""; } catch (e) {}
+  if (t !== "light" && t !== "dark") {
+    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  document.documentElement.setAttribute("data-theme", t);
+  document.documentElement.style.colorScheme = t;
+})();
+</script>
 <meta name="color-scheme" content="dark light" />
 <meta name="theme-color" content="#090C11" />
 <title>长镜 · AI</title>
@@ -11,22 +23,24 @@
 <meta property="og:description" content="精选 AI / 科技长视频访谈，带精读、解读与文稿。" />
 <meta property="og:type" content="website" />
 <!--
-  Night studio catalog.
-  void #090C11 / well #121820 / lamp #E39B3D / haze #8E97A8 / paper #E6E2D6 / coal #1A1814
+  Night studio catalog + daylight cutting-room.
+  Dark: void #090C11 / well #121820 / lamp #E39B3D / haze #8E97A8
+  Light: slate #F3F5F8 / ink #121820 / lamp #B56F14
   Display: Fraunces + Noto Serif SC · UI: IBM Plex Sans + Noto Sans SC
   Hash: #/  #/show/<slug>  #/topic/<slug>  #/ep/<id>
+  Theme: html[data-theme=dark|light], localStorage wl-theme
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=20261024e" />
+<link rel="stylesheet" href="./styles.css?v=20261024f" />
 </head>
 <body>
   <a class="skip" href="#view">跳到主要内容</a>
   <header class="topbar" id="topbar"></header>
   <main id="view" class="view"></main>
   <footer class="site-footer" id="footer"></footer>
-  <script src="./media.js?v=20261024e"></script>
-  <script src="./app.js?v=20261024e"></script>
+  <script src="./media.js?v=20261024f"></script>
+  <script src="./app.js?v=20261024f"></script>
 </body>
 </html>

@@ -20,6 +20,8 @@
     return;
   }
 
+  var LS_THEME = W.THEME_KEY || "wl-theme";
+
   var state = {
     data: null,
     audioPos: {},
@@ -309,19 +311,79 @@
     };
   }
 
-  function setBodyMode(mode) {
-    document.body.classList.toggle("paper", mode === "paper");
-    document.documentElement.style.colorScheme = mode === "paper" ? "light" : "dark";
+  var themeMq = typeof window.matchMedia === "function"
+    ? window.matchMedia("(prefers-color-scheme: light)")
+    : null;
+
+  function readStoredTheme() {
+    try { return W.normalizeTheme(localStorage.getItem(LS_THEME)); } catch (e) { return ""; }
+  }
+
+  function currentTheme() {
+    return W.normalizeTheme(document.documentElement.getAttribute("data-theme")) ||
+      W.resolveTheme(readStoredTheme(), themeMq && themeMq.matches);
+  }
+
+  function applyTheme(theme, persist) {
+    theme = W.normalizeTheme(theme) || "dark";
+    document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.style.colorScheme = theme;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", W.themeColor(theme));
+    if (persist) {
+      try { localStorage.setItem(LS_THEME, theme); } catch (e) {}
+    }
+    var btn = document.getElementById("theme-toggle");
+    if (btn) btn.setAttribute("data-theme-now", theme);
+  }
+
+  function toggleTheme() {
+    applyTheme(W.nextTheme(currentTheme()), true);
+  }
+
+  function watchSystemTheme() {
+    if (!themeMq) return;
+    var onChange = function () {
+      if (readStoredTheme()) return;
+      applyTheme(W.resolveTheme("", themeMq.matches), false);
+    };
+    if (themeMq.addEventListener) themeMq.addEventListener("change", onChange);
+    else if (themeMq.addListener) themeMq.addListener(onChange);
+  }
+
+  function themeToggleHtml() {
+    var theme = currentTheme();
+    return (
+      '<button type="button" class="theme-toggle" id="theme-toggle" data-theme-toggle' +
+        ' aria-label="切换浅色/深色" title="切换浅色/深色" data-theme-now="' + theme + '">' +
+        '<span class="theme-icon theme-icon-sun" aria-hidden="true">' +
+          '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">' +
+            '<circle cx="12" cy="12" r="4"/>' +
+            '<path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"/>' +
+          "</svg>" +
+        "</span>" +
+        '<span class="theme-icon theme-icon-moon" aria-hidden="true">' +
+          '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">' +
+            '<path d="M15.5 4.2A8.2 8.2 0 1 0 19.8 15 7 7 0 0 1 15.5 4.2z"/>' +
+          "</svg>" +
+        "</span>" +
+      "</button>"
+    );
   }
 
   function renderTopbar() {
     var el = document.getElementById("topbar");
     var updated = (state.data && state.data.lastUpdated) || "—";
+    var tools = '<div class="topbar-tools">' +
+      (state.route.name === "ep" ? "" : '<p class="updated">更新于 ' + W.escapeHtml(updated) + "</p>") +
+      themeToggleHtml() +
+      "</div>";
     if (state.route.name === "ep") {
       el.innerHTML =
         '<div class="topbar-inner">' +
           '<a class="back" href="#/">返回首页</a>' +
           '<a class="brand" href="#/">' + SITE_TITLE + "</a>" +
+          tools +
         "</div>";
       return;
     }
@@ -332,7 +394,7 @@
           '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">全部</a>" +
           '<a href="#q" data-focus-search>找一集</a>' +
         "</nav>" +
-        '<p class="updated">更新于 ' + W.escapeHtml(updated) + "</p>" +
+        tools +
       "</div>";
   }
 
@@ -597,7 +659,6 @@
   function renderCatalog() {
     var view = document.getElementById("view");
     view.className = "view catalog";
-    setBodyMode("catalog");
     var list = filteredItems();
     var shows = collectShows();
     var topics = collectTopics();
@@ -759,7 +820,6 @@
   function renderEpisode(it) {
     var view = document.getElementById("view");
     view.className = "view episode" + ((it && (W.detectMedia(it).primary || W.hasAudio(it))) ? "" : " no-media");
-    setBodyMode("paper");
     if (!it) {
       view.innerHTML = '<div class="empty">找不到这一集。<a href="#/">返回首页</a></div>';
       document.title = SITE_TITLE;
@@ -1029,7 +1089,6 @@
     renderTopbar();
     renderFooter();
     if (!state.data) {
-      setBodyMode("catalog");
       document.getElementById("view").innerHTML = '<div class="empty">正在读取列表…</div>';
       return;
     }
@@ -1047,7 +1106,6 @@
         renderEpisode(null);
         return;
       }
-      setBodyMode("paper");
       document.getElementById("view").innerHTML = '<div class="empty">正在读取这一集…</div>';
       document.title = (it && it.title ? it.title + " · " : "") + SITE_TITLE;
       return;
@@ -1163,6 +1221,10 @@
     }, true);
 
     document.body.addEventListener("click", function (e) {
+      if (e.target.closest("[data-theme-toggle]")) {
+        toggleTheme();
+        return;
+      }
       var focusSearch = e.target.closest("[data-focus-search]");
       if (focusSearch) {
         e.preventDefault();
@@ -1288,6 +1350,11 @@
   }
 
   async function boot() {
+    applyTheme(W.resolveTheme(readStoredTheme(), themeMq && themeMq.matches), false);
+    requestAnimationFrame(function () {
+      document.documentElement.classList.add("theme-ready");
+    });
+    watchSystemTheme();
     loadAudioPos();
     bindGlobal();
     await loadData();
