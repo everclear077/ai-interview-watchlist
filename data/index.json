@@ -3043,8 +3043,288 @@
       "hasEssay": true,
       "hasAnalysis": true,
       "hasTranscript": false
+    },
+    {
+      "id": "greymatter-mustafa-suleyman-2024-06-20",
+      "title": "Product-Led AI: Mustafa Suleyman on Defining Intelligence",
+      "guest": "Mustafa Suleyman（Microsoft AI）",
+      "show": "Greymatter",
+      "date": "2024-06-20",
+      "duration": "~35m",
+      "category": "实验室·安全·研究",
+      "priority": "P2",
+      "summary": "Greylock Greymatter / Product-Led AI：Mustafa Suleyman 谈智能定义、Agent、数据飞轮与应用层创业机会；资深 VC 访谈栏目锚点。",
+      "advice": "Greymatter 补库锚点；对照库内 DeepMind/Kara 同嘉宾差分读。",
+      "urls": [
+        {
+          "label": "Product-Led AI 文稿",
+          "href": "https://productledaipod.com/podcasts/defining-intelligence/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=cNzRviY4Ei8"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/greymatter/id1089013200"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/greymatter-mustafa-suleyman-2024-06-20.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/GRL7002328724.mp3?updated=1718888940"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "ferriss-sebastian-mallaby-2026-06-17",
+      "title": "#870: Sebastian Mallaby — Lessons from 100+ AI Insiders on The Race to Superintelligence",
+      "guest": "Sebastian Mallaby",
+      "show": "The Tim Ferriss Show",
+      "date": "2026-06-17",
+      "duration": "~82m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "Hassabis 传记作者 Mallaby 汇总 100+ AI 圈内人观察：超智能竞赛、安全叙事与如何早期识别突破。",
+      "advice": "Ferriss 科技选辑第 2 条；官方有 Transcript 页。",
+      "urls": [
+        {
+          "label": "Tim.blog",
+          "href": "https://tim.blog/2026/06/17/sebastian-mallaby/"
+        },
+        {
+          "label": "Transcript",
+          "href": "https://tim.blog/2026/06/18/sebastian-mallaby-transcript/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/ferriss-sebastian-mallaby-2026-06-17.jpg",
+      "media": {
+        "audioUrl": "https://rss.art19.com/episodes/667d066a-45eb-4526-9338-1e5a9f6aa180.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "hours80k-simon-goldstein-2026-10-01",
+      "title": "#256 – Simon Goldstein on the case for giving AI (some) legal rights",
+      "guest": "Simon Goldstein",
+      "show": "80,000 Hours Podcast",
+      "date": "2026-10-01",
+      "duration": "~114m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "哲学/法律交叉：是否以及在何种限度上赋予 AI「部分」法律权利；与治理、责任归属的关系。",
+      "advice": "80k 第 2 条；官网常有长文稿可后续补 official。",
+      "urls": [
+        {
+          "label": "80,000 Hours",
+          "href": "https://80000hours.org/podcast/episodes/simon-goldstein-ai-legal-rights/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/hours80k-simon-goldstein-2026-10-01.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/e7275987/fcf4c170.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "gradient-lin-qiao-fireworks-2026-08-02",
+      "title": "40 Trillion Tokens a Day (Yes, More Than OpenAI) | Lin Qiao, CEO of Fireworks",
+      "guest": "Lin Qiao（Fireworks）",
+      "show": "Gradient Dissent",
+      "date": "2026-08-02",
+      "duration": "~79m",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Fireworks CEO 谈推理侧规模、Token 吞吐与开源/托管推理生意如何与基模厂竞合。",
+      "advice": "Gradient Dissent 第 2 条；推理基建选辑。",
+      "urls": [
+        {
+          "label": "Gradient Dissent / W&B",
+          "href": "https://wandb.ai/site/resources/podcast"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/gradient-lin-qiao-fireworks-2026-08-02.jpg",
+      "media": {
+        "audioUrl": "https://episodes.captivate.fm/episode/1a7e1d71-bca4-4edc-b9f8-70246d07ce65.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "mlst-frank-hutter-2026-09-23",
+      "title": "How Deep Learning Finally Cracked Messy Tables — Frank Hutter",
+      "guest": "Frank Hutter",
+      "show": "Machine Learning Street Talk",
+      "date": "2026-09-23",
+      "duration": "~113m",
+      "category": "实验室·安全·研究",
+      "priority": "P1",
+      "summary": "AutoML / 表格学习元老谈深度学习如何啃下「脏表格」问题：表征、归纳偏置与评测陷阱。",
+      "advice": "MLST 第 2 条；偏研究长辩论。",
+      "urls": [
+        {
+          "label": "MLST / Spotify",
+          "href": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/How-Deep-Learning-Finally-Cracked-Messy-Tables---Frank-Hutter-e3p9qvq"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/mlst-frank-hutter-2026-09-23.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/APO9587558249.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "lightstar-meitao-worldmodel-2026-07-24",
+      "title": "80.与梅涛院士的 3 小时访谈：语言、视频、具身终将汇聚，为什么是世界模型？",
+      "guest": "梅涛（智象未来 HiDream）",
+      "show": "卫诗婕｜漫谈Light the Star",
+      "date": "2026-07-24",
+      "duration": "~202m",
+      "category": "中国·科技媒体",
+      "priority": "P0",
+      "summary": "超长深访：从文生视频史到全模态与世界模型路线；「图片是入口，视频是过程，世界模型是终局」。",
+      "advice": "Light the Star 经典锚点；技术信息密度极高。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a621750a3fec224d5a24b2a"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/lightstar-meitao-worldmodel-2026-07-24.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6627fda4b56459544087d86a/llyF4QtWT_YuJT3g3_YLpJqpTzL0.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "unknown-xulingjie-token-factory-2026-07-15",
+      "title": "对话魔形智能CEO徐凌杰：AGI is calling! 风口上的Token超级工厂 | 未知之境01",
+      "guest": "徐凌杰（魔形智能）",
+      "show": "未知之境",
+      "date": "2026-07-15",
+      "duration": "~60m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "第一财经《未知之境》首期：前壁仞总裁徐凌杰谈 Token 超级工厂、算力优化与出海叙事。",
+      "advice": "第一财经科技深访新栏目补库（替代散落的财经硬核筛选）。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a577a92a4972c496dfc5360"
+        },
+        {
+          "label": "第一财经",
+          "href": "https://www.yicai.com/video/103276905.html"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/unknown-xulingjie-token-factory-2026-07-15.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/64c75555e8176c3ff81de98c/lhmX7qpeU0MIKzwXjNBP0spJnQRQ.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "huxiu-ai100-jiangchanghao-2026-07-09",
+      "title": "对话姜昌浩：AI正在终结中国工厂卷工时的时代",
+      "guest": "姜昌浩（圆木智能）",
+      "show": "虎嗅AI 100",
+      "date": "2026-07-09",
+      "duration": "~71m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "虎嗅科技主笔深访工业 AI：工厂脑力资产、排产与「卷工时→卷脑力」转型。",
+      "advice": "虎嗅长访视频/播客稳定栏目补库。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6a4f47fa4adef2b36561361e"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/huxiu-ai100-jiangchanghao-2026-07-09.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6a1e839a987d447159e8570c/ljR_fSbRM2RPeIRRsO9KHYgomwbv.m4a"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "lizheng-zheng-changxi-robot-2026-10-09",
+      "title": "对话 330｜李飞飞收购郑昌熙：有生之年，我们可能看不到通用机器人出现",
+      "guest": "郑昌熙",
+      "show": "课代表立正",
+      "date": "2026-10-09",
+      "duration": "~60m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "课代表立正深访：具身/机器人现实进度与「通用机器人」时间表的冷静校准。",
+      "advice": "中文资深长对话栏目补库；200+ 场履历。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ac93fd3015e30ba5be57005"
+        },
+        {
+          "label": "官网",
+          "href": "https://www.lizheng.ai/"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/lizheng-zheng-changxi-robot-2026-10-09.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6934fbe84ef12f9fe94eed5f/lgItJ-FSdxv3KRddgpdPt8D3UGy8.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "lizheng-marco-casalaina-2026-10-15",
+      "title": "对话 333｜AI在大企业中的应用才刚刚开始｜微软 CoreAI 副总裁 Marco Casalaina",
+      "guest": "Marco Casalaina（Microsoft CoreAI）",
+      "show": "课代表立正",
+      "date": "2026-10-15",
+      "duration": "~43m",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "企业 AI 落地：数据字典、评分标准（rubric）、Agent 身份与权限、长试点期与 FDE。",
+      "advice": "课代表立正第 2 条；企业落地实务向。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ad1d1599554aaac00bee27f"
+        }
+      ],
+      "addedAt": "2026-10-24",
+      "cover": "thumbs/lizheng-marco-casalaina-2026-10-15.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6934fbe84ef12f9fe94eed5f/lsR8HJIHVvN7bxRLYtOIUbiMe4T5.mp3"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-24 senior-hosts wave1 added 12"
+  "notes": "2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15"
 }
