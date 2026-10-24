@@ -40,6 +40,33 @@ assert("showSlug sv101", WL.showSlug("硅谷101播客") === "sv101");
 assert("showDisplay all-in", WL.showDisplay("All-In Podcast #293") === "All-In Podcast");
 assert("topicSlug known", WL.topicSlug("中国·科技媒体") === "china");
 assert("topicDisplay slug", WL.topicDisplay("lab") === "实验室·安全·研究");
+assert("slugify without used Set", WL.slugify("Eye on AI") === "eye-on-ai");
+assert("slugify uniqueness still works", (function () {
+  var used = new Set();
+  return WL.slugify("危机", used) === "危机" && WL.slugify("危机", used) === "危机-2";
+})());
+var newShows = [
+  ["Eye on AI", "eye-on-ai"],
+  ["Practical AI", "practical-ai"],
+  ["Hard Fork", "hard-fork"],
+  ["声东击西", "声东击西"],
+  ["捕蛇者说", "捕蛇者说"],
+  ["Teahour", "teahour"],
+  ["Uncapped", "uncapped"],
+  ["Google DeepMind Podcast", "google-deepmind-podcast"],
+  ["Acquired", "acquired"],
+  ["智者访谈", "智者访谈"]
+];
+newShows.forEach(function (pair) {
+  var threw = false;
+  var slug = "";
+  try { slug = WL.showSlug(pair[0]); } catch (e) { threw = true; }
+  assert("showSlug new show " + pair[0], !threw && slug === pair[1] && slug.length > 0);
+});
+assert("topicSlug unknown category", (function () {
+  try { return WL.topicSlug("新主题·测试") === "新主题-测试"; }
+  catch (e) { return false; }
+})());
 var tocLink = WL.tocHref("sv101-astra-agent-robot-pharma-2026-10-19", "开篇");
 assert("toc href stays on episode", tocLink.indexOf("#/ep/sv101-astra-agent-robot-pharma-2026-10-19") === 0);
 assert("toc href not bare slug", tocLink.indexOf("#开篇") === -1 && !/^#[^/]/.test(tocLink));
@@ -187,6 +214,27 @@ if (fs.existsSync(indexPath)) {
     if (slugDisplays[slug] !== display) slugOk = false;
   });
   assert("show slugs map to one display", slugOk && Object.keys(slugDisplays).length > 0);
+  var collectThrew = false;
+  var collected = {};
+  try {
+    index.items.forEach(function (it) {
+      var slug = WL.showSlug(it.show);
+      var topic = WL.topicSlug(it.category);
+      if (!slug || !topic) throw new Error("empty slug");
+      if (!collected[slug]) collected[slug] = { slug: slug, name: WL.showDisplay(it.show), count: 0 };
+      collected[slug].count += 1;
+    });
+    newShows.forEach(function (pair) {
+      var slug = WL.showSlug(pair[0]);
+      if (!collected[slug]) collected[slug] = { slug: slug, name: pair[0], count: 0 };
+      collected[slug].count += 1;
+    });
+  } catch (e) {
+    collectThrew = true;
+  }
+  assert("collectShows path slugs all items", !collectThrew && Object.keys(collected).length > 0);
+  assert("collectShows includes Eye on AI", !!(collected["eye-on-ai"] && collected["eye-on-ai"].count >= 1));
+  assert("collectShows includes 智者访谈", !!(collected["智者访谈"] && collected["智者访谈"].count >= 1));
 } else {
   console.log("skip  data/index.json layout checks (not split yet)");
 }
@@ -198,7 +246,8 @@ assert("app.js drops watched UI", appSrc.indexOf("已看") === -1 && appSrc.inde
 assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 && appSrc.indexOf("shelf-track") !== -1 && appSrc.indexOf("class=\"ledger\"") === -1);
 assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
 assert("app.js brand is 长镜 · AI", appSrc.indexOf("长镜 · AI") !== -1 && appSrc.indexOf("访谈文库") === -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024d") !== -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024e") !== -1);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024d") === -1);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);

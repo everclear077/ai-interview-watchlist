@@ -419,6 +419,7 @@
   }
 
   function slugify(text, used) {
+    used = used || new Set();
     var s = String(text || "")
       .trim()
       .toLowerCase()
