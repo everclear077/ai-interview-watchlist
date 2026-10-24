@@ -31,14 +31,15 @@ python3 -m http.server 8080
 | `#/topic/<slug>` | 按主题浏览 |
 | `#/ep/<id>` | 单集：中文精读 / 详细解读 / 完整文稿 |
 
-筛选写在 hash query 里，链接可分享，例如 `#/?form=essay&sort=oldest`、`#/show/a16z?topic=vc`。
+筛选写在 hash query 里，链接可分享，例如 `#/?form=essay&sort=oldest`、`#/?period=week`、`#/show/a16z?topic=vc`。
 
 `404.html` 会把 Pages 上的 `/ep/<id>/`、`/show/<slug>/`、`/topic/<slug>/` 重定向到对应 hash。
 
 ## 功能
 
-- 发现页：大搜索（标题 / 嘉宾 / 节目 / 摘要）+ 栏目、主题、形态（有精读 / 有解读 / 有文稿）、时间排序
-- 结果是可扫的目录行（封面 + 标题 + 嘉宾 + 栏目 + 日期 + 形态），不是卡片墙
+- 发现页：大搜索（标题 / 嘉宾 / 节目 / 摘要）+ 栏目、主题、形态（有精读 / 有解读 / 有文稿）、时段（本周 / 本月 / 更早）与新旧排序
+- 未筛选时按时间货架 + 栏目货架浏览（大 16:9 封面卡，不是细行账本）；筛选后是同语言的卡片网格
+- 封面悬停：略放大、抬升、半透明遮罩与「打开」；有精读 / 解读 / 文稿时在遮罩上标出
 - 空结果会提示如何清除筛选
 - 单集：顶栏返回文库；媒体条（点「打开视频」后才嵌入 YouTube / Bilibili）；有 `media.audioUrl` 才显示音频条
 - 三个页签（空字段隐藏）：**中文精读** `essay.zh`、**详细解读** `analysis.zh`、**完整文稿** `transcript.md`（否则 `transcript.turns[]`）

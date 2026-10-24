@@ -26,6 +26,7 @@
     show: "",
     topic: "",
     form: [],
+    period: "",
     sort: "newest",
     route: { name: "list" },
     tab: "essay",
@@ -80,6 +81,7 @@
     state.query = route.q || "";
     state.sort = route.sort || "newest";
     state.form = (route.form || []).slice();
+    state.period = route.period || "";
     if (route.name === "show") {
       state.show = route.slug || "";
       state.topic = route.topic || "";
@@ -100,6 +102,7 @@
       show: state.show,
       topic: state.topic,
       form: state.form,
+      period: state.period,
       sort: state.sort
     };
     if (overrides) {
@@ -128,7 +131,17 @@
   function hasActiveFilters() {
     var extraShow = state.route.name === "show" ? false : !!state.show;
     var extraTopic = state.route.name === "topic" ? false : !!state.topic;
-    return !!(state.query.trim() || extraShow || extraTopic || state.form.length || state.sort === "oldest");
+    return !!(state.query.trim() || extraShow || extraTopic || state.form.length || state.period || state.sort === "oldest");
+  }
+
+  function hasHeavyFilters() {
+    var extraShow = state.route.name === "show" ? false : !!state.show;
+    var extraTopic = state.route.name === "topic" ? false : !!state.topic;
+    return !!(state.query.trim() || extraShow || extraTopic || state.form.length || state.period);
+  }
+
+  function wantsShelves() {
+    return state.route.name === "list" && !hasHeavyFilters();
   }
 
   function clearHref() {
@@ -160,12 +173,71 @@
       }
       if (!ok) return false;
     }
+    if (state.period && periodOfItem(it.date) !== state.period) return false;
     var q = state.query.trim().toLowerCase();
     if (q) {
       var blob = [it.title, it.guest, it.show, it.summary].join(" ").toLowerCase();
       if (blob.indexOf(q) === -1) return false;
     }
     return true;
+  }
+
+  function todayISO() {
+    try {
+      return new Intl.DateTimeFormat("en-CA", {
+        timeZone: "America/Chicago",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).format(new Date());
+    } catch (e) {
+      return new Date().toISOString().slice(0, 10);
+    }
+  }
+
+  function shiftISO(iso, days) {
+    var p = String(iso || "").split("-");
+    if (p.length !== 3) return "";
+    var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    d.setUTCDate(d.getUTCDate() + days);
+    return d.toISOString().slice(0, 10);
+  }
+
+  function periodOfItem(date) {
+    var today = todayISO();
+    var day = String(date || "");
+    if (!day) return "earlier";
+    if (day >= shiftISO(today, -6)) return "week";
+    if (day >= today.slice(0, 7) + "-01") return "month";
+    return "earlier";
+  }
+
+  function periodLabel(period) {
+    if (period === "week") return "本周";
+    if (period === "month") return "本月";
+    if (period === "earlier") return "更早";
+    return "";
+  }
+
+  function collectPeriods() {
+    var counts = { week: 0, month: 0, earlier: 0 };
+    items().forEach(function (it) {
+      var p = periodOfItem(it.date);
+      counts[p] += 1;
+    });
+    return [
+      { id: "week", name: "本周", count: counts.week },
+      { id: "month", name: "本月", count: counts.month },
+      { id: "earlier", name: "更早", count: counts.earlier }
+    ];
+  }
+
+  function fmtDate(iso) {
+    var p = String(iso || "").split("-");
+    if (p.length !== 3) return iso || "—";
+    var today = todayISO();
+    if (p[0] === today.slice(0, 4)) return Number(p[1]) + "月" + Number(p[2]) + "日";
+    return p[0] + "年" + Number(p[1]) + "月" + Number(p[2]) + "日";
   }
 
   function sortItems(list) {
@@ -279,28 +351,110 @@
     return marks.join("");
   }
 
-  function rowHtml(it) {
+  function tileHtml(it) {
     var src = coverSrc(it);
     var href = W.hashFor({ name: "ep", id: it.id });
     var showName = W.showDisplay(it.show);
-    var showHref = W.hashFor({ name: "show", slug: W.showSlug(it.show) });
-    var topicHref = W.hashFor({ name: "topic", slug: W.topicSlug(it.category) });
     var cover = src
-      ? '<img src="' + src + '" alt="" loading="lazy" width="128" height="72" />'
+      ? '<img src="' + src + '" alt="" loading="lazy" width="640" height="360" />'
       : '<span class="thumb-empty" aria-hidden="true"></span>';
+    var forms = formMarks(it);
     return (
-      '<article class="row" data-id="' + W.escapeHtml(it.id) + '">' +
-        '<a class="thumb" href="' + href + '" tabindex="-1">' + cover + "</a>" +
-        '<div class="row-main">' +
-          '<h3 class="row-title"><a href="' + href + '">' + W.escapeHtml(it.title) + "</a></h3>" +
-          '<p class="row-guest">' + W.escapeHtml(it.guest || "") + "</p>" +
-        "</div>" +
-        '<a class="row-show" href="' + showHref + '">' + W.escapeHtml(showName) + "</a>" +
-        '<time class="row-date" datetime="' + W.escapeHtml(it.date || "") + '">' + W.escapeHtml(it.date || "—") + "</time>" +
-        '<a class="row-topic" href="' + topicHref + '">' + W.escapeHtml(it.category || "") + "</a>" +
-        '<div class="row-marks">' + formMarks(it) + "</div>" +
+      '<article class="tile" data-id="' + W.escapeHtml(it.id) + '">' +
+        '<a class="tile-hit" href="' + href + '">' +
+          '<div class="tile-cover">' +
+            cover +
+            '<div class="tile-overlay" aria-hidden="true">' +
+              '<span class="tile-cta"><span class="play">▶</span>打开</span>' +
+              (forms ? '<div class="tile-forms">' + forms + "</div>" : "") +
+            "</div>" +
+          "</div>" +
+          '<h3 class="tile-title">' + W.escapeHtml(it.title) + "</h3>" +
+          (it.guest ? '<p class="tile-guest">' + W.escapeHtml(it.guest) + "</p>" : "") +
+          '<p class="tile-meta">' +
+            '<span>' + W.escapeHtml(showName) + "</span>" +
+            '<time datetime="' + W.escapeHtml(it.date || "") + '">' + W.escapeHtml(fmtDate(it.date)) + "</time>" +
+          "</p>" +
+        "</a>" +
       "</article>"
     );
+  }
+
+  function shelfHtml(opts) {
+    var list = opts.items || [];
+    if (!list.length) return "";
+    var limit = opts.limit || 8;
+    var preview = list.slice(0, limit);
+    var more = opts.moreHref && list.length > preview.length
+      ? '<a class="shelf-more" href="' + opts.moreHref + '">查看更多</a>'
+      : "";
+    return (
+      '<section class="shelf">' +
+        '<header class="shelf-head">' +
+          '<div class="shelf-title">' +
+            "<h2>" + W.escapeHtml(opts.title) + "</h2>" +
+            '<span class="shelf-count">' + list.length + "</span>" +
+          "</div>" +
+          more +
+        "</header>" +
+        '<div class="shelf-track">' + preview.map(tileHtml).join("") + "</div>" +
+      "</section>"
+    );
+  }
+
+  function shelvesHtml() {
+    var list = filteredItems();
+    var buckets = { week: [], month: [], earlier: [] };
+    list.forEach(function (it) {
+      buckets[periodOfItem(it.date)].push(it);
+    });
+    var time = [
+      { id: "week", title: "本周", items: buckets.week },
+      { id: "month", title: "本月", items: buckets.month },
+      { id: "earlier", title: "更早", items: buckets.earlier }
+    ].map(function (b) {
+      return shelfHtml({
+        title: b.title,
+        items: b.items,
+        moreHref: W.hashFor({ name: "list", period: b.id, sort: state.sort })
+      });
+    }).join("");
+    var showRows = collectShows().filter(function (s) { return s.count >= 2; }).map(function (s) {
+      var showItems = list.filter(function (it) { return W.showSlug(it.show) === s.slug; });
+      return shelfHtml({
+        title: s.name,
+        items: showItems,
+        moreHref: W.hashFor({ name: "show", slug: s.slug })
+      });
+    }).join("");
+    return (
+      '<div class="browse" id="browse">' +
+        '<div class="shelf-block">' +
+          '<p class="block-kicker">按时间</p>' +
+          time +
+        "</div>" +
+        '<div class="shelf-block">' +
+          '<p class="block-kicker">按栏目</p>' +
+          showRows +
+        "</div>" +
+      "</div>"
+    );
+  }
+
+  function gridHtml(list) {
+    return (
+      '<div class="browse" id="browse">' +
+        resultsHead(list.length, items().length) +
+        '<div class="tile-grid" id="results">' + list.map(tileHtml).join("") + "</div>" +
+      "</div>"
+    );
+  }
+
+  function browseHtml(list, kind) {
+    if (kind) return '<div class="browse" id="browse">' + emptyHtml(kind) + "</div>";
+    if (wantsShelves()) return shelvesHtml();
+    if (!list.length) return '<div class="browse" id="browse">' + emptyHtml() + "</div>";
+    return gridHtml(list);
   }
 
   function emptyHtml(kind) {
@@ -339,15 +493,15 @@
       return facetBtn("form", f.id, f.label, null, !!forms[f.id]);
     }).join("");
     var heading = opts.heading || "找一集";
-    var blurb = opts.blurb || "按标题、嘉宾、节目或摘要查找，再叠栏目、主题与内容形态。";
+    var blurb = opts.blurb || "按标题、嘉宾、节目或摘要查找，再叠栏目、主题、时段与内容形态。";
     var lockNote = "";
     if (opts.lock === "show") {
       lockNote = '<p class="lock-note">正在看栏目页。点其他栏目会换页；<a href="' +
-        W.hashFor({ name: "list", q: state.query, topic: state.topic, form: state.form, sort: state.sort }) +
+        W.hashFor({ name: "list", q: state.query, topic: state.topic, form: state.form, period: state.period, sort: state.sort }) +
         '">回到全部</a>可同时筛多个栏目。</p>';
     } else if (opts.lock === "topic") {
       lockNote = '<p class="lock-note">正在看主题页。点其他主题会换页；<a href="' +
-        W.hashFor({ name: "list", q: state.query, show: state.show, form: state.form, sort: state.sort }) +
+        W.hashFor({ name: "list", q: state.query, show: state.show, form: state.form, period: state.period, sort: state.sort }) +
         '">回到全部</a>可同时筛多个主题。</p>';
     }
     return (
@@ -376,7 +530,15 @@
             '<div class="facet-set" role="group" aria-labelledby="lbl-form">' + formBtns + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-sort">时间</span>' +
+            '<span class="facet-label" id="lbl-period">时间</span>' +
+            '<div class="facet-set" role="group" aria-labelledby="lbl-period">' +
+              collectPeriods().map(function (p) {
+                return facetBtn("period", p.id, p.name, p.count, state.period === p.id);
+              }).join("") +
+            "</div>" +
+          "</div>" +
+          '<div class="facet-row">' +
+            '<span class="facet-label" id="lbl-sort">排序</span>' +
             '<div class="facet-set" role="group" aria-labelledby="lbl-sort">' +
               facetBtn("sort", "newest", "最近优先", null, state.sort !== "oldest") +
               facetBtn("sort", "oldest", "较早在前", null, state.sort === "oldest") +
@@ -387,21 +549,32 @@
     );
   }
 
+  function resultsTitle() {
+    if (state.period && !state.query.trim() && !state.form.length) {
+      var extraShow = state.route.name === "show" ? false : !!state.show;
+      var extraTopic = state.route.name === "topic" ? false : !!state.topic;
+      if (!extraShow && !extraTopic) return periodLabel(state.period);
+    }
+    if (state.query.trim()) return "搜索结果";
+    if (hasHeavyFilters()) return "筛选结果";
+    if (state.route.name === "show" || state.route.name === "topic") return "";
+    return "全部访谈";
+  }
+
   function resultsHead(filtered, total) {
     var clear = hasActiveFilters()
       ? '<a class="clear" href="' + clearHref() + '">清除筛选</a>'
       : "";
+    var title = resultsTitle();
     return (
       '<div class="results-head">' +
-        '<p class="count">显示 <strong>' + filtered + "</strong> / " + total + " 则</p>" +
+        '<div class="results-copy">' +
+          (title ? '<h2 class="results-title">' + W.escapeHtml(title) + "</h2>" : "") +
+          '<p class="count">显示 <strong>' + filtered + "</strong> / " + total + " 则</p>" +
+        "</div>" +
         clear +
       "</div>"
     );
-  }
-
-  function resultsHtml(list, kind) {
-    if (!list.length) return emptyHtml(kind);
-    return '<div class="ledger" id="results">' + list.map(rowHtml).join("") + "</div>";
   }
 
   function restoreSearchCaret() {
@@ -412,11 +585,12 @@
   }
 
   function patchResults() {
-    var list = filteredItems();
-    var head = document.querySelector(".results-head");
-    var ledger = document.getElementById("results") || document.querySelector(".empty");
-    if (head) head.outerHTML = resultsHead(list.length, items().length);
-    if (ledger) ledger.outerHTML = resultsHtml(list);
+    var browse = document.getElementById("browse");
+    if (!browse) {
+      renderCatalog();
+      return;
+    }
+    browse.outerHTML = browseHtml(filteredItems());
   }
 
   function renderCatalog() {
@@ -450,10 +624,7 @@
     if (state.route.name === "topic") pageTitle = (opts.heading || "主题") + " · 访谈文库";
     document.title = pageTitle;
 
-    view.innerHTML =
-      deskHtml(opts) +
-      resultsHead(list.length, items().length) +
-      resultsHtml(missing ? [] : list, missing);
+    view.innerHTML = deskHtml(opts) + browseHtml(missing ? [] : list, missing);
 
     restoreSearchCaret();
   }
@@ -937,6 +1108,7 @@
           q: state.query,
           topic: state.topic,
           form: state.form,
+          period: state.period,
           sort: state.sort
         });
         return;
@@ -953,6 +1125,7 @@
           q: state.query,
           show: state.show,
           form: state.form,
+          period: state.period,
           sort: state.sort
         });
         return;
@@ -966,6 +1139,11 @@
       if (set[value]) delete set[value];
       else set[value] = true;
       state.form = FORM_KEYS.map(function (f) { return f.id; }).filter(function (id) { return set[id]; });
+      writeHash();
+      return;
+    }
+    if (kind === "period") {
+      state.period = state.period === value ? "" : (W.periodOf(value) || "");
       writeHash();
       return;
     }
