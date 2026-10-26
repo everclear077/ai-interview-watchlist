@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-26",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,112 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "a16z-openai-computer-use-agents-2026-10-26",
+      "title": "OpenAI: When AI Agents Use Computers Faster Than You",
+      "guest": "Ari Weinstein；James Sun（OpenAI）；主持 Seema Amble、Fabrizio Serafini（a16z）",
+      "show": "a16z Podcast",
+      "date": "2026-10-26",
+      "duration": "00:45:19",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "OpenAI 的 Ari Weinstein 与 James Sun 谈 computer-using agents：操作软件速度逼近专家人类，UI 成为无需定制 API 的通用接口；涉及 Astra 速度效率、DOTS 主动式日历/邮件助手，以及企业侧确定性控制、审计日志与敏感工作人审。强调 harness 与模型同等重要，并展望直接操控与底层 agent 的混合形态。",
+      "advice": "P0：做 agent/企业自动化必听；盯速度、主动性（DOTS）与治理三件套，可与 Aaron Levie 小团队杠杆篇对读。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/openai-when-ai-agents-use-computers-faster-than-you-QLF23qpt"
+        },
+        {
+          "label": "PodLume brief",
+          "href": "https://podlume.ai/episodes/computer-using-agents-race-toward-superhuman-speed"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/2c129b5d-535b-4c40-a104-2d0a66853196/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=2c129b5d-535b-4c40-a104-2d0a66853196&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-26",
+      "cover": "thumbs/a16z-openai-computer-use-agents-2026-10-26.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/2c129b5d-535b-4c40-a104-2d0a66853196/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=2c129b5d-535b-4c40-a104-2d0a66853196&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "crossing-lilei-phd-mimo-2026-10-25",
+      "title": "AI 时代，PhD 路上的 10 个关键问题｜对谈李磊：港大 PhD、小米 MiMo 研究员",
+      "guest": "李磊（港大 NLP PhD；小米 MiMo 大模型后训练研究员）；主持 Koji",
+      "show": "十字路口Crossing",
+      "date": "2026-10-25",
+      "duration": "52分钟",
+      "category": "中国·科技媒体",
+      "priority": "P1",
+      "summary": "Koji 对谈李磊：AI 时代如何读好 PhD——慢/快科研、选校与选导、内地·香港·美国、开源与「大粉理论」、本科进 Lab 还值不值得读博；穿插 MiMo 后训练直播、RSI/数商/Benchmark。偏职业路径+一线后训练视角。",
+      "advice": "在读/准 PhD 或招研优先；想听 MiMo 后训练与 RSI 一线观感也可听。非 Infra 深挖。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6add84e197726cd467573cf1"
+        },
+        {
+          "label": "微信文稿",
+          "href": "https://mp.weixin.qq.com/s/Vsl1d6kkigHayfDWzDMFYw"
+        }
+      ],
+      "addedAt": "2026-10-26",
+      "cover": "thumbs/crossing-lilei-phd-mimo-2026-10-25.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/60502e253c92d4f62c2a9577/lpbsXeoXbCgTv0QckX8lCTPdwViV.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-aaron-levie-startup-playbook-2026-10-25",
+      "title": "The New Startup Playbook | Box CEO Aaron Levie",
+      "guest": "Aaron Levie（Box CEO）；主持 a16z Speedrun Office Hours",
+      "show": "a16z Podcast",
+      "date": "2026-10-25",
+      "duration": "00:34:24",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Box CEO Aaron Levie 谈 AI agent 时代新创业手册：3–10 人团队借编排/审阅 agent 逼近更大团队产出；规格、品味与领域经验成为溢价；行业×岗位矩阵或支撑大量十亿级公司；价格压缩可解锁被预算压抑的需求；分发逻辑未变；消费用例近饱和，增益更偏企业。",
+      "advice": "早期创始人/Speedrun 学员必听；把规格、领域护城河与分发写成同一周计划，可与 Ben Horowitz 同周集对读。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-new-startup-playbook-box-ceo-aaron-levie-I0FN5_nv"
+        },
+        {
+          "label": "Signalcast summary/transcript",
+          "href": "https://www.signalcast.app/episode/a16z-podcast/the-new-startup-playbook-box-ceo-aaron-levie"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/cf152414-3a4b-46e0-a3ab-13cdcf42822e/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=cf152414-3a4b-46e0-a3ab-13cdcf42822e&feed=JGE3yC0V"
+        },
+        {
+          "label": "YouTube (Speedrun)",
+          "href": "https://www.youtube.com/watch?v=wZ1joGIUyK8"
+        }
+      ],
+      "addedAt": "2026-10-26",
+      "cover": "thumbs/a16z-aaron-levie-startup-playbook-2026-10-25.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/cf152414-3a4b-46e0-a3ab-13cdcf42822e/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=cf152414-3a4b-46e0-a3ab-13cdcf42822e&feed=JGE3yC0V",
+        "audioSource": "podcast-rss",
+        "videoUrl": "https://www.youtube.com/watch?v=wZ1joGIUyK8"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
     {
       "id": "cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24",
       "title": "AI:AM Highlights: Clean Neurons, Black October, the GPU Credit Crunch, and Buying the Supply Chain",
@@ -3396,5 +3502,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15"
+  "notes": "2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15"
 }

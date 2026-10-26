@@ -3,7 +3,7 @@
   "deprecated": true,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-26",
   "message": "Root data.json is no longer the published catalog (the monolith is not served on Pages). List: data/index.json. Episode: data/episodes/<id>.json. Rebuild with: node scripts/split-data.mjs <R-monolith.json>",
   "index": "./data/index.json",
   "episodePattern": "./data/episodes/<id>.json",
