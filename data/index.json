@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,112 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "a16z-alpha-school-ai-era-2026-10-27",
+      "title": "Reinventing School for the AI Era | Joe Liemandt, Gagan Biyani & Erik Torenberg",
+      "guest": "Joe Liemandt（Alpha School）；Gagan Biyani（HAA）；主持 Erik Torenberg",
+      "show": "a16z Podcast",
+      "date": "2026-10-27",
+      "duration": "00:56:52",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Alpha School 创始人 Joe Liemandt 与 HAA 的 Gagan Biyani 对谈：若 AI 显著加快学业，多出的时间不应只填更多学术刷题，而应重做学校——围绕 agency、协作、创业、沟通与做难事。模型为约两小时核心学业 + 项目制真实技能；并讨论对高等教育启发及 HAA 在大学生中的类似实践。时长 00:56:52。",
+      "advice": "P1：做教育/AI tutor/青年 builder 项目可听。无官方全文，抓 RSS 描述中的两小时学业模型与动机优先假说即可；细节以音频为准。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/reinventing-school-for-the-ai-era-joe-liemandt-gagan-biyani-erik-torenberg-qpcIrpfu"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/2967fdc6-98e7-4e58-83f8-6ebcb4e41546/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=2967fdc6-98e7-4e58-83f8-6ebcb4e41546&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-27",
+      "cover": "thumbs/a16z-alpha-school-ai-era-2026-10-27.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/2967fdc6-98e7-4e58-83f8-6ebcb4e41546/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=2967fdc6-98e7-4e58-83f8-6ebcb4e41546&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "lex-math-ai-crisis-2026-10-26",
+      "title": "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory",
+      "guest": "Ankur Moitra；Steven Brunton；Alex Kontorovich",
+      "show": "Lex Fridman Podcast",
+      "date": "2026-10-26",
+      "duration": "03:34:00",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "Lex 紧急圆桌：Moitra（MIT/复杂性）、Brunton（UW/流体）、Kontorovich（Rutgers/数论·Lean）讨论近窗机器在 Navier–Stokes、准黎曼假设、Unique Games 等难题上的宣称，以及数学共同体的敬畏、验证栈与人才培养。区分「解题加速」与「创造新数学」，强调形式化验证与传播限定词。全长约 3h34m，有官网逐字稿与 YouTube。",
+      "advice": "P0：做科学 AI / 自动定理证明 / 评测必听。先抓开场验证议题，再按领域跳转黎曼或流体或复杂性；引用前核对官网 transcript，保留 quasi/claimed。",
+      "urls": [
+        {
+          "label": "Lex episode",
+          "href": "https://lexfridman.com/math-ai-crisis/"
+        },
+        {
+          "label": "Official transcript",
+          "href": "https://lexfridman.com/math-ai-crisis-transcript"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=ZAzWPE9CItg"
+        },
+        {
+          "label": "Audio",
+          "href": "https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3"
+        }
+      ],
+      "addedAt": "2026-10-27",
+      "cover": "thumbs/lex-math-ai-crisis-2026-10-26.jpg",
+      "media": {
+        "audioUrl": "https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3",
+        "audioSource": "podcast-rss",
+        "videoUrl": "https://www.youtube.com/watch?v=ZAzWPE9CItg"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "decoder-kevin-roose-agi-pilled-2026-10-26",
+      "title": "Kevin Roose is AGI-pilled. Why aren't you?",
+      "guest": "Kevin Roose（《The AGI Chronicles》；Machine Gods）",
+      "show": "Decoder with Nilay Patel",
+      "date": "2026-10-26",
+      "duration": "~1h08m",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "Nilay Patel 对话 Kevin Roose：离开纽约时报与 Casey Newton 创办 video-first 的 Machine Gods（NPR 合作），以及新书《The AGI Chronicles》如何记录前沿实验室从梦想 AGI 到全速建造的文化转向。讨论 Feel the AGI、Google 的 Say AGI 语言政治、I/O「奇点山脚」措辞，以及 Roose 以 Bing Sydney 为起点的 AGI-pilled 个人认识论；Patel 以系统脆性与自我神话对质。",
+      "advice": "P0：要理解 AGI 叙事与媒体机构迁移就听。优先精读 Chronicles / Feel the AGI / Sydney 段落；可与 Lex #503 验证栈对读。文稿在 Verge，音频约 68 分钟。",
+      "urls": [
+        {
+          "label": "The Verge Decoder",
+          "href": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/kevin-roose-is-agi-pilled-why-arent-you/id1011668648?i=1000798150127"
+        },
+        {
+          "label": "Audio",
+          "href": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP2670051585.mp3"
+        }
+      ],
+      "addedAt": "2026-10-27",
+      "cover": "thumbs/decoder-kevin-roose-agi-pilled-2026-10-26.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP2670051585.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
     {
       "id": "a16z-openai-computer-use-agents-2026-10-26",
       "title": "OpenAI: When AI Agents Use Computers Faster Than You",

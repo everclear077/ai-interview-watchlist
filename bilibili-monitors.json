@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -117,47 +117,42 @@
     ]
   },
   "lastScan": {
-    "scannedAt": "2026-10-26",
-    "window": "2026-10-18 .. 2026-10-26（主）+ 约2–3周漏网",
-    "method": "B站 space API 仍 -352/-799/412（张小珺偶发可用）；小宇宙节目页 + Fireside RSS（硅谷101/晚点聊）+ WebSearch；英文 a16z Simplecast JGE3yC0V",
+    "scannedAt": "2026-10-27",
+    "window": "2026-10-20 .. 2026-10-27（主）+ 近窗漏网复核",
+    "method": "B站 space API 仍限流（412/-352）；硅谷101 Fireside RSS + 晚点聊 podcast.latepost.com RSS；WebSearch/官网核实英文 Lex·Decoder·a16z；Latent Space 等英文近窗核对",
     "result": {
       "zhangxiaojun": "最新仍为 155 钱程（已入库）；无更新",
-      "sv101": "RSS/库内仍 E256 Astra 与 Muse 等；无≥30min 新增长访谈",
+      "sv101": "Fireside RSS 最新仍 E256 Astra（已入库相关）；无≥30min 新增长访谈",
       "sv101-podcast": "同上",
       "jiqizhixin": "未见≥30min 新增长访谈",
-      "geekpark": "LinkStart 最新已在库；无更新",
+      "geekpark": "未见≥30min 新增长访谈",
       "latepost": "无新增长访谈",
       "late-talk": "RSS 最新仍 184 陈哲；无更新",
-      "liziran": "未见≥30min 新嘉宾对谈（叙事/单口跳过）",
-      "crossing": "NEW 李磊 PhD/MiMo 2026-10-25（已入库 crossing-lilei-phd-mimo-2026-10-25）"
+      "liziran": "未见≥30min 新嘉宾对谈",
+      "crossing": "李磊 10-25 已在库；无更新"
     },
     "enCatchupAdded": [
-      "a16z-openai-computer-use-agents-2026-10-26",
-      "a16z-aaron-levie-startup-playbook-2026-10-25"
+      "lex-math-ai-crisis-2026-10-26",
+      "decoder-kevin-roose-agi-pilled-2026-10-26",
+      "a16z-alpha-school-ai-era-2026-10-27"
     ],
-    "cnAdded": [
-      "crossing-lilei-phd-mimo-2026-10-25"
-    ],
+    "cnAdded": [],
     "skipped": [
       {
-        "title": "Lenny Rob Snyder PMF (10-25)",
-        "reason": "非 AI 主线"
+        "title": "Latent Space Oct26 Ian Quigley Lightning",
+        "reason": "~16min <30min"
       },
       {
-        "title": "声东击西 #408/#407",
-        "reason": "非 AI 对谈主线"
+        "title": "No Priors / Lenny / Training Data / Dwarkesh 近窗",
+        "reason": "已在库或无新 AI 长访"
       },
       {
-        "title": "Lex / Dwarkesh / No Priors 近窗",
-        "reason": "无新 AI 长访或已在库"
+        "title": "硅谷101 E256 Astra / 晚点聊 184 陈哲 / 张小珺 155 钱程",
+        "reason": "已在库，无新"
       },
       {
-        "title": "Latent Space Moshi / a16z EliseAI",
-        "reason": "<30min（既有 skip）"
-      },
-      {
-        "title": "Hard Fork Holmes 等",
-        "reason": "非 AI 主线"
+        "title": "Crossing 李磊 10-25",
+        "reason": "已在库"
       }
     ]
   }
