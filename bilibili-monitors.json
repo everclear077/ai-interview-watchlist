@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -117,11 +117,11 @@
     ]
   },
   "lastScan": {
-    "scannedAt": "2026-10-27",
-    "window": "2026-10-20 .. 2026-10-27（主）+ 近窗漏网复核",
-    "method": "B站 space API 仍限流（412/-352）；硅谷101 Fireside RSS + 晚点聊 podcast.latepost.com RSS；WebSearch/官网核实英文 Lex·Decoder·a16z；Latent Space 等英文近窗核对",
+    "scannedAt": "2026-10-28",
+    "window": "2026-10-21 .. 2026-10-28（主）+ 近 2–3 周漏网复核",
+    "method": "B站 space/wbi API 仍 412 限流；硅谷101 Fireside RSS + 晚点聊 podcast.latepost.com RSS；WebSearch/官网/Latent Space·a16z RSS/Simplecast；Lex RSS；交叉核实 YT oembed",
     "result": {
-      "zhangxiaojun": "最新仍为 155 钱程（已入库）；无更新",
+      "zhangxiaojun": "未见可核验 ≥30min 新增长访谈（B站 API 阻塞；交叉检索无新入库候选）",
       "sv101": "Fireside RSS 最新仍 E256 Astra（已入库相关）；无≥30min 新增长访谈",
       "sv101-podcast": "同上",
       "jiqizhixin": "未见≥30min 新增长访谈",
@@ -132,27 +132,30 @@
       "crossing": "李磊 10-25 已在库；无更新"
     },
     "enCatchupAdded": [
-      "lex-math-ai-crisis-2026-10-26",
-      "decoder-kevin-roose-agi-pilled-2026-10-26",
-      "a16z-alpha-school-ai-era-2026-10-27"
+      "latent-space-anthropic-brain-hands-2026-10-27",
+      "a16z-mark-cuban-healthcare-2026-10-28"
     ],
     "cnAdded": [],
     "skipped": [
       {
-        "title": "Latent Space Oct26 Ian Quigley Lightning",
-        "reason": "~16min <30min"
+        "title": "Latent Space Oct27 短文（Himalayas / AI Math）",
+        "reason": "短文/非长访谈"
       },
       {
-        "title": "No Priors / Lenny / Training Data / Dwarkesh 近窗",
-        "reason": "已在库或无新 AI 长访"
+        "title": "a16z Aaron Levie / Ben Horowitz / Andy Jassy / Frontier Ideas",
+        "reason": "已在库"
       },
       {
-        "title": "硅谷101 E256 Astra / 晚点聊 184 陈哲 / 张小珺 155 钱程",
+        "title": "Lex #503 Math AI Crisis",
+        "reason": "已在库 2026-10-26"
+      },
+      {
+        "title": "硅谷101 E256 / 晚点聊 184 / Crossing 李磊",
         "reason": "已在库，无新"
       },
       {
-        "title": "Crossing 李磊 10-25",
-        "reason": "已在库"
+        "title": "部分 No Priors / Supabase 近窗",
+        "reason": "无稳定可核验新长访或非访谈"
       }
     ]
   }

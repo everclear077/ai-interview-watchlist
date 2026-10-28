@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,77 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "a16z-mark-cuban-healthcare-2026-10-28",
+      "title": "Mark Cuban’s Plan to Make Healthcare Affordable",
+      "guest": "Mark Cuban",
+      "show": "a16z Podcast",
+      "date": "2026-10-28",
+      "duration": "01:01:26",
+      "category": "VC·基建·市场",
+      "priority": "P1",
+      "summary": "Mark Cuban 与 Julie Yoo、Erik Torenberg 谈 Cost Plus Drugs/Wellness/Marketplace：仿制药 SKU 扩张、医院直签与制造 pod；主张信任与透明定价是核心产品，并建议雇主用 AI 审计福利合同，同时强调破碎激励下 AI alone 修不好医疗。时长 01:01:26。",
+      "advice": "P1：healthtech / 雇主福利 /「AI×破损市场」对照可听。抓透明定价叙事与 AI 合同审计建议即可；非纯模型访谈。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/mark-cubans-plan-to-make-healthcare-affordable-mwTxnVYe"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/1046e742-22c8-45f7-a3c2-e8b93f091783/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=1046e742-22c8-45f7-a3c2-e8b93f091783&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-10-28",
+      "cover": "thumbs/a16z-mark-cuban-healthcare-2026-10-28.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/1046e742-22c8-45f7-a3c2-e8b93f091783/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=1046e742-22c8-45f7-a3c2-e8b93f091783&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-anthropic-brain-hands-2026-10-27",
+      "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+      "guest": "Katelyn Lesse（Anthropic 平台工程负责人）、Angela Jiang（Anthropic 产品负责人）",
+      "show": "Latent Space",
+      "date": "2026-10-27",
+      "duration": "01:47:00",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "Opus 5.5 发布约一个月后，Anthropic 平台工程负责人 Katelyn Lesse 与产品负责人 Angela Jiang 谈 Claude Platform：蒸馏防护与 preserved thinking、Managed Agents 的 Brain/Hands 拆分与凭证 vault、Messages API 的 Rust 重写与 CPU/沙箱产能，以及安全策略如何重写模型发布清单。时长约 107 分钟，含 S-1 效率语境开场。",
+      "advice": "P0：做 agent 运行时 / API 平台 / 安全默认值的必听。优先抓住 Brain vs Hands、防蒸馏契约变更、trust grants 与 CPU 约束四条线；可与库内 Thariq Claude Code、Modal 算力篇对照。",
+      "urls": [
+        {
+          "label": "Latent Space",
+          "href": "https://www.latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/"
+        },
+        {
+          "label": "Beehiiv",
+          "href": "https://lspace.beehiiv.com/p/opus55"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=MRQTlwcW-aQ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a17e24-16fc-71e3-bdc8-f0c1aeee546c/01a17e24-18bb-7daa-afc4-3f3bfdc294d7.mp3"
+        }
+      ],
+      "addedAt": "2026-10-28",
+      "cover": "thumbs/latent-space-anthropic-brain-hands-2026-10-27.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
+        "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a17e24-16fc-71e3-bdc8-f0c1aeee546c/01a17e24-18bb-7daa-afc4-3f3bfdc294d7.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
     {
       "id": "a16z-alpha-school-ai-era-2026-10-27",
       "title": "Reinventing School for the AI Era | Joe Liemandt, Gagan Biyani & Erik Torenberg",
@@ -3608,5 +3679,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15"
+  "notes": "2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n"
 }
