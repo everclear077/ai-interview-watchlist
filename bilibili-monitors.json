@@ -116,47 +116,6 @@
       }
     ]
   },
-  "lastScan": {
-    "scannedAt": "2026-10-28",
-    "window": "2026-10-21 .. 2026-10-28（主）+ 近 2–3 周漏网复核",
-    "method": "B站 space/wbi API 仍 412 限流；硅谷101 Fireside RSS + 晚点聊 podcast.latepost.com RSS；WebSearch/官网/Latent Space·a16z RSS/Simplecast；Lex RSS；交叉核实 YT oembed",
-    "result": {
-      "zhangxiaojun": "未见可核验 ≥30min 新增长访谈（B站 API 阻塞；交叉检索无新入库候选）",
-      "sv101": "Fireside RSS 最新仍 E256 Astra（已入库相关）；无≥30min 新增长访谈",
-      "sv101-podcast": "同上",
-      "jiqizhixin": "未见≥30min 新增长访谈",
-      "geekpark": "未见≥30min 新增长访谈",
-      "latepost": "无新增长访谈",
-      "late-talk": "RSS 最新仍 184 陈哲；无更新",
-      "liziran": "未见≥30min 新嘉宾对谈",
-      "crossing": "李磊 10-25 已在库；无更新"
-    },
-    "enCatchupAdded": [
-      "latent-space-anthropic-brain-hands-2026-10-27",
-      "a16z-mark-cuban-healthcare-2026-10-28"
-    ],
-    "cnAdded": [],
-    "skipped": [
-      {
-        "title": "Latent Space Oct27 短文（Himalayas / AI Math）",
-        "reason": "短文/非长访谈"
-      },
-      {
-        "title": "a16z Aaron Levie / Ben Horowitz / Andy Jassy / Frontier Ideas",
-        "reason": "已在库"
-      },
-      {
-        "title": "Lex #503 Math AI Crisis",
-        "reason": "已在库 2026-10-26"
-      },
-      {
-        "title": "硅谷101 E256 / 晚点聊 184 / Crossing 李磊",
-        "reason": "已在库，无新"
-      },
-      {
-        "title": "部分 No Priors / Supabase 近窗",
-        "reason": "无稳定可核验新长访或非访谈"
-      }
-    ]
-  }
+  "lastScan": "2026-10-29T13:30:00Z",
+  "lastScanNote": "E257 硅谷101 Vitalik 新增长访谈已入库；space API 限流，以 Fireside/公开页交叉核验"
 }
