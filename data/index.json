@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-29",
+  "lastUpdated": "2026-10-30",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,216 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "hardfork-ai-bubble-anthropic-ipo-2026-10-30",
+      "title": "我们处在 AI 泡沫里吗？Anthropic S-1 之后",
+      "guest": "Erin Griffith, Mike Isaac, Jasmine Sun",
+      "show": "Hard Fork",
+      "date": "2026-10-30",
+      "duration": "54分",
+      "category": "VC·基建·市场",
+      "priority": "P0",
+      "summary": "Anthropic S-1 发布后，Erin Griffith 解读其对公司与科技业的含义；Mike Isaac、Jasmine Sun 讨论中期选举与科技政策、网络安全及微软大规模买断等当周新闻。约 54 分钟。",
+      "advice": "当作 S-1 周「形势简报」；深挖单位经济请接 Decoder × Brookhart。",
+      "urls": [
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/are-we-in-an-a-i-bubble-were-about-to-find-out/id1528594034?i=1000798873825"
+        },
+        {
+          "label": "栏目",
+          "href": "https://www.nytimes.com/column/hard-fork"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/232dc2df-a6c6-4c9f-a224-74ca57b10c2c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=232dc2df-a6c6-4c9f-a224-74ca57b10c2c&feed=6HKOhNgS"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/hardfork-ai-bubble-anthropic-ipo-2026-10-30.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/232dc2df-a6c6-4c9f-a224-74ca57b10c2c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=232dc2df-a6c6-4c9f-a224-74ca57b10c2c&feed=6HKOhNgS",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-jay-madheswaran-eve-law-firms-2026-10-30",
+      "title": "Why AI Could Turn Small Law Firms Into Billion-Dollar Businesses",
+      "guest": "Jay Madheswaran",
+      "show": "a16z Podcast",
+      "date": "2026-10-30",
+      "duration": "53分",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Eve CEO Jay Madheswaran 与 Alex Rampell 谈 AI 如何自动化原告律所工作流、扩大可服务案件集合，以及法律服务规模经济的想象。约 53 分钟。",
+      "advice": "关注垂直 Agent/工作流产品的听众可听；非法律意见。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/why-ai-could-turn-small-law-firms-into-billion-dollar-businesses-e8YNZDux"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/de88968f-40b2-409c-befe-1d337a8ca6a9/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=de88968f-40b2-409c-befe-1d337a8ca6a9&feed=JGE3yC0V"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/why-ai-could-turn-small-law-firms-into-billion-dollar/id842818711?i=1000798872502"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/a16z-jay-madheswaran-eve-law-firms-2026-10-30.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/de88968f-40b2-409c-befe-1d337a8ca6a9/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=de88968f-40b2-409c-befe-1d337a8ca6a9&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "hours80k-luke-muehlhauser-ai-safety-2026-10-29",
+      "title": "Luke Muehlhauser：最重要却没人在做的 AI 安全工作",
+      "guest": "Luke Muehlhauser",
+      "show": "80,000 Hours Podcast",
+      "date": "2026-10-29",
+      "duration": "2小时36分",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "Coefficient Giving 的 Luke Muehlhauser 谈 AI 安全的「制度空白」：多数所需机构尚不存在、资金并非主瓶颈、警告射击可能更频繁，以及他最希望看到创办的非营利清单。约 2 小时 36 分，官网有完整英文文稿。",
+      "advice": "先听前 20 分钟建立「该创办什么组织」地图，再跳时间线与对齐是否在轨道；可与同日 RAND Freedom of Action、昨日 Vitalik E257 连读。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://80000hours.org/podcast/episodes/luke-muehlhauser-ai-safety-grantmaking-founding/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://media.transistor.fm/2558c131/a872f887.mp3"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/luke-muehlhauser-on-the-most-important-ai-safety-work/id1437891596"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/hours80k-luke-muehlhauser-ai-safety-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/2558c131/a872f887.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "decoder-joey-brookhart-anthropic-ipo-2026-10-29",
+      "title": "Inside Anthropic’s trillion-dollar AI gamble",
+      "guest": "Joey Brookhart",
+      "show": "Decoder with Nilay Patel",
+      "date": "2026-10-29",
+      "duration": "45分",
+      "category": "VC·基建·市场",
+      "priority": "P0",
+      "summary": "SemiAnalysis 的 Joey Brookhart 与 Nilay Patel 拆解 Anthropic S-1：收入与毛利率故事、训练/推理算力结构、云合作与稀释、长期算力承诺，以及写入文件的极端安全风险因素。约 45 分钟，The Verge 有轻编辑文稿。",
+      "advice": "S-1 周必听分析集；先 Hard Fork 建上下文，再听本集抓单位经济。",
+      "urls": [
+        {
+          "label": "The Verge",
+          "href": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+        },
+        {
+          "label": "Audio",
+          "href": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP5882101740.mp3"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/inside-anthropics-trillion-dollar-ai-gamble/id1011668648?i=1000798678506"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/decoder-joey-brookhart-anthropic-ipo-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP5882101740.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "cogrev-rand-asi-freedom-of-action-2026-10-28",
+      "title": "Freedom of Action：RAND 谈美国通往超智能的战略",
+      "guest": "Joel Predd, Ben Boudreaux, Matt Chessen",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-28",
+      "duration": "1小时51分",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。",
+      "advice": "先建立七原型词汇表再通听；政策/安全方向读者可与 80K Muehlhauser 配对。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/RINTP9166959513.mp3"
+        },
+        {
+          "label": "RAND 报告",
+          "href": "https://www.rand.org/pubs/perspectives/PEA5105-1.html"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/cogrev-rand-asi-freedom-of-action-2026-10-28.jpg",
+      "media": {
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP9166959513.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "twiml-daniel-jeffries-agentic-products-2026-10-28",
+      "title": "The Brutal Reality of Building Agentic Products Today",
+      "guest": "Daniel Jeffries",
+      "show": "TWIML AI Podcast",
+      "date": "2026-10-28",
+      "duration": "54分",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Nautilo 创建者 Daniel Jeffries 谈在通用 Agent 普及背景下，如何做有差异化的 agentic 产品：记忆、协作、私有上下文与架构取舍。TWIML #782，约 54 分钟。",
+      "advice": "Agent 产品实践向；可与近期 Latent Space agents 条目对照。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://twimlai.com/podcast/twimlai/brutal-reality-building-agentic-products-today"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN7036958411.mp3"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/the-brutal-reality-of-building-agentic-products/id1116303051?i=1000798539029"
+        }
+      ],
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/twiml-daniel-jeffries-agentic-products-2026-10-28.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN7036958411.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "nopriors-jake-stauch-serval-2026-10-29",
       "title": "Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch",
@@ -3787,5 +3997,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n"
+  "notes": "2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。"
 }

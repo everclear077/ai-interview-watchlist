@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-30",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -116,6 +116,7 @@
       }
     ]
   },
-  "lastScan": "2026-10-29T13:30:00Z",
-  "lastScanNote": "E257 硅谷101 Vitalik 新增长访谈已入库；space API 限流，以 Fireside/公开页交叉核验"
+  "lastScan": "2026-10-30T13:20:00Z",
+  "lastScanNote": "RSS/公开页交叉：SV101/LateTalk 无新增长访谈；B站 search 部分 412。本轮新增均为英文播客（S-1 周 + 80K/RAND 安全）。",
+  "lastScanCandidates": []
 }
