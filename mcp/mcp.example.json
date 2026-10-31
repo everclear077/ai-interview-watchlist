@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "long-lens-ai": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/ai-interview-watchlist/mcp/server.js"]
+    }
+  }
+}

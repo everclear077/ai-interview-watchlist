@@ -5,6 +5,7 @@
  *   data/index.json              slim catalog for the list page
  *   data/episodes/<id>.json      one detail file per episode
  *   data.json                    tiny stub (does not ship the monolith)
+ *   feed.xml, rss.xml           RSS 2.0 feed (identical files)
  *
  * Usage:
  *   node scripts/split-data.mjs [monolith.json] [--out <repo-root>]
@@ -19,6 +20,7 @@ import { createRequire } from "module";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { writeFeedFiles } from "./build-feed.mjs";
 
 const require = createRequire(import.meta.url);
 const WL = require("../media.js");
@@ -201,6 +203,7 @@ export function splitMonolith(data, outRoot) {
   const stubBody = JSON.stringify(stub, null, 2) + "\n";
   fs.writeFileSync(path.join(dataDir, "index.json"), indexBody);
   fs.writeFileSync(path.join(outRoot, "data.json"), stubBody);
+  const feed = writeFeedFiles(outRoot, index);
 
   return {
     items: slimItems.length,
@@ -210,7 +213,8 @@ export function splitMonolith(data, outRoot) {
     largest,
     essays: slimItems.filter((x) => x.hasEssay).length,
     analyses: slimItems.filter((x) => x.hasAnalysis).length,
-    transcripts: slimItems.filter((x) => x.hasTranscript).length
+    transcripts: slimItems.filter((x) => x.hasTranscript).length,
+    feed
   };
 }
 
@@ -218,6 +222,8 @@ function writeStubFromIndex(indexPath, outRoot) {
   const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
   const stub = buildStub(index);
   fs.writeFileSync(path.join(outRoot, "data.json"), JSON.stringify(stub, null, 2) + "\n");
+  const feed = writeFeedFiles(outRoot, index);
+  console.log("Wrote feed.xml / rss.xml       " + feed.items + " items");
 }
 
 function main() {
@@ -261,6 +267,14 @@ function main() {
       stats.transcripts
   );
   console.log("Stripped coverDataUri from " + stats.strippedUri + " items");
+  if (stats.feed) {
+    console.log(
+      "Wrote feed.xml / rss.xml       " +
+        stats.feed.items +
+        " items" +
+        (stats.feed.capped ? " (capped)" : "")
+    );
+  }
 }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);

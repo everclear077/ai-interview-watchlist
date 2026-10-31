@@ -457,7 +457,8 @@
     el.innerHTML =
       "<div>" + t("footer1") + "</div>" +
       "<div>" + t("footer2") + "</div>" +
-      "<div>" + t("footer3") + "</div>";
+      "<div>" + t("footer3") + "</div>" +
+      "<div>" + t("footer4") + "</div>";
   }
 
   function formMarks(it) {
