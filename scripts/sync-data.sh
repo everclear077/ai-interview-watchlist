@@ -49,7 +49,7 @@ fi
 
 if [[ "${1:-}" == "--push" ]]; then
   cd "$ROOT"
-  git add data.json data/ thumbs/ bilibili-monitors.json
+  git add data.json data/ thumbs/ bilibili-monitors.json feed.xml rss.xml
   if git diff --cached --quiet; then
     echo "No data/thumbs changes."
   else

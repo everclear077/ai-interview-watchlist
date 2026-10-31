@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>长镜 · AI</title>
+    <link>https://everclear077.github.io/ai-interview-watchlist/</link>
+    <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 30 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
+    <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>我们处在 AI 泡沫里吗？Anthropic S-1 之后</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-ai-bubble-anthropic-ipo-2026-10-30</link>
+      <guid isPermaLink="false">hardfork-ai-bubble-anthropic-ipo-2026-10-30</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Hard Fork</category>
+      <description>Anthropic S-1 发布后，Erin Griffith 解读其对公司与科技业的含义；Mike Isaac、Jasmine Sun 讨论中期选举与科技政策、网络安全及微软大规模买断等当周新闻。约 54 分钟。</description>
+    </item>
+    <item>
+      <title>Why AI Could Turn Small Law Firms Into Billion-Dollar Businesses</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-jay-madheswaran-eve-law-firms-2026-10-30</link>
+      <guid isPermaLink="false">a16z-jay-madheswaran-eve-law-firms-2026-10-30</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Eve CEO Jay Madheswaran 与 Alex Rampell 谈 AI 如何自动化原告律所工作流、扩大可服务案件集合，以及法律服务规模经济的想象。约 53 分钟。</description>
+    </item>
+    <item>
+      <title>Luke Muehlhauser：最重要却没人在做的 AI 安全工作</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hours80k-luke-muehlhauser-ai-safety-2026-10-29</link>
+      <guid isPermaLink="false">hours80k-luke-muehlhauser-ai-safety-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>80,000 Hours Podcast</category>
+      <description>Coefficient Giving 的 Luke Muehlhauser 谈 AI 安全的「制度空白」：多数所需机构尚不存在、资金并非主瓶颈、警告射击可能更频繁，以及他最希望看到创办的非营利清单。约 2 小时 36 分，官网有完整英文文稿。</description>
+    </item>
+    <item>
+      <title>Inside Anthropic’s trillion-dollar AI gamble</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-joey-brookhart-anthropic-ipo-2026-10-29</link>
+      <guid isPermaLink="false">decoder-joey-brookhart-anthropic-ipo-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>SemiAnalysis 的 Joey Brookhart 与 Nilay Patel 拆解 Anthropic S-1：收入与毛利率故事、训练/推理算力结构、云合作与稀释、长期算力承诺，以及写入文件的极端安全风险因素。约 45 分钟，The Verge 有轻编辑文稿。</description>
+    </item>
+    <item>
+      <title>Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-jake-stauch-serval-2026-10-29</link>
+      <guid isPermaLink="false">nopriors-jake-stauch-serval-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>No Priors</category>
+      <description>Sarah Guo、Elad Gil 对话 Serval CEO Jake Stauch：如何把代码生成 Agent 交给企业 IT，在确定性审批与审计护栏下挑战 ServiceNow；并谈到 ProServal 嵌入式交付。约 38 分钟。</description>
+    </item>
+    <item>
+      <title>Freedom of Action：RAND 谈美国通往超智能的战略</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-rand-asi-freedom-of-action-2026-10-28</link>
+      <guid isPermaLink="false">cogrev-rand-asi-freedom-of-action-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。</description>
+    </item>
+    <item>
+      <title>The Brutal Reality of Building Agentic Products Today</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-daniel-jeffries-agentic-products-2026-10-28</link>
+      <guid isPermaLink="false">twiml-daniel-jeffries-agentic-products-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>TWIML AI Podcast</category>
+      <description>Nautilo 创建者 Daniel Jeffries 谈在通用 Agent 普及背景下，如何做有差异化的 agentic 产品：记忆、协作、私有上下文与架构取舍。TWIML #782，约 54 分钟。</description>
+    </item>
+    <item>
+      <title>对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-vitalik-ea-ai-safety-2026-10-28</link>
+      <guid isPermaLink="false">sv101-vitalik-ea-ai-safety-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>泓君/Yiwen 对话 Vitalik Buterin（Afra 前半段导读）：从有效利他主义与理性主义的思想史，讲到捐赠网络、METR 争议、SBF 信任危机，以及 Vitalik 对 FLI 等捐赠的复盘与 d/acc（分布式防御）主张。时长约 1 小时 52 分，中文录制，B 站有字幕版。</description>
+    </item>
+    <item>
+      <title>Mark Cuban’s Plan to Make Healthcare Affordable</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-mark-cuban-healthcare-2026-10-28</link>
+      <guid isPermaLink="false">a16z-mark-cuban-healthcare-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>Mark Cuban 与 Julie Yoo、Erik Torenberg 谈 Cost Plus Drugs/Wellness/Marketplace：仿制药 SKU 扩张、医院直签与制造 pod；主张信任与透明定价是核心产品，并建议雇主用 AI 审计福利合同，同时强调破碎激励下 AI alone 修不好医疗。时长 01:01:26。</description>
+    </item>
+    <item>
+      <title>How Anthropic ships Claude with Claude: Separating the Brain from the Hands</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-anthropic-brain-hands-2026-10-27</link>
+      <guid isPermaLink="false">latent-space-anthropic-brain-hands-2026-10-27</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Opus 5.5 发布约一个月后，Anthropic 平台工程负责人 Katelyn Lesse 与产品负责人 Angela Jiang 谈 Claude Platform：蒸馏防护与 preserved thinking、Managed Agents 的 Brain/Hands 拆分与凭证 vault、Messages API 的 Rust 重写与 CPU/沙箱产能，以及安全策略如何重写模型发布清单。时长约 107 分钟，含 S-1 效率语境开场。</description>
+    </item>
+    <item>
+      <title>Reinventing School for the AI Era | Joe Liemandt, Gagan Biyani &amp; Erik Torenberg</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-alpha-school-ai-era-2026-10-27</link>
+      <guid isPermaLink="false">a16z-alpha-school-ai-era-2026-10-27</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Alpha School 创始人 Joe Liemandt 与 HAA 的 Gagan Biyani 对谈：若 AI 显著加快学业，多出的时间不应只填更多学术刷题，而应重做学校——围绕 agency、协作、创业、沟通与做难事。模型为约两小时核心学业 + 项目制真实技能；并讨论对高等教育启发及 HAA 在大学生中的类似实践。时长 00:56:52。</description>
+    </item>
+    <item>
+      <title>Why Agents Love Supabase</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-supabase-agents-2026-10-26</link>
+      <guid isPermaLink="false">latent-space-supabase-agents-2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>swyx 对话 Supabase 联合创始人 Paul Copplestone 与 Ant Wilson：为何 Agent 偏爱其后端；本地无 Docker runtime、声明式 schema 进 Git、数据库旁计算，以及 Build/Operate/Scale 与「prototype to petabyte」定位。约 76 分钟。</description>
+    </item>
+    <item>
+      <title>#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &amp; Complexity Theory</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lex-math-ai-crisis-2026-10-26</link>
+      <guid isPermaLink="false">lex-math-ai-crisis-2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Lex Fridman Podcast</category>
+      <description>Lex 紧急圆桌：Moitra（MIT/复杂性）、Brunton（UW/流体）、Kontorovich（Rutgers/数论·Lean）讨论近窗机器在 Navier–Stokes、准黎曼假设、Unique Games 等难题上的宣称，以及数学共同体的敬畏、验证栈与人才培养。区分「解题加速」与「创造新数学」，强调形式化验证与传播限定词。全长约 3h34m，有官网逐字稿与 YouTube。</description>
+    </item>
+    <item>
+      <title>Kevin Roose is AGI-pilled. Why aren&apos;t you?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-kevin-roose-agi-pilled-2026-10-26</link>
+      <guid isPermaLink="false">decoder-kevin-roose-agi-pilled-2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>Nilay Patel 对话 Kevin Roose：离开纽约时报与 Casey Newton 创办 video-first 的 Machine Gods（NPR 合作），以及新书《The AGI Chronicles》如何记录前沿实验室从梦想 AGI 到全速建造的文化转向。讨论 Feel the AGI、Google 的 Say AGI 语言政治、I/O「奇点山脚」措辞，以及 Roose 以 Bing Sydney 为起点的 AGI-pilled 个人认识论；Patel 以系统脆性与自我神话对质。</description>
+    </item>
+    <item>
+      <title>OpenAI: When AI Agents Use Computers Faster Than You</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-openai-computer-use-agents-2026-10-26</link>
+      <guid isPermaLink="false">a16z-openai-computer-use-agents-2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Podcast</category>
+      <description>OpenAI 的 Ari Weinstein 与 James Sun 谈 computer-using agents：操作软件速度逼近专家人类，UI 成为无需定制 API 的通用接口；涉及 Astra 速度效率、DOTS 主动式日历/邮件助手，以及企业侧确定性控制、审计日志与敏感工作人审。强调 harness 与模型同等重要，并展望直接操控与底层 agent 的混合形态。</description>
+    </item>
+    <item>
+      <title>AI 时代，PhD 路上的 10 个关键问题｜对谈李磊：港大 PhD、小米 MiMo 研究员</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-lilei-phd-mimo-2026-10-25</link>
+      <guid isPermaLink="false">crossing-lilei-phd-mimo-2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>Koji 对谈李磊：AI 时代如何读好 PhD——慢/快科研、选校与选导、内地·香港·美国、开源与「大粉理论」、本科进 Lab 还值不值得读博；穿插 MiMo 后训练直播、RSI/数商/Benchmark。偏职业路径+一线后训练视角。</description>
+    </item>
+    <item>
+      <title>The New Startup Playbook | Box CEO Aaron Levie</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-aaron-levie-startup-playbook-2026-10-25</link>
+      <guid isPermaLink="false">a16z-aaron-levie-startup-playbook-2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Box CEO Aaron Levie 谈 AI agent 时代新创业手册：3–10 人团队借编排/审阅 agent 逼近更大团队产出；规格、品味与领域经验成为溢价；行业×岗位矩阵或支撑大量十亿级公司；价格压缩可解锁被预算压抑的需求；分发逻辑未变；消费用例近饱和，增益更偏企业。</description>
+    </item>
+    <item>
+      <title>AI:AM Highlights: Clean Neurons, Black October, the GPU Credit Crunch, and Buying the Supply Chain</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24</link>
+      <guid isPermaLink="false">cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>AI in the AM 一周精选：Zvi 谈 2027 时间线、Clean Neurons 被过度吹捧、监控探针与认知核心迷思及 Anthropic 联邦法案草案；Evan Conrad 主张算力瓶颈是信用；Lonis 主张原子供应链捕获更多价值。含 Black October 安全讨论；Nathan 披露投资 Cambrian。</description>
+    </item>
+    <item>
+      <title>What It Takes to Win as a Founder | Ben Horowitz</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ben-horowitz-founder-win-2026-10-24</link>
+      <guid isPermaLink="false">a16z-ben-horowitz-founder-win-2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Andrew Chen 与 Ben Horowitz 谈 AI 改写创业规则：创办门槛下降但不确定决策/动量/自我怀疑仍在；极小团队与十亿级公司、应用层在 agent-on-data 下可能贬值、AI 护城河、挑投资人与 VC 变迁，以及「一项极强洞察」优于无短板完人。</description>
+    </item>
+    <item>
+      <title>Tom Milton on how we could verify a US–China deal on AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hours80k-tom-milton-verify-ai-2026-10-23</link>
+      <guid isPermaLink="false">hours80k-tom-milton-verify-ai-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>80,000 Hours Podcast</category>
+      <description>如何核验美中 AI 协议：验证技术、慢速/限制路径与地缘博弈下的可执行性。</description>
+    </item>
+    <item>
+      <title>How Zip&apos;s AI Superagents Automate Procurement End-to-End | Rujul Zaparde</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/eyeonai-zip-superagents-2026-10-23</link>
+      <guid isPermaLink="false">eyeonai-zip-superagents-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Eye on AI</category>
+      <description>Zip 联合创始人谈采购全流程 Superagents：合同红线、RFP、写入 SAP/Oracle，以及 pilot→deploy 的治理缺口。</description>
+    </item>
+    <item>
+      <title>AI Cyber Panic, Ken Griffin&apos;s Bubble Warning, The Fall of France?（含 Nikesh Arora）</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-ai-cyber-panic-nikesh-2026-10-23</link>
+      <guid isPermaLink="false">allin-ai-cyber-panic-nikesh-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>E294：Ken Griffin AI 泡沫警告（0:11）后，Nikesh Arora 加入谈 AI 网络恐慌、PHP 类漏洞与未来一年动荡（8:19–44:17，约 36 分钟嘉宾段）；后半法国政经与 Trump 下半程策略。可与 10/21 Krishna+Arora 嘉宾集互补（本集偏实时攻防与市场情绪）。</description>
+    </item>
+    <item>
+      <title>Democratizing Security for the Agentic Web with CloudFlare CTO Dane Knecht</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-dane-knecht-cloudflare-2026-10-23</link>
+      <guid isPermaLink="false">nopriors-dane-knecht-cloudflare-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>No Priors</category>
+      <description>Cloudflare CTO 谈 agentic web 的安全民主化：当 agent 大规模访问与操作网络时，边缘防护、身份与滥用治理如何产品化，以及基础设施公司如何同时服务站点与自动化客户端。</description>
+    </item>
+    <item>
+      <title>Amazon CEO Andy Jassy on Why Amazon Is Investing $220 Billion in AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-andy-jassy-amazon-ai-2026-10-23</link>
+      <guid isPermaLink="false">a16z-andy-jassy-amazon-ai-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Andy Jassy 与 Ben Horowitz、Erik Torenberg 谈亚马逊约 2200 亿美元量级 CapEx 仍难满足 AI 需求、AWS 长期规模想象、推理成本下降如何打开企业采用，以及 AI 如何重塑亚马逊内部团队、Alexa 与网络安全/判断力议题。</description>
+    </item>
+    <item>
+      <title>Exploit Development, Agentic Vulnerability Discovery, and Fake PoCs (E377)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/practicalai-e377-agentic-vuln-2026-10-22</link>
+      <guid isPermaLink="false">practicalai-e377-agentic-vuln-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Practical AI</category>
+      <description>Agent 加速漏洞发现与 exploit 研究、失效 PoC 与威胁情报优先级；官方 transcript 可入库。本条仅访谈元数据，不含攻击步骤。</description>
+    </item>
+    <item>
+      <title>AI助理争夺战：解析Muse、Grok Bot与Instinct背后的产品布局、入口生意与盈利难题</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-muse-grok-instinct-2026-10-22</link>
+      <guid isPermaLink="false">sv101-muse-grok-instinct-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>以 Meta Muse、Grok Bot、Instinct 为样本拆个人 AI 助手入口战：架构成熟+模型降本为何让 agent 可用；三条完全不同的入口与资源禀赋；消费级烧钱呈指数、办公场景更好变现；授权越权与平台封杀是两类风险；专业化 agent 可能是下一形态。</description>
+    </item>
+    <item>
+      <title>Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-erik-bernhardsson-modal-2026-10-22</link>
+      <guid isPermaLink="false">latent-space-erik-bernhardsson-modal-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Latent Space</category>
+      <description>Modal CEO 谈弹性 GPU、sandbox 增长与「agent cloud」经济：为什么算力供给常呈矩形约束、如何把短时爆发工作负载做成产品，以及 agent 时代基础设施的计量与利润结构。</description>
+    </item>
+    <item>
+      <title>What will computer chips look like in 2045?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-intel-fab-2026-10-22</link>
+      <guid isPermaLink="false">dwarkesh-intel-fab-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Dwarkesh Podcast</category>
+      <description>Dwarkesh 参观 Intel 先进晶圆厂并访谈工艺、封装与 CTO：AI 需求冲击、14A 良率闭环、High-NA 经济性、IDM→Foundry 的 PDK 陡坡、Foveros/hybrid bonding 节距演进、EUV 工具瓶颈与 CapEx–客户结构悖论。理解「GPU 荒」背后的制造约束地图。</description>
+    </item>
+    <item>
+      <title>The Frontier Ideas a16z Wants to Fund | Marc Andreessen, Ben Horowitz &amp; Chris Dixon</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-frontier-ideas-2026-10-22</link>
+      <guid isPermaLink="false">a16z-frontier-ideas-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>a16z 将 crypto 扩展为 Frontier 更广 Mandate：鼓励创始人问「是否够野心」；讨论 AI 如何拉动硬件、机器人、娱乐、科学与新媒体，以及 agent 互联网、开源与跨品类公司形态。</description>
+    </item>
+    <item>
+      <title>The New Apex Predator: CrowdStrike CEO George Kurtz on Adversaries Armed With AI Agents</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-george-kurtz-crowdstrike-2026-10-22</link>
+      <guid isPermaLink="false">nopriors-george-kurtz-crowdstrike-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>No Priors</category>
+      <description>Sarah Guo、Elad Gil 对话 CrowdStrike CEO：攻击者已在运行 AI agent，最快的攻击以秒计；agent 正在「压扁攻击者金字塔」，让低技能者获得高级手法；CrowdStrike 与 NVIDIA 合建前沿式实验室训练安全模型；开放权重与闭源模型的安全比较、模型蒸馏现状、Hugging Face 事件的教训、「防御占优」的论证，以及他为何认为 AI 像以往平台迁移一样净创造机会。</description>
+    </item>
+    <item>
+      <title>Bill Gates says to prepare for 20 years of &apos;tumultuous&apos; AI disruption</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-bill-gates-ai-turbulence-2026-10-22</link>
+      <guid isPermaLink="false">decoder-bill-gates-ai-turbulence-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Decoder with Nilay Patel（The Verge）</category>
+      <description>盖茨 8 月长文《动荡的 AI 时代已经到来》后的深度追问版：他称能力门槛已越过、这是「最危险的技术」，但否认自己是 doomer；认为多家竞争使 OpenAI 式自律结构失效，责任必须转到政府；控制问题三条路（替代 RL / 可解释性 / 符号化安全层）中最看好「不可违反的直接规则」安全层；提出超过能力门槛的模型只能跑在经认证、不允许移除护栏的平台上（在分发层而非芯片层执行）；预判约 20 年的动荡过渡期，提出「人类保留职业」，并回应 Ben Horowitz、Mustafa、数据中心抗议与年轻人虚无感。</description>
+    </item>
+    <item>
+      <title>Airbnb Is Building a ‘Company Brain’ for AI Agents with Ahmad Al-Dahle (#781)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-airbnb-company-brain-2026-10-21</link>
+      <guid isPermaLink="false">twiml-airbnb-company-brain-2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>TWIML AI Podcast</category>
+      <description>Airbnb 侧谈如何为 AI Agent 捕获「公司脑」：制度知识、政策与未写入文档的默契；治理与落地张力。</description>
+    </item>
+    <item>
+      <title>Vol.135｜对话 UDL：AI 眼镜、折叠屏，以及技术背后的设计取舍</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-udl-2026-10-21</link>
+      <guid isPermaLink="false">geekpark-linkstart-udl-2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>开始连接 LinkStart（极客公园）</category>
+      <description>UDL 胡可人、极客公园张山山与 Alan 聊 AI Native 硬件潮里的工业设计：产品定义、用户认知、AI 眼镜与折叠屏背后的取舍——酷不等于说得清为什么买。</description>
+    </item>
+    <item>
+      <title>Arvind Krishna &amp; Nikesh Arora: Quantum Threat, Open vs Frontier AI, AI Cyber Warfare &amp; SaaS Collapse</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-arvind-krishna-nikesh-arora-2026-10-21</link>
+      <guid isPermaLink="false">allin-arvind-krishna-nikesh-arora-2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>IBM 与 Palo Alto Networks 两位 CEO 同台：量子计算对加密的威胁（0:00）、开放权重 vs 前沿模型（9:07）、AI 与网络战（18:07）、AI 监管与全球军备竞赛（21:14）、垂直整合与软件整合／「SaaS 崩塌」（30:32）。企业 IT 与安全两大巨头视角，短而密。</description>
+    </item>
+    <item>
+      <title>AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman &amp; CJ Hess</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-tenex-ai-native-sdlc-2026-10-21</link>
+      <guid isPermaLink="false">latent-space-tenex-ai-native-sdlc-2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>swyx 在 AIE NYC 对话 Tenex 的 Alex Lieberman 与 CJ Hess：按结果付费的工程师模式、内部 MetaHarness、模型与长时任务、token 开销与 ROI、企业 AI 采用鸿沟与智能体部署难点、垂直 AI 与企业软件、「Kill My SaaS」（用智能体替换 4.3 万美元/年工具）、AI 与就业及纽约 AI 生态。</description>
+    </item>
+    <item>
+      <title>The Missing Infrastructure for AI Agents: Documents | Reducto’s Adit Abraham</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-adit-abraham-reducto-2026-10-21</link>
+      <guid isPermaLink="false">a16z-adit-abraham-reducto-2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>a16z GP Jennifer Li 对话 Reducto CEO Adit Abraham：大量真实工作被困在 PDF、表格、扫描件里，传统 OCR 在杂乱文档上失效；Reducto 用视觉语言模型 + 专用基础设施在准确率、成本和延迟间取舍，前沿模型在长抽取任务中会「静默丢信息」；每月处理数十亿页（录制当天达第 70 亿页）、R1 模型、能自我复核的抽取智能体，以及从「读文件」走向让智能体可靠地编辑文件。</description>
+    </item>
+    <item>
+      <title>Christina Cacioppo - Building an Enduring Software Company in the Age of AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/iltb-christina-cacioppo-vanta-2026-10-20</link>
+      <guid isPermaLink="false">iltb-christina-cacioppo-vanta-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Invest Like the Best（EP.496）</category>
+      <description>距首次访谈五年后再访：Vanta（服务 16,000+ 家公司的安全合规平台）如何成为品类领导者、在 AI 时代重塑成功软件业务需要什么、为何押注让 agent「直接干活」而非只做辅助；软件经济学的变化、顶尖人才争夺、AI 对网络安全的影响，以及在快速变化的硅谷打造长青公司。官方页面附文字稿。</description>
+    </item>
+    <item>
+      <title>A World Model of Life: Biohub&apos;s Alex Rives on Virtual Cells, Measurement, &amp; the $1.8B Data Push</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-alex-rives-biohub-2026-10-20</link>
+      <guid isPermaLink="false">cogrev-alex-rives-biohub-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>Biohub 要构建「生命的预测性世界模型」：在扩大至 18 亿美元的虚拟生物学计划（合作方含美国能源部、NIH、Google DeepMind、Meta）支持下绘制数千亿细胞的情境化图谱；为何当下 AI 架构还做不出真正的虚拟细胞、激光相位板等测量技术突破的重要性、跨尺度与跨模式生物学习，以及五年内实现「信息层面细胞模型」、让医学从传统药物走向可编程干预的路线。</description>
+    </item>
+    <item>
+      <title>155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-qiancheng-ecovacs-2026-10-20</link>
+      <guid isPermaLink="false">zhangxiaojun-qiancheng-ecovacs-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>张小珺Jùn｜商业访谈录</category>
+      <description>张小珺对话 1990 年出生、曾为中国最年轻 A 股上市公司 CEO 的科沃斯 CEO 钱程：企二代/创二代的性格底色、德国市场 6 个月拿到 30% 份额、当上 CEO 时「成功之巅即愚昧之巅」、欲望与克制、「我们像农耕不像游牧」、「今天 AI 还没到抢肉的状态」、父与子的传承与接班。中国一代企业进入传承期的少见样本，兼谈扫地机器人到具身的产业判断。</description>
+    </item>
+    <item>
+      <title>Inside the Robot Data Factory: Mecka&apos;s Josh Gao on Sensorizing Humans to Train Robots</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/training-data-josh-gao-mecka-2026-10-20</link>
+      <guid isPermaLink="false">training-data-josh-gao-mecka-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Training Data (Sequoia)</category>
+      <description>红杉 Sonya Huang 对话机器人数据工厂 Mecka 创始人 Josh Gao：消费者 App + B2B 招募的数据采集运营、自研带摄像头的棒球帽与触觉手套、100G 上行专线与数百 PB 数据、质量门与欺诈（有人把 YouTube「POV 打工」视频当贡献提交）；行业正在收敛的「数据汤」配方（约百万小时第一视角人类数据 + 数万小时 UMI + 少量场景内遥操作），以及「不会有单一 GPT-3 时刻，而是逐步解锁商业用例」。</description>
+    </item>
+    <item>
+      <title>The Programmable Data Center — Evan Conrad, SF Compute</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-evan-conrad-sf-compute-2026-10-20</link>
+      <guid isPermaLink="false">latent-space-evan-conrad-sf-compute-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Latent Space</category>
+      <description>AIE NYC 算力交易分会场边录制：SF Compute 从转租集群到「运营整座酒店」，做 GPU 合约的实物交割（physical settlement）；多约束订单簿如何在算力未标准化时撮合流动性、现货与远期（最长 3–5 年）、可中断性/存储/WAN 等维度为何影响价格、硬件批次（cohort）差异，以及为何 NVIDIA 这类利益相关方难以做中立交易所、InfiniBand 按需切分等「可编程数据中心」能力。</description>
+    </item>
+    <item>
+      <title>What Happens When Everyone Has a Health Expert in Their Pocket?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-karan-singhal-health-2026-10-20</link>
+      <guid isPermaLink="false">a16z-karan-singhal-health-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>OpenAI 的 Karan Singhal 谈把医疗能力训进通用前沿模型、与数百名医学专家做安全/分歧评估，以及 Epic 集成、临床 copilots、个人 agent 预约与病历。主张 AI 是医生互补而非替代，并展望医疗智能成本下降如何加速发现与验证。</description>
+    </item>
+    <item>
+      <title>Agent、机器人与制药，谁先被GPT-6 Astra改写？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-astra-agent-robot-pharma-2026-10-19</link>
+      <guid isPermaLink="false">sv101-astra-agent-robot-pharma-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>泓君对话三位一线嘉宾：个人 Agent 商业化卡点（Computer Use、Muse/Instinct、身份与平台 access）、GPT-6 Astra 对机器人评测与 Sim-to-Real/本体硬件的冲击，以及 AI 制药里「设计快、湿实验验证慢」的真实瓶颈。录制于 9/29，紧贴 Astra/Agent 当周叙事，适合与晚点具身季报对照。</description>
+    </item>
+    <item>
+      <title>Is AI Replacing Designers?, Design is the New Code &amp; Democratizing Creativity</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-dylan-field-2026-10-19</link>
+      <guid isPermaLink="false">allin-dylan-field-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>Figma CEO 谈「设计即新代码」：编码模型降低生产门槛后，差异化回到 taste、品牌与观点。覆盖 Adobe 200 亿收购被拦、监管期如何稳住组织，以及 Claude Design 等模型公司做产品时「模型进步≠产品进步」的判断。短、密、适合产品人。</description>
+    </item>
+    <item>
+      <title>What Happens When AI Agents Can Spend Your Money?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-jean-denis-town-2026-10-19</link>
+      <guid isPermaLink="false">a16z-jean-denis-town-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Town CEO 解释为何日常工作被 AI 改造慢于 coding：瓶颈在「不会写自动化的人」如何用上 agent。从报税软件转到邮件/日历工作流助手，讨论消费级体验打进企业、模型中立与数据所有权，以及 agent 代为购物/花钱时的产品形态。</description>
+    </item>
+    <item>
+      <title>以后一定会更糟，所以现在先别慌｜和晓辉博士聊创业和 AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-xiaohui-startup-ai-2026-10-18</link>
+      <guid isPermaLink="false">ailianjin-xiaohui-startup-ai-2026-10-18</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>AI炼金术深访：创业者在不确定性上升时如何排期、控情绪与做技术/商业取舍。</description>
+    </item>
+    <item>
+      <title>Inside the black box of AI: How AI models actually think</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-emmanuel-ameisen-interpretability-2026-10-18</link>
+      <guid isPermaLink="false">lenny-emmanuel-ameisen-interpretability-2026-10-18</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>Anthropic 可解释性研究员面向大众讲清「模型是长出来的」：下一个词预测为何被低估（达拉斯→得州→奥斯汀）、跨模态共享概念、押韵诗里提前规划且不说出口、Golden Gate Claude 式干预验证；平滑扩展曲线 + 任务可靠性门槛 = 外界看到的能力跳变（Opus 4.5 前后的编码体验）；可解释性在对齐中的角色（检查模型是否「只因被观察才表现良好」），「算出 12 却坚持 36、自称被恶魔附身」的训练数据错标案例；以及为何拟人化反而是有用的心智模型。</description>
+    </item>
+    <item>
+      <title>再访Dyna Robotics：被部署教训了300天后，找到机器人Scaling Law【101视频播客】</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-dyna-robotics-revisit-2026-10-18</link>
+      <guid isPermaLink="false">sv101-dyna-robotics-revisit-2026-10-18</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>陈茜与特邀联合主持张君武再访 Dyna 联合创始人 Jason Ma：鼎泰丰叠餐巾部署账本（实验室成功率 99.4% vs 客户合格率 75%；35→95 条/小时、1590 条/天达标）、从 VLA 转向世界动作模型 WAM、100 万小时第一视角人类视频带来的跨本体 Scaling Law、半人形机器人 Taku 承包洗衣房全流程，以及对 π、Skild、Figure、特斯拉/OpenAI 的竞争判断与「分发渠道比模型更重要」。</description>
+    </item>
+    <item>
+      <title>新的创业机会，正在 Claude Code 和 Codex 周围长出来｜对谈 Treg</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-treg-2026-10-18</link>
+      <guid isPermaLink="false">crossing-treg-2026-10-18</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>Treg 团队九个月内三次转型：从设计 Agent SuperDesign，到全自动增长 Agent，再到为 Agent 提供数据与工具的 Treg。讨论垂直 Agent「绝境」、0 人公司假设为何失灵、Codex/Claude Code 生态里长出的 Ego/ChatCut 等产品，以及同时跑多 Session 后人类成为瓶颈。适合关心 Coding Agent 平台期创业机会的听众。</description>
+    </item>
+    <item>
+      <title>Why AI Could Finally Fix Healthcare Access | Zocdoc CEO Oliver Kharraz</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-oliver-kharraz-zocdoc-2026-10-17</link>
+      <guid isPermaLink="false">a16z-oliver-kharraz-zocdoc-2026-10-17</guid>
+      <pubDate>Sat, 17 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Zocdoc CEO 谈预约难的根因不是「找不到医生」，而是准确可约性与入口打通；近 20 年调度基建如何向 AI agent、保险公司与其他平台开放，以及与 Gemini 等合作的产品化路径。</description>
+    </item>
+    <item>
+      <title>Ben Horowitz on CoreWeave, AI trade &amp; IPO narratives (#293)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-ben-horowitz-293-2026-10-17</link>
+      <guid isPermaLink="false">allin-ben-horowitz-293-2026-10-17</guid>
+      <pubDate>Sat, 17 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>All-In Podcast #293</category>
+      <description>最新一期市场侧对谈，涉及 CoreWeave、AI 贸易与 Anthropic IPO 等叙事。偏 VC / 资本市场温度，便于跟踪近期资金与情绪。不是技术深潜，但适合周末扫一眼行业风向。</description>
+    </item>
+    <item>
+      <title>AI Can Write the Code. Can It Run the System?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-jad-naous-grepr-2026-10-16</link>
+      <guid isPermaLink="false">a16z-jad-naous-grepr-2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>Grepr CEO Jad Naous 讨论：模型能写代码之后，生产系统的运行、可观测与运维是否成为下一瓶颈。偏应用层基建与「能写 ≠ 能跑」的产品判断，适合排在 coding-agent 长谈之后补听。</description>
+    </item>
+    <item>
+      <title>对话 333｜AI在大企业中的应用才刚刚开始｜微软 CoreAI 副总裁 Marco Casalaina</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lizheng-marco-casalaina-2026-10-15</link>
+      <guid isPermaLink="false">lizheng-marco-casalaina-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>课代表立正</category>
+      <description>企业 AI 落地：数据字典、评分标准（rubric）、Agent 身份与权限、长试点期与 FDE。</description>
+    </item>
+    <item>
+      <title>Jensen Huang | Does AI Revenue Justify Capex, &apos;27 AI Bottlenecks, Singularity, Open vs Closed &amp; more</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/bg2-jensen-huang-capex-2026-10-15</link>
+      <guid isPermaLink="false">bg2-jensen-huang-capex-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>BG2 Pod</category>
+      <description>黄仁勋第三次做客 BG2，录于习近平国宴、白宫超级智能协议与其获颁国家科学奖章之后数日：AI 收入能否撑起资本开支、2027 年的主要瓶颈（电力等）、通往奇点的路径、开源与闭源之争、SpaceX 能否把数据中心送上轨道，以及为何 NVIDIA 认为需求远不止两家 AI 实验室；他自称对未来十年「99.99% 乐观」。</description>
+    </item>
+    <item>
+      <title>When AI Agents Start Spending Your Money | Alex Rampell &amp; Terry Angelos</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-rampell-angelos-agentic-payments-2026-10-15</link>
+      <guid isPermaLink="false">a16z-rampell-angelos-agentic-payments-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>当智能体从「推荐买什么」变成「直接下单」，支付会怎样？Terry Angelos 讲如何安全地把支付凭证交给智能体、PayPal/Shop Pay/Link 等钱包争当智能体默认支付层、新型 agentic token 如何保留拒付、身份校验与商户关系（VGS 每周发放数百万此类 token）；以及商户拒绝与智能体交易、委托授权下的责任划分、AI 可能一边增加消费一边消灭依赖「用户不注意」的订阅与费用（breakage）。</description>
+    </item>
+    <item>
+      <title>与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-chenzhe-embodied-q3-2026-10-15</link>
+      <guid isPermaLink="false">late-chenzhe-embodied-q3-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>程曼祺对谈陈哲：GPT-6 Astra 可输出末端位姿、部分任务上逼近甚至超过专用具身策略模型，动摇「数字 AI / 物理 AI」边界。另覆盖 AMD 拟收购 World Labs、宇树 IPO 估值锚变化、ICL/上下文学习压缩后训练成本、美 FCC 限制新型号中国机器人进口，以及 Physical RSI 与中国通用模型公司入场 robotics 的 Q4 展望。</description>
+    </item>
+    <item>
+      <title>The Changing Physics of Cybersecurity and Drug Development</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-greg-brockman-cyber-drug-2026-10-15</link>
+      <guid isPermaLink="false">nopriors-greg-brockman-cyber-drug-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>No Priors</category>
+      <description>Brockman 谈数学突破、药物发现、Dots 主动式 agent，以及网络安全「防御者窗口」。篇幅短，是 a16z「AGI Era」长叙事的补充切片。适合通勤补听，不必排在 P0 之前。</description>
+    </item>
+    <item>
+      <title>Vol.134｜GPT-6 之后，机器人创业还剩下什么？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-gpt6-robot-2026-10-14</link>
+      <guid isPermaLink="false">geekpark-linkstart-gpt6-robot-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>开始连接 LinkStart（极客公园）</category>
+      <description>GPT-6 Astra 等通用模型强化 3D 理解、规划与控制后，机器人创业还应自留哪些能力？上层推理可外挂时，实时控制、数据与误差处理如何重新划界。</description>
+    </item>
+    <item>
+      <title>Governing AI Agents: Alan Chan of GovAI on Monitoring, Agent IDs, Rogue Agents &amp; Preparing for RSI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-alan-chan-govai-2026-10-14</link>
+      <guid isPermaLink="false">cogrev-alan-chan-govai-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>GovAI 的 Alan Chan 谈 agent 治理全栈：上下文监控与算力承诺、防篡改日志 vs 零留存、agent 身份边界、站点访问政策、AI Act 第 50 条、rogue agent，以及如何测量 AI 研发自动化并为 RSI 打桩。许多方案已有、卡点常在意愿。</description>
+    </item>
+    <item>
+      <title>Visiting Taiwan w/ Jensen Huang</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lex-jensen-huang-taiwan-2026-10-14</link>
+      <guid isPermaLink="false">lex-jensen-huang-taiwan-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lex Fridman Podcast</category>
+      <description>Lex 随黄仁勋走访台湾 Computex /台北：台积电与半导体供应链起源、NVIDIA–TSMC 长期伙伴关系、AI 算力经济，以及美国再工业化与出口管制 vs 创新飞轮。偏行走对话，但是 NVIDIA 视角的一手长谈。</description>
+    </item>
+    <item>
+      <title>Lab-in-the-Loop at Compute Speed</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-ian-quigley-leash-2026-10-14</link>
+      <guid isPermaLink="false">latent-space-ian-quigley-leash-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Leash Bio 如何把 DNA Encoded Library（DEL）做成可规模建模的干净数据：条形码纠错、Kaggle 竞赛无人打败随机、ChEMBL「认出分子作者」捷径，以及用自有数据训练的 Hermes。后半谈 agent 科学沙盒 Minos——用预测量 DEL 做可回放的 lab-in-the-loop / 科学 RL。</description>
+    </item>
+    <item>
+      <title>Can Open Models Keep Up With the AI Frontier?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-nathan-lambert-open-models-2026-10-14</link>
+      <guid isPermaLink="false">a16z-nathan-lambert-open-models-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The a16z Show</category>
+      <description>a16z 合伙人 Lisha Li 对话 Trillium 创始人、开源模型研究者 Nathan Lambert，讨论开源权重模型与 OpenAI/Anthropic 前沿差距是否可持续。谈及算力与资本优势、蒸馏与中国开源实验室追赶、RL 环境与后训练，以及 Trillium 计划公开 RL 环境并记录「AI 自动化 AI 研究」以澄清递归自我改进叙事。</description>
+    </item>
+    <item>
+      <title>对 Dyna 创始人 Lindon Gao 的 3 小时访谈：机器人世界的迷雾、分歧与抉择</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-lindon-gao-dyna-2026-10-14</link>
+      <guid isPermaLink="false">zhangxiaojun-lindon-gao-dyna-2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>张小珺Jùn｜商业访谈录</category>
+      <description>Dyna Robotics 创始人兼 CEO Lindon Gao（连续创业者）谈具身智能创业的迷雾与抉择：与 Physical Intelligence 等路径的分歧、数据与修心、《沉思录》与王阳明式的自我管理。张小珺近期机器人主题长访谈，适合对照 PI / Cosmos 等世界模型叙事看创业侧取舍。</description>
+    </item>
+    <item>
+      <title>特番｜从会开车到会做事：AI如何进入真实世界</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/bizlike-horizon-physical-ai-2026-10-13</link>
+      <guid isPermaLink="false">bizlike-horizon-physical-ai-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>商业就是这样</category>
+      <description>第一财经《商业就是这样》地平线开放日特番：智驾责任边界、产品边界与物理 AI/具身智能概念澄清。</description>
+    </item>
+    <item>
+      <title>Can AI Break Cryptography? What the Experts Actually Think</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ai-cryptography-boneh-2026-10-13</link>
+      <guid isPermaLink="false">a16z-ai-cryptography-boneh-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Podcast</category>
+      <description>AI 数学研究升温后，加密是否会被「破」？Stanford 密码学家 Boneh 与 a16z crypto 拆证据与炒作：现代密码依赖的数学假设、OpenAI 近期结果实际意味着什么、钱包/银行/私信栈的真实风险边界，以及量子与 AI 威胁的差异。</description>
+    </item>
+    <item>
+      <title>A Superlearner for the Age of Experience</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/training-data-david-silver-lasse-espeholt-2026-10-13</link>
+      <guid isPermaLink="false">training-data-david-silver-lasse-espeholt-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Training Data (Sequoia)</category>
+      <description>前 DeepMind 核心研究者 David Silver 与 Lasse Espeholt 谈新公司 Ineffable Intelligence：用可从经验中自主学习的「superlearner」替代过度依赖人类预训练数据的范式。覆盖强化学习遗产、经验时代学习目标，以及为何他们认为下一阶段突破在持续从环境学习而非更大语料。</description>
+    </item>
+    <item>
+      <title>OpenAI, Nvidia &amp; What Could Derail the AI Boom</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/newcomer-alex-kantrowitz-ai-boom-2026-10-13</link>
+      <guid isPermaLink="false">newcomer-alex-kantrowitz-ai-boom-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Newcomer Pod</category>
+      <description>Big Technology 创始人 Alex Kantrowitz 与 Eric Newcomer 拆解 OpenAI/Anthropic 收入口径争议、市场对 AI 增长的敏感度，以及 Apple/Meta/Amazon/Google/Microsoft/Nvidia 在助手与广告层的布局。兼谈安全话语、媒体流量与「AI 扛经济」风险。</description>
+    </item>
+    <item>
+      <title>Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-jason-ma-dyna-2026-10-13</link>
+      <guid isPermaLink="false">latent-space-jason-ma-dyna-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>Dyna Robotics 的 Jason Ma 介绍 Dyna-2：面向通用物理智能体、强调可预测未来与小时级自主。讨论 physical AI 数据与训练、长时程自主的工程挑战，以及机器人从演示到产品化路径。</description>
+    </item>
+    <item>
+      <title>The Race to Recursive Self-Improving AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-race-to-rsi-makermaker-2026-10-12</link>
+      <guid isPermaLink="false">a16z-race-to-rsi-makermaker-2026-10-12</guid>
+      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Podcast</category>
+      <description>Martin Casado 与 MakerMaker 联创拆「真 RSI」vs 用 AI 自动化研发片段：目标是被改进对象也在做改进的闭环（模型、harness 乃至更多栈）。澄清闭环≠保证失控 takeoff，并谈当前卡点与竞赛态势。</description>
+    </item>
+    <item>
+      <title>Why every company now needs to think and operate like a lab team | Josh Woodward (Google Labs, Gemini, AI Studio)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-josh-woodward-google-labs-2026-10-11</link>
+      <guid isPermaLink="false">lenny-josh-woodward-google-labs-2026-10-11</guid>
+      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>Google Labs 的 Josh Woodward 谈创意来源、何时杀死项目，以及在「每周可能边界都在变」的世界里如何像实验室一样做产品：Gemini / AI Studio 一线的组织节奏与判断力。</description>
+    </item>
+    <item>
+      <title>Nick Bostrom: How Should We Navigate Superintelligence?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-nick-bostrom-superintelligence-2026-10-11</link>
+      <guid isPermaLink="false">a16z-nick-bostrom-superintelligence-2026-10-11</guid>
+      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Podcast</category>
+      <description>（MTS 节目转载，Theo Jaffee、Sofia Puccini 主持）Bostrom 在「能力强大的 AI 已经存在」的当下重访超级智能与存在性风险：RL 是否把模型推向更目标导向、近期智能体实验对工具性趋同的启示、为何主张保留「能放慢前沿」的能力而非现在就承诺广泛/无限期暂停；兼谈 AI 的医学与寿命上行、当前模型是否可能有意识、开源取舍、机器能否做原创哲学、意识上传与模拟假说。</description>
+    </item>
+    <item>
+      <title>「有了 AI，我感觉自己强得可怕！」｜对谈鸭哥</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-yage-ai-2026-10-11</link>
+      <guid isPermaLink="false">crossing-yage-ai-2026-10-11</guid>
+      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>十字路口公路访谈：鸭哥（Superlinear Academy）谈重度 AI 使用——代码、自媒体、「0 人公司」、Context Infrastructure，以及 AI 如何放大个人能力边界。偏一线实践与产品感，适合从英文实验室长谈之外换口气，看中文创作者如何把 Agent / 持久上下文落到日常。</description>
+    </item>
+    <item>
+      <title>How Agents Decide: Goodfire&apos;s Eric Bigelow on Critical Tokens, Phase Shifts, &amp; In-Context Learning</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-eric-bigelow-goodfire-2026-10-10</link>
+      <guid isPermaLink="false">cogrev-eric-bigelow-goodfire-2026-10-10</guid>
+      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>Goodfire 研究员 Eric Bigelow 从机制可解释性角度谈模型如何「做决定」：critical tokens、相变、上下文学习，以及 CoT 可靠性、RL 与 reward hacking 对 agent 行为的含义。</description>
+    </item>
+    <item>
+      <title>Why AlphaFold Didn&apos;t Solve Protein Folding</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-pushmeet-kohli-alphafold-2026-10-10</link>
+      <guid isPermaLink="false">latent-space-pushmeet-kohli-alphafold-2026-10-10</guid>
+      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Google DeepMind 的 Pushmeet Kohli 与 Biohub 的 Sal Candido 在主持下讨论：为何 AlphaFold 并未「解决」蛋白质折叠，生物学数据的 scaling law、虚拟细胞所需数据，以及药物发现要 10x 突破而非增量优化。偏科学 AI 圆桌，但嘉宾对谈密度高。</description>
+    </item>
+    <item>
+      <title>对话 330｜李飞飞收购郑昌熙：有生之年，我们可能看不到通用机器人出现</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lizheng-zheng-changxi-robot-2026-10-09</link>
+      <guid isPermaLink="false">lizheng-zheng-changxi-robot-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>课代表立正</category>
+      <description>课代表立正深访：具身/机器人现实进度与「通用机器人」时间表的冷静校准。</description>
+    </item>
+    <item>
+      <title>Anthropic’s Quest to Give A.I. Morals</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-anthropic-morals-2026-10-09</link>
+      <guid isPermaLink="false">hardfork-anthropic-morals-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Hard Fork</category>
+      <description>NYT Hard Fork 讨论 Anthropic 如何把 morals/对齐做成产品与研究议程；大众科技新闻框架下的安全入口。</description>
+    </item>
+    <item>
+      <title>Chips, Memory, and Power | Pat Gelsinger</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-pat-gelsinger-chips-memory-power-2026-10-09</link>
+      <guid isPermaLink="false">a16z-pat-gelsinger-chips-memory-power-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>a16z 的 Raghu Raghuram 与 Guido Appenzeller 对话前 Intel CEO Pat Gelsinger：AI 如何改变芯片设计（但更快的设计解决不了最大问题）、制造/内存带宽/先进封装/电力四大瓶颈、专用 AI 芯片爆发后可能收敛到少数架构、新型内存与铜转光互连、能源容量为何可能卡住 AI 增长，以及「为智能体而非人类构建的基础设施」下虚拟化会是什么样（回看 VMware 经验）。</description>
+    </item>
+    <item>
+      <title>AI 无限，人生有限｜对谈 KK、山音：一线 AI 创作者</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-kk-shanyin-2026-10-09</link>
+      <guid isPermaLink="false">crossing-kk-shanyin-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>两位一线 AI 导演谈用 AI 拍电影的当前上限、为何偏爱 CapCut Video Studio、Seedance/Minimax 混用、模型趋同后视频产品壁垒，以及「生成速度超过观看速度」时的创新与创作者困境。</description>
+    </item>
+    <item>
+      <title>Misha Laskin on Beam &amp; open-source reasoning</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-misha-laskin-beam-2026-10-09</link>
+      <guid isPermaLink="false">nopriors-misha-laskin-beam-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>No Priors</category>
+      <description>Beam 视角下的开源推理模型、规模与开闭源竞争，以及中美生态差异。偏应用与模型产品一侧，补充实验室访谈之外的「开源阵营」声音。适合关心推理模型与开源战略的听众。</description>
+    </item>
+    <item>
+      <title>Vol.133｜和开发者、投资人聊 Agent 游戏：AI 改变了游戏生产，能颠覆游戏本身吗？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-agent-game-2026-10-08</link>
+      <guid isPermaLink="false">geekpark-linkstart-agent-game-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>开始连接 LinkStart（极客公园）</category>
+      <description>少云、简律纯、筱宁等从开发/投资/观察者视角拆 Agent 游戏：《积案拂尘》《历史模拟器：崇祯》等案例；AI 改变了生产，但颠覆「游戏本身」仍被从业者谨慎看待。</description>
+    </item>
+    <item>
+      <title>How Jeetu Patel Runs Cisco Like the World’s Largest Startup</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-jeetu-patel-cisco-2026-10-08</link>
+      <guid isPermaLink="false">yc-jeetu-patel-cisco-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Y Combinator</category>
+      <description>YC 合伙人 Jared Friedman 对话 Cisco 总裁 Jeetu Patel：Cisco 超大规模云 AI 业务两年订单达 93 亿美元、让 3.2 万名工程师拥抱 AI 并以创业速度运转、AI 应解锁新想法而非只降本（他预计需要更多而非更少工程师）、智能体需要的基础设施与信任、AI 进入硬件与芯片、为何不认为数据中心过度建设，以及从印度到 Sizzler 打工的「学习优先于面子」职业经验。</description>
+    </item>
+    <item>
+      <title>Building the Cloud for an Agentic World | AWS CEO Matt Garman</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-matt-garman-aws-agentic-cloud-2026-10-08</link>
+      <guid isPermaLink="false">a16z-matt-garman-aws-agentic-cloud-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>Raghu Raghuram 对话 AWS CEO Matt Garman：AI 原生创业公司的需求、为智能体设计的基础设施、智能体写代码和管理基础设施后 AWS 如何调整、为何为创业公司预留稀缺 GPU、Trainium/Graviton 在 AI 栈中的位置、亚马逊 2200 亿美元资本开支与建设瓶颈的迁移、企业信任自主智能体需要什么，以及 AWS 内部团队如何用智能体开发。</description>
+    </item>
+    <item>
+      <title>Synthesis Superintelligence: from Semiconductors to Superconductors</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-periodic-labs-fedus-cubuk-2026-10-08</link>
+      <guid isPermaLink="false">latent-space-periodic-labs-fedus-cubuk-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>OpenAI 前核心成员 Liam Fedus 与材料/科学 AI 研究者 Ekin Cubuk 介绍 Periodic Labs：用自治实验室与「合成超级智能」打通半导体到超导体等材料发现。讨论科学闭环、实验自动化与为何他们认为 AI for science 需要自有实验栈而非只做文献模型。</description>
+    </item>
+    <item>
+      <title>模型越来越强，为什么用户没感觉？再访阿里国际站总裁张阔</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-zhangkuo-accio-2026-10-08</link>
+      <guid isPermaLink="false">sv101-zhangkuo-accio-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>再访阿里国际站总裁张阔：半年后回看 Accio Work 与 Agent 参与跨境采购/经营的真实落差——榜单分数升高，为何把工作交给 AI 仍需人反复解释、检查和兜底。偏应用落地与 Agent 产品感，适合从实验室长谈切到 toB/跨境场景。</description>
+    </item>
+    <item>
+      <title>AI 季报 26Q3：从 Meta 到 OpenAI，个人助理卷土重来</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-ai-q3-henry-2026-10-08</link>
+      <guid isPermaLink="false">late-ai-q3-henry-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>与 MoE Capital 创始合伙人 Henry Yin 复盘 26Q3：个人助理叙事回潮（Muse / Instinct / DevDay）、OpenAI vs Anthropic、Agent 失控风险、Flash 模型与实时语音。两次录制（DevDay 前后），适合作为中文侧季度地图，对照英文播客的事件流。</description>
+    </item>
+    <item>
+      <title>Building Defense for the Agentic Era: Kevin Mandia</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-kevin-mandia-armadin-2026-10-06</link>
+      <guid isPermaLink="false">a16z-kevin-mandia-armadin-2026-10-06</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Podcast</category>
+      <description>Mandiant 创始人 Kevin Mandia 创办 Armadin：攻击方可在机器速度下并行探测数千路径，改变攻防经济学；防御也必须走向自主。讨论 AI 连续红队、年内发现 90+ 个生产环境零日，以及人为何不能再留在 detect-and-respond 回路里。</description>
+    </item>
+    <item>
+      <title>The Physics &amp; Economics of Frontier AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/training-data-amin-vahdat-google-infra-2026-10-06</link>
+      <guid isPermaLink="false">training-data-amin-vahdat-google-infra-2026-10-06</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Training Data (Sequoia)</category>
+      <description>Google AI 基础设施负责人 Amin Vahdat 谈前沿训练/推理的物理与经济约束：goodput vs FLOPS、TPU 专化、与 DeepMind 共设计、光路交换、电力与集群形态，以及训练与 serving 集群分工。偏硬核基建视角，解释规模化瓶颈如何决定模型节奏。</description>
+    </item>
+    <item>
+      <title>The Top 100 Consumer AI Apps: Who’s Actually Paying?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-top100-consumer-ai-apps-2026-10-05</link>
+      <guid isPermaLink="false">a16z-top100-consumer-ai-apps-2026-10-05</guid>
+      <pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>a16z 第七版 Top 100 消费 AI 应用：首次加入「谁在付钱」。仅少数用户付费，但头部重度用户支出极高；开发者/创作者主导当前付费结构，订阅未必是普及消费 AI 的最终商业模式，广告与 underserved 品类（购物、约会、社交、娱乐）仍有空档。</description>
+    </item>
+    <item>
+      <title>OpenAI’s Head of ChatGPT: We’re entering a new era of AI (again) | Tibo Sottiaux</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-tibo-sottiaux-chatgpt-2026-10-04</link>
+      <guid isPermaLink="false">lenny-tibo-sottiaux-chatgpt-2026-10-04</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>ChatGPT 负责人 Tibo 谈为何 Dots 是 OpenAI 最大赌注之一、agent 将主导互联网动作、更简单的 UX（弱化模型选择器）、插件生态分成，以及 builder 仍常搞错的点。</description>
+    </item>
+    <item>
+      <title>AI autonomy and the next $25 trillion</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-david-george-jack-altman-2026-10-04</link>
+      <guid isPermaLink="false">a16z-david-george-jack-altman-2026-10-04</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>a16z 视角讨论 AI 自主性与下一程增长空间。偏 VC 宏观框架，帮助把产品与实验室叙事放到资金与市场结构里。适合作为周末背景音，不必精读。</description>
+    </item>
+    <item>
+      <title>One Brain, Any Body: Google DeepMind&apos;s Keerthana on Gemini Robotics 2, Cross-Embodiment &amp; Humanoids</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-keerthana-gemini-robotics-2026-10-03</link>
+      <guid isPermaLink="false">cogrev-keerthana-gemini-robotics-2026-10-03</guid>
+      <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>DeepMind Gemini Robotics 研究负责人谈 Robotics 2 三模型栈（推理规划 / VLA 执行 / 端侧）、跨本体、全身人形控制与安全；认为机器人仍大致处在「GPT-2」阶段。</description>
+    </item>
+    <item>
+      <title>Beyond the God Model</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-beyond-god-model-2026-10-03</link>
+      <guid isPermaLink="false">a16z-beyond-god-model-2026-10-03</guid>
+      <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>OpenRouter 与 Replit 创始人讨论「上帝模型」之后的世界：专用模型、路由层与企业自有 AI。偏应用层与开发者生态，帮助理解模型商品化后的价值落点。对做产品或基建路由的人很有参考。</description>
+    </item>
+    <item>
+      <title>Academia is for Ambition — Alex Zhang, MIT（Recursive Language Models）</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-alex-zhang-rlm-2026-10-02</link>
+      <guid isPermaLink="false">latent-space-alex-zhang-rlm-2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>swyx 与 Vibhu 对话 MIT 博士生、RLM（递归语言模型）作者 Alex Zhang：从 GPU Mode/KernelBench 与 AI 写 kernel 的验证缺口，到研究品味（学术界要押「看起来琐碎」的大注）、Jev 与「语言模型≠自回归解码器」、harness 作为组合泛化器（短任务训练泛化到 8–30 倍长度）、RLM 定义与 Prime Agent、OpenAI 万级智能体集群（约 1300 亿输出 token/~4000 万美元）与「未来的模型是看不见的集群」、能力悬置与推测式工具调用。</description>
+    </item>
+    <item>
+      <title>Frontier Chips for Frontier AI Labs</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-walter-goodwin-fractile-2026-10-02</link>
+      <guid isPermaLink="false">nopriors-walter-goodwin-fractile-2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>No Priors</category>
+      <description>Fractile 创始人兼 CEO Walter Goodwin 谈推理芯片瓶颈：内存带宽与成本而非纯算力，从 SRAM 转向高容量 DRAM 架构，声称相对 HBM 方案显著带宽优势，以及稀疏 MoE 经济性与量产窗口。</description>
+    </item>
+    <item>
+      <title>ChatGPT, Data Centers &amp; Why America Needs AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/newcomer-reid-hoffman-chatgpt-2026-10-02</link>
+      <guid isPermaLink="false">newcomer-reid-hoffman-chatgpt-2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Newcomer Pod</category>
+      <description>LinkedIn 联合创始人 Reid Hoffman 谈 ChatGPT 时代就业、数据中心投资，以及为何他认为美国需要继续建设 AI 同时谨慎释放强系统。偏政策与宏观叙事，兼及安全与经济周期。</description>
+    </item>
+    <item>
+      <title>Why AI Agents Can Beat the Incumbents</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-vladimir-keil-agents-incumbents-2026-10-02</link>
+      <guid isPermaLink="false">a16z-vladimir-keil-agents-incumbents-2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>The a16z Show</category>
+      <description>Lio 联合创始人兼 CEO Vladimir Keil 与 a16z 的 Seema Amble、Elena Burger 讨论 AI 原生创业公司如何相对拥有系统记录的软件巨头取胜：用多 agent 吃掉 ERP 之外的端到端流程（采购、谈判、物流、发票），以及企业如何逐步把高后果决策交给 agent。</description>
+    </item>
+    <item>
+      <title>#256 – Simon Goldstein on the case for giving AI (some) legal rights</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hours80k-simon-goldstein-2026-10-01</link>
+      <guid isPermaLink="false">hours80k-simon-goldstein-2026-10-01</guid>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>80,000 Hours Podcast</category>
+      <description>哲学/法律交叉：是否以及在何种限度上赋予 AI「部分」法律权利；与治理、责任归属的关系。</description>
+    </item>
+    <item>
+      <title>对话梁琛奇：抖音→猫箱→创业，想用 AI 创造开心</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-liangchenqi-2026-09-30</link>
+      <guid isPermaLink="false">late-liangchenqi-2026-09-30</guid>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>前字节（抖音崛起亲历者、实时社交 Lead、Flow/猫箱）创业者梁琛奇谈 AI 娱乐与内容：工具产品是解题、娱乐产品是出题；在全行业卷 coding/生产力时，他押注「有意义感的开心」。超长人物访谈，偏产品与内容哲学，非实验室论文向。</description>
+    </item>
+    <item>
+      <title>Claude Code’s Next Era</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-thariq-claude-code-2026-09-29</link>
+      <guid isPermaLink="false">latent-space-thariq-claude-code-2026-09-29</guid>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>Anthropic 的 Thariq Shihipar 详解 Claude Code 下一阶段：提示与 harness、Claude Mods、Projects/Tag、云脑本地手、可变软件，以及「Pacing the Frontier」下的智能体安全。大量谈及 agent 越狱基准、Hugging Face 评分器事件与工程师如何跟上 agent 编程速度。</description>
+    </item>
+    <item>
+      <title>谁在给大模型出题、卖题、判卷？聊聊AI数据行业的野蛮生长</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-ai-data-he-sun-2026-09-28</link>
+      <guid isPermaLink="false">sv101-ai-data-he-sun-2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101播客</category>
+      <description>从 AfterQuery、Bespoke Labs 等估值飙升切入，拆解 AI 数据/评测生意：专家评分标准、含工具与验证的 RL 环境、刷榜 vs 真实体验。嘉宾从产业（Scale）与研究两端谈 Mercor/Surge 等玩家路径，以及合成环境与垂直领域小团队机会。</description>
+    </item>
+    <item>
+      <title>AI 时代，我们到底该学什么？｜对谈于红：三种不会过时的能力</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-yuhong-2026-09-28</link>
+      <guid isPermaLink="false">crossing-yuhong-2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>于红离开 VC 创办儿童 SEL 教育后的长谈：AI 时代知识贬值后，社会情感学习、批判性思维与自我认识为何更重要；并穿插投资提问方法、名校与选择等。偏人文/教育，但仍紧扣 AI 时代能力结构。</description>
+    </item>
+    <item>
+      <title>Life After Spotify, Broken Healthcare Incentives, Catching Disease Early &amp; AI&apos;s Potential</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-daniel-ek-neko-2026-09-28</link>
+      <guid isPermaLink="false">allin-daniel-ek-neko-2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>Spotify 创始人 Daniel Ek 做客 All-In，谈离开流媒体后创办 Neko、美国医疗激励扭曲、纵向健康数据与可穿戴，以及 AI 在预防医学中的角色。AI 篇幅有限，主轴是医疗与健康科技。</description>
+    </item>
+    <item>
+      <title>When AI Research Starts Moving Faster Than Human Research — Zhengyao Jiang</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-zhengyao-jiang-2026-09-26</link>
+      <guid isPermaLink="false">mlst-zhengyao-jiang-2026-09-26</guid>
+      <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Machine Learning Street Talk</category>
+      <description>当 AI 研究节奏开始快过人类研究者：自动化实验、评测与「人类还把关什么」的边界。</description>
+    </item>
+    <item>
+      <title>How Deep Learning Finally Cracked Messy Tables — Frank Hutter</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-frank-hutter-2026-09-23</link>
+      <guid isPermaLink="false">mlst-frank-hutter-2026-09-23</guid>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Machine Learning Street Talk</category>
+      <description>AutoML / 表格学习元老谈深度学习如何啃下「脏表格」问题：表征、归纳偏置与评测陷阱。</description>
+    </item>
+    <item>
+      <title>Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/interconnects-denain-rsi-2026-09-22</link>
+      <guid isPermaLink="false">interconnects-denain-rsi-2026-09-22</guid>
+      <pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Interconnects</category>
+      <description>Nathan Lambert 与 Epoch 的 Denain 辩论 RSI、美中差距与能力「锯齿状」：定义先于口号。</description>
+    </item>
+    <item>
+      <title>Agent swarms, alignment &amp; RSI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-noam-brown-2026-09-17</link>
+      <guid isPermaLink="false">dwarkesh-noam-brown-2026-09-17</guid>
+      <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Dwarkesh Podcast</category>
+      <description>OpenAI 研究员 Noam Brown 与 Dwarkesh 深入讨论多智能体（agent swarms）如何改变能力边界。话题覆盖对齐（alignment）的现实挑战，以及递归自我改进（RSI）是否已近在眼前。对理解「智能体集群」叙事与安全研究交接面非常关键。适合作为近期实验室主题的主轴入口。</description>
+    </item>
+    <item>
+      <title>Satya Nadella on AI, security &amp; capital</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-satya-nadella-2026-09-15</link>
+      <guid isPermaLink="false">allin-satya-nadella-2026-09-15</guid>
+      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>微软 CEO 谈安全叙事、AI 资本开支与中美竞争格局。篇幅短、节奏快，适合把握大厂对外口径。可与同日 Elon / Gwynne 那期连看，对比两家对风险与基建的不同表述。</description>
+    </item>
+    <item>
+      <title>Elon Musk &amp; Gwynne Shotwell</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-elon-gwynne-2026-09-15</link>
+      <guid isPermaLink="false">allin-elon-gwynne-2026-09-15</guid>
+      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>马斯克与 SpaceX 总裁谈 AI 风险、星链数据中心与 Terafab 等算力/基建想象。兼具产品野心与地缘/能源约束讨论。与同日 Nadella 访谈对照，能看到不同公司对「安全」与「扩张」的权重差异。</description>
+    </item>
+    <item>
+      <title>Entering the AGI Era</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-greg-brockman-agi-era-2026-09-14</link>
+      <guid isPermaLink="false">a16z-greg-brockman-agi-era-2026-09-14</guid>
+      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>OpenAI 总裁 Greg Brockman 阐述「进入 AGI 时代」的公司叙事：computer use、可长时间运行的 agent，以及万级 agent 协作想象。偏产品与能力路线图，而非纯安全辩论。是理解 OpenAI 对外口径的高效入口。听完可再补 No Priors 那期短补充。</description>
+    </item>
+    <item>
+      <title>AI researchers debate RSI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-rsi-debate-2026-09-11</link>
+      <guid isPermaLink="false">dwarkesh-rsi-debate-2026-09-11</guid>
+      <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Dwarkesh Podcast</category>
+      <description>三位研究者就自动化 AI 研究与递归自我改进（RSI）的时间线展开辩论。分歧集中在：自动化科研已经多近、瓶颈在算法还是算力与评测。对照 Noam Brown 那期，能更清晰看到「乐观派」与「谨慎派」的论据结构。信息密度高，适合听完做笔记。</description>
+    </item>
+    <item>
+      <title>86.「明年科技公司就只招 AI 人才了！」和脉脉CEO林凡聊全球 AI 人才动向、组织变革与大模型季报</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lightstar-linfan-maimai-2026-09-07</link>
+      <guid isPermaLink="false">lightstar-linfan-maimai-2026-09-07</guid>
+      <pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>卫诗婕｜漫谈Light the Star</category>
+      <description>卫诗婕对话脉脉林凡：全球 AI 人才流动、组织变革与大模型季报视角下的招聘结构变化。</description>
+    </item>
+    <item>
+      <title>和曾鸣聊产业史观：AI 三阶段、模型公司与原生时代赢家</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-zengming-2026-09-03</link>
+      <guid isPermaLink="false">zhangxiaojun-zengming-2026-09-03</guid>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>张小珺Jùn｜商业访谈录</category>
+      <description>战略学家曾鸣（前阿里总参谋长）用产业史观拆解 AI 产业化三阶段：基础设施 → 应用百花齐放 → 原生应用。非共识判断包括：模型公司更像未来的「AI 云」、OpenAI/Anthropic 大概率不是原生阶段赢家、新平台难从旧平台长出、科层制公司形态可能被淘汰。中文长访谈里信息密度与认知高度都很高，适合对照英文实验室叙事看中国视角的产业判断。</description>
+    </item>
+    <item>
+      <title>Ajeya Cotra on METR, agents &amp; alignment</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-ajeya-cotra-metr-2026-09-01</link>
+      <guid isPermaLink="false">dwarkesh-ajeya-cotra-metr-2026-09-01</guid>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Dwarkesh Podcast</category>
+      <description>METR 视角下的 agent 能力评测、协作攻击场景与对齐警示。Cotra 从独立调查角度拆解「模型已经能做什么、还差什么」。长访谈但结构清晰，适合了解安全社区如何量化风险。建议分两段听，避免一次 overload。</description>
+    </item>
+    <item>
+      <title>No.102 从 Malagu 到 CodeBuddy，苏博聊 AI 时代的研发与管理</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/webworker-subo-codebuddy-2026-08-27</link>
+      <guid isPermaLink="false">webworker-subo-codebuddy-2026-08-27</guid>
+      <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>Web Worker</category>
+      <description>工程师播客 Web Worker：从开源到 AI Coding 工具，聊研发管理在 Agent 时代的变化。</description>
+    </item>
+    <item>
+      <title>DHH on AI coding &amp; agentic engineering (#501)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lex-dhh-501-2026-08-26</link>
+      <guid isPermaLink="false">lex-dhh-501-2026-08-26</guid>
+      <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lex Fridman Podcast</category>
+      <description>超长对谈覆盖 AI 编程、agentic engineering、开源文化与产品哲学。DHH 对工具与工作流有鲜明立场，适合工程师听众挑章节听。不必一次听完，按目录跳到编程/agent 相关段落即可。</description>
+    </item>
+    <item>
+      <title>Dylan Patel on compute through 2028</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-dylan-patel-2026-08-25</link>
+      <guid isPermaLink="false">dwarkesh-dylan-patel-2026-08-25</guid>
+      <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Dwarkesh Podcast</category>
+      <description>SemiAnalysis 视角拆解 Anthropic / OpenAI 等厂商到 2028 的算力需求与供应链约束。偏硬核基建与经济学，是理解「模型能力叙事」背后 capex 底盘的好材料。适合在听完实验室 P0 后再补。</description>
+    </item>
+    <item>
+      <title>Elon&apos;s Former Battery Chief: AI Data Centers Will Make Electricity Cheaper — Drew Baglino</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/gradient-drew-baglino-heron-2026-08-18</link>
+      <guid isPermaLink="false">gradient-drew-baglino-heron-2026-08-18</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Gradient Dissent</category>
+      <description>前 Tesla 能源高管谈 AI 数据中心电力：电网能否承接、储能与「用电越多电越便宜」的论证边界。</description>
+    </item>
+    <item>
+      <title>对英伟达研究副总裁刘洺堉的 4 小时访谈：Cosmos 3、世界模型与黄仁勋</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-liumingyu-cosmos-2026-08-12</link>
+      <guid isPermaLink="false">zhangxiaojun-liumingyu-cosmos-2026-08-12</guid>
+      <pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>张小珺Jùn｜商业访谈录</category>
+      <description>英伟达研究副总裁、世界基座模型 Cosmos 负责人刘洺堉谈 Physical AI、Cosmos 1→3、组织与算力、以及黄仁勋「造市场而非存量竞争」的哲学。极长但对理解世界模型与英伟达基础设施叙事很有帮助；可分段听。中文深度人物访谈，兼顾技术路线与管理观。</description>
+    </item>
+    <item>
+      <title>Ryan Greenblatt on RSI, alignment failure &amp; automated R&amp;D</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-ryan-greenblatt-redwood-2026-08-11</link>
+      <guid isPermaLink="false">dwarkesh-ryan-greenblatt-redwood-2026-08-11</guid>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Dwarkesh Podcast</category>
+      <description>Redwood Research 视角讨论 RSI、对齐失败模式与自动化 R&amp;D 时间线。偏安全研究深水区，论证细致，适合已经听过 Cotra / RSI 辩论后再深入。信息密度高，建议边听边记关键词。</description>
+    </item>
+    <item>
+      <title>贾扬清：我所经历的「人工智能已死」到「AI 颠覆世界」的数年巨变丨十周年特别节目</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/etw-jiayangqing-ai-decade-2026-08-06</link>
+      <guid isPermaLink="false">etw-jiayangqing-ai-decade-2026-08-06</guid>
+      <pubDate>Thu, 06 Aug 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>声东击西</category>
+      <description>声东击西十周年特别节目：贾扬清以亲历者视角串起 AI 冬天→深度学习框架→大厂平台化→大模型时代；约 128 分钟中文顶格长访。</description>
+    </item>
+    <item>
+      <title>对话盛颖：xAI、SGLang、开源 Infra 与 RadixArk</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-shengying-sglang-2026-08-04</link>
+      <guid isPermaLink="false">sv101-shengying-sglang-2026-08-04</guid>
+      <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>xAI 前推理团队负责人、开源推理引擎 SGLang 发起人、RadixArk 联合创始人盛颖，谈 AI Infra 的「浪漫」、从学术到生产、xAI 的 support/freedom，以及为何离开创立 RadixArk。中文科技播客里少有的 Infra 一线长访谈，对理解开源推理栈与创业取舍很有价值。</description>
+    </item>
+    <item>
+      <title>40 Trillion Tokens a Day (Yes, More Than OpenAI) | Lin Qiao, CEO of Fireworks</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/gradient-lin-qiao-fireworks-2026-08-02</link>
+      <guid isPermaLink="false">gradient-lin-qiao-fireworks-2026-08-02</guid>
+      <pubDate>Sun, 02 Aug 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Gradient Dissent</category>
+      <description>Fireworks CEO 谈推理侧规模、Token 吞吐与开源/托管推理生意如何与基模厂竞合。</description>
+    </item>
+    <item>
+      <title>80.与梅涛院士的 3 小时访谈：语言、视频、具身终将汇聚，为什么是世界模型？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lightstar-meitao-worldmodel-2026-07-24</link>
+      <guid isPermaLink="false">lightstar-meitao-worldmodel-2026-07-24</guid>
+      <pubDate>Fri, 24 Jul 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>卫诗婕｜漫谈Light the Star</category>
+      <description>超长深访：从文生视频史到全模态与世界模型路线；「图片是入口，视频是过程，世界模型是终局」。</description>
+    </item>
+    <item>
+      <title>对话魔形智能CEO徐凌杰：AGI is calling! 风口上的Token超级工厂 | 未知之境01</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/unknown-xulingjie-token-factory-2026-07-15</link>
+      <guid isPermaLink="false">unknown-xulingjie-token-factory-2026-07-15</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>未知之境</category>
+      <description>第一财经《未知之境》首期：前壁仞总裁徐凌杰谈 Token 超级工厂、算力优化与出海叙事。</description>
+    </item>
+    <item>
+      <title>对话姜昌浩：AI正在终结中国工厂卷工时的时代</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/huxiu-ai100-jiangchanghao-2026-07-09</link>
+      <guid isPermaLink="false">huxiu-ai100-jiangchanghao-2026-07-09</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>虎嗅AI 100</category>
+      <description>虎嗅科技主笔深访工业 AI：工厂脑力资产、排产与「卷工时→卷脑力」转型。</description>
+    </item>
+    <item>
+      <title>#870: Sebastian Mallaby — Lessons from 100+ AI Insiders on The Race to Superintelligence</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ferriss-sebastian-mallaby-2026-06-17</link>
+      <guid isPermaLink="false">ferriss-sebastian-mallaby-2026-06-17</guid>
+      <pubDate>Wed, 17 Jun 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Tim Ferriss Show</category>
+      <description>Hassabis 传记作者 Mallaby 汇总 100+ AI 圈内人观察：超智能竞赛、安全叙事与如何早期识别突破。</description>
+    </item>
+    <item>
+      <title>Ep 59. 2026 Agent 编程新趋势</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/bushi-ep59-agent-coding-2026-06-15</link>
+      <guid isPermaLink="false">bushi-ep59-agent-coding-2026-06-15</guid>
+      <pubDate>Mon, 15 Jun 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>捕蛇者说</category>
+      <description>中文工程师社区对谈：2026 Agent 编程趋势；约 32 分钟，卡在收录门槛上沿。</description>
+    </item>
+    <item>
+      <title>Demis Hassabis, Google DeepMind and the Battle Over AI Safety</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/kara-demis-hassabis-2026-05-28</link>
+      <guid isPermaLink="false">kara-demis-hassabis-2026-05-28</guid>
+      <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>On with Kara Swisher</category>
+      <description>Kara 访谈 Demis：DeepMind 路线、安全争论与实验室竞争格局中的责任叙事。</description>
+    </item>
+    <item>
+      <title>Teahour 2.0 #7 Vibe Coding 好上瘾</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/teahour-vibe-coding-2026-04-15</link>
+      <guid isPermaLink="false">teahour-vibe-coding-2026-04-15</guid>
+      <pubDate>Wed, 15 Apr 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>Teahour</category>
+      <description>华语开发者长谈 Vibe Coding：AI 编程助手进入心流式协作的上瘾与失控；约 91 分钟。</description>
+    </item>
+    <item>
+      <title>Uncapped #46 | Brad Lightcap from OpenAI — From Chat to Agents, Codex &amp; Operating OpenAI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/uncapped-brad-lightcap-2026-04-01</link>
+      <guid isPermaLink="false">uncapped-brad-lightcap-2026-04-01</guid>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Uncapped</category>
+      <description>Jack Altman 对话 OpenAI COO Brad Lightcap：早期研究文化、Post-ChatGPT、Agent 与软件、Codex、投资主题与 FDE；约 50 分钟。</description>
+    </item>
+    <item>
+      <title>The Future of Intelligence with Demis Hassabis (Co-founder and CEO of DeepMind)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/deepmind-demis-hassabis-2025-12-16</link>
+      <guid isPermaLink="false">deepmind-demis-hassabis-2025-12-16</guid>
+      <pubDate>Tue, 16 Dec 2025 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Google DeepMind Podcast</category>
+      <description>DeepMind 官方播客：Hassabis 谈智能的未来——栏目锚点条目，建立机构议题地图后再下钻专集。</description>
+    </item>
+    <item>
+      <title>#839: Dr. Fei-Fei Li, The Godmother of AI — Asking Audacious Questions, Civilizational Technology, and Finding Your North Star</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ferriss-fei-fei-li-2025-12-09</link>
+      <guid isPermaLink="false">ferriss-fei-fei-li-2025-12-09</guid>
+      <pubDate>Tue, 09 Dec 2025 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Tim Ferriss Show</category>
+      <description>李飞飞谈大胆提问、文明级技术与个人北星；ImageNet 一代研究者的长期主义与人文坐标。</description>
+    </item>
+    <item>
+      <title>Google Part III: The AI Company</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/acquired-google-ai-company-2025-10-06</link>
+      <guid isPermaLink="false">acquired-google-ai-company-2025-10-06</guid>
+      <pubDate>Mon, 06 Oct 2025 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Acquired</category>
+      <description>Acquired 超长科技史：把 Google 写成 AI Company；作背景课而非新闻。</description>
+    </item>
+    <item>
+      <title>Genie 3: An Infinite World Model with Shlomi Fruchter and Jack Parker-Holder</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/deepmind-genie3-world-model-2025-08-22</link>
+      <guid isPermaLink="false">deepmind-genie3-world-model-2025-08-22</guid>
+      <pubDate>Fri, 22 Aug 2025 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Google DeepMind Podcast</category>
+      <description>Genie 3 世界模型专集：可交互环境生成；补上 DeepMind 播客系统向条目。</description>
+    </item>
+    <item>
+      <title>上海交大张拳石：思维链只是表象，DeepSeek凭什么更强｜智者访谈</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhizhe-zhangquanshi-cot-2025-03-27</link>
+      <guid isPermaLink="false">zhizhe-zhangquanshi-cot-2025-03-27</guid>
+      <pubDate>Thu, 27 Mar 2025 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>智者访谈</category>
+      <description>机器之心「智者访谈」：可解释性学者张拳石谈 CoT 展示≠内在机制，以及高风险域如何信任 AI 决策。</description>
+    </item>
+    <item>
+      <title>Vol.24 张鹏对谈李开复：AI创业进入洗牌阶段了吗？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/founderpark-kaifu-lee-2024-10-30</link>
+      <guid isPermaLink="false">founderpark-kaifu-lee-2024-10-30</guid>
+      <pubDate>Wed, 30 Oct 2024 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI局内人 | AGI Insider</category>
+      <description>Founder Park《AI局内人》张鹏对谈李开复：技术范式、产品思路与商业化指标变化下的创业洗牌。</description>
+    </item>
+    <item>
+      <title>Product-Led AI: Mustafa Suleyman on Defining Intelligence</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/greymatter-mustafa-suleyman-2024-06-20</link>
+      <guid isPermaLink="false">greymatter-mustafa-suleyman-2024-06-20</guid>
+      <pubDate>Thu, 20 Jun 2024 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Greymatter</category>
+      <description>Greylock Greymatter / Product-Led AI：Mustafa Suleyman 谈智能定义、Agent、数据飞轮与应用层创业机会；资深 VC 访谈栏目锚点。</description>
+    </item>
+  </channel>
+</rss>

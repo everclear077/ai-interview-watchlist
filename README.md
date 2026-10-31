@@ -105,10 +105,12 @@ R 仍可往单体 `data.json` 追加正文；上线前用 splitter 拆文件。�
 ```
 
 ```bash
-./scripts/sync-data.sh          # thumbs + monitors + split
+./scripts/sync-data.sh          # thumbs + monitors + split（含 feed.xml / rss.xml）
 ./scripts/sync-data.sh --push   # 同上并 commit / push（当 remote 存在）
 node scripts/split-data.mjs /path/to/R/data.json
-node scripts/selftest.js
+node scripts/build-feed.mjs     # 只根据 data/index.json 重写 feed
+node scripts/selftest.js        # 含 RSS 校验；MCP 冒烟需先在 mcp/ 安装依赖
+cd mcp && npm install && node smoke.mjs
 ```
 
 **不要**把 R 的嵌入式 `index.html` / `index-midnight.html` 提交进本仓库。推送后 GitHub Pages 通常 1–2 分钟内更新。
@@ -125,6 +127,48 @@ node scripts/selftest.js
 - 硅谷101：`https://everclear077.github.io/ai-interview-watchlist/#/show/sv101`
 - 中国·科技媒体：`https://everclear077.github.io/ai-interview-watchlist/#/topic/china`
 
+## RSS
+
+订阅地址（GitHub Pages 静态文件，阅读器直接添加）：
+
+**https://everclear077.github.io/ai-interview-watchlist/feed.xml**
+
+`rss.xml` 是同一份 RSS 2.0 的副本。NetNewsWire、Feedly、Inoreader、Thunderbird 等：选「添加订阅 / Add feed」，粘贴上面的地址。首页和 `404.html` 带了 `<link rel="alternate" type="application/rss+xml">`，支持发现订阅的浏览器也会认。
+
+每条是一集：`guid` 是 episode id，标题、`pubDate`（条目 `date`）、绝对链接 `https://everclear077.github.io/ai-interview-watchlist/#/ep/<id>`、摘要。摘要用 `summary`；没有 summary 时从 `essay.zh` 截一段，不编正文。按日期从新到旧，当前目录全部收入（超过 500 条时只留最新 500）。频道标题是「长镜 · AI」，说明里带 Long Lens AI；`lastBuildDate` 来自 `data/index.json` 的 `lastUpdated`。
+
+`scripts/split-data.mjs` 在拆分单体，或 `--stub-from-index` 时，会重写 `feed.xml` 和 `rss.xml`。每日 `scripts/sync-data.sh` 因此会把 feed 一起更新。只改了已发布的 `data/index.json` 时，也可以单独跑 `node scripts/build-feed.mjs`。
+
+## MCP（只读）
+
+Pages 上没有远程 MCP 进程。仓库里的 `mcp/` 是本机 stdio 服务器（当前 MCP TypeScript SDK v2：`@modelcontextprotocol/server`，也就是原先 `@modelcontextprotocol/sdk` 的现行包），只读取上面的公开 JSON。
+
+```bash
+cd mcp
+npm install
+```
+
+Cursor 或 Claude Desktop 使用同一段配置。把路径换成你的克隆目录：
+
+```json
+{
+  "mcpServers": {
+    "long-lens-ai": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/ai-interview-watchlist/mcp/server.js"]
+    }
+  }
+}
+```
+
+工具只有三个，都是只读、无需登录：
+
+- `list_episodes`：按 query / show / topic（或 category）/ hasEssay / hasAnalysis / hasTranscript / limit 筛选公开目录
+- `get_episode`：按 id 读取 `data/episodes/<id>.json`
+- `site_info`：标题、`lastUpdated`、计数、feed URL
+
+不要把 `https://everclear077.github.io/ai-interview-watchlist/` 配成 SSE 或 HTTP MCP 地址。更全的说明在 `docs/mcp.md`。
+
 ## 文件
 
 | 文件 | 说明 |
@@ -133,9 +177,14 @@ node scripts/selftest.js
 | `styles.css` | 夜馆目录 + 阅读页纸色 |
 | `media.js` | 路由、slug、嵌入、markdown、字段探测、主题与 `t()` 文案表 |
 | `app.js` | 发现 / 栏目 / 主题 / 单集 UI 与音频 |
-| `404.html` | Pages 路径 → hash |
+| `404.html` | Pages 路径 → hash；也带 RSS alternate |
+| `feed.xml` | RSS 2.0 订阅（Pages 静态文件） |
+| `rss.xml` | 与 `feed.xml` 相同的副本 |
 | `data/index.json` | 列表用瘦目录 |
 | `data/episodes/<id>.json` | 单集正文 |
 | `thumbs/` | 封面；出处帧可放 `thumbs/frames/` |
-| `scripts/split-data.mjs` | 单体 → 模块树（剥 `coverDataUri`） |
+| `scripts/build-feed.mjs` | 目录 → `feed.xml` / `rss.xml` |
+| `scripts/split-data.mjs` | 单体 → 模块树（剥 `coverDataUri`），并重写 feed |
 | `scripts/sync-data.sh` | thumbs + monitors + split |
+| `mcp/` | 只读 stdio MCP 服务器 |
+| `docs/mcp.md` | MCP 安装与工具说明 |

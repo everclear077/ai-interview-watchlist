@@ -295,9 +295,16 @@ assert("app.js uses cover tiles not ledger", appSrc.indexOf("tile-hit") !== -1 &
 assert("index title is 长镜 · AI", htmlSrc.indexOf("长镜 · AI") !== -1 && htmlSrc.indexOf("访谈文库") === -1 && htmlSrc.indexOf("观看列表") === -1);
 assert("index has Long Lens AI", htmlSrc.indexOf("Long Lens AI") !== -1);
 assert("app.js brand via t()", appSrc.indexOf('t("brand")') !== -1 && appSrc.indexOf("访谈文库") === -1 && appSrc.indexOf("SITE_TITLE") === -1);
+assert("footer rss line", appSrc.indexOf('t("footer4")') !== -1);
+assert("footer rss zh", WL.t("footer4", null, "zh").indexOf("订阅") !== -1 && WL.t("footer4", null, "zh").indexOf("feed.xml") !== -1);
+assert("footer rss en", WL.t("footer4", null, "en").indexOf("Subscribe") !== -1 && WL.t("footer4", null, "en").indexOf("feed.xml") !== -1);
 assert("app.js uses bodyForLang", appSrc.indexOf("bodyForLang") !== -1 && appSrc.indexOf("unavailableEssay") !== -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261024h") !== -1);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024g") === -1 && htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261031a") !== -1);
+assert("index cache-bust on three assets", (htmlSrc.match(/\?v=20261031a/g) || []).length === 3);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024h") === -1 && htmlSrc.indexOf("?v=20261024g") === -1 && htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("rss alternate link", htmlSrc.indexOf('rel="alternate"') !== -1 && htmlSrc.indexOf("application/rss+xml") !== -1 && htmlSrc.indexOf("https://everclear077.github.io/ai-interview-watchlist/feed.xml") !== -1);
+var notFoundSrc = fs.readFileSync(path.join(__dirname, "..", "404.html"), "utf8");
+assert("404 rss alternate", notFoundSrc.indexOf("application/rss+xml") !== -1 && notFoundSrc.indexOf("https://everclear077.github.io/ai-interview-watchlist/feed.xml") !== -1);
 assert("index FOUC theme script", htmlSrc.indexOf("wl-theme") !== -1 && htmlSrc.indexOf("data-theme") !== -1);
 assert("index FOUC lang script", htmlSrc.indexOf("wl-lang") !== -1 && htmlSrc.indexOf("data-lang") !== -1 && htmlSrc.indexOf("zh-CN") !== -1);
 assert("index FOUC before stylesheet", htmlSrc.indexOf("localStorage.getItem") < htmlSrc.indexOf("styles.css"));
@@ -359,6 +366,146 @@ assert("brand en is Long Lens AI", WL.t("brand", null, "en") === "Long Lens AI")
 assert("unavailable essay en", WL.t("unavailableEssay", null, "en") === "English close read not available yet");
 assert("unavailable analysis en", WL.t("unavailableAnalysis", null, "en") === "English analysis not available yet");
 assert("unavailable transcript en", WL.t("unavailableTranscript", null, "en") === "English transcript not available yet");
+
+function runNode(args, timeoutMs) {
+  return require("child_process").spawnSync(process.execPath, args, {
+    cwd: path.join(__dirname, ".."),
+    encoding: "utf8",
+    timeout: timeoutMs || 60000,
+    maxBuffer: 20 * 1024 * 1024
+  });
+}
+
+var feedCheck = runNode(["scripts/build-feed.mjs", "--self-check"], 30000);
+if (feedCheck.status !== 0) console.log(feedCheck.stdout || "", feedCheck.stderr || "");
+assert("feed generator self-check", feedCheck.status === 0);
+
+var feedMatch = runNode(["scripts/build-feed.mjs", "--check"], 30000);
+if (feedMatch.status !== 0) console.log(feedMatch.stdout || "", feedMatch.stderr || "");
+assert("feed.xml matches catalog", feedMatch.status === 0);
+
+function expectedRssDate(value) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ""));
+  if (!m) return "";
+  var y = +m[1], mo = +m[2], d = +m[3];
+  return new Date(Date.UTC(y, mo - 1, d, 12, 0, 0)).toUTCString();
+}
+
+function loadFeed(file) {
+  var script = [
+    "import json, sys, xml.etree.ElementTree as ET",
+    "root = ET.parse(sys.argv[1]).getroot()",
+    "if root.tag != 'rss': raise SystemExit('root is ' + root.tag)",
+    "channel = root.find('channel')",
+    "atom = '{http://www.w3.org/2005/Atom}link'",
+    "self_link = channel.find(atom)",
+    "items = []",
+    "for item in channel.findall('item'):",
+    "    items.append({",
+    "        'title': item.findtext('title') or '',",
+    "        'link': item.findtext('link') or '',",
+    "        'guid': item.findtext('guid') or '',",
+    "        'pubDate': item.findtext('pubDate') or '',",
+    "        'description': item.findtext('description') or '',",
+    "        'categories': [c.text or '' for c in item.findall('category')]",
+    "    })",
+    "out = {",
+    "    'version': root.get('version'),",
+    "    'title': channel.findtext('title') or '',",
+    "    'link': channel.findtext('link') or '',",
+    "    'description': channel.findtext('description') or '',",
+    "    'lastBuildDate': channel.findtext('lastBuildDate') or '',",
+    "    'self': self_link.get('href') if self_link is not None else '',",
+    "    'items': items",
+    "}",
+    "json.dump(out, sys.stdout, ensure_ascii=False)"
+  ].join("\n");
+  var parsed = require("child_process").spawnSync("python3", ["-c", script, file], {
+    encoding: "utf8",
+    maxBuffer: 20 * 1024 * 1024
+  });
+  if (parsed.status !== 0) throw new Error(parsed.stderr || "feed xml parse failed");
+  return JSON.parse(parsed.stdout);
+}
+
+if (fs.existsSync(indexPath)) {
+  var feedPath = path.join(__dirname, "..", "feed.xml");
+  var rssPath = path.join(__dirname, "..", "rss.xml");
+  var feedXml = "";
+  var feed = null;
+  var feedErr = "";
+  try {
+    feedXml = fs.readFileSync(feedPath, "utf8");
+    feed = loadFeed(feedPath);
+  } catch (e) {
+    feedErr = e.message;
+  }
+  assert("feed.xml parses as rss", !!feed && !feedErr);
+  if (feedErr) console.log(feedErr);
+  if (feed) {
+    var catalog = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+    var rssXml = fs.readFileSync(rssPath, "utf8");
+    assert("rss.xml is a copy of feed.xml", rssXml === feedXml);
+    assert("feed version", feed.version === "2.0");
+    assert("feed channel title", feed.title === "长镜 · AI");
+    assert("feed description names Long Lens AI", feed.description.indexOf("Long Lens AI") !== -1 && feed.description.length < 240);
+    assert("feed site link", feed.link === "https://everclear077.github.io/ai-interview-watchlist/");
+    assert("feed self link", feed.self === "https://everclear077.github.io/ai-interview-watchlist/feed.xml");
+    assert("feed lastBuildDate from lastUpdated", feed.lastBuildDate === expectedRssDate(catalog.lastUpdated) && !!feed.lastBuildDate);
+    assert("feed includes every episode", feed.items.length === catalog.items.length && catalog.items.length > 0 && catalog.items.length <= 500);
+    assert("feed has no coverDataUri", feedXml.indexOf("coverDataUri") === -1 && feedXml.indexOf("data:image") === -1);
+    assert("feed does not dump essay padding", feedXml.indexOf("门禁续写") === -1);
+    var byGuid = {};
+    feed.items.forEach(function (item) { byGuid[item.guid] = item; });
+    var sortedIds = catalog.items.map(function (it, i) {
+      return { id: it.id, date: /^\d{4}-\d{2}-\d{2}$/.test(it.date || "") ? it.date : "", i: i };
+    }).sort(function (a, b) {
+      if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+      return a.i - b.i;
+    });
+    assert("feed newest id first", feed.items[0] && feed.items[0].guid === sortedIds[0].id);
+    var datesOk = true;
+    var prevDate = "9999-99-99";
+    var linksOk = true;
+    var summaryOk = true;
+    var pubOk = true;
+    catalog.items.forEach(function (it) {
+      var entry = byGuid[it.id];
+      if (!entry) {
+        linksOk = false;
+        summaryOk = false;
+        return;
+      }
+      var expectLink = "https://everclear077.github.io/ai-interview-watchlist/#/ep/" + encodeURIComponent(it.id);
+      if (entry.link !== expectLink || entry.guid !== it.id) linksOk = false;
+      if (String(it.summary || "").trim()) {
+        if (entry.description !== String(it.summary).trim()) summaryOk = false;
+      } else if (entry.description.length > 361) {
+        summaryOk = false;
+      }
+      if (expectedRssDate(it.date) && entry.pubDate !== expectedRssDate(it.date)) pubOk = false;
+    });
+    feed.items.forEach(function (entry) {
+      var src = catalog.items.filter(function (it) { return it.id === entry.guid; })[0];
+      var d = src && /^\d{4}-\d{2}-\d{2}$/.test(src.date || "") ? src.date : "";
+      if (d > prevDate) datesOk = false;
+      if (!d && prevDate) prevDate = "";
+      else prevDate = d;
+    });
+    assert("feed links are absolute episode urls", linksOk);
+    assert("feed descriptions are summaries", summaryOk);
+    assert("feed pubDates follow item dates", pubOk);
+    assert("feed sorted newest first", datesOk);
+  }
+}
+
+var mcpServer = path.join(__dirname, "..", "mcp", "node_modules", "@modelcontextprotocol", "server");
+var mcpSmoke = runNode(["mcp/smoke.mjs"], 60000);
+if (!fs.existsSync(mcpServer) || mcpSmoke.status !== 0) {
+  console.log(mcpSmoke.stdout || "");
+  console.log(mcpSmoke.stderr || "");
+}
+assert("mcp read-only smoke", fs.existsSync(mcpServer) && mcpSmoke.status === 0);
 
 console.log(fails ? "\n" + fails + " failed" : "\nall passed");
 process.exit(fails ? 1 : 0);
