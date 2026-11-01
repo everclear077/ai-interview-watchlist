@@ -60,39 +60,138 @@ export function flagsOf(it) {
 }
 
 /**
- * Collapse duplicated blank-line paragraphs.
- * - split on /\n\s*\n/
+ * Collapse duplicated essay/analysis prose. Returns the original string
+ * when nothing was removed.
+ *
+ * Lines (split on "\n"):
+ * - drop consecutive lines that are equal after trim
+ * - any non-empty trimmed line that still appears ≥3 times keeps the first only
+ *
+ * Paragraphs (split on /\n\s*\n/):
  * - drop consecutive paragraphs that are equal after trim
- * - if any paragraph still appears ≥3 times, keep the first only (no length floor)
- * A paragraph that appears exactly twice and is not consecutive stays.
- * Returns the original string when nothing was removed.
+ * - the same consecutive / ≥3 rules also treat a trailing self-check stamp as
+ *   the same key: （自检块 N） or (自检块 N). The first raw paragraph is kept.
+ * - any exact trimmed paragraph that still appears ≥3 times keeps the first
+ *   only (no length floor)
+ *
+ * A paragraph or line that appears exactly twice and is not consecutive stays.
+ * Numbered headings such as ## 可核对点（1） are not stamps.
  */
-export function dedupeProse(text) {
-  const raw = String(text ?? "");
-  const parts = raw.split(/\n\s*\n/);
+const SELFCHECK_SUFFIX = /[（(]\s*自检块\s*\d+\s*[）)]\s*$/u;
+
+function stampKey(part) {
+  return part.trim().replace(SELFCHECK_SUFFIX, "").trim();
+}
+
+function samePara(a, b) {
+  if (a.trim() === b.trim()) return true;
+  const ka = stampKey(a);
+  const kb = stampKey(b);
+  return ka.length > 0 && ka === kb;
+}
+
+function paraFreqKey(part) {
+  return stampKey(part) || part.trim();
+}
+
+function tidyBlankLines(lines) {
+  const tidy = [];
+  let blankRun = 0;
+  for (const ln of lines) {
+    if (!ln.trim()) {
+      blankRun += 1;
+      if (blankRun === 1) tidy.push("");
+    } else {
+      blankRun = 0;
+      tidy.push(ln);
+    }
+  }
+  while (tidy.length && tidy[0] === "") tidy.shift();
+  while (tidy.length && tidy[tidy.length - 1] === "") tidy.pop();
+  return tidy.join("\n");
+}
+
+function dedupeLines(text) {
+  const lines = text.split("\n");
   const collapsed = [];
+  let removed = false;
+  for (const ln of lines) {
+    const key = ln.trim();
+    const prev = collapsed[collapsed.length - 1];
+    if (key && prev !== undefined && key === prev.trim()) {
+      removed = true;
+      continue;
+    }
+    collapsed.push(ln);
+  }
+  const counts = new Map();
+  for (const ln of collapsed) {
+    const key = ln.trim();
+    if (!key) continue;
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  const seen = new Set();
+  const kept = [];
+  for (const ln of collapsed) {
+    const key = ln.trim();
+    if (key && (counts.get(key) || 0) >= 3) {
+      if (seen.has(key)) {
+        removed = true;
+        continue;
+      }
+      seen.add(key);
+    }
+    kept.push(ln);
+  }
+  if (!removed) return { text, removed: false };
+  return { text: tidyBlankLines(kept), removed: true };
+}
+
+function dedupeParas(text) {
+  const parts = text.split(/\n\s*\n/);
+  const collapsed = [];
+  let removed = false;
   for (const part of parts) {
     const prev = collapsed[collapsed.length - 1];
-    if (prev !== undefined && prev.trim() === part.trim()) continue;
+    if (prev !== undefined && samePara(prev, part)) {
+      removed = true;
+      continue;
+    }
     collapsed.push(part);
   }
   const counts = new Map();
   for (const part of collapsed) {
-    const key = part.trim();
+    const key = paraFreqKey(part);
     counts.set(key, (counts.get(key) || 0) + 1);
   }
   const seen = new Set();
   const kept = [];
   for (const part of collapsed) {
-    const key = part.trim();
-    if (counts.get(key) >= 3) {
-      if (seen.has(key)) continue;
+    const key = paraFreqKey(part);
+    if ((counts.get(key) || 0) >= 3) {
+      if (seen.has(key)) {
+        removed = true;
+        continue;
+      }
       seen.add(key);
     }
     kept.push(part);
   }
-  if (kept.length === parts.length && kept.every((part, i) => part === parts[i])) return raw;
-  return kept.join("\n\n");
+  if (!removed) return { text, removed: false };
+  return { text: kept.filter((part) => part.trim()).join("\n\n"), removed: true };
+}
+
+export function dedupeProse(text) {
+  const raw = String(text ?? "");
+  let current = raw;
+  let changed = false;
+  for (const pass of [dedupeLines, dedupeParas, dedupeLines]) {
+    const out = pass(current);
+    if (!out.removed) continue;
+    current = out.text;
+    changed = true;
+  }
+  return changed ? current : raw;
 }
 
 function primaryProseBody(block) {
@@ -343,9 +442,42 @@ function selfCheckDedupe() {
     "ABAB short paragraphs ×66 keep each once",
     dedupeProse(abab) === [heading, restated].join("\n\n")
   );
+  const qcLine = "（质检：核对原片。）";
+  const qcSpam = Array.from({ length: 40 }, () => qcLine).join("\n");
+  assertCheck("质检 line ×40 collapses to one", dedupeProse(qcSpam) === qcLine);
+  const qcEmbedded = "前文。\n\n" + qcSpam + "\n\n### 质检复述";
+  assertCheck(
+    "质检 lines inside prose collapse to one",
+    dedupeProse(qcEmbedded) === "前文。\n\n" + qcLine + "\n\n### 质检复述"
+  );
+  const scatteredQc = ["甲", qcLine, "乙", qcLine, "丙", qcLine].join("\n");
+  assertCheck(
+    "scattered 质检 line ×3 keeps the first",
+    dedupeProse(scatteredQc) === ["甲", qcLine, "乙", "丙"].join("\n")
+  );
+  const stampBody = "在公开材料范围内自检：是否改日程。";
+  const stamps = [1, 2, 3, 4, 5].map((n) => stampBody + "（自检块 " + n + "）").join("\n\n");
+  assertCheck("自检块 1..5 near-dups keep the first", dedupeProse(stamps) === stampBody + "（自检块 1）");
+  const halfwidth = [1, 2, 3].map((n) => "same point (自检块 " + n + ")").join("\n\n");
+  assertCheck(
+    "halfwidth 自检块 near-dups keep the first",
+    dedupeProse(halfwidth) === "same point (自检块 1)"
+  );
+  const stampTwice = [stampBody + "（自检块 1）", "中间", stampBody + "（自检块 2）"].join("\n\n");
+  assertCheck("non-adjacent 自检块 ×2 stays", dedupeProse(stampTwice) === stampTwice);
+  const heads = ["## 可核对点（1）", "## 可核对点（9）", "## 可核对点（17）"].join("\n\n");
+  assertCheck("numbered headings are not self-check stamps", dedupeProse(heads) === heads);
+  const block = "第一行\n第二行";
+  const multi = [block, "中间", block, "另一段", block].join("\n\n");
+  assertCheck(
+    "multi-line paragraph ×3 keeps the first",
+    dedupeProse(multi) === [block, "中间", "另一段"].join("\n\n")
+  );
   const clean = "甲\n \n乙";
   assertCheck("clean prose is unchanged", dedupeProse(clean) === clean);
   assertCheck("dedupe is idempotent", dedupeProse(dedupeProse(repeated)) === closing);
+  assertCheck("质检 dedupe is idempotent", dedupeProse(dedupeProse(qcEmbedded)) === dedupeProse(qcEmbedded));
+  assertCheck("自检块 dedupe is idempotent", dedupeProse(dedupeProse(stamps)) === stampBody + "（自检块 1）");
 
   const transcript = { source: "official", md: repeated };
   const input = {
