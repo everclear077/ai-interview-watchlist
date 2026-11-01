@@ -64,8 +64,9 @@ export function flagsOf(it) {
  * when nothing was removed.
  *
  * Lines (split on "\n"):
- * - drop consecutive lines that are equal after trim
- * - any non-empty trimmed line that still appears ≥3 times keeps the first only
+ * - drop consecutive lines that are equal after trim (including structure)
+ * - a trimmed line that still appears ≥3 times keeps the first only when it
+ *   is at least GLOBAL_LINE_MIN characters and is not markdown structure
  *
  * Paragraphs (split on /\n\s*\n/):
  * - drop consecutive paragraphs that are equal after trim
@@ -76,7 +77,24 @@ export function flagsOf(it) {
  *
  * A paragraph or line that appears exactly twice and is not consecutive stays.
  * Numbered headings such as ## 可核对点（1） are not stamps.
+ * Paragraph frequency is unchanged: a heading that is its own blank-line
+ * paragraph (### 质检复述) still collapses.
  */
+// （质检：核对原片。） is 10 trimmed characters. Shorter lines stay.
+const GLOBAL_LINE_MIN = 10;
+
+function isStructuralLine(key) {
+  if (/^#{1,6}\s/u.test(key)) return true;
+  if (/^(?:`{3,}|~{3,})/u.test(key)) return true;
+  if (/^(?:(?:=\s*){3,}|(?:-\s*){3,}|(?:\*\s*){3,}|(?:_\s*){3,})$/u.test(key)) return true;
+  if (/^\|.*\|$/u.test(key)) return true;
+  return false;
+}
+
+function globallyDedupableLine(key) {
+  return key.length >= GLOBAL_LINE_MIN && !isStructuralLine(key);
+}
+
 const SELFCHECK_SUFFIX = /[（(]\s*自检块\s*\d+\s*[）)]\s*$/u;
 
 function stampKey(part) {
@@ -127,14 +145,14 @@ function dedupeLines(text) {
   const counts = new Map();
   for (const ln of collapsed) {
     const key = ln.trim();
-    if (!key) continue;
+    if (!globallyDedupableLine(key)) continue;
     counts.set(key, (counts.get(key) || 0) + 1);
   }
   const seen = new Set();
   const kept = [];
   for (const ln of collapsed) {
     const key = ln.trim();
-    if (key && (counts.get(key) || 0) >= 3) {
+    if (globallyDedupableLine(key) && (counts.get(key) || 0) >= 3) {
       if (seen.has(key)) {
         removed = true;
         continue;
@@ -185,7 +203,11 @@ export function dedupeProse(text) {
   const raw = String(text ?? "");
   let current = raw;
   let changed = false;
-  for (const pass of [dedupeLines, dedupeParas, dedupeLines]) {
+  // Paragraphs first so blank-line ABAB (a repeated heading paragraph plus a
+  // repeated prose paragraph) collapses while both copies are still intact.
+  // Line frequency then drops leftover boilerplate. The second paragraph pass
+  // catches paragraphs that become duplicates once those lines are gone.
+  for (const pass of [dedupeParas, dedupeLines, dedupeParas]) {
     const out = pass(current);
     if (!out.removed) continue;
     current = out.text;
@@ -454,6 +476,73 @@ function selfCheckDedupe() {
   assertCheck(
     "scattered 质检 line ×3 keeps the first",
     dedupeProse(scatteredQc) === ["甲", qcLine, "乙", "丙"].join("\n")
+  );
+  const longQc = "（质检：核对原片时间轴与关键数字。）";
+  const scatteredLongQc = ["甲", longQc, "乙", longQc, "丙", longQc].join("\n");
+  assertCheck(
+    "scattered longer 质检 line ×3 keeps the first",
+    dedupeProse(scatteredLongQc) === ["甲", longQc, "乙", "丙"].join("\n")
+  );
+  assertCheck("质检 boilerplate meets the line floor", qcLine.length === GLOBAL_LINE_MIN && longQc.length > GLOBAL_LINE_MIN);
+
+  function separatedThrice(line) {
+    return [line, "甲", line, "乙", line].join("\n");
+  }
+  function assertLineKept(name, line) {
+    const doc = separatedThrice(line);
+    assertCheck(name, dedupeProse(doc) === doc);
+  }
+  assertLineKept("heading ### 要点 ×3 is not frequency-culled", "### 要点");
+  assertLineKept("fence ×3 is not frequency-culled", "```");
+  assertLineKept("rule --- ×3 is not frequency-culled", "---");
+  const longHeading = "### 要点说明这一节的机制";
+  assertCheck("long heading exceeds the line floor", longHeading.length > GLOBAL_LINE_MIN);
+  assertLineKept("long ATX heading ×3 is not frequency-culled", longHeading);
+  assertLineKept("info-string fence ×3 is not frequency-culled", "```markdown");
+  assertLineKept("tilde fence ×3 is not frequency-culled", "~~~markdown");
+  assertLineKept("long dash rule ×3 is not frequency-culled", "-".repeat(12));
+  assertLineKept("long equals rule ×3 is not frequency-culled", "=".repeat(12));
+  assertLineKept("long star rule ×3 is not frequency-culled", "*".repeat(12));
+  assertLineKept("spaced dash rule ×3 is not frequency-culled", "- ".repeat(6).trim());
+  assertLineKept("pipe table row ×3 is not frequency-culled", "| 列一 | 列二 | 列三 |");
+  const indentedFences = ["    ```markdown", "甲", "```markdown", "乙", "  ```markdown  "].join("\n");
+  assertCheck(
+    "indented info fence ×3 is not frequency-culled",
+    dedupeProse(indentedFences) === indentedFences
+  );
+  const sections = ["### 要点\n甲的正文。", "### 要点\n乙的正文。", "### 要点\n丙的正文。"].join("\n\n");
+  assertCheck(
+    "repeated heading on distinct paragraphs stays",
+    dedupeProse(sections) === sections
+  );
+  assertLineKept("line under the floor ×3 stays", "一二三四五六七八九");
+  assertCheck("under-floor line is shorter than 质检 boilerplate", "一二三四五六七八九".length === GLOBAL_LINE_MIN - 1);
+  const floorLine = "x".repeat(GLOBAL_LINE_MIN);
+  assertCheck(
+    "non-structural line at the floor ×3 keeps the first",
+    dedupeProse(separatedThrice(floorLine)) === [floorLine, "甲", "乙"].join("\n")
+  );
+  const listItem = "- 这是一条足够长的列表项，重复三次应只留第一次。";
+  assertCheck("list item exceeds the line floor", listItem.length > GLOBAL_LINE_MIN);
+  assertCheck(
+    "repeated list item ×3 keeps the first",
+    dedupeProse(separatedThrice(listItem)) === [listItem, "甲", "乙"].join("\n")
+  );
+  assertCheck(
+    "consecutive identical headings still collapse",
+    dedupeProse("### 要点\n### 要点\n### 要点") === "### 要点"
+  );
+  assertCheck(
+    "consecutive identical fences still collapse",
+    dedupeProse("```\n```\n```") === "```"
+  );
+  assertCheck(
+    "consecutive identical rules still collapse",
+    dedupeProse("---\n---\n---") === "---"
+  );
+  assertCheck(
+    "structural line dedupe is idempotent",
+    dedupeProse(dedupeProse(sections)) === sections
   );
   const stampBody = "在公开材料范围内自检：是否改日程。";
   const stamps = [1, 2, 3, 4, 5].map((n) => stampBody + "（自检块 " + n + "）").join("\n\n");
