@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-01",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -116,7 +116,7 @@
       }
     ]
   },
-  "lastScan": "2026-10-30T13:20:00Z",
-  "lastScanNote": "RSS/公开页交叉：SV101/LateTalk 无新增长访谈；B站 search 部分 412。本轮新增均为英文播客（S-1 周 + 80K/RAND 安全）。",
+  "lastScan": "2026-11-01T10:05:41Z",
+  "lastScanNote": "2026-11-01 手动日更：英文 RSS/iTunes 检索后新增 3 条（CogRev AI:AM Carbon/Arena/Mistral；All-In E295 S-1；YC Copplestone）。中文+B站：读全部 enabled monitors；小宇宙/油管镜像与已入库栏目交叉。启用创作者 8 个扫描：近窗未见未入库 ≥30min 长访谈（Vitalik/Astra/Lindon/LateTalk184/Crossing/LinkStart UDL 等已在库）。B站 search/space 仍见 412/空 JSON；无新 candidates。Interconnects Kimi、MLST Hartnett、a16z Cosign(<30m) 等见排除说明。",
   "lastScanCandidates": []
 }

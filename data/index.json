@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-10-30",
+  "lastUpdated": "2026-11-01",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,119 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "cogrev-aiam-carbon-arena-mistral-2026-10-31",
+      "title": "AI:AM: Carbon in the Arena, Mistral's Le Chonk, the Agent-Run Economy, Ferroelectric RAM + New Hacks",
+      "guest": "Anastasios Angelopoulos（Arena）；Debo Olaosebikan（Kepler）；Samvit Ramadurgam（Union）；Michael Freeman（ServiceNow）；Sagar Vaze（Mistral）；主持 Nathan Labenz、Prakash Narayanan",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-31",
+      "duration": "01:27:57",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "AI:AM 一周精选：Arena 对齐指数显示长会话欺骗/越权并不罕见，OpenAI 暂在三信号领先；Gemini 4 Carbon 直播中登上 Agent Arena 前列；Kepler 谈铁电内存与旧节点；Union 描述人均十亿级 token 的 agent 编制；ServiceNow 称东南亚可见近 APT 级 AI 助攻；Mistral Large 4（Le Chonk）开源权重与 Patchstral/网络能力分层。",
+      "advice": "优先听 Arena 对齐指数 + Mistral Large 4 两段；可与 Hard Fork/Decoder/All-In 的 S-1 市场叙事对读。注意克隆语音过渡与 ASR 误差；生产 traces 百分比以 Arena 博文为准。",
+      "urls": [
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/ai-am-carbon-in-the-arena-mistral-s-le-chonk-the-agent-run-economy-ferroelectric-ram-new-hacks/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP4811263746.mp3"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/ai-am-carbon-in-the-arena-mistrals-le-chonk-the-agent/id1669813431?i=1000799124130"
+        },
+        {
+          "label": "YouTube (Wed live)",
+          "href": "https://www.youtube.com/watch?v=Yj6qugkRMWQ"
+        },
+        {
+          "label": "YouTube (Fri live)",
+          "href": "https://www.youtube.com/watch?v=1FdJvaAft5E"
+        },
+        {
+          "label": "Arena Alignment Index",
+          "href": "https://arena.ai/blog/ai-alignment-index"
+        }
+      ],
+      "addedAt": "2026-11-01",
+      "cover": "thumbs/cogrev-aiam-carbon-arena-mistral-2026-10-31.jpg",
+      "media": {
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP4811263746.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "yc-paul-copplestone-everyone-builds-2026-10-30",
+      "title": "What Happens When Everyone Can Build Software",
+      "guest": "Paul Copplestone（Supabase CEO）；主持 Garry Tan、Harj Taggar、Jared Friedman",
+      "show": "YC Lightcone Podcast",
+      "date": "2026-10-30",
+      "duration": "48:45",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Supabase CEO 谈 AI coding 时代：约 1300 万用户、每周百万级建库，节目口径约 70% 新活动来自 agent；个人软件或如个人文档普及；产品需为 agent 重做界面；「知道做什么」比「知道怎么做」更稀缺。",
+      "advice": "与 Latent Space Supabase agents 技术向互补（本集偏战略）。关注 agent 流量指标定义与默认安全。无官方逐字稿。",
+      "urls": [
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/what-happens-when-everyone-can-build-software/id1236907421?i=1000798941637"
+        },
+        {
+          "label": "Audio",
+          "href": "https://anchor.fm/s/8c1524bc/podcast/play/128439961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F435443834-44100-2-4c3222fd064fb.mp3"
+        }
+      ],
+      "addedAt": "2026-11-01",
+      "cover": "thumbs/yc-paul-copplestone-everyone-builds-2026-10-30.jpg",
+      "media": {
+        "audioUrl": "https://anchor.fm/s/8c1524bc/podcast/play/128439961/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F435443834-44100-2-4c3222fd064fb.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "allin-anthropic-s1-google-wipeout-2026-10-30",
+      "title": "Anthropic S-1 Shocker, Greatest Business Ever? Google's $500B Wipeout, Midterm Predictions",
+      "guest": "Besties 面板（Chamath, Jason, Sacks, Friedberg；无外部嘉宾）",
+      "show": "All-In Podcast",
+      "date": "2026-10-30",
+      "duration": "01:25:47",
+      "category": "VC·基建·市场",
+      "priority": "P0",
+      "summary": "E295：以 Anthropic S-1 为核心争论「是否史上最强生意」——高毛利、低渗透、开源未灭定价、巨亏口径被挑战；并讨论电力/数据中心约束、AI 融资与美债挤出、RSI/doomer 路线；后段 Google 约 $500B 市值波动与中期选举。有仓位披露。",
+      "advice": "与 Hard Fork 泡沫特辑、Decoder×Brookhart 组成 S-1 三角：本集看情绪与宏观耦合。优先 3:22–1:01；选举段可跳。数字必须对账 S-1/财报。",
+      "urls": [
+        {
+          "label": "Libsyn",
+          "href": "https://allinchamathjason.libsyn.com/anthropic-s-1-shocker-greatest-business-ever-googles-500b-wipeout-midterm-predictions"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E295_Ch.mp3?dest-id=1928300"
+        },
+        {
+          "label": "Apple",
+          "href": "https://podcasts.apple.com/us/podcast/anthropic-s-1-shocker-greatest-business-ever-googles/id1502871393?i=1000798972086"
+        }
+      ],
+      "addedAt": "2026-11-01",
+      "cover": "thumbs/allin-anthropic-s1-google-wipeout-2026-10-30.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/ALLIN-E295_Ch.mp3?dest-id=1928300",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
     {
       "id": "hardfork-ai-bubble-anthropic-ipo-2026-10-30",
       "title": "我们处在 AI 泡沫里吗？Anthropic S-1 之后",
@@ -156,34 +269,35 @@
       "hasTranscript": true
     },
     {
-      "id": "cogrev-rand-asi-freedom-of-action-2026-10-28",
-      "title": "Freedom of Action：RAND 谈美国通往超智能的战略",
-      "guest": "Joel Predd, Ben Boudreaux, Matt Chessen",
-      "show": "The Cognitive Revolution",
-      "date": "2026-10-28",
-      "duration": "1小时51分",
-      "category": "实验室·安全·研究",
-      "priority": "P0",
-      "summary": "RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。",
-      "advice": "先建立七原型词汇表再通听；政策/安全方向读者可与 80K Muehlhauser 配对。",
+      "id": "nopriors-jake-stauch-serval-2026-10-29",
+      "title": "Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch",
+      "guest": "Jake Stauch（Serval 联合创始人兼 CEO）",
+      "show": "No Priors",
+      "date": "2026-10-29",
+      "duration": "00:38:05",
+      "category": "创始人·CEO·产品",
+      "priority": "P1",
+      "summary": "Sarah Guo、Elad Gil 对话 Serval CEO Jake Stauch：如何把代码生成 Agent 交给企业 IT，在确定性审批与审计护栏下挑战 ServiceNow；并谈到 ProServal 嵌入式交付。约 38 分钟。",
+      "advice": "P1：做企业 IT / 工作流 Agent 可听。抓「护栏即产品」与 ProServal；可与 Supabase Agent 后端篇对读。",
       "urls": [
         {
-          "label": "节目页",
-          "href": "https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/"
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=EZcWEsMuLb4"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688"
         },
         {
           "label": "Audio",
-          "href": "https://traffic.megaphone.fm/RINTP9166959513.mp3"
-        },
-        {
-          "label": "RAND 报告",
-          "href": "https://www.rand.org/pubs/perspectives/PEA5105-1.html"
+          "href": "https://traffic.megaphone.fm/PDP1665700091.mp3"
         }
       ],
-      "addedAt": "2026-10-30",
-      "cover": "thumbs/cogrev-rand-asi-freedom-of-action-2026-10-28.jpg",
+      "addedAt": "2026-10-29",
+      "cover": "thumbs/nopriors-jake-stauch-serval-2026-10-29.jpg",
       "media": {
-        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP9166959513.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=EZcWEsMuLb4",
+        "audioUrl": "https://traffic.megaphone.fm/PDP1665700091.mp3",
         "audioSource": "podcast-rss"
       },
       "hasEssay": true,
@@ -226,35 +340,34 @@
       "hasTranscript": false
     },
     {
-      "id": "nopriors-jake-stauch-serval-2026-10-29",
-      "title": "Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch",
-      "guest": "Jake Stauch（Serval 联合创始人兼 CEO）",
-      "show": "No Priors",
-      "date": "2026-10-29",
-      "duration": "00:38:05",
-      "category": "创始人·CEO·产品",
-      "priority": "P1",
-      "summary": "Sarah Guo、Elad Gil 对话 Serval CEO Jake Stauch：如何把代码生成 Agent 交给企业 IT，在确定性审批与审计护栏下挑战 ServiceNow；并谈到 ProServal 嵌入式交付。约 38 分钟。",
-      "advice": "P1：做企业 IT / 工作流 Agent 可听。抓「护栏即产品」与 ProServal；可与 Supabase Agent 后端篇对读。",
+      "id": "cogrev-rand-asi-freedom-of-action-2026-10-28",
+      "title": "Freedom of Action：RAND 谈美国通往超智能的战略",
+      "guest": "Joel Predd, Ben Boudreaux, Matt Chessen",
+      "show": "The Cognitive Revolution",
+      "date": "2026-10-28",
+      "duration": "1小时51分",
+      "category": "实验室·安全·研究",
+      "priority": "P0",
+      "summary": "RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。",
+      "advice": "先建立七原型词汇表再通听；政策/安全方向读者可与 80K Muehlhauser 配对。",
       "urls": [
         {
-          "label": "YouTube",
-          "href": "https://www.youtube.com/watch?v=EZcWEsMuLb4"
-        },
-        {
-          "label": "Apple Podcasts",
-          "href": "https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688"
+          "label": "节目页",
+          "href": "https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/"
         },
         {
           "label": "Audio",
-          "href": "https://traffic.megaphone.fm/PDP1665700091.mp3"
+          "href": "https://traffic.megaphone.fm/RINTP9166959513.mp3"
+        },
+        {
+          "label": "RAND 报告",
+          "href": "https://www.rand.org/pubs/perspectives/PEA5105-1.html"
         }
       ],
-      "addedAt": "2026-10-29",
-      "cover": "thumbs/nopriors-jake-stauch-serval-2026-10-29.jpg",
+      "addedAt": "2026-10-30",
+      "cover": "thumbs/cogrev-rand-asi-freedom-of-action-2026-10-28.jpg",
       "media": {
-        "videoUrl": "https://www.youtube.com/watch?v=EZcWEsMuLb4",
-        "audioUrl": "https://traffic.megaphone.fm/PDP1665700091.mp3",
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP9166959513.mp3",
         "audioSource": "podcast-rss"
       },
       "hasEssay": true,

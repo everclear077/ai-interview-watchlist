@@ -5,9 +5,36 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>AI:AM: Carbon in the Arena, Mistral&apos;s Le Chonk, the Agent-Run Economy, Ferroelectric RAM + New Hacks</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-aiam-carbon-arena-mistral-2026-10-31</link>
+      <guid isPermaLink="false">cogrev-aiam-carbon-arena-mistral-2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>AI:AM 一周精选：Arena 对齐指数显示长会话欺骗/越权并不罕见，OpenAI 暂在三信号领先；Gemini 4 Carbon 直播中登上 Agent Arena 前列；Kepler 谈铁电内存与旧节点；Union 描述人均十亿级 token 的 agent 编制；ServiceNow 称东南亚可见近 APT 级 AI 助攻；Mistral Large 4（Le Chonk）开源权重与 Patchstral/网络能力分层。</description>
+    </item>
+    <item>
+      <title>What Happens When Everyone Can Build Software</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-paul-copplestone-everyone-builds-2026-10-30</link>
+      <guid isPermaLink="false">yc-paul-copplestone-everyone-builds-2026-10-30</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>YC Lightcone Podcast</category>
+      <description>Supabase CEO 谈 AI coding 时代：约 1300 万用户、每周百万级建库，节目口径约 70% 新活动来自 agent；个人软件或如个人文档普及；产品需为 agent 重做界面；「知道做什么」比「知道怎么做」更稀缺。</description>
+    </item>
+    <item>
+      <title>Anthropic S-1 Shocker, Greatest Business Ever? Google&apos;s $500B Wipeout, Midterm Predictions</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-anthropic-s1-google-wipeout-2026-10-30</link>
+      <guid isPermaLink="false">allin-anthropic-s1-google-wipeout-2026-10-30</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>All-In Podcast</category>
+      <description>E295：以 Anthropic S-1 为核心争论「是否史上最强生意」——高毛利、低渗透、开源未灭定价、巨亏口径被挑战；并讨论电力/数据中心约束、AI 融资与美债挤出、RSI/doomer 路线；后段 Google 约 $500B 市值波动与中期选举。有仓位披露。</description>
+    </item>
     <item>
       <title>我们处在 AI 泡沫里吗？Anthropic S-1 之后</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-ai-bubble-anthropic-ipo-2026-10-30</link>
@@ -54,15 +81,6 @@
       <description>Sarah Guo、Elad Gil 对话 Serval CEO Jake Stauch：如何把代码生成 Agent 交给企业 IT，在确定性审批与审计护栏下挑战 ServiceNow；并谈到 ProServal 嵌入式交付。约 38 分钟。</description>
     </item>
     <item>
-      <title>Freedom of Action：RAND 谈美国通往超智能的战略</title>
-      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-rand-asi-freedom-of-action-2026-10-28</link>
-      <guid isPermaLink="false">cogrev-rand-asi-freedom-of-action-2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
-      <category>实验室·安全·研究</category>
-      <category>The Cognitive Revolution</category>
-      <description>RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。</description>
-    </item>
-    <item>
       <title>The Brutal Reality of Building Agentic Products Today</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-daniel-jeffries-agentic-products-2026-10-28</link>
       <guid isPermaLink="false">twiml-daniel-jeffries-agentic-products-2026-10-28</guid>
@@ -70,6 +88,15 @@
       <category>创始人·CEO·产品</category>
       <category>TWIML AI Podcast</category>
       <description>Nautilo 创建者 Daniel Jeffries 谈在通用 Agent 普及背景下，如何做有差异化的 agentic 产品：记忆、协作、私有上下文与架构取舍。TWIML #782，约 54 分钟。</description>
+    </item>
+    <item>
+      <title>Freedom of Action：RAND 谈美国通往超智能的战略</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-rand-asi-freedom-of-action-2026-10-28</link>
+      <guid isPermaLink="false">cogrev-rand-asi-freedom-of-action-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>RAND AGI 地缘政治中心三人组讲解「保持行动自由」框架：七种战略原型及其病态、决定性优势、核历史启示、安全架构目录与红线。约 1 小时 51 分。</description>
     </item>
     <item>
       <title>对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？</title>
