@@ -63,8 +63,8 @@ export function flagsOf(it) {
  * Collapse duplicated blank-line paragraphs.
  * - split on /\n\s*\n/
  * - drop consecutive paragraphs that are equal after trim
- * - if a paragraph longer than 40 trimmed chars still appears ≥3 times, keep the first only
- * A long paragraph that appears exactly twice and is not consecutive stays.
+ * - if any paragraph still appears ≥3 times, keep the first only (no length floor)
+ * A paragraph that appears exactly twice and is not consecutive stays.
  * Returns the original string when nothing was removed.
  */
 export function dedupeProse(text) {
@@ -79,13 +79,13 @@ export function dedupeProse(text) {
   const counts = new Map();
   for (const part of collapsed) {
     const key = part.trim();
-    if (key.length > 40) counts.set(key, (counts.get(key) || 0) + 1);
+    counts.set(key, (counts.get(key) || 0) + 1);
   }
   const seen = new Set();
   const kept = [];
   for (const part of collapsed) {
     const key = part.trim();
-    if (key.length > 40 && counts.get(key) >= 3) {
+    if (counts.get(key) >= 3) {
       if (seen.has(key)) continue;
       seen.add(key);
     }
@@ -330,7 +330,19 @@ function selfCheckDedupe() {
   );
   const boundary = "x".repeat(40);
   const shortRepeat = [boundary, "甲", boundary, "乙", boundary].join("\n\n");
-  assertCheck("length-40 paragraph ×3 stays", dedupeProse(shortRepeat) === shortRepeat);
+  assertCheck(
+    "short paragraph ×3 keeps the first only",
+    dedupeProse(shortRepeat) === [boundary, "甲", "乙"].join("\n\n")
+  );
+  const shortTwice = [boundary, "甲", boundary].join("\n\n");
+  assertCheck("short paragraph ×2 stays", dedupeProse(shortTwice) === shortTwice);
+  const heading = "### 质检复述";
+  const restated = "重述三个机制句并各配反例。";
+  const abab = Array.from({ length: 66 }, () => [heading, restated]).flat().join("\n\n");
+  assertCheck(
+    "ABAB short paragraphs ×66 keep each once",
+    dedupeProse(abab) === [heading, restated].join("\n\n")
+  );
   const clean = "甲\n \n乙";
   assertCheck("clean prose is unchanged", dedupeProse(clean) === clean);
   assertCheck("dedupe is idempotent", dedupeProse(dedupeProse(repeated)) === closing);
