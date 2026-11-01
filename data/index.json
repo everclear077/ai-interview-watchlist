@@ -104,7 +104,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "allin-anthropic-s1-google-wipeout-2026-10-30",
@@ -145,7 +145,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "hardfork-ai-bubble-anthropic-ipo-2026-10-30",
@@ -226,7 +226,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": false,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "hours80k-luke-muehlhauser-ai-safety-2026-10-29",
@@ -266,7 +266,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "decoder-joey-brookhart-anthropic-ipo-2026-10-29",
@@ -348,7 +348,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "twiml-daniel-jeffries-agentic-products-2026-10-28",
@@ -388,7 +388,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": false,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "cogrev-rand-asi-freedom-of-action-2026-10-28",
@@ -428,7 +428,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "sv101-vitalik-ea-ai-safety-2026-10-28",
@@ -552,7 +552,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-alpha-school-ai-era-2026-10-27",
@@ -588,7 +588,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": false,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "latent-space-supabase-agents-2026-10-26",
@@ -630,7 +630,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "lex-math-ai-crisis-2026-10-26",
@@ -757,7 +757,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "crossing-lilei-phd-mimo-2026-10-25",
@@ -841,7 +841,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24",
@@ -953,7 +953,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "eyeonai-zip-superagents-2026-10-23",
@@ -1025,7 +1025,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "nopriors-dane-knecht-cloudflare-2026-10-23",
@@ -1062,7 +1062,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-andy-jassy-amazon-ai-2026-10-23",
@@ -1099,7 +1099,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "practicalai-e377-agentic-vuln-2026-10-22",
@@ -1167,7 +1167,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "latent-space-erik-bernhardsson-modal-2026-10-22",
@@ -1203,7 +1203,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "dwarkesh-intel-fab-2026-10-22",
@@ -1314,7 +1314,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "decoder-bill-gates-ai-turbulence-2026-10-22",
@@ -1387,7 +1387,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "geekpark-linkstart-udl-2026-10-21",
@@ -1458,7 +1458,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "latent-space-tenex-ai-native-sdlc-2026-10-21",
@@ -1665,7 +1665,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "latent-space-evan-conrad-sf-compute-2026-10-20",
@@ -2033,7 +2033,7 @@
       "cover": "thumbs/allin-ben-horowitz-293-2026-10-17.jpg",
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-jad-naous-grepr-2026-10-16",
@@ -2132,7 +2132,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-rampell-angelos-agentic-payments-2026-10-15",
@@ -2367,7 +2367,7 @@
       "cover": "thumbs/latent-space-ian-quigley-leash-2026-10-14.jpg",
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-nathan-lambert-open-models-2026-10-14",
@@ -2503,7 +2503,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "training-data-david-silver-lasse-espeholt-2026-10-13",
@@ -2641,7 +2641,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "lenny-josh-woodward-google-labs-2026-10-11",
@@ -2676,7 +2676,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-nick-bostrom-superintelligence-2026-10-11",
@@ -3213,7 +3213,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "training-data-amin-vahdat-google-infra-2026-10-06",
@@ -3324,7 +3324,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-david-george-jack-altman-2026-10-04",
@@ -3417,7 +3417,7 @@
       "cover": "thumbs/a16z-beyond-god-model-2026-10-03.jpg",
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "latent-space-alex-zhang-rlm-2026-10-02",
@@ -3520,7 +3520,7 @@
       "cover": "thumbs/newcomer-reid-hoffman-chatgpt-2026-10-02.jpg",
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "a16z-vladimir-keil-agents-incumbents-2026-10-02",
@@ -3583,7 +3583,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "late-liangchenqi-2026-09-30",
@@ -3750,7 +3750,7 @@
       "cover": "thumbs/allin-daniel-ek-neko-2026-09-28.jpg",
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "mlst-zhengyao-jiang-2026-09-26",
@@ -3845,7 +3845,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "dwarkesh-noam-brown-2026-09-17",
@@ -4514,7 +4514,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "bushi-ep59-agent-coding-2026-06-15",
@@ -4658,7 +4658,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "deepmind-demis-hassabis-2025-12-16",
@@ -4729,7 +4729,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "acquired-google-ai-company-2025-10-06",
@@ -4765,7 +4765,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     },
     {
       "id": "deepmind-genie3-world-model-2025-08-22",
@@ -4908,7 +4908,7 @@
       },
       "hasEssay": true,
       "hasAnalysis": true,
-      "hasTranscript": false
+      "hasTranscript": true
     }
   ],
   "topicCatalog": [
