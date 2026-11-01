@@ -38,6 +38,7 @@ const INDEX_KEYS = [
   "date",
   "duration",
   "category",
+  "topics",
   "priority",
   "summary",
   "advice",
@@ -99,6 +100,9 @@ export function buildIndex(data, items) {
     priorities: data.priorities || [],
     items
   };
+  if (Array.isArray(data.topicCatalog) && data.topicCatalog.length) {
+    out.topicCatalog = data.topicCatalog;
+  }
   if (data.maintainer) out.maintainer = data.maintainer;
   if (data.notes) out.notes = data.notes;
   return out;
