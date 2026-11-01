@@ -18,7 +18,7 @@ python3 -m http.server 8080
 
 相对路径资源，可直接部署到 GitHub Pages（仓库根目录，base `/ai-interview-watchlist/`）。
 
-部署后若样式看起来还是旧版，对页面做一次硬刷新（Windows/Linux：`Ctrl+Shift+R`，macOS：`Cmd+Shift+R`）。`index.html` 给 `styles.css` / `app.js` / `media.js` 加了短版本查询（`?v=…`），一般会绕过旧缓存。Google Fonts 可能在部分网络打不开；CSS 字体栈已回退到 PingFang / Songti / 系统字体。
+部署后若样式看起来还是旧版，对页面做一次硬刷新（Windows/Linux：`Ctrl+Shift+R`，macOS：`Cmd+Shift+R`）。`index.html` 给 `styles.css` / `app.js` / `media.js` 加了短版本查询（`?v=…`），一般会绕过旧缓存。Google Fonts 可能在部分网络打不开；CSS 字体栈回退到 Noto Sans SC、PingFang 和系统无衬线。
 
 ## 语言 / Language
 
@@ -176,7 +176,7 @@ Cursor 或 Claude Desktop 使用同一段配置。把路径换成你的克隆目
 | 文件 | 说明 |
 |------|------|
 | `index.html` | 瘦页面壳（不要换成 R 的胖 HTML） |
-| `styles.css` | 夜班剪辑台：墨色纸、银细线、取景框封面 |
+| `styles.css` | Darkroom：暖黑相纸、纤维白字、琥珀安全灯；浅色是同一间暗房的纤维纸 |
 | `media.js` | 路由、slug、嵌入、markdown、字段探测、主题与 `t()` 文案表 |
 | `app.js` | 发现 / 栏目 / 主题 / 单集 UI 与音频 |
 | `404.html` | Pages 路径 → hash；也带 RSS alternate |

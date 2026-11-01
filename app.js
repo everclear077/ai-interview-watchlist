@@ -445,7 +445,9 @@
     if (W.hasAnalysis(it)) marks.push(t("markAnalysis"));
     if (W.hasTranscript(it)) marks.push(t("markTranscript"));
     if (!marks.length) return "";
-    return '<span class="avail">' + marks.map(function (m) { return W.escapeHtml(m); }).join(" · ") + "</span>";
+    return '<span class="avail">' + marks.map(function (m) {
+      return "<span>" + W.escapeHtml(m) + "</span>";
+    }).join("") + "</span>";
   }
 
   function topicChipsHtml(it) {
@@ -637,7 +639,7 @@
           "</div>" +
           '<div class="facet-row">' +
             '<span class="facet-label" id="lbl-topic">' + t("facetTopic") + "</span>" +
-            '<div class="facet-set" role="group" aria-labelledby="lbl-topic">' + topicBody + "</div>" +
+            '<div class="facet-set topics" role="group" aria-labelledby="lbl-topic">' + topicBody + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
             '<span class="facet-label" id="lbl-period">' + t("facetPeriod") + "</span>" +

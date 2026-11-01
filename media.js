@@ -1158,7 +1158,7 @@
   }
 
   function themeColor(theme) {
-    return theme === "light" ? "#E4DDD0" : "#0B0D10";
+    return theme === "light" ? "#F2EEE7" : "#090604";
   }
 
   return {

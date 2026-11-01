@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0B0D10" />
+<meta name="theme-color" content="#090604" />
 <meta name="color-scheme" content="dark light" />
 <script>
 (function () {
@@ -17,7 +17,7 @@
   document.documentElement.setAttribute("data-theme", theme);
   document.documentElement.style.colorScheme = theme;
   var themeMeta = document.querySelector('meta[name="theme-color"]');
-  if (themeMeta) themeMeta.setAttribute("content", theme === "light" ? "#E4DDD0" : "#0B0D10");
+  if (themeMeta) themeMeta.setAttribute("content", theme === "light" ? "#F2EEE7" : "#090604");
 
   var lang = "";
   try { lang = localStorage.getItem(LANG_KEY) || ""; } catch (e) {}
@@ -49,10 +49,9 @@
 })();
 </script>
 <!--
-  Night edit desk. Ink paper, silver hairline, film stills carry the color.
-  Dark: #0B0D10 / surface #12151A / copper #C4844A
-  Light: paper #E4DDD0 / copper #8C4E22
-  Type: Newsreader + Noto Serif SC, IBM Plex Mono for dates and counts
+  Darkroom (Hallmark), amber safelight. Warm print-black, fibre-white ink, zero radius.
+  Light is the same room on fibre paper: warm ground, print-black ink, the same amber.
+  Type: Sofia Sans Extra Condensed + Barlow. Noto Sans SC stands in for Chinese.
   Hash: #/  #/show/<slug>  #/topic/<slug>  #/ep/<id>
   Topic query on the list is comma-separated and matches any selected slug.
   Feed: feed.xml (RSS 2.0), also copied to rss.xml
@@ -63,15 +62,15 @@
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=20261101c" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@200;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css?v=20261101e" />
 </head>
 <body>
   <a class="skip" id="skip" href="#view">Skip to main content</a>
   <header class="topbar" id="topbar"></header>
   <main id="view" class="view"></main>
   <footer class="site-footer" id="footer"></footer>
-  <script src="./media.js?v=20261101c"></script>
-  <script src="./app.js?v=20261101c"></script>
+  <script src="./media.js?v=20261101e"></script>
+  <script src="./app.js?v=20261101e"></script>
 </body>
 </html>
