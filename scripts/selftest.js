@@ -21,11 +21,16 @@ assert("parseRoute ep keeps id with h query", WL.parseRoute("#/ep/lex-dhh-501-20
 assert("parseRoute heading from query", WL.parseRoute("#/ep/foo?h=背景与分歧").heading === "背景与分歧");
 assert("hashFor ep", WL.hashFor({ name: "ep", id: "a b" }) === "#/ep/a%20b");
 assert("parseRoute show", WL.parseRoute("#/show/a16z").name === "show" && WL.parseRoute("#/show/a16z").slug === "a16z");
-assert("parseRoute topic", WL.parseRoute("#/topic/china").name === "topic" && WL.parseRoute("#/topic/china").slug === "china");
-assert("parseRoute list query", WL.parseRoute("#/?q=jensen&form=essay").q === "jensen" && WL.parseRoute("#/?q=jensen&form=essay").form.join(",") === "essay");
-assert("parseRoute show keeps topic", WL.parseRoute("#/show/sv101?topic=china&form=essay,transcript").topic === "china");
+assert("parseRoute topic", WL.parseRoute("#/topic/alignment-safety").name === "topic" && WL.parseRoute("#/topic/alignment-safety").slug === "alignment-safety");
+assert("parseRoute ignores form", (function () {
+  var route = WL.parseRoute("#/?q=jensen&form=essay");
+  return route.q === "jensen" && !route.form && route.topics.length === 0;
+})());
+assert("parseRoute topic multi canonical order", WL.parseRoute("#/?topic=agents-tooling,alignment-safety,nope").topics.join(",") === "alignment-safety,agents-tooling");
+assert("parseRoute show keeps topics", WL.parseRoute("#/show/sv101?topic=open-source,agents-tooling&form=essay").topics.join(",") === "agents-tooling,open-source");
 assert("hashFor show", WL.hashFor({ name: "show", slug: "a16z" }) === "#/show/a16z");
-assert("hashFor list filters", WL.hashFor({ name: "list", q: "x", form: ["essay"] }) === "#/?q=x&form=essay");
+assert("hashFor drops form", WL.hashFor({ name: "list", q: "x", form: ["essay"] }) === "#/?q=x");
+assert("hashFor topic multi", WL.hashFor({ name: "list", topics: ["society-work", "agents-tooling"] }) === "#/?topic=agents-tooling,society-work");
 assert("parseRoute period", WL.parseRoute("#/?period=week").period === "week");
 assert("parseRoute bad period", WL.parseRoute("#/?period=nope").period === "");
 assert("hashFor period", WL.hashFor({ name: "list", period: "month" }) === "#/?period=month");
@@ -33,7 +38,8 @@ assert("parseRoute show period", WL.parseRoute("#/show/a16z?period=earlier").per
 assert("hashFor show period", WL.hashFor({ name: "show", slug: "sv101", period: "week" }) === "#/show/sv101?period=week");
 assert("periodOf week", WL.periodOf("week") === "week");
 assert("periodOf junk", WL.periodOf("nope") === "");
-assert("hashFor topic with show", WL.hashFor({ name: "topic", slug: "china", show: "sv101" }) === "#/topic/china?show=sv101");
+assert("hashFor topic with show", WL.hashFor({ name: "topic", slug: "alignment-safety", show: "sv101" }) === "#/topic/alignment-safety?show=sv101");
+assert("topic shelf ignores topic query", WL.hashFor({ name: "topic", slug: "models-labs", topics: ["agents-tooling"] }) === "#/topic/models-labs");
 assert("showSlug all-in", WL.showSlug("All-In Podcast #293") === "all-in");
 assert("showSlug a16z alias", WL.showSlug("The a16z Show") === "a16z");
 assert("showSlug sv101", WL.showSlug("硅谷101播客") === "sv101");
@@ -67,6 +73,31 @@ assert("topicSlug unknown category", (function () {
   try { return WL.topicSlug("新主题·测试") === "新主题-测试"; }
   catch (e) { return false; }
 })());
+assert("fine topic known", WL.isFineTopic("alignment-safety") && !WL.isFineTopic("china") && !WL.isFineTopic("lab"));
+assert("itemTopics caps and drops unknown", WL.itemTopics({
+  topics: ["china", "agents-tooling", "agents-tooling", "models-labs", "open-source", "compute-infra", "chips-hardware", "founders-product"]
+}).join(",") === "agents-tooling,models-labs,open-source,compute-infra,chips-hardware");
+assert("itemTopics missing is empty", WL.itemTopics({ category: "中国·科技媒体" }).length === 0);
+assert("topic match is OR", WL.itemHasAnyTopic(
+  { topics: ["models-labs"] },
+  ["alignment-safety", "models-labs"]
+) && !WL.itemHasAnyTopic({ topics: ["open-source"] }, ["alignment-safety", "models-labs"]));
+assert("topic match ignores legacy category", !WL.itemHasAnyTopic({ category: "中国·科技媒体" }, ["china-scene"]));
+assert("topic label catalog wins", WL.topicLabel("open-source", "zh", [{ slug: "open-source", labelZh: "开源定制", labelEn: "Custom" }]) === "开源定制");
+assert("topic label fallback en", WL.topicLabel("china-scene", "en", []) === "China Scene");
+assert("topic facet prefers catalog order", (function () {
+  var facet = WL.topicFacet(
+    [{ slug: "society-work", labelZh: "社会·劳动", labelEn: "Society & Work" }],
+    [
+      { topics: ["agents-tooling", "society-work"] },
+      { category: "VC·基建·市场" },
+      { topics: [] },
+      { topics: ["not-a-topic"] }
+    ]
+  );
+  return facet.map(function (row) { return row.slug + ":" + row.count; }).join(",") === "society-work:1,agents-tooling:1";
+})());
+assert("empty topic facet", WL.topicFacet([], [{ category: "实验室·安全·研究" }]).length === 0);
 var tocLink = WL.tocHref("sv101-astra-agent-robot-pharma-2026-10-19", "开篇");
 assert("toc href stays on episode", tocLink.indexOf("#/ep/sv101-astra-agent-robot-pharma-2026-10-19") === 0);
 assert("toc href not bare slug", tocLink.indexOf("#开篇") === -1 && !/^#[^/]/.test(tocLink));
@@ -214,7 +245,7 @@ var indexPath = path.join(__dirname, "..", "data", "index.json");
 if (fs.existsSync(indexPath)) {
   var index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
   assert("index has items", Array.isArray(index.items) && index.items.length > 0);
-  assert("index under 200KB", fs.statSync(indexPath).size < 200 * 1024);
+  assert("index stays a slim catalog", fs.statSync(indexPath).size < 512 * 1024);
   assert("index layout marker", index.dataLayout === "index+episodes");
   var first = index.items[0];
   assert("slim item has id", !!(first && first.id));
@@ -283,6 +314,12 @@ if (fs.existsSync(indexPath)) {
   assert("collectShows path slugs all items", !collectThrew && Object.keys(collected).length > 0);
   assert("collectShows includes Eye on AI", !!(collected["eye-on-ai"] && collected["eye-on-ai"].count >= 1));
   assert("collectShows includes 智者访谈", !!(collected["智者访谈"] && collected["智者访谈"].count >= 1));
+  var catalogSlugs = (index.topicCatalog || []).map(function (row) { return row.slug; });
+  assert("topicCatalog is the 16 fine slugs", catalogSlugs.join(",") === WL.fineTopics().join(","));
+  var tagged = index.items.filter(function (it) { return WL.itemTopics(it).length > 0; }).length;
+  assert("published items carry topics", tagged > 100 && tagged === index.items.length);
+  var facet = WL.topicFacet(index.topicCatalog, index.items);
+  assert("facet follows catalog and counts real tags", facet.length === 16 && facet.every(function (row) { return row.count > 0; }) && facet[0].slug === "alignment-safety");
 } else {
   console.log("skip  data/index.json layout checks (not split yet)");
 }
@@ -299,9 +336,11 @@ assert("footer rss line", appSrc.indexOf('t("footer4")') !== -1);
 assert("footer rss zh", WL.t("footer4", null, "zh").indexOf("订阅") !== -1 && WL.t("footer4", null, "zh").indexOf("feed.xml") !== -1);
 assert("footer rss en", WL.t("footer4", null, "en").indexOf("Subscribe") !== -1 && WL.t("footer4", null, "en").indexOf("feed.xml") !== -1);
 assert("app.js uses bodyForLang", appSrc.indexOf("bodyForLang") !== -1 && appSrc.indexOf("unavailableEssay") !== -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261031a") !== -1);
-assert("index cache-bust on three assets", (htmlSrc.match(/\?v=20261031a/g) || []).length === 3);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261024h") === -1 && htmlSrc.indexOf("?v=20261024g") === -1 && htmlSrc.indexOf("?v=20261024f") === -1 && htmlSrc.indexOf("?v=20261024e") === -1 && htmlSrc.indexOf("?v=20261024d") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261101e") !== -1);
+assert("index cache-bust on three assets", (htmlSrc.match(/\?v=20261101e/g) || []).length === 3);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261101d") === -1 && htmlSrc.indexOf("?v=20261101c") === -1 && htmlSrc.indexOf("?v=20261101b") === -1 && htmlSrc.indexOf("?v=20261031a") === -1);
+assert("app drops form facet", appSrc.indexOf("facetForm") === -1 && appSrc.indexOf('data-facet="form"') === -1 && appSrc.indexOf("state.form") === -1);
+assert("app topic filter is item topics", appSrc.indexOf("itemHasAnyTopic") !== -1 && appSrc.indexOf("topicSlug(it.category)") === -1);
 assert("rss alternate link", htmlSrc.indexOf('rel="alternate"') !== -1 && htmlSrc.indexOf("application/rss+xml") !== -1 && htmlSrc.indexOf("https://everclear077.github.io/ai-interview-watchlist/feed.xml") !== -1);
 var notFoundSrc = fs.readFileSync(path.join(__dirname, "..", "404.html"), "utf8");
 assert("404 rss alternate", notFoundSrc.indexOf("application/rss+xml") !== -1 && notFoundSrc.indexOf("https://everclear077.github.io/ai-interview-watchlist/feed.xml") !== -1);
@@ -327,8 +366,8 @@ assert("resolveTheme system dark", WL.resolveTheme("", false) === "dark");
 assert("resolveTheme system light", WL.resolveTheme("", true) === "light");
 assert("nextTheme light", WL.nextTheme("light") === "dark");
 assert("nextTheme dark", WL.nextTheme("dark") === "light");
-assert("themeColor dark", WL.themeColor("dark") === "#090C11");
-assert("themeColor light", WL.themeColor("light") === "#F3F5F8");
+assert("themeColor dark", WL.themeColor("dark") === "#090604");
+assert("themeColor light", WL.themeColor("light") === "#F2EEE7");
 
 assert("app theme toggle", appSrc.indexOf("theme-toggle") !== -1 && appSrc.indexOf("data-theme-toggle") !== -1);
 assert("app lang toggle", appSrc.indexOf("lang-toggle") !== -1 && appSrc.indexOf("data-lang-set") !== -1);

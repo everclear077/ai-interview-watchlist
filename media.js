@@ -201,6 +201,138 @@
     return s;
   }
 
+  /* Fine topics. The public Topic facet reads item.topics + topicCatalog.
+     Legacy category slugs (lab/founders/vc/china) stay on topicSlug for MCP. */
+  var FINE_ORDER = [
+    "alignment-safety",
+    "agents-tooling",
+    "models-labs",
+    "open-source",
+    "compute-infra",
+    "chips-hardware",
+    "robotics-embodied",
+    "founders-product",
+    "markets-vc",
+    "policy-geopolitics",
+    "china-scene",
+    "research-science",
+    "enterprise-apps",
+    "media-platforms",
+    "talent-education",
+    "society-work"
+  ];
+
+  var FINE_LABELS = {
+    "alignment-safety": { zh: "对齐·安全", en: "Alignment & Safety" },
+    "agents-tooling": { zh: "Agent·工具", en: "Agents & Tooling" },
+    "models-labs": { zh: "模型·实验室", en: "Models & Labs" },
+    "open-source": { zh: "开源", en: "Open Source" },
+    "compute-infra": { zh: "算力·基建", en: "Compute & Infra" },
+    "chips-hardware": { zh: "芯片·硬件", en: "Chips & Hardware" },
+    "robotics-embodied": { zh: "机器人·具身", en: "Robotics & Embodied" },
+    "founders-product": { zh: "创始人·产品", en: "Founders & Product" },
+    "markets-vc": { zh: "市场·融资", en: "Markets & VC" },
+    "policy-geopolitics": { zh: "政策·地缘", en: "Policy & Geopolitics" },
+    "china-scene": { zh: "中国现场", en: "China Scene" },
+    "research-science": { zh: "研究·科学", en: "Research & Science" },
+    "enterprise-apps": { zh: "企业·应用", en: "Enterprise & Apps" },
+    "media-platforms": { zh: "媒体·平台", en: "Media & Platforms" },
+    "talent-education": { zh: "人才·教育", en: "Talent & Education" },
+    "society-work": { zh: "社会·劳动", en: "Society & Work" }
+  };
+
+  function isFineTopic(slug) {
+    return Object.prototype.hasOwnProperty.call(FINE_LABELS, String(slug || ""));
+  }
+
+  /* Known slugs only, deduped, canonical catalog order. Unknown values drop. */
+  function topicList(raw) {
+    var parts = Array.isArray(raw) ? raw : String(raw || "").split(",");
+    var seen = {};
+    for (var i = 0; i < parts.length; i++) {
+      var s = String(parts[i] || "").trim();
+      if (isFineTopic(s)) seen[s] = true;
+    }
+    return FINE_ORDER.filter(function (slug) { return seen[slug]; });
+  }
+
+  function itemTopics(it) {
+    if (!it || !Array.isArray(it.topics)) return [];
+    var seen = {};
+    var out = [];
+    for (var i = 0; i < it.topics.length && out.length < 5; i++) {
+      var s = String(it.topics[i] || "").trim();
+      if (!isFineTopic(s) || seen[s]) continue;
+      seen[s] = true;
+      out.push(s);
+    }
+    return out;
+  }
+
+  function topicLabel(slug, lang, catalog) {
+    var useLang = normalizeLang(lang) || currentLang || "en";
+    if (useLang !== "zh") useLang = "en";
+    if (Array.isArray(catalog)) {
+      for (var i = 0; i < catalog.length; i++) {
+        var entry = catalog[i];
+        if (!entry || entry.slug !== slug) continue;
+        var fromCat = useLang === "zh" ? textOf(entry.labelZh) : textOf(entry.labelEn);
+        if (fromCat) return fromCat;
+      }
+    }
+    var row = FINE_LABELS[slug];
+    if (!row) return String(slug || "");
+    return row[useLang] || row.en;
+  }
+
+  /* OR: true when the item carries any selected fine-topic slug.
+     An empty selection is not a match (callers skip the filter). */
+  function itemHasAnyTopic(it, selected) {
+    var want = topicList(selected);
+    if (!want.length) return false;
+    var have = itemTopics(it);
+    for (var i = 0; i < want.length; i++) {
+      if (have.indexOf(want[i]) !== -1) return true;
+    }
+    return false;
+  }
+
+  /* Union of topicCatalog and slugs present on items. Catalog order first.
+     Counts come only from items that have at least one known topic. */
+  function topicFacet(catalog, items) {
+    var counts = {};
+    (items || []).forEach(function (it) {
+      var slugs = itemTopics(it);
+      if (!slugs.length) return;
+      slugs.forEach(function (slug) {
+        counts[slug] = (counts[slug] || 0) + 1;
+      });
+    });
+    var seen = {};
+    var list = [];
+    function push(slug, labelZh, labelEn) {
+      if (!isFineTopic(slug) || seen[slug]) return;
+      seen[slug] = true;
+      list.push({
+        slug: slug,
+        labelZh: textOf(labelZh) || FINE_LABELS[slug].zh,
+        labelEn: textOf(labelEn) || FINE_LABELS[slug].en,
+        count: counts[slug] || 0
+      });
+    }
+    if (Array.isArray(catalog)) {
+      catalog.forEach(function (entry) {
+        if (!entry) return;
+        push(String(entry.slug || "").trim(), entry.labelZh, entry.labelEn);
+      });
+    }
+    FINE_ORDER.forEach(function (slug) {
+      if (seen[slug] || !counts[slug]) return;
+      push(slug, "", "");
+    });
+    return list;
+  }
+
   function decodeComp(s) {
     try { return decodeURIComponent(String(s || "").replace(/\+/g, " ")); }
     catch (e) { return String(s || ""); }
@@ -222,12 +354,6 @@
     return { path: path, params: params, heading: params.h || "" };
   }
 
-  function formList(raw) {
-    return String(raw || "").split(",").map(function (s) { return s.trim(); }).filter(function (s) {
-      return s === "essay" || s === "analysis" || s === "transcript";
-    });
-  }
-
   function periodOf(raw) {
     var p = String(raw || "");
     return p === "week" || p === "month" || p === "earlier" ? p : "";
@@ -238,8 +364,7 @@
     return {
       q: params.q || "",
       show: params.show || "",
-      topic: params.topic || "",
-      form: formList(params.form),
+      topics: topicList(params.topic),
       period: periodOf(params.period),
       sort: params.sort === "oldest" ? "oldest" : "newest"
     };
@@ -250,8 +375,8 @@
     if (!filters) return "";
     if (filters.q) parts.push("q=" + encodeURIComponent(filters.q));
     if (filters.show) parts.push("show=" + encodeURIComponent(filters.show));
-    if (filters.topic) parts.push("topic=" + encodeURIComponent(filters.topic));
-    if (filters.form && filters.form.length) parts.push("form=" + encodeURIComponent(filters.form.join(",")));
+    var topics = topicList(filters.topics && filters.topics.length ? filters.topics : filters.topic);
+    if (topics.length) parts.push("topic=" + topics.join(","));
     if (filters.period) parts.push("period=" + encodeURIComponent(filters.period));
     if (filters.sort && filters.sort !== "newest") parts.push("sort=" + encodeURIComponent(filters.sort));
     if (filters.heading) parts.push("h=" + encodeURIComponent(filters.heading));
@@ -259,7 +384,7 @@
   }
 
   function emptyFilters() {
-    return { q: "", show: "", topic: "", form: [], period: "", sort: "newest" };
+    return { q: "", show: "", topics: [], period: "", sort: "newest" };
   }
 
   function parseRoute(hash) {
@@ -276,8 +401,7 @@
         heading: heading,
         q: "",
         show: "",
-        topic: "",
-        form: [],
+        topics: [],
         period: "",
         sort: "newest"
       };
@@ -291,8 +415,7 @@
         heading: "",
         q: filters.q,
         show: show,
-        topic: filters.topic,
-        form: filters.form,
+        topics: filters.topics,
         period: filters.period,
         sort: filters.sort
       };
@@ -306,8 +429,7 @@
         heading: "",
         q: filters.q,
         show: filters.show,
-        topic: topic,
-        form: filters.form,
+        topics: [],
         period: filters.period,
         sort: filters.sort
       };
@@ -319,8 +441,7 @@
       heading: "",
       q: filters.q,
       show: filters.show,
-      topic: filters.topic,
-      form: filters.form,
+      topics: filters.topics,
       period: filters.period,
       sort: filters.sort
     };
@@ -334,8 +455,8 @@
     if (route.name === "show" && route.slug) {
       return "#/show/" + encodeURIComponent(route.slug) + queryString({
         q: route.q,
+        topics: route.topics,
         topic: route.topic,
-        form: route.form,
         period: route.period,
         sort: route.sort
       });
@@ -344,7 +465,6 @@
       return "#/topic/" + encodeURIComponent(route.slug) + queryString({
         q: route.q,
         show: route.show,
-        form: route.form,
         period: route.period,
         sort: route.sort
       });
@@ -352,8 +472,8 @@
     return "#/" + queryString({
       q: route.q,
       show: route.show,
+      topics: route.topics,
       topic: route.topic,
-      form: route.form,
       period: route.period,
       sort: route.sort
     }).replace(/^\?/, "?");
@@ -736,12 +856,8 @@
       findAria: "查找",
       facetShow: "栏目",
       facetTopic: "主题",
-      facetForm: "形态",
       facetPeriod: "时间",
       facetSort: "排序",
-      formEssay: "有精读",
-      formAnalysis: "有解读",
-      formTranscript: "有文稿",
       periodWeek: "本周",
       periodMonth: "本月",
       periodEarlier: "更早",
@@ -764,11 +880,13 @@
       resultsAll: "全部访谈",
       showing: "显示 <strong>{n}</strong> / {total} 则",
       lockShow: "正在看栏目页。点其他栏目会换页；<a href=\"{href}\">回到全部</a>可同时筛多个栏目。",
-      lockTopic: "正在看主题页。点其他主题会换页；<a href=\"{href}\">回到全部</a>可同时筛多个主题。",
-      showBlurb: "这一栏目下的访谈。可以再叠主题、形态或搜索。",
+      lockTopic: "正在看主题页。点其他主题会换页；<a href=\"{href}\">回到全部</a>可同时选多个主题。",
+      showBlurb: "这一栏目下的访谈。可以再叠主题或搜索。",
       showMissing: "没有匹配到这个栏目名。",
-      topicBlurb: "这一主题下的访谈。可以再叠栏目、形态或搜索。",
+      topicBlurb: "这一主题下的访谈。可以再叠栏目或搜索。",
       topicMissing: "没有匹配到这个主题。",
+      topicsPending: "主题还在更新。可以先按栏目、时间或搜索浏览。",
+      topicsEmpty: "这一主题下还没有访谈。",
       pageShow: "栏目",
       pageTopic: "主题",
       toc: "目录",
@@ -804,7 +922,7 @@
       dataFail: "数据未加载：请用 <code>data/index.json</code> 与 <code>data/episodes/</code>，并用本地静态服务器打开。",
       footer1: "长镜 · AI，精选 AI / 科技长视频访谈，带精读、解读与文稿。不是私人观看列表。",
       footer2: "精读与解读如存在，为 AI 改写，请以原音视频为准。列表读 <code>data/index.json</code>，单集读 <code>data/episodes/&lt;id&gt;.json</code>。",
-      footer3: "分享筛选：<code>#/?form=essay</code>、<code>#/show/sv101</code>、<code>#/topic/china</code>。",
+      footer3: "分享筛选：<code>#/?period=week</code>、<code>#/show/sv101</code>、<code>#/?topic=alignment-safety</code>。",
       footer4: "订阅：<a href=\"https://everclear077.github.io/ai-interview-watchlist/feed.xml\">RSS</a>。",
       dateMd: "{m}月{d}日",
       dateYmd: "{y}年{m}月{d}日",
@@ -831,12 +949,8 @@
       findAria: "Search",
       facetShow: "Show",
       facetTopic: "Topic",
-      facetForm: "Form",
       facetPeriod: "When",
       facetSort: "Sort",
-      formEssay: "Has close read",
-      formAnalysis: "Has analysis",
-      formTranscript: "Has transcript",
       periodWeek: "This week",
       periodMonth: "This month",
       periodEarlier: "Earlier",
@@ -859,11 +973,13 @@
       resultsAll: "All interviews",
       showing: "Showing <strong>{n}</strong> / {total}",
       lockShow: "You are on a show page. Picking another show changes pages. <a href=\"{href}\">Back to all</a> to filter several shows at once.",
-      lockTopic: "You are on a topic page. Picking another topic changes pages. <a href=\"{href}\">Back to all</a> to filter several topics at once.",
-      showBlurb: "Interviews in this show. Layer a topic, form, or search.",
+      lockTopic: "You are on a topic page. Picking another topic changes pages. <a href=\"{href}\">Back to all</a> to select several topics at once.",
+      showBlurb: "Interviews in this show. Add a topic or a search.",
       showMissing: "No show matched that name.",
-      topicBlurb: "Interviews in this topic. Layer a show, form, or search.",
+      topicBlurb: "Interviews in this topic. Add a show or a search.",
       topicMissing: "No topic matched that name.",
+      topicsPending: "Topics are still being updated. Browse by show, period, or search.",
+      topicsEmpty: "No interviews in this topic yet.",
       pageShow: "Show",
       pageTopic: "Topic",
       toc: "Contents",
@@ -899,7 +1015,7 @@
       dataFail: "Data did not load. Serve <code>data/index.json</code> and <code>data/episodes/</code> from a local static server.",
       footer1: "Long Lens AI — selected long-form AI and tech interviews, with close reads, analysis, and transcripts. Not a private watchlist.",
       footer2: "Close reads and analysis, when present, are AI rewrites; treat the original audio/video as authoritative. Catalog from <code>data/index.json</code>, episodes from <code>data/episodes/&lt;id&gt;.json</code>.",
-      footer3: "Share filters: <code>#/?form=essay</code>, <code>#/show/sv101</code>, <code>#/topic/china</code>.",
+      footer3: "Share filters: <code>#/?period=week</code>, <code>#/show/sv101</code>, <code>#/?topic=alignment-safety</code>.",
       footer4: "Subscribe: <a href=\"https://everclear077.github.io/ai-interview-watchlist/feed.xml\">RSS</a>.",
       dateMd: "{m}月{d}日",
       dateYmd: "{y}年{m}月{d}日",
@@ -1042,7 +1158,7 @@
   }
 
   function themeColor(theme) {
-    return theme === "light" ? "#F3F5F8" : "#090C11";
+    return theme === "light" ? "#F2EEE7" : "#090604";
   }
 
   return {
@@ -1078,6 +1194,13 @@
     topicSlug: topicSlug,
     topicDisplay: topicDisplay,
     topics: function () { return TOPIC_CANON.slice(); },
+    fineTopics: function () { return FINE_ORDER.slice(); },
+    isFineTopic: isFineTopic,
+    topicList: topicList,
+    itemTopics: itemTopics,
+    topicLabel: topicLabel,
+    itemHasAnyTopic: itemHasAnyTopic,
+    topicFacet: topicFacet,
     tocHref: tocHref,
     parseYouTubeId: parseYouTubeId,
     parseBilibili: parseBilibili,
