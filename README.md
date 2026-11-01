@@ -4,7 +4,7 @@
 
 **https://everclear077.github.io/ai-interview-watchlist/**
 
-精选 AI / 科技长视频访谈，带精读、解读与文稿。按栏目、主题、内容形态查找后阅读，不是私人观看列表，也没有已看 / 待看。
+精选 AI / 科技长视频访谈，带精读、解读与文稿。按栏目、主题、时间查找后阅读，不是私人观看列表，也没有已看 / 待看。
 
 ## 本地预览
 
@@ -13,7 +13,7 @@ python3 -m http.server 8080
 # 打开 http://localhost:8080
 # 单集：http://localhost:8080/#/ep/<id>
 # 栏目：http://localhost:8080/#/show/sv101
-# 主题：http://localhost:8080/#/topic/china
+# 主题：http://localhost:8080/#/topic/alignment-safety
 ```
 
 相对路径资源，可直接部署到 GitHub Pages（仓库根目录，base `/ai-interview-watchlist/`）。
@@ -44,15 +44,15 @@ python3 -m http.server 8080
 | `#/topic/<slug>` | 按主题浏览 |
 | `#/ep/<id>` | 单集：中文精读 / 详细解读 / 完整文稿 |
 
-筛选写在 hash query 里，链接可分享，例如 `#/?form=essay&sort=oldest`、`#/?period=week`、`#/show/a16z?topic=vc`。
+筛选写在 hash query 里，链接可分享，例如 `#/?period=week`、`#/?topic=alignment-safety,agents-tooling`、`#/show/sv101?topic=open-source`。列表上的 `topic=` 是逗号分隔的多选，命中其中任一主题即可。`#/topic/<slug>` 仍是单个主题的货架。旧的 `form=` 参数不再参与筛选。
 
 `404.html` 会把 Pages 上的 `/ep/<id>/`、`/show/<slug>/`、`/topic/<slug>/` 重定向到对应 hash。
 
 ## 功能
 
-- 发现页：大搜索（标题 / 嘉宾 / 节目 / 摘要）+ 栏目、主题、形态（有精读 / 有解读 / 有文稿）、时段（本周 / 本月 / 更早）与新旧排序
-- 未筛选时按时间货架 + 栏目货架浏览（大 16:9 封面卡，不是细行账本）；筛选后是同语言的卡片网格
-- 封面悬停：略放大、抬升、半透明遮罩与「打开」；有精读 / 解读 / 文稿时在遮罩上标出
+- 发现页：搜索（标题 / 嘉宾 / 节目 / 摘要 / 主题名）+ 栏目、主题（多选，命中任一）、时段（本周 / 本月 / 更早）与新旧排序
+- 未筛选时按时间货架 + 栏目货架浏览（大 16:9 封面，取景框）；筛选后是同一套卡片网格
+- 封面是取景框：内缩细线、上下遮幅，框内写着「打开」。有精读 / 解读 / 文稿时，在卡片下方用小字标出，不是筛选项
 - 空结果会提示如何清除筛选
 - 单集：顶栏返回文库；媒体条（点「打开视频」后才嵌入 YouTube / Bilibili）；有 `media.audioUrl` 才显示音频条
 - 三个页签（空字段隐藏）：**中文精读** / **Close read**、**详细解读** / **Analysis**、**完整文稿** / **Transcript**
@@ -75,7 +75,9 @@ python3 -m http.server 8080
 | `lex-fridman` | Lex Fridman Podcast | Lex Fridman、Lex Fridman Podcast |
 | `late-talk` | 晚点聊 LateTalk | 晚点聊 LateTalk、晚点聊LateTalk |
 
-主题 slug：`lab` 实验室·安全·研究、`founders` 创始人·CEO·产品、`vc` VC·基建·市场、`china` 中国·科技媒体。
+主题来自每条的 `topics`（1–5 个 slug）和 `data/index.json` 的 `topicCatalog`。标签用目录里的 `labelZh` / `labelEn`，没有目录时用页面里的同一套兜底。目前这 16 个 slug：`alignment-safety`、`agents-tooling`、`models-labs`、`open-source`、`compute-infra`、`chips-hardware`、`robotics-embodied`、`founders-product`、`markets-vc`、`policy-geopolitics`、`china-scene`、`research-science`、`enterprise-apps`、`media-platforms`、`talent-education`、`society-work`。
+
+数据里的 `category` 四桶（实验室·安全·研究、创始人·CEO·产品、VC·基建·市场、中国·科技媒体）仍然保留，但不再当作「主题」筛选。本机 MCP 的 `topic` / `category` 参数仍按这四桶匹配。
 
 ## 嵌入规则
 
@@ -90,7 +92,7 @@ python3 -m http.server 8080
 
 | 路径 | 谁读 | 内容 |
 |------|------|------|
-| `data/index.json` | 目录页 | 站点 meta + slim `items[]`：id / title / guest / show / date / category / priority / cover / summary / advice / urls / media / addedAt / `hasEssay` / `hasAnalysis` / `hasTranscript`。无正文、无 `coverDataUri` |
+| `data/index.json` | 目录页 | 站点 meta + `topicCatalog` + slim `items[]`：id / title / guest / show / date / category / topics / priority / cover / summary / advice / urls / media / addedAt / `hasEssay` / `hasAnalysis` / `hasTranscript`。无正文、无 `coverDataUri` |
 | `data/episodes/<id>.json` | `#/ep/<id>` | 同上 + 有内容的 `essay` / `analysis` / `transcript` / `evidence` |
 | `data.json` | 不作为目录 | 弃用 stub |
 
@@ -123,9 +125,9 @@ cd mcp && npm install && node smoke.mjs
 
 介绍时称「长镜 · AI」，不要再叫访谈文库或观看列表。需要带人进某一面时，直接分享 hash：
 
-- 全部精读：`https://everclear077.github.io/ai-interview-watchlist/#/?form=essay`
 - 硅谷101：`https://everclear077.github.io/ai-interview-watchlist/#/show/sv101`
-- 中国·科技媒体：`https://everclear077.github.io/ai-interview-watchlist/#/topic/china`
+- 对齐·安全：`https://everclear077.github.io/ai-interview-watchlist/#/topic/alignment-safety`
+- 本周：`https://everclear077.github.io/ai-interview-watchlist/#/?period=week`
 
 ## RSS
 
@@ -174,7 +176,7 @@ Cursor 或 Claude Desktop 使用同一段配置。把路径换成你的克隆目
 | 文件 | 说明 |
 |------|------|
 | `index.html` | 瘦页面壳（不要换成 R 的胖 HTML） |
-| `styles.css` | 夜馆目录 + 阅读页纸色 |
+| `styles.css` | 夜班剪辑台：墨色纸、银细线、取景框封面 |
 | `media.js` | 路由、slug、嵌入、markdown、字段探测、主题与 `t()` 文案表 |
 | `app.js` | 发现 / 栏目 / 主题 / 单集 UI 与音频 |
 | `404.html` | Pages 路径 → hash；也带 RSS alternate |

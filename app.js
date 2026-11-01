@@ -3,11 +3,6 @@
 
   var LS_AUDIO = "ai-interviews-audio-pos-v1";
   var SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
-  var FORM_KEYS = [
-    { id: "essay", labelKey: "formEssay" },
-    { id: "analysis", labelKey: "formAnalysis" },
-    { id: "transcript", labelKey: "formTranscript" }
-  ];
   var EN_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   var W = window.WL;
@@ -28,8 +23,7 @@
     audioPos: {},
     query: "",
     show: "",
-    topic: "",
-    form: [],
+    topics: [],
     period: "",
     sort: "newest",
     route: { name: "list" },
@@ -84,17 +78,16 @@
     if (route.name === "ep") return;
     state.query = route.q || "";
     state.sort = route.sort || "newest";
-    state.form = (route.form || []).slice();
     state.period = route.period || "";
     if (route.name === "show") {
       state.show = route.slug || "";
-      state.topic = route.topic || "";
+      state.topics = (route.topics || []).slice();
     } else if (route.name === "topic") {
-      state.topic = route.slug || "";
+      state.topics = route.slug ? [route.slug] : [];
       state.show = route.show || "";
     } else {
       state.show = route.show || "";
-      state.topic = route.topic || "";
+      state.topics = (route.topics || []).slice();
     }
   }
 
@@ -104,8 +97,7 @@
       slug: state.route.slug,
       q: state.query,
       show: state.show,
-      topic: state.topic,
-      form: state.form,
+      topics: (state.topics || []).slice(),
       period: state.period,
       sort: state.sort
     };
@@ -116,8 +108,8 @@
       next.slug = next.show || next.slug;
       next.show = "";
     } else if (next.name === "topic") {
-      next.slug = next.topic || next.slug;
-      next.topic = "";
+      next.slug = (next.topics && next.topics[0]) || next.slug;
+      next.topics = [];
     }
     return next;
   }
@@ -132,16 +124,18 @@
     hashTimer = setTimeout(function () { writeHash(); }, 220);
   }
 
+  function topicSelected() {
+    return state.route.name === "topic" ? false : (state.topics && state.topics.length > 0);
+  }
+
   function hasActiveFilters() {
     var extraShow = state.route.name === "show" ? false : !!state.show;
-    var extraTopic = state.route.name === "topic" ? false : !!state.topic;
-    return !!(state.query.trim() || extraShow || extraTopic || state.form.length || state.period || state.sort === "oldest");
+    return !!(state.query.trim() || extraShow || topicSelected() || state.period || state.sort === "oldest");
   }
 
   function hasHeavyFilters() {
     var extraShow = state.route.name === "show" ? false : !!state.show;
-    var extraTopic = state.route.name === "topic" ? false : !!state.topic;
-    return !!(state.query.trim() || extraShow || extraTopic || state.form.length || state.period);
+    return !!(state.query.trim() || extraShow || topicSelected() || state.period);
   }
 
   function wantsShelves() {
@@ -154,33 +148,19 @@
     return "#/";
   }
 
-  function formSet() {
-    var set = {};
-    state.form.forEach(function (f) { set[f] = true; });
-    return set;
-  }
-
-  function itemHasForm(it, key) {
-    if (key === "essay") return W.hasEssay(it);
-    if (key === "analysis") return W.hasAnalysis(it);
-    if (key === "transcript") return W.hasTranscript(it);
-    return false;
-  }
-
   function matches(it) {
     if (state.show && W.showSlug(it.show) !== state.show) return false;
-    if (state.topic && W.topicSlug(it.category) !== state.topic) return false;
-    if (state.form.length) {
-      var ok = false;
-      for (var i = 0; i < state.form.length; i++) {
-        if (itemHasForm(it, state.form[i])) { ok = true; break; }
-      }
-      if (!ok) return false;
-    }
+    // OR: an item matches when it carries any selected topic slug.
+    // Legacy category is not a topic and does not satisfy this filter.
+    if (state.topics.length && !W.itemHasAnyTopic(it, state.topics)) return false;
     if (state.period && periodOfItem(it.date) !== state.period) return false;
     var q = state.query.trim().toLowerCase();
     if (q) {
-      var blob = [it.title, it.guest, it.show, it.summary].join(" ").toLowerCase();
+      var catalog = state.data && state.data.topicCatalog;
+      var topicText = W.itemTopics(it).map(function (slug) {
+        return W.topicLabel(slug, "zh", catalog) + " " + W.topicLabel(slug, "en", catalog);
+      }).join(" ");
+      var blob = [it.title, it.guest, it.show, it.summary, topicText].join(" ").toLowerCase();
       if (blob.indexOf(q) === -1) return false;
     }
     return true;
@@ -280,23 +260,16 @@
     });
   }
 
+  function topicCatalog() {
+    return state.data && state.data.topicCatalog;
+  }
+
+  function topicName(slug) {
+    return W.topicLabel(slug, W.getLang(), topicCatalog());
+  }
+
   function collectTopics() {
-    var known = W.topics();
-    var counts = {};
-    items().forEach(function (it) {
-      var slug = W.topicSlug(it.category);
-      counts[slug] = (counts[slug] || 0) + 1;
-    });
-    var list = known.map(function (t) {
-      return { slug: t.slug, name: t.name, count: counts[t.slug] || 0 };
-    });
-    items().forEach(function (it) {
-      var slug = W.topicSlug(it.category);
-      if (known.some(function (t) { return t.slug === slug; })) return;
-      if (list.some(function (t) { return t.slug === slug; })) return;
-      list.push({ slug: slug, name: it.category, count: counts[slug] || 0 });
-    });
-    return list.filter(function (t) { return t.count > 0; });
+    return W.topicFacet(topicCatalog(), items());
   }
 
   function fmtTime(sec) {
@@ -424,6 +397,11 @@
     );
   }
 
+  function brandHtml() {
+    return '<a class="brand" href="#/"><span class="lens-mark" aria-hidden="true"></span><span class="brand-word">' +
+      W.escapeHtml(siteBrand()) + "</span></a>";
+  }
+
   function renderTopbar() {
     var el = document.getElementById("topbar");
     var updated = (state.data && state.data.lastUpdated) || "—";
@@ -436,16 +414,16 @@
       el.innerHTML =
         '<div class="topbar-inner">' +
           '<a class="back" href="#/">' + t("back") + "</a>" +
-          '<a class="brand" href="#/">' + W.escapeHtml(siteBrand()) + "</a>" +
+          brandHtml() +
           tools +
         "</div>";
       return;
     }
     el.innerHTML =
       '<div class="topbar-inner">' +
-        '<a class="brand" href="#/">' + W.escapeHtml(siteBrand()) + "</a>" +
+        brandHtml() +
         '<nav class="nav" aria-label="' + W.escapeHtml(t("nav")) + '">' +
-          '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topic ? ' aria-current="page"' : "") + ">" + t("all") + "</a>" +
+          '<a href="#/"' + (state.route.name === "list" && !state.show && !state.topics.length ? ' aria-current="page"' : "") + ">" + t("all") + "</a>" +
           '<a href="#q" data-focus-search>' + t("find") + "</a>" +
         "</nav>" +
         tools +
@@ -461,39 +439,53 @@
       "<div>" + t("footer4") + "</div>";
   }
 
-  function formMarks(it) {
+  function availHtml(it) {
     var marks = [];
-    if (W.hasEssay(it)) marks.push('<span class="mark essay">' + t("markEssay") + "</span>");
-    if (W.hasAnalysis(it)) marks.push('<span class="mark analysis">' + t("markAnalysis") + "</span>");
-    if (W.hasTranscript(it)) marks.push('<span class="mark transcript">' + t("markTranscript") + "</span>");
-    return marks.join("");
+    if (W.hasEssay(it)) marks.push(t("markEssay"));
+    if (W.hasAnalysis(it)) marks.push(t("markAnalysis"));
+    if (W.hasTranscript(it)) marks.push(t("markTranscript"));
+    if (!marks.length) return "";
+    return '<span class="avail">' + marks.map(function (m) { return W.escapeHtml(m); }).join(" · ") + "</span>";
+  }
+
+  function topicChipsHtml(it) {
+    return W.itemTopics(it).map(function (slug) {
+      return '<a class="topic-chip" href="' + W.hashFor({ name: "topic", slug: slug }) + '">' +
+        W.escapeHtml(topicName(slug)) + "</a>";
+    }).join("");
+  }
+
+  function viewfinderHtml(inner, label) {
+    var word = label == null ? t("open") : label;
+    var cap = word
+      ? '<span class="vf-label">' + W.escapeHtml(word) + "</span>"
+      : "";
+    return inner + '<span class="vf" aria-hidden="true">' + cap + "</span>";
   }
 
   function tileHtml(it) {
     var src = coverSrc(it);
     var href = W.hashFor({ name: "ep", id: it.id });
     var showName = W.showDisplay(it.show);
+    var showHref = W.hashFor({ name: "show", slug: W.showSlug(it.show) });
     var cover = src
       ? '<img src="' + src + '" alt="" loading="lazy" width="640" height="360" />'
       : '<span class="thumb-empty" aria-hidden="true"></span>';
-    var forms = formMarks(it);
+    var chips = topicChipsHtml(it);
+    var avail = availHtml(it);
     return (
       '<article class="tile" data-id="' + W.escapeHtml(it.id) + '">' +
         '<a class="tile-hit" href="' + href + '">' +
-          '<div class="tile-cover">' +
-            cover +
-            '<div class="tile-overlay" aria-hidden="true">' +
-              '<span class="tile-cta"><span class="play">▶</span>' + t("open") + "</span>" +
-              (forms ? '<div class="tile-forms">' + forms + "</div>" : "") +
-            "</div>" +
-          "</div>" +
+          '<div class="tile-cover">' + viewfinderHtml(cover) + "</div>" +
           '<h3 class="tile-title">' + W.escapeHtml(W.episodeTitle(it)) + "</h3>" +
           (it.guest ? '<p class="tile-guest">' + W.escapeHtml(it.guest) + "</p>" : "") +
-          '<p class="tile-meta">' +
-            '<span>' + W.escapeHtml(showName) + "</span>" +
-            '<time datetime="' + W.escapeHtml(it.date || "") + '">' + W.escapeHtml(fmtDate(it.date)) + "</time>" +
-          "</p>" +
         "</a>" +
+        '<p class="tile-meta">' +
+          '<a href="' + showHref + '">' + W.escapeHtml(showName) + "</a>" +
+          '<time datetime="' + W.escapeHtml(it.date || "") + '">' + W.escapeHtml(fmtDate(it.date)) + "</time>" +
+          avail +
+        "</p>" +
+        (chips ? '<div class="topic-row">' + chips + "</div>" : "") +
       "</article>"
     );
   }
@@ -501,7 +493,7 @@
   function shelfHtml(opts) {
     var list = opts.items || [];
     if (!list.length) return "";
-    var limit = opts.limit || 8;
+    var limit = opts.limit || 6;
     var preview = list.slice(0, limit);
     var more = opts.moreHref && list.length > preview.length
       ? '<a class="shelf-more" href="' + opts.moreHref + '">' + t("more") + "</a>"
@@ -582,6 +574,9 @@
     if (kind === "missing-topic") {
       return '<div class="empty" role="status">' + t("emptyMissingTopic") + "</div>";
     }
+    if (state.route.name === "topic" && W.isFineTopic(state.route.slug) && !hasActiveFilters()) {
+      return '<div class="empty" role="status">' + t("topicsEmpty") + "</div>";
+    }
     if (hasActiveFilters()) {
       return '<div class="empty" role="status">' + t("emptyFiltered", { href: W.escapeHtml(clearHref()) }) + "</div>";
     }
@@ -600,26 +595,27 @@
     opts = opts || {};
     var shows = collectShows();
     var topics = collectTopics();
-    var forms = formSet();
     var showBtns = shows.map(function (s) {
       return facetBtn("show", s.slug, s.name, s.count, state.show === s.slug);
     }).join("");
-    var topicBtns = topics.map(function (t) {
-      return facetBtn("topic", t.slug, t.name, t.count, state.topic === t.slug);
+    var topicOn = {};
+    state.topics.forEach(function (slug) { topicOn[slug] = true; });
+    var topicBtns = topics.map(function (row) {
+      return facetBtn("topic", row.slug, topicName(row.slug), row.count, !!topicOn[row.slug]);
     }).join("");
-    var formBtns = FORM_KEYS.map(function (f) {
-      return facetBtn("form", f.id, t(f.labelKey), null, !!forms[f.id]);
-    }).join("");
+    var topicBody = topicBtns
+      ? topicBtns
+      : '<p class="facet-pending">' + t("topicsPending") + "</p>";
     var heading = opts.heading || siteBrand();
     var blurb = opts.blurb || t("lede");
     var lockNote = "";
     if (opts.lock === "show") {
       lockNote = '<p class="lock-note">' + t("lockShow", {
-        href: W.hashFor({ name: "list", q: state.query, topic: state.topic, form: state.form, period: state.period, sort: state.sort })
+        href: W.hashFor({ name: "list", q: state.query, topics: state.topics, period: state.period, sort: state.sort })
       }) + "</p>";
     } else if (opts.lock === "topic") {
       lockNote = '<p class="lock-note">' + t("lockTopic", {
-        href: W.hashFor({ name: "list", q: state.query, show: state.show, form: state.form, period: state.period, sort: state.sort })
+        href: W.hashFor({ name: "list", q: state.query, show: state.show, period: state.period, sort: state.sort })
       }) + "</p>";
     }
     return (
@@ -637,20 +633,16 @@
         '<div class="facets">' +
           '<div class="facet-row">' +
             '<span class="facet-label" id="lbl-show">' + t("facetShow") + "</span>" +
-            '<div class="facet-set names" role="group" aria-labelledby="lbl-show">' + showBtns + "</div>" +
+            '<div class="facet-set shows" role="group" aria-labelledby="lbl-show">' + showBtns + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
             '<span class="facet-label" id="lbl-topic">' + t("facetTopic") + "</span>" +
-            '<div class="facet-set" role="group" aria-labelledby="lbl-topic">' + topicBtns + "</div>" +
-          "</div>" +
-          '<div class="facet-row">' +
-            '<span class="facet-label" id="lbl-form">' + t("facetForm") + "</span>" +
-            '<div class="facet-set" role="group" aria-labelledby="lbl-form">' + formBtns + "</div>" +
+            '<div class="facet-set" role="group" aria-labelledby="lbl-topic">' + topicBody + "</div>" +
           "</div>" +
           '<div class="facet-row">' +
             '<span class="facet-label" id="lbl-period">' + t("facetPeriod") + "</span>" +
             '<div class="facet-set" role="group" aria-labelledby="lbl-period">' +
-              collectPeriods().map(function (p) {
+              collectPeriods().filter(function (p) { return p.count > 0; }).map(function (p) {
                 return facetBtn("period", p.id, p.name, p.count, state.period === p.id);
               }).join("") +
             "</div>" +
@@ -668,10 +660,9 @@
   }
 
   function resultsTitle() {
-    if (state.period && !state.query.trim() && !state.form.length) {
+    if (state.period && !state.query.trim() && !topicSelected()) {
       var extraShow = state.route.name === "show" ? false : !!state.show;
-      var extraTopic = state.route.name === "topic" ? false : !!state.topic;
-      if (!extraShow && !extraTopic) return periodLabel(state.period);
+      if (!extraShow) return periodLabel(state.period);
     }
     if (state.query.trim()) return t("resultsSearch");
     if (hasHeavyFilters()) return t("resultsFilter");
@@ -726,11 +717,12 @@
       opts.lock = "show";
       if (!showMeta) missing = "missing-show";
     } else if (state.route.name === "topic") {
-      var topicMeta = topics.filter(function (t) { return t.slug === state.topic; })[0];
-      opts.heading = topicMeta ? topicMeta.name : W.topicDisplay(state.topic);
-      opts.blurb = topicMeta ? t("topicBlurb") : t("topicMissing");
+      var topicSlugNow = state.route.slug || "";
+      var topicKnown = W.isFineTopic(topicSlugNow) || topics.some(function (row) { return row.slug === topicSlugNow; });
+      opts.heading = topicKnown ? topicName(topicSlugNow) : topicSlugNow;
+      opts.blurb = topicKnown ? t("topicBlurb") : t("topicMissing");
       opts.lock = "topic";
-      if (!topicMeta) missing = "missing-topic";
+      if (!topicKnown) missing = "missing-topic";
     }
     var pageTitle = siteBrand();
     if (state.route.name === "show") pageTitle = (opts.heading || t("pageShow")) + " · " + siteBrand();
@@ -896,7 +888,7 @@
 
   function renderEpisode(it) {
     var view = document.getElementById("view");
-    view.className = "view episode" + ((it && (W.detectMedia(it).primary || W.hasAudio(it))) ? "" : " no-media");
+    view.className = "view episode" + ((it && W.hasAudio(it)) ? "" : " no-media");
     if (!it) {
       view.innerHTML = '<div class="empty">' + t("missingEp") + "</div>";
       document.title = siteBrand();
@@ -904,9 +896,6 @@
     }
 
     var media = W.detectMedia(it);
-    var essayOn = W.hasEssay(it);
-    var analysisOn = W.hasAnalysis(it);
-    var transOn = W.hasTranscript(it);
     var audioOn = W.hasAudio(it);
     var cover = coverSrc(it);
     var hasEmbed = !!media.primary;
@@ -914,17 +903,19 @@
     var panes = episodePanes(it);
     var word = panes.word;
     var showHref = W.hashFor({ name: "show", slug: W.showSlug(it.show) });
-    var topicHref = W.hashFor({ name: "topic", slug: W.topicSlug(it.category) });
-
-    var poster = "";
+    var stillInner = cover
+      ? '<img src="' + cover + '" alt="" />'
+      : '<span class="thumb-empty" aria-hidden="true"></span>';
+    var still = "";
     if (hasEmbed) {
-      poster =
-        '<button type="button" class="watch-poster' + (state.videoOpen ? " open" : "") +
+      still =
+        '<button type="button" class="watch-poster ep-still' + (state.videoOpen ? " open" : "") +
           '" id="btn-video" aria-expanded="' + (state.videoOpen ? "true" : "false") +
           '" aria-label="' + W.escapeHtml(t("openVideo")) + '">' +
-          (cover ? '<img src="' + cover + '" alt="" />' : "") +
-          '<span class="poster-ui"><span class="play" aria-hidden="true">▶</span>' +
-          '<span class="lbl">' + t("openVideo") + "</span></span></button>";
+          viewfinderHtml(stillInner, t("openVideo")) +
+        "</button>";
+    } else if (cover) {
+      still = '<figure class="ep-still">' + viewfinderHtml(stillInner, "") + "</figure>";
     }
 
     var audio = "";
@@ -971,11 +962,7 @@
       }).join("") + "</div>";
     }
 
-    var mediaRow = "";
-    if (hasEmbed || audioOn) {
-      var side = audioOn ? audio : (ext || "");
-      mediaRow = '<div class="media-row" id="media-row">' + poster + side + "</div>";
-    }
+    var mediaRow = audioOn ? '<div class="media-row" id="media-row">' + audio + "</div>" : "";
 
     var video = "";
     if (hasEmbed && state.videoOpen) {
@@ -1007,31 +994,33 @@
           : "<span></span>") +
       "</nav>";
 
-    var crumbs = [
+    var metaBits = [
       '<a href="' + showHref + '">' + W.escapeHtml(W.showDisplay(it.show)) + "</a>",
-      '<a href="' + topicHref + '">' + W.escapeHtml(it.category || "") + "</a>",
-      "<span>" + W.escapeHtml(it.date || "") + "</span>",
-      "<span>" + W.escapeHtml(it.duration || "—") + "</span>"
+      '<time datetime="' + W.escapeHtml(it.date || "") + '">' + W.escapeHtml(fmtDate(it.date)) + "</time>"
     ];
-    if (word) crumbs.push("<span>" + W.escapeHtml(word) + "</span>");
-    if (essayOn) crumbs.push("<span>" + t("markEssay") + "</span>");
-    if (analysisOn) crumbs.push("<span>" + t("markAnalysis") + "</span>");
-    if (transOn) crumbs.push("<span>" + t("markTranscript") + "</span>");
+    if (it.duration) metaBits.push("<span>" + W.escapeHtml(it.duration) + "</span>");
+    if (availHtml(it)) metaBits.push(availHtml(it));
+    if (word) metaBits.push("<span>" + W.escapeHtml(word) + "</span>");
+    var chips = topicChipsHtml(it);
 
     view.innerHTML =
       '<article class="ep">' +
-        '<header class="ep-head">' +
-          '<p class="ep-kicker">' + crumbs.join("") + "</p>" +
-          "<h1>" + W.escapeHtml(W.episodeTitle(it)) + "</h1>" +
-          '<p class="ep-guest">' + W.escapeHtml(it.guest) + "</p>" +
-          (it.summary ? '<p class="ep-summary">' + W.escapeHtml(it.summary) + "</p>" : "") +
+        '<header class="ep-pair' + (still ? "" : " solo") + '" id="ep-pair">' +
+          '<div class="ep-copy">' +
+            '<p class="ep-kicker">' + metaBits.join("") + "</p>" +
+            "<h1>" + W.escapeHtml(W.episodeTitle(it)) + "</h1>" +
+            (it.guest ? '<p class="ep-guest">' + W.escapeHtml(it.guest) + "</p>" : "") +
+            (chips ? '<div class="topic-row">' + chips + "</div>" : "") +
+            (it.summary ? '<p class="ep-summary">' + W.escapeHtml(it.summary) + "</p>" : "") +
+          "</div>" +
+          still +
         "</header>" +
-        mediaRow +
         video +
+        mediaRow +
         panes.tabs +
         panes.layout +
         more +
-        (hasEmbed ? "" : (ext && !mediaRow ? '<div class="ext-wrap">' + ext + "</div>" : "")) +
+        (!hasEmbed && !audioOn && ext ? '<div class="ext-wrap">' + ext + "</div>" : "") +
         navHtml +
       "</article>";
 
@@ -1062,8 +1051,8 @@
     frame.innerHTML = '<iframe src="' + W.escapeHtml(media.primary.embed) +
       '" title="' + W.escapeHtml(W.episodeTitle(it)) +
       '" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>';
-    var row = document.getElementById("media-row");
-    if (row && row.parentNode) row.insertAdjacentElement("afterend", frame);
+    var anchor = document.getElementById("ep-pair");
+    if (anchor && anchor.parentNode) anchor.insertAdjacentElement("afterend", frame);
   }
 
   function bindAudio(it) {
@@ -1242,8 +1231,7 @@
           name: "show",
           slug: value,
           q: state.query,
-          topic: state.topic,
-          form: state.form,
+          topics: state.topics,
           period: state.period,
           sort: state.sort
         });
@@ -1255,26 +1243,22 @@
     }
     if (kind === "topic") {
       if (state.route.name === "topic") {
+        if (value === state.route.slug) return;
         location.hash = W.hashFor({
           name: "topic",
           slug: value,
           q: state.query,
           show: state.show,
-          form: state.form,
           period: state.period,
           sort: state.sort
         });
         return;
       }
-      state.topic = state.topic === value ? "" : value;
-      writeHash();
-      return;
-    }
-    if (kind === "form") {
-      var set = formSet();
+      var set = {};
+      state.topics.forEach(function (slug) { set[slug] = true; });
       if (set[value]) delete set[value];
       else set[value] = true;
-      state.form = FORM_KEYS.map(function (f) { return f.id; }).filter(function (id) { return set[id]; });
+      state.topics = W.topicList(Object.keys(set));
       writeHash();
       return;
     }
