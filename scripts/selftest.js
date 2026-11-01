@@ -336,9 +336,9 @@ assert("footer rss line", appSrc.indexOf('t("footer4")') !== -1);
 assert("footer rss zh", WL.t("footer4", null, "zh").indexOf("订阅") !== -1 && WL.t("footer4", null, "zh").indexOf("feed.xml") !== -1);
 assert("footer rss en", WL.t("footer4", null, "en").indexOf("Subscribe") !== -1 && WL.t("footer4", null, "en").indexOf("feed.xml") !== -1);
 assert("app.js uses bodyForLang", appSrc.indexOf("bodyForLang") !== -1 && appSrc.indexOf("unavailableEssay") !== -1);
-assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261101e") !== -1);
-assert("index cache-bust on three assets", (htmlSrc.match(/\?v=20261101e/g) || []).length === 3);
-assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261101d") === -1 && htmlSrc.indexOf("?v=20261101c") === -1 && htmlSrc.indexOf("?v=20261101b") === -1 && htmlSrc.indexOf("?v=20261031a") === -1);
+assert("index cache-bust bumped", htmlSrc.indexOf("?v=20261101g") !== -1);
+assert("index cache-bust on three assets", (htmlSrc.match(/\?v=20261101g/g) || []).length === 3);
+assert("index cache-bust not stale", htmlSrc.indexOf("?v=20261101f") === -1 && htmlSrc.indexOf("?v=20261101e") === -1 && htmlSrc.indexOf("?v=20261101d") === -1 && htmlSrc.indexOf("?v=20261101c") === -1 && htmlSrc.indexOf("?v=20261031a") === -1);
 assert("app drops form facet", appSrc.indexOf("facetForm") === -1 && appSrc.indexOf('data-facet="form"') === -1 && appSrc.indexOf("state.form") === -1);
 assert("app topic filter is item topics", appSrc.indexOf("itemHasAnyTopic") !== -1 && appSrc.indexOf("topicSlug(it.category)") === -1);
 assert("rss alternate link", htmlSrc.indexOf('rel="alternate"') !== -1 && htmlSrc.indexOf("application/rss+xml") !== -1 && htmlSrc.indexOf("https://everclear077.github.io/ai-interview-watchlist/feed.xml") !== -1);
@@ -414,6 +414,10 @@ function runNode(args, timeoutMs) {
     maxBuffer: 20 * 1024 * 1024
   });
 }
+
+var dedupeCheck = runNode(["scripts/split-data.mjs", "--self-check"], 30000);
+if (dedupeCheck.status !== 0) console.log(dedupeCheck.stdout || "", dedupeCheck.stderr || "");
+assert("prose dedupe self-check", dedupeCheck.status === 0);
 
 var feedCheck = runNode(["scripts/build-feed.mjs", "--self-check"], 30000);
 if (feedCheck.status !== 0) console.log(feedCheck.stdout || "", feedCheck.stderr || "");
