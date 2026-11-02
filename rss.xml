@@ -5,9 +5,36 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>[年终复盘①] AI 带给我的 10 个 Aha Moments｜庄明浩：RSI 来了、AI 的奇观与粗糙、巨头夹缝中的创业机会</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-zhuangminghao-aha-2026-11-01</link>
+      <guid isPermaLink="false">crossing-zhuangminghao-aha-2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>十字路口 2026 年终 AI 复盘系列①：庄明浩交出 10 个 Aha——OpenClaw 刷屏余波、Seedance 2.0、Sora 2「鲸落」、Anthropic 相关 RSI 叙述的生理冲击、硬件厂回潮、Codex 与 ChatGPT 合并、Qwen 小模型端侧、App Store 护城河、模型斩杀线，以及对旗舰模型跃迁的「毁灭吧」式情绪；彩蛋回到对「粗糙人味」的渴望。观点与感受驱动，非技术深潜。</description>
+    </item>
+    <item>
+      <title>How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano (Wispr Flow)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-hector-serrano-wispr-2026-11-01</link>
+      <guid isPermaLink="false">lenny-hector-serrano-wispr-2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>产品·增长</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>Lenny 对谈 Wispr Flow 内容负责人 Hector Serrano：19 岁加入、产品尚未 PMF；一年内搭建约 50 人创作者矩阵、每月 500–600 条付费 UGC 广告，头部创作者月入超 $13k（按广告花费分成）。讨论付费 UGC 作为 SaaS 增长杠杆、创作者补偿、现代营销招聘、「好营销人对 AI 输出过敏」、以及 YouTube 包装。Wispr 为 AI 语音转写工具，营收称 30×、估值叙事至约 $20 亿（以节目表述为准）。</description>
+    </item>
+    <item>
+      <title>How Bending Spoons Built a $20 Billion Compounder | Luca Ferrari</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-luca-ferrari-bending-spoons-2026-11-01</link>
+      <guid isPermaLink="false">a16z-luca-ferrari-bending-spoons-2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创投·公司</category>
+      <category>a16z Podcast</category>
+      <description>Wave by Vento 现场：Bending Spoons CEO Luca Ferrari 与 a16z GP Anish Acharya 谈收购复合式并购——收购公司到共享平台、改善单位经济、利润再投入下一次收购；权衡增长与盈利、审慎用债、长期主义。并讨论 AI 是否威胁 SaaS、品牌/数据/网络效应/切换成本等护城河，以及公司已在编码、客服与数据分析中使用 AI。偏经营复合，而非模型研究。</description>
+    </item>
     <item>
       <title>AI:AM: Carbon in the Arena, Mistral&apos;s Le Chonk, the Agent-Run Economy, Ferroelectric RAM + New Hacks</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-aiam-carbon-arena-mistral-2026-10-31</link>
@@ -52,6 +79,15 @@
       <category>创始人·CEO·产品</category>
       <category>a16z Podcast</category>
       <description>Eve CEO Jay Madheswaran 与 Alex Rampell 谈 AI 如何自动化原告律所工作流、扩大可服务案件集合，以及法律服务规模经济的想象。约 53 分钟。</description>
+    </item>
+    <item>
+      <title>Abundant Intelligence at the Midwest AI Summit (E378)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/practicalai-e378-midwest-summit-2026-10-29</link>
+      <guid isPermaLink="false">practicalai-e378-midwest-summit-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>工程·应用</category>
+      <category>Practical AI</category>
+      <description>Midwest AI Summit 三场演讲精选：Heidi Porter 谈用工具、评测与护栏搭建可靠的 AI 增强工作流；Kevin Solorio 强调与一线员工共建（而非只为他们构建）以换信任与采纳；SEP 的 Chris Shinkle 与 Andrew Dunlap 讨论软件团队如何按目标、约束与验证需求选择 AI 自主程度。偏企业落地与工程协作，非实验室 SOTA。</description>
     </item>
     <item>
       <title>Luke Muehlhauser：最重要却没人在做的 AI 安全工作</title>
