@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-03",
+  "lastUpdated": "2026-11-04",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,196 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "geekpark-linkstart-personal-ai-2026-11-04",
+      "title": "Vol.137｜Personal AI：你愿意把生活托付给一个怎样的 AI？",
+      "guest": "高策（Today AI cofounder）；冯雷（Cola 创始人&CEO / 橘AI主理人）；主持 靖宇（极客公园副主编）",
+      "show": "开始连接 LinkStart（极客公园）",
+      "date": "2026-11-04",
+      "duration": "84分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "china-scene",
+        "agents-tooling",
+        "founders-product",
+        "society-work",
+        "enterprise-apps"
+      ],
+      "priority": "P0",
+      "summary": "极客公园「开始连接」Vol.137：Today AI 高策与 Cola/橘AI 冯雷谈 Personal AI——从接指令完成单项任务，走向持续理解邮件/日历/对话、提炼行为模式，并在合适时机主动帮助。节目公开口径讨论约 10GB 微信记录画像、去掉主动引导后约半数用户不再输入、订阅/广告/分成的站队问题，以及云端到本地可能催生的个人设备形态。约 84 分钟，小宇宙可播。",
+      "advice": "P0：做个人助理/记忆/主动性产品必听。对照精彩时刻抓「反驳想法」「关引导后留存」「商业站队」「本地隐私」四段；与 Vol.136 Stripe 卖方视角并读。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6ae9aa3297726cd4675c21c0"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/cn/podcast/%E5%BC%80%E5%A7%8B%E8%BF%9E%E6%8E%A5-linkstart/id1693180879"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/geekpark-linkstart-personal-ai-2026-11-04.jpg",
+      "media": {
+        "audioUrl": "https://dts-api.xiaoyuzhoufm.com/track/63ff0da51b1faf8a0b70b337/6ae9aa3297726cd4675c21c0/media.xyzcdn.net/63ff0da51b1faf8a0b70b337/lrrSvSpWtlt9ywxPiUDGuFzU0UL8.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-ai-agents-shop-plan-gossip-2026-11-04",
+      "title": "The New AI Agents That Shop, Plan, and Gossip",
+      "guest": "David Pawlan（Assistant Benchmark）；Anish Acharya；Josh Elman",
+      "show": "a16z Podcast",
+      "date": "2026-11-04",
+      "duration": "51分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "enterprise-apps",
+        "markets-vc",
+        "society-work"
+      ],
+      "priority": "P0",
+      "summary": "a16z Show：Assistant Benchmark 创建者 David Pawlan 回访，与 Anish Acharya、Josh Elman 讨论消费级 AI 助手格局。官方简介称已测试 140+ 助手，梳理记忆、判断与信任的分野，并以购物、规划、社交（gossip）为压力场景；进一步探讨 Agent 互联后的新社交图与「秘密超能力」叙事。约 51 分钟，Simplecast 音频可播。",
+      "advice": "P0：消费 Agent/助手评测必听。用 shop/plan/gossip 做内部红队矩阵；与 Zip/Legora/Serval 企业向 Agent 条目分工听。同日 Huberman 健康集不入库。",
+      "urls": [
+        {
+          "label": "a16z / Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-new-ai-agents-that-shop-plan-and-gossip-DXsIUYrd"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/the-a16z-show/id842818711"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/a16z-ai-agents-shop-plan-gossip-2026-11-04.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/304b6178-d2e4-4447-aae7-810df659e5e1/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=304b6178-d2e4-4447-aae7-810df659e5e1&feed=JGE3yC0V",
+        "audioSource": "simplecast"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "twiml-richard-socher-ai-invent-2026-11-03",
+      "title": "Can AI Invent or Just Help Scientists Work Faster? with Richard Socher (#783)",
+      "guest": "Richard Socher（Recursive / 前 Salesforce Chief Scientist / You.com）",
+      "show": "TWIML AI Podcast",
+      "date": "2026-11-03",
+      "duration": "49分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "models-labs",
+        "agents-tooling",
+        "alignment-safety",
+        "compute-infra"
+      ],
+      "priority": "P0",
+      "summary": "TWIML #783：Richard Socher 讨论 AI 从辅助科研（写代码、分析、起草）走向提出想法、跑实验与验证的「发明」光谱。从 AI 改进 AI（模型训练/GPU kernel）与快速验证切入，谈 reward hacking，并延伸到生物/化学/物理所需的数据与实验基础设施，以及商业激励如何约束更强系统；引出 Eureka machine 愿景。约 49 分钟。",
+      "advice": "P0：科研 Agent/发现认识论必听。先问验证器是否独立、阴性结果如何归档；勿把节目口径中的 Recursive 报道结果当成已独立复现结论。",
+      "urls": [
+        {
+          "label": "TWIML",
+          "href": "https://twimlai.com/podcast/twimlai/can-ai-invent-just-help-scientists-work-faster"
+        },
+        {
+          "label": "Show notes #783",
+          "href": "https://twimlai.com/go/783"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/twiml-richard-socher-ai-invent-2026-11-03.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN7947684039.mp3",
+        "audioSource": "megaphone"
+      },
+      "hasEssay": true,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-ad50-american-industry-2026-10-29",
+      "title": "The Startups Rebuilding American Industry | The AD50",
+      "guest": "Erin Price-Wright；Connor Love；主持 Elena Burger",
+      "show": "a16z Podcast",
+      "date": "2026-10-29",
+      "duration": "50分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "robotics-embodied",
+        "compute-infra",
+        "policy-geopolitics",
+        "founders-product"
+      ],
+      "priority": "P1",
+      "summary": "a16z Show 解读本年度 AD50：防务、能源、制造与机器人如何汇成「重建美国工业底座」叙事。Erin Price-Wright 与 Connor Love 讨论防务需求如何反哺可服务更大商业市场的制造产能、AI 如何改写工厂经济性，以及新一代创始人如何把 SpaceX/Tesla/Anduril/Palantir 经验迁到采矿、能源、制造与防务。约 50 分钟。",
+      "advice": "P1：关注工业/防务/制造交叉与 AI 工厂经济性时听。配合 a16z AD50 公开文对照；主题偏硬科技基建而非纯模型访谈。",
+      "urls": [
+        {
+          "label": "a16z / Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-startups-rebuilding-american-industry-the-ad50-ZBbH0YCR"
+        },
+        {
+          "label": "AD50 文章",
+          "href": "https://www.a16z.news/p/ad-50-2026-production-is-deterrence"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/a16z-ad50-american-industry-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/7faacce1-573c-4324-a189-ce0ffa16a102/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=7faacce1-573c-4324-a189-ce0ffa16a102&feed=JGE3yC0V",
+        "audioSource": "simplecast"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "uncapped-benchmark-breakfast-jack-ev-2026-10-29",
+      "title": "Benchmark Breakfast #1 | Jack and Ev",
+      "guest": "Jack Altman；Ev Randle（Benchmark）",
+      "show": "Uncapped",
+      "date": "2026-10-29",
+      "duration": "56分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "models-labs",
+        "open-source",
+        "alignment-safety",
+        "robotics-embodied"
+      ],
+      "priority": "P1",
+      "summary": "Uncapped 新系列 Benchmark Breakfast 首集：Benchmark 合伙人 Jack Altman 与 Ev Randle 以周一无议程合伙人会议风格对谈。公开时间线覆盖 Anthropic S-1 与收入/算力图、codegen PMF、开源 vs 闭源 steelman、inference cloud 盘点、AI 网络安全与「abliterated」开源权重，以及生物/机器人相对软件增益的长期重要性。约 56 分钟。",
+      "advice": "P1：想听一线基金合伙人原汤讨论模型竞赛、开源与物理世界时选这集。时间戳已公开，可跳听 S-1、codegen、abliterated models、bio/robotics 段。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/benchmark-breakfast-1-jack-and-ev/id1801867202?i=1000798702215"
+        },
+        {
+          "label": "Uncapped",
+          "href": "https://www.uncappedpod.com/"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/uncapped-benchmark-breakfast-jack-ev-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2026-9-29/435304050-44100-2-38d6e97c692cb.mp3",
+        "audioSource": "anchor"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "lenny-ezra-mechaber-figma-ai-2026-11-02",
       "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",

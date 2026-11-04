@@ -5,9 +5,36 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>Vol.137｜Personal AI：你愿意把生活托付给一个怎样的 AI？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-personal-ai-2026-11-04</link>
+      <guid isPermaLink="false">geekpark-linkstart-personal-ai-2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>开始连接 LinkStart（极客公园）</category>
+      <description>极客公园「开始连接」Vol.137：Today AI 高策与 Cola/橘AI 冯雷谈 Personal AI——从接指令完成单项任务，走向持续理解邮件/日历/对话、提炼行为模式，并在合适时机主动帮助。节目公开口径讨论约 10GB 微信记录画像、去掉主动引导后约半数用户不再输入、订阅/广告/分成的站队问题，以及云端到本地可能催生的个人设备形态。约 84 分钟，小宇宙可播。</description>
+    </item>
+    <item>
+      <title>The New AI Agents That Shop, Plan, and Gossip</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ai-agents-shop-plan-gossip-2026-11-04</link>
+      <guid isPermaLink="false">a16z-ai-agents-shop-plan-gossip-2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Podcast</category>
+      <description>a16z Show：Assistant Benchmark 创建者 David Pawlan 回访，与 Anish Acharya、Josh Elman 讨论消费级 AI 助手格局。官方简介称已测试 140+ 助手，梳理记忆、判断与信任的分野，并以购物、规划、社交（gossip）为压力场景；进一步探讨 Agent 互联后的新社交图与「秘密超能力」叙事。约 51 分钟，Simplecast 音频可播。</description>
+    </item>
+    <item>
+      <title>Can AI Invent or Just Help Scientists Work Faster? with Richard Socher (#783)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-richard-socher-ai-invent-2026-11-03</link>
+      <guid isPermaLink="false">twiml-richard-socher-ai-invent-2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>TWIML AI Podcast</category>
+      <description>TWIML #783：Richard Socher 讨论 AI 从辅助科研（写代码、分析、起草）走向提出想法、跑实验与验证的「发明」光谱。从 AI 改进 AI（模型训练/GPU kernel）与快速验证切入，谈 reward hacking，并延伸到生物/化学/物理所需的数据与实验基础设施，以及商业激励如何约束更强系统；引出 Eureka machine 愿景。约 49 分钟。</description>
+    </item>
     <item>
       <title>How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-ezra-mechaber-figma-ai-2026-11-02</link>
@@ -115,6 +142,24 @@
       <category>创始人·CEO·产品</category>
       <category>a16z Podcast</category>
       <description>Eve CEO Jay Madheswaran 与 Alex Rampell 谈 AI 如何自动化原告律所工作流、扩大可服务案件集合，以及法律服务规模经济的想象。约 53 分钟。</description>
+    </item>
+    <item>
+      <title>The Startups Rebuilding American Industry | The AD50</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ad50-american-industry-2026-10-29</link>
+      <guid isPermaLink="false">a16z-ad50-american-industry-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Podcast</category>
+      <description>a16z Show 解读本年度 AD50：防务、能源、制造与机器人如何汇成「重建美国工业底座」叙事。Erin Price-Wright 与 Connor Love 讨论防务需求如何反哺可服务更大商业市场的制造产能、AI 如何改写工厂经济性，以及新一代创始人如何把 SpaceX/Tesla/Anduril/Palantir 经验迁到采矿、能源、制造与防务。约 50 分钟。</description>
+    </item>
+    <item>
+      <title>Benchmark Breakfast #1 | Jack and Ev</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/uncapped-benchmark-breakfast-jack-ev-2026-10-29</link>
+      <guid isPermaLink="false">uncapped-benchmark-breakfast-jack-ev-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Uncapped</category>
+      <description>Uncapped 新系列 Benchmark Breakfast 首集：Benchmark 合伙人 Jack Altman 与 Ev Randle 以周一无议程合伙人会议风格对谈。公开时间线覆盖 Anthropic S-1 与收入/算力图、codegen PMF、开源 vs 闭源 steelman、inference cloud 盘点、AI 网络安全与「abliterated」开源权重，以及生物/机器人相对软件增益的长期重要性。约 56 分钟。</description>
     </item>
     <item>
       <title>Abundant Intelligence at the Midwest AI Summit (E378)</title>
