@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-05",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,199 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "nopriors-vlad-tenev-robinhood-2026-11-05",
+      "title": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
+      "guest": "Vlad Tenev",
+      "show": "No Priors",
+      "date": "2026-11-05",
+      "duration": "54分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "agents-tooling",
+        "founders-product",
+        "policy-geopolitics",
+        "compute-infra"
+      ],
+      "priority": "P0",
+      "summary": "Sarah Guo 对话 Robinhood CEO Vlad Tenev：以 Ownership 为主轴，谈零售券商如何扩展跨资产所有权；覆盖私募代币化、Robinhood Chain、Agentic Trading / Agentic Credit Card、预测市场、HFT 基础设施负载，以及数学超智能创业 Harmonic 与领导力。约 54 分钟。",
+      "advice": "P0：做金融 Agent、券商/支付代理或「AI×所有权」叙事必听。对照 a16z Agents 权限框架，抓 Agentic Trading 站队、私募代币化流动性与熔断三段。",
+      "urls": [
+        {
+          "label": "Apple Podcasts (No Priors)",
+          "href": "https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688"
+        },
+        {
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/PDP1158596730.mp3"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/nopriors-vlad-tenev-robinhood-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/PDP1158596730.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-figma-cfo-praveer-melwani-2026-11-05",
+      "title": "The New CFO: How AI Is Rewriting the Finance Function | Figma CFO Praveer Melwani",
+      "guest": "Praveer Melwani",
+      "show": "a16z Show",
+      "date": "2026-11-05",
+      "duration": "51分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "enterprise-apps",
+        "founders-product",
+        "agents-tooling",
+        "markets-vc",
+        "talent-education"
+      ],
+      "priority": "P0",
+      "summary": "Figma CFO Praveer Melwani 与 a16z Seema Amble、Ivan Makarov 谈财务职能从对账走向参与下一步业务决策：回款、费用分析、并购尽调中的 AI 原型与模拟质疑；AI slop 风险、build vs buy，以及把一次性 Agent 收编为中心化系统层；招聘标准强调懂业务、质疑输出、不外包思考。约 51 分钟。",
+      "advice": "P0：CFO/FP&A、财务 Agent 创业与企业控制面必听。合读 a16z《You Need a New CFO》，抓 slop、转正门禁与招聘标准。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-new-cfo-how-ai-is-rewriting-the-finance-function-figma-cfo-praveer-melwani-z9a_w4ym"
+        },
+        {
+          "label": "You Need a New CFO (essay)",
+          "href": "https://www.a16z.news/p/you-need-a-new-cfo"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/85b10429-90eb-46ca-ba43-147768966fea/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=85b10429-90eb-46ca-ba43-147768966fea&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/a16z-figma-cfo-praveer-melwani-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/85b10429-90eb-46ca-ba43-147768966fea/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=85b10429-90eb-46ca-ba43-147768966fea&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "decoder-willy-shih-ai-supply-2026-11-05",
+      "title": "The hidden supply chain costs of the AI boom",
+      "guest": "Willy Shih",
+      "show": "Decoder",
+      "date": "2026-11-05",
+      "duration": "49分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "compute-infra",
+        "chips-hardware",
+        "policy-geopolitics",
+        "markets-vc",
+        "china-scene"
+      ],
+      "priority": "P1",
+      "summary": "The Verge Decoder 对话哈佛商学院 Willy Shih（新书 Where Does My Stuff Come From?）：AI 繁荣背后的供应链隐性成本、关税与市场反应、为何中国仍是制造中心，以及存储/芯片短缺等宏观约束。约 49 分钟；The Verge 提供访谈文稿入口。",
+      "advice": "P1：做算力/硬件采购、供应链或政策对照时听。偏宏观制造与贸易，非模型产品深谈。",
+      "urls": [
+        {
+          "label": "Decoder / The Verge (search title)",
+          "href": "https://www.theverge.com/decoder-podcast-with-nilay-patel"
+        },
+        {
+          "label": "Audio",
+          "href": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP1361479565.mp3"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/decoder-willy-shih-ai-supply-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP1361479565.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-warp-zach-lloyd-2026-11-03",
+      "title": "The 2026 Software Factory Standard — Zach Lloyd, Warp.dev",
+      "guest": "Zach Lloyd",
+      "show": "Latent Space",
+      "date": "2026-11-03",
+      "duration": "35分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "open-source",
+        "enterprise-apps"
+      ],
+      "priority": "P1",
+      "summary": "Latent Space 对话 Warp.dev 的 Zach Lloyd：2026「软件工厂」标准——Agent 时代终端/开发工作流如何重定义。约 35 分钟（≥30）；有 YouTube 与播客音频。",
+      "advice": "P1：做 coding agent、终端或开发者工具必听。时长中等，适合补 Warp 产品叙事。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=LL0YmIyBKSU"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/latent-space-warp-zach-lloyd-2026-11-03.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
+        "audioUrl": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "practicalai-midwest-summit-p2-2026-11-05",
+      "title": "Abundant Intelligence at the Midwest AI Summit Part 2",
+      "guest": "Don Barger; Mark Lay; Darren Taillie",
+      "show": "Practical AI",
+      "date": "2026-11-05",
+      "duration": "48分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "enterprise-apps",
+        "agents-tooling",
+        "talent-education",
+        "society-work"
+      ],
+      "priority": "P2",
+      "summary": "Practical AI Midwest AI Summit 第 2 部分：International Mission Board 的 AI charter、Noblis 的组织级 AI 四项决策、Aerocore 用 Agent/text-to-SQL/视觉模型改进工单与数据访问。偏组织治理与落地案例，约 48 分钟。",
+      "advice": "P2：做企业 AI 治理/章程或行业落地案例时选听；非前沿模型深谈。",
+      "urls": [
+        {
+          "label": "Episode",
+          "href": "https://share.transistor.fm/s/1b301bdc"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pscrb.fm/rss/p/dts.podtrac.com/redirect.mp3/media.transistor.fm/1b301bdc/b7154aa0.mp3"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/practicalai-midwest-summit-p2-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/dts.podtrac.com/redirect.mp3/media.transistor.fm/1b301bdc/b7154aa0.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "geekpark-linkstart-personal-ai-2026-11-04",
       "title": "Vol.137｜Personal AI：你愿意把生活托付给一个怎样的 AI？",
@@ -50,7 +243,7 @@
         "audioSource": "xiaoyuzhou"
       },
       "hasEssay": true,
-      "hasAnalysis": false,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -88,7 +281,7 @@
         "audioSource": "simplecast"
       },
       "hasEssay": true,
-      "hasAnalysis": false,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
@@ -126,7 +319,7 @@
         "audioSource": "megaphone"
       },
       "hasEssay": true,
-      "hasAnalysis": false,
+      "hasAnalysis": true,
       "hasTranscript": false
     },
     {
