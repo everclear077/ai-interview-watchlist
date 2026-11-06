@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,197 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "late-anthropic-s1-lizhaoyu-amont-2026-11-06",
+      "title": "185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险",
+      "guest": "Rob Li / 李肇宇（Amont Partners 管理合伙人）",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-11-06",
+      "duration": "60分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "markets-vc",
+        "models-labs",
+        "compute-infra",
+        "china-scene",
+        "enterprise-apps"
+      ],
+      "priority": "P0",
+      "summary": "程曼祺对谈 Amont 李肇宇：从二级市场拆解 Anthropic S-1——收入增速换挡（公开口径 Q2→Q3）、客户集中度与增购、单位算力收入、高云分成，以及近 9000 亿美元量级算力承诺的刚性与期限错配；核心把「泡沫」翻译成需求曲线斜率研究。与同日 186 期组成一、二级双视角。",
+      "advice": "P0 必听：中文侧少见的 Anthropic S-1 二级交易框架；与 186 连听，先需求后定价。不构成投资建议。",
+      "urls": [
+        {
+          "label": "晚点播客",
+          "href": "https://podcast.latepost.com/185"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6aed2f4b30b2f21e46cb37c2"
+        },
+        {
+          "label": "Audio",
+          "href": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/late-anthropic-s1-lizhaoyu-amont-2026-11-06.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "late-anthropic-s1-zhanglu-fusion-2026-11-06",
+      "title": "186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么",
+      "guest": "张璐（Fusion Fund 创始合伙人）",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-11-06",
+      "duration": "73分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "enterprise-apps",
+        "markets-vc",
+        "agents-tooling",
+        "china-scene",
+        "models-labs"
+      ],
+      "priority": "P0",
+      "summary": "程曼祺对谈 Fusion Fund 张璐：借 CXO 网络观察企业客户真实心态——预算与 ROI、coding 之后如何进入更多工作流、模型商是否应走向企业智能体平台，以及 GPU 转租与监管清晰度对部署的影响。收束强调「需求、需求、需求」，与 185 二级定价互补。",
+      "advice": "P0：做企业 Agent / to B 销售必听；与 185 连读形成「买方证据 vs 承诺刚性」对照。",
+      "urls": [
+        {
+          "label": "晚点播客",
+          "href": "https://podcast.latepost.com/186"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6aed2f4b30b2f21e46cb37c1"
+        },
+        {
+          "label": "Audio",
+          "href": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063.mp3"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/late-anthropic-s1-zhanglu-fusion-2026-11-06.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-joshua-monrad-sentinel-kya-2026-11-05",
+      "title": "KYC Becomes KYA: Sentinel Bio's Joshua Monrad on DNA Screening, Uplift Studies & Agent Monitoring",
+      "guest": "Joshua Monrad（Sentinel Bio 联合创始人兼董事总经理）",
+      "show": "The Cognitive Revolution",
+      "date": "2026-11-05",
+      "duration": "105分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "alignment-safety",
+        "agents-tooling",
+        "research-science",
+        "policy-geopolitics"
+      ],
+      "priority": "P0",
+      "summary": "Nathan Labenz 对谈 Sentinel Bio 的 Joshua Monrad：前沿模型与自主 Agent 如何改变生物安全风险面——湿实验 uplift 度量、双用途数据治理、DNA 合成筛查，以及从 KYC 到 KYA（Know Your Agent）的身份与监控。亦覆盖近短期风险、暂停辩论与被忽视的防御瓶颈。约 105 分钟。",
+      "advice": "P0：Agent 平台与安全团队必听；与 GovAI Chan、RAND ASI 集并读控制面。仅作治理框架，不含操作细节。",
+      "urls": [
+        {
+          "label": "Cognitive Revolution",
+          "href": "https://www.cognitiverevolution.ai/kyc-becomes-kya-sentinel-bio-s-joshua-monrad-on-dna-screening-uplift-studies-agent-monitoring/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP6275291421.mp3"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/cogrev-joshua-monrad-sentinel-kya-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP6275291421.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "training-data-ronak-trajectory-2026-11-05",
+      "title": "A Model For Everyone: How Ronak From Trajectory Is Building Products For Continual Learning",
+      "guest": "Ronak Malde（Trajectory 联合创始人）",
+      "show": "Training Data (Sequoia)",
+      "date": "2026-11-05",
+      "duration": "32分钟",
+      "category": "工程·应用",
+      "topics": [
+        "agents-tooling",
+        "models-labs",
+        "research-science",
+        "enterprise-apps"
+      ],
+      "priority": "P1",
+      "summary": "Pat Grady / Lauren Reeder 对话 Trajectory 的 Ronak Malde：批评今日 Agent 停留在「伪持续学习」（离线批次更新）；讨论用自有数据一键训练、Group Size 1 / meta-grader 等研究赌注，以及 Harvey 等案例中相对前沿模型的成本与基准提升。约 32 分钟。",
+      "advice": "P1：做 Agent 评测/持续学习产品可听；偏短，可与 David Silver「Age of Experience」对照。",
+      "urls": [
+        {
+          "label": "Audio",
+          "href": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI8366427179.mp3"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/training-data-ronak-trajectory-2026-11-05.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI8366427179.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-salesforce-somorjai-ma-2026-11-06",
+      "title": "Inside Salesforce’s $100 Billion M&A Playbook | John Somorjai",
+      "guest": "John Somorjai（Salesforce）",
+      "show": "a16z Show",
+      "date": "2026-11-06",
+      "duration": "49分钟",
+      "category": "创投·公司",
+      "topics": [
+        "founders-product",
+        "markets-vc",
+        "enterprise-apps",
+        "agents-tooling"
+      ],
+      "priority": "P1",
+      "summary": "a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。",
+      "advice": "P1：创始人考虑 exit / 企业发展可听；AI 主线为并购与 AI-native 标的，非模型技术深聊。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/inside-salesforces-100-billion-ma-playbook-john-somorjai-taKdd7nQ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/a16z-salesforce-somorjai-ma-2026-11-06.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "nopriors-vlad-tenev-robinhood-2026-11-05",
       "title": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
@@ -5870,5 +6061,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01"
+  "notes": "2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
 }

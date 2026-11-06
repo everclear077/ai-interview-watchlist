@@ -5,9 +5,54 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-anthropic-s1-lizhaoyu-amont-2026-11-06</link>
+      <guid isPermaLink="false">late-anthropic-s1-lizhaoyu-amont-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>程曼祺对谈 Amont 李肇宇：从二级市场拆解 Anthropic S-1——收入增速换挡（公开口径 Q2→Q3）、客户集中度与增购、单位算力收入、高云分成，以及近 9000 亿美元量级算力承诺的刚性与期限错配；核心把「泡沫」翻译成需求曲线斜率研究。与同日 186 期组成一、二级双视角。</description>
+    </item>
+    <item>
+      <title>186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-anthropic-s1-zhanglu-fusion-2026-11-06</link>
+      <guid isPermaLink="false">late-anthropic-s1-zhanglu-fusion-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>程曼祺对谈 Fusion Fund 张璐：借 CXO 网络观察企业客户真实心态——预算与 ROI、coding 之后如何进入更多工作流、模型商是否应走向企业智能体平台，以及 GPU 转租与监管清晰度对部署的影响。收束强调「需求、需求、需求」，与 185 二级定价互补。</description>
+    </item>
+    <item>
+      <title>Inside Salesforce’s $100 Billion M&amp;A Playbook | John Somorjai</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-salesforce-somorjai-ma-2026-11-06</link>
+      <guid isPermaLink="false">a16z-salesforce-somorjai-ma-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创投·公司</category>
+      <category>a16z Show</category>
+      <description>a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。</description>
+    </item>
+    <item>
+      <title>KYC Becomes KYA: Sentinel Bio&apos;s Joshua Monrad on DNA Screening, Uplift Studies &amp; Agent Monitoring</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-joshua-monrad-sentinel-kya-2026-11-05</link>
+      <guid isPermaLink="false">cogrev-joshua-monrad-sentinel-kya-2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>Nathan Labenz 对谈 Sentinel Bio 的 Joshua Monrad：前沿模型与自主 Agent 如何改变生物安全风险面——湿实验 uplift 度量、双用途数据治理、DNA 合成筛查，以及从 KYC 到 KYA（Know Your Agent）的身份与监控。亦覆盖近短期风险、暂停辩论与被忽视的防御瓶颈。约 105 分钟。</description>
+    </item>
+    <item>
+      <title>A Model For Everyone: How Ronak From Trajectory Is Building Products For Continual Learning</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/training-data-ronak-trajectory-2026-11-05</link>
+      <guid isPermaLink="false">training-data-ronak-trajectory-2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <category>工程·应用</category>
+      <category>Training Data (Sequoia)</category>
+      <description>Pat Grady / Lauren Reeder 对话 Trajectory 的 Ronak Malde：批评今日 Agent 停留在「伪持续学习」（离线批次更新）；讨论用自有数据一键训练、Group Size 1 / meta-grader 等研究赌注，以及 Harvey 等案例中相对前沿模型的成本与基准提升。约 32 分钟。</description>
+    </item>
     <item>
       <title>Tokenization, Agentic Trading, Harmonic: Robinhood&apos;s Mission to Expand Ownership with CEO Vlad Tenev</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-vlad-tenev-robinhood-2026-11-05</link>
