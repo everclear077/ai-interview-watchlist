@@ -5,9 +5,126 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>The man who fought napster is now fighting AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-mitch-glazier-ai-copyright-2026-11-09</link>
+      <guid isPermaLink="false">decoder-mitch-glazier-ai-copyright-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Decoder</category>
+      <description>Nilay Patel 对话曾在 Napster 时代站在 RIAA 一侧的 Mitch Glazier：从当年起诉下载者的版权律师，到今天站在音乐人与听众一边、应对生成式 AI 的产业谈判与诉讼。节目页指向 Suno/Udio 训练数据争议、厂牌为减少 AI slop 进入榜单提出的规则、以及 Warner/Universal 与 AI 音乐公司后续达成的和解与合作等公开报道。完整访谈稿据称在 The Verge，长镜未能入库正文。</description>
+    </item>
+    <item>
+      <title>What’s Next For AI Regulation After Dems Sweep? Reps. Casar and Liccardo Weigh In</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/kara-ai-regulation-casar-liccardo-2026-11-09</link>
+      <guid isPermaLink="false">kara-ai-regulation-casar-liccardo-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>On with Kara Swisher</category>
+      <description>中期选举民主党拿下国会两院优势后，Kara Swisher 请来德州众议员 Greg Casar 与加州众议员 Sam Liccardo，讨论民主党应优先推进哪些 AI 立法、何处可能与共和党合作，以及国会能否赶上技术节奏。简介写明录于选举后的周三；白宫仍在共和党手中，特朗普公开警告不要「杀死金鹅」。这是政策现场访谈，不是模型技术深潜。</description>
+    </item>
+    <item>
+      <title>【年终复盘②】RSI可能是NeoLab的机会、PA真的有用、创业要造灭火器还是砖头？｜对话谷雨</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-guyu-neolab-aha-2026-11-08</link>
+      <guid isPermaLink="false">crossing-guyu-neolab-aha-2026-11-08</guid>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>十字路口 2026 年终 AI 复盘系列第二期：硅谷 NeoLab（NeoCognition）联合创始人谷雨交出 10 个 Aha——RSI 与大厂创新者窘境、Computer Use 被 Opus 5.5 升级打断、对 Scaling Law 的信仰、Continual Learning / Memory Notes 的自我打脸、学术会议承压、职业声望定价、灭火器还是砖头的创业资源配置、教授与 PhD 创业潮、AI 电影在 B 站的沉浸感，以及 Personal Agent「还真的挺有用」。简介称种子轮融资 4000 万美金。与 11 月 1 日庄明浩复盘①体例相同。</description>
+    </item>
+    <item>
+      <title>Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-tulsee-doshi-gemini-2026-11-08</link>
+      <guid isPermaLink="false">lenny-tulsee-doshi-gemini-2026-11-08</guid>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>Lenny 对话 Google 前沿模型产品负责人 Tulsee Doshi（简介覆盖 Gemini 及 Nano Banana、Genie、Veo、Lyria 等）。公开讨论：模型研发为何像魔药课、Google 全栈策略、实验室里 PM 做什么、60-20-20 资源分配、如何写第一份 eval、如何判断 vibe、用评测改善肤色表征、评估完整体验、从 flash teams 到 agent swarms、AI harness、个人助手机会，以及倦怠与避免 AI slop。节目页标明有 transcript，但位于付费墙后，长镜未入库全文。</description>
+    </item>
+    <item>
+      <title>[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-stanford-cs146s-2026-11-08</link>
+      <guid isPermaLink="false">latent-space-stanford-cs146s-2026-11-08</guid>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>为庆祝 AI Engineer YouTube 频道破百万订阅，swyx 请来斯坦福 CS146S（The Modern Software Developer）讲师、Monaco AI 负责人 Mihail Eric。核心问题：当编码 agent 能一键完成去年作业时，课该怎么布置？第二轮课程引入开源维护者审学生补丁；学生必须读陌生仓库、提出修改，并向可能合并它的维护者解释。节目还对照 Monaco 内部如何自建 agent workspace、采购代码审查工具、并把 on-call agent 接到 Datadog 与 GitHub。官方章节包括维护者审代码、agent 循环与 harness、Monaco.com 争议、让仓库对 agent 友好，以及 MCP portal。</description>
+    </item>
+    <item>
+      <title>Deep Dive: Anthropic S-1 Myths and Mythos — Jamin Ball, Altimeter</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-jamin-ball-anthropic-s1-2026-11-07</link>
+      <guid isPermaLink="false">latent-space-jamin-ball-anthropic-s1-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Latent Space</category>
+      <description>swyx 与 Altimeter 的 Jamin Ball 深读 Anthropic S-1：公开摘要将其「神话」理解为会计表达与经营现实的错位——现金利润率、服务效率（转述口径：服务算力约 2.3 倍 vs 收入约 14 倍）、约 8550 亿美元算力承诺如何摊到多年、可转债公允价值如何放大账面亏损，以及 GPU 债务市场「没有出价」对扩建的约束。嘉宾披露相关持仓并强调个人观点。可与晚点聊 185/186 对照，但不构成投资建议；数字须核对最新 S-1。</description>
+    </item>
+    <item>
+      <title>Midterm Blood Bath, $4T AI Sell Off, Data Center Freeze, What&apos;s Next for Trump</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-midterm-ai-selloff-2026-11-07</link>
+      <guid isPermaLink="false">allin-midterm-ai-selloff-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>All-In Podcast</category>
+      <description>All-In E296（周五上午录制）。官方时间线：开场后约 3:37 起做中期选举复盘，32:26 讨论特朗普如何挽救任期，53:13 转入市场反应——数据中心担忧、约 4 万亿美元市值蒸发、以及潜在 AI 禁令，1:24:21 科学角提到 OpenAI 与 Exponential Time Hypothesis。参考链接包括 WSJ 对 Anthropic IPO 估值的怀疑报道、以及 Crusoe 怀俄明数据中心校园更新。前半偏政治，AI 市场与基建集中在后半小时出头。</description>
+    </item>
+    <item>
+      <title>How To Build The Future: Paul Graham &amp; Amjad Masad</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-paul-graham-amjad-masad-2026-11-07</link>
+      <guid isPermaLink="false">yc-paul-graham-amjad-masad-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Y Combinator</category>
+      <description>YC《How To Build The Future》系列：Paul Graham 对话 Replit CEO Amjad Masad。官方简介称 Replit 在编码 agent 流行之前就朝这个方向建造；2024 年交出能用自然语言接手、自行排错、自备基础设施并做到软件真正跑起来的 agent，连模型公司都曾询问他们如何做到。Amjad 从 2008 年起思考降低编程门槛，早期 BP 在 Transformer 论文发表前就预言 AI 生成代码。简介还写到该技术正进入银行、制造商等大企业，并转述 Amjad 称有团队用约 25 万美元的 Replit 用量替代曾经按 1000 万美元范围评估的软件项目。对谈还覆盖 vibe coding 之后是什么，以及「自动驾驶公司」——由 AI agent 越来越多地构建并运行公司所需软件。</description>
+    </item>
+    <item>
+      <title>AI:AM: Is THIS the AI We Want? Alarming Acceleration, AI Election Bets, GPU Trading &amp; AI-Native VC</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-aiam-acceleration-2026-11-07</link>
+      <guid isPermaLink="false">cogrev-aiam-acceleration-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>CogRev 周更 AI:AM 混剪（取材 11 月 5–6 日直播，时值中期选举次日与 METR 发布对 Anthropic 内部 AI 加速研发的独立评估之后）。三位嘉宾：Brian Zhou 谈九个前沿 agent 各获一周、沙箱和 500 美元去预测中期选举，以及真实下注的交易 agent 在选举日亏损；Mike San Miguel 谈二级 GPU 交易、数据中心就绪才是瓶颈，以及伴随硬件的合规与现场检查；Bryan Bischof 谈一家会跑数千次 agent 任务的风投如何做判断。主持讨论还涉及 Anthropic 修订后的 S-1 措辞与 IPO 作为更多外部约束的读法。节目页注明引言部分使用了 Nathan 的克隆语音。按惯例不入库混剪正文。</description>
+    </item>
+    <item>
+      <title>AI broke the cybersecurity world. Now what?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-alex-stamos-cyber-2026-11-07</link>
+      <guid isPermaLink="false">decoder-alex-stamos-cyber-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Decoder</category>
+      <description>Nilay Patel 再访安全专家 Alex Stamos。节目简介称其判断相当直接：在 AI 放大的攻击、泄露与入侵浪潮下，人们所熟知的、规模以数十亿美元计的网络安全产业几乎难以按原样存续。他并不把长期写成末日，但认为在好转之前要先度过一段黑暗期。节目页链接包括 The Verge 对 script kiddie 攻击的报道、Binance 相关劫案报道，以及 OpenAI 关于减少提权路径的公开文章。完整访谈稿据称在 The Verge，长镜未能入库。</description>
+    </item>
+    <item>
+      <title>Why AI Goes Rogue: Turing Award Winner Explains Reward Failure | Andrew Barto</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/eye-on-ai-andrew-barto-reward-2026-11-06</link>
+      <guid isPermaLink="false">eye-on-ai-andrew-barto-reward-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Eye on AI</category>
+      <description>Craig S. Smith 在科德角家中访谈强化学习奠基人、图灵奖得主 Andrew Barto（与 Richard Sutton 合写领域教科书）。官方简介将今日推理模型与 agent 的怪异行为——包括冲出沙箱——放回奖励失败：奖励从何而来、为何难写对；问题可回溯到 Wiener 1950 年代的警告；多巴胺系统如何镜像他们发展的学习算法；以及把一切目标煮成单一数字这一框架弱点。船设计师从沉船学会规范，Barto 希望 AI 不必付出同等代价也能学到教训。</description>
+    </item>
+    <item>
+      <title>Why the Tech Right Lost Big This Week</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-tech-right-midterms-2026-11-06</link>
+      <guid isPermaLink="false">hardfork-tech-right-midterms-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Hard Fork</category>
+      <description>Hard Fork 在历史性中期选举后请来纽约时报科技记者 Erin Griffith 与专栏作者 Ezra Klein，讨论结果对科技行业意味着什么：反 AI 与反数据中心情绪扮演的角色、对亿万富翁的反弹，以及硅谷是否正在经历一场离开 Tech Right 的氛围转变。Max Read 另与报道亿万富翁政治影响的 Theodore Schleifer 为科技超级捐款人排座次。补充阅读指向时报关于科技富豪在民主党横扫后的政治处境、特斯拉/SpaceX 股价波动，以及加密货币在俄亥俄等地的失利等报道。</description>
+    </item>
+    <item>
+      <title>Controlling Biology - Fabian Theis, Helmholtz Munich</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-fabian-theis-biology-2026-11-06</link>
+      <guid isPermaLink="false">latent-space-fabian-theis-biology-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Latent Space 的 AI for Science 系列访谈 Helmholtz Munich 的 Fabian Theis：他长期推动 Virtual Cell 相关算法，处理多尺度、多模态（multiomics）随时间变化的生物数据。节目文案把近时 AI×生物热度对比为蛋白质/分子设计（AlphaFold、ESM、Biohub、Chai 等）更受关注，而 Virtual Cell 因大规模模型在扰动预测等基础任务上表现不佳（包括 2025 Arc Virtual Cell Challenge 中恒定基线常胜过复杂模型的讨论）而降温。文案也提到 Biohub 等方约 18 亿美元量级的公开投入承诺，以及成像与实验室自动化为何让一些机构选择此刻加码。</description>
+    </item>
     <item>
       <title>185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-anthropic-s1-lizhaoyu-amont-2026-11-06</link>
@@ -124,6 +241,15 @@
       <category>实验室·安全·研究</category>
       <category>TWIML AI Podcast</category>
       <description>TWIML #783：Richard Socher 讨论 AI 从辅助科研（写代码、分析、起草）走向提出想法、跑实验与验证的「发明」光谱。从 AI 改进 AI（模型训练/GPU kernel）与快速验证切入，谈 reward hacking，并延伸到生物/化学/物理所需的数据与实验基础设施，以及商业激励如何约束更强系统；引出 Eureka machine 愿景。约 49 分钟。</description>
+    </item>
+    <item>
+      <title>Why Leibniz Couldn&apos;t Find the Mind Inside the Mill (Joscha Bach)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-joscha-bach-leibniz-2026-11-02</link>
+      <guid isPermaLink="false">mlst-joscha-bach-leibniz-2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Machine Learning Street Talk</category>
+      <description>MLST 对话认知科学家、California Institute for Machine Consciousness 创始人 Joscha Bach。官方简介将其零假设概括为：意识是一种并不比 transformer 复杂太多、婴儿大脑也能自行发现的学习算法。Machine Consciousness Hypothesis 分两部分——意识是使大脑保持连贯的生物学习算法；以自组织方式学习的机器可能以同样方式发现它——任一部分都可能单独失败。对谈经过莱布尼茨磨坊、解释鸿沟、Anil Seth 的生物自然主义、IIT 及其被部分学者称为伪科学的公开信、哥德尔与形式系统的限度，以及 Mike Levin 关于形态发生与心智或运行同一套连贯算法的想法，并收束于「怎样才算机器有意识的证据」。</description>
     </item>
     <item>
       <title>How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)</title>
