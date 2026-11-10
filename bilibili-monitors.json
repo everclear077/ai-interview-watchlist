@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -10,9 +10,9 @@
       "spaceUrl": "https://space.bilibili.com/280780745",
       "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "sv101",
@@ -21,9 +21,9 @@
       "spaceUrl": "https://space.bilibili.com/508452265",
       "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "sv101-podcast",
@@ -32,9 +32,9 @@
       "spaceUrl": "https://space.bilibili.com/3546860354538082",
       "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "jiqizhixin",
@@ -43,9 +43,9 @@
       "spaceUrl": "https://space.bilibili.com/73414544",
       "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "geekpark",
@@ -54,9 +54,9 @@
       "spaceUrl": "https://space.bilibili.com/13260662",
       "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "latepost",
@@ -65,9 +65,9 @@
       "spaceUrl": "https://space.bilibili.com/478559884",
       "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "late-talk",
@@ -76,9 +76,9 @@
       "spaceUrl": "https://space.bilibili.com/3546915742419882",
       "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     },
     {
       "id": "liziran",
@@ -87,9 +87,9 @@
       "spaceUrl": "https://space.bilibili.com/39089748",
       "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
       "enabled": true,
-      "lastChecked": "2026-11-09T14:24:36Z",
+      "lastChecked": "2026-11-10T14:44:04Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi and arc/search returned -403/-352/-799 or 风控 HTML (412). Fallback: Fireside/xyzfm RSS."
+      "lastCheckNote": "Bilibili space page returned 风控 HTML 412; space/wbi arc/search returned HTTP 200 body {\"code\":-403,\"message\":\"访问权限不足\"}. Did not bypass. Fallback: Fireside/xyzfm/site RSS."
     }
   ],
   "candidates": [],
@@ -140,12 +140,11 @@
       }
     ]
   },
-  "lastScan": "2026-11-09T14:24:36Z",
-  "lastScanNote": "Bilibili space/wbi still blocked (-403/-352/-799/风控 HTML). Fallbacks used: LateTalk Fireside、sv101 Fireside、张小珺 xyzfm、Crossing xyzfm、LinkStart xyzfm、智者访谈 xyzfm。 CN added: Crossing 谷雨年终复盘② P0。EN added: Lenny Tulsee Doshi P0；Latent Space Jamin Ball Anthropic S-1 P0；Eye on AI Andrew Barto P0；plus 10 P1s (Decoder×2, Kara AI regulation, Latent Space Stanford CS146S & Fabian Theis, All-In midterms/AI selloff, YC PG+Amjad, CogRev AI:AM, Hard Fork Tech Right, MLST Joscha Bach).",
+  "lastScan": "2026-11-10T14:44:04Z",
+  "lastScanNote": "Bilibili space/wbi still blocked (space 页 412；arc/search -403). Fallbacks: LateTalk Fireside、sv101 Fireside、张小珺 xyzfm、Crossing xyzfm、LinkStart xyzfm、智者访谈小宇宙、声东击西 Fireside、捕蛇者说 feed、Teahour 站点。CN added: 硅谷101 E258 HF0/OpenRouter P1。EN added: Latent Space Handshake AI data deep dive P0（essay+analysis）；Hard Fork Jensen Huang Affair P1（31m 周中特辑）。",
   "lastScanCandidates": [
-    "crossing-guyu-neolab-aha-2026-11-08",
-    "lenny-tulsee-doshi-gemini-2026-11-08",
-    "latent-space-jamin-ball-anthropic-s1-2026-11-07",
-    "eye-on-ai-andrew-barto-reward-2026-11-06"
+    "latent-space-handshake-ai-data-2026-11-09",
+    "sv101-hf0-openrouter-joe-2026-11-09",
+    "hardfork-jensen-huang-affair-2026-11-10"
   ]
 }

@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-09",
+  "lastUpdated": "2026-11-10",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,131 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "hardfork-jensen-huang-affair-2026-11-10",
+      "title": "The Jensen Huang Affair",
+      "guest": "Stephen Witt（《The Thinking Machine》作者）",
+      "show": "Hard Fork",
+      "date": "2026-11-10",
+      "duration": "31分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "chips-hardware",
+        "policy-geopolitics",
+        "compute-infra",
+        "markets-vc"
+      ],
+      "priority": "P1",
+      "summary": "Hard Fork 约 31 分钟的周中特辑，邀请《The Thinking Machine》作者 Stephen Witt。节目简介称：Nvidia CEO Jensen Huang 承认与数据中心公司 Megaspeed 一名高管存在婚外关系；美方指称该人以 Alice Huang 为名、是中国间谍。简介说将梳理这一仍在发展中的事件及其对 AI 与全球经济的意味。补充阅读指向时报既有报道标题，包括 Megaspeed 与被禁芯片、Huang 被视作间谍行动目标、Nvidia 内部调查、Rubio 警告，以及商务部芯片调查一度被叫停等。长镜未独立核实这些报道；本条只转述节目简介及其列出的新闻标题，不构成事实认定或法律判断。",
+      "advice": "关心 Nvidia 治理、芯片出口管制与中美技术安全叙事的人可以听，但请注意这是刚过 30 分钟的新闻特辑，不是技术访谈，且涉及个人隐私与尚未完结的指控。建议先看简介列出的时报报道再决定是否收听。摘要仅转述 Hard Fork / 时报节目页。",
+      "urls": [
+        {
+          "label": "NYT Hard Fork 栏目",
+          "href": "https://www.nytimes.com/column/hard-fork"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/60b69225-e908-4027-b756-bd9474f00135/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=60b69225-e908-4027-b756-bd9474f00135&feed=l2i9YnTd"
+        }
+      ],
+      "addedAt": "2026-11-10",
+      "cover": "thumbs/hardfork-jensen-huang-affair-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/60b69225-e908-4027-b756-bd9474f00135/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=60b69225-e908-4027-b756-bd9474f00135&feed=l2i9YnTd",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-handshake-ai-data-2026-11-09",
+      "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+      "guest": "Garrett Lord、Sahil Bhaiwala、Nishant Ranka、Nick Magazine、Jonas Mueller、Collin Schweiker、Steve Kelling（Handshake AI）",
+      "show": "Latent Space",
+      "date": "2026-11-09",
+      "duration": "164分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "models-labs",
+        "research-science",
+        "alignment-safety",
+        "enterprise-apps",
+        "markets-vc"
+      ],
+      "priority": "P0",
+      "summary": "Latent Space 首次深挖 AI 数据公司 Handshake：节目/公司口径称其 AI 训练业务约一年做到约 10 亿美元年化总收入。Garrett Lord 与团队现场打开面向前沿实验室的强化学习环境，分三条线——生命科学基准 VIALS（凝胶条带与脑组织切片；节目文案写模型在坏死识别上于专家所选 H、I 之外多选了 G）、金融环境 ATLAS / Project Falcon（商誉数字被带进错误代码位置；简介称评分器曾被一张填满 1 到 100 万的表骗到），以及对齐侧不看最终回复、而是检查文件访问与 shell 历史。约 164 分钟，官方有完整时间码和可试用基准链接；未见带说话人完整文稿。收入数字未经长镜核实，不构成投资或采购建议。",
+      "advice": "P0：关心前沿实验室在买什么数据、以及 agent 评测如何失败的人应看。可按官方时间码只深看一条演示线（VIALS / Falcon / 安全轨迹）。约 10 亿美元为节目/公司口径。建议对照 Handshake 研究页的样本任务，以原片为准。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=v5IJwVnTxzg"
+        },
+        {
+          "label": "Latent Space 节目页",
+          "href": "https://www.latent.space/p/handshake"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1c0f3-0e12-7b37-bb7f-c0b59fbc3b39/01a1c0f3-1027-7b6d-887c-fbde19347d32.mp3"
+        }
+      ],
+      "addedAt": "2026-11-10",
+      "cover": "thumbs/latent-space-handshake-ai-data-2026-11-09.jpg",
+      "media": {
+        "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1c0f3-0e12-7b37-bb7f-c0b59fbc3b39/01a1c0f3-1027-7b6d-887c-fbde19347d32.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=v5IJwVnTxzg",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-hf0-openrouter-joe-2026-11-09",
+      "title": "E258｜聊聊硅谷创业“修道院”HF0与OpenRouter早期故事",
+      "guest": "郭靖Joe（ACE Studio 创始人兼CEO，HF0 2024秋季批次）；主持 泓君",
+      "show": "硅谷101",
+      "date": "2026-11-09",
+      "duration": "54分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "china-scene",
+        "founders-product",
+        "markets-vc",
+        "media-platforms"
+      ],
+      "priority": "P1",
+      "summary": "硅谷101 邀请 ACE Studio 创始人兼 CEO 郭靖Joe（HF0 2024 秋季批次）讲述驻地项目 HF0（Hacker Fellowship Zero）：简介称由 Dave Fontenot 创立，位于旧金山一栋 1904 年大主教府邸，每年 3 期、每期约 10 个团队、封闭 12 周。简介写 Joe 的音乐生成产品在三个月内月收入从 8 万美元升至 80 万美元，并在院内遇见今年大热的 OpenRouter 联合创始人 Louis 的早期工作节奏。官方章节还包括入选率、Demo Dinner、把 HF0 模式搬回公司、Dave 其人，以及相对 Suno 的音乐模型追赶与「精美有余、粗粝不足」的现状。约 54 分钟。营收等数字来自节目简介，长镜未独立核实。",
+      "advice": "关心硅谷驻地孵化、OpenRouter 早期氛围或 AI 音乐产品的人听。主体是 Joe 的 HF0 亲历，OpenRouter 是简介与章节中的见闻，并非 Louis 本人出镜。可按时间码从 36:20 听 OpenRouter 段落，或从 44:44 听音乐模型之战。不构成投资建议。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://sv101.fireside.fm/272"
+        },
+        {
+          "label": "小宇宙（节目）",
+          "href": "https://www.xiaoyuzhoufm.com/podcast/6ac34f4e05810422d187bee3"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/%E7%A1%85%E8%B0%B7101/id1498541229"
+        },
+        {
+          "label": "Audio",
+          "href": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/f6618818-b288-4798-bab8-d60d77c70aff.mp3"
+        }
+      ],
+      "addedAt": "2026-11-10",
+      "cover": "thumbs/sv101-hf0-openrouter-joe-2026-11-09.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/f6618818-b288-4798-bab8-d60d77c70aff.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "decoder-mitch-glazier-ai-copyright-2026-11-09",
       "title": "The man who fought napster is now fighting AI",
@@ -6587,5 +6712,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
+  "notes": "2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
 }

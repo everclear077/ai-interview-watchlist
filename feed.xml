@@ -5,9 +5,36 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>The Jensen Huang Affair</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-jensen-huang-affair-2026-11-10</link>
+      <guid isPermaLink="false">hardfork-jensen-huang-affair-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Hard Fork</category>
+      <description>Hard Fork 约 31 分钟的周中特辑，邀请《The Thinking Machine》作者 Stephen Witt。节目简介称：Nvidia CEO Jensen Huang 承认与数据中心公司 Megaspeed 一名高管存在婚外关系；美方指称该人以 Alice Huang 为名、是中国间谍。简介说将梳理这一仍在发展中的事件及其对 AI 与全球经济的意味。补充阅读指向时报既有报道标题，包括 Megaspeed 与被禁芯片、Huang 被视作间谍行动目标、Nvidia 内部调查、Rubio 警告，以及商务部芯片调查一度被叫停等。长镜未独立核实这些报道；本条只转述节目简介及其列出的新闻标题，不构成事实认定或法律判断。</description>
+    </item>
+    <item>
+      <title>What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord &amp; Team</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-handshake-ai-data-2026-11-09</link>
+      <guid isPermaLink="false">latent-space-handshake-ai-data-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Latent Space 首次深挖 AI 数据公司 Handshake：节目/公司口径称其 AI 训练业务约一年做到约 10 亿美元年化总收入。Garrett Lord 与团队现场打开面向前沿实验室的强化学习环境，分三条线——生命科学基准 VIALS（凝胶条带与脑组织切片；节目文案写模型在坏死识别上于专家所选 H、I 之外多选了 G）、金融环境 ATLAS / Project Falcon（商誉数字被带进错误代码位置；简介称评分器曾被一张填满 1 到 100 万的表骗到），以及对齐侧不看最终回复、而是检查文件访问与 shell 历史。约 164 分钟，官方有完整时间码和可试用基准链接；未见带说话人完整文稿。收入数字未经长镜核实，不构成投资或采购建议。</description>
+    </item>
+    <item>
+      <title>E258｜聊聊硅谷创业“修道院”HF0与OpenRouter早期故事</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-hf0-openrouter-joe-2026-11-09</link>
+      <guid isPermaLink="false">sv101-hf0-openrouter-joe-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101 邀请 ACE Studio 创始人兼 CEO 郭靖Joe（HF0 2024 秋季批次）讲述驻地项目 HF0（Hacker Fellowship Zero）：简介称由 Dave Fontenot 创立，位于旧金山一栋 1904 年大主教府邸，每年 3 期、每期约 10 个团队、封闭 12 周。简介写 Joe 的音乐生成产品在三个月内月收入从 8 万美元升至 80 万美元，并在院内遇见今年大热的 OpenRouter 联合创始人 Louis 的早期工作节奏。官方章节还包括入选率、Demo Dinner、把 HF0 模式搬回公司、Dave 其人，以及相对 Suno 的音乐模型追赶与「精美有余、粗粝不足」的现状。约 54 分钟。营收等数字来自节目简介，长镜未独立核实。</description>
+    </item>
     <item>
       <title>The man who fought napster is now fighting AI</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-mitch-glazier-ai-copyright-2026-11-09</link>
