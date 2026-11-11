@@ -5,9 +5,63 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>Agents That Think Together: Cisco&apos;s Vijoy Pandey on Semantic Alignment, Scope, Accord &amp; Concord</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-vijoy-pandey-cisco-agents-2026-11-11</link>
+      <guid isPermaLink="false">cogrev-vijoy-pandey-cisco-agents-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>Cognitive Revolution 对话 Cisco Outshift GM Vijoy Pandey，讨论多 agent 协作的失败模式，以及 Cisco 开源的 Scope、Accord、Concord 等协议如何处理语义不对齐、意图协商与复杂工作流中的认知失误。节目简介还提到个人 agent 配置、避免模型锁定，以及 latent space communication。官方有完整时间码；节目页提供自动文稿。协议效果与案例均为节目口径，长镜未独立核实。</description>
+    </item>
+    <item>
+      <title>What the Internet Boom Teaches Us About the AI Buildout | Mike Volpi</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-mike-volpi-ai-buildout-2026-11-11</link>
+      <guid isPermaLink="false">a16z-mike-volpi-ai-buildout-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Show</category>
+      <description>a16z 请 Mike Volpi（节目介绍称其曾参与塑造 Cisco 在互联网建设期的策略）对比当下 GPU、数据中心与电力投资，和上世纪 90 年代末的光纤热潮。简介写：即使市场回调，这些基础设施仍可能被证明有价值。讨论还涉及 NVIDIA、定制硅片、网络，以及 GPU 经济的变化，并提到 Cisco 收购机器的经验。Volpi 在简介中认为这一轮技术周期的影响可能比上一轮更大。均为节目口径，不构成投资建议。</description>
+    </item>
+    <item>
+      <title>The Neuron Basis: Goodfire&apos;s Curt Tigges on Agentic Interp, Monosemanticity &amp; Reverse Engineering</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-curt-tigges-neuron-basis-2026-11-10</link>
+      <guid isPermaLink="false">cogrev-curt-tigges-neuron-basis-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>The Cognitive Revolution</category>
+      <description>Cognitive Revolution 对话 Goodfire 的 Curt Tigges（与 Nick Cammarata 合著跟进论文《Neurons as an Interpretable Basis》）。节目主张：在他们查看的现代门控 MLP 里，单个神经元往往比原先认为的更可直接解释，主功能更有界；并展示用智能体为神经元写假说、做实验、再验收。研究对象按节目口径是 Qwen3.6-35B-A3B。官方有时间码，节目页提供带说话人的自动文稿（可能有听写错误）。模型规模、稀疏比例与恢复率等数字均为节目或论文口径，长镜未独立核实，不构成投资、采购或安全认证建议。</description>
+    </item>
+    <item>
+      <title>Designing for Agents — Zeno Rocha, Resend</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-zeno-rocha-resend-aeo-2026-11-10</link>
+      <guid isPermaLink="false">latent-space-zeno-rocha-resend-aeo-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>Latent Space 对话 Resend 创始人兼 CEO Zeno Rocha。节目钩子是：swyx 已接好 Cloudflare 电子邮件，编程智能体仍提交了选择 Resend 的 PR。讨论从接收端看 AEO（answer engine optimization），以及智能体选中之后能不能真正使用产品——包括价格写在滑块里导致询价失败、后来上线可供机器读取的 Markdown 表，以及 MCP 上八十多个具名工具与 Cloudflare Code Mode 两个工具的对照。约 86 分钟，官方有时间码与自动文稿（无说话人标签，故不入库完整文稿）。用户数、付费客户数等为节目/公司口径；主持在节目中声明自己是该公司天使投资人。长镜未独立核实，不构成投资或采购建议。</description>
+    </item>
+    <item>
+      <title>HubSpot’s Co-Founder on Finding Your Next Startup Idea</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-dharmesh-shah-hubspot-startup-2026-11-10</link>
+      <guid isPermaLink="false">a16z-dharmesh-shah-hubspot-startup-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Show</category>
+      <description>面对前沿实验室把模型能力延伸到应用层，创业公司该站在哪里？a16z 的 Joe Schmidt 与 HubSpot 联合创始人兼 CTO Dharmesh Shah 讨论软件机会为何仍在扩大，以及创始人如何避开实验室正在快跑的「Yellow Brick Road」。简介称 Dharmesh 建议先做窄市场、快速学习、把客户问题做完整；应用公司可在工作流、客户上下文和「工作发生的系统」里建立更持久的价值。他们也谈到 HubSpot 的 AI 实验、一人公司变多，以及更便宜的软件生产可能打开过去养不起软件公司的市场。节目页链向 Joe 的公开文章。不构成创业或投资建议。</description>
+    </item>
+    <item>
+      <title>Canva Is Tackling AI Design’s Most Frustrating Problem with Stefano Corazza</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-stefano-corazza-canva-ai-design-2026-11-10</link>
+      <guid isPermaLink="false">twiml-stefano-corazza-canva-ai-design-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>TWIML AI Podcast</category>
+      <description>TWIML #784 对话 Canva AI 研究负责人 Stefano Corazza，讨论如何围绕迭代式设计工作流自建模型与 agent。节目简介写到：从零训练与改造开源权重的取舍、专有设计数据如何支撑专业化；Craft 把版式规划与像素生成分开，Brush 用设计工具和视觉反馈来创作并修改构图。他们还谈到如何在单次生成之外评估设计质量（含视觉语言模型做评委与人工评估）、简化 agent harness 的经验、更快推理如何增加迭代次数，以及掌握模型后优化推理成本的机会。最后讨论 API 与 MCP 如何让这些能力对外开放，以及软件公司同时为人和为 agent 做工具时会发生什么。细节以节目页为准。</description>
+    </item>
     <item>
       <title>The Jensen Huang Affair</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-jensen-huang-affair-2026-11-10</link>

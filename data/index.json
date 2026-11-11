@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-11",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,252 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "cogrev-vijoy-pandey-cisco-agents-2026-11-11",
+      "title": "Agents That Think Together: Cisco's Vijoy Pandey on Semantic Alignment, Scope, Accord & Concord",
+      "guest": "Vijoy Pandey（Cisco SVP、Outshift by Cisco GM）；主持 Nathan Labenz",
+      "show": "The Cognitive Revolution",
+      "date": "2026-11-11",
+      "duration": "92分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "agents-tooling",
+        "enterprise-apps",
+        "open-source",
+        "models-labs"
+      ],
+      "priority": "P1",
+      "summary": "Cognitive Revolution 对话 Cisco Outshift GM Vijoy Pandey，讨论多 agent 协作的失败模式，以及 Cisco 开源的 Scope、Accord、Concord 等协议如何处理语义不对齐、意图协商与复杂工作流中的认知失误。节目简介还提到个人 agent 配置、避免模型锁定，以及 latent space communication。官方有完整时间码；节目页提供自动文稿。协议效果与案例均为节目口径，长镜未独立核实。",
+      "advice": "关心企业里多个 agent 如何对齐语义、以及「Internet of Cognition」这类基础设施叙事的人可以听。技术协议段约从 43:53 的 Accord/Concord 开始；前面是案例与认知漂移。不构成采购或架构建议。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://www.cognitiverevolution.ai/agents-that-think-together-cisco-s-vijoy-pandey-on-semantic-alignment-scope-accord-concord/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=lAG4njluIbQ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP1214937196.mp3"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/cogrev-vijoy-pandey-cisco-agents-2026-11-11.jpg",
+      "media": {
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP1214937196.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=lAG4njluIbQ",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-mike-volpi-ai-buildout-2026-11-11",
+      "title": "What the Internet Boom Teaches Us About the AI Buildout | Mike Volpi",
+      "guest": "Mike Volpi；主持 Raghu Raghuram、Guido Appenzeller",
+      "show": "a16z Show",
+      "date": "2026-11-11",
+      "duration": "57分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "compute-infra",
+        "chips-hardware",
+        "markets-vc",
+        "models-labs"
+      ],
+      "priority": "P1",
+      "summary": "a16z 请 Mike Volpi（节目介绍称其曾参与塑造 Cisco 在互联网建设期的策略）对比当下 GPU、数据中心与电力投资，和上世纪 90 年代末的光纤热潮。简介写：即使市场回调，这些基础设施仍可能被证明有价值。讨论还涉及 NVIDIA、定制硅片、网络，以及 GPU 经济的变化，并提到 Cisco 收购机器的经验。Volpi 在简介中认为这一轮技术周期的影响可能比上一轮更大。均为节目口径，不构成投资建议。",
+      "advice": "关心 AI 基建资本开支、把这一轮同互联网光纤泡沫对比的人可以听。约 57 分钟，偏产业史与投资框架，不是模型技术访谈。请对照原音频，不作为对英伟达或数据中心的投资判断。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/what-the-internet-boom-teaches-us-about-the-ai-buildout-mike-volpi-C_gHjXbG"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/ce81cf09-4c64-42cf-8dc2-753ea8df67a5/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=ce81cf09-4c64-42cf-8dc2-753ea8df67a5&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/a16z-mike-volpi-ai-buildout-2026-11-11.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/ce81cf09-4c64-42cf-8dc2-753ea8df67a5/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=ce81cf09-4c64-42cf-8dc2-753ea8df67a5&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "cogrev-curt-tigges-neuron-basis-2026-11-10",
+      "title": "The Neuron Basis: Goodfire's Curt Tigges on Agentic Interp, Monosemanticity & Reverse Engineering",
+      "guest": "Curt Tigges（Goodfire Member of Technical Staff，与 Nick Cammarata 合著）；主持 Nathan Labenz",
+      "show": "The Cognitive Revolution",
+      "date": "2026-11-10",
+      "duration": "116分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "alignment-safety",
+        "models-labs",
+        "open-source"
+      ],
+      "priority": "P0",
+      "summary": "Cognitive Revolution 对话 Goodfire 的 Curt Tigges（与 Nick Cammarata 合著跟进论文《Neurons as an Interpretable Basis》）。节目主张：在他们查看的现代门控 MLP 里，单个神经元往往比原先认为的更可直接解释，主功能更有界；并展示用智能体为神经元写假说、做实验、再验收。研究对象按节目口径是 Qwen3.6-35B-A3B。官方有时间码，节目页提供带说话人的自动文稿（可能有听写错误）。模型规模、稀疏比例与恢复率等数字均为节目或论文口径，长镜未独立核实，不构成投资、采购或安全认证建议。",
+      "advice": "P0：关心机制可解释性、对齐监控，或想判断「单个神经元是否还值得直接读」的人应看。可按时间码从 5:55 听主张与边界，或从 41:30 听 neuron scientist。精读与解读已入库；自动文稿已按 asr 入库，请以原片为准。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://www.cognitiverevolution.ai/the-neuron-basis-goodfire-s-curt-tigges-on-agentic-interp-monosemanticity-reverse-engineering/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=hqXYtqQq50g"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP9923523855.mp3"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/cogrev-curt-tigges-neuron-basis-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://pdst.fm/e/mgln.ai/e/1113/pscrb.fm/rss/p/traffic.megaphone.fm/RINTP9923523855.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=hqXYtqQq50g",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "latent-space-zeno-rocha-resend-aeo-2026-11-10",
+      "title": "Designing for Agents — Zeno Rocha, Resend",
+      "guest": "Zeno Rocha（Resend 创始人兼 CEO）；主持 swyx",
+      "show": "Latent Space",
+      "date": "2026-11-10",
+      "duration": "86分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "media-platforms",
+        "enterprise-apps"
+      ],
+      "priority": "P0",
+      "summary": "Latent Space 对话 Resend 创始人兼 CEO Zeno Rocha。节目钩子是：swyx 已接好 Cloudflare 电子邮件，编程智能体仍提交了选择 Resend 的 PR。讨论从接收端看 AEO（answer engine optimization），以及智能体选中之后能不能真正使用产品——包括价格写在滑块里导致询价失败、后来上线可供机器读取的 Markdown 表，以及 MCP 上八十多个具名工具与 Cloudflare Code Mode 两个工具的对照。约 86 分钟，官方有时间码与自动文稿（无说话人标签，故不入库完整文稿）。用户数、付费客户数等为节目/公司口径；主持在节目中声明自己是该公司天使投资人。长镜未独立核实，不构成投资或采购建议。",
+      "advice": "P0：关心 agent 如何挑选 API、文档如何写成机器可读，或 MCP 工具设计的人应看。可先听 05:02 的选型与 58:27 的「为机器写作」，再听 37:54 起的 MCP。精读与解读已入库。请以原音频/视频为准。",
+      "urls": [
+        {
+          "label": "Latent Space 节目页",
+          "href": "https://www.latent.space/p/resend"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=bdIoODXsu8k"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1c6f7-44d3-72a3-8e65-ffcfae742084/01a1c6f7-4605-726f-ac19-31f9b1763da0.mp3"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/latent-space-zeno-rocha-resend-aeo-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1c6f7-44d3-72a3-8e65-ffcfae742084/01a1c6f7-4605-726f-ac19-31f9b1763da0.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=bdIoODXsu8k",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-dharmesh-shah-hubspot-startup-2026-11-10",
+      "title": "HubSpot’s Co-Founder on Finding Your Next Startup Idea",
+      "guest": "Dharmesh Shah（HubSpot 联合创始人兼 CTO）；主持 Joe Schmidt（a16z Partner）",
+      "show": "a16z Show",
+      "date": "2026-11-10",
+      "duration": "59分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "founders-product",
+        "enterprise-apps",
+        "agents-tooling",
+        "markets-vc"
+      ],
+      "priority": "P1",
+      "summary": "面对前沿实验室把模型能力延伸到应用层，创业公司该站在哪里？a16z 的 Joe Schmidt 与 HubSpot 联合创始人兼 CTO Dharmesh Shah 讨论软件机会为何仍在扩大，以及创始人如何避开实验室正在快跑的「Yellow Brick Road」。简介称 Dharmesh 建议先做窄市场、快速学习、把客户问题做完整；应用公司可在工作流、客户上下文和「工作发生的系统」里建立更持久的价值。他们也谈到 HubSpot 的 AI 实验、一人公司变多，以及更便宜的软件生产可能打开过去养不起软件公司的市场。节目页链向 Joe 的公开文章。不构成创业或投资建议。",
+      "advice": "做应用层、担心被模型实验室吞掉的创始人可以听。先读 Joe Schmidt 的公开文章再听会对「Yellow Brick Road」有上下文。约 59 分钟，偏创业方法，不是模型评测。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/hubspots-co-founder-on-finding-your-next-startup-idea-J9uhCiZA"
+        },
+        {
+          "label": "Joe Schmidt 文章",
+          "href": "https://a16z.com/avoiding-death-on-the-yellow-brick-road/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/5398da9b-2c8d-4643-9306-55a8f357aea2/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=5398da9b-2c8d-4643-9306-55a8f357aea2&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/a16z-dharmesh-shah-hubspot-startup-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/5398da9b-2c8d-4643-9306-55a8f357aea2/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=5398da9b-2c8d-4643-9306-55a8f357aea2&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "twiml-stefano-corazza-canva-ai-design-2026-11-10",
+      "title": "Canva Is Tackling AI Design’s Most Frustrating Problem with Stefano Corazza",
+      "guest": "Stefano Corazza（Canva Head of AI Research）",
+      "show": "TWIML AI Podcast",
+      "date": "2026-11-10",
+      "duration": "57分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "models-labs",
+        "agents-tooling",
+        "media-platforms",
+        "enterprise-apps"
+      ],
+      "priority": "P1",
+      "summary": "TWIML #784 对话 Canva AI 研究负责人 Stefano Corazza，讨论如何围绕迭代式设计工作流自建模型与 agent。节目简介写到：从零训练与改造开源权重的取舍、专有设计数据如何支撑专业化；Craft 把版式规划与像素生成分开，Brush 用设计工具和视觉反馈来创作并修改构图。他们还谈到如何在单次生成之外评估设计质量（含视觉语言模型做评委与人工评估）、简化 agent harness 的经验、更快推理如何增加迭代次数，以及掌握模型后优化推理成本的机会。最后讨论 API 与 MCP 如何让这些能力对外开放，以及软件公司同时为人和为 agent 做工具时会发生什么。细节以节目页为准。",
+      "advice": "做设计工具、生成模型产品化或评估「好看」的人可以听。约 57 分钟，偏应用研究而非基础模型。完整笔记见 TWIML 节目页。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://twimlai.com/podcast/twimlai/canva-tackling-ai-designs-most-frustrating-problem"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=heE80uxOmus"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN8451107730.mp3"
+        }
+      ],
+      "addedAt": "2026-11-11",
+      "cover": "thumbs/twiml-stefano-corazza-canva-ai-design-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN8451107730.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=heE80uxOmus",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "hardfork-jensen-huang-affair-2026-11-10",
       "title": "The Jensen Huang Affair",
@@ -6712,5 +6958,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
+  "notes": "2026-11-11 daily R: added cogrev-curt-tigges-neuron-basis-2026-11-10（P0 essay+analysis+asr）、latent-space-zeno-rocha-resend-aeo-2026-11-10（P0 essay+analysis，transcript=none）、cogrev-vijoy-pandey-cisco-agents-2026-11-11（P1 + asr）、a16z-mike-volpi-ai-buildout-2026-11-11（P1）、a16z-dharmesh-shah-hubspot-startup-2026-11-10（P1）、twiml-stefano-corazza-canva-ai-design-2026-11-10（P1）。B站 space/wbi 仍 blocked（space 页 412，arc/search -403/-352）；CN 靠 Fireside/xyzfm，近窗无新增长访。未入库：Lex #504 俄乌战争、Kara/HRC 中期选举、All-In Axon 警用专题、a16z Kupor/健康长寿、80k 合集与 NonZero 跨播、声东击西教育专题。\n2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
 }
