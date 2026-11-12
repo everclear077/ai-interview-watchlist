@@ -5,9 +5,54 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-max-jaderberg-isomorphic-2026-11-12</link>
+      <guid isPermaLink="false">nopriors-max-jaderberg-isomorphic-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>No Priors</category>
+      <description>No Priors 请 Elad Gil 对话 Isomorphic Labs president Max Jaderberg。官方说明写：药物发现长期依赖昂贵、耗时的经验试错；Isomorphic 希望把发现过程搬到计算机上，使医学从「发现」转向「精密工程」。简介称 Jaderberg 讨论用预测式 AI 达到实验精度、AlphaFold 作为深度学习能在生物学中泛化的概念验证，以及模型学习如何随规模提升可泛化性，从而提高真实临床试验的成功概率与速度。还提到用 in-silico 模型减少动物实验、与疾病领域/靶点类别/模态无关的药物设计引擎、多药联用，以及分子优化对寿命与健康寿命的看法。约 39 分钟。均为节目口径，不构成投资或医疗建议。</description>
+    </item>
+    <item>
+      <title>The Next Era of Games: Mods, Agents, and Infinite Worlds</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-games-mods-agents-2026-11-12</link>
+      <guid isPermaLink="false">a16z-games-mods-agents-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Show</category>
+      <description>a16z General Partners Anish Acharya 与 Jonathan Lai 讨论 AI 如何压缩「想法到可玩游戏」的距离：生成美术与代码、直接操作 Blender 与游戏引擎，以及模组、二次创作，和能即时生成角色、能力与剧情、可能不会真正结束的 AI 原生体验。官方简介认为更低的开发成本可能让工作室更敢于冒险，也让没有传统编程或设计背景的人参与做游戏。约 46 分钟。均为节目口径，不构成投资建议。</description>
+    </item>
+    <item>
+      <title>Benchmark Breakfast #2 | November 12, 2026</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/uncapped-benchmark-breakfast-2-2026-11-12</link>
+      <guid isPermaLink="false">uncapped-benchmark-breakfast-2-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Uncapped</category>
+      <description>Uncapped 的 Jack 与 Ev 做 Benchmark Breakfast 第二期。官方简介覆盖 Anthropic IPO 初始定价区间、修订 S-1 所称 10 月底 810 亿美元 run rate、黄仁勋相关指控对开源生态的影响、AI 交易回调与资本开支（简介写到从 70GW 调到 40–50GW 的讨论）、中期选举后的民意（简介引用 Gallup：美国 AI 乐观度 36%、中国 93%）、以及未来 1–4 个月约 600 亿美元 VC 募资潮与 Sequoia 重组。约 63 分钟。数字与判断均为节目口径，长镜未独立核实，不构成投资建议。</description>
+    </item>
+    <item>
+      <title>AlphaGenome 2: Teaching AI to read the entire human genome</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/deepmind-alphagenome-2-2026-11-11</link>
+      <guid isPermaLink="false">deepmind-alphagenome-2-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Google DeepMind Podcast</category>
+      <description>Google DeepMind Podcast 由 Hannah Fry 对话 Žiga Avsec 与 Adam Gayoso，讨论 AlphaGenome、AlphaGenome Atlas 与 AlphaGenome 2。官方节目说明写：约 98% 的人类 DNA 不编码蛋白质，却调控细胞工作，并与疾病机制、新药临床试验高失败率有关。同日官方博客称 AlphaGenome 2 是下一代 DNA 序列模型，把单细胞生物学与人类遗传学桥接起来，预测变异如何影响特定细胞类型；相对此前模型能识别出近两倍会改变细胞基因表达的变异，并在超过 1 亿个细胞图谱、68 个组织上训练。博客写明供研究使用、未经临床或诊断验证；非商业研究可经 API 使用，商业为 private preview。约 40 分钟。数字与边界均为官方口径，长镜未独立核实，不构成医疗建议。</description>
+    </item>
+    <item>
+      <title>聊聊中国版MUSE：蚂蚁灵光2.0，支付宝，超级App的生态优势与挑战｜对话蚂蚁灵光CTO</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-ant-lingguang-cto-2026-11-11</link>
+      <guid isPermaLink="false">sv101-ant-lingguang-cto-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101 视频播客对话蚂蚁灵光 CTO 莫林剑（花名林怿），主持陈茜。刊发整理写：灵光 1.0 主打一句话生成闪应用，2.0 转向记住需求、跟踪任务、在授权下替用户办事；并讨论中国超级 App 生态里个人助理如何打通支付、出行等服务，以及会员、抽佣与广告等商业化路径和信任问题。标题里的「中国版MUSE」是形态类比，整理中林怿表示并非看到 Muse 才开始做。约 62 分钟。本集出现在 B 站视频号（BV1R1WL6cEzo），Fireside 播客 RSS 近窗尚未上架。整理中的留存率、用户规模等数字为节目口径，长镜未独立核实，不构成投资或产品建议。</description>
+    </item>
     <item>
       <title>Agents That Think Together: Cisco&apos;s Vijoy Pandey on Semantic Alignment, Scope, Accord &amp; Concord</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-vijoy-pandey-cisco-agents-2026-11-11</link>
@@ -324,6 +369,15 @@
       <description>TWIML #783：Richard Socher 讨论 AI 从辅助科研（写代码、分析、起草）走向提出想法、跑实验与验证的「发明」光谱。从 AI 改进 AI（模型训练/GPU kernel）与快速验证切入，谈 reward hacking，并延伸到生物/化学/物理所需的数据与实验基础设施，以及商业激励如何约束更强系统；引出 Eureka machine 愿景。约 49 分钟。</description>
     </item>
     <item>
+      <title>对话Maxinsights：具身“卖铲人”的250倍增长、机器人Ego数据狂潮、Doordash与丰田模式，与“自由的鸟”【101视频播客】</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-maxinsights-ego-data-2026-11-02</link>
+      <guid isPermaLink="false">sv101-maxinsights-ego-data-2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101 视频播客对话 Maxinsights 创始人袁宇光。刊发整理写：公司不造机器人，而是组织采集员记录做饭、清洁、叠衣等第一视角日常动作，加工成机器人训练数据；整理中嘉宾称 2026 年预测 ARR 约 2.5 亿美元，一年内从约 100 万美元增长，并称已积累约 200 万小时人类第一视角数据、全球约四千名采集员。讨论还涉及遥操作与 Ego 数据的分野、规模化采集，以及「自由的鸟」等创业对照。约 92 分钟。营收、时长与人员规模均为节目/整理口径，长镜未独立核实，不构成投资建议。本集在 Fireside 播客 RSS 近窗未出现，来自视频号（BV1L4xh6jEqo）。</description>
+    </item>
+    <item>
       <title>Why Leibniz Couldn&apos;t Find the Mind Inside the Mill (Joscha Bach)</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-joscha-bach-leibniz-2026-11-02</link>
       <guid isPermaLink="false">mlst-joscha-bach-leibniz-2026-11-02</guid>
@@ -574,6 +628,15 @@
       <category>创始人·CEO·产品</category>
       <category>a16z Podcast</category>
       <description>Alpha School 创始人 Joe Liemandt 与 HAA 的 Gagan Biyani 对谈：若 AI 显著加快学业，多出的时间不应只填更多学术刷题，而应重做学校——围绕 agency、协作、创业、沟通与做难事。模型为约两小时核心学业 + 项目制真实技能；并讨论对高等教育启发及 HAA 在大学生中的类似实践。时长 00:56:52。</description>
+    </item>
+    <item>
+      <title>Mathematics Just Changed Forever — Kevin Hartnett</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-kevin-hartnett-proof-2026-10-26</link>
+      <guid isPermaLink="false">mlst-kevin-hartnett-proof-2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Machine Learning Street Talk</category>
+      <description>MLST 一集以 Kevin Hartnett 的书《The Proof in the Code》为线索，回顾 Lean 从微软研究院旁路项目走到被数学家用来检查证明的过程。官方简介提到 Leonardo de Moura、Jeremy Avigad、Kevin Buzzard、Paul Lessard，以及 Mathlib、Peter Scholze 的 Liquid Tensor 挑战、Terence Tao 的 Equational Theories；后半转向 AlphaProof、自然语言奥赛证明与自动形式化，并讨论「机器给出无人能读的证明时，究竟验收了什么」。约 94 分钟。漏窗补录（2–3 周扫描）。简介所述人物与项目请以原片为准。</description>
     </item>
     <item>
       <title>#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &amp; Complexity Theory</title>

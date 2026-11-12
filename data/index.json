@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,207 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "nopriors-max-jaderberg-isomorphic-2026-11-12",
+      "title": "Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg",
+      "guest": "Max Jaderberg（Isomorphic Labs president）；主持 Elad Gil",
+      "show": "No Priors",
+      "date": "2026-11-12",
+      "duration": "39分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "models-labs"
+      ],
+      "priority": "P0",
+      "summary": "No Priors 请 Elad Gil 对话 Isomorphic Labs president Max Jaderberg。官方说明写：药物发现长期依赖昂贵、耗时的经验试错；Isomorphic 希望把发现过程搬到计算机上，使医学从「发现」转向「精密工程」。简介称 Jaderberg 讨论用预测式 AI 达到实验精度、AlphaFold 作为深度学习能在生物学中泛化的概念验证，以及模型学习如何随规模提升可泛化性，从而提高真实临床试验的成功概率与速度。还提到用 in-silico 模型减少动物实验、与疾病领域/靶点类别/模态无关的药物设计引擎、多药联用，以及分子优化对寿命与健康寿命的看法。约 39 分钟。均为节目口径，不构成投资或医疗建议。",
+      "advice": "关心 AI 药物设计、AlphaFold 之后的生物学模型，或 Isomorphic 路径的人可以听。本集没有完整文稿，精读依据官方节目说明与章节时间码。可按官方时间码从约 14:35 听「把药物发现搬上计算机」，或从 29:21 听多药路径。请以原音/视频为准。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=IiKf3BgBezE"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/powering-ai-driven-drug-discovery-with-president/id1668002688?i=1000801498476"
+        },
+        {
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/PDP6854771088.mp3"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/nopriors-max-jaderberg-isomorphic-2026-11-12.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=IiKf3BgBezE",
+        "audioUrl": "https://traffic.megaphone.fm/PDP6854771088.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-games-mods-agents-2026-11-12",
+      "title": "The Next Era of Games: Mods, Agents, and Infinite Worlds",
+      "guest": "Anish Acharya、Jonathan Lai（a16z GP）；主持 Elena Burger",
+      "show": "a16z Show",
+      "date": "2026-11-12",
+      "duration": "46分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "media-platforms"
+      ],
+      "priority": "P1",
+      "summary": "a16z General Partners Anish Acharya 与 Jonathan Lai 讨论 AI 如何压缩「想法到可玩游戏」的距离：生成美术与代码、直接操作 Blender 与游戏引擎，以及模组、二次创作，和能即时生成角色、能力与剧情、可能不会真正结束的 AI 原生体验。官方简介认为更低的开发成本可能让工作室更敢于冒险，也让没有传统编程或设计背景的人参与做游戏。约 46 分钟。均为节目口径，不构成投资建议。",
+      "advice": "关心游戏生成、模组生态或 AI 原生玩法的人可以听。这是 a16z 内部 GP 对谈，不是外部游戏工作室深度访谈。请以原音频为准。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/the-next-era-of-games-mods-agents-and-infinite-worlds-cRTFWzHi"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/8b403b9e-103f-46e4-96d3-94a6d9815e26/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=8b403b9e-103f-46e4-96d3-94a6d9815e26&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/a16z-games-mods-agents-2026-11-12.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/8b403b9e-103f-46e4-96d3-94a6d9815e26/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=8b403b9e-103f-46e4-96d3-94a6d9815e26&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "uncapped-benchmark-breakfast-2-2026-11-12",
+      "title": "Benchmark Breakfast #2 | November 12, 2026",
+      "guest": "Jack 与 Ev（主持对谈；无外部嘉宾）",
+      "show": "Uncapped",
+      "date": "2026-11-12",
+      "duration": "63分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "compute-infra",
+        "models-labs",
+        "policy-geopolitics"
+      ],
+      "priority": "P1",
+      "summary": "Uncapped 的 Jack 与 Ev 做 Benchmark Breakfast 第二期。官方简介覆盖 Anthropic IPO 初始定价区间、修订 S-1 所称 10 月底 810 亿美元 run rate、黄仁勋相关指控对开源生态的影响、AI 交易回调与资本开支（简介写到从 70GW 调到 40–50GW 的讨论）、中期选举后的民意（简介引用 Gallup：美国 AI 乐观度 36%、中国 93%）、以及未来 1–4 个月约 600 亿美元 VC 募资潮与 Sequoia 重组。约 63 分钟。数字与判断均为节目口径，长镜未独立核实，不构成投资建议。",
+      "advice": "关心实验室上市节奏、算力资本开支与选后政策气氛的人可以听。这是主持人对谈，不是单一公司深度访谈。请对照原音频与公开文件。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://podcasters.spotify.com/pod/show/amunger116/episodes/Benchmark-Breakfast-2--November-12--2026-e3s84ae"
+        },
+        {
+          "label": "Audio",
+          "href": "https://anchor.fm/s/1156f1c04/podcast/play/129289998/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F436537091-44100-2-2aea83c7e3af.mp3"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/uncapped-benchmark-breakfast-2-2026-11-12.jpg",
+      "media": {
+        "audioUrl": "https://anchor.fm/s/1156f1c04/podcast/play/129289998/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-12%2F436537091-44100-2-2aea83c7e3af.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "deepmind-alphagenome-2-2026-11-11",
+      "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
+      "guest": "Žiga Avsec、Adam Gayoso（Google DeepMind）；主持 Professor Hannah Fry",
+      "show": "Google DeepMind Podcast",
+      "date": "2026-11-11",
+      "duration": "40分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "models-labs"
+      ],
+      "priority": "P0",
+      "summary": "Google DeepMind Podcast 由 Hannah Fry 对话 Žiga Avsec 与 Adam Gayoso，讨论 AlphaGenome、AlphaGenome Atlas 与 AlphaGenome 2。官方节目说明写：约 98% 的人类 DNA 不编码蛋白质，却调控细胞工作，并与疾病机制、新药临床试验高失败率有关。同日官方博客称 AlphaGenome 2 是下一代 DNA 序列模型，把单细胞生物学与人类遗传学桥接起来，预测变异如何影响特定细胞类型；相对此前模型能识别出近两倍会改变细胞基因表达的变异，并在超过 1 亿个细胞图谱、68 个组织上训练。博客写明供研究使用、未经临床或诊断验证；非商业研究可经 API 使用，商业为 private preview。约 40 分钟。数字与边界均为官方口径，长镜未独立核实，不构成医疗建议。",
+      "advice": "关心基因组模型、非编码 DNA 或变异效应预测的人可以听。精读依据官方博客与节目说明，没有完整口播文稿。建议先读官方博客再对照播客。博客明确写研究用途、非临床验证，不要当成诊治依据。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=uND6iY2qp_c"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/alphagenome-2-teaching-ai-to-read-the-entire-human-genome/id1476316441?i=1000801283717"
+        },
+        {
+          "label": "官方博客",
+          "href": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+        },
+        {
+          "label": "播客站",
+          "href": "https://deepmind.google/the-podcast/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://afp-920373-injected.calisto.simplecastaudio.com/36cf10bf-f6dd-4a98-96a9-8eda9f59db4f/episodes/9234925c-4e42-4b1b-a9d3-f24d9005ea2d/audio/128/default.mp3?aid=rss_feed&awCollectionId=36cf10bf-f6dd-4a98-96a9-8eda9f59db4f&awEpisodeId=9234925c-4e42-4b1b-a9d3-f24d9005ea2d&feed=JT6pbPkg"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/deepmind-alphagenome-2-2026-11-11.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=uND6iY2qp_c",
+        "audioUrl": "https://afp-920373-injected.calisto.simplecastaudio.com/36cf10bf-f6dd-4a98-96a9-8eda9f59db4f/episodes/9234925c-4e42-4b1b-a9d3-f24d9005ea2d/audio/128/default.mp3?aid=rss_feed&awCollectionId=36cf10bf-f6dd-4a98-96a9-8eda9f59db4f&awEpisodeId=9234925c-4e42-4b1b-a9d3-f24d9005ea2d&feed=JT6pbPkg",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-ant-lingguang-cto-2026-11-11",
+      "title": "聊聊中国版MUSE：蚂蚁灵光2.0，支付宝，超级App的生态优势与挑战｜对话蚂蚁灵光CTO",
+      "guest": "莫林剑（花名：林怿，蚂蚁灵光 CTO）；主持 陈茜",
+      "show": "硅谷101",
+      "date": "2026-11-11",
+      "duration": "62分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "china-scene",
+        "enterprise-apps"
+      ],
+      "priority": "P0",
+      "summary": "硅谷101 视频播客对话蚂蚁灵光 CTO 莫林剑（花名林怿），主持陈茜。刊发整理写：灵光 1.0 主打一句话生成闪应用，2.0 转向记住需求、跟踪任务、在授权下替用户办事；并讨论中国超级 App 生态里个人助理如何打通支付、出行等服务，以及会员、抽佣与广告等商业化路径和信任问题。标题里的「中国版MUSE」是形态类比，整理中林怿表示并非看到 Muse 才开始做。约 62 分钟。本集出现在 B 站视频号（BV1R1WL6cEzo），Fireside 播客 RSS 近窗尚未上架。整理中的留存率、用户规模等数字为节目口径，长镜未独立核实，不构成投资或产品建议。",
+      "advice": "关心中国个人 AI 助理、超级 App 生态或灵光 1.0 到 2.0 转向的人可以听。精读依据硅谷101 刊发的访谈整理（网易转载），不是 62 分钟逐字口播。请以原视频为准。",
+      "urls": [
+        {
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1R1WL6cEzo"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=luLrK_rHikE"
+        },
+        {
+          "label": "访谈整理（网易转载 文｜硅谷101）",
+          "href": "https://www.163.com/dy/article/LBI6TT5M05118O92.html"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/sv101-ant-lingguang-cto-2026-11-11.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=luLrK_rHikE"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
     {
       "id": "cogrev-vijoy-pandey-cisco-agents-2026-11-11",
       "title": "Agents That Think Together: Cisco's Vijoy Pandey on Semantic Alignment, Scope, Accord & Concord",
@@ -877,42 +1078,6 @@
       "hasTranscript": false
     },
     {
-      "id": "mlst-joscha-bach-leibniz-2026-11-02",
-      "title": "Why Leibniz Couldn't Find the Mind Inside the Mill (Joscha Bach)",
-      "guest": "Joscha Bach（California Institute for Machine Consciousness）；主持 Tim",
-      "show": "Machine Learning Street Talk",
-      "date": "2026-11-02",
-      "duration": "97分钟",
-      "category": "实验室·安全·研究",
-      "topics": [
-        "research-science",
-        "alignment-safety",
-        "models-labs"
-      ],
-      "priority": "P1",
-      "summary": "MLST 对话认知科学家、California Institute for Machine Consciousness 创始人 Joscha Bach。官方简介将其零假设概括为：意识是一种并不比 transformer 复杂太多、婴儿大脑也能自行发现的学习算法。Machine Consciousness Hypothesis 分两部分——意识是使大脑保持连贯的生物学习算法；以自组织方式学习的机器可能以同样方式发现它——任一部分都可能单独失败。对谈经过莱布尼茨磨坊、解释鸿沟、Anil Seth 的生物自然主义、IIT 及其被部分学者称为伪科学的公开信、哥德尔与形式系统的限度，以及 Mike Levin 关于形态发生与心智或运行同一套连贯算法的想法，并收束于「怎样才算机器有意识的证据」。",
-      "advice": "关心机器意识、认知架构与意识检验的人听。哲学密度高，97 分钟；可按官方时间码跳到莱布尼茨磨坊、双假设或证据标准等节。不是产业新闻。",
-      "urls": [
-        {
-          "label": "MLST / Spotify",
-          "href": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Why-Leibniz-Couldnt-Find-the-Mind-Inside-the-Mill-Joscha-Bach-e3riq2d"
-        },
-        {
-          "label": "Audio",
-          "href": "https://traffic.megaphone.fm/APO2351435168.mp3"
-        }
-      ],
-      "addedAt": "2026-11-09",
-      "cover": "thumbs/mlst-joscha-bach-leibniz-2026-11-02.jpg",
-      "media": {
-        "audioUrl": "https://traffic.megaphone.fm/APO2351435168.mp3",
-        "audioSource": "podcast-rss"
-      },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
-    },
-    {
       "id": "late-anthropic-s1-lizhaoyu-amont-2026-11-06",
       "title": "185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险",
       "guest": "Rob Li / 李肇宇（Amont Partners 管理合伙人）",
@@ -997,6 +1162,43 @@
       "hasTranscript": false
     },
     {
+      "id": "a16z-salesforce-somorjai-ma-2026-11-06",
+      "title": "Inside Salesforce’s $100 Billion M&A Playbook | John Somorjai",
+      "guest": "John Somorjai（Salesforce）",
+      "show": "a16z Show",
+      "date": "2026-11-06",
+      "duration": "49分钟",
+      "category": "创投·公司",
+      "topics": [
+        "founders-product",
+        "markets-vc",
+        "enterprise-apps",
+        "agents-tooling"
+      ],
+      "priority": "P1",
+      "summary": "a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。",
+      "advice": "P1：创始人考虑 exit / 企业发展可听；AI 主线为并购与 AI-native 标的，非模型技术深聊。",
+      "urls": [
+        {
+          "label": "a16z Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/inside-salesforces-100-billion-ma-playbook-john-somorjai-taKdd7nQ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-06",
+      "cover": "thumbs/a16z-salesforce-somorjai-ma-2026-11-06.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
       "id": "cogrev-joshua-monrad-sentinel-kya-2026-11-05",
       "title": "KYC Becomes KYA: Sentinel Bio's Joshua Monrad on DNA Screening, Uplift Studies & Agent Monitoring",
       "guest": "Joshua Monrad（Sentinel Bio 联合创始人兼董事总经理）",
@@ -1060,43 +1262,6 @@
       "cover": "thumbs/training-data-ronak-trajectory-2026-11-05.jpg",
       "media": {
         "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CPUAI8366427179.mp3",
-        "audioSource": "podcast-rss"
-      },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
-    },
-    {
-      "id": "a16z-salesforce-somorjai-ma-2026-11-06",
-      "title": "Inside Salesforce’s $100 Billion M&A Playbook | John Somorjai",
-      "guest": "John Somorjai（Salesforce）",
-      "show": "a16z Show",
-      "date": "2026-11-06",
-      "duration": "49分钟",
-      "category": "创投·公司",
-      "topics": [
-        "founders-product",
-        "markets-vc",
-        "enterprise-apps",
-        "agents-tooling"
-      ],
-      "priority": "P1",
-      "summary": "a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。",
-      "advice": "P1：创始人考虑 exit / 企业发展可听；AI 主线为并购与 AI-native 标的，非模型技术深聊。",
-      "urls": [
-        {
-          "label": "a16z Simplecast",
-          "href": "https://a16z.simplecast.com/episodes/inside-salesforces-100-billion-ma-playbook-john-somorjai-taKdd7nQ"
-        },
-        {
-          "label": "Audio",
-          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V"
-        }
-      ],
-      "addedAt": "2026-11-06",
-      "cover": "thumbs/a16z-salesforce-somorjai-ma-2026-11-06.jpg",
-      "media": {
-        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/81d17d19-a4a7-47b2-a616-cea2299d9189/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=81d17d19-a4a7-47b2-a616-cea2299d9189&feed=JGE3yC0V",
         "audioSource": "podcast-rss"
       },
       "hasEssay": false,
@@ -1222,44 +1387,6 @@
       "hasTranscript": false
     },
     {
-      "id": "latent-space-warp-zach-lloyd-2026-11-03",
-      "title": "The 2026 Software Factory Standard — Zach Lloyd, Warp.dev",
-      "guest": "Zach Lloyd",
-      "show": "Latent Space",
-      "date": "2026-11-03",
-      "duration": "35分钟",
-      "category": "创始人·CEO·产品",
-      "topics": [
-        "agents-tooling",
-        "founders-product",
-        "open-source",
-        "enterprise-apps"
-      ],
-      "priority": "P1",
-      "summary": "Latent Space 对话 Warp.dev 的 Zach Lloyd：2026「软件工厂」标准——Agent 时代终端/开发工作流如何重定义。约 35 分钟（≥30）；有 YouTube 与播客音频。",
-      "advice": "P1：做 coding agent、终端或开发者工具必听。时长中等，适合补 Warp 产品叙事。",
-      "urls": [
-        {
-          "label": "YouTube",
-          "href": "https://www.youtube.com/watch?v=LL0YmIyBKSU"
-        },
-        {
-          "label": "Audio",
-          "href": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a"
-        }
-      ],
-      "addedAt": "2026-11-05",
-      "cover": "thumbs/latent-space-warp-zach-lloyd-2026-11-03.jpg",
-      "media": {
-        "videoUrl": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
-        "audioUrl": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a",
-        "audioSource": "podcast-rss"
-      },
-      "hasEssay": false,
-      "hasAnalysis": false,
-      "hasTranscript": false
-    },
-    {
       "id": "practicalai-midwest-summit-p2-2026-11-05",
       "title": "Abundant Intelligence at the Midwest AI Summit Part 2",
       "guest": "Don Barger; Mark Lay; Darren Taillie",
@@ -1373,6 +1500,44 @@
       "hasTranscript": false
     },
     {
+      "id": "latent-space-warp-zach-lloyd-2026-11-03",
+      "title": "The 2026 Software Factory Standard — Zach Lloyd, Warp.dev",
+      "guest": "Zach Lloyd",
+      "show": "Latent Space",
+      "date": "2026-11-03",
+      "duration": "35分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "open-source",
+        "enterprise-apps"
+      ],
+      "priority": "P1",
+      "summary": "Latent Space 对话 Warp.dev 的 Zach Lloyd：2026「软件工厂」标准——Agent 时代终端/开发工作流如何重定义。约 35 分钟（≥30）；有 YouTube 与播客音频。",
+      "advice": "P1：做 coding agent、终端或开发者工具必听。时长中等，适合补 Warp 产品叙事。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=LL0YmIyBKSU"
+        },
+        {
+          "label": "Audio",
+          "href": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a"
+        }
+      ],
+      "addedAt": "2026-11-05",
+      "cover": "thumbs/latent-space-warp-zach-lloyd-2026-11-03.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
+        "audioUrl": "https://podcast.latent.space/audio/LL0YmIyBKSU.m4a",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
       "id": "twiml-richard-socher-ai-invent-2026-11-03",
       "title": "Can AI Invent or Just Help Scientists Work Faster? with Richard Socher (#783)",
       "guest": "Richard Socher（Recursive / 前 Salesforce Chief Scientist / You.com）",
@@ -1411,76 +1576,76 @@
       "hasTranscript": false
     },
     {
-      "id": "a16z-ad50-american-industry-2026-10-29",
-      "title": "The Startups Rebuilding American Industry | The AD50",
-      "guest": "Erin Price-Wright；Connor Love；主持 Elena Burger",
-      "show": "a16z Podcast",
-      "date": "2026-10-29",
-      "duration": "50分钟",
-      "category": "VC·基建·市场",
+      "id": "sv101-maxinsights-ego-data-2026-11-02",
+      "title": "对话Maxinsights：具身“卖铲人”的250倍增长、机器人Ego数据狂潮、Doordash与丰田模式，与“自由的鸟”【101视频播客】",
+      "guest": "袁宇光（Maxinsights 创始人）；主持 陈茜",
+      "show": "硅谷101",
+      "date": "2026-11-02",
+      "duration": "92分钟",
+      "category": "中国·科技媒体",
       "topics": [
-        "markets-vc",
         "robotics-embodied",
-        "compute-infra",
-        "policy-geopolitics",
-        "founders-product"
+        "founders-product",
+        "china-scene",
+        "markets-vc"
       ],
       "priority": "P1",
-      "summary": "a16z Show 解读本年度 AD50：防务、能源、制造与机器人如何汇成「重建美国工业底座」叙事。Erin Price-Wright 与 Connor Love 讨论防务需求如何反哺可服务更大商业市场的制造产能、AI 如何改写工厂经济性，以及新一代创始人如何把 SpaceX/Tesla/Anduril/Palantir 经验迁到采矿、能源、制造与防务。约 50 分钟。",
-      "advice": "P1：关注工业/防务/制造交叉与 AI 工厂经济性时听。配合 a16z AD50 公开文对照；主题偏硬科技基建而非纯模型访谈。",
+      "summary": "硅谷101 视频播客对话 Maxinsights 创始人袁宇光。刊发整理写：公司不造机器人，而是组织采集员记录做饭、清洁、叠衣等第一视角日常动作，加工成机器人训练数据；整理中嘉宾称 2026 年预测 ARR 约 2.5 亿美元，一年内从约 100 万美元增长，并称已积累约 200 万小时人类第一视角数据、全球约四千名采集员。讨论还涉及遥操作与 Ego 数据的分野、规模化采集，以及「自由的鸟」等创业对照。约 92 分钟。营收、时长与人员规模均为节目/整理口径，长镜未独立核实，不构成投资建议。本集在 Fireside 播客 RSS 近窗未出现，来自视频号（BV1L4xh6jEqo）。",
+      "advice": "关心具身数据、采集网络或「卖铲人」生意的人可以听。数字很大，务必当节目口径，回看原片。可对照仓内已有的硅谷101 Dyna Robotics 期。",
       "urls": [
         {
-          "label": "a16z / Simplecast",
-          "href": "https://a16z.simplecast.com/episodes/the-startups-rebuilding-american-industry-the-ad50-ZBbH0YCR"
+          "label": "Bilibili",
+          "href": "https://www.bilibili.com/video/BV1L4xh6jEqo"
         },
         {
-          "label": "AD50 文章",
-          "href": "https://www.a16z.news/p/ad-50-2026-production-is-deterrence"
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=1b6qVM0fKbk"
+        },
+        {
+          "label": "钛媒体（硅谷101 文稿整理转载）",
+          "href": "https://www.tmtpost.com/8193146.html"
         }
       ],
-      "addedAt": "2026-11-04",
-      "cover": "thumbs/a16z-ad50-american-industry-2026-10-29.jpg",
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/sv101-maxinsights-ego-data-2026-11-02.jpg",
       "media": {
-        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/7faacce1-573c-4324-a189-ce0ffa16a102/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=7faacce1-573c-4324-a189-ce0ffa16a102&feed=JGE3yC0V",
-        "audioSource": "simplecast"
+        "videoUrl": "https://www.youtube.com/watch?v=1b6qVM0fKbk"
       },
       "hasEssay": false,
       "hasAnalysis": false,
       "hasTranscript": false
     },
     {
-      "id": "uncapped-benchmark-breakfast-jack-ev-2026-10-29",
-      "title": "Benchmark Breakfast #1 | Jack and Ev",
-      "guest": "Jack Altman；Ev Randle（Benchmark）",
-      "show": "Uncapped",
-      "date": "2026-10-29",
-      "duration": "56分钟",
-      "category": "VC·基建·市场",
+      "id": "mlst-joscha-bach-leibniz-2026-11-02",
+      "title": "Why Leibniz Couldn't Find the Mind Inside the Mill (Joscha Bach)",
+      "guest": "Joscha Bach（California Institute for Machine Consciousness）；主持 Tim",
+      "show": "Machine Learning Street Talk",
+      "date": "2026-11-02",
+      "duration": "97分钟",
+      "category": "实验室·安全·研究",
       "topics": [
-        "markets-vc",
-        "models-labs",
-        "open-source",
+        "research-science",
         "alignment-safety",
-        "robotics-embodied"
+        "models-labs"
       ],
       "priority": "P1",
-      "summary": "Uncapped 新系列 Benchmark Breakfast 首集：Benchmark 合伙人 Jack Altman 与 Ev Randle 以周一无议程合伙人会议风格对谈。公开时间线覆盖 Anthropic S-1 与收入/算力图、codegen PMF、开源 vs 闭源 steelman、inference cloud 盘点、AI 网络安全与「abliterated」开源权重，以及生物/机器人相对软件增益的长期重要性。约 56 分钟。",
-      "advice": "P1：想听一线基金合伙人原汤讨论模型竞赛、开源与物理世界时选这集。时间戳已公开，可跳听 S-1、codegen、abliterated models、bio/robotics 段。",
+      "summary": "MLST 对话认知科学家、California Institute for Machine Consciousness 创始人 Joscha Bach。官方简介将其零假设概括为：意识是一种并不比 transformer 复杂太多、婴儿大脑也能自行发现的学习算法。Machine Consciousness Hypothesis 分两部分——意识是使大脑保持连贯的生物学习算法；以自组织方式学习的机器可能以同样方式发现它——任一部分都可能单独失败。对谈经过莱布尼茨磨坊、解释鸿沟、Anil Seth 的生物自然主义、IIT 及其被部分学者称为伪科学的公开信、哥德尔与形式系统的限度，以及 Mike Levin 关于形态发生与心智或运行同一套连贯算法的想法，并收束于「怎样才算机器有意识的证据」。",
+      "advice": "关心机器意识、认知架构与意识检验的人听。哲学密度高，97 分钟；可按官方时间码跳到莱布尼茨磨坊、双假设或证据标准等节。不是产业新闻。",
       "urls": [
         {
-          "label": "Apple Podcasts",
-          "href": "https://podcasts.apple.com/us/podcast/benchmark-breakfast-1-jack-and-ev/id1801867202?i=1000798702215"
+          "label": "MLST / Spotify",
+          "href": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Why-Leibniz-Couldnt-Find-the-Mind-Inside-the-Mill-Joscha-Bach-e3riq2d"
         },
         {
-          "label": "Uncapped",
-          "href": "https://www.uncappedpod.com/"
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/APO2351435168.mp3"
         }
       ],
-      "addedAt": "2026-11-04",
-      "cover": "thumbs/uncapped-benchmark-breakfast-jack-ev-2026-10-29.jpg",
+      "addedAt": "2026-11-09",
+      "cover": "thumbs/mlst-joscha-bach-leibniz-2026-11-02.jpg",
       "media": {
-        "audioUrl": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2026-9-29/435304050-44100-2-38d6e97c692cb.mp3",
-        "audioSource": "anchor"
+        "audioUrl": "https://traffic.megaphone.fm/APO2351435168.mp3",
+        "audioSource": "podcast-rss"
       },
       "hasEssay": false,
       "hasAnalysis": false,
@@ -1974,6 +2139,82 @@
       "hasEssay": true,
       "hasAnalysis": false,
       "hasTranscript": true
+    },
+    {
+      "id": "a16z-ad50-american-industry-2026-10-29",
+      "title": "The Startups Rebuilding American Industry | The AD50",
+      "guest": "Erin Price-Wright；Connor Love；主持 Elena Burger",
+      "show": "a16z Podcast",
+      "date": "2026-10-29",
+      "duration": "50分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "robotics-embodied",
+        "compute-infra",
+        "policy-geopolitics",
+        "founders-product"
+      ],
+      "priority": "P1",
+      "summary": "a16z Show 解读本年度 AD50：防务、能源、制造与机器人如何汇成「重建美国工业底座」叙事。Erin Price-Wright 与 Connor Love 讨论防务需求如何反哺可服务更大商业市场的制造产能、AI 如何改写工厂经济性，以及新一代创始人如何把 SpaceX/Tesla/Anduril/Palantir 经验迁到采矿、能源、制造与防务。约 50 分钟。",
+      "advice": "P1：关注工业/防务/制造交叉与 AI 工厂经济性时听。配合 a16z AD50 公开文对照；主题偏硬科技基建而非纯模型访谈。",
+      "urls": [
+        {
+          "label": "a16z / Simplecast",
+          "href": "https://a16z.simplecast.com/episodes/the-startups-rebuilding-american-industry-the-ad50-ZBbH0YCR"
+        },
+        {
+          "label": "AD50 文章",
+          "href": "https://www.a16z.news/p/ad-50-2026-production-is-deterrence"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/a16z-ad50-american-industry-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/7faacce1-573c-4324-a189-ce0ffa16a102/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=7faacce1-573c-4324-a189-ce0ffa16a102&feed=JGE3yC0V",
+        "audioSource": "simplecast"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "uncapped-benchmark-breakfast-jack-ev-2026-10-29",
+      "title": "Benchmark Breakfast #1 | Jack and Ev",
+      "guest": "Jack Altman；Ev Randle（Benchmark）",
+      "show": "Uncapped",
+      "date": "2026-10-29",
+      "duration": "56分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "models-labs",
+        "open-source",
+        "alignment-safety",
+        "robotics-embodied"
+      ],
+      "priority": "P1",
+      "summary": "Uncapped 新系列 Benchmark Breakfast 首集：Benchmark 合伙人 Jack Altman 与 Ev Randle 以周一无议程合伙人会议风格对谈。公开时间线覆盖 Anthropic S-1 与收入/算力图、codegen PMF、开源 vs 闭源 steelman、inference cloud 盘点、AI 网络安全与「abliterated」开源权重，以及生物/机器人相对软件增益的长期重要性。约 56 分钟。",
+      "advice": "P1：想听一线基金合伙人原汤讨论模型竞赛、开源与物理世界时选这集。时间戳已公开，可跳听 S-1、codegen、abliterated models、bio/robotics 段。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/benchmark-breakfast-1-jack-and-ev/id1801867202?i=1000798702215"
+        },
+        {
+          "label": "Uncapped",
+          "href": "https://www.uncappedpod.com/"
+        }
+      ],
+      "addedAt": "2026-11-04",
+      "cover": "thumbs/uncapped-benchmark-breakfast-jack-ev-2026-10-29.jpg",
+      "media": {
+        "audioUrl": "https://d3ctxlq1ktw2nl.cloudfront.net/staging/2026-9-29/435304050-44100-2-38d6e97c692cb.mp3",
+        "audioSource": "anchor"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
     },
     {
       "id": "practicalai-e378-midwest-summit-2026-10-29",
@@ -2481,6 +2722,46 @@
       "hasEssay": true,
       "hasAnalysis": false,
       "hasTranscript": true
+    },
+    {
+      "id": "mlst-kevin-hartnett-proof-2026-10-26",
+      "title": "Mathematics Just Changed Forever — Kevin Hartnett",
+      "guest": "Kevin Hartnett（《The Proof in the Code》作者）；另有节目介绍中的 Lean 相关学者出镜说明",
+      "show": "Machine Learning Street Talk",
+      "date": "2026-10-26",
+      "duration": "94分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "models-labs",
+        "open-source"
+      ],
+      "priority": "P1",
+      "summary": "MLST 一集以 Kevin Hartnett 的书《The Proof in the Code》为线索，回顾 Lean 从微软研究院旁路项目走到被数学家用来检查证明的过程。官方简介提到 Leonardo de Moura、Jeremy Avigad、Kevin Buzzard、Paul Lessard，以及 Mathlib、Peter Scholze 的 Liquid Tensor 挑战、Terence Tao 的 Equational Theories；后半转向 AlphaProof、自然语言奥赛证明与自动形式化，并讨论「机器给出无人能读的证明时，究竟验收了什么」。约 94 分钟。漏窗补录（2–3 周扫描）。简介所述人物与项目请以原片为准。",
+      "advice": "关心形式化证明、Lean 生态或 AI 数学的人可以听。偏纪录片式访谈，不是单一模型发布会。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Mathematics-Just-Changed-Forever--Kevin-Hartnett-e3r47eh"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/mathematics-just-changed-forever-kevin-hartnett/id1510472996?i=1000798188936"
+        },
+        {
+          "label": "Audio",
+          "href": "https://traffic.megaphone.fm/APO6346747125.mp3"
+        }
+      ],
+      "addedAt": "2026-11-12",
+      "cover": "thumbs/mlst-kevin-hartnett-proof-2026-10-26.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/APO6346747125.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
     },
     {
       "id": "lex-math-ai-crisis-2026-10-26",
@@ -6958,5 +7239,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-11-11 daily R: added cogrev-curt-tigges-neuron-basis-2026-11-10（P0 essay+analysis+asr）、latent-space-zeno-rocha-resend-aeo-2026-11-10（P0 essay+analysis，transcript=none）、cogrev-vijoy-pandey-cisco-agents-2026-11-11（P1 + asr）、a16z-mike-volpi-ai-buildout-2026-11-11（P1）、a16z-dharmesh-shah-hubspot-startup-2026-11-10（P1）、twiml-stefano-corazza-canva-ai-design-2026-11-10（P1）。B站 space/wbi 仍 blocked（space 页 412，arc/search -403/-352）；CN 靠 Fireside/xyzfm，近窗无新增长访。未入库：Lex #504 俄乌战争、Kara/HRC 中期选举、All-In Axon 警用专题、a16z Kupor/健康长寿、80k 合集与 NonZero 跨播、声东击西教育专题。\n2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
+  "notes": "2026-11-12 daily R: added nopriors-max-jaderberg-isomorphic-2026-11-12（P0 essay+analysis，transcript=none）、deepmind-alphagenome-2-2026-11-11（P0 essay+analysis，transcript=none）、sv101-ant-lingguang-cto-2026-11-11（P0 essay+analysis，transcript=none）、a16z-games-mods-agents-2026-11-12（P1）、uncapped-benchmark-breakfast-2-2026-11-12（P1）、sv101-maxinsights-ego-data-2026-11-02（P1，漏窗视频号）、mlst-kevin-hartnett-proof-2026-10-26（P1，漏窗）。B站 space/wbi 仍多 blocked（412/-352/-403）；非 wbi arc/search 对硅谷101视频号与播客号、机器之心返回了列表。CN 近窗新增长访来自硅谷101视频号（灵光2.0；Maxinsights 为漏窗），Fireside 最新仍 E258。未入库：Lex #504、All-In Axon、a16z Kupor/健康、80k 合集与 NonZero 跨播、声东击西教育专题、硅谷101《新世界》BV1MDWR6cEGY 与线下大会/跨境支付（缺可靠嘉宾名单或封面）。\n2026-11-11 daily R: added cogrev-curt-tigges-neuron-basis-2026-11-10（P0 essay+analysis+asr）、latent-space-zeno-rocha-resend-aeo-2026-11-10（P0 essay+analysis，transcript=none）、cogrev-vijoy-pandey-cisco-agents-2026-11-11（P1 + asr）、a16z-mike-volpi-ai-buildout-2026-11-11（P1）、a16z-dharmesh-shah-hubspot-startup-2026-11-10（P1）、twiml-stefano-corazza-canva-ai-design-2026-11-10（P1）。B站 space/wbi 仍 blocked（space 页 412，arc/search -403/-352）；CN 靠 Fireside/xyzfm，近窗无新增长访。未入库：Lex #504 俄乌战争、Kara/HRC 中期选举、All-In Axon 警用专题、a16z Kupor/健康长寿、80k 合集与 NonZero 跨播、声东击西教育专题。\n2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
 }

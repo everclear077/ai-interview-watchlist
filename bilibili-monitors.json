@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -10,9 +10,9 @@
       "spaceUrl": "https://space.bilibili.com/280780745",
       "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
+      "lastChecked": "2026-11-12T14:41:15Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastCheckNote": "space 412 / wbi -352 or HTML 风控. Fallback xyzfm 近窗无新增（最新仍 155 钱程，2026-10-21）。"
     },
     {
       "id": "sv101",
@@ -21,9 +21,9 @@
       "spaceUrl": "https://space.bilibili.com/508452265",
       "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
-      "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastChecked": "2026-11-12T14:41:15Z",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "space 412 / wbi -403；non-wbi arc/search 返回近窗长视频（含 BV1MDWR6cEGY、BV1R1WL6cEzo、BV1L4xh6jEqo）。已入库灵光2.0 与 Maxinsights；新世界等因缺嘉宾名单与封面暂未入库。"
     },
     {
       "id": "sv101-podcast",
@@ -32,9 +32,9 @@
       "spaceUrl": "https://space.bilibili.com/3546860354538082",
       "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
-      "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastChecked": "2026-11-12T14:41:15Z",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "space 412；non-wbi arc/search 返回列表，最新仍 HF0/OpenRouter（已入库 E258）等既有条目。"
     },
     {
       "id": "jiqizhixin",
@@ -43,9 +43,9 @@
       "spaceUrl": "https://space.bilibili.com/73414544",
       "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
-      "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastChecked": "2026-11-12T14:41:15Z",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "wbi -403；non-wbi arc/search 返回近窗条目，均为 <3 分钟短讯，无新增长访。"
     },
     {
       "id": "geekpark",
@@ -54,9 +54,9 @@
       "spaceUrl": "https://space.bilibili.com/13260662",
       "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
+      "lastChecked": "2026-11-12T14:41:15Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastCheckNote": "space 412 / arc -799 或 HTML 风控。Fallback LinkStart xyzfm 近窗无新增。"
     },
     {
       "id": "latepost",
@@ -65,9 +65,9 @@
       "spaceUrl": "https://space.bilibili.com/478559884",
       "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
+      "lastChecked": "2026-11-12T14:41:15Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastCheckNote": "arc -799 或 HTML 风控。长访谈看 LateTalk；Fireside 最新仍 185/186，已入库。"
     },
     {
       "id": "late-talk",
@@ -76,9 +76,9 @@
       "spaceUrl": "https://space.bilibili.com/3546915742419882",
       "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
+      "lastChecked": "2026-11-12T14:41:15Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastCheckNote": "space 可用外壳但 wbi -352。Fallback Fireside 近窗无新增（最新仍 185/186）。"
     },
     {
       "id": "liziran",
@@ -87,9 +87,9 @@
       "spaceUrl": "https://space.bilibili.com/39089748",
       "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
       "enabled": true,
-      "lastChecked": "2026-11-11T14:42:57Z",
+      "lastChecked": "2026-11-12T14:41:15Z",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "Bilibili space/wbi still blocked (space 页 412 或 arc/search -403/-352). Did not bypass. Fallback: Fireside/xyzfm/site RSS."
+      "lastCheckNote": "space 外壳 200 但 wbi -352，无可靠公开 RSS 可证新长访。"
     }
   ],
   "candidates": [],
@@ -140,14 +140,15 @@
       }
     ]
   },
-  "lastScan": "2026-11-11T14:42:57Z",
-  "lastScanNote": "Bilibili space/wbi still blocked (space 页 412；arc/search -403/-352). Fallbacks: LateTalk Fireside、sv101 Fireside、张小珺 xyzfm、Crossing xyzfm、LinkStart xyzfm、智者访谈小宇宙、声东击西 Fireside、捕蛇者说 feed、Teahour 站点。CN 近窗无新增长访。EN added: CogRev Curt Tigges P0（essay+analysis+asr）；Latent Space Zeno Rocha/Resend P0（essay+analysis）；CogRev Vijoy Pandey P1（asr）；a16z Mike Volpi P1；a16z Dharmesh Shah P1；TWIML Canva Stefano Corazza P1。",
+  "lastScan": "2026-11-12T14:41:15Z",
+  "lastScanNote": "Bilibili space/wbi still mostly blocked (space 页 412；arc/search -403/-352). Non-wbi arc/search returned lists for 硅谷101 视频号 mid=508452265、播客号 mid=3546860354538082、机器之心 mid=73414544（近窗均为短讯）。Fallbacks: LateTalk/sv101 Fireside、张小珺/Crossing/LinkStart xyzfm、声东击西 Fireside、捕蛇者说、Teahour；Fireside 最新仍 E258，无新播客号长访。EN added: No Priors Jaderberg P0；DeepMind AlphaGenome 2 P0；a16z Games P1；Uncapped Breakfast #2 P1；MLST Hartnett P1（漏窗）。CN added: 硅谷101 蚂蚁灵光2.0 P0；Maxinsights P1（漏窗）。未入库 BV1MDWR6cEGY 新世界等（缺嘉宾名单与封面）。",
   "lastScanCandidates": [
-    "cogrev-vijoy-pandey-cisco-agents-2026-11-11",
-    "a16z-mike-volpi-ai-buildout-2026-11-11",
-    "cogrev-curt-tigges-neuron-basis-2026-11-10",
-    "latent-space-zeno-rocha-resend-aeo-2026-11-10",
-    "a16z-dharmesh-shah-hubspot-startup-2026-11-10",
-    "twiml-stefano-corazza-canva-ai-design-2026-11-10"
+    "nopriors-max-jaderberg-isomorphic-2026-11-12",
+    "deepmind-alphagenome-2-2026-11-11",
+    "sv101-ant-lingguang-cto-2026-11-11",
+    "a16z-games-mods-agents-2026-11-12",
+    "uncapped-benchmark-breakfast-2-2026-11-12",
+    "sv101-maxinsights-ego-data-2026-11-02",
+    "mlst-kevin-hartnett-proof-2026-10-26"
   ]
 }
