@@ -5,9 +5,63 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-liberai-liusongming-astra-2026-11-13</link>
+      <guid isPermaLink="false">late-liberai-liusongming-astra-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>程曼祺对话 LiberAI 创始人兼 CEO 刘松铭。官方节目说明把 LiberAI 写成 2025 年底起步的全栈物理 AI 公司，刚发布世界动作模型 Liber-0；融资口径为不到一年获真格、红杉、龙珠、顺为等 6 轮，办公地在北京清河站附近老工业园。栏目把本期放进「Astra 冲击波」：基础大模型是否会进入物理 AI、完成大部分事。说明写刘松铭的核心假设是做全栈，做好与物理信息和场景相关的部分（精细操作、触觉/力觉数据采集与训练、本体）；并称他在创业前已看到基模可能进入具身大脑的规划与调度层（System 2）。官网时间线覆盖 Liber-0 的三项验证（零样本长程任务、数据效率实验、全栈优化协同）、220 万小时数据、手套数据与遥操、为模型设计的腰/手腕结构，以及 Astra 的边界（擅长理解规划，不擅长强接触与「最后一毫米」）。时长 2:09:38。均为栏目口径，不构成投资或产品建议。</description>
+    </item>
+    <item>
+      <title>Every Day Is Zero Day | Wiz CTO Ami Luttwak</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ami-luttwak-wiz-zero-day-2026-11-13</link>
+      <guid isPermaLink="false">a16z-ami-luttwak-wiz-zero-day-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Show</category>
+      <description>a16z GP Zane Lackey 与 Sarah Wang 对话 Wiz 联合创始人兼 CTO Ami Luttwak。官方说明写：AI 不只在帮防守方找漏洞，也在给攻击者更快的速度与专业知识，缩短公司可响应的窗口。Luttwak 将一轮漏洞与 agentic attacks 称为「Black October」，并视为网络安全的转折点。节目讨论 PHP2Shell、漏洞发现到利用的时间被压缩、开源模型把更复杂的进攻能力交到更多人手中，以及持有高价值 AI 凭证的创业公司为何成为目标。防守侧，说明写他主张持续攻击自己的系统、尽量自动化调查与补丁，并按「sophisticated attackers will get in」来设计基础设施。约 46 分钟。均为节目口径。</description>
+    </item>
+    <item>
+      <title>Why Enterprise AI Isn&apos;t Delivering ROI | Ahmed Bashir, DevRev</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/eye-on-ai-ahmed-bashir-devrev-2026-11-13</link>
+      <guid isPermaLink="false">eye-on-ai-ahmed-bashir-devrev-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Eye on AI</category>
+      <description>Craig S. Smith 对话 DevRev CTO Ahmed Bashir，讨论企业 AI 演示成功但落地失望的常见模式。官方说明把原因写成不是模型本身，而是企业数据在组织上复杂：分散在大量工具中、受条件权限锁定、使用自定义 schema；而主流基准测试的是预先打包的扁平文件。节目介绍 DevRev 的 Enterprise Bench，用来在更接近真实分布的环境里测试完整 agent harness。说明中的对比数字——DevRev 系统在同一 Opus 家族模型上比 Claude Code 高 50% 准确率，并将差额归因于模型与企业数据之间的共享记忆层（治理、语义理解与编排）——均为节目/公司口径，长镜未独立核实。约 37 分钟。</description>
+    </item>
+    <item>
+      <title>Jensen Huang Is Out at Nvidia</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/hardfork-jensen-huang-out-2026-11-12</link>
+      <guid isPermaLink="false">hardfork-jensen-huang-out-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Hard Fork</category>
+      <description>Hard Fork 在 11-10「The Jensen Huang Affair」之后的续集。官方说明写：Jensen Huang 不再担任 Nvidia CEO，这是 AI 浪潮中最重要人物之一的突然离职。节目邀请时报国际经济记者 Ana Swanson、科技问责记者 Ryan Mac，以及传记《The Thinking Machine》作者 Stephen Witt，讨论事件如何走到这一步、没有 Jensen 的 Nvidia 意味着什么，以及接下来可能发生什么。主持署名为 Max Read。音频约 39:22；YouTube 正片标题为 Inside the Downfall of the Most Powerful Man in A.I.，时长 37:32。本条只转述节目与时报报道口径，不构成对当事人或指控的事实认定。</description>
+    </item>
+    <item>
+      <title>Jensen Huang is out. What did China want from him?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-jensen-huang-china-2026-11-12</link>
+      <guid isPermaLink="false">decoder-jensen-huang-china-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>Nilay Patel 与布鲁金斯学会 John L. Thornton China Center 外交政策研究员 Kyle Chan 对谈。官方说明写：这期在出版前几分钟做了紧急更新，因 Huang 已辞去 Nvidia CEO；访谈主体则录于辞职消息公布前两天，核心问题是——若事件涉及所谓中国间谍，中国方面希望借接近 Jensen 达成什么，以及从中方视角看美中 AI 竞争与出口管制的实际状态。说明还提到 Chan 认为 Huang 与特朗普政府的关系可能才是关键。音频约 41:41。本条只转述 Decoder / The Verge 节目口径，不构成对指控或当事人的事实认定。</description>
+    </item>
+    <item>
+      <title>AI撞上美国“新世界”：暴跌、监管、政治博弈，数据中心何去何从？【101视频播客】</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-ai-xinshijie-datacenter-2026-11-12</link>
+      <guid isPermaLink="false">sv101-ai-xinshijie-datacenter-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101 视频播客。官方 YouTube 说明写：美国中期选举后，美股 AI 板块突然暴跌，此前高歌猛进的数据中心建设开始面临监管、地方政治与社区反对。栏目连线济容投资 Bruce Liu、前微软数据中心规划与能源战略专家 Ethan Xu（徐熠兴）、硅谷 AI Infra 投资人 Christina Xu，以及 Amant Partners 的 Rob Li，从德州政治变局谈到审批、建设成本、项目延期，以及这些变化如何传导到 GPU、光模块与云计算。说明还写到对加州蒙特利公园和德州阿比林当地居民的采访，涉及电费、用水、交通、住房与就业。官方时间轴从 00:00 的暴跌问询，到 01:46:14 的居民实访。B 站时长 113:49。本期为视频向，Fireside 音频 feed 尚未上架。均为栏目口径，不构成投资建议。</description>
+    </item>
     <item>
       <title>Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-max-jaderberg-isomorphic-2026-11-12</link>

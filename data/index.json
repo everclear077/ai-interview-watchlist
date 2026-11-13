@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,255 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "late-liberai-liusongming-astra-2026-11-13",
+      "title": "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率",
+      "guest": "刘松铭（LiberAI 创始人 & CEO）；主持 程曼祺",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-11-13",
+      "duration": "129分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "robotics-embodied",
+        "models-labs",
+        "founders-product",
+        "china-scene",
+        "markets-vc"
+      ],
+      "priority": "P0",
+      "summary": "程曼祺对话 LiberAI 创始人兼 CEO 刘松铭。官方节目说明把 LiberAI 写成 2025 年底起步的全栈物理 AI 公司，刚发布世界动作模型 Liber-0；融资口径为不到一年获真格、红杉、龙珠、顺为等 6 轮，办公地在北京清河站附近老工业园。栏目把本期放进「Astra 冲击波」：基础大模型是否会进入物理 AI、完成大部分事。说明写刘松铭的核心假设是做全栈，做好与物理信息和场景相关的部分（精细操作、触觉/力觉数据采集与训练、本体）；并称他在创业前已看到基模可能进入具身大脑的规划与调度层（System 2）。官网时间线覆盖 Liber-0 的三项验证（零样本长程任务、数据效率实验、全栈优化协同）、220 万小时数据、手套数据与遥操、为模型设计的腰/手腕结构，以及 Astra 的边界（擅长理解规划，不擅长强接触与「最后一毫米」）。时长 2:09:38。均为栏目口径，不构成投资或产品建议。",
+      "advice": "关心具身智能、世界模型或中国物理 AI 创业的人可以听。这是 2 小时 9 分钟的深度对谈；可按官网时间码从 51:57 听 Liber-0 三项验证，或从 01:39:27 听 Astra 之后的分工与边界。精读与解读依据官方节目说明、时间线与术语附录，不是逐字口播。请以原音频为准。",
+      "urls": [
+        {
+          "label": "晚点播客",
+          "href": "https://podcast.latepost.com/187"
+        },
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6af5e82d3caef3b52f54e5d0"
+        },
+        {
+          "label": "Audio",
+          "href": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/late-liberai-liusongming-astra-2026-11-13.jpg",
+      "media": {
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-ami-luttwak-wiz-zero-day-2026-11-13",
+      "title": "Every Day Is Zero Day | Wiz CTO Ami Luttwak",
+      "guest": "Ami Luttwak（Wiz 联合创始人兼 CTO）；主持 Zane Lackey、Sarah Wang",
+      "show": "a16z Show",
+      "date": "2026-11-13",
+      "duration": "46分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "agents-tooling",
+        "enterprise-apps",
+        "alignment-safety",
+        "founders-product"
+      ],
+      "priority": "P1",
+      "summary": "a16z GP Zane Lackey 与 Sarah Wang 对话 Wiz 联合创始人兼 CTO Ami Luttwak。官方说明写：AI 不只在帮防守方找漏洞，也在给攻击者更快的速度与专业知识，缩短公司可响应的窗口。Luttwak 将一轮漏洞与 agentic attacks 称为「Black October」，并视为网络安全的转折点。节目讨论 PHP2Shell、漏洞发现到利用的时间被压缩、开源模型把更复杂的进攻能力交到更多人手中，以及持有高价值 AI 凭证的创业公司为何成为目标。防守侧，说明写他主张持续攻击自己的系统、尽量自动化调查与补丁，并按「sophisticated attackers will get in」来设计基础设施。约 46 分钟。均为节目口径。",
+      "advice": "关心 agent 攻击面、云安全或企业防守节奏的人可以听。这是 a16z 与安全创业公司 CTO 的对谈，不是事件调查报告。检索时未见 YouTube 正片与官方文稿，请以音频为准。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/every-day-is-zero-day-wiz-cto-ami-luttwak-s6KylyoZ"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/981c35dd-8fcd-4d9a-824d-869467a169fd/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=981c35dd-8fcd-4d9a-824d-869467a169fd&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/a16z-ami-luttwak-wiz-zero-day-2026-11-13.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/981c35dd-8fcd-4d9a-824d-869467a169fd/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=981c35dd-8fcd-4d9a-824d-869467a169fd&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "eye-on-ai-ahmed-bashir-devrev-2026-11-13",
+      "title": "Why Enterprise AI Isn't Delivering ROI | Ahmed Bashir, DevRev",
+      "guest": "Ahmed Bashir（DevRev CTO）；主持 Craig S. Smith",
+      "show": "Eye on AI",
+      "date": "2026-11-13",
+      "duration": "37分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "enterprise-apps",
+        "agents-tooling",
+        "models-labs",
+        "founders-product"
+      ],
+      "priority": "P1",
+      "summary": "Craig S. Smith 对话 DevRev CTO Ahmed Bashir，讨论企业 AI 演示成功但落地失望的常见模式。官方说明把原因写成不是模型本身，而是企业数据在组织上复杂：分散在大量工具中、受条件权限锁定、使用自定义 schema；而主流基准测试的是预先打包的扁平文件。节目介绍 DevRev 的 Enterprise Bench，用来在更接近真实分布的环境里测试完整 agent harness。说明中的对比数字——DevRev 系统在同一 Opus 家族模型上比 Claude Code 高 50% 准确率，并将差额归因于模型与企业数据之间的共享记忆层（治理、语义理解与编排）——均为节目/公司口径，长镜未独立核实。约 37 分钟。",
+      "advice": "关心企业 agent 评测或「demo 能跑、上线不行」的人可以听。基准与准确率对比来自嘉宾所在公司的节目说明，不是第三方审计结果。未见 YouTube 与官方文稿，请以音频为准。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://aneyeonai.libsyn.com/why-enterprise-ai-isnt-delivering-roi-ahmed-bashir-devrev"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/why-enterprise-ai-isnt-delivering-roi-ahmed-bashir-devrev/id1438378439?i=1000801739330"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/pdst.fm/e/arttrk.com/p/VI4CS/prfx.byspotify.com/e/mgln.ai/e/p58841/pscrb.fm/rss/p/traffic.libsyn.com/secure/aneyeonai/CS-387-L_V5.mp3?dest-id=727317"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/eye-on-ai-ahmed-bashir-devrev-2026-11-13.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/pdst.fm/e/arttrk.com/p/VI4CS/prfx.byspotify.com/e/mgln.ai/e/p58841/pscrb.fm/rss/p/traffic.libsyn.com/secure/aneyeonai/CS-387-L_V5.mp3?dest-id=727317",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "hardfork-jensen-huang-out-2026-11-12",
+      "title": "Jensen Huang Is Out at Nvidia",
+      "guest": "Ana Swanson、Ryan Mac（NYT）；Stephen Witt（《The Thinking Machine》作者）；主持 Max Read",
+      "show": "Hard Fork",
+      "date": "2026-11-12",
+      "duration": "39分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "chips-hardware",
+        "policy-geopolitics",
+        "markets-vc",
+        "china-scene"
+      ],
+      "priority": "P1",
+      "summary": "Hard Fork 在 11-10「The Jensen Huang Affair」之后的续集。官方说明写：Jensen Huang 不再担任 Nvidia CEO，这是 AI 浪潮中最重要人物之一的突然离职。节目邀请时报国际经济记者 Ana Swanson、科技问责记者 Ryan Mac，以及传记《The Thinking Machine》作者 Stephen Witt，讨论事件如何走到这一步、没有 Jensen 的 Nvidia 意味着什么，以及接下来可能发生什么。主持署名为 Max Read。音频约 39:22；YouTube 正片标题为 Inside the Downfall of the Most Powerful Man in A.I.，时长 37:32。本条只转述节目与时报报道口径，不构成对当事人或指控的事实认定。",
+      "advice": "关心 Nvidia 治理、芯片出口管制或此事对 AI 供应链影响的人可以听。这是约 39 分钟的新闻圆桌，不是技术访谈，且涉及尚未完结的指控与个人隐私。建议先看简介列出的时报报道再决定是否收听。与 11-10 那期是连续但不同的一集。NYT 节目页有经人工校对的语音识别文稿，但未按说话人切分，故未按 official 入库。请以原音/视频为准。",
+      "urls": [
+        {
+          "label": "NYT 单集",
+          "href": "https://www.nytimes.com/2026/11/12/podcasts/hardfork-jensen-huang-resigns.html"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=W79ML7zFyZg"
+        },
+        {
+          "label": "NYT Video",
+          "href": "https://www.nytimes.com/video/podcasts/100000011279780/jensen-huang-is-out-at-nvidia.html"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=l2i9YnTd"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/hardfork-jensen-huang-out-2026-11-12.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=l2i9YnTd",
+        "videoUrl": "https://www.youtube.com/watch?v=W79ML7zFyZg",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "decoder-jensen-huang-china-2026-11-12",
+      "title": "Jensen Huang is out. What did China want from him?",
+      "guest": "Kyle Chan（Brookings John L. Thornton China Center）；主持 Nilay Patel",
+      "show": "Decoder with Nilay Patel",
+      "date": "2026-11-12",
+      "duration": "42分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "policy-geopolitics",
+        "chips-hardware",
+        "china-scene",
+        "compute-infra"
+      ],
+      "priority": "P1",
+      "summary": "Nilay Patel 与布鲁金斯学会 John L. Thornton China Center 外交政策研究员 Kyle Chan 对谈。官方说明写：这期在出版前几分钟做了紧急更新，因 Huang 已辞去 Nvidia CEO；访谈主体则录于辞职消息公布前两天，核心问题是——若事件涉及所谓中国间谍，中国方面希望借接近 Jensen 达成什么，以及从中方视角看美中 AI 竞争与出口管制的实际状态。说明还提到 Chan 认为 Huang 与特朗普政府的关系可能才是关键。音频约 41:41。本条只转述 Decoder / The Verge 节目口径，不构成对指控或当事人的事实认定。",
+      "advice": "关心芯片出口管制、美中 AI 竞争叙事，或想听辞职新闻之外的政策分析的人可以听。注意访谈主体录于辞职宣布之前，开场是紧急更新。The Verge 页有轻度编辑的访谈整理，但抽取文本缺少稳定的说话人标记，故未按 official 入库。请以原音/视频为准。",
+      "urls": [
+        {
+          "label": "The Verge",
+          "href": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=QhCl-BoOHM4"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/jensen-huang-is-out-what-did-china-want-from-him/id1011668648?i=1000801540995"
+        },
+        {
+          "label": "Audio",
+          "href": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7826315212.mp3"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/decoder-jensen-huang-china-2026-11-12.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7826315212.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=QhCl-BoOHM4",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-ai-xinshijie-datacenter-2026-11-12",
+      "title": "AI撞上美国“新世界”：暴跌、监管、政治博弈，数据中心何去何从？【101视频播客】",
+      "guest": "Bruce Liu（济容投资 CEO 兼 CIO）、Ethan Xu / 徐熠兴（前微软数据中心规划与能源战略）、Christina Xu（《硅谷非共识》）、Rob Li（Amant Partners）；主持 陈茜、Richard",
+      "show": "硅谷101",
+      "date": "2026-11-12",
+      "duration": "114分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "policy-geopolitics",
+        "compute-infra",
+        "markets-vc",
+        "chips-hardware",
+        "society-work"
+      ],
+      "priority": "P1",
+      "summary": "硅谷101 视频播客。官方 YouTube 说明写：美国中期选举后，美股 AI 板块突然暴跌，此前高歌猛进的数据中心建设开始面临监管、地方政治与社区反对。栏目连线济容投资 Bruce Liu、前微软数据中心规划与能源战略专家 Ethan Xu（徐熠兴）、硅谷 AI Infra 投资人 Christina Xu，以及 Amant Partners 的 Rob Li，从德州政治变局谈到审批、建设成本、项目延期，以及这些变化如何传导到 GPU、光模块与云计算。说明还写到对加州蒙特利公园和德州阿比林当地居民的采访，涉及电费、用水、交通、住房与就业。官方时间轴从 00:00 的暴跌问询，到 01:46:14 的居民实访。B 站时长 113:49。本期为视频向，Fireside 音频 feed 尚未上架。均为栏目口径，不构成投资建议。",
+      "advice": "关心数据中心监管、算力供给或中期选举后 AI 板块叙事的人可以看。这是多嘉宾圆桌加居民采访，不是单人深访。可按官方时间码从 23:17 听德州政治，或从 01:02:21 听「数据中心可能短缺、芯片却可能过剩」。请以 B 站或 YouTube 原视频为准。",
+      "urls": [
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV1MDWR6cEGY"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=goiVFy4jqPA"
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "cover": "thumbs/sv101-ai-xinshijie-datacenter-2026-11-12.jpg",
+      "media": {
+        "videoUrl": "https://www.bilibili.com/video/BV1MDWR6cEGY"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "nopriors-max-jaderberg-isomorphic-2026-11-12",
       "title": "Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg",
