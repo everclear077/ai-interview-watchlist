@@ -5,9 +5,81 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>Alex Imas &amp; Tyler Cowen | AI Is Moving Fast. Why Isn’t the Economy?</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-imas-cowen-ai-economy-2026-11-16</link>
+      <guid isPermaLink="false">a16z-imas-cowen-ai-economy-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>a16z Show</category>
+      <description>a16z GP Erik Torenberg 对话 Google DeepMind 经济学家 Alex Imas 与经济学家 Tyler Cowen。官方说明写：AI 能力提升很快，但经济会不会同样快地跟上？三人讨论要达到两位数经济增长需要什么、瓶颈与 AI 成本下降为何可能延缓影响，以及前沿实验室估值是否要求更大的生产率跃迁。他们也谈到「智能的经济学」，并提出更大的变化或许不是单个 agent 更聪明，而是 AI agents 在规模上学会相互协调。本条仅依据官方节目说明，未见稳定的官方文稿。</description>
+    </item>
+    <item>
+      <title>Why NJ’s governor thinks Republicans are trapped in an X bubble</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-mikie-sherrill-ai-privacy-2026-11-16</link>
+      <guid isPermaLink="false">decoder-mikie-sherrill-ai-privacy-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>Nilay Patel 对话新泽西州州长 Mikie Sherrill。RSS 副标题写：Gov. Mikie Sherrill on AI, Elon Musk, and the future of privacy。节目说明把她 2025 年当选写成 2026 年中期选举民主党大胜的先行信号，并问在科技富豪拥有 X、TikTok 以及越来越多地方媒体乃至 CBS News 的时代，腐败何以成为选民的动员议题。栏目提示可在 The Verge 阅读访谈整理，但今日检索时官方单集页尚未出现在 Decoder 索引中，本条仅依据 RSS 节目说明。</description>
+    </item>
+    <item>
+      <title>【年终复盘③】用 Kimi 加速 Kimi：RSI前夜，一个AI infra人的10个Aha Moments｜对话赵晨阳</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/crossing-zhaochenyang-kimi-infra-2026-11-15</link>
+      <guid isPermaLink="false">crossing-zhaochenyang-kimi-infra-2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>十字路口Crossing</category>
+      <description>「十字路口」2026 年终 AI 复盘系列第三期。主播 Koji 杨远骋对话一直在 AI Infra 领域工作的赵晨阳（官方说明：RadixArk 团队成员、SGLang 团队成员）。栏目写：录制当天恰好是 Fable 5.2 发布次日；本期不打算做大而全的新闻盘点，而是请一线朋友分享 10 个真正触动他们的 AI 瞬间。官方时间线从 RSI（用 Kimi 加速 Kimi、用模型优化模型、Kernel 优化、NVIDIA B300、OpenRSI）讲到评估与基准、开源项目管理、Computer Use、交互式 AI 与语音输入法，并以《大明王朝1566》《万历十五年》《挣扎的帝国》三本书收束制度与权责。精读与解读依据小宇宙官方节目说明与时间线，不是 66 分钟的逐字口播。</description>
+    </item>
+    <item>
+      <title>188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-188-jensen-huang-resign-2026-11-15</link>
+      <guid isPermaLink="false">late-188-jensen-huang-resign-2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>程曼祺与《晚点 LatePost》科技组作者刘伊伦、香港一家基金的高级投资策略师 Todd，讨论 2026-11-12 英伟达宣布黄仁勋辞去总裁、CEO 及董事职务、CFO Colette Kress 任临时 CEO 之后的影响。官网时间线从「AI 基建失去了一个激进的央行行长」讲到同行与云厂商、中国开源模型、黄仁勋能否回归与长期 CEO 人选，以及美国对华芯片管制的四层手段和未来三个月展望。上述事实与判断均为栏目口径，长镜未做独立核实。精读与解读依据官网节目说明、时间线与术语附录，不是 1 小时 16 分 13 秒的逐字口播。</description>
+    </item>
+    <item>
+      <title>Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lenny-mona-sarantakos-meta-muse-2026-11-15</link>
+      <guid isPermaLink="false">lenny-mona-sarantakos-meta-muse-2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Lenny&apos;s Podcast</category>
+      <description>Lenny Rachitsky 对话 Meta Superintelligence Labs 产品副总裁 Mona Sarantakos。官方说明写：Muse 是 App Store 第一、也被栏目称为今年增长最快的消费级 AI 产品之一；Sarantakos 从第一天起负责产品，这是她的首次播客访谈。讨论提纲包括：一个周末在树莓派上使用 OpenClaw 如何变成 Muse、为何等待七个月才上线、Nat Friedman、Alex Wang 与 Mark Zuckerberg 各自留下的印记、团队如何用 agent swarms 规模化发现用户洞见、出乎意料的使用场景，以及占位头像 Jolly 如何成为图标。本条仅依据栏目公开提纲与简介。</description>
+    </item>
+    <item>
+      <title>The OpenAI board member who fired Sam Altman says we still can&apos;t trust AI CEOs</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-helen-toner-ai-ceos-2026-11-14</link>
+      <guid isPermaLink="false">decoder-helen-toner-ai-ceos-2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>The Verge 总编辑 Nilay Patel 对话 Georgetown University CSET 执行主任 Helen Toner。这是 Decoder「AI in real life」系列第二期。栏目前言回顾 Toner 曾是投票解雇 Sam Altman 的四名 OpenAI 董事之一，并写：若安全方案建立在「某个个人可以被信任」之上，就会出大问题。节目讨论实验室实际在试图建造什么、alignment 是否可解，以及更明智的规制思路，包括如何看待中国。栏目明确说明访谈录于英伟达调查与黄仁勋辞职之前，因此不直接讨论该事件。精读与解读依据 The Verge 官方访谈整理与节目说明，不是带说话人标签的完整文稿。</description>
+    </item>
+    <item>
+      <title>Jensen Ousted as Nvidia CEO: &quot;Spy&quot; Scandal, Export Restrictions, Market Impact</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-jensen-ousted-nvidia-2026-11-13</link>
+      <guid isPermaLink="false">allin-jensen-ousted-nvidia-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>All-In Podcast</category>
+      <description>All-In 第 297 期。官方时间线：从黄仁勋卸任 CEO、间谍指控与机密备忘录泄露、谁希望他离开，讲到对 AI 交易与「The Bank of Nvidia」的市场影响、出口管制与中国策略，再到下一任 CEO 人选，并以 Anthropic 启动 IPO 路演收尾。这是主持人讨论，不是英伟达或调查方的官方说明。本条仅依据 Libsyn 节目页时间线与标题，不编造对白。</description>
+    </item>
+    <item>
+      <title>Implementing Federated Learning to enhance Agentic AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/practicalai-federated-learning-agents-2026-11-13</link>
+      <guid isPermaLink="false">practicalai-federated-learning-agents-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Practical AI</category>
+      <description>Chris Benson 对话 Flower Labs 研究科学家、剑桥大学博士研究生 Lorenzo Sani，讨论联邦学习与隐私保护 AI。官方说明写：他们谈到协作学习如何为 LLM 训练扩大对私有数据的访问、模型轨迹（model trajectories）如何帮助改进 agentic AI，以及开源权重模型的好处。本条仅依据官方节目说明。</description>
+    </item>
     <item>
       <title>187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-liberai-liusongming-astra-2026-11-13</link>
