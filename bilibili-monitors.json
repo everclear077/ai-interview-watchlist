@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-17",
   "minDurationMinutes": 30,
   "scanWindowDays": 30,
   "creators": [
@@ -10,9 +10,9 @@
       "spaceUrl": "https://space.bilibili.com/280780745",
       "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
-      "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 200 外壳无稿件列表；arc/search -799。fallback：xyzfm 156《侠》影之刃零制作人梁其伟仍为游戏制作主线，继续跳过。未见官方号上传 156 正片的可核验证据。"
+      "lastChecked": "2026-11-17T08:07:04-06:00",
+      "lastCheckStatus": "ok",
+      "lastCheckNote": "space 200 外壳无列表；arc/search HTTP 200 code=0，page.count=39，最新 BV1PNWD6LE5p《侠》梁其伟 387:28（2026-11-12 18:00 CST），游戏制作主线继续跳过。wbi 412；dynamic 412；card/nav_stat 200（video=39）。fallback xyzfm 156 同条。"
     },
     {
       "id": "sv101",
@@ -21,9 +21,9 @@
       "spaceUrl": "https://space.bilibili.com/508452265",
       "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 外壳 200 但无稿件列表；arc/search 与关键词搜索 412。fallback：Fireside 最新仍为已入库 E258；今日未能复验视频号新稿。"
+      "lastCheckNote": "space 外壳 200；arc -799 后重试 412；wbi -352；dynamic/搜索 412。fallback：Fireside 最新仍为已入库 E258；视频向「新世界」已在目录，未见更新长访证据。"
     },
     {
       "id": "sv101-podcast",
@@ -32,9 +32,9 @@
       "spaceUrl": "https://space.bilibili.com/3546860354538082",
       "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 外壳 200；arc/search 412。fallback：Fireside https://feeds.fireside.fm/sv101/rss 最新仍为已入库 E258，播客号近窗无新增长访证据。"
+      "lastCheckNote": "space 外壳 200；arc/wbi/dynamic 412 或 -799。fallback：Fireside 最新仍 E258。"
     },
     {
       "id": "jiqizhixin",
@@ -43,9 +43,9 @@
       "spaceUrl": "https://space.bilibili.com/73414544",
       "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 外壳 200；arc -799；关键词搜索 412。fallback：未能从公开搜索核验近窗「智者访谈」新长访。"
+      "lastCheckNote": "space 外壳 200；arc 412/-799；wbi -352。fallback：智者访谈 Apple/xyzfm 最新仍为已入库 2025-03-27 张拳石，近窗无新长访。"
     },
     {
       "id": "geekpark",
@@ -54,9 +54,9 @@
       "spaceUrl": "https://space.bilibili.com/13260662",
       "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 外壳 200；arc -799；dynamic/搜索 412。fallback：LinkStart xyzfm 近窗无新增（最新仍 Vol.137 Personal AI，已入库）。"
+      "lastCheckNote": "space 外壳 200；arc -799；wbi -352；dynamic 412。fallback：LinkStart xyzfm 新上 Vol.138（2026-11-17，60:50，五位 AI Native 创业者），待入库；B 站正片未核到。"
     },
     {
       "id": "latepost",
@@ -65,7 +65,7 @@
       "spaceUrl": "https://space.bilibili.com/478559884",
       "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
       "lastCheckNote": "space/arc/dynamic 412 或 -799。长访谈看 LateTalk；资讯号本身未见新增长访。"
     },
@@ -76,9 +76,9 @@
       "spaceUrl": "https://space.bilibili.com/3546915742419882",
       "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space/arc/dynamic 412 HTML 风控。fallback：Fireside/官网 188 已上线（见 recommend_add）。以「晚点聊 188 / 黄仁勋」检索未见官方 B 站正片。"
+      "lastCheckNote": "space/arc/dynamic 412 或 -799。fallback：Fireside/官网最新仍为已入库 188，无 189；仍未核到 188 官方 B 站正片。"
     },
     {
       "id": "liziran",
@@ -87,9 +87,9 @@
       "spaceUrl": "https://space.bilibili.com/39089748",
       "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
       "enabled": true,
-      "lastChecked": "2026-11-16T07:59:41-06:00",
+      "lastChecked": "2026-11-17T08:07:04-06:00",
       "lastCheckStatus": "blocked",
-      "lastCheckNote": "space 外壳 200；arc/search 与 dynamic 412。无可靠公开 RSS 可证近窗新长访。"
+      "lastCheckNote": "space 外壳 200；arc/wbi/dynamic 412 或 -799。无可靠公开 RSS，今日未能证明近窗新长访。"
     }
   ],
   "candidates": [],
@@ -140,16 +140,21 @@
       }
     ]
   },
-  "lastScan": "2026-11-16T13:59:41Z",
-  "lastScanNote": "Bilibili space/arc/search 仍以 412 HTML 风控或 arc -799 为主，未能从官方空间列表核验新稿。fallback：Fireside/xyzfm/官网。十字路口 xyzfm 年终复盘③ 赵晨阳（约 66.5 分，2026-11-15）入库 P0，YouTube 正片 IaoYLdvibNU 已 oembed 核实；文字版公众号未见带说话人文稿。晚点聊 Fireside 188 黄仁勋闪电离职（1:16:13，官网日期 2026-11-15）入库 P0，B 站未见官方正片。张小珺 xyzfm 156《侠》梁其伟仍为游戏制作主线，跳过。硅谷101 Fireside 最新仍为已入库 E258；视频号今日搜索接口 412，未见新增长访证据。LinkStart xyzfm 近窗无新增（最新仍 Vol.137，已入库）。Teahour 官网最新仍为已入库 2.0 #7（2026-04-15）；捕蛇者说最新仍 2026-06-15 Ep 59。EN added: Decoder Helen Toner P0；a16z Imas & Tyler Cowen P1；Lenny Meta Muse Mona Sarantakos P1；All-In Jensen 辞职讨论 P1；Decoder 新泽西州长 Mikie Sherrill P1；Practical AI 联邦学习 P2。跳过：80k METR 解说约 15 分钟；Dwarkesh RSI 口述文章非访谈；CogRev Nathan 基调演讲；a16z Gleick 计算史非 AI 主线；Lex #504 俄乌战争。",
+  "lastScan": "2026-11-17T14:07:04Z",
+  "lastScanNote": "Bilibili：张小珺 mid=280780745 非 wbi arc/search 今日打通（HTTP 200 code=0，39 稿最新为 2026-11-12 BV1PNWD6LE5p《侠》梁其伟 387:28，游戏制作主线，继续跳过）。其余 7 个官方监控号 space 仅 200 外壳，arc/wbi/search/dynamic 仍为 412/-799/-352，rsshub 403，未能核验空间新稿。fallback：Fireside/xyzfm/官网/小宇宙。本轮入库：卫诗婕漫谈 94 林达华 P0、93 算力主权解读 P1；LinkStart Vol.138 五位 AI Native 创业者 P1；AI炼金术 蒋冠军/千问 Personal Agent P0（11-05）、鸭哥 P1（11-10）、李桢 P1（11-03）、余一刚入职 Manus P1（10-28 漏窗）；EN：Dwarkesh Christiano P0（官方带说话人文稿）、Latent Space BFL/FLUX 3 P0、YC Lightcone SpaceXSI Grok Bot P1；漏窗补：MLST Joscha Bach P1、Latent Space swyx AIEI 上海 P2、YC Shopify 设计师 P2。硅谷101 Fireside 最新仍为已入库 E258；晚点聊最新仍 188；十字路口最新仍赵晨阳。Teahour 最新仍 2.0 #7（2026-04-15）；捕蛇者说最新仍 Ep 59（2026-06-15）；智者访谈最新仍 2025-03-27。跳过：张小珺 156《侠》；卫诗婕 92 财富番外；课代表立正近窗非 AI/过短；商业就是这样红外特番；声东击西教育/十周年；80k Holden 为 2025 旧集重发；Dwarkesh RSI/Clocktower 为文章；Lex #504 俄乌；DeepMind Genie 4 预告过短。",
   "lastScanCandidates": [
-    "a16z-imas-cowen-ai-economy-2026-11-16",
-    "decoder-mikie-sherrill-ai-privacy-2026-11-16",
-    "crossing-zhaochenyang-kimi-infra-2026-11-15",
-    "late-188-jensen-huang-resign-2026-11-15",
-    "lenny-mona-sarantakos-meta-muse-2026-11-15",
-    "decoder-helen-toner-ai-ceos-2026-11-14",
-    "allin-jensen-ousted-nvidia-2026-11-13",
-    "practicalai-federated-learning-agents-2026-11-13"
+    "lightstar-lindahua-sensetime-2026-11-17",
+    "lightstar-alex-jensen-compute-2026-11-17",
+    "geekpark-linkstart-ai-native-opc-2026-11-17",
+    "dwarkesh-paul-christiano-overthrow-2026-11-16",
+    "latent-space-blattmann-podell-bfl-flux3-2026-11-16",
+    "yc-lauren-tan-roman-ugarte-ai-coworkers-2026-11-16",
+    "ailianjin-yage-ai-work-2026-11-10",
+    "ailianjin-jiangguanjun-qwen-agent-2026-11-05",
+    "latent-space-swyx-aiei-shanghai-2026-11-04",
+    "ailianjin-lizhen-shangxue-2026-11-03",
+    "mlst-joscha-bach-consciousness-2026-11-02",
+    "ailianjin-yuyi-manus-2026-10-28",
+    "yc-marvin-schwaibold-shopify-fullstack-designer-2026-10-28"
   ]
 }

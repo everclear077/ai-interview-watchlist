@@ -5,9 +5,63 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>94.中国 AI 从追赶到原创，真正的难题是什么？｜与商汤林达华的 3 小时访谈</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lightstar-lindahua-sensetime-2026-11-17</link>
+      <guid isPermaLink="false">lightstar-lindahua-sensetime-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>卫诗婕｜漫谈Light the Star</category>
+      <description>卫诗婕与商汤联合创始人兼首席科学家林达华的约 2 小时 34 分长访谈。官方简介写明：林达华与导师汤晓鸥共同培育了几代中国 AI 人；节目从 MMLab「黑羊」文化与商汤起点，谈到语言之外的空间/物理智能、两轮浪潮后的难题、开源与原创、人才培养，以及汤晓鸥离开之后如何继续前行。林达华引用汤晓鸥常说的 “Life finds a way”。小宇宙官方时长 9255 秒，pubDate 2026-11-17T04:00:00.000Z（America/Chicago 为 11-16 22:00 CST）。</description>
+    </item>
+    <item>
+      <title>93.黄仁勋事件「深喉」解读：桃色事件？不，一场算力主权争夺风暴才刚开始</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lightstar-alex-jensen-compute-2026-11-17</link>
+      <guid isPermaLink="false">lightstar-alex-jensen-compute-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>卫诗婕｜漫谈Light the Star</category>
+      <description>卫诗婕邀请头部买方公司策略员 Alex，解读黄仁勋辞职之后的算力与中美产业影响。官方 shownotes 写明：11 月 12 日英伟达宣布黄仁勋即刻辞去总裁、CEO 及董事职务；截至录制前的 11 月 16 日有消息称其盟友在组建游说复出的「作战室」。节目讨论芯片转口与出口管制、对中国大模型下一轮规模跃迁的影响、交换芯片与超节点、DeepSeek 与国产训练算力等。官方时长 01:00:47（3647 秒），pubDate 2026-11-17T00:30:00.000Z（Chicago 为 11-16 18:30 CST）。</description>
+    </item>
+    <item>
+      <title>Vol.138｜对话 5 位 AI Native 创业者：创业复兴，一人公司能走多远？</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-ai-native-opc-2026-11-17</link>
+      <guid isPermaLink="false">geekpark-linkstart-ai-native-opc-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>开始连接 LinkStart（极客公园）</category>
+      <description>极客公园《开始连接》新一期。官方简介：亚马逊云科技联合观猹平台在中国发起「创业复兴」计划，从 1000 余个 OPC（一人公司）项目中邀请入选 Top 5 的五位创始人，加特邀导师吴江，讨论 AI 时代一人公司能走多远。五个项目分别为：Meowster（有性格的 AI 猫咪陪伴）、MysticX（塔罗/占星/易经接入 AI）、Otterlantis（一句话生成儿童 3D 世界）、创思 AI 安全（把模型漏洞转化为对齐训练数据）、Seeknetic（全模态检索做 AI 记忆层）。小宇宙时长 3650 秒（01:00:50），pubDate 2026-11-17T00:33:50.096Z（Chicago 为 11-16 18:33 CST）。昨日扫描时该 RSS 最新仍为已入库 Vol.137。</description>
+    </item>
+    <item>
+      <title>Paul Christiano – We could be 12 months away from AIs that can overthrow the government</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/dwarkesh-paul-christiano-overthrow-2026-11-16</link>
+      <guid isPermaLink="false">dwarkesh-paul-christiano-overthrow-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Dwarkesh Podcast</category>
+      <description>官方页与 RSS 简介写明时长 99 分钟。Christiano 现为 Alignment Research Center 负责人，此前领导美国 AISI 的 AI 安全工作，并在 OpenAI 负责对齐、提出 RLHF；近期加入 OpenAI 董事会，本集声明以私人身份发言。他给出一条具体情景：在当前轨迹、且不减速的前提下，他认为一年内出现强到足以推翻政府的超级智能的概率约为 1/3，并主张实验室在能够保护模型权重与研究机密之前，应暂停进一步的算法进展。YouTube 上传日为 2026-11-16，时长 1:38:45，与官方 “Watch now (99 mins)” 一致。</description>
+    </item>
+    <item>
+      <title>Building Visual Intelligence — Andreas Blattmann &amp; Dustin Podell, Black Forest Labs</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-blattmann-podell-bfl-flux3-2026-11-16</link>
+      <guid isPermaLink="false">latent-space-blattmann-podell-bfl-flux3-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Latent Space</category>
+      <description>Latent Space 正片访谈 Black Forest Labs 的 Andreas Blattmann 与 Dustin Podell。官方简介写：BFL 将 FLUX 3 同时训练在图像、视频与音频上，讨论模型能否通过观看与聆听视频来学习世界；swyx 在正文里回顾 Stable Diffusion / Latent Diffusion 谱系、BFL 从 Stability 核心团队分拆，以及用「运动中的摄像机与撞击声」解释为何要把视觉与声音一起训练。RSS 与页面 JSON-LD 均指向同一音频；YouTube 封面与 oembed 对应 8cGfJOU3AlQ，时长 1:38:23。</description>
+    </item>
+    <item>
+      <title>The Rise Of AI Coworkers</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-lauren-tan-roman-ugarte-ai-coworkers-2026-11-16</link>
+      <guid isPermaLink="false">yc-lauren-tan-roman-ugarte-ai-coworkers-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>YC Lightcone Podcast</category>
+      <description>Y Combinator Lightcone 访谈 SpaceXSI 的 Lauren Tan 与 Roman Ugarte。官方简介写：二人属于将 Grok Bot 从第一行代码做到上线的核心团队（约七周）；产品可生成带有独立身份与登录的 AI 同事并在后台持续工作，市场团队曾给机器人单独广告预算，Lauren 曾在一条 Slack 线程里与 bot 做完整功能、全程未打开 Cursor。讨论日常与 bot 共事，以及难点如何从「把事做完」转向「决定做什么以及为什么」。YouTube 正片 1:00:06，章节涵盖身份权限、bot 协作、代码审查与产品判断瓶颈。</description>
+    </item>
     <item>
       <title>Alex Imas &amp; Tyler Cowen | AI Is Moving Fast. Why Isn’t the Economy?</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-imas-cowen-ai-economy-2026-11-16</link>
@@ -196,6 +250,15 @@
       <category>VC·基建·市场</category>
       <category>a16z Show</category>
       <description>a16z 请 Mike Volpi（节目介绍称其曾参与塑造 Cisco 在互联网建设期的策略）对比当下 GPU、数据中心与电力投资，和上世纪 90 年代末的光纤热潮。简介写：即使市场回调，这些基础设施仍可能被证明有价值。讨论还涉及 NVIDIA、定制硅片、网络，以及 GPU 经济的变化，并提到 Cisco 收购机器的经验。Volpi 在简介中认为这一轮技术周期的影响可能比上一轮更大。均为节目口径，不构成投资建议。</description>
+    </item>
+    <item>
+      <title>AI 用得太好，怎么反而升不了职？｜对谈超线性学院鸭哥</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-yage-ai-work-2026-11-10</link>
+      <guid isPermaLink="false">ailianjin-yage-ai-work-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>对谈超线性学院联合创始人鸭哥：AI 用得太好之后，本事变成了什么。官方 shownotes 从他用 AI 盯直播间、先写模拟器再闭环硬件、用通义千问 fine-tune 去掉文风 AI 味，聊到职场里「老板会把你当成 AI 用」，以及同时开多个 AI 如何协调。小宇宙时长 4580 秒（1:16:20），pubDate 2026-11-10T04:46:18.736Z。喜马拉雅 RSS 仍使用旧标题「啊？？？用 AI 替自己看小姐姐跳舞？？？｜对谈超线性学院鸭哥」，以小宇宙官方标题为准。</description>
     </item>
     <item>
       <title>The Neuron Basis: Goodfire&apos;s Curt Tigges on Agentic Interp, Monosemanticity &amp; Reverse Engineering</title>
@@ -405,6 +468,15 @@
       <description>a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。</description>
     </item>
     <item>
+      <title>Personal Agent 怎么从尝鲜变成常用？｜对谈千问蒋冠军</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-jiangguanjun-qwen-agent-2026-11-05</link>
+      <guid isPermaLink="false">ailianjin-jiangguanjun-qwen-agent-2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>徐文浩、任鑫对谈千问事业部 AI 算法负责人蒋冠军，拆解 Personal Agent 从「尝鲜」到「常用」的两道关：系统如何承接模型错误，记忆如何补对当前上下文。官方 shownotes 提到后训练与 Harness、服务生态，以及一个航空延误理赔案例（agent 打电话为用户争取到约 70 元现金而非代金券）；并讨论记忆分层、成本（相关任务上下文规模曾降低约 40%）、千问围绕 30 多个行业梳理 8000 多项原子能力。注明功能描述以 2026-10-27 录制时讨论为准。小宇宙时长 6737 秒，pubDate 2026-11-05T03:14:53.417Z。</description>
+    </item>
+    <item>
       <title>KYC Becomes KYA: Sentinel Bio&apos;s Joshua Monrad on DNA Screening, Uplift Studies &amp; Agent Monitoring</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/cogrev-joshua-monrad-sentinel-kya-2026-11-05</link>
       <guid isPermaLink="false">cogrev-joshua-monrad-sentinel-kya-2026-11-05</guid>
@@ -459,6 +531,15 @@
       <description>Practical AI Midwest AI Summit 第 2 部分：International Mission Board 的 AI charter、Noblis 的组织级 AI 四项决策、Aerocore 用 Agent/text-to-SQL/视觉模型改进工单与数据访问。偏组织治理与落地案例，约 48 分钟。</description>
     </item>
     <item>
+      <title>Behind Latent Space: Kill My SaaS, Jev &amp; AI in 2026 | AIEi Shanghai</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-swyx-aiei-shanghai-2026-11-04</link>
+      <guid isPermaLink="false">latent-space-swyx-aiei-shanghai-2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Latent Space</category>
+      <description>漏窗。Galen Gao 在 AI Engineer Shanghai 前访谈 swyx，YouTube 正片 1:12:24（2026-11-04）。官方简介：从开源 AI 博客如何做成 Latent Space、AI Engineer 社区成长，谈到上海本地 builder；随后讨论 Kill My SaaS 比赛（agent 可重建工具并通过入门检查，但评选仍需懂组织者要完成的任务）、Jev / System One 模型、OpenClaw 在中国的采用，以及 Thinking Machines 的交互模型如何改变与 AI 对话。RSS 标题写作 “A Rare Look Inside the Pod | AIEi Shanghai”，是同一视频 QmDLDy3ZSNE。</description>
+    </item>
+    <item>
       <title>Vol.137｜Personal AI：你愿意把生活托付给一个怎样的 AI？</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/geekpark-linkstart-personal-ai-2026-11-04</link>
       <guid isPermaLink="false">geekpark-linkstart-personal-ai-2026-11-04</guid>
@@ -477,6 +558,15 @@
       <description>a16z Show：Assistant Benchmark 创建者 David Pawlan 回访，与 Anish Acharya、Josh Elman 讨论消费级 AI 助手格局。官方简介称已测试 140+ 助手，梳理记忆、判断与信任的分野，并以购物、规划、社交（gossip）为压力场景；进一步探讨 Agent 互联后的新社交图与「秘密超能力」叙事。约 51 分钟，Simplecast 音频可播。</description>
     </item>
     <item>
+      <title>要用 AI 抢地盘，别只想着省人工｜尚学未来 CEO 李桢</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-lizhen-shangxue-2026-11-03</link>
+      <guid isPermaLink="false">ailianjin-lizhen-shangxue-2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>再访尚学未来 CEO 李桢，追问企业 AI 落地如何推动：部门不配合、员工担心抢饭碗、管理者担心抢权时怎么办。官方强调他常问部门负责人「你未来能吃掉谁？」——先让团队看见新地盘再谈转型；并讨论「反向咨询」、内部 FDE、收费与项目快做成时可能出现的最后阻力。小宇宙时长 5707 秒（1:35:07），pubDate 2026-11-03T00:06:35.879Z。</description>
+    </item>
+    <item>
       <title>The 2026 Software Factory Standard — Zach Lloyd, Warp.dev</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/latent-space-warp-zach-lloyd-2026-11-03</link>
       <guid isPermaLink="false">latent-space-warp-zach-lloyd-2026-11-03</guid>
@@ -493,6 +583,15 @@
       <category>实验室·安全·研究</category>
       <category>TWIML AI Podcast</category>
       <description>TWIML #783：Richard Socher 讨论 AI 从辅助科研（写代码、分析、起草）走向提出想法、跑实验与验证的「发明」光谱。从 AI 改进 AI（模型训练/GPU kernel）与快速验证切入，谈 reward hacking，并延伸到生物/化学/物理所需的数据与实验基础设施，以及商业激励如何约束更强系统；引出 Eureka machine 愿景。约 49 分钟。</description>
+    </item>
+    <item>
+      <title>Why Consciousness Might Not Be Hard At All (Joscha Bach)</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/mlst-joscha-bach-consciousness-2026-11-02</link>
+      <guid isPermaLink="false">mlst-joscha-bach-consciousness-2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>Machine Learning Street Talk</category>
+      <description>MLST 与 Joscha Bach 的长访谈（YouTube 1:37:08，上传 2026-11-02）。官方简介：Bach 提出「意识并不难」的零假设，认为意识是一种并不比 transformer 复杂多少、婴儿大脑也能自行发现的算法，并展开 Machine Consciousness Hypothesis 的两部分——意识是使大脑连贯的生物学习/训练算法；以自组织方式学习的机器也可能同样发现它。讨论为何不会有意识的图灵测试、僵尸程序、Searle/Nagel 的解释鸿沟、IIT、Gödel 与 Mike Levin 的形态发生等，结尾问怎样才算机器有意识的证据。</description>
     </item>
     <item>
       <title>对话Maxinsights：具身“卖铲人”的250倍增长、机器人Ego数据狂潮、Doordash与丰田模式，与“自由的鸟”【101视频播客】</title>
@@ -691,6 +790,24 @@
       <category>VC·基建·市场</category>
       <category>All-In Podcast</category>
       <description>All-In 访谈 WHOOP CEO Will Ahmed：硬件订阅转型、约 500 亿小时健康数据与会员护城河、AI Coach/Journal/GLP-1 追踪，以及与 FDA 和竞品可穿戴的博弈。偏消费健康硬件+数据飞轮，含 AI coach 段落。</description>
+    </item>
+    <item>
+      <title>找刚入职 Manus 的余一聊感受：好快乐啊，好快乐啊，好快乐啊</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-yuyi-manus-2026-10-28</link>
+      <guid isPermaLink="false">ailianjin-yuyi-manus-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>漏窗补漏。《AI炼金术》请刚从腾讯研究院转入 Manus 的余一对谈。精读站/小宇宙简介写明：她在三天之内完成腾讯下线与 Manus 上线，离开原因是「越来越难以忍受自己是一个旁观者的状态」；节目聊入职感受与身份转换。官方时长 5151 秒（1:25:51），pubDate 2026-10-28T11:19:07.753Z。不在现有目录（目录最近一条 AI炼金术为 2026-10-18 晓辉博士）。</description>
+    </item>
+    <item>
+      <title>The New Full-Stack Designer</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-marvin-schwaibold-shopify-fullstack-designer-2026-10-28</link>
+      <guid isPermaLink="false">yc-marvin-schwaibold-shopify-fullstack-designer-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Y Combinator</category>
+      <description>漏窗。YC Design Review：Shopify 产品设计工作室负责人 Marvin Schwaibold 与 Aaron Epstein 对谈，时长 01:05:43。RSS 简介写他如何把 Figma 当草稿、直接用 Codex 等工具做可运行原型，设计师更像编辑，以及 AI 时代口味与判断更重要。YouTube 描述补充了团队交付的 admin 重设计与 Sidekick，以及对观众投稿网站的点评。属 AI 时代设计/产品访谈，不是实验室主线。</description>
     </item>
     <item>
       <title>The Brutal Reality of Building Agentic Products Today</title>
