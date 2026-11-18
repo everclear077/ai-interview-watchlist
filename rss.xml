@@ -5,9 +5,54 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-caiwei-lingguang-2026-11-18</link>
+      <guid isPermaLink="false">zhangxiaojun-caiwei-lingguang-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>张小珺Jùn｜商业访谈录</category>
+      <description>《张小珺Jùn｜商业访谈录》第 157 期，对话蚂蚁灵光负责人蔡伟。官方说明写：Muse 掀起热潮之后，Personal Agent 在过去三个月成为中美 AI 共同焦点，Grok Bot、Instinct、OpenAI Dots、Town、Today、Cue 等产品密集出现，蚂蚁灵光也推出 2.0。节目要讨论的问题包括：为何在此刻集中爆发、模型能力与产品形态如何变化、用户需求是真实存在还是集体想象、它会不会成为下一个入口，以及今年春晚会不会成为补贴大战的第一个大舞台。官方时间轴为：AI产品史（00:01:24），PA集中出现的根源（00:20:49），重构服务业（00:41:57），秉赋、不足和目标（01:04:40），产品设计、未来技术与格局推演（01:28:21），「市场是打出来的」（02:08:42），需求真伪（02:23:21），终极想象（02:32:03）。小宇宙时长 9820 秒（02:43:40）。本条精读只依据官方说明与时间轴，未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>The Missing Layer for Personal AI | First Person Labs’ Ken Liu</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-ken-liu-first-person-labs-2026-11-18</link>
+      <guid isPermaLink="false">a16z-ken-liu-first-person-labs-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>a16z Show</category>
+      <description>a16z 的 Martin Casado 与 Joel de la Garza 对话 First Person Labs 联合创始人 Ken Liu，介绍个人上下文层 Second。官方说明写：agent 越来越聪明，但每个新 agent 仍要重新学习「你是谁」；Second 试图理解用户在数字生活中的所作所为，并把偏好、优先级、关系与数字上下文提供给用户选择的 agent。讨论还包括如何在对话与应用之间主动连接信息、保护这类个人数据为何需要不同的安全架构，以及更长期的愿景——AI 不只回应提示，还能在足够上下文的基础上判断何时、如何提供帮助。RSS 时长 00:33:57，pubDate 为 2026-11-18T11:00:00Z。本条仅依据官方节目说明，未见稳定的官方文稿，也未核到 YouTube 正片。</description>
+    </item>
+    <item>
+      <title>Databricks CEO: AGI Is Already Here, Why Companies Are Behind, and the Superintelligence Debate</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/allin-ali-ghodsi-databricks-agi-2026-11-17</link>
+      <guid isPermaLink="false">allin-ali-ghodsi-databricks-agi-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>All-In Podcast</category>
+      <description>All-In 请来 Databricks CEO Ali Ghodsi。官方章节依次是：Databricks 在云、AI 与开源上的早期押注（0:00）；AGI 是否已经到来、企业 AI 为何落后（8:50）；现场演示 Databricks 如何用 agentic AI 提高效率（22:04）；IPO 与继续保持私有的理由（38:25）；以及递归自我改进、网络风险与末日辩论（44:02）。Libsyn / YouTube 时长均为约 62 分钟（01:02:06 / 3726 秒）。allin.com 官方导语把讨论概括为：企业真正的瓶颈是把会议、文档、代码和组织架构转成能实时浮现决策、阻碍与绩效的系统；企业采纳会需要几十年；并权衡继续私有、递归自我改进与网络风险。本条精读只依据官方导语与时间轴，未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>“后黄仁勋时代”：英伟达的护城河、资本棋局与AI产业变数</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-post-jensen-nvidia-2026-11-17</link>
+      <guid isPermaLink="false">sv101-post-jensen-nvidia-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，本轮也未核到官方 B 站正片。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>Buying Tokens vs Building an AI Factory with Sadeepa Wijesekara - #785</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/twiml-sadeepa-wijesekara-ai-factory-2026-11-17</link>
+      <guid isPermaLink="false">twiml-sadeepa-wijesekara-ai-factory-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>TWIML AI Podcast</category>
+      <description>TWIML 第 785 期，Sam Charrington 对话负责 HPE Private Cloud AI 工程的 Sadeepa Wijesekara。官方说明写：一个 agent 完成单次任务可能调用多次模型，有的需要前沿推理，有的可跑开源权重，有的数据必须留在企业内部，由此讨论哪些推理该外购 token、哪些该自建。节目谈如何看清单次调用成本、如何在托管模型与本地模型之间路由，以及自建 GPU 何时在经济上说得通。嘉宾提到 HPE 把编码请求接到统一内部端点，再决定送给前沿供应商或在本地提供。官方页时长约 58 分钟（RSS 3497 秒，YouTube 3467 秒）。本条仅依据官方节目说明，未见稳定的官方文稿。</description>
+    </item>
     <item>
       <title>94.中国 AI 从追赶到原创，真正的难题是什么？｜与商汤林达华的 3 小时访谈</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/lightstar-lindahua-sensetime-2026-11-17</link>

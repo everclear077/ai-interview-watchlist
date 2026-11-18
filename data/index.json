@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,201 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "zhangxiaojun-caiwei-lingguang-2026-11-18",
+      "title": "157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象",
+      "guest": "蔡伟（蚂蚁灵光负责人）；主持 张小珺",
+      "show": "张小珺Jùn｜商业访谈录",
+      "date": "2026-11-18",
+      "duration": "164分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "china-scene",
+        "models-labs",
+        "enterprise-apps"
+      ],
+      "priority": "P0",
+      "summary": "《张小珺Jùn｜商业访谈录》第 157 期，对话蚂蚁灵光负责人蔡伟。官方说明写：Muse 掀起热潮之后，Personal Agent 在过去三个月成为中美 AI 共同焦点，Grok Bot、Instinct、OpenAI Dots、Town、Today、Cue 等产品密集出现，蚂蚁灵光也推出 2.0。节目要讨论的问题包括：为何在此刻集中爆发、模型能力与产品形态如何变化、用户需求是真实存在还是集体想象、它会不会成为下一个入口，以及今年春晚会不会成为补贴大战的第一个大舞台。官方时间轴为：AI产品史（00:01:24），PA集中出现的根源（00:20:49），重构服务业（00:41:57），秉赋、不足和目标（01:04:40），产品设计、未来技术与格局推演（01:28:21），「市场是打出来的」（02:08:42），需求真伪（02:23:21），终极想象（02:32:03）。小宇宙时长 9820 秒（02:43:40）。本条精读只依据官方说明与时间轴，未见带说话人的完整文稿。",
+      "advice": "关心 Personal Agent 与国内大厂产品线的人应当听。本集是与灵光负责人蔡伟的长对谈，和已入库的硅谷101×灵光 CTO 林怿不是同一嘉宾、不宜混听当同一期。官方声明不作为投资建议；请以小宇宙音频或 B 站视频为准。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6afd12c6a4a79edf137afd61"
+        },
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV1LjsC6mEyq"
+        },
+        {
+          "label": "音频（xyzcdn）",
+          "href": "https://media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltU-y2wl0s2fvaEJBluGHouM2hO0.m4a"
+        }
+      ],
+      "addedAt": "2026-11-18",
+      "cover": "thumbs/zhangxiaojun-caiwei-lingguang-2026-11-18.jpg",
+      "media": {
+        "videoUrl": "https://www.bilibili.com/video/BV1LjsC6mEyq",
+        "audioUrl": "https://media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltU-y2wl0s2fvaEJBluGHouM2hO0.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-ken-liu-first-person-labs-2026-11-18",
+      "title": "The Missing Layer for Personal AI | First Person Labs’ Ken Liu",
+      "guest": "Ken Liu（First Person Labs 联合创始人）；主持 Martin Casado、Joel de la Garza",
+      "show": "a16z Show",
+      "date": "2026-11-18",
+      "duration": "34分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "agents-tooling",
+        "founders-product"
+      ],
+      "priority": "P1",
+      "summary": "a16z 的 Martin Casado 与 Joel de la Garza 对话 First Person Labs 联合创始人 Ken Liu，介绍个人上下文层 Second。官方说明写：agent 越来越聪明，但每个新 agent 仍要重新学习「你是谁」；Second 试图理解用户在数字生活中的所作所为，并把偏好、优先级、关系与数字上下文提供给用户选择的 agent。讨论还包括如何在对话与应用之间主动连接信息、保护这类个人数据为何需要不同的安全架构，以及更长期的愿景——AI 不只回应提示，还能在足够上下文的基础上判断何时、如何提供帮助。RSS 时长 00:33:57，pubDate 为 2026-11-18T11:00:00Z。本条仅依据官方节目说明，未见稳定的官方文稿，也未核到 YouTube 正片。",
+      "advice": "关心个人 agent 记忆层与数据安全架构的人可以听。官方资源指向 https://2.computer 与 https://fpl.company/ 。a16z 声明其关联方可能持有被讨论公司的投资；本条不构成投资建议。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://a16z.simplecast.com/episodes/the-missing-layer-for-personal-ai-first-person-labs-ken-liu-wu4i8Q00"
+        },
+        {
+          "label": "Audio",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/07b9cac6-3023-4069-82be-9f0832c5106e/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=07b9cac6-3023-4069-82be-9f0832c5106e&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-18",
+      "cover": "thumbs/a16z-ken-liu-first-person-labs-2026-11-18.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/07b9cac6-3023-4069-82be-9f0832c5106e/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=07b9cac6-3023-4069-82be-9f0832c5106e&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "allin-ali-ghodsi-databricks-agi-2026-11-17",
+      "title": "Databricks CEO: AGI Is Already Here, Why Companies Are Behind, and the Superintelligence Debate",
+      "guest": "Ali Ghodsi（Databricks CEO）；主持 Chamath Palihapitiya、Jason Calacanis、David Sacks、David Friedberg",
+      "show": "All-In Podcast",
+      "date": "2026-11-17",
+      "duration": "62分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "models-labs",
+        "enterprise-apps",
+        "alignment-safety",
+        "markets-vc"
+      ],
+      "priority": "P0",
+      "summary": "All-In 请来 Databricks CEO Ali Ghodsi。官方章节依次是：Databricks 在云、AI 与开源上的早期押注（0:00）；AGI 是否已经到来、企业 AI 为何落后（8:50）；现场演示 Databricks 如何用 agentic AI 提高效率（22:04）；IPO 与继续保持私有的理由（38:25）；以及递归自我改进、网络风险与末日辩论（44:02）。Libsyn / YouTube 时长均为约 62 分钟（01:02:06 / 3726 秒）。allin.com 官方导语把讨论概括为：企业真正的瓶颈是把会议、文档、代码和组织架构转成能实时浮现决策、阻碍与绩效的系统；企业采纳会需要几十年；并权衡继续私有、递归自我改进与网络风险。本条精读只依据官方导语与时间轴，未见带说话人的完整文稿。",
+      "advice": "关心企业采用、agentic AI 与实验室/创业公司资本路径的人可以看。节目标题写 “AGI Is Already Here”，这是栏目包装，不是已核验的能力结论；请以官方音频和视频为准。",
+      "urls": [
+        {
+          "label": "Libsyn",
+          "href": "https://allinchamathjason.libsyn.com/databricks-ceo-agi-is-already-here-why-companies-are-behind-and-the-superintelligence-debate"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=1bR0gtecoHU"
+        },
+        {
+          "label": "音频",
+          "href": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/AUDIO_99_AliGhodsi_Databricks.mp3?dest-id=1928300"
+        }
+      ],
+      "addedAt": "2026-11-18",
+      "cover": "thumbs/allin-ali-ghodsi-databricks-agi-2026-11-17.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=1bR0gtecoHU",
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/AUDIO_99_AliGhodsi_Databricks.mp3?dest-id=1928300",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-post-jensen-nvidia-2026-11-17",
+      "title": "“后黄仁勋时代”：英伟达的护城河、资本棋局与AI产业变数",
+      "guest": "Howie Xu（Gen Digital 首席AI/创新官）；匿名硅谷资深半导体行业从业者；王铁震（前 Hugging Face 亚太生态负责人）；Rob Li（纽约 Amont Partners 管理合伙人）",
+      "show": "硅谷101",
+      "date": "2026-11-17",
+      "duration": "38分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "chips-hardware",
+        "compute-infra",
+        "markets-vc",
+        "policy-geopolitics",
+        "open-source"
+      ],
+      "priority": "P1",
+      "summary": "硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，本轮也未核到官方 B 站正片。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。",
+      "advice": "关心英伟达交接、CUDA 生态与开源/资本布局的人可以看。形态是多人专题采访，不是单嘉宾长对谈；晚点聊 188 与卫诗婕 93 已从其他角度覆盖同一事件，不宜互相替代。请以官方 YouTube 视频为准。",
+      "urls": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=xJUWVxZfNVI"
+        }
+      ],
+      "addedAt": "2026-11-18",
+      "cover": "thumbs/sv101-post-jensen-nvidia-2026-11-17.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=xJUWVxZfNVI"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "twiml-sadeepa-wijesekara-ai-factory-2026-11-17",
+      "title": "Buying Tokens vs Building an AI Factory with Sadeepa Wijesekara - #785",
+      "guest": "Sadeepa Wijesekara（负责 HPE Private Cloud AI 工程）；主持 Sam Charrington",
+      "show": "TWIML AI Podcast",
+      "date": "2026-11-17",
+      "duration": "58分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "compute-infra",
+        "enterprise-apps",
+        "models-labs",
+        "open-source"
+      ],
+      "priority": "P1",
+      "summary": "TWIML 第 785 期，Sam Charrington 对话负责 HPE Private Cloud AI 工程的 Sadeepa Wijesekara。官方说明写：一个 agent 完成单次任务可能调用多次模型，有的需要前沿推理，有的可跑开源权重，有的数据必须留在企业内部，由此讨论哪些推理该外购 token、哪些该自建。节目谈如何看清单次调用成本、如何在托管模型与本地模型之间路由，以及自建 GPU 何时在经济上说得通。嘉宾提到 HPE 把编码请求接到统一内部端点，再决定送给前沿供应商或在本地提供。官方页时长约 58 分钟（RSS 3497 秒，YouTube 3467 秒）。本条仅依据官方节目说明，未见稳定的官方文稿。",
+      "advice": "关心企业推理成本、外购 token 与自建 AI factory 取舍的人可以听。本期由 HPE 赞助 AI Economics 系列，请把赞助关系与观点分开看，并以官方音频和视频为准。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://twimlai.com/podcast/twimlai/buying-tokens-vs-building-ai-factory"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=WFXlWYCXiTk"
+        },
+        {
+          "label": "Audio",
+          "href": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN1029197842.mp3"
+        }
+      ],
+      "addedAt": "2026-11-18",
+      "cover": "thumbs/twiml-sadeepa-wijesekara-ai-factory-2026-11-17.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=WFXlWYCXiTk",
+        "audioUrl": "https://pscrb.fm/rss/p/traffic.megaphone.fm/MLN1029197842.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "lightstar-lindahua-sensetime-2026-11-17",
       "title": "94.中国 AI 从追赶到原创，真正的难题是什么？｜与商汤林达华的 3 小时访谈",
@@ -8292,5 +8487,5 @@
     }
   ],
   "maintainer": "R",
-  "notes": "2026-11-12 daily R: added nopriors-max-jaderberg-isomorphic-2026-11-12（P0 essay+analysis，transcript=none）、deepmind-alphagenome-2-2026-11-11（P0 essay+analysis，transcript=none）、sv101-ant-lingguang-cto-2026-11-11（P0 essay+analysis，transcript=none）、a16z-games-mods-agents-2026-11-12（P1）、uncapped-benchmark-breakfast-2-2026-11-12（P1）、sv101-maxinsights-ego-data-2026-11-02（P1，漏窗视频号）、mlst-kevin-hartnett-proof-2026-10-26（P1，漏窗）。B站 space/wbi 仍多 blocked（412/-352/-403）；非 wbi arc/search 对硅谷101视频号与播客号、机器之心返回了列表。CN 近窗新增长访来自硅谷101视频号（灵光2.0；Maxinsights 为漏窗），Fireside 最新仍 E258。未入库：Lex #504、All-In Axon、a16z Kupor/健康、80k 合集与 NonZero 跨播、声东击西教育专题、硅谷101《新世界》BV1MDWR6cEGY 与线下大会/跨境支付（缺可靠嘉宾名单或封面）。\n2026-11-11 daily R: added cogrev-curt-tigges-neuron-basis-2026-11-10（P0 essay+analysis+asr）、latent-space-zeno-rocha-resend-aeo-2026-11-10（P0 essay+analysis，transcript=none）、cogrev-vijoy-pandey-cisco-agents-2026-11-11（P1 + asr）、a16z-mike-volpi-ai-buildout-2026-11-11（P1）、a16z-dharmesh-shah-hubspot-startup-2026-11-10（P1）、twiml-stefano-corazza-canva-ai-design-2026-11-10（P1）。B站 space/wbi 仍 blocked（space 页 412，arc/search -403/-352）；CN 靠 Fireside/xyzfm，近窗无新增长访。未入库：Lex #504 俄乌战争、Kara/HRC 中期选举、All-In Axon 警用专题、a16z Kupor/健康长寿、80k 合集与 NonZero 跨播、声东击西教育专题。\n2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
+  "notes": "2026-11-18 daily R: added zhangxiaojun-caiwei-lingguang-2026-11-18（P0 essay+analysis，transcript=none）、allin-ali-ghodsi-databricks-agi-2026-11-17（P0 essay+analysis，transcript=none）、a16z-ken-liu-first-person-labs-2026-11-18（P1）、twiml-sadeepa-wijesekara-ai-factory-2026-11-17（P1）、sv101-post-jensen-nvidia-2026-11-17（P1，YouTube 视频向，未核到官方 BV）。B站：张小珺搜索打通，新稿即蔡伟 BV1LjsC6mEyq（arc 今日 -799）；late-talk 搜索打通，最新仍为已入库 188；李自然说 arc 打通但近窗无合格对谈；其余监控号仍 blocked（412/-799/-352/-403）。fallback：Fireside/xyzfm/官网页。硅谷101 Fireside 最新仍 E258；晚点聊仍 188；卫诗婕仍 94/93；LinkStart 仍 Vol.138；Crossing 仍赵晨阳；Teahour 仍 2.0 #7；捕蛇者说仍 Ep 59；智者访谈仍 2025-03-27。跳过：张小珺 156《侠》；YC Paper Club 无具名嘉宾；How I AI 两期为操作演示而非访谈主栏；Lex #504、All-In Axon、a16z 18 分钟 RSI（Mark Chen/Schulman）过短。未入库（缺时长或嘉宾核验）：硅谷101 漏窗「年度线下大会」若干条。\n2026-11-12 daily R: added nopriors-max-jaderberg-isomorphic-2026-11-12（P0 essay+analysis，transcript=none）、deepmind-alphagenome-2-2026-11-11（P0 essay+analysis，transcript=none）、sv101-ant-lingguang-cto-2026-11-11（P0 essay+analysis，transcript=none）、a16z-games-mods-agents-2026-11-12（P1）、uncapped-benchmark-breakfast-2-2026-11-12（P1）、sv101-maxinsights-ego-data-2026-11-02（P1，漏窗视频号）、mlst-kevin-hartnett-proof-2026-10-26（P1，漏窗）。B站 space/wbi 仍多 blocked（412/-352/-403）；非 wbi arc/search 对硅谷101视频号与播客号、机器之心返回了列表。CN 近窗新增长访来自硅谷101视频号（灵光2.0；Maxinsights 为漏窗），Fireside 最新仍 E258。未入库：Lex #504、All-In Axon、a16z Kupor/健康、80k 合集与 NonZero 跨播、声东击西教育专题、硅谷101《新世界》BV1MDWR6cEGY 与线下大会/跨境支付（缺可靠嘉宾名单或封面）。\n2026-11-11 daily R: added cogrev-curt-tigges-neuron-basis-2026-11-10（P0 essay+analysis+asr）、latent-space-zeno-rocha-resend-aeo-2026-11-10（P0 essay+analysis，transcript=none）、cogrev-vijoy-pandey-cisco-agents-2026-11-11（P1 + asr）、a16z-mike-volpi-ai-buildout-2026-11-11（P1）、a16z-dharmesh-shah-hubspot-startup-2026-11-10（P1）、twiml-stefano-corazza-canva-ai-design-2026-11-10（P1）。B站 space/wbi 仍 blocked（space 页 412，arc/search -403/-352）；CN 靠 Fireside/xyzfm，近窗无新增长访。未入库：Lex #504 俄乌战争、Kara/HRC 中期选举、All-In Axon 警用专题、a16z Kupor/健康长寿、80k 合集与 NonZero 跨播、声东击西教育专题。\n2026-11-10 daily R: added latent-space-handshake-ai-data-2026-11-09 (P0 essay+analysis), sv101-hf0-openrouter-joe-2026-11-09 (P1), hardfork-jensen-huang-affair-2026-11-10 (P1)。B站 space/wbi 仍 blocked（space 页 412，arc/search -403）；CN 靠 Fireside/xyzfm，本期新增硅谷101 E258。\n2026-10-29 daily R: added sv101-vitalik-ea-ai-safety-2026-10-28 (P0), latent-space-supabase-agents-2026-10-26 (P1), nopriors-jake-stauch-serval-2026-10-29 (P1); CN B站 space API 仍限流，E257 经 Fireside RSS + B站页核验 BV1dsso6UEiV\n2026-10-26 daily R: added a16z-openai-computer-use-agents-2026-10-26, a16z-aaron-levie-startup-playbook-2026-10-25, crossing-lilei-phd-mimo-2026-10-25\n2026-10-25 daily R: added a16z-ben-horowitz-founder-win-2026-10-24, cogrev-aiam-highlights-zvi-evan-lonis-2026-10-24\n2026-10-24 senior-hosts wave1 added 12\n2026-10-24 senior-hosts wave2 added 10: greymatter-mustafa-suleyman-2024-06-20, ferriss-sebastian-mallaby-2026-06-17, hours80k-simon-goldstein-2026-10-01, gradient-lin-qiao-fireworks-2026-08-02, mlst-frank-hutter-2026-09-23, lightstar-meitao-worldmodel-2026-07-24, unknown-xulingjie-token-factory-2026-07-15, huxiu-ai100-jiangchanghao-2026-07-09, lizheng-zheng-changxi-robot-2026-10-09, lizheng-marco-casalaina-2026-10-15\n2026-10-28 daily: added latent-space-anthropic-brain-hands-2026-10-27 (P0), a16z-mark-cuban-healthcare-2026-10-28 (P1); CN/B站近窗无新增长访谈（space API 仍 412）\n\n[2026-10-30] R日更：+6 EN（80K Muehlhauser / CogRev RAND / Hard Fork S-1 / Decoder Brookhart / a16z Eve / TWIML Jeffries）；CN 无新增长访谈。\n2026-11-01 taxonomy R: 落地 W schema — 顶层 topicCatalog（16 slug）+ 全量 140 条 topics[] 回填；保留 category 四桶兼容；无形态字段；备份 data.json.bak-pre-taxonomy-2026-11-01\n2026-11-06: catch-up store←workspace Nov5五条 + 新增 LateTalk185/186、CogRev Monrad、Training Data Trajectory、a16z Salesforce Somorjai。B站仍风控，CN 靠 Fireside/xyzfm。"
 }
