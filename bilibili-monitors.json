@@ -1,152 +1,159 @@
 {
-    "updatedAt": "2026-11-18",
-    "minDurationMinutes": 30,
-    "scanWindowDays": 30,
-    "creators": [
-        {
-            "id": "zhangxiaojun",
-            "name": "张小珺商业访谈录",
-            "bilibiliMid": 280780745,
-            "spaceUrl": "https://space.bilibili.com/280780745",
-            "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "partial",
-            "lastCheckNote": "space/arc 今日未再打通（arc -799，wbi/dynamic 412）。card/navnum 显示稿数 40，较 2026-11-17 lastCheck 的 39 增加 1。站内搜索 API 核到官方号最新作为 BV1LjsC6mEyq《157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象》，时长 163:40，pubdate 2026-11-18 11:28 CST+8（America/Chicago 2026-11-17 21:28）。xyzfm 官方 RSS https://feed.xyzfm.space/dk4yh3pkpjp3 已同步本集（itunes:duration 02:43:40，小宇宙 episode/6afd12c6a4a79edf137afd61，音频 HEAD 200）。《侠》梁其伟 BV1PNWD6LE5p 仍为上一正片，继续按游戏制作主线跳过；搜索里的 BV17JWz6KE5m 是他人号精剪，非官方新稿。"
-        },
-        {
-            "id": "sv101",
-            "name": "硅谷101",
-            "bilibiliMid": 508452265,
-            "spaceUrl": "https://space.bilibili.com/508452265",
-            "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "blocked",
-            "lastCheckNote": "B 站 space/arc/wbi/search 今日仍 blocked，无官方 BV。fallback：Fireside https://sv101.fireside.fm/rss 最新仍为已入库 E258（2026-11-09）。YouTube 官方频道 @TheValley101（channelId UCKV2yWPB3wn0RTZh3cTD8YA）RSS/oembed/watch 核到新视频《“后黄仁勋时代”：英伟达的护城河、资本棋局与AI产业变数》v=xJUWVxZfNVI，lengthSeconds=2315（38:35），publishDate=2026-11-17T08:22:25-08:00（America/Chicago 10:22）。官方简介列出采访嘉宾 Howie Xu / 匿名半导体从业者 / 王铁震 / Rob Li。未编造 BV。频道 RSS 在漏窗还可见若干「年度线下大会」与「跨境支付」条目，本轮 watch/player 未能核到时长与完整嘉宾，按既有惯例不入库、列入 unverified。"
-        },
-        {
-            "id": "sv101-podcast",
-            "name": "硅谷101播客",
-            "bilibiliMid": 3546860354538082,
-            "spaceUrl": "https://space.bilibili.com/3546860354538082",
-            "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "blocked",
-            "lastCheckNote": "B 站空间列表今日仍 blocked。fallback Fireside 播客最新仍为已入库 E258（2026-11-09，54.3 分钟）。视频向新稿见视频号/YouTube，不在本播客 RSS。"
-        },
-        {
-            "id": "jiqizhixin",
-            "name": "机器之心官方",
-            "bilibiliMid": 73414544,
-            "spaceUrl": "https://space.bilibili.com/73414544",
-            "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "blocked",
-            "lastCheckNote": "B 站空间列表今日仍 blocked。fallback 智者访谈 xyzfm https://feed.xyzfm.space/appwhcru3d8g 共 11 集，最新仍为已入库 2025-03-27（RSS pub 2025-03-26 22:42 America/Chicago）张拳石，近窗无新长访。"
-        },
-        {
-            "id": "geekpark",
-            "name": "极客公园",
-            "bilibiliMid": 13260662,
-            "spaceUrl": "https://space.bilibili.com/13260662",
-            "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "blocked",
-            "lastCheckNote": "B 站空间列表今日仍 blocked，亦未核到 Vol.138 官方 BV。fallback LinkStart xyzfm https://feed.xyzfm.space/q9a6lueucj6a 最新仍为已入库 Vol.138（2026-11-16 18:33 America/Chicago，60.8 分钟），无 Vol.139。"
-        },
-        {
-            "id": "latepost",
-            "name": "晚点LatePost",
-            "bilibiliMid": 478559884,
-            "spaceUrl": "https://space.bilibili.com/478559884",
-            "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "blocked",
-            "lastCheckNote": "B 站空间列表今日仍 blocked。长访谈看 LateTalk；本资讯号无可用新增长访证据。"
-        },
-        {
-            "id": "late-talk",
-            "name": "晚点聊LateTalk",
-            "bilibiliMid": 3546915742419882,
-            "spaceUrl": "https://space.bilibili.com/3546915742419882",
-            "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "partial",
-            "lastCheckNote": "空间 arc 仍 blocked，但站内搜索打通：官方号最新稿为 BV1GAsM66E1E《黄仁勋闪电离职之后…》76:14，对应已入库 188（B 站发布时间 2026-11-17 10:01 CST+8 / America/Chicago 2026-11-16 20:01）。未见 189。fallback Fireside/官网 https://feeds.fireside.fm/latetalk/rss 与 https://podcast.latepost.com/rss 最新仍为 188（2026-11-14 22:15 America/Chicago，76.2 分钟）。"
-        },
-        {
-            "id": "liziran",
-            "name": "李自然说",
-            "bilibiliMid": 39089748,
-            "spaceUrl": "https://space.bilibili.com/39089748",
-            "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
-            "enabled": true,
-            "lastChecked": "2026-11-18T08:00:42-06:00",
-            "lastCheckStatus": "ok",
-            "lastCheckNote": "arc 今日打通（count=201）。最新稿 BV1F2Wv6wEXE《世界的底层，可能只是幼儿园级别的规则》17:50，发布 2026-11-13 12:12 CST+8，单口科普且不足 30 分钟。近窗唯一 ≥30 分钟条目仍是已跳过的 2026-10-12 TEDx BV1Eop96VEg9（38:37，单口演讲非对谈）。无可靠公开 RSS。近窗无新的对谈型长访谈。"
-        }
-    ],
-    "candidates": [],
-    "firstPassScan": {
-        "scannedAt": "2026-10-18",
-        "windowApprox": "2026-09-18 .. 2026-10-18",
-        "method": "Bilibili search UI + view/card API（space arc/search 被 -799/412 限流）",
-        "addedToWatchlist": [
-            "zhangxiaojun-lindon-gao-dyna-2026-10-14",
-            "sv101-zhangkuo-accio-2026-10-08",
-            "late-liangchenqi-2026-09-30",
-            "late-ai-q3-henry-2026-10-08"
-        ],
-        "skipped": [
-            {
-                "title": "美光崛起背后…【硅谷101】",
-                "bvid": "BV1LLJQ6XEA8",
-                "reason": "叙事专题非嘉宾对谈"
-            },
-            {
-                "title": "特斯拉FSD十三年…【硅谷101】",
-                "bvid": "BV1ECaq6nEJn",
-                "reason": "专题报道非嘉宾对谈"
-            },
-            {
-                "title": "具身智能的金钱游戏【晚点聊】",
-                "bvid": "BV17MtZ6wEiL",
-                "reason": "主创讨论自家稿件，非嘉宾访谈"
-            },
-            {
-                "title": "和曾鸣聊产业史观",
-                "bvid": "BV1XNtJ6UEmm",
-                "reason": "已在 data.json"
-            },
-            {
-                "title": "对话盛颖…SGLang",
-                "bvid": "BV1GaM968E6T",
-                "reason": "已在 data.json；且略早于窗口"
-            },
-            {
-                "title": "李自然说 TEDx AI",
-                "bvid": "BV1Eop96VEg9",
-                "reason": "单口演讲非访谈"
-            },
-            {
-                "title": "机器之心/极客公园近窗条目",
-                "reason": "近窗几乎全是 <30min 短讯/切片"
-            }
-        ]
+  "updatedAt": "2026-11-19",
+  "minDurationMinutes": 30,
+  "scanWindowDays": 30,
+  "creators": [
+    {
+      "id": "zhangxiaojun",
+      "name": "张小珺商业访谈录",
+      "bilibiliMid": 280780745,
+      "spaceUrl": "https://space.bilibili.com/280780745",
+      "notes": "语言即世界工作室。API card 核实：知名UP主 mid=280780745。长访谈主阵地。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc/wbi/dynamic 412 banned；card/navnum 200，video=40（与昨日入库后一致）。搜索「张小珺」HTML 首条即 BV1LjsC6mEyq；「张小珺 蔡伟」API 打通核到官方正片。xyzfm 403，小宇宙最新仍 157。156《侠》继续跳过。"
     },
-    "lastScan": "2026-11-18T14:00:42Z",
-    "lastScanNote": "Bilibili：张小珺 mid=280780745 今日 arc 未再打通（-799），card/navnum video=40（昨日 39）；站内搜索打通，新稿 BV1LjsC6mEyq《157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象》163:40（2026-11-18 11:28 CST+8），xyzfm 同步，已入库。late-talk 空间仍 blocked，搜索打通，最新 BV1GAsM66E1E 仍为已入库 188，无 189。李自然说 arc 打通，最新 BV1F2Wv6wEXE 17:50 单口，不合格。其余 5 个官方监控号 space/arc/wbi/search 仍为 412/-799/-352/-403。fallback：Fireside/xyzfm/官网/YouTube。本轮入库：张小珺 157 蔡伟 P0；硅谷101 YouTube《后黄仁勋时代》P1（无官方 BV）；EN：All-In Ali Ghodsi P0、TWIML #785 P1、a16z Ken Liu / First Person Labs P1。硅谷101 Fireside 最新仍 E258；晚点聊仍 188；卫诗婕仍 94/93；LinkStart 仍 Vol.138；Crossing 仍赵晨阳；Teahour 仍 2.0 #7（2026-04-15）；捕蛇者说仍 Ep 59（2026-06-15）；智者访谈仍 2025-03-27。跳过：张小珺 156《侠》；YC Paper Club 无具名嘉宾；How I AI 两期操作演示。",
-    "lastScanCandidates": [
-        "zhangxiaojun-caiwei-lingguang-2026-11-18",
-        "allin-ali-ghodsi-databricks-agi-2026-11-17",
-        "a16z-ken-liu-first-person-labs-2026-11-18",
-        "twiml-sadeepa-wijesekara-ai-factory-2026-11-17",
-        "sv101-post-jensen-nvidia-2026-11-17"
+    {
+      "id": "sv101",
+      "name": "硅谷101",
+      "bilibiliMid": 508452265,
+      "spaceUrl": "https://space.bilibili.com/508452265",
+      "notes": "官方视频号；YouTube 公告明示 B站入口。API card 核实 mid=508452265。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc 200/-799，wbi 200/-352，dynamic 412。card/navnum 200（archive_count=246，nav video=237）。搜索「硅谷101」API 打通，官方号新稿与已入库「后黄仁勋」BV1aqsB6ZE1E 38:36 一并核到。Fireside 播客仍 E258。"
+    },
+    {
+      "id": "sv101-podcast",
+      "name": "硅谷101播客",
+      "bilibiliMid": 3546860354538082,
+      "spaceUrl": "https://space.bilibili.com/3546860354538082",
+      "notes": "硅谷101播客专用号（与视频号 mid 不同）。API card 核实：知名UP主。长访谈/播客视频多发此处。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "ok",
+      "lastCheckNote": "今日 arc_search 打通（code=0，page.count=88=navnum video）。wbi/dynamic 412；搜索 API 412。无新于 E258 的播客正片。"
+    },
+    {
+      "id": "jiqizhixin",
+      "name": "机器之心官方",
+      "bilibiliMid": 73414544,
+      "spaceUrl": "https://space.bilibili.com/73414544",
+      "notes": "机构认证「机器之心官方账号」。近30天多为短讯，长访谈需筛「智者访谈」等。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc 412，wbi -352，dynamic 412。card/navnum 200（archive_count=1606，nav video=1104）。xyzfm 403，小宇宙/Apple 无近窗新集。"
+    },
+    {
+      "id": "geekpark",
+      "name": "极客公园",
+      "bilibiliMid": 13260662,
+      "spaceUrl": "https://space.bilibili.com/13260662",
+      "notes": "机构认证「极客公园 官方账号」。近窗口内多为短切片，长访谈稀缺。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc 200/-799，wbi 412，dynamic 412。card/navnum 200（archive_count=2379，nav video=2360）。搜索「开始连接 Vol.139」未命中官方号长访。xyzfm 403，小宇宙最新仍 Vol.138。"
+    },
+    {
+      "id": "latepost",
+      "name": "晚点LatePost",
+      "bilibiliMid": 478559884,
+      "spaceUrl": "https://space.bilibili.com/478559884",
+      "notes": "官方账号认证。多为短资讯片；长访谈见 companion「晚点聊LateTalk」。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc 412，wbi -352，dynamic 412，搜索 API 412。card/navnum 200（archive_count=170，nav video=164）。"
+    },
+    {
+      "id": "late-talk",
+      "name": "晚点聊LateTalk",
+      "bilibiliMid": 3546915742419882,
+      "spaceUrl": "https://space.bilibili.com/3546915742419882",
+      "notes": "《晚点 LatePost》出品长访谈号。mid 经视频 owner API 核实；无「官方账号」徽章但内容与 podcast.latepost.com 一致。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc/wbi/dynamic 412。card/navnum 200（archive_count=64，nav video=63）。搜索「晚点聊 189」「顾全全 Geodesic」API 打通，官方号 mid=3546915742419882 正片已核到。Fireside/官网 RSS 08:00 CST+8 已上线 189，音频 HEAD 200。"
+    },
+    {
+      "id": "liziran",
+      "name": "李自然说",
+      "bilibiliMid": 39089748,
+      "spaceUrl": "https://space.bilibili.com/39089748",
+      "notes": "API card 核实：知名科技UP主。近窗口多为单口/TEDx，对谈型长访谈需逐条筛。",
+      "enabled": true,
+      "lastChecked": "2026-11-19T08:03:28-06:00",
+      "lastCheckStatus": "partial",
+      "lastCheckNote": "arc/wbi/dynamic 412（昨日 arc 曾打通，今日未再打通）。card/navnum 200（archive_count=225，nav video=201）。搜索 API 打通，官方最新 ≥30 分钟仍为已跳过的 2026-10-12 TEDx。"
+    }
+  ],
+  "candidates": [],
+  "firstPassScan": {
+    "scannedAt": "2026-10-18",
+    "windowApprox": "2026-09-18 .. 2026-10-18",
+    "method": "Bilibili search UI + view/card API（space arc/search 被 -799/412 限流）",
+    "addedToWatchlist": [
+      "zhangxiaojun-lindon-gao-dyna-2026-10-14",
+      "sv101-zhangkuo-accio-2026-10-08",
+      "late-liangchenqi-2026-09-30",
+      "late-ai-q3-henry-2026-10-08"
+    ],
+    "skipped": [
+      {
+        "title": "美光崛起背后…【硅谷101】",
+        "bvid": "BV1LLJQ6XEA8",
+        "reason": "叙事专题非嘉宾对谈"
+      },
+      {
+        "title": "特斯拉FSD十三年…【硅谷101】",
+        "bvid": "BV1ECaq6nEJn",
+        "reason": "专题报道非嘉宾对谈"
+      },
+      {
+        "title": "具身智能的金钱游戏【晚点聊】",
+        "bvid": "BV17MtZ6wEiL",
+        "reason": "主创讨论自家稿件，非嘉宾访谈"
+      },
+      {
+        "title": "和曾鸣聊产业史观",
+        "bvid": "BV1XNtJ6UEmm",
+        "reason": "已在 data.json"
+      },
+      {
+        "title": "对话盛颖…SGLang",
+        "bvid": "BV1GaM968E6T",
+        "reason": "已在 data.json；且略早于窗口"
+      },
+      {
+        "title": "李自然说 TEDx AI",
+        "bvid": "BV1Eop96VEg9",
+        "reason": "单口演讲非访谈"
+      },
+      {
+        "title": "机器之心/极客公园近窗条目",
+        "reason": "近窗几乎全是 <30min 短讯/切片"
+      }
     ]
+  },
+  "lastScan": "2026-11-19T14:03:28Z",
+  "lastScanNote": "Bilibili：8 个监控号空间 arc/wbi 仍多 412/-799/-352；例外是硅谷101播客 mid=3546860354538082 今日 arc 打通（count=88），最新仍为已入库 E258（BV1FeW46MEZU 54:20）。站内搜索部分打通：张小珺无 158，最新仍是已入库 157 蔡伟 BV1LjsC6mEyq，navnum video=40；晚点聊官方号新上 BV1xYst6DEwS《189 顾全全 / Geodesic》96:03（2026-11-19 09:38 CST+8），Fireside/官网同步，已入库 P0；硅谷101视频号新上 BV16ps46zEjA《Anthropic崛起史》99:21（2026-11-19 12:30 CST+8），YouTube v=sYdN4b14rHU 同步，已入库 P1；同一次搜索核到昨日「后黄仁勋时代」官方 BV1aqsB6ZE1E（38:36），已补进已入库条目 sv101-post-jensen-nvidia-2026-11-17，未重复新增。李自然说搜索打通，最新仍 17:50 单口不合格。机器之心/极客公园/晚点资讯号无新增长访。fallback：xyzfm 全部 403，改小宇宙 __NEXT_DATA__ 与 Apple lookup / Fireside / 官网 / YouTube。卫诗婕仍 94/93，LinkStart 仍 Vol.138，Crossing 仍赵晨阳，智者访谈仍 2025-03-27，Teahour 仍 2.0 #7，捕蛇者说仍 Ep 59，硅谷101 Fireside 仍 E258。另：AI炼金术小宇宙新上对谈 Michael Guan / Hellyeah（eid=6afd8026a4a79edf137b3f39，5251 秒，2026-11-18），已入库 P1。EN 本轮入库：No Priors Bob McGrew P0（音频+Apple，YouTube 未核到可写地址）；Decoder Jon Favreau P1；Practical AI #381 Gautham Pallapa P1（官方带说话人文稿）；YC How To Build The Future Eric Glyman P1；Newcomer Gary Marcus P1；漏窗 Newcomer Aydin Senkut P1、Ken Chenault P2；a16z Frontier James Gleick P2。跳过：张小珺 156《侠》；声东击西 #410 非 AI；课代表立正仍 340 戴蒙德；硅谷101 年度线下大会「数据中心融资」时长虽已核到 42:06，按惯例暂不入库；Lex #504/#505 非 AI 主线；80k Karnofsky 为 2025 旧集重发；a16z RSI 17:43 过短；All-In Axon 非 AI 主线；DeepMind Genie 4 为产品片。",
+  "lastScanCandidates": [
+    "late-189-guquanquan-geodesic-2026-11-19",
+    "nopriors-bob-mcgrew-arda-2026-11-19",
+    "sv101-anthropic-rise-2026-11-19",
+    "decoder-jon-favreau-2026-11-19",
+    "practicalai-gautham-pallapa-2026-11-19",
+    "ailianjin-michael-guan-hellyeah-2026-11-18",
+    "yc-eric-glyman-ramp-2026-11-18",
+    "newcomer-gary-marcus-openai-2026-11-18",
+    "newcomer-aydin-senkut-robotics-2026-11-05",
+    "a16z-james-gleick-telephone-2026-11-14",
+    "newcomer-ken-chenault-2026-11-10",
+    "sv101-post-jensen-nvidia-2026-11-17#bilibili-backfill"
+  ]
 }

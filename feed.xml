@@ -5,9 +5,81 @@
     <link>https://everclear077.github.io/ai-interview-watchlist/</link>
     <description>长镜 · AI（Long Lens AI）。精选 AI / 科技长视频访谈，带精读、解读与文稿。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://everclear077.github.io/ai-interview-watchlist/feed.xml" rel="self" type="application/rss+xml"/>
     <generator>long-lens-ai scripts/build-feed.mjs</generator>
+    <item>
+      <title>189: Geodesic顾全全：预训练有点“无聊”了，但用scaling改变AI制药才刚开始</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/late-189-guquanquan-geodesic-2026-11-19</link>
+      <guid isPermaLink="false">late-189-guquanquan-geodesic-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>晚点聊 LateTalk</category>
+      <description>《晚点聊 LateTalk》第 189 期，对话 Geodesic Intelligence 创始人顾全全，主播为《晚点 LatePost》科技报道负责人程曼祺。官网说明写：今年 6 月顾全全离开字节，此前三年他带团队做出蛋白质结构预测模型 SeedFold 与蛋白质设计模型 SeedProteo，并参与豆包预训练的 scaling 与优化；9 月新公司 Geodesic 发布药物发现智能体平台 NovaDDE 与 NovaAtom-Lite-Preview，11 月 10 日又更新全原子结构预测模型。节目直接讨论大公司如何组织不同方向的研究、对「负责人」头衔的不同定义，以及他把大模型上验证过的 scaling 方法带进 AI 制药、并认为必须自建湿实验室的判断。说明还提到他自称的职务表述曾引起争议。官方时间轴包括：在字节 3 年的双线经历、预训练越来越像「盖楼」、把 scaling 带进蛋白质设计，以及学界与工业界之间的讨论。Fireside 标称 1 小时 36 分 2 秒；B 站官方号正片 BV1xYst6DEwS 时长 96:03，发布于 2026-11-19 09:38 CST+8。本条精读依据官网说明、时间线与术语附录，未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>Superintelligence Needs the Physical World with CEO and Co-Founder of Arda Bob McGrew</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/nopriors-bob-mcgrew-arda-2026-11-19</link>
+      <guid isPermaLink="false">nopriors-bob-mcgrew-arda-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>No Priors</category>
+      <description>No Priors 于 2026-11-19 发布的一集长访谈。官方说明写：Sarah Guo 与 Elad Gil 对谈 Bob McGrew。McGrew 是 Palantir 早期核心高管，后担任 OpenAI 研究负责人，现为 Arda 的 CEO 兼联合创始人；Arda 用 AI 提升美国制造业竞争力。官方描述称，他认为超智能不会在物理世界没有变化的情况下到来，「hard takeoff」论点是错的；自动化 AI 研究者只是一次性加速而非失控循环，真正瓶颈是 GPU、算力、wet labs 与工厂。节目还覆盖 Arda 与 Anduril 的合作（执行器、导弹到 Fury 作战飞机）、他们在做的「制造工程师的 Cursor」，以及 forward deployed engineering、能制造机器的机器、自我复制工厂与 Fermi paradox。RSS 时长 3597 秒（59:57），pubDate 为 2026-11-19T11:44:00Z。本条精读仅依据官方节目说明与章节时间码；本轮未核到可写入的 YouTube 正片，也未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>Anthropic崛起史：最强AI背后的矛与盾，布道者与伪君子</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/sv101-anthropic-rise-2026-11-19</link>
+      <guid isPermaLink="false">sv101-anthropic-rise-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>硅谷101</category>
+      <description>硅谷101约 99 分钟视频长片，梳理 Anthropic 从创立到冲击万亿估值的路径。官方简介写：节目采访了曾与 Dario Amodei 共事的研究者，以及投资人、科技媒体人和行业人士；叙事从 2014 年百度硅谷实验室与 Scaling Law 谈起，覆盖 OpenAI 内部分裂与七人出走、PBC 治理与股权、Claude 3 / Claude Code 的增长，以及安全如何变成生意、云巨头资本循环与五角大楼争议。官方点名采访嘉宾为 Kevin Roose、Greg Diamos、张璐、Jenny Xiao、Deedy Das、刘晓笑。YouTube 官方频道发布 2026-11-19T06:38:42Z（v=sYdN4b14rHU）；B 站官方视频号正片 BV16ps46zEjA 时长 99:21，发布 2026-11-19 12:30 CST+8。本集为多嘉宾纪录片式采访，不是单人长对谈。本轮未核到 Fireside 音频，也未见带说话人的完整文稿。</description>
+    </item>
+    <item>
+      <title>How Silicon Valley lost the public, with Crooked Media’s Jon Favreau</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/decoder-jon-favreau-2026-11-19</link>
+      <guid isPermaLink="false">decoder-jon-favreau-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Decoder with Nilay Patel</category>
+      <description>Decoder 于 2026-11-19 发布的一集长访谈。官方说明写：Nilay Patel 对谈 Crooked Media 联合创始人、Pod Save America 联合主持 Jon Favreau，讨论硅谷如何失去公众。RSS 时长 4084 秒（1:08:04）。RSS 给出 The Verge 短链 https://www.theverge.com/e/1036484 ；本轮抓取时该短链落到首页，单集页未能打开，故未能核对该页是否有带说话人的官方文稿，文稿按 none 入库。有可播放的 Megaphone 音频。</description>
+    </item>
+    <item>
+      <title>Building Human-Centered AI</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/practicalai-gautham-pallapa-2026-11-19</link>
+      <guid isPermaLink="false">practicalai-gautham-pallapa-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <category>工程·应用</category>
+      <category>Practical AI</category>
+      <description>Practical AI 第 381 期。官方说明写：Chris Benson 对谈 Scotiabank 人工智能与创新首席总监、著作《Invaluable》作者 Dr. Gautham Pallapa，讨论企业如何在采用 AI 与 agentic 系统时把人、业务价值与信任放在中心。官方页与 RSS 时长均为 2695 秒（44:55），发布于 2026-11-19。栏目提供带说话人的官方转写页，已按说话人切分入库。</description>
+    </item>
+    <item>
+      <title>从 AI 面试助手到蒸馏广告投手，他是怎么找到下一门生意的？｜对谈 Michael Guan（Hellyeah）</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/ailianjin-michael-guan-hellyeah-2026-11-18</link>
+      <guid isPermaLink="false">ailianjin-michael-guan-hellyeah-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <category>中国·科技媒体</category>
+      <category>AI炼金术</category>
+      <description>《AI炼金术》对谈 Final Round AI 联合创始人兼 CEO Michael Guan。小宇宙官方说明写：离面试只剩十分钟时，一位用户问能否付费使用他的 AI 助手，这成为 Final Round AI 的第一笔每月 99 美元订阅；后来团队从试工平台转向数字员工，推出 Hellyeah，与专业投放合作，把广告投手经验做成 AI 可执行的流程。节目由徐文浩、Mars 主持，讨论为何在已有赚钱产品时分兵做新业务、企业为何开放预算与数据，以及如果 Claude 也能直接投广告，客户为何还要为 Hellyeah 付钱。官方时间轴从第一笔订阅讲到增长工程、跨平台调度预算、大模型与广告平台竞合、找 PMF，以及 AI 原生团队协作。小宇宙官方时长 5251 秒（1:27:31），pubDate 2026-11-18T10:44:19.907Z。页面虽有 isTranscriptEnabled 标记，但公开数据中未见带说话人正文，文稿按 none 入库。本轮未核到官方 B 站正片。</description>
+    </item>
+    <item>
+      <title>How To Build The Future: Eric Glyman, Co-CEO of Ramp</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/yc-eric-glyman-ramp-2026-11-18</link>
+      <guid isPermaLink="false">yc-eric-glyman-ramp-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <category>创始人·CEO·产品</category>
+      <category>Y Combinator</category>
+      <description>Y Combinator《How To Build The Future》系列 2026-11-18 一集。官方说明写：Ramp 以帮公司省时省钱起步，七年后是一个服务数万家企业财务运营、年收入超过 20 亿美元的 600 亿美元平台。现在 Ramp 不仅把 AI 用在产品里，也用来重新思考公司自身如何运转。Ramp 联合创始人兼 CEO Eric Glyman 与 YC 的 Garry Tan 谈公司早期历程，以及 AI 如何让 Ramp 部分人的生产力大幅提升；这一转变促使 Ramp 重新思考全公司的工作方式，Glyman 认为这最终可能让大公司重新获得创业公司的速度。RSS 时长 00:54:18。本条仅依据官方节目说明，未见带说话人的完整文稿。与目录中已有的 2026-11-07《How To Build The Future: Paul Graham &amp; Amjad Masad》不是同一期。</description>
+    </item>
+    <item>
+      <title>Is OpenAI Becoming the WeWork of AI? | Gary Marcus</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/newcomer-gary-marcus-openai-2026-11-18</link>
+      <guid isPermaLink="false">newcomer-gary-marcus-openai-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Newcomer Pod</category>
+      <description>Newcomer Pod 2026-11-18 一集。官方说明写：AI 研究者、NYU 荣休教授 Gary Marcus 与 Eric Newcomer 讨论 OpenAI 是否可能成为 AI 领域的 WeWork，并解释为何他认为本轮 AI 热潮中最大的几家公司根基不稳。他们辩论 OpenAI 的商业模式、Anthropic 的 IPO 前景，以及 CoreWeave 等 AI 基础设施公司面临的风险。Marcus 认为编程是真实用例，同时质疑当今 AI 系统能否兑现行业最大承诺。官方描述还列出：Claude Code、大规模语言模型 scaling 的限度、幻觉、AGI 定义的变化，以及他对联网 AI agents 做有针对性暂停的呼吁。官方时长 00:55:07。本条仅依据官方节目说明，官方单集页未见带说话人的完整文稿。</description>
+    </item>
     <item>
       <title>157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象</title>
       <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/zhangxiaojun-caiwei-lingguang-2026-11-18</link>
@@ -42,7 +114,7 @@
       <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
       <category>中国·科技媒体</category>
       <category>硅谷101</category>
-      <description>硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，本轮也未核到官方 B 站正片。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。</description>
+      <description>硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，2026-11-19 已核到官方 B 站正片 BV1aqsB6ZE1E（38:36，2026-11-17 19:07 CST+8）。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。</description>
     </item>
     <item>
       <title>Buying Tokens vs Building an AI Factory with Sadeepa Wijesekara - #785</title>
@@ -151,6 +223,15 @@
       <category>创始人·CEO·产品</category>
       <category>Lenny&apos;s Podcast</category>
       <description>Lenny Rachitsky 对话 Meta Superintelligence Labs 产品副总裁 Mona Sarantakos。官方说明写：Muse 是 App Store 第一、也被栏目称为今年增长最快的消费级 AI 产品之一；Sarantakos 从第一天起负责产品，这是她的首次播客访谈。讨论提纲包括：一个周末在树莓派上使用 OpenClaw 如何变成 Muse、为何等待七个月才上线、Nat Friedman、Alex Wang 与 Mark Zuckerberg 各自留下的印记、团队如何用 agent swarms 规模化发现用户洞见、出乎意料的使用场景，以及占位头像 Jolly 如何成为图标。本条仅依据栏目公开提纲与简介。</description>
+    </item>
+    <item>
+      <title>From the Telephone to Modern Computing | James Gleick</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/a16z-james-gleick-telephone-2026-11-14</link>
+      <guid isPermaLink="false">a16z-james-gleick-telephone-2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 GMT</pubDate>
+      <category>实验室·安全·研究</category>
+      <category>a16z Show</category>
+      <description>a16z 综合 feed 于 2026-11-14 发布，RSS 注明 originally published by the a16z Frontier Show。官方说明写：科学作家、畅销书《Chaos: Making a New Science》以及 Newton、Feynman 传记作者 James Gleick，与 Sonal Chokshi、Robert Hackett 讨论新书《The Telephone: A New History》。内容是一部关于装置、网络、实验室以及创新如何发生的历史：电话曾被当成玩具或可从家里听音乐会的玩意；用户后来自己找到用途；农场主用铁丝网搭建去中心化网络；围绕电话的公司实验室研究为现代计算打下基础。官方列出的问题包括：为什么老牌企业低估它、电话网是否必然成为垄断、是什么让 Bell Labs 高效。这是科技史长访谈，不是前沿实验室或产品访谈。YouTube 上 a16z Frontier 对应视频为已核验链接。未见带说话人的完整文稿。</description>
     </item>
     <item>
       <title>The OpenAI board member who fired Sam Altman says we still can&apos;t trust AI CEOs</title>
@@ -295,6 +376,15 @@
       <category>VC·基建·市场</category>
       <category>a16z Show</category>
       <description>a16z 请 Mike Volpi（节目介绍称其曾参与塑造 Cisco 在互联网建设期的策略）对比当下 GPU、数据中心与电力投资，和上世纪 90 年代末的光纤热潮。简介写：即使市场回调，这些基础设施仍可能被证明有价值。讨论还涉及 NVIDIA、定制硅片、网络，以及 GPU 经济的变化，并提到 Cisco 收购机器的经验。Volpi 在简介中认为这一轮技术周期的影响可能比上一轮更大。均为节目口径，不构成投资建议。</description>
+    </item>
+    <item>
+      <title>Former Amex CEO on What Business Leaders Are Getting Wrong</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/newcomer-ken-chenault-2026-11-10</link>
+      <guid isPermaLink="false">newcomer-ken-chenault-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Newcomer Pod</category>
+      <description>漏窗补入。Newcomer Pod 2026-11-10 一集，时长 1:08:02。这是一轮命名嘉宾长访谈，AI 是官方说明中的一条主线，但节目整体更偏领导力、原则与风投演变。官方说明写：前美国运通 CEO、General Catalyst 主席 Ken Chenault 与 Eric Newcomer 讨论风险投资需要如何改变、伟大领导者坚持什么，以及 AI 如何在不牺牲信任的前提下重塑商业。内容包括他的职业经历、原则与多样性、哈佛对政治压力的回应，以及 CEO 在核心价值受挑战时不能沉默。他也谈到 General Catalyst 超越传统风投的演变、在 Series A 投资 Stripe、用 AI 改造传统企业，以及他认为 “move fast and break things” 的时代已经结束。官方描述还列出：AI 是否处于泡沫、负责任的 AI 发展，以及企业可以同时追求利润与目的。本条仅依据官方说明，未见带说话人文稿。</description>
     </item>
     <item>
       <title>AI 用得太好，怎么反而升不了职？｜对谈超线性学院鸭哥</title>
@@ -511,6 +601,15 @@
       <category>创投·公司</category>
       <category>a16z Show</category>
       <description>a16z GP Alex Immerman 对话 Salesforce 的 John Somorjai：拆解任期内近 1000 亿美元并购框架（Slack、MuleSoft 到新一代 AI-native 标的），讨论 build-vs-buy、结果导向定价替代座位制，以及 Salesforce Ventures 向前沿 AI 与机器人扩展。约 49 分钟。</description>
+    </item>
+    <item>
+      <title>Aydin Senkut on How Robotics Could Reshape the Economy</title>
+      <link>https://everclear077.github.io/ai-interview-watchlist/#/ep/newcomer-aydin-senkut-robotics-2026-11-05</link>
+      <guid isPermaLink="false">newcomer-aydin-senkut-robotics-2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <category>VC·基建·市场</category>
+      <category>Newcomer Pod</category>
+      <description>漏窗补入。Newcomer Pod 2026-11-05 一集。官方说明写：Felicis 创始人、前 Google 产品经理 Aydin Senkut 与 Eric Newcomer 讨论他眼中将定义下一个十年的技术，从人工智能、机器人到生物科技以及支撑 AI 热潮的基础设施。官方描述称，他认为机器人终于到了拐点，AI 可能改变医疗与药物发现，最大机会可能来自解决过去看起来不可能的问题。节目也谈到他在 Google 约 30 人时加入的经历、把 Felicis 从 4100 万美元首期基金做成管理数十亿美元的机构，以及投资 Shopify、Canva、Adyen、Supabase 等；并讨论 AI 泡沫争论、他认为底层需求比市场炒作更重要、AI agents 背后的基础设施公司，以及为何 Google 在 AI 时代的位置可能比许多人以为的更好。官方时长 00:54:46。本条仅依据官方节目说明，官方单集页未见带说话人文稿。</description>
     </item>
     <item>
       <title>Personal Agent 怎么从尝鲜变成常用？｜对谈千问蒋冠军</title>

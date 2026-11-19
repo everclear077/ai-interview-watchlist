@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-19",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,441 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "late-189-guquanquan-geodesic-2026-11-19",
+      "title": "189: Geodesic顾全全：预训练有点“无聊”了，但用scaling改变AI制药才刚开始",
+      "guest": "顾全全（Geodesic Intelligence 创始人）；主持 程曼祺",
+      "show": "晚点聊 LateTalk",
+      "date": "2026-11-19",
+      "duration": "96分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "models-labs",
+        "research-science",
+        "founders-product",
+        "china-scene",
+        "compute-infra"
+      ],
+      "priority": "P0",
+      "summary": "《晚点聊 LateTalk》第 189 期，对话 Geodesic Intelligence 创始人顾全全，主播为《晚点 LatePost》科技报道负责人程曼祺。官网说明写：今年 6 月顾全全离开字节，此前三年他带团队做出蛋白质结构预测模型 SeedFold 与蛋白质设计模型 SeedProteo，并参与豆包预训练的 scaling 与优化；9 月新公司 Geodesic 发布药物发现智能体平台 NovaDDE 与 NovaAtom-Lite-Preview，11 月 10 日又更新全原子结构预测模型。节目直接讨论大公司如何组织不同方向的研究、对「负责人」头衔的不同定义，以及他把大模型上验证过的 scaling 方法带进 AI 制药、并认为必须自建湿实验室的判断。说明还提到他自称的职务表述曾引起争议。官方时间轴包括：在字节 3 年的双线经历、预训练越来越像「盖楼」、把 scaling 带进蛋白质设计，以及学界与工业界之间的讨论。Fireside 标称 1 小时 36 分 2 秒；B 站官方号正片 BV1xYst6DEwS 时长 96:03，发布于 2026-11-19 09:38 CST+8。本条精读依据官网说明、时间线与术语附录，未见带说话人的完整文稿。",
+      "advice": "关心 AI for Science、蛋白质设计与国内大模型预训练组织方式的人应当听。这是与 Geodesic 创始人的长对谈，不是药企管线评测。栏目对离职与头衔争议、算力花费和商业模式的叙述，需对照官网与原音频，不构成事实认定或投资、医疗建议。",
+      "urls": [
+        {
+          "label": "官网",
+          "href": "https://podcast.latepost.com/189"
+        },
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV1xYst6DEwS"
+        },
+        {
+          "label": "音频（Fireside）",
+          "href": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/late-189-guquanquan-geodesic-2026-11-19.jpg",
+      "media": {
+        "videoUrl": "https://www.bilibili.com/video/BV1xYst6DEwS",
+        "audioUrl": "https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5.mp3",
+        "audioSource": "fireside"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "nopriors-bob-mcgrew-arda-2026-11-19",
+      "title": "Superintelligence Needs the Physical World with CEO and Co-Founder of Arda Bob McGrew",
+      "guest": "Bob McGrew（Arda CEO and co-founder, former OpenAI Chief Research Officer）；主持 Sarah Guo, Elad Gil",
+      "show": "No Priors",
+      "date": "2026-11-19",
+      "duration": "60分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "models-labs",
+        "robotics-embodied",
+        "compute-infra",
+        "founders-product",
+        "alignment-safety"
+      ],
+      "priority": "P0",
+      "summary": "No Priors 于 2026-11-19 发布的一集长访谈。官方说明写：Sarah Guo 与 Elad Gil 对谈 Bob McGrew。McGrew 是 Palantir 早期核心高管，后担任 OpenAI 研究负责人，现为 Arda 的 CEO 兼联合创始人；Arda 用 AI 提升美国制造业竞争力。官方描述称，他认为超智能不会在物理世界没有变化的情况下到来，「hard takeoff」论点是错的；自动化 AI 研究者只是一次性加速而非失控循环，真正瓶颈是 GPU、算力、wet labs 与工厂。节目还覆盖 Arda 与 Anduril 的合作（执行器、导弹到 Fury 作战飞机）、他们在做的「制造工程师的 Cursor」，以及 forward deployed engineering、能制造机器的机器、自我复制工厂与 Fermi paradox。RSS 时长 3597 秒（59:57），pubDate 为 2026-11-19T11:44:00Z。本条精读仅依据官方节目说明与章节时间码；本轮未核到可写入的 YouTube 正片，也未见带说话人的完整文稿。",
+      "advice": "关心超智能时间线、实体世界瓶颈与制造/国防机器人的人应当听。标题和说明里的判断是栏目口径，不是已核验结论；涉及国防制造与自我复制工厂的部分请以原音频为准。本条不构成投资建议。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/superintelligence-needs-the-physical-world-with-ceo/id1668002688?i=1000802917059"
+        },
+        {
+          "label": "音频（Megaphone）",
+          "href": "https://traffic.megaphone.fm/PDP6475704364.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/nopriors-bob-mcgrew-arda-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://traffic.megaphone.fm/PDP6475704364.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "sv101-anthropic-rise-2026-11-19",
+      "title": "Anthropic崛起史：最强AI背后的矛与盾，布道者与伪君子",
+      "guest": "Kevin Roose；Greg Diamos；张璐（Fusion Fund）；Jenny Xiao（Leonis Capital）；Deedy Das；刘晓笑",
+      "show": "硅谷101",
+      "date": "2026-11-19",
+      "duration": "99分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "models-labs",
+        "alignment-safety",
+        "markets-vc",
+        "policy-geopolitics",
+        "compute-infra"
+      ],
+      "priority": "P1",
+      "summary": "硅谷101约 99 分钟视频长片，梳理 Anthropic 从创立到冲击万亿估值的路径。官方简介写：节目采访了曾与 Dario Amodei 共事的研究者，以及投资人、科技媒体人和行业人士；叙事从 2014 年百度硅谷实验室与 Scaling Law 谈起，覆盖 OpenAI 内部分裂与七人出走、PBC 治理与股权、Claude 3 / Claude Code 的增长，以及安全如何变成生意、云巨头资本循环与五角大楼争议。官方点名采访嘉宾为 Kevin Roose、Greg Diamos、张璐、Jenny Xiao、Deedy Das、刘晓笑。YouTube 官方频道发布 2026-11-19T06:38:42Z（v=sYdN4b14rHU）；B 站官方视频号正片 BV16ps46zEjA 时长 99:21，发布 2026-11-19 12:30 CST+8。本集为多嘉宾纪录片式采访，不是单人长对谈。本轮未核到 Fireside 音频，也未见带说话人的完整文稿。",
+      "advice": "想补 Anthropic 公司史、PBC 治理与云资本循环的人可以看。这是多人采访的叙事专题，不是对某一位创始人的长对谈；标题中的判断是栏目包装，请以视频为准。",
+      "urls": [
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV16ps46zEjA"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=sYdN4b14rHU"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/sv101-anthropic-rise-2026-11-19.jpg",
+      "media": {
+        "videoUrl": "https://www.bilibili.com/video/BV16ps46zEjA"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "decoder-jon-favreau-2026-11-19",
+      "title": "How Silicon Valley lost the public, with Crooked Media’s Jon Favreau",
+      "guest": "Jon Favreau（Crooked Media 联合创始人、Pod Save America 联合主持）；主持 Nilay Patel",
+      "show": "Decoder with Nilay Patel",
+      "date": "2026-11-19",
+      "duration": "68分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "policy-geopolitics",
+        "media-platforms",
+        "society-work"
+      ],
+      "priority": "P1",
+      "summary": "Decoder 于 2026-11-19 发布的一集长访谈。官方说明写：Nilay Patel 对谈 Crooked Media 联合创始人、Pod Save America 联合主持 Jon Favreau，讨论硅谷如何失去公众。RSS 时长 4084 秒（1:08:04）。RSS 给出 The Verge 短链 https://www.theverge.com/e/1036484 ；本轮抓取时该短链落到首页，单集页未能打开，故未能核对该页是否有带说话人的官方文稿，文稿按 none 入库。有可播放的 Megaphone 音频。",
+      "advice": "关心科技政治传播、硅谷与公众信任的人可以听。本轮未能打开 The Verge 单集页，细节请以音频为准。",
+      "urls": [
+        {
+          "label": "The Verge",
+          "href": "https://www.theverge.com/e/1036484"
+        },
+        {
+          "label": "音频",
+          "href": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8766353378.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/decoder-jon-favreau-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8766353378.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "practicalai-gautham-pallapa-2026-11-19",
+      "title": "Building Human-Centered AI",
+      "guest": "Dr. Gautham Pallapa（Scotiabank Principal Director of AI and Innovation，《Invaluable》作者）；主持 Chris Benson",
+      "show": "Practical AI",
+      "date": "2026-11-19",
+      "duration": "45分钟",
+      "category": "工程·应用",
+      "topics": [
+        "enterprise-apps",
+        "agents-tooling",
+        "society-work"
+      ],
+      "priority": "P1",
+      "summary": "Practical AI 第 381 期。官方说明写：Chris Benson 对谈 Scotiabank 人工智能与创新首席总监、著作《Invaluable》作者 Dr. Gautham Pallapa，讨论企业如何在采用 AI 与 agentic 系统时把人、业务价值与信任放在中心。官方页与 RSS 时长均为 2695 秒（44:55），发布于 2026-11-19。栏目提供带说话人的官方转写页，已按说话人切分入库。",
+      "advice": "做企业 AI 落地、关心人机分工与信任机制的人可以听。本集有官方带说话人文稿，可先对照 https://practicalai.show/381/transcript 再回听音频。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://practicalai.show/381"
+        },
+        {
+          "label": "官方文稿",
+          "href": "https://practicalai.show/381/transcript"
+        },
+        {
+          "label": "音频",
+          "href": "https://media.transistor.fm/bb4dad17/16dab0bd.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/practicalai-gautham-pallapa-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/bb4dad17/16dab0bd.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": true
+    },
+    {
+      "id": "ailianjin-michael-guan-hellyeah-2026-11-18",
+      "title": "从 AI 面试助手到蒸馏广告投手，他是怎么找到下一门生意的？｜对谈 Michael Guan（Hellyeah）",
+      "guest": "Michael Guan（Final Round AI 联合创始人兼 CEO，本期亦谈及团队推出的 Hellyeah）；主持 徐文浩、Mars（任鑫）",
+      "show": "AI炼金术",
+      "date": "2026-11-18",
+      "duration": "87分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "founders-product",
+        "agents-tooling",
+        "enterprise-apps",
+        "society-work"
+      ],
+      "priority": "P1",
+      "summary": "《AI炼金术》对谈 Final Round AI 联合创始人兼 CEO Michael Guan。小宇宙官方说明写：离面试只剩十分钟时，一位用户问能否付费使用他的 AI 助手，这成为 Final Round AI 的第一笔每月 99 美元订阅；后来团队从试工平台转向数字员工，推出 Hellyeah，与专业投放合作，把广告投手经验做成 AI 可执行的流程。节目由徐文浩、Mars 主持，讨论为何在已有赚钱产品时分兵做新业务、企业为何开放预算与数据，以及如果 Claude 也能直接投广告，客户为何还要为 Hellyeah 付钱。官方时间轴从第一笔订阅讲到增长工程、跨平台调度预算、大模型与广告平台竞合、找 PMF，以及 AI 原生团队协作。小宇宙官方时长 5251 秒（1:27:31），pubDate 2026-11-18T10:44:19.907Z。页面虽有 isTranscriptEnabled 标记，但公开数据中未见带说话人正文，文稿按 none 入库。本轮未核到官方 B 站正片。",
+      "advice": "关心 AI 应用从订阅工具做到数字员工、以及广告投放场景里模型与平台竞合的人可以听。标题和说明中的增长故事是栏目口径，不构成投资建议。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6afd8026a4a79edf137b3f39"
+        },
+        {
+          "label": "音频（xyzcdn）",
+          "href": "https://media.xyzcdn.net/63e9ef4de99bdef7d39944c8/llrG4inowjS-Yxa3uQOBtvrp64_P.m4a"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/ailianjin-michael-guan-hellyeah-2026-11-18.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/63e9ef4de99bdef7d39944c8/llrG4inowjS-Yxa3uQOBtvrp64_P.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "yc-eric-glyman-ramp-2026-11-18",
+      "title": "How To Build The Future: Eric Glyman, Co-CEO of Ramp",
+      "guest": "Eric Glyman（Ramp 联合创始人、Co-CEO）；主持 Garry Tan",
+      "show": "Y Combinator",
+      "date": "2026-11-18",
+      "duration": "54分钟",
+      "category": "创始人·CEO·产品",
+      "topics": [
+        "founders-product",
+        "enterprise-apps",
+        "agents-tooling"
+      ],
+      "priority": "P1",
+      "summary": "Y Combinator《How To Build The Future》系列 2026-11-18 一集。官方说明写：Ramp 以帮公司省时省钱起步，七年后是一个服务数万家企业财务运营、年收入超过 20 亿美元的 600 亿美元平台。现在 Ramp 不仅把 AI 用在产品里，也用来重新思考公司自身如何运转。Ramp 联合创始人兼 CEO Eric Glyman 与 YC 的 Garry Tan 谈公司早期历程，以及 AI 如何让 Ramp 部分人的生产力大幅提升；这一转变促使 Ramp 重新思考全公司的工作方式，Glyman 认为这最终可能让大公司重新获得创业公司的速度。RSS 时长 00:54:18。本条仅依据官方节目说明，未见带说话人的完整文稿。与目录中已有的 2026-11-07《How To Build The Future: Paul Graham & Amjad Masad》不是同一期。",
+      "advice": "关心企业财务软件如何把 AI 用进自身运营的人可以听。官方说明中的收入与估值是栏目口径，不构成投资建议。与已入库的同一系列 Paul Graham / Amjad Masad 那期不是同一集。",
+      "urls": [
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/how-to-build-the-future-eric-glyman-co-ceo-of-ramp/id1236907421?i=1000802730637"
+        },
+        {
+          "label": "Spotify / YC 单集页",
+          "href": "https://creators.spotify.com/pod/profile/ycombinator/episodes/How-To-Build-The-Future-Eric-Glyman--Co-CEO-of-Ramp-e3skg4t"
+        },
+        {
+          "label": "音频（Anchor enclosure）",
+          "href": "https://anchor.fm/s/8c1524bc/podcast/play/129695325/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F437067230-44100-2-b93c04f63dda58.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/yc-eric-glyman-ramp-2026-11-18.jpg",
+      "media": {
+        "audioUrl": "https://anchor.fm/s/8c1524bc/podcast/play/129695325/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F437067230-44100-2-b93c04f63dda58.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "newcomer-gary-marcus-openai-2026-11-18",
+      "title": "Is OpenAI Becoming the WeWork of AI? | Gary Marcus",
+      "guest": "Gary Marcus（AI 研究者、NYU professor emeritus）；主持 Eric Newcomer",
+      "show": "Newcomer Pod",
+      "date": "2026-11-18",
+      "duration": "55分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "models-labs",
+        "markets-vc",
+        "alignment-safety",
+        "compute-infra"
+      ],
+      "priority": "P1",
+      "summary": "Newcomer Pod 2026-11-18 一集。官方说明写：AI 研究者、NYU 荣休教授 Gary Marcus 与 Eric Newcomer 讨论 OpenAI 是否可能成为 AI 领域的 WeWork，并解释为何他认为本轮 AI 热潮中最大的几家公司根基不稳。他们辩论 OpenAI 的商业模式、Anthropic 的 IPO 前景，以及 CoreWeave 等 AI 基础设施公司面临的风险。Marcus 认为编程是真实用例，同时质疑当今 AI 系统能否兑现行业最大承诺。官方描述还列出：Claude Code、大规模语言模型 scaling 的限度、幻觉、AGI 定义的变化，以及他对联网 AI agents 做有针对性暂停的呼吁。官方时长 00:55:07。本条仅依据官方节目说明，官方单集页未见带说话人的完整文稿。",
+      "advice": "想听对 OpenAI 商业模式与本轮热潮的批评性对谈，可以听。标题里的 WeWork 比喻是栏目包装，不是已核验结论；不构成投资建议。",
+      "urls": [
+        {
+          "label": "官方单集",
+          "href": "https://podcast.newcomer.co/episode/is-openai-becoming-the-wework-of-ai-with-gary-marcus"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/is-openai-becoming-the-wework-of-ai-gary-marcus/id1582647825?i=1000802768031"
+        },
+        {
+          "label": "音频",
+          "href": "https://anchor.fm/s/ffef15f0/podcast/play/129705595/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F437082502-44100-2-b016732945e4e8.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/newcomer-gary-marcus-openai-2026-11-18.jpg",
+      "media": {
+        "audioUrl": "https://anchor.fm/s/ffef15f0/podcast/play/129705595/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F437082502-44100-2-b016732945e4e8.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "newcomer-aydin-senkut-robotics-2026-11-05",
+      "title": "Aydin Senkut on How Robotics Could Reshape the Economy",
+      "guest": "Aydin Senkut（Felicis 创始人、前 Google product manager）；主持 Eric Newcomer",
+      "show": "Newcomer Pod",
+      "date": "2026-11-05",
+      "duration": "55分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "robotics-embodied",
+        "markets-vc",
+        "research-science",
+        "compute-infra"
+      ],
+      "priority": "P1",
+      "summary": "漏窗补入。Newcomer Pod 2026-11-05 一集。官方说明写：Felicis 创始人、前 Google 产品经理 Aydin Senkut 与 Eric Newcomer 讨论他眼中将定义下一个十年的技术，从人工智能、机器人到生物科技以及支撑 AI 热潮的基础设施。官方描述称，他认为机器人终于到了拐点，AI 可能改变医疗与药物发现，最大机会可能来自解决过去看起来不可能的问题。节目也谈到他在 Google 约 30 人时加入的经历、把 Felicis 从 4100 万美元首期基金做成管理数十亿美元的机构，以及投资 Shopify、Canva、Adyen、Supabase 等；并讨论 AI 泡沫争论、他认为底层需求比市场炒作更重要、AI agents 背后的基础设施公司，以及为何 Google 在 AI 时代的位置可能比许多人以为的更好。官方时长 00:54:46。本条仅依据官方节目说明，官方单集页未见带说话人文稿。",
+      "advice": "关心机器人与 AI 基础设施投资视角的人可以听。这是漏窗补入的一期，嘉宾判断与投资案例是栏目口径，不构成投资建议。",
+      "urls": [
+        {
+          "label": "官方单集",
+          "href": "https://podcast.newcomer.co/episode/aydin-senkut-on-how-robotics-could-reshape-the-economy"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=hMJFjb9kg8E"
+        },
+        {
+          "label": "音频",
+          "href": "https://anchor.fm/s/ffef15f0/podcast/play/128871352/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2F435993289-44100-2-f9fd4e066fa4.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/newcomer-aydin-senkut-robotics-2026-11-05.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=hMJFjb9kg8E",
+        "audioUrl": "https://anchor.fm/s/ffef15f0/podcast/play/128871352/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-5%2F435993289-44100-2-f9fd4e066fa4.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "a16z-james-gleick-telephone-2026-11-14",
+      "title": "From the Telephone to Modern Computing | James Gleick",
+      "guest": "James Gleick（科学作家，《Chaos》及 Newton、Feynman 传记作者）；主持 Sonal Chokshi, Robert Hackett",
+      "show": "a16z Show",
+      "date": "2026-11-14",
+      "duration": "63分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "research-science",
+        "compute-infra",
+        "media-platforms"
+      ],
+      "priority": "P2",
+      "summary": "a16z 综合 feed 于 2026-11-14 发布，RSS 注明 originally published by the a16z Frontier Show。官方说明写：科学作家、畅销书《Chaos: Making a New Science》以及 Newton、Feynman 传记作者 James Gleick，与 Sonal Chokshi、Robert Hackett 讨论新书《The Telephone: A New History》。内容是一部关于装置、网络、实验室以及创新如何发生的历史：电话曾被当成玩具或可从家里听音乐会的玩意；用户后来自己找到用途；农场主用铁丝网搭建去中心化网络；围绕电话的公司实验室研究为现代计算打下基础。官方列出的问题包括：为什么老牌企业低估它、电话网是否必然成为垄断、是什么让 Bell Labs 高效。这是科技史长访谈，不是前沿实验室或产品访谈。YouTube 上 a16z Frontier 对应视频为已核验链接。未见带说话人的完整文稿。",
+      "advice": "想听技术史、网络效应与 Bell Labs 如何连接到现代计算的人可以听。这不是当期产品和实验室访谈，期待应放在科技史，而不是 AI 产品发布。",
+      "urls": [
+        {
+          "label": "a16z Simplecast 单集",
+          "href": "https://a16z.simplecast.com/episodes/from-the-telephone-to-modern-computing-james-gleick-oBlUL96w"
+        },
+        {
+          "label": "YouTube（a16z Frontier）",
+          "href": "https://www.youtube.com/watch?v=yl5D4S6m0gM"
+        },
+        {
+          "label": "音频",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/5eb9ee02-ca6b-48b2-998d-54ccb12ca740/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=5eb9ee02-ca6b-48b2-998d-54ccb12ca740&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/a16z-james-gleick-telephone-2026-11-14.jpg",
+      "media": {
+        "videoUrl": "https://www.youtube.com/watch?v=yl5D4S6m0gM",
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/5eb9ee02-ca6b-48b2-998d-54ccb12ca740/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=5eb9ee02-ca6b-48b2-998d-54ccb12ca740&feed=JGE3yC0V",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "newcomer-ken-chenault-2026-11-10",
+      "title": "Former Amex CEO on What Business Leaders Are Getting Wrong",
+      "guest": "Kenneth Chenault（前 American Express CEO、General Catalyst Chairman）；主持 Eric Newcomer",
+      "show": "Newcomer Pod",
+      "date": "2026-11-10",
+      "duration": "68分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "markets-vc",
+        "society-work",
+        "enterprise-apps"
+      ],
+      "priority": "P2",
+      "summary": "漏窗补入。Newcomer Pod 2026-11-10 一集，时长 1:08:02。这是一轮命名嘉宾长访谈，AI 是官方说明中的一条主线，但节目整体更偏领导力、原则与风投演变。官方说明写：前美国运通 CEO、General Catalyst 主席 Ken Chenault 与 Eric Newcomer 讨论风险投资需要如何改变、伟大领导者坚持什么，以及 AI 如何在不牺牲信任的前提下重塑商业。内容包括他的职业经历、原则与多样性、哈佛对政治压力的回应，以及 CEO 在核心价值受挑战时不能沉默。他也谈到 General Catalyst 超越传统风投的演变、在 Series A 投资 Stripe、用 AI 改造传统企业，以及他认为 “move fast and break things” 的时代已经结束。官方描述还列出：AI 是否处于泡沫、负责任的 AI 发展，以及企业可以同时追求利润与目的。本条仅依据官方说明，未见带说话人文稿。",
+      "advice": "想听传统大公司领导者如何看待 AI、信任与风投演变的人可以听。AI 只是其中一条线，不是整期主题。不构成投资建议。",
+      "urls": [
+        {
+          "label": "官方单集",
+          "href": "https://podcast.newcomer.co/episode/former-amex-ceo-on-what-business-leaders-are-getting-wrong"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/former-amex-ceo-on-what-business-leaders-are-getting-wrong/id1582647825?i=1000801013613"
+        },
+        {
+          "label": "音频",
+          "href": "https://anchor.fm/s/ffef15f0/podcast/play/129152367/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F436364009-44100-2-ace67b7366545.mp3"
+        }
+      ],
+      "addedAt": "2026-11-19",
+      "cover": "thumbs/newcomer-ken-chenault-2026-11-10.jpg",
+      "media": {
+        "audioUrl": "https://anchor.fm/s/ffef15f0/podcast/play/129152367/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F436364009-44100-2-ace67b7366545.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "zhangxiaojun-caiwei-lingguang-2026-11-18",
       "title": "157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象",
@@ -151,9 +586,13 @@
         "open-source"
       ],
       "priority": "P1",
-      "summary": "硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，本轮也未核到官方 B 站正片。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。",
+      "summary": "硅谷101 视频向多人采访，讨论黄仁勋辞去英伟达 CEO 并离开董事会之后的公司护城河与产业变数。官方 YouTube 简介写明采访嘉宾为 Howie Xu、匿名半导体从业者、王铁震、Rob Li，并给出时间轴：AI 大模型冲击 CUDA 护城河（01:15），「整个半导体的创新都会放缓」（05:16），供应链与台积电（08:16），英伟达为何重视开源（11:47），芯片循环融资（18:06），黄仁勋与 CFO 的分歧（21:34），创始人模式（23:48），「黄仁勋本人，就是英伟达最好的销售」（27:17），股票、人才与领袖号召力（30:23），以及「老黄的战斗，会停止吗？」（34:20）。YouTube 时长 2315 秒（38:35），上传时间为 2026-11-17。本集不在 Fireside 音频目录中，2026-11-19 已核到官方 B 站正片 BV1aqsB6ZE1E（38:36，2026-11-17 19:07 CST+8）。本条仅依据官方 YouTube 简介与时间轴，未见带说话人的完整文稿。",
       "advice": "关心英伟达交接、CUDA 生态与开源/资本布局的人可以看。形态是多人专题采访，不是单嘉宾长对谈；晚点聊 188 与卫诗婕 93 已从其他角度覆盖同一事件，不宜互相替代。请以官方 YouTube 视频为准。",
       "urls": [
+        {
+          "label": "B站",
+          "href": "https://www.bilibili.com/video/BV1aqsB6ZE1E"
+        },
         {
           "label": "YouTube",
           "href": "https://www.youtube.com/watch?v=xJUWVxZfNVI"
