@@ -2,7 +2,7 @@
   "version": 1,
   "dataLayout": "index+episodes",
   "title": "AI / 科技访谈 · 观看列表",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-20",
   "categories": [
     "实验室·安全·研究",
     "创始人·CEO·产品",
@@ -15,6 +15,252 @@
     "P2"
   ],
   "items": [
+    {
+      "id": "lightstar-gaoliming-anthropic-ipo-2026-11-20",
+      "title": "95.Anthropic 上市，看懂超级智能第一股 ：大模型的「大结果」、乘法因子，与下一场模型竞赛",
+      "guest": "高利明（证券之星创始人，公众号「不解难题」）；主持 卫诗婕",
+      "show": "卫诗婕｜漫谈Light the Star",
+      "date": "2026-11-20",
+      "duration": "93分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "markets-vc",
+        "models-labs",
+        "compute-infra",
+        "founders-product",
+        "china-scene"
+      ],
+      "priority": "P0",
+      "summary": "卫诗婕《漫谈 Light the Star》第 95 期。小宇宙说明写：美国时间 2026-11-19，Anthropic 在纳斯达克上市，发行价每股 83 美元，栏目称「上市即冲破 2 万亿美元」，并称之为「超级智能第一股」。嘉宾为证券之星创始人、二级市场投资人高利明；说明写他曾投资 Cursor，并一早看好编程会成为生成式 AI 最先兑现价值的方向。节目按官方时间轴讨论 Coding 作为大模型「大结果」、Anthropic 成长史、招股书中的 Multiply／乘法因子与约 9000 亿算力投入、以及嘉宾对 Personal Agent 价值的保留态度。时长 5583 秒（93 分钟），2026-11-20 08:19 UTC 发布。上述定价、估值与算力数字均转述栏目说明，长镜未独立核实招股书或交易数据，不构成投资建议。",
+      "advice": "关心 Anthropic 上市叙事、编码产品兑现和招股书口径的人应当听。这是投资人视角的长访谈，不是对招股书的审计。数字与判断请回听原音频，并对照公司原始披露。暂无带说话人的完整文稿可入库。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6afffc3efe62f8f52c4e1573"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/95-anthropic-%E4%B8%8A%E5%B8%82-%E7%9C%8B%E6%87%82%E8%B6%85%E7%BA%A7%E6%99%BA%E8%83%BD%E7%AC%AC%E4%B8%80%E8%82%A1-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84-%E5%A4%A7%E7%BB%93%E6%9E%9C-%E4%B9%98%E6%B3%95%E5%9B%A0%E5%AD%90-%E4%B8%8E%E4%B8%8B%E4%B8%80%E5%9C%BA%E6%A8%A1%E5%9E%8B%E7%AB%9E%E8%B5%9B/id1754955836?i=1000803084128"
+        },
+        {
+          "label": "音频（xyzcdn）",
+          "href": "https://media.xyzcdn.net/6627fda4b56459544087d86a/lg1QmwtlMhD0xgn90zLkQwDBLI6r.m4a"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/lightstar-gaoliming-anthropic-ipo-2026-11-20.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/6627fda4b56459544087d86a/lg1QmwtlMhD0xgn90zLkQwDBLI6r.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": false
+    },
+    {
+      "id": "hours80k-julian-gewirtz-china-ai-2026-11-19",
+      "title": "Julian Gewirtz on the AI risks that actually scare Beijing",
+      "guest": "Julian Gewirtz（Columbia SIPA 高级研究学者，曾任拜登政府国家安全委员会中国和台湾事务高级主任）；主持 Tom Reed",
+      "show": "80,000 Hours Podcast",
+      "date": "2026-11-19",
+      "duration": "1小时47分",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "policy-geopolitics",
+        "alignment-safety",
+        "china-scene",
+        "models-labs"
+      ],
+      "priority": "P0",
+      "summary": "80,000 Hours 第 259 期。主持人 Tom Reed 对谈历史学者、前白宫国安会中国和台湾事务高级主任 Julian Gewirtz。官网摘要写：任何关于北京如何看待 AI 风险、中美能否达成协议的讨论，都必须从中国和中国共产党实际关切出发。嘉宾认为党的首要关切是政权安全，因此中文语境里的「极端失控风险」既包括系统失控，也包括与之相连的政治失控；最可能改变北京态度的是中国自身的风险感知，其次是美国在国内监管 AI 这一「昂贵信号」。官网写本集录制于 2026-10-02，发布于 2026-11-19；RSS 时长约 106.7 分钟。栏目提供带说话人的官方文稿，已按说话人切分入库。文中判断均为嘉宾与栏目口径，长镜未独立核实。",
+      "advice": "关心中美 AI 治理、开源权重、蒸馏或「协议从何谈起」的人应当听。本集有官方带说话人文稿，可先对照 https://80000hours.org/podcast/episodes/julian-gewirtz-china-us-ai-deal/ 再回听。嘉宾判断不代表长镜立场，也不构成政策建议。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://80000hours.org/podcast/episodes/julian-gewirtz-china-us-ai-deal/"
+        },
+        {
+          "label": "Audio",
+          "href": "https://media.transistor.fm/5f208e9c/cdf15610.mp3"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/hours80k-julian-gewirtz-china-ai-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://media.transistor.fm/5f208e9c/cdf15610.mp3",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": true,
+      "hasAnalysis": true,
+      "hasTranscript": true
+    },
+    {
+      "id": "a16z-nick-bostrom-pacing-2026-11-19",
+      "title": "How Fast Should We Build Superintelligence? | Nick Bostrom",
+      "guest": "Nick Bostrom（Macrostrategy Research Initiative）；主持 Eddy Lazzarin, Elena Burger",
+      "show": "a16z Show",
+      "date": "2026-11-19",
+      "duration": "40分钟",
+      "category": "实验室·安全·研究",
+      "topics": [
+        "alignment-safety",
+        "policy-geopolitics",
+        "research-science",
+        "society-work"
+      ],
+      "priority": "P1",
+      "summary": "a16z Show 新一期 Nick Bostrom 访谈，与 2026-10-11 已入库的《How Should We Navigate Superintelligence?》不是同一集。官方说明写：问题不只是该竞速还是该停，更难的是在安全落后时仍保有放慢的能力，同时避免把暂时暂停变成永久停滞。Eddy Lazzarin 与 Elena Burger 对谈 Bostrom，讨论情景觉知增强后 alignment 可能更难、哪些能力跃迁风险更高，以及他主张的 “pacing the frontier”，而不是广泛或无限期暂停。说明还写：他认为安全地得到超级智能可能显著延长寿命并改善疾病与贫困，因此等待本身也有代价。RSS 时长约 39.6 分钟，发布于 2026-11-19。本条只转述栏目说明，不构成对超级智能时间线的判断或投资建议。库内另有 10 月那期，勿混为一谈。",
+      "advice": "想听 Bostrom 如何谈「该以多快速度走向超级智能」、暂停与等待成本的人可以听。这是约 40 分钟的对话，不是技术论文。可与 10 月 11 日那期对照，但不要把两集论点直接拼成同一场。暂无带说话人的完整文稿可入库。",
+      "urls": [
+        {
+          "label": "节目页（Simplecast）",
+          "href": "https://a16z.simplecast.com/episodes/how-fast-should-we-build-superintelligence-nick-bostrom-21xI3Oxg"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=gDW9An30_c0"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/how-fast-should-we-build-superintelligence-nick-bostrom/id842818711?i=1000802952584"
+        },
+        {
+          "label": "音频",
+          "href": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/0a6ec871-891c-4c0f-bd80-08ebf4fc4b2d/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=0a6ec871-891c-4c0f-bd80-08ebf4fc4b2d&feed=JGE3yC0V"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/a16z-nick-bostrom-pacing-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://mgln.ai/e/1344/afp-848985-injected.calisto.simplecastaudio.com/3f86df7b-51c6-4101-88a2-550dba782de8/episodes/0a6ec871-891c-4c0f-bd80-08ebf4fc4b2d/audio/128/default.mp3?aid=rss_feed&awCollectionId=3f86df7b-51c6-4101-88a2-550dba782de8&awEpisodeId=0a6ec871-891c-4c0f-bd80-08ebf4fc4b2d&feed=JGE3yC0V",
+        "videoUrl": "https://www.youtube.com/watch?v=gDW9An30_c0",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "latent-space-cristina-cordova-linear-2026-11-19",
+      "title": "Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
+      "guest": "Cristina Cordova（Linear COO）；主持 Basil Chatha",
+      "show": "Latent Space",
+      "date": "2026-11-19",
+      "duration": "84分钟",
+      "category": "工程·应用",
+      "topics": [
+        "agents-tooling",
+        "founders-product",
+        "enterprise-apps",
+        "markets-vc"
+      ],
+      "priority": "P1",
+      "summary": "Latent Space 2026-11-19 对谈 Linear COO Cristina Cordova，时长约 83.5 分钟。官方说明写：Linear 原以 issue tracker 起家，七年后 CEO Karri Saarinen 发表《Issue tracking is dead》。Cordova 曾在 Stripe 七年半、负责 Notion 的平台与合作，并做过 First Round 合伙人，2023 年加入 Linear 时公司约 40 人、只有一名销售。栏目写道，此后 Linear 推出 MCP server、把 agent 写入产品的平台、以及与 Codex、Cursor、GitHub Copilot 的集成和自家 Linear Agent；一年前由 agent 创建的工作约占 3%，现在已超过一半。说明还写：公司今年跨过 1 亿美元 ARR、超过 4 万付费客户、净收入留存 177%，8 月员工以 25 亿美元估值出售了 9900 万美元股票。上述经营数字均转述栏目说明，长镜未独立核实，不构成投资建议。",
+      "advice": "做 agent 工作流、开发工具或产品增长的人可以听。这是 GTM 与产品组织访谈，不是模型研究。ARR、估值和 agent 占比请以栏目说明为口径并回听原片，不要当作已审计财务数据。暂无带说话人的完整文稿可入库。",
+      "urls": [
+        {
+          "label": "节目页",
+          "href": "https://lspace.beehiiv.com/p/linear-scaling"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/watch?v=x0VSm6IjcDQ"
+        },
+        {
+          "label": "Apple Podcasts",
+          "href": "https://podcasts.apple.com/us/podcast/scaling-linears-gtm-to-%24100m-arr-cristina-cordova-coo/id1674008350?i=1000803024910"
+        },
+        {
+          "label": "音频",
+          "href": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1f60c-1b1f-791d-ab17-93dc95925d0f/01a1f60c-1d13-7e51-8f68-58af8c020059.mp3"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/latent-space-cristina-cordova-linear-2026-11-19.jpg",
+      "media": {
+        "audioUrl": "https://podcasts.beehiiv.com/3967c1f2-cb97-4eb0-a5c0-21a1d2579408/01a15fdf-0e93-7e1a-880d-d73752a1f915/01a1f60c-1b1f-791d-ab17-93dc95925d0f/01a1f60c-1d13-7e51-8f68-58af8c020059.mp3",
+        "videoUrl": "https://www.youtube.com/watch?v=x0VSm6IjcDQ",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "hardfork-gta6-anthropic-ipo-2026-11-20",
+      "title": "G.T.A. VI Is a Monumental Human Achievement",
+      "guest": "Joseph Bernstein、Erin Griffith、Mike Isaac（NYT）；主持 Max Read",
+      "show": "Hard Fork",
+      "date": "2026-11-20",
+      "duration": "64分钟",
+      "category": "VC·基建·市场",
+      "topics": [
+        "media-platforms",
+        "chips-hardware",
+        "markets-vc",
+        "policy-geopolitics"
+      ],
+      "priority": "P1",
+      "summary": "Hard Fork 2026-11-20 常规集。官方说明写：主持 Max Read 与时报记者 Erin Griffith、Mike Isaac 一起，邀请 Joseph Bernstein 谈他提前体验《Grand Theft Auto VI》的所见，以及这款游戏对当下科技时刻的意味，并讨论 AI 是否意味着我们再难看到同等规模的手工作品。后半段讨论黄仁勋离开 Nvidia 后的余波、「一切突然都像坏了」的大规模故障，以及 Anthropic 于周四以 2 万亿美元体量公开上市。RSS 时长 1:04:07，音频地址已核验。本条只转述栏目说明，不构成对游戏评价、Nvidia 人事或上市数据的事实认定。本轮未核到可写的单集 NYT 页面或 YouTube 正片地址，故不写入 videoUrl。",
+      "advice": "想听科技媒体如何同时处理 GTA VI、Nvidia 人事和 Anthropic 上市的人可以听。这是约 64 分钟的新闻圆桌，不是产品或安全访谈。涉及尚未完结的企业和市场事件，建议对照说明里列出的时报报道再决定是否收听。暂无按说话人切分的完整文稿可入库。",
+      "urls": [
+        {
+          "label": "Hard Fork 栏目页",
+          "href": "https://www.nytimes.com/column/hard-fork"
+        },
+        {
+          "label": "Audio",
+          "href": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/cdb3dbd8-6036-4c81-afa9-2d13a32facb5/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=cdb3dbd8-6036-4c81-afa9-2d13a32facb5&feed=l2i9YnTd"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/hardfork-gta6-anthropic-ipo-2026-11-20.jpg",
+      "media": {
+        "audioUrl": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/4jdbjyyrkqk96egqozqb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/cdb3dbd8-6036-4c81-afa9-2d13a32facb5/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=cdb3dbd8-6036-4c81-afa9-2d13a32facb5&feed=l2i9YnTd",
+        "audioSource": "podcast-rss"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
+    {
+      "id": "ailianjin-companies-die-2026-11-20",
+      "title": "AI 来了，这些公司快死了……吗？",
+      "guest": "无嘉宾；主持 徐文浩、任鑫",
+      "show": "AI炼金术",
+      "date": "2026-11-20",
+      "duration": "105分钟",
+      "category": "中国·科技媒体",
+      "topics": [
+        "founders-product",
+        "enterprise-apps",
+        "agents-tooling",
+        "markets-vc",
+        "china-scene"
+      ],
+      "priority": "P1",
+      "summary": "AI炼金术 2026-11-20 新一期，小宇宙说明写明「没有嘉宾」，由徐文浩与任鑫对谈，时长 6274 秒（约 105 分钟）。栏目自称这是一期「诅咒类」节目，按类别点名这一轮 AI 里已经黄了的、正在被冲击的、以及现在风光但可能出事的公司，提到 Canva、Atlassian、Airtable、Cursor、Devin、携程，也谈到 Linear 与一批 Neo Cloud。官方时间轴覆盖 SaaS 财报与股价背离、项目管理形态是否还在、Neo Cloud 与当年铺光纤的类比、Coding 赛道的不同命运、卖 token 的中间商，以及 Agent 接管入口后的渠道问题。发布时间为 2026-11-20 13:27 UTC。本条只转述栏目说明，其中对具体公司的判断是主持人观点，长镜未独立核实，不构成投资建议。本轮 Apple Podcasts 目录尚未列到这一期，故未写 Apple 链接。",
+      "advice": "在被 AI 冲击的软件公司、或正在做 AI 应用的人可以听。这是主持人对谈，不是对受提及公司的调研报告，措辞尖锐，请以原音频和官方说明为准。暂无带说话人的完整文稿可入库。",
+      "urls": [
+        {
+          "label": "小宇宙",
+          "href": "https://www.xiaoyuzhoufm.com/episode/6b0048d06f7bbb70cd588ecf"
+        },
+        {
+          "label": "音频（xyzcdn）",
+          "href": "https://media.xyzcdn.net/63e9ef4de99bdef7d39944c8/lseeEECCKv_cqlylQEmMV6SuGax8.m4a"
+        }
+      ],
+      "addedAt": "2026-11-20",
+      "cover": "thumbs/ailianjin-companies-die-2026-11-20.jpg",
+      "media": {
+        "audioUrl": "https://media.xyzcdn.net/63e9ef4de99bdef7d39944c8/lseeEECCKv_cqlylQEmMV6SuGax8.m4a",
+        "audioSource": "xiaoyuzhou"
+      },
+      "hasEssay": false,
+      "hasAnalysis": false,
+      "hasTranscript": false
+    },
     {
       "id": "late-189-guquanquan-geodesic-2026-11-19",
       "title": "189: Geodesic顾全全：预训练有点“无聊”了，但用scaling改变AI制药才刚开始",
